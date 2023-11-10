@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+
+# VS Code
+.vscode/launch.json
+
+bin/
