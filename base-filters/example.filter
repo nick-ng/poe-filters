@@ -1,0 +1,13 @@
+# example.filter
+
+Show
+	BaseType "Glorious Plate"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45

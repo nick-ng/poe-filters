@@ -24,3 +24,8 @@ go.work
 .vscode/launch.json
 
 bin/
+output-filters/*
+my-filters/*
+!my-filters/example.filter
+base-filters/*
+!base-filters/example.filter

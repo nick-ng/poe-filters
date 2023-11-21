@@ -9,3 +9,4 @@ Make my item filters for Path of Exile
 
 ### ToDo Comments
 
+- main.go:87: @todo(nick-ng): handle delete options in import commands

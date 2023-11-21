@@ -1,0 +1,53 @@
+# Normal comments don't do anything
+# All .filter files in the my-filters directory will be processed
+# The output filter will be in the output-filters directory
+# and have the same name as the source file
+
+Show
+	BaseType "Wyrmscale Gauntlets"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+
+# Comments that begin with #! do something
+# You can import a filter from the base-filters directory with the following:
+#! import example.filter
+# You can remove parts of it with:
+#! delete some regexp
+# The filter will be imported as soon as you reach an uncommented line
+
+Show
+	BaseType "Imbued Wand"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+
+#! import test3.filter
+# If the file couldn't be imported, the error will be in the output filter
+
+Show
+	BaseType "Prophecy Wand"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+
+# If you have any special comments at the end of the file, make sure you include a final newline.
+#! import example.filter
