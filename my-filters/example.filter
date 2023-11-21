@@ -51,4 +51,4 @@ Show
 	SetFontSize 45
 
 # If you have any special comments at the end of the file, make sure you include a final newline.
-#! import example.filter
+#! import currency.filter

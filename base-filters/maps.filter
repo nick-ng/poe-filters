@@ -1,0 +1,216 @@
+# White Maps: 68 - 72
+# Yellow Maps: 73 - 77
+# Red Maps: 78 - 80
+# High Red Maps: 81 - 83
+
+Show
+	BaseType "Invitation"
+	SetTextColor 255 200 20 255
+	SetBorderColor 20 200 255 255
+	##DefaultBackground
+	SetFontSize 45
+	MinimapIcon 0 Blue Kite
+	PlayEffect Blue
+	CustomAlertSound "sounds/zana-what-are-you-doing.mp3"
+
+Show
+	Rarity = Unique
+	Class "Maps"
+	SetTextColor 100 255 133 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/zana-you-idiot.mp3"
+
+Show
+	Rarity < Unique
+	Class "Maps"
+	##DefaultBackground
+	Continue
+
+# Map appearance
+Show
+	Rarity < Unique
+	MapTier >= 14
+	Class "Maps"
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 0 255 255
+	Continue
+
+Show
+	Rarity < Unique
+	MapTier >= 11
+	MapTier <= 13
+	Class "Maps"
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	Continue
+
+Show
+	Rarity < Unique
+	MapTier >= 6
+	MapTier <= 10
+	Class "Maps"
+	SetTextColor 200 200 0 255
+	SetBorderColor 200 200 0 255
+	Continue
+
+Show
+	Rarity < Unique
+	MapTier >= 1
+	MapTier <= 5
+	Class "Maps"
+	SetTextColor 200 200 200 255
+	SetBorderColor 200 200 200 255
+	Continue
+
+# Influenced and other special maps have different text and borders
+Show
+	Rarity < Unique
+	Class "Maps"
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	SetTextColor 100 255 133 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/zana-you-idiot.mp3"
+
+Show
+	Rarity < Unique
+	Class "Maps"
+	UberBlightedMap True
+	SetTextColor 255 100 253 255
+	Continue
+
+Show
+	Rarity < Unique
+	Class "Maps"
+	BlightedMap True
+	SetTextColor 255 100 253 255
+	Continue
+
+Show
+	Rarity < Unique
+	Class "Maps"
+	AnyEnchantment True
+	SetBorderColor 138 137 255 255
+	Continue
+
+# Map size and sound
+# sound 5 if it's in the same map tier range or higher, otherwise 4
+# High area = same tier of maps (except high reds)
+Show # T16
+	Rarity < Unique
+	MapTier >= 16
+	Class "Maps"
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/top-map.mp3"
+
+Show # High Reds
+	Rarity < Unique
+	MapTier >= 14
+	Class "Maps"
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	PlayAlertSound 5 100 # map drop sound
+
+Show
+	AreaLevel >= 83
+	Rarity < Unique
+	MapTier < 14
+	Class "Maps"
+	SetFontSize 25
+	DisableDropSound True
+
+Show # Low Reds - high area
+	AreaLevel >= 78
+	Rarity < Unique
+	MapTier >= 11
+	MapTier <= 13
+	Class "Maps"
+	SetFontSize 40
+	MinimapIcon 2 Red Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # Low Reds - low area
+	Rarity < Unique
+	MapTier >= 11
+	MapTier <= 13
+	Class "Maps"
+	SetFontSize 45
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	PlayAlertSound 5 100 # map drop sound
+
+Show # yellow - high area
+	AreaLevel >= 73
+	Rarity < Unique
+	MapTier >= 6
+	MapTier <= 10
+	Class "Maps"
+	SetFontSize 40
+	MinimapIcon 2 Yellow Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # yellow - low area
+	Rarity < Unique
+	MapTier >= 6
+	MapTier <= 10
+	Class "Maps"
+	SetFontSize 45
+	MinimapIcon 0 Yellow Square
+	PlayEffect Yellow
+	PlayAlertSound 5 100 # map drop sound
+
+Show # white - high area
+	AreaLevel >= 68
+	Rarity < Unique
+	MapTier >= 1
+	MapTier <= 5
+	Class "Maps"
+	SetFontSize 40
+	MinimapIcon 2 White Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # white - low area
+	Rarity < Unique
+	MapTier >= 1
+	MapTier <= 5
+	Class "Maps"
+	SetFontSize 45
+	MinimapIcon 0 White Square
+	PlayEffect White
+	PlayAlertSound 5 100 # map drop sound
+
+###########
+## Heist ##
+###########
+
+Show	# Repeatable Contracts
+	BaseType == "Forbidden Contract" "Preventative Contract" "Familial Contract" "Vigilante Contract" "Naval Contract" "Vengeful Contract"
+	SetFontSize 40
+	SetBorderColor 255 150 100
+	MinimapIcon 1 Red Pentagon
+	PlayEffect Red Temp
+	PlayAlertSound 16 100 # map drop sound
+
+Show
+	Class == "Contract"
+	SetTextColor 255 150 100
+	SetBorderColor 255 150 100
+	MinimapIcon 1 Red Pentagon
+	PlayEffect Red Temp
+	PlayAlertSound 16 100 # map drop sound
+	SetFontSize 40
+
+Show
+	Class "Blueprint"
+	SetFontSize 45
+	SetTextColor 203 240 252
+	SetBorderColor 203 240 252
+	MinimapIcon 0 Cyan Pentagon
+	PlayEffect Cyan Temp
+	CustomAlertSound "sounds/brian-06-shing.mp3"

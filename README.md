@@ -17,4 +17,5 @@ Make my item filters for Path of Exile
 
 ### ToDo Comments
 
-- main.go:110: @todo(nick-ng): handle delete options in import commands
+- main.go:89: @todo(nick-ng): Move some functions to separate files
+- main.go:111: @todo(nick-ng): handle delete options in import commands

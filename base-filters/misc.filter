@@ -1,0 +1,67 @@
+###########
+## Misc. ##
+###########
+
+Show
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 159 15 213 255
+	SetBorderColor 0 0 0 255
+	MinimapIcon 1 Yellow Hexagon
+	PlayEffect Yellow
+	PlayAlertSound 2 300
+
+Show # Loreweave
+	Rarity = Unique
+	Class "Rings"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 255 0 0 200
+	SetBorderColor 100 100 100 255
+	PlayEffect Red
+	MinimapIcon 2 Brown Star
+
+Show # Breach Rings
+	ItemLevel >= 83
+	Class "Rings"
+	BaseType "Breach"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 0 240 190 255
+
+Show	# %DS5 $type->exoticmods $tier->t1veil
+	Identified True
+	Rarity = Rare
+	HasExplicitMod = "Catarina's Veiled" "Elreon's Veiled" "Leo's Veiled" "Rin's Veiled" "Vagan's Veiled" "Vorici's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's" "It That Fled's Veiled" "Korell's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "Riker" "Tora's Veiled"
+	SetFontSize 45
+	SetTextColor 147 49 147 200
+	SetBorderColor 147 49 147 200
+	SetBackgroundColor 200 200 200 255
+	MinimapIcon 2 Purple Diamond
+	PlayEffect Purple
+	PlayAlertSound 3 300
+
+Show	# %D4 $type->gems-generic $tier->qt4lvl
+	AreaLevel >= 75
+	Quality >= 7
+	Quality < 20
+	Class "Gems"
+	SetFontSize 35
+	SetTextColor 30 190 190 255
+	SetBorderColor 30 190 190 255
+	MinimapIcon 1 White Triangle
+
+#################
+## Quest Items ##
+#################
+
+Show
+	Class "Quest"
+	SetBorderColor 0 250 0
+	SetTextColor 0 250 0
+	SetFontSize 45
+	MinimapIcon 0 Green UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/clack-v2-3blue1brown.mp3"

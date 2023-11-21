@@ -1,0 +1,256 @@
+##################
+## Recombinator ##
+##################
+
+Show
+	BaseType "Recombinator"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 250 250 250
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	CustomAlertSound "sounds/rue-bring-me-back.mp3"
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+
+Show
+	BaseType "Power Core"
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+
+Show
+	Class "Sentinel Drone"
+	BaseType "Apex Sentinel"
+	SetBackgroundColor 200 200 0
+	SetBorderColor 200 200 200
+	SetFontSize 30
+
+Show
+	Class "Sentinel Drone"
+	Rarity Unique
+	SetBackgroundColor 0 150 250
+	SetBorderColor 225 100 0
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class "Sentinel Drone"
+	Rarity Magic Rare
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+
+Show
+	Class "Sentinel Drone"
+	Rarity Normal
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+
+#######################
+## Wisdom and Portal ##
+#######################
+
+Show
+	BaseType "Scroll of Wisdom"
+	##ScrollOfWisdomText
+	Continue
+
+Show
+	BaseType "Portal Scroll"
+	##PortalScrollText
+	Continue
+
+Hide # Red Maps
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 77
+	StackSize < 8
+	##CurrencyBorder
+	##DefaultBackground
+	SetFontSize 45
+
+Hide # White-Yellow Maps
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 67
+	StackSize < 4
+	##CurrencyBorder
+	##DefaultBackground
+	SetFontSize 45
+
+Show # Red Maps
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	##CurrencyBorder
+	##DefaultBackground
+	SetFontSize 40
+	MinimapIcon 0 Grey Raindrop
+
+####################
+## T0/T1 Currency ##
+####################
+
+Show # T-1 Currency
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+
+Show # Imprint - You're waiting for it to drop.
+	BaseType "Imprint"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
+	SetFontSize 45
+	##T0CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	SetFontSize 45
+	##T1CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
+
+Show # T1 Currency
+	Class "Currency"
+	BaseType == "Chaos Orb" "Orb of Scouring" "Orb of Regret" "Orb of Unmaking" "Regal Orb" "Instilling Orb"
+	SetFontSize 45
+	##T1CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/t90-supplies1.mp3"
+
+Show
+	Class "Currency"
+	BaseType "Catalyst" "Eldritch"
+	SetFontSize 45
+	##T1CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
+
+#################
+## T2 Currency ##
+#################
+
+Show # Orb of Chance is important until yellow maps
+	Class "Currency"
+	BaseType == "Orb of Chance"
+	AreaLevel < 74
+	SetFontSize 45
+	##T2CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "sounds/chance.mp3"
+
+Show # T2 Currency
+	Class "Currency"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb"
+	SetFontSize 45
+	##T2CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+#################
+## T3 Currency ##
+#################
+
+Hide # Red Maps
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	AreaLevel > 77
+	StackSize < 3
+	##T3CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+
+Show # T3 Currency (3+ to show)
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	##T3CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Green UpsideDownHouse
+	CustomAlertSound "sounds/water-drop.mp3"
+
+#################
+## T4 Currency ##
+#################
+
+#Hide # Yellow Maps
+#	Class "Currency"
+#	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+#	SetFontSize 45
+#	AreaLevel > 72
+#	StackSize < 6
+#	##T3CurrencyText
+#	##CurrencyBorder
+#	##DefaultBackground
+
+Hide # White Maps
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 45
+	AreaLevel > 67
+	StackSize < 3
+	##T3CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+
+Show # T4 Currency (4+ to show)
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+	SetFontSize 45
+	##T3CurrencyText
+	##CurrencyBorder
+	##DefaultBackground
+	MinimapIcon 0 Grey UpsideDownHouse
+	# CustomAlertSound "sounds/water-drop.mp3"
+
+####################
+## Other Currency ##
+####################
+
+Show
+	Class "Currency"
+	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
+	StackSize > 1
+	SetFontSize 45
+	##T9CurrencyText
+	SetBorderColor 190 178 135 255
+	##DefaultBackground

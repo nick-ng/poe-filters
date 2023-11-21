@@ -86,6 +86,7 @@ func main() {
 	}
 }
 
+// @todo(nick-ng): Move some functions to separate files
 func processFilter(filterPath string) (string, []error) {
 	var errorList []error
 
