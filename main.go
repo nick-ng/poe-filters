@@ -11,13 +11,36 @@ import (
 )
 
 const MY_FILTERS_PATH string = "my-filters"
+const BASE_FILTERS_PATH string = "base-filters"
+const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
-	err := os.Mkdir(OUTPUT_FILTERS_PATH, 0755)
+	err := os.Mkdir(MY_FILTERS_PATH, 0755)
 
 	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println("Error creating output directory", err)
+		fmt.Println("Error creating input filters directory", err)
+		return
+	}
+
+	err = os.Mkdir(OUTPUT_FILTERS_PATH, 0755)
+
+	if err != nil && !errors.Is(err, fs.ErrExist) {
+		fmt.Println("Error creating output filters directory", err)
+		return
+	}
+
+	err = os.Mkdir(BASE_FILTERS_PATH, 0755)
+
+	if err != nil && !errors.Is(err, fs.ErrExist) {
+		fmt.Println("Error creating base filters directory", err)
+		return
+	}
+
+	err = os.Mkdir(THIRD_PARTY_FILTERS_PATH, 0755)
+
+	if err != nil && !errors.Is(err, fs.ErrExist) {
+		fmt.Println("Error creating third party filters directory", err)
 		return
 	}
 
@@ -141,9 +164,14 @@ func processFilter(filterPath string) (string, []error) {
 }
 
 func importBaseFilter(filterName string) (string, error) {
-	path := filepath.Join("base-filters", filterName)
+	path := filepath.Join(BASE_FILTERS_PATH, filterName)
 
 	filterData, err := os.ReadFile(path)
+
+	if err != nil {
+		path = filepath.Join(THIRD_PARTY_FILTERS_PATH, filterName)
+		filterData, err = os.ReadFile(path)
+	}
 
 	return string(filterData), err
 }

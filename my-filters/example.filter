@@ -16,9 +16,10 @@ Show
 	SetFontSize 45
 
 # Comments that begin with #! do something
-# You can import a filter from the base-filters directory with the following:
+# You can import a filter from the base-filters or third-party-filters directory with the following:
 #! import example.filter
-# You can remove parts of it with:
+# If both directories have a filter with the same name, the one in base-filters will be imported
+# You can remove parts of the filter with:
 #! delete some regexp
 # The filter will be imported as soon as you reach an uncommented line
 
