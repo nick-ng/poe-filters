@@ -13,9 +13,12 @@ Make my item filters for Path of Exile
 2. Change/copy "With Args" block so it has the args you want
 3. Run with VS Code's debugger
 
+## Notes
+
+* `CustomAlertSound` can handle absolute paths i.e. `D:\etc\sound.mp3`
+
 ## ToDos
 
 ### ToDo Comments
 
-- main.go:89: @todo(nick-ng): Move some functions to separate files
-- main.go:111: @todo(nick-ng): handle delete options in import commands
+- main.go:66: @todo(nick-ng): move some functions to separate files

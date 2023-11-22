@@ -16,33 +16,10 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
-	err := os.Mkdir(MY_FILTERS_PATH, 0755)
-
-	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println("Error creating input filters directory", err)
-		return
-	}
-
-	err = os.Mkdir(OUTPUT_FILTERS_PATH, 0755)
-
-	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println("Error creating output filters directory", err)
-		return
-	}
-
-	err = os.Mkdir(BASE_FILTERS_PATH, 0755)
-
-	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println("Error creating base filters directory", err)
-		return
-	}
-
-	err = os.Mkdir(THIRD_PARTY_FILTERS_PATH, 0755)
-
-	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println("Error creating third party filters directory", err)
-		return
-	}
+	mkDirIfNotExist(MY_FILTERS_PATH)
+	mkDirIfNotExist(OUTPUT_FILTERS_PATH)
+	mkDirIfNotExist(BASE_FILTERS_PATH)
+	mkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 
 	path1 := filepath.Join(MY_FILTERS_PATH)
 
@@ -86,7 +63,7 @@ func main() {
 	}
 }
 
-// @todo(nick-ng): Move some functions to separate files
+// @todo(nick-ng): move some functions to separate files
 func processFilter(filterPath string) (string, []error) {
 	var errorList []error
 
@@ -101,35 +78,62 @@ func processFilter(filterPath string) (string, []error) {
 	processedLines := []string{}
 
 	var currentCommand string
-	options := make(map[string]string)
+	options := make(map[string][]string)
 
 	for _, rawLine := range rawLines {
+		trimmedLine := strings.TrimSpace(rawLine)
 		switch currentCommand {
 		case "import":
 			{
-				if strings.HasPrefix(rawLine, "#!") {
-					// @todo(nick-ng): handle delete options in import commands
-					processedLines = append(processedLines, rawLine)
-				} else if strings.HasPrefix(rawLine, "#") {
-					processedLines = append(processedLines, rawLine)
+				if strings.HasPrefix(trimmedLine, "#! ") {
+					processedLines = append(processedLines, trimmedLine)
+					subCommandArguments := getCommands(trimmedLine)
+					switch subCommandArguments[1] {
+					case "del":
+						fallthrough
+					case "delete":
+						{
+							regexpString := strings.Join(subCommandArguments[2:], " ")
+							options["delete"] = append(options["delete"], regexpString)
+						}
+					default:
+						{
+							processedLines = append(processedLines, fmt.Sprintf("# Warning: Unknown sub-command %s", subCommandArguments[1]))
+						}
+					}
+				} else if strings.HasPrefix(trimmedLine, "#") {
+					processedLines = append(processedLines, trimmedLine)
 				} else {
+					fmt.Println(options)
 					// it's a non-comment line so import the filter here then write the line
 					_, present := options["file"]
 					if present {
-						importedFilter, err := importBaseFilter(options["file"])
+						tempFilter, err := importBaseFilter(options["file"][0])
 						if err != nil {
 							errorList = append(errorList, err)
-							processedLines = append(processedLines, fmt.Sprintf("# Error: Couldn't import %s", options["file"]))
+							processedLines = append(processedLines, fmt.Sprintf("# Error: couldn't import %s", options["file"]))
 							processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
 						} else {
-							processedLines = append(processedLines, importedFilter)
+							for _, deleteRegexpString := range options["delete"] {
+								deleteRegexp, err := regexp.Compile(deleteRegexpString)
+
+								if err != nil {
+									errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
+									errorList = append(errorList, errors.New(errorString))
+									processedLines = append(processedLines, fmt.Sprintf("# Error: %s", errorString))
+								} else {
+									tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
+								}
+							}
+
+							processedLines = append(processedLines, tempFilter)
 							processedLines = append(processedLines, fmt.Sprintf("# End of %s\n", options["file"]))
 						}
-						processedLines = append(processedLines, rawLine)
+
 					} else {
 						processedLines = append(processedLines, "# Error: No file specified.\n")
-						processedLines = append(processedLines, rawLine)
 					}
+					processedLines = append(processedLines, trimmedLine)
 
 					currentCommand = ""
 					clear(options)
@@ -138,15 +142,15 @@ func processFilter(filterPath string) (string, []error) {
 			}
 		default:
 			{
-				if strings.HasPrefix(rawLine, "#!") {
+				if strings.HasPrefix(trimmedLine, "#! ") {
 					// #! <command> <argument1> <argument2> <etc>
 					// 0  1         2           3
-					commandArguments := getCommands(rawLine)
+					commandArguments := getCommands(trimmedLine)
 					switch commandArguments[1] {
 					case "import":
 						{
 							currentCommand = "import"
-							options["file"] = commandArguments[2]
+							options["file"] = []string{commandArguments[2]}
 							break
 						}
 					default:
@@ -155,7 +159,7 @@ func processFilter(filterPath string) (string, []error) {
 						}
 					}
 				}
-				processedLines = append(processedLines, rawLine)
+				processedLines = append(processedLines, trimmedLine)
 			}
 		}
 	}
@@ -178,7 +182,14 @@ func importBaseFilter(filterName string) (string, error) {
 }
 
 func getCommands(rawCommand string) []string {
-	re := regexp.MustCompile(`\s+`)
+	return strings.Split(rawCommand, " ")
+}
 
-	return re.Split(rawCommand, -1)
+func mkDirIfNotExist(dirPath string) {
+	err := os.Mkdir(dirPath, 0755)
+
+	if err != nil && !errors.Is(err, fs.ErrExist) {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }

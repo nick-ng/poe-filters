@@ -25,7 +25,5 @@ go.work
 
 bin/
 output-filters/*
-my-filters/*
-!my-filters/example.filter
 third-party-filters/*
 !third-party-filters/example.filter

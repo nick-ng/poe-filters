@@ -22,7 +22,7 @@ Show # Loreweave
 	PlayEffect Red
 	MinimapIcon 2 Brown Star
 
-Show # Breach Rings
+Show
 	ItemLevel >= 83
 	Class "Rings"
 	BaseType "Breach"
@@ -31,7 +31,7 @@ Show # Breach Rings
 	SetBackgroundColor 0 0 0 255
 	SetBorderColor 0 240 190 255
 
-Show	# %DS5 $type->exoticmods $tier->t1veil
+Show
 	Identified True
 	Rarity = Rare
 	HasExplicitMod = "Catarina's Veiled" "Elreon's Veiled" "Leo's Veiled" "Rin's Veiled" "Vagan's Veiled" "Vorici's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's" "It That Fled's Veiled" "Korell's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "Riker" "Tora's Veiled"
@@ -43,7 +43,7 @@ Show	# %DS5 $type->exoticmods $tier->t1veil
 	PlayEffect Purple
 	PlayAlertSound 3 300
 
-Show	# %D4 $type->gems-generic $tier->qt4lvl
+Show
 	AreaLevel >= 75
 	Quality >= 7
 	Quality < 20
