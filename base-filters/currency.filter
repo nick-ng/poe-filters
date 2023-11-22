@@ -58,12 +58,12 @@ Show
 
 Show
 	BaseType "Scroll of Wisdom"
-	##ScrollOfWisdomText
+	#!ScrollOfWisdomText!#
 	Continue
 
 Show
 	BaseType "Portal Scroll"
-	##PortalScrollText
+	#!PortalScrollText!#
 	Continue
 
 Hide # Red Maps
@@ -71,8 +71,8 @@ Hide # Red Maps
 	Class "Currency"
 	AreaLevel > 77
 	StackSize < 8
-	##CurrencyBorder
-	##DefaultBackground
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	SetFontSize 45
 
 Hide # White-Yellow Maps
@@ -80,15 +80,15 @@ Hide # White-Yellow Maps
 	Class "Currency"
 	AreaLevel > 67
 	StackSize < 4
-	##CurrencyBorder
-	##DefaultBackground
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	SetFontSize 45
 
 Show # Red Maps
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
-	##CurrencyBorder
-	##DefaultBackground
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	SetFontSize 40
 	MinimapIcon 0 Grey Raindrop
 
@@ -119,9 +119,9 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
-	##T0CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T0CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
@@ -130,9 +130,9 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
-	##T1CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
@@ -141,9 +141,9 @@ Show # T1 Currency
 	Class "Currency"
 	BaseType == "Chaos Orb" "Orb of Scouring" "Orb of Regret" "Orb of Unmaking" "Regal Orb" "Instilling Orb"
 	SetFontSize 45
-	##T1CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/t90-supplies1.mp3"
@@ -152,9 +152,9 @@ Show
 	Class "Currency"
 	BaseType "Catalyst" "Eldritch"
 	SetFontSize 45
-	##T1CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
@@ -168,9 +168,9 @@ Show # Orb of Chance is important until yellow maps
 	BaseType == "Orb of Chance"
 	AreaLevel < 74
 	SetFontSize 45
-	##T2CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	CustomAlertSound "sounds/chance.mp3"
 
@@ -178,9 +178,9 @@ Show # T2 Currency
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb"
 	SetFontSize 45
-	##T2CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
@@ -194,17 +194,17 @@ Hide # Red Maps
 	SetFontSize 45
 	AreaLevel > 77
 	StackSize < 3
-	##T3CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 
 Show # T3 Currency (3+ to show)
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
-	##T3CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Green UpsideDownHouse
 	CustomAlertSound "sounds/water-drop.mp3"
 
@@ -218,9 +218,9 @@ Show # T3 Currency (3+ to show)
 #	SetFontSize 45
 #	AreaLevel > 72
 #	StackSize < 6
-#	##T3CurrencyText
-#	##CurrencyBorder
-#	##DefaultBackground
+#	#!T3CurrencyText!#
+#	#!CurrencyBorder!#
+#	#!DefaultBackground!#
 
 Hide # White Maps
 	Class "Currency"
@@ -228,17 +228,17 @@ Hide # White Maps
 	SetFontSize 45
 	AreaLevel > 67
 	StackSize < 3
-	##T3CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 
 Show # T4 Currency (4+ to show)
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
 	SetFontSize 45
-	##T3CurrencyText
-	##CurrencyBorder
-	##DefaultBackground
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
 	MinimapIcon 0 Grey UpsideDownHouse
 	# CustomAlertSound "sounds/water-drop.mp3"
 
@@ -251,6 +251,6 @@ Show
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
 	StackSize > 1
 	SetFontSize 45
-	##T9CurrencyText
+	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
-	##DefaultBackground
+	#!DefaultBackground!#

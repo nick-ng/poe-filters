@@ -104,7 +104,6 @@ func processFilter(filterPath string) (string, []error) {
 				} else if strings.HasPrefix(trimmedLine, "#") {
 					processedLines = append(processedLines, trimmedLine)
 				} else {
-					fmt.Println(options)
 					// it's a non-comment line so import the filter here then write the line
 					_, present := options["file"]
 					if present {
@@ -165,7 +164,7 @@ func processFilter(filterPath string) (string, []error) {
 	}
 
 	joinedFilter := strings.Join(processedLines, "\n")
-	return regexp.MustCompile(`\n{2,}`).ReplaceAllString(joinedFilter, "\n\n"), errorList
+	return regexp.MustCompile(`#!.+!#`).ReplaceAllString(joinedFilter, ""), errorList
 }
 
 func importBaseFilter(filterName string) (string, error) {
