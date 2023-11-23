@@ -3,9 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
-	"io/fs"
 	"os"
 	"path/filepath"
+	"poe-filters/utils"
 	"regexp"
 	"strings"
 )
@@ -16,10 +16,10 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
-	mkDirIfNotExist(MY_FILTERS_PATH)
-	mkDirIfNotExist(OUTPUT_FILTERS_PATH)
-	mkDirIfNotExist(BASE_FILTERS_PATH)
-	mkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
+	utils.MkDirIfNotExist(MY_FILTERS_PATH)
+	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
+	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
+	utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 
 	path1 := filepath.Join(MY_FILTERS_PATH)
 
@@ -182,13 +182,4 @@ func importBaseFilter(filterName string) (string, error) {
 
 func getCommands(rawCommand string) []string {
 	return strings.Split(rawCommand, " ")
-}
-
-func mkDirIfNotExist(dirPath string) {
-	err := os.Mkdir(dirPath, 0755)
-
-	if err != nil && !errors.Is(err, fs.ErrExist) {
-		fmt.Println(err)
-		os.Exit(1)
-	}
 }

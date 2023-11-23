@@ -16,9 +16,6 @@ Show
 	ItemLevel >= 45
 	SetFontSize 45
 
-#! import example.filter
-#! delete Corrupted False
-
 Show
 	BaseType "Imbued Wand"
 	Rarity Normal
