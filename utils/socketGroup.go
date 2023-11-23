@@ -10,9 +10,15 @@ type armourSlot struct {
 	BaseType   string
 	TtsStrting string
 	Filename   string
+	Icon       string
 }
 
-// armourSlots := []armourSlot{{BaseType: "Boots", TtsStrting: "boots", Filename: "boots"}}
+var armourSlots = []armourSlot{
+	{BaseType: "Boots", TtsStrting: "boots", Filename: "boots", Icon: "Square"},
+	{BaseType: "Gloves", TtsStrting: "gloves", Filename: "gloves", Icon: "Triangle"},
+	{BaseType: "Helmets", TtsStrting: "helm", Filename: "helm", Icon: "Circle"},
+	{BaseType: "Body Armours", TtsStrting: "body", Filename: "body", Icon: "Pentagon"},
+}
 
 func GetSocketGroupText(socketGroup string, itemType string) string {
 	sockets := make(map[string]int)
@@ -66,19 +72,57 @@ func GetSocketGroupText(socketGroup string, itemType string) string {
 	}
 
 	if maxCount == 1 && minCount == 1 {
-		return fmt.Sprintf("%s R G B", itemType)
+		return fmt.Sprintf("%s R G B. %s", itemType, itemType)
 	}
 
 	sort.Slice(ttsArray, func(i, j int) bool {
 		return ttsArray[j] < ttsArray[i]
 	})
 
-	fmt.Println(sockets)
-	fmt.Println(ttsArray)
-
-	return fmt.Sprintf("%s %s", itemType, strings.Join(ttsArray, " "))
+	return fmt.Sprintf("%s %s. %s", itemType, strings.Join(ttsArray, " "), itemType)
 }
 
-func GetArmourSocketGroupFilter(socketGroup string) string {
-	return ""
+func GetArmourSocketGroupFilter(socketGroup string, level ...string) string {
+	var filterBlocks []string
+
+	minLevel := "1"
+	maxLevel := "44"
+
+	if len(level) == 2 {
+		minLevel = level[0]
+		maxLevel = level[1]
+	} else if len(level) == 1 {
+		maxLevel = level[0]
+	}
+
+	for _, slot := range armourSlots {
+		ttsString := GetSocketGroupText(socketGroup, slot.TtsStrting)
+
+		_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, slot.Filename), "Brian", 2.2)
+
+		if err != nil {
+			continue
+		}
+
+		filterLines := []string{
+			"Show",
+			fmt.Sprintf("\tAreaLevel >= %s", minLevel),
+			fmt.Sprintf("\tAreaLevel <= %s", maxLevel),
+			"\tSockets < 6",
+			"\tRarity <= Rare",
+			"\tLinkedSockets <= 4",
+			fmt.Sprintf("\tSocketGroup = %s", socketGroup),
+			fmt.Sprintf("\tClass \"%s\"", slot.BaseType),
+			"\t#!LinkText!#",
+			"\t#!LinkBorder!#",
+			"\t#!LinkBackground!#",
+			"\tDisableDropSound",
+			fmt.Sprintf("\tCustomAlertSound \"%s\" 300", soundPath),
+			fmt.Sprintf("\tMinimapIcon 0 Cyan %s", slot.Icon),
+		}
+
+		filterBlocks = append(filterBlocks, strings.Join(filterLines, "\n"))
+	}
+
+	return strings.Join(filterBlocks, "\n\n")
 }

@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"io/fs"
 	"net/http"
 	"os"
 	"os/exec"
@@ -26,15 +27,31 @@ type ttsResponse struct {
 	SpeakUrl string `json:"speak_url"`
 }
 
-// soundPath, err := utils.GetTextToSpeech("body 2 blue", "hello.mp3", 2)
-
-// if err != nil {
-// 	fmt.Println("Error when getting sound", err)
-// 	os.Exit(1)
-// }
-
-// fmt.Println(soundPath)
 func GetTextToSpeech(text string, filename string, voice string, tempo float32) (string, string, error) {
+	MkDirIfNotExist(RAW_SOUNDS_PATH)
+	MkDirIfNotExist(SOUNDS_PATH)
+
+	rawPath, err := filepath.Abs(filepath.Join(RAW_SOUNDS_PATH, filename))
+
+	if err != nil {
+		return "", "", err
+	}
+
+	path, err := filepath.Abs(filepath.Join(SOUNDS_PATH, filename))
+
+	if err != nil {
+		return "", "", err
+	}
+
+	fileStats, err := os.Stat(path)
+	if err != nil && !errors.Is(err, fs.ErrNotExist) {
+		return "", "", err
+	}
+
+	if fileStats != nil && fileStats.Size() > 0 {
+		return rawPath, path, err
+	}
+
 	client := http.Client{}
 
 	requestJsonBytes, err := json.Marshal(ttsRequest{
@@ -90,50 +107,16 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float32) 
 		return "", "", err
 	}
 
-	MkDirIfNotExist(RAW_SOUNDS_PATH)
-	MkDirIfNotExist(SOUNDS_PATH)
-
-	rawPath, err := filepath.Abs(filepath.Join(RAW_SOUNDS_PATH, filename))
-
-	if err != nil {
-		return "", "", err
-	}
-
 	err = os.WriteFile(rawPath, soundBody, 0666)
 
 	if err != nil {
 		return "", "", err
 	}
 
-	path, err := filepath.Abs(filepath.Join(SOUNDS_PATH, filename))
-
-	if err != nil {
-		return "", "", err
-	}
-
 	cmd := exec.Command("ffmpeg", "-y",
-		"-i", rawPath, "-filter:a", fmt.Sprintf("\"atempo=%0.1f\"", tempo), "-vn", path)
-
-	fmt.Println("cmd", cmd.String())
-	// cmd.Start()
-	// cmd.Wait()
-
-	batPath, err := filepath.Abs("temp.bat")
-
-	if err != nil {
-		return "", "", err
-	}
-
-	fmt.Println(batPath)
-
-	os.WriteFile(batPath, []byte(cmd.String()), 0700)
-
-	cmd = exec.Command("CMD", "/C", batPath)
+		"-i", rawPath, "-filter:a", fmt.Sprintf("atempo=%0.1f,volume=2.1", tempo), "-vn", path)
 
 	err = cmd.Run()
 
-	fmt.Println(err)
-
-	// @todo(nick-ng): figure out how to speed up sounds
 	return rawPath, path, err
 }

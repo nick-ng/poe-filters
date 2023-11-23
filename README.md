@@ -21,5 +21,5 @@ Make my item filters for Path of Exile
 
 ### ToDo Comments
 
-- utils\sounds.go:137: @todo(nick-ng): figure out how to speed up sounds
-- main.go:69: @todo(nick-ng): move some functions to separate files
+- main.go:66: @todo(nick-ng): move some functions to separate files
+- main.go:174: @todo(nick-ng): replace tokens and remove all unknown tokens

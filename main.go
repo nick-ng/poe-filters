@@ -16,9 +16,6 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
-	utils.GetTextToSpeech(utils.GetSocketGroupText("RRG", "Helmet"), "helmet-RRG.mp3", "Brian", 2)
-	utils.GetTextToSpeech(utils.GetSocketGroupText("GBB", "Helmet"), "helmet-GBB.mp3", "Brian", 2)
-
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
@@ -144,6 +141,7 @@ func processFilter(filterPath string) (string, []error) {
 			}
 		default:
 			{
+				processedLines = append(processedLines, trimmedLine)
 				if strings.HasPrefix(trimmedLine, "#! ") {
 					// #! <command> <argument1> <argument2> <etc>
 					// 0  1         2           3
@@ -155,19 +153,26 @@ func processFilter(filterPath string) (string, []error) {
 							options["file"] = []string{commandArguments[2]}
 							break
 						}
+					case "links":
+						fallthrough
+					case "linksa":
+						{
+							processedLines = append(processedLines, utils.GetArmourSocketGroupFilter(commandArguments[2], commandArguments[3:]...))
+						}
 					default:
 						{
 							processedLines = append(processedLines, fmt.Sprintf("# Warning: Unknown command %s", commandArguments[1]))
 						}
 					}
 				}
-				processedLines = append(processedLines, trimmedLine)
 			}
 		}
 	}
 
 	joinedFilter := strings.Join(processedLines, "\n")
-	return regexp.MustCompile(`#!.+!#`).ReplaceAllString(joinedFilter, ""), errorList
+	return joinedFilter, errorList
+	// @todo(nick-ng): replace tokens and remove all unknown tokens
+	// return regexp.MustCompile(`#!.+!#`).ReplaceAllString(joinedFilter, ""), errorList
 }
 
 func importBaseFilter(filterName string) (string, error) {
