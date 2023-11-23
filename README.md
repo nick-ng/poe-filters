@@ -21,4 +21,4 @@ Make my item filters for Path of Exile
 
 ### ToDo Comments
 
-- main.go:66: @todo(nick-ng): move some functions to separate files
+- main.go:69: @todo(nick-ng): move some functions to separate files

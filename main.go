@@ -16,6 +16,9 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
+	utils.GetTextToSpeech(utils.GetSocketGroupText("RRG", "Helmet"), "helmet-RRG.mp3", "Brian")
+	utils.GetTextToSpeech(utils.GetSocketGroupText("GBB", "Helmet"), "helmet-GBB.mp3", "Brian")
+
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
