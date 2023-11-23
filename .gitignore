@@ -27,3 +27,7 @@ bin/
 output-filters/*
 third-party-filters/*
 !third-party-filters/example.filter
+
+raw-sounds/*
+
+temp.bat

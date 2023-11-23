@@ -8,9 +8,8 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"os/exec"
 	"path/filepath"
-	"sort"
-	"strings"
 )
 
 const API_URL = "https://us-central1-sunlit-context-217400.cloudfunctions.net/streamlabs-tts"
@@ -35,7 +34,7 @@ type ttsResponse struct {
 // }
 
 // fmt.Println(soundPath)
-func GetTextToSpeech(text string, filename string, voice string) (string, error) {
+func GetTextToSpeech(text string, filename string, voice string, tempo float32) (string, string, error) {
 	client := http.Client{}
 
 	requestJsonBytes, err := json.Marshal(ttsRequest{
@@ -44,7 +43,7 @@ func GetTextToSpeech(text string, filename string, voice string) (string, error)
 	})
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	bodyReader := bytes.NewReader(requestJsonBytes)
@@ -52,7 +51,7 @@ func GetTextToSpeech(text string, filename string, voice string) (string, error)
 	req, err := http.NewRequest(http.MethodPost, API_URL, bodyReader)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	req.Header = http.Header{
@@ -62,13 +61,13 @@ func GetTextToSpeech(text string, filename string, voice string) (string, error)
 	res, err := client.Do(req)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	resBody, err := io.ReadAll(res.Body)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	resObj := ttsResponse{}
@@ -76,113 +75,65 @@ func GetTextToSpeech(text string, filename string, voice string) (string, error)
 	json.Unmarshal(resBody, &resObj)
 
 	if !resObj.Success {
-		return "", errors.New("couldn't get a speech url")
+		return "", "", errors.New("couldn't get a speech url")
 	}
 
 	soundRes, err := http.Get(resObj.SpeakUrl)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	soundBody, err := io.ReadAll(soundRes.Body)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	MkDirIfNotExist(RAW_SOUNDS_PATH)
 	MkDirIfNotExist(SOUNDS_PATH)
 
-	rawPath := filepath.Join(RAW_SOUNDS_PATH, filename)
+	rawPath, err := filepath.Abs(filepath.Join(RAW_SOUNDS_PATH, filename))
+
+	if err != nil {
+		return "", "", err
+	}
 
 	err = os.WriteFile(rawPath, soundBody, 0666)
 
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
-	return rawPath, err
+	path, err := filepath.Abs(filepath.Join(SOUNDS_PATH, filename))
 
-	// path := filepath.Join(SOUNDS_PATH, filename)
-
-	// cmd := exec.Command("ffmpeg", "-n",
-	// 	"-i", rawPath, "-filter:a", fmt.Sprintf("\"atempo=%0.1f\"", tempo), "-vn", path)
-
-	// fmt.Println("cmd", cmd)
-
-	// stdout, err := cmd.Output()
-
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-
-	// fmt.Println(stdout)
-
-	// return path, err
-}
-
-func GetSocketGroupText(socketGroup string, itemType string) string {
-	sockets := make(map[string]int)
-	sockets["R"] = 0
-	sockets["G"] = 0
-	sockets["B"] = 0
-
-	for _, c := range socketGroup {
-		sockets[string(c)] += 1
+	if err != nil {
+		return "", "", err
 	}
 
-	var ttsArray []string
+	cmd := exec.Command("ffmpeg", "-y",
+		"-i", rawPath, "-filter:a", fmt.Sprintf("\"atempo=%0.1f\"", tempo), "-vn", path)
 
-	maxCount := -1
-	minCount := 9999
+	fmt.Println("cmd", cmd.String())
+	// cmd.Start()
+	// cmd.Wait()
 
-	for k := range sockets {
-		if sockets[k] == 0 {
-			continue
-		}
+	batPath, err := filepath.Abs("temp.bat")
 
-		if sockets[k] > maxCount {
-			maxCount = sockets[k]
-		}
-
-		if sockets[k] < minCount {
-			minCount = sockets[k]
-		}
-
-		var colour string
-		switch k {
-		case "R":
-			{
-				colour = "Red"
-			}
-		case "G":
-			{
-				colour = "Green"
-			}
-		case "B":
-			{
-				colour = "Blue"
-			}
-		}
-
-		ttsArray = append(ttsArray, fmt.Sprintf("%d %s", sockets[k], colour))
+	if err != nil {
+		return "", "", err
 	}
 
-	if len(ttsArray) == 0 {
-		return itemType
-	}
+	fmt.Println(batPath)
 
-	if maxCount == 1 && minCount == 1 {
-		return fmt.Sprintf("%s R G B", itemType)
-	}
+	os.WriteFile(batPath, []byte(cmd.String()), 0700)
 
-	sort.Slice(ttsArray, func(i, j int) bool {
-		return ttsArray[j] < ttsArray[i]
-	})
+	cmd = exec.Command("CMD", "/C", batPath)
 
-	fmt.Println(sockets)
-	fmt.Println(ttsArray)
+	err = cmd.Run()
 
-	return fmt.Sprintf("%s %s", itemType, strings.Join(ttsArray, " "))
+	fmt.Println(err)
+
+	// @todo(nick-ng): figure out how to speed up sounds
+	return rawPath, path, err
 }
