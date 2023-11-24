@@ -28,6 +28,9 @@ output-filters/*
 third-party-filters/*
 !third-party-filters/example.filter
 
-raw-sounds/*
+raw-tts-sounds/*
+tts-sounds/*
 
 temp.bat
+
+config.jsonc

@@ -14,8 +14,8 @@ import (
 )
 
 const API_URL = "https://us-central1-sunlit-context-217400.cloudfunctions.net/streamlabs-tts"
-const RAW_SOUNDS_PATH = "raw-sounds"
-const SOUNDS_PATH = "sounds"
+const RAW_TTS_SOUNDS_PATH = "raw-tts-sounds"
+const TTS_SOUNDS_PATH = "tts-sounds"
 
 type ttsRequest struct {
 	Text  string `json:"text"`
@@ -28,16 +28,16 @@ type ttsResponse struct {
 }
 
 func GetTextToSpeech(text string, filename string, voice string, tempo float32) (string, string, error) {
-	MkDirIfNotExist(RAW_SOUNDS_PATH)
-	MkDirIfNotExist(SOUNDS_PATH)
+	MkDirIfNotExist(RAW_TTS_SOUNDS_PATH)
+	MkDirIfNotExist(TTS_SOUNDS_PATH)
 
-	rawPath, err := filepath.Abs(filepath.Join(RAW_SOUNDS_PATH, filename))
+	rawPath, err := filepath.Abs(filepath.Join(RAW_TTS_SOUNDS_PATH, filename))
 
 	if err != nil {
 		return "", "", err
 	}
 
-	path, err := filepath.Abs(filepath.Join(SOUNDS_PATH, filename))
+	path, err := filepath.Abs(filepath.Join(TTS_SOUNDS_PATH, filename))
 
 	if err != nil {
 		return "", "", err

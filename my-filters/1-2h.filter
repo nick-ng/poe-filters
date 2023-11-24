@@ -16,19 +16,13 @@ Show
 	ItemLevel >= 45
 	SetFontSize 45
 
-Show
-	BaseType "Imbued Wand"
-	Rarity Normal
-	HasInfluence None
-	Corrupted False
-	FracturedItem False
-	Mirrored False
-	Sockets < 6
-	SetBorderColor 200 80 0
-	ItemLevel >= 45
-	SetFontSize 45
+#! linksa RRRG
+#! linksa RRRR
+#! linksa RGG 12
+#! linksa RRG
+#! linksa RRR
 
-#! import 10-sov1.filter
+#! import 20-sov2.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.1 - 1h Melee Levelling ##+\n
 #! del ##+ Section 17 - Ranged(.|\n)+### Section 18 - Armour ##+\n
 #! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n

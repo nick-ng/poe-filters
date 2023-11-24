@@ -21,5 +21,5 @@ Make my item filters for Path of Exile
 
 ### ToDo Comments
 
-- main.go:66: @todo(nick-ng): move some functions to separate files
-- main.go:174: @todo(nick-ng): replace tokens and remove all unknown tokens
+- main.go:85: @todo(nick-ng): move some functions to separate files
+- main.go:240: @todo(nick-ng): replace tokens and remove all unknown tokens

@@ -16,6 +16,13 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
 func main() {
+	homeDir, err := os.UserHomeDir()
+
+	if err != nil {
+		fmt.Println("\nCouldn't get home directory", err)
+		os.Exit(1)
+	}
+
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
@@ -50,12 +57,24 @@ func main() {
 		err := os.WriteFile(path, filterData, 0666)
 
 		if err != nil {
-			fmt.Println("\nError writing filter", filterName, err)
+			fmt.Println("\nError writing filter to output-filters", filterName, err)
 			continue
 		}
 
-		if len(errList) > 0 {
+		path = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
+
+		err = os.WriteFile(path, filterData, 0666)
+
+		if err != nil {
+			fmt.Println("\nError writing filter to PoE Directory", filterName, err)
+			continue
+		}
+
+		if len(errList) > 1 {
 			fmt.Printf(" done with %d errors\n", len(errList))
+			continue
+		} else if len(errList) == 1 {
+			fmt.Println(" done with 1 error")
 			continue
 		} else {
 			fmt.Println(" done")
@@ -75,8 +94,7 @@ func processFilter(filterPath string) (string, []error) {
 
 	rawLines := strings.Split(string(filterData), "\n")
 
-	processedLines := []string{}
-
+	var processedLines []string
 	var currentCommand string
 	options := make(map[string][]string)
 
@@ -98,7 +116,7 @@ func processFilter(filterPath string) (string, []error) {
 						}
 					default:
 						{
-							processedLines = append(processedLines, fmt.Sprintf("# Warning: Unknown sub-command %s", subCommandArguments[1]))
+							processedLines = append(processedLines, fmt.Sprintf("# warning: Unknown sub-command %s", subCommandArguments[1]))
 						}
 					}
 				} else if strings.HasPrefix(trimmedLine, "#") {
@@ -110,7 +128,7 @@ func processFilter(filterPath string) (string, []error) {
 						tempFilter, err := importBaseFilter(options["file"][0])
 						if err != nil {
 							errorList = append(errorList, err)
-							processedLines = append(processedLines, fmt.Sprintf("# Error: couldn't import %s", options["file"]))
+							processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
 							processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
 						} else {
 							for _, deleteRegexpString := range options["delete"] {
@@ -119,7 +137,7 @@ func processFilter(filterPath string) (string, []error) {
 								if err != nil {
 									errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
 									errorList = append(errorList, errors.New(errorString))
-									processedLines = append(processedLines, fmt.Sprintf("# Error: %s", errorString))
+									processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
 								} else {
 									tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
 								}
@@ -130,9 +148,9 @@ func processFilter(filterPath string) (string, []error) {
 						}
 
 					} else {
-						processedLines = append(processedLines, "# Error: No file specified.\n")
+						processedLines = append(processedLines, "# error: No file specified.\n")
 					}
-					processedLines = append(processedLines, trimmedLine)
+					processedLines = append(processedLines, rawLine)
 
 					currentCommand = ""
 					clear(options)
@@ -141,7 +159,7 @@ func processFilter(filterPath string) (string, []error) {
 			}
 		default:
 			{
-				processedLines = append(processedLines, trimmedLine)
+				processedLines = append(processedLines, rawLine)
 				if strings.HasPrefix(trimmedLine, "#! ") {
 					// #! <command> <argument1> <argument2> <etc>
 					// 0  1         2           3
@@ -157,11 +175,11 @@ func processFilter(filterPath string) (string, []error) {
 						fallthrough
 					case "linksa":
 						{
-							processedLines = append(processedLines, utils.GetArmourSocketGroupFilter(commandArguments[2], commandArguments[3:]...))
+							break
 						}
 					default:
 						{
-							processedLines = append(processedLines, fmt.Sprintf("# Warning: Unknown command %s", commandArguments[1]))
+							// Handle in the next loop so we don't get double warnings
 						}
 					}
 				}
@@ -169,7 +187,55 @@ func processFilter(filterPath string) (string, []error) {
 		}
 	}
 
-	joinedFilter := strings.Join(processedLines, "\n")
+	rawLines = strings.Split(strings.Join(processedLines, "\n"), "\n")
+	var processedLines2 []string
+	for _, rawLine := range rawLines {
+		trimmedLine := strings.TrimSpace(rawLine)
+
+		processedLines2 = append(processedLines2, rawLine)
+		if strings.HasPrefix(trimmedLine, "#! ") {
+			// #! <command> <argument1> <argument2> <etc>
+			// 0  1         2           3
+			commandArguments := getCommands(trimmedLine)
+			switch commandArguments[1] {
+			case "import":
+				{
+					// nothing to do
+				}
+			case "links":
+				{
+					if len(commandArguments) < 4 {
+						processedLines2 = append(processedLines2, fmt.Sprintf("# warning: need exactly x arguments for linksmanual. %d found", len(commandArguments)-1))
+						continue
+					}
+
+					filterBlock, err := utils.GetSocketGroupFilter(commandArguments[2], commandArguments[3:]...)
+
+					if err != nil {
+						processedLines2 = append(processedLines2, "# error: couldn't generate linksmanual")
+						processedLines2 = append(processedLines2, fmt.Sprintf("#  %s", err))
+					} else {
+						processedLines2 = append(processedLines2, filterBlock)
+					}
+
+				}
+			case "linksa":
+				fallthrough
+			case "linksarmor":
+				fallthrough
+			case "linksarmour":
+				{
+					processedLines2 = append(processedLines2, utils.GetArmourSocketGroupFilter(commandArguments[2], commandArguments[3:]...))
+				}
+			default:
+				{
+					processedLines2 = append(processedLines2, fmt.Sprintf("# warning: Unknown command %s", commandArguments[1]))
+				}
+			}
+		}
+	}
+
+	joinedFilter := strings.Join(processedLines2, "\n")
 	return joinedFilter, errorList
 	// @todo(nick-ng): replace tokens and remove all unknown tokens
 	// return regexp.MustCompile(`#!.+!#`).ReplaceAllString(joinedFilter, ""), errorList

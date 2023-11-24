@@ -16,12 +16,29 @@ Show
 	SetFontSize 45
 
 # Comments that begin with #! do something
-# You can highlight armour items with coloured links with:
-#! links RRRG
-# You specify a max level:
-#! links RGG 12
-# Or a min and max level:
-#! links RGB 35 44
+# You can highlight items with specific coloured links and play a text-to-speech
+# sound with the `links` command
+#! links RRG axe
+# You can add extra conditions
+	AreaLevel <= 44
+	Class "Axe"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+
+# If the text-to-speech doesn't sound right, you can add a pronounciation
+#! links RRG mace club
+	AreaLevel <= 44
+	Class "Mace"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+
+# You usually want the same coloured links for helmet, gloves, boots, and body
+# armour slots. Use the `linksa` command to generate all four
+#! linksa RRRG
+# You can specify a max level
+#! linksa RGG 12
+# Or a min and max level
+#! linksa RGB 35 44
 
 # You can import a filter from the base-filters or third-party-filters directory with the following:
 #! import example.filter

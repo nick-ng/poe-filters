@@ -7,17 +7,17 @@ import (
 )
 
 type armourSlot struct {
-	BaseType   string
-	TtsStrting string
-	Filename   string
-	Icon       string
+	BaseType  string
+	TtsString string
+	Filename  string
+	Icon      string
 }
 
 var armourSlots = []armourSlot{
-	{BaseType: "Boots", TtsStrting: "boots", Filename: "boots", Icon: "Square"},
-	{BaseType: "Gloves", TtsStrting: "gloves", Filename: "gloves", Icon: "Triangle"},
-	{BaseType: "Helmets", TtsStrting: "helm", Filename: "helm", Icon: "Circle"},
-	{BaseType: "Body Armours", TtsStrting: "body", Filename: "body", Icon: "Pentagon"},
+	{BaseType: "Boots", TtsString: "boots", Filename: "boots", Icon: "Square"},
+	{BaseType: "Gloves", TtsString: "gloves", Filename: "gloves", Icon: "Triangle"},
+	{BaseType: "Helmets", TtsString: "helm", Filename: "helm", Icon: "Circle"},
+	{BaseType: "Body Armours", TtsString: "body", Filename: "body", Icon: "Pentagon"},
 }
 
 func GetSocketGroupText(socketGroup string, itemType string) string {
@@ -82,6 +82,42 @@ func GetSocketGroupText(socketGroup string, itemType string) string {
 	return fmt.Sprintf("%s %s. %s", itemType, strings.Join(ttsArray, " "), itemType)
 }
 
+func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
+	ttsStringPart := " "
+	filenamePart := "_"
+
+	if len(args) == 2 {
+		filenamePart = args[0]
+		ttsStringPart = args[1]
+	} else if len(args) == 1 {
+		filenamePart = args[0]
+		ttsStringPart = args[0]
+	}
+
+	ttsString := GetSocketGroupText(socketGroup, ttsStringPart)
+
+	_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart), "Brian", 2.2)
+
+	if err != nil {
+		return "", err
+	}
+
+	filterLines := []string{
+		"Show",
+		"\tSockets < 6",
+		"\tRarity <= Rare",
+		"\tLinkedSockets <= 4",
+		fmt.Sprintf("\tSocketGroup = %s", socketGroup),
+		"\t#!LinkText!#",
+		"\t#!LinkBorder!#",
+		"\t#!LinkBackground!#",
+		"\tDisableDropSound",
+		fmt.Sprintf("\tCustomAlertSound \"%s\" 300", soundPath),
+	}
+
+	return strings.Join(filterLines, "\n"), nil
+}
+
 func GetArmourSocketGroupFilter(socketGroup string, level ...string) string {
 	var filterBlocks []string
 
@@ -96,28 +132,18 @@ func GetArmourSocketGroupFilter(socketGroup string, level ...string) string {
 	}
 
 	for _, slot := range armourSlots {
-		ttsString := GetSocketGroupText(socketGroup, slot.TtsStrting)
-
-		_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, slot.Filename), "Brian", 2.2)
+		someFilterLines, err := GetSocketGroupFilter(socketGroup, slot.Filename, slot.TtsString)
 
 		if err != nil {
 			continue
 		}
 
 		filterLines := []string{
-			"Show",
+			someFilterLines,
 			fmt.Sprintf("\tAreaLevel >= %s", minLevel),
 			fmt.Sprintf("\tAreaLevel <= %s", maxLevel),
-			"\tSockets < 6",
-			"\tRarity <= Rare",
-			"\tLinkedSockets <= 4",
-			fmt.Sprintf("\tSocketGroup = %s", socketGroup),
 			fmt.Sprintf("\tClass \"%s\"", slot.BaseType),
-			"\t#!LinkText!#",
-			"\t#!LinkBorder!#",
-			"\t#!LinkBackground!#",
-			"\tDisableDropSound",
-			fmt.Sprintf("\tCustomAlertSound \"%s\" 300", soundPath),
+			"\tSetFontSize 45",
 			fmt.Sprintf("\tMinimapIcon 0 Cyan %s", slot.Icon),
 		}
 
