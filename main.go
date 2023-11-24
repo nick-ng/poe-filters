@@ -61,13 +61,15 @@ func main() {
 			continue
 		}
 
-		path = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
+		if filterName != "example.filter" {
+			path = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
 
-		err = os.WriteFile(path, filterData, 0666)
+			err = os.WriteFile(path, filterData, 0666)
 
-		if err != nil {
-			fmt.Println("\nError writing filter to PoE Directory", filterName, err)
-			continue
+			if err != nil {
+				fmt.Println("\nError writing filter to PoE Directory", filterName, err)
+				continue
+			}
 		}
 
 		if len(errList) > 1 {
@@ -174,6 +176,10 @@ func processFilter(filterPath string) (string, []error) {
 					case "links":
 						fallthrough
 					case "linksa":
+						fallthrough
+					case "linksarmor":
+						fallthrough
+					case "linksarmour":
 						{
 							break
 						}
@@ -187,6 +193,8 @@ func processFilter(filterPath string) (string, []error) {
 		}
 	}
 
+	// @todo(nick-ng): make text-to-speech command
+	// @todo(nick-ng): make replacer that replaces sound paths with absolute path
 	rawLines = strings.Split(strings.Join(processedLines, "\n"), "\n")
 	var processedLines2 []string
 	for _, rawLine := range rawLines {
@@ -212,7 +220,7 @@ func processFilter(filterPath string) (string, []error) {
 					filterBlock, err := utils.GetSocketGroupFilter(commandArguments[2], commandArguments[3:]...)
 
 					if err != nil {
-						processedLines2 = append(processedLines2, "# error: couldn't generate linksmanual")
+						processedLines2 = append(processedLines2, "# error: couldn't generate links")
 						processedLines2 = append(processedLines2, fmt.Sprintf("#  %s", err))
 					} else {
 						processedLines2 = append(processedLines2, filterBlock)
