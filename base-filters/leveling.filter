@@ -1,0 +1,138 @@
+Show
+	BaseType == "Quicksilver Flask"
+	AreaLevel <= 15
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 0 203 221 255
+	PlayEffect Green
+	MinimapIcon 2 Green Circle
+	PlayAlertSound 5 200
+
+Show # Show everything on the Twilight Strand
+	AreaLevel = 1
+	SetFontSize 45
+
+Show
+	BaseType "Scroll of Wisdom"
+	Class "Currency"
+	AreaLevel <= 43
+	#!ScrollOfWisdomText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	SetFontSize 45
+	MinimapIcon 2 Grey Raindrop
+	PlayEffect Grey
+	#! tts "wisdom" wisdom Amy 300 1.0
+
+Show
+	BaseType "Portal Scroll"
+	Class "Currency"
+	AreaLevel <= 43
+	#!PortalScrollText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	SetFontSize 45
+	MinimapIcon 2 Grey Star
+	PlayEffect Grey
+	#! tts "portal" portal Amy 300 1.0
+
+Show
+	BaseType "Armourer's Scrap"
+	Class "Currency"
+	AreaLevel <= 43
+	SetFontSize 45
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Grey
+	#! tts "armourer" armourer Amy 300 1.0
+
+Show
+	AreaLevel <= 43
+	Class "Currency"
+	BaseType "Blacksmith's Whetstone"
+	SetFontSize 45
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Green
+	#! tts "blacksmith" blacksmith Amy 300 1.0
+
+Show
+	AreaLevel <= 43
+	Class "Currency"
+	BaseType "Orb of Transmutation"
+	SetFontSize 45
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Green UpsideDownHouse
+	PlayEffect Green
+	#! tts "transmute" transmute Amy 300 1.0
+
+Show
+	AreaLevel <= 43
+	Class "Currency"
+	BaseType "Orb of Alteration"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Green
+	#! tts "alteration" alteration Amy 300 1.0
+
+Show
+	AreaLevel <= 43
+	Class "Currency"
+	BaseType "Orb of Fusing"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Green
+	#! tts "fusing" fusing Amy 300 1.0
+
+Show
+	AreaLevel <= 43
+	Class "Currency"
+	BaseType "Orb of Alchemy"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Green
+	#! tts "alchemy" alchemy Amy 300 1.0
+
+Show
+	SetBorderColor 200 0 0
+	SetFontSize 45
+	BaseType "Iron Ring"
+	AreaLevel <= 30
+	#! tts "iron ring" iron-ring Russell 300 1.0
+
+Show
+	SetBorderColor 200 0 0
+	SetFontSize 45
+	BaseType "Ruby Ring"
+	AreaLevel <= 30
+	#! tts "ruby ring" ruby-ring Russell 300 1.0
+
+Show
+	SetBorderColor 200 0 0
+	SetFontSize 45
+	BaseType "Sapphire Ring"
+	AreaLevel <= 30
+	#! tts "sapphire ring" sapphire-ring Russell 300 1.0
+
+Show
+	SetBorderColor 200 0 0
+	SetFontSize 45
+	BaseType "Topaz Ring"
+	AreaLevel <= 30
+	#! tts "topaz ring" topaz-ring Russell 300 1.0

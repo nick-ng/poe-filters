@@ -32,5 +32,6 @@ raw-tts-sounds/*
 tts-sounds/*
 
 temp.bat
+templist.txt
 
 config.jsonc

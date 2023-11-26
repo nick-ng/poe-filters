@@ -1,7 +1,46 @@
 # Normal comments don't do anything
-# All .filter files in the my-filters directory will be processed
-# The output filter will be in the output-filters directory
-# and have the same name as the source file
+# All .filter files in the my-filters directory will be processed. The repo has
+# this example filter and my personal filters
+# The output filter will have the same name as the source file and will be in
+# the output-filters directory and all filters apart from example.filter will be
+# copied to the directory the Path of Exile uses
+
+# Comments that begin with #! do something
+# You can highlight items with specific coloured links and play a text-to-speech
+# sound with the `links` command. Links with more colours have to be earlier in
+# the filter in order to work properly.
+#! links RRG axe
+# You can add extra conditions
+	AreaLevel <= 43
+	Class "Axe"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+
+# If the text-to-speech doesn't sound right, you can add a pronounciation.
+#! links RRG mace club
+	AreaLevel <= 43
+	Class "Mace"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+
+# You usually want the same coloured links for helmet, gloves, boots, and body
+# armour slots. Use the `linksa` command to generate all four. The default is to
+# show the items from the Twilight Strand (1) to the Chamber of Innocence (43)
+# and stop showing the items from the Torched Courts (44) onwards.
+#! linksa RRRG
+# You can specify a max level
+#! linksa RGG 12
+# Or a min and max level
+#! linksa RGB 35 43
+
+# You can import a filter from the base-filters or third-party-filters directory
+# with the following
+#! import example.filter
+# If both directories have a filter with the same name, the one in base-filters
+# will be imported
+# You can remove parts of the filter with:
+#! delete some regexp
+# The filter will be imported as soon as you reach an uncommented line
 
 Show
 	BaseType "Wyrmscale Gauntlets"
@@ -14,53 +53,16 @@ Show
 	SetBorderColor 200 80 0
 	ItemLevel >= 45
 	SetFontSize 45
-
-# Comments that begin with #! do something
-# You can highlight items with specific coloured links and play a text-to-speech
-# sound with the `links` command
-#! links RRG axe
-# You can add extra conditions
-	AreaLevel <= 44
-	Class "Axe"
-	SetFontSize 35
-	MinimapIcon 0 Cyan Cross
-
-# If the text-to-speech doesn't sound right, you can add a pronounciation
-#! links RRG mace club
-	AreaLevel <= 44
-	Class "Mace"
-	SetFontSize 35
-	MinimapIcon 0 Cyan Cross
-
-# You usually want the same coloured links for helmet, gloves, boots, and body
-# armour slots. Use the `linksa` command to generate all four
-#! linksa RRRG
-# You can specify a max level
-#! linksa RGG 12
-# Or a min and max level
-#! linksa RGB 35 44
-
-# You can import a filter from the base-filters or third-party-filters directory with the following:
-#! import example.filter
-# If both directories have a filter with the same name, the one in base-filters will be imported
-# You can remove parts of the filter with:
-#! delete some regexp
-# The filter will be imported as soon as you reach an uncommented line
-
-Show
-	BaseType "Imbued Wand"
-	Rarity Normal
-	HasInfluence None
-	Corrupted False
-	FracturedItem False
-	Mirrored False
-	Sockets < 6
-	SetBorderColor 200 80 0
-	ItemLevel >= 45
-	SetFontSize 45
+	# You can generate a text-to-speech drop sound. It takes these arguments
+	# 1. phrase - must be in double quotes
+	# 2. filename - this cannot contain a space. The voice will be prepended
+	# 3. voice (optional) - see https://textreader.pro/ for a list of voices
+	# 4. volume (optional) - 0 - 300 as per normal Path of Exile filter settings
+	# 5. tempo (optional) - speed of the voice. 1 is normal. Link colours is 2.2
+	#! tts "unique base" unique-base Brian 300 1.2
 
 #! import test3.filter
-# If the file couldn't be imported, the error will be in the output filter
+# If the file couldn't be imported, the output filter will have an error
 
 Show
 	BaseType "Prophecy Wand"
@@ -74,5 +76,5 @@ Show
 	ItemLevel >= 45
 	SetFontSize 45
 
-# If you have any special comments at the end of the file, make sure you include a final newline.
+# If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
 #! import currency.filter

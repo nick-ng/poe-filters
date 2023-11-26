@@ -72,14 +72,14 @@ func GetSocketGroupText(socketGroup string, itemType string) string {
 	}
 
 	if maxCount == 1 && minCount == 1 {
-		return fmt.Sprintf("%s R G B. %s", itemType, itemType)
+		return fmt.Sprintf("%s R G B", itemType)
 	}
 
 	sort.Slice(ttsArray, func(i, j int) bool {
 		return ttsArray[j] < ttsArray[i]
 	})
 
-	return fmt.Sprintf("%s %s. %s", itemType, strings.Join(ttsArray, " "), itemType)
+	return fmt.Sprintf("%s %s", itemType, strings.Join(ttsArray, " "))
 }
 
 func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
@@ -108,7 +108,6 @@ func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
 		"\tRarity <= Rare",
 		"\tLinkedSockets <= 4",
 		fmt.Sprintf("\tSocketGroup = %s", socketGroup),
-		"\t#!LinkText!#",
 		"\t#!LinkBorder!#",
 		"\t#!LinkBackground!#",
 		"\tDisableDropSound",
@@ -122,7 +121,7 @@ func GetArmourSocketGroupFilter(socketGroup string, level ...string) string {
 	var filterBlocks []string
 
 	minLevel := "1"
-	maxLevel := "44"
+	maxLevel := fmt.Sprintf("%d", (len(socketGroup)*11)-1) // happens to work as a default
 
 	if len(level) == 2 {
 		minLevel = level[0]

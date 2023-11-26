@@ -172,7 +172,7 @@ Show # Orb of Chance is important until yellow maps
 	#!CurrencyBorder!#
 	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "sounds/chance.mp3"
+	#! tts "chance" chance Amy 300 1.2
 
 Show # T2 Currency
 	Class "Currency"

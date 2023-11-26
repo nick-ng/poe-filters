@@ -1,7 +1,6 @@
+#! import leveling.filter
 #! import currency.filter
-
 #! import maps.filter
-
 #! import misc.filter
 
 Show
@@ -15,6 +14,14 @@ Show
 	SetBorderColor 200 80 0
 	ItemLevel >= 45
 	SetFontSize 45
+	# You can generate a text-to-speech drop sound. It takes these arguments
+	# 1. phrase - must be in double quotes
+	# 2. filename - this cannot contain a space. The voice will be prepended
+	# 3. voice - see https://textreader.pro/ for a list of voices
+	# 4. volume - 0 - 300 as per normal Path of Exile filter settings
+	# 5. tempo - speed of the voice. 1 for normal speed. Link colours TTS is 2.2
+	#! tts "unique base" unique-base Brian 300 1.2
+
 
 #! linksa RRRG
 #! linksa RRRR

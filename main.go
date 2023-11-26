@@ -82,6 +82,8 @@ func main() {
 			fmt.Println(" done")
 		}
 	}
+
+	utils.PrintSoundStats()
 }
 
 // @todo(nick-ng): move some functions to separate files
@@ -105,123 +107,132 @@ func processFilter(filterPath string) (string, []error) {
 		switch currentCommand {
 		case "import":
 			{
-				if strings.HasPrefix(trimmedLine, "#! ") {
-					processedLines = append(processedLines, trimmedLine)
-					subCommandArguments := getCommands(trimmedLine)
-					switch subCommandArguments[1] {
-					case "del":
-						fallthrough
-					case "delete":
-						{
-							regexpString := strings.Join(subCommandArguments[2:], " ")
-							options["delete"] = append(options["delete"], regexpString)
-						}
-					default:
-						{
-							processedLines = append(processedLines, fmt.Sprintf("# warning: Unknown sub-command %s", subCommandArguments[1]))
-						}
+				subCommandArguments := getCommands(trimmedLine)
+				switch subCommandArguments[0] {
+				case "del":
+					fallthrough
+				case "delete":
+					{
+						regexpString := strings.Join(subCommandArguments[1:], " ")
+						options["delete"] = append(options["delete"], regexpString)
 					}
-				} else if strings.HasPrefix(trimmedLine, "#") {
-					processedLines = append(processedLines, trimmedLine)
-				} else {
-					// it's a non-comment line so import the filter here then write the line
-					_, present := options["file"]
-					if present {
-						tempFilter, err := importBaseFilter(options["file"][0])
-						if err != nil {
-							errorList = append(errorList, err)
-							processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
-							processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
-						} else {
-							for _, deleteRegexpString := range options["delete"] {
-								deleteRegexp, err := regexp.Compile(deleteRegexpString)
-
+				case "import":
+					fallthrough
+				case "noop":
+					{
+						if !strings.HasPrefix(trimmedLine, "#") || subCommandArguments[0] == "import" {
+							// it's a non-comment line so import the filter here then write the line
+							_, present := options["file"]
+							if present {
+								tempFilter, err := importBaseFilter(options["file"][0])
 								if err != nil {
-									errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
-									errorList = append(errorList, errors.New(errorString))
-									processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+									errorList = append(errorList, err)
+									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
 								} else {
-									tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
+									for _, deleteRegexpString := range options["delete"] {
+										deleteRegexp, err := regexp.Compile(deleteRegexpString)
+
+										if err != nil {
+											errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
+											errorList = append(errorList, errors.New(errorString))
+											processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+										} else {
+											tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
+										}
+									}
+
+									processedLines = append(processedLines, tempFilter)
+									processedLines = append(processedLines, fmt.Sprintf("# End of %s\n", options["file"]))
 								}
+
+							} else {
+								processedLines = append(processedLines, "# error: No file specified.\n")
 							}
 
-							processedLines = append(processedLines, tempFilter)
-							processedLines = append(processedLines, fmt.Sprintf("# End of %s\n", options["file"]))
+							currentCommand = ""
+							clear(options)
 						}
 
-					} else {
-						processedLines = append(processedLines, "# error: No file specified.\n")
-					}
-					processedLines = append(processedLines, rawLine)
+						if subCommandArguments[0] == "import" {
+							currentCommand = "import"
+							options["file"] = []string{subCommandArguments[1]}
+						}
 
-					currentCommand = ""
-					clear(options)
+						processedLines = append(processedLines, rawLine)
+					}
+				default:
+					{
+						processedLines = append(processedLines, trimmedLine)
+
+						warning := fmt.Sprintf("# warning: Unknown sub-command %s", subCommandArguments[0])
+						processedLines = append(processedLines, warning)
+					}
 				}
-				break
 			}
 		default:
 			{
 				processedLines = append(processedLines, rawLine)
-				if strings.HasPrefix(trimmedLine, "#! ") {
-					// #! <command> <argument1> <argument2> <etc>
-					// 0  1         2           3
-					commandArguments := getCommands(trimmedLine)
-					switch commandArguments[1] {
-					case "import":
-						{
-							currentCommand = "import"
-							options["file"] = []string{commandArguments[2]}
-							break
-						}
-					case "links":
-						fallthrough
-					case "linksa":
-						fallthrough
-					case "linksarmor":
-						fallthrough
-					case "linksarmour":
-						{
-							break
-						}
-					default:
-						{
-							// Handle in the next loop so we don't get double warnings
-						}
+
+				commandArguments := getCommands(trimmedLine)
+				switch commandArguments[0] {
+				case "import":
+					{
+						currentCommand = "import"
+						options["file"] = []string{commandArguments[1]}
+					}
+				case "del":
+					fallthrough
+				case "delete":
+					{
+						warning := fmt.Sprintf("# warning: %s only allowed during an import", commandArguments[0])
+						processedLines = append(processedLines, warning)
+					}
+				case "noop":
+					fallthrough
+				default:
+					{
+						// Handle in the next loop so we don't get double warnings
+						// noop is also here
 					}
 				}
 			}
 		}
 	}
 
-	// @todo(nick-ng): make text-to-speech command
-	// @todo(nick-ng): make replacer that replaces sound paths with absolute path
 	rawLines = strings.Split(strings.Join(processedLines, "\n"), "\n")
 	var processedLines2 []string
 	for _, rawLine := range rawLines {
 		trimmedLine := strings.TrimSpace(rawLine)
 
-		processedLines2 = append(processedLines2, rawLine)
 		if strings.HasPrefix(trimmedLine, "#! ") {
-			// #! <command> <argument1> <argument2> <etc>
-			// 0  1         2           3
 			commandArguments := getCommands(trimmedLine)
-			switch commandArguments[1] {
+			switch commandArguments[0] {
 			case "import":
+				fallthrough
+			case "del":
+				fallthrough
+			case "delete":
+				fallthrough
+			case "noop":
 				{
-					// nothing to do
+					processedLines2 = append(processedLines2, rawLine)
+					// noop
 				}
 			case "links":
 				{
-					if len(commandArguments) < 4 {
-						processedLines2 = append(processedLines2, fmt.Sprintf("# warning: need exactly x arguments for linksmanual. %d found", len(commandArguments)-1))
+					processedLines2 = append(processedLines2, rawLine)
+
+					if len(commandArguments) < 2 {
+						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
 						continue
 					}
 
-					filterBlock, err := utils.GetSocketGroupFilter(commandArguments[2], commandArguments[3:]...)
+					filterBlock, err := utils.GetSocketGroupFilter(commandArguments[1], commandArguments[2:]...)
 
 					if err != nil {
-						processedLines2 = append(processedLines2, "# error: couldn't generate links")
-						processedLines2 = append(processedLines2, fmt.Sprintf("#  %s", err))
+						e := fmt.Sprintf("# error: couldn't generate links\n#  %s", err)
+						processedLines2 = append(processedLines2, e)
 					} else {
 						processedLines2 = append(processedLines2, filterBlock)
 					}
@@ -233,20 +244,41 @@ func processFilter(filterPath string) (string, []error) {
 				fallthrough
 			case "linksarmour":
 				{
-					processedLines2 = append(processedLines2, utils.GetArmourSocketGroupFilter(commandArguments[2], commandArguments[3:]...))
+					processedLines2 = append(processedLines2, rawLine)
+
+					if len(commandArguments) < 2 {
+						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
+						continue
+					}
+
+					newLine := utils.GetArmourSocketGroupFilter(commandArguments[1], commandArguments[2:]...)
+					processedLines2 = append(processedLines2, newLine)
+				}
+			case "tts":
+				{
+					newLine := utils.MakeTts(trimmedLine)
+					processedLines2 = append(processedLines2, newLine)
 				}
 			default:
 				{
-					processedLines2 = append(processedLines2, fmt.Sprintf("# warning: Unknown command %s", commandArguments[1]))
+					warning := fmt.Sprintf("# warning: Unknown command %s", commandArguments[0])
+					processedLines2 = append(processedLines2, warning)
 				}
 			}
+		} else if regexp.MustCompile(
+			`^[^#]*CustomAlertSound(Optional)? +"[^:"]+"`,
+		).MatchString(trimmedLine) {
+			processedLines2 = append(processedLines2, utils.FixSoundPath(trimmedLine))
+		} else {
+			processedLines2 = append(processedLines2, rawLine)
 		}
 	}
 
 	joinedFilter := strings.Join(processedLines2, "\n")
+
+	joinedFilter = utils.ApplyAllTokens(joinedFilter)
+
 	return joinedFilter, errorList
-	// @todo(nick-ng): replace tokens and remove all unknown tokens
-	// return regexp.MustCompile(`#!.+!#`).ReplaceAllString(joinedFilter, ""), errorList
 }
 
 func importBaseFilter(filterName string) (string, error) {
@@ -263,5 +295,10 @@ func importBaseFilter(filterName string) (string, error) {
 }
 
 func getCommands(rawCommand string) []string {
-	return strings.Split(rawCommand, " ")
+	commands := strings.Split(rawCommand, " ")
+	if commands[0] != "#!" {
+		return []string{"noop"}
+	}
+
+	return commands[1:]
 }
