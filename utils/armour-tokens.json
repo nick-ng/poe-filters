@@ -1,0 +1,228 @@
+{
+	"str": {
+		"body": [
+			[
+				"Glorious Plate"
+			],
+			[
+				"Gladiator Plate",
+				"Astral Plate"
+			]
+		],
+		"helm": [
+			[
+				"Royal Burgonet"
+			],
+			[
+				"Eternal Burgonet"
+			]
+		],
+		"boots": [
+			[
+				"Titan Greaves"
+			],
+			[
+				"Brimstone Treads",
+				"Vaal Greaves"
+			]
+		],
+		"gloves": [
+			[
+				"Titan Gauntlets"
+			],
+			[
+				"Vaal Gauntlets",
+				"Debilitation Gauntlets"
+			],
+			[
+				"Spiked Gloves"
+			]
+		]
+	},
+	"dex": {
+		"body": [
+			[
+				"Zodiac Leather"
+			],
+			[
+				"Assassin's Garb"
+			]
+		],
+		"helm": [
+			[
+				"Lion Pelt"
+			],
+			[
+				"Sinner Tricorne"
+			]
+		],
+		"boots": [
+			[
+				"Slink Boots"
+			],
+			[
+				"Stormrider Boots",
+				"Stealth Boots"
+			]
+		],
+		"gloves": [
+			[
+				"Slink Gloves",
+				"Sinistral Gloves"
+			],
+			[
+				"Stealth Gloves",
+				"Gripped Gloves"
+			]
+		]
+	},
+	"int": {
+		"body": [
+			[
+				"Vaal Regalia"
+			],
+			[
+				"Widowsilk Robe"
+			]
+		],
+		"helm": [
+			[
+				"Hubris Circlet"
+			],
+			[
+				"Mind Cage"
+			]
+		],
+		"boots": [
+			[
+				"Sorcerer Boots"
+			],
+			[
+				"Dreamquest Slippers",
+				"Arcanist Slippers"
+			]
+		],
+		"gloves": [
+			[
+				"Sorcerer Gloves"
+			],
+			[
+				"Nexus Gloves",
+				"Fingerless Silk Gloves",
+				"Arcanist Gloves"
+			]
+		]
+	},
+	"strdex": {
+		"body": [
+			[
+				"Full Dragonscale"
+			],
+			[
+				"General's Brigandine",
+				"Triumphant Lamellar"
+			]
+		],
+		"helm": [
+			[
+				"Pig-Faced Bascinet"
+			],
+			[
+				"Nightmare Bascinet",
+				"Fluted Bascinet"
+			]
+		],
+		"boots": [
+			[
+				"Two-Toned Boots",
+				"Dragonscale Boots"
+			],
+			[
+				"Hydrascale Boots"
+			]
+		],
+		"gloves": [
+			[
+				"Dragonscale Gauntlets"
+			],
+			[
+				"Hydrascale Gauntlets"
+			]
+		]
+	},
+	"strint": {
+		"body": [
+			[
+				"Saint's Hauberk"
+			],
+			[
+				"Saintly Chainmail",
+				"Elegant Ringmail"
+			]
+		],
+		"helm": [
+			[
+				"Archdemon Crown",
+				"Bone Helmet",
+				"Prophet Crown"
+			],
+			[
+				"Praetor Crown"
+			]
+		],
+		"boots": [
+			[
+				"Two-Toned Boots",
+				"Crusader Boots"
+			],
+			[
+				"Legion Boots"
+			]
+		],
+		"gloves": [
+			[
+				"Crusader Gloves"
+			],
+			[
+				"Apothecary's Gloves",
+				"Legion Gloves"
+			]
+		]
+	},
+	"dexint": {
+		"body": [
+			[
+				"Blood Raiment",
+				"Carnal Armour",
+				"Sadist Garb"
+			],
+			[]
+		],
+		"helm": [
+			[
+				"Blizzard Crown",
+				"Vaal Mask",
+				"Deicide Mask"
+			],
+			[]
+		],
+		"boots": [
+			[
+				"Two-Toned Boots",
+				"Murder Boots"
+			],
+			[
+				"Fugitive Boots",
+				"Assassin's Boots"
+			]
+		],
+		"gloves": [
+			[
+				"Murder Mitts"
+			],
+			[
+				"Assassin's Mitts"
+			]
+		]
+	}
+}

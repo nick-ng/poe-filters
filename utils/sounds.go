@@ -23,7 +23,7 @@ const SILENCE_PATH = "sounds/silence.mp3"
 const DELAY_SECONDS = 5
 
 var SoundCount int
-var MissingSounds []string
+var MissingSounds map[string]bool
 var SilencePath string
 var NextTimestamp int64
 
@@ -39,7 +39,7 @@ type ttsResponse struct {
 
 func init() {
 	SoundCount = 0
-	MissingSounds = []string{}
+	MissingSounds = make(map[string]bool)
 	NextTimestamp = 0
 
 	temp, err := filepath.Abs(SILENCE_PATH)
@@ -251,14 +251,14 @@ func FixSoundPath(originalLine string) string {
 	fileStats, err := os.Stat(actualFilePath)
 	if err != nil && !errors.Is(err, fs.ErrNotExist) {
 		fmt.Println("a", err)
-		MissingSounds = append(MissingSounds, actualFilePath)
+		MissingSounds[actualFilePath] = true
 
 		arguments[0] = "\tCustomAlertSoundOptional "
 		return strings.Join(arguments, "\"")
 	}
 
 	if fileStats == nil || fileStats.Size() == 0 {
-		MissingSounds = append(MissingSounds, actualFilePath)
+		MissingSounds[actualFilePath] = true
 
 		arguments[0] = "\tCustomAlertSoundOptional "
 		return strings.Join(arguments, "\"")
@@ -267,7 +267,7 @@ func FixSoundPath(originalLine string) string {
 	absPath, err := filepath.Abs(actualFilePath)
 
 	if err != nil {
-		MissingSounds = append(MissingSounds, actualFilePath)
+		MissingSounds[actualFilePath] = true
 
 		arguments[0] = "\tCustomAlertSoundOptional "
 		return strings.Join(arguments, "\"")
@@ -286,8 +286,10 @@ func PrintSoundStats() {
 	if len(MissingSounds) > 0 {
 		fmt.Println("Missing sounds:")
 
-		for _, missingSound := range MissingSounds {
-			fmt.Printf("- %s\n", missingSound)
+		for missingSound, value := range MissingSounds {
+			if value {
+				fmt.Printf("- %s\n", missingSound)
+			}
 		}
 	}
 }

@@ -1,0 +1,154 @@
+
+Show
+	AreaLevel <= 12
+	BaseType == "Small Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 12
+	BaseType == "Medium Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 12
+	BaseType == "Large Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life large" life-large Amy 300 1.0
+
+Show
+	AreaLevel <= 18
+	BaseType == "Large Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 18
+	BaseType == "Greater Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life greater" life-greater Amy 300 1.0
+
+Show
+	AreaLevel <= 24
+	BaseType == "Greater Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 24
+	BaseType == "Grand Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life grand" life-grand Amy 300 1.0
+
+Show
+	AreaLevel <= 30
+	BaseType == "Grand Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 30
+	BaseType == "Giant Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life giant" life-giant Amy 300 1.0
+
+Show
+	AreaLevel <= 36
+	BaseType == "Giant Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 36
+	BaseType == "Colossal Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life colossal" life-colossal Amy 300 1.0
+
+Show
+	AreaLevel <= 42
+	BaseType == "Colossal Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 42
+	BaseType == "Sacred Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life sacred" life-sacred Amy 300 1.0
+
+Show
+	AreaLevel <= 60
+	BaseType == "Sacred Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	AreaLevel <= 44
+	BaseType == "Hallowed Life Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 2 Red Raindrop
+	#! tts "life hallowed" life-hallowed Amy 300 1.0
+
+Show
+	AreaLevel <= 60
+	BaseType == "Hallowed Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	SetBackgroundColor 0 0 0 120
+
+Show
+	BaseType == "Divine Life Flask"
+	ItemLevel <= 60
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 255 0 0 200
+	SetBorderColor 255 255 0 200
+	PlayEffect Red
+	#!DefaultBackground!#
+	MinimapIcon 2 Red Raindrop
+	#! tts "life divine" life-divine Amy 300 1.0

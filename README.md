@@ -20,13 +20,10 @@ Make my item filters for Path of Exile
 ## ToDos
 
 - make common base filters
-  - life-flask progression
   - 2h weapon progression
-  - leap slam weapons
-  - library leap slam weapons
-  - act 6 leap slam weapons
+- add rare hiding to bases(?) filter
+  - use sov general and hide rares on non-t0 bases in maps?
 
 ### ToDo Comments
 
-- utils\tokens.go:34: @todo(nick-ng): replace armour group tokens
 - main.go:89: @todo(nick-ng): move some functions to separate files

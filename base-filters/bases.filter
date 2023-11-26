@@ -1,0 +1,241 @@
+Show
+	Corrupted False
+	Mirrored False
+BaseType "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
+	Continue
+
+#####################
+## Vermillion Ring ##
+#####################
+
+Show
+	BaseType "Vermillion Ring"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	SetTextColor 0 0 255 255
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 0 255 255
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	PlayAlertSound 6 200
+
+###########################
+## Rings, Amulets, Belts ##
+###########################
+
+Show
+	BaseType = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
+	ItemLevel >= 85
+	Rarity <= Rare
+	Corrupted False
+	Mirrored False
+	SetFontSize 40
+	#!GoodBaseBorder!#
+	PlayEffect Red
+	MinimapIcon 1 Yellow Cross
+	#!DefaultBackground!#
+
+Show # Influenced Rings
+	HasInfluence Crusader Hunter Redeemer Warlord
+	BaseType "Ring"
+	ItemLevel >= 75
+	Rarity <= Rare
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	SetTextColor 100 0 122 255
+	PlayEffect Cyan
+	PlayAlertSound 1 300
+	MinimapIcon 1 Cyan Cross
+	#!DefaultBackground!#
+
+########################
+## Top Utility Flasks ##
+########################
+
+Show
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
+	ItemLevel >= 85 # Best Move Speed suffix
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	PlayEffect Red
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
+
+###############################
+## Flagellant Utility Flasks ##
+###############################
+
+Show
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Amethyst Flask"
+	ItemLevel >= 80 # Best Flagellant Chance
+	ItemLevel <= 81 # includes a tier of resists during flask effect
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	SetBorderColor 255 255 0 200
+	PlayEffect Red
+	#!DefaultBackground!#
+
+Show
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
+	ItemLevel >= 80 # Any Flagellant Chance
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	SetBorderColor 55 55 0 200
+	#!DefaultBackground!#
+
+##########################
+## Seething Life Flasks ##
+##########################
+
+Show
+	BaseType == "Divine Life Flask"
+	ItemLevel <= 60
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 255 0 0 200
+	SetBorderColor 255 255 0 200
+	PlayEffect Red
+	#!DefaultBackground!#
+	MinimapIcon 2 Red Raindrop
+	#! tts "life divine" life-divine Amy 300 1.0
+
+###########################
+## Helmet, Gloves, Boots ##
+###########################
+
+Show
+	ItemLevel >= 85
+	Rarity <= Rare
+	BaseDefencePercentile >= 80
+	Corrupted False
+	Mirrored False
+	BaseType #!square0!#
+	SetFontSize 40
+	PlayEffect Red
+	CustomAlertSound "sounds/rue-limp.mp3"
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+
+# T2 Spell Suppression ##
+Show
+	ItemLevel >= 76
+	Rarity = Rare
+	BaseDefencePercentile >= 70
+	Corrupted False
+	Mirrored False
+	BaseType #!square2!#
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+
+##########################
+## Body Armour, Shields ##
+##########################
+
+Show
+	ItemLevel >= 86
+	Rarity <= Rare
+	BaseDefencePercentile >= 50
+	Corrupted False
+	Mirrored False
+	BaseType #!body2!#
+	SetFontSize 45
+	PlayEffect Red
+	CustomAlertSound "sounds/haa-jj-all-stars.mp3"
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+
+# T2 Spell Suppression ##
+Show
+	ItemLevel >= 77
+	Rarity = Rare
+	BaseDefencePercentile >= 70
+	Corrupted False
+	Mirrored False
+	BaseType #!body2!#
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+
+#####################
+## Labyrinth Bases ##
+#####################
+
+Show
+	ItemLevel >= 85
+	Rarity <= Rare
+	BaseDefencePercentile >= 80
+	Corrupted False
+	Mirrored False
+	BaseType == #!helm0!# #!boots0!#
+	SetFontSize 45
+	MinimapIcon 1 Green Pentagon
+	SetBorderColor 0 255 0 255
+	#!DefaultBackground!#
+
+###############
+## Fractured ##
+###############
+
+Show
+	Corrupted False
+	FracturedItem True
+	Mirrored False
+	Identified False
+	ItemLevel >= 85
+	BaseType == #!square2!# #!body2!#
+	SetFontSize 45
+	SetTextColor 190 240 0 255
+	SetBorderColor 255 100 100 255
+	#!DefaultBackground!#
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Red Diamond
+
+Show
+	Corrupted False
+	Mirrored False
+	FracturedItem True
+	Identified False
+	BaseType "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Imbued Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
+	SetFontSize 45
+	SetTextColor 190 240 0 255
+	SetBorderColor 255 100 100 255
+	#!DefaultBackground!#
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Red Diamond
+
+Show
+	Corrupted False
+	FracturedItem True
+	Mirrored False
+	Identified False
+	Class == "Amulets" "Belts" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Tools" "Jewels" "Maps" "Rings" "Utility Flasks"
+	SetFontSize 45
+	SetTextColor 190 240 0 255
+	SetBorderColor 255 100 100 255
+	#!DefaultBackground!#
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Red Diamond
+
+Show
+	Corrupted False
+	FracturedItem True
+	Identified False
+	Class "Body Armours" "Boots" "Gloves" "Helmets"
+	SetFontSize 25
+	SetTextColor 190 240 0 180
+	SetBorderColor 200 50 50 255
+	#!DefaultBackground!#

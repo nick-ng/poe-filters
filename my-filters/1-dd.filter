@@ -1,6 +1,30 @@
+Show
+	BaseType "Void Sceptre" "Opal Sceptre"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 82 # T1 Generic DoT multi
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+
+#! linksa BBBB
+#! linksa RBBB
+#! linksa GBBB
+#! linksa RRGB
+#! linksa RGGB
+#! linksa RGBB
+#! linksa GGBB
+#! linksa BBB
+#! linksa GBB
+
+#! import leap-slam.filter
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
+#! import bases.filter
 
-#! linksa BBBB
+#! import 20-sov2.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n

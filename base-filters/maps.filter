@@ -106,7 +106,7 @@ Show # T16
 	SetFontSize 45
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
-	CustomAlertSound "sounds/top-map.mp3"
+	CustomAlertSound "sounds/sirus-take-it.mp3"
 
 Show # High Reds
 	Rarity < Unique
@@ -213,4 +213,4 @@ Show
 	SetBorderColor 203 240 252
 	MinimapIcon 0 Cyan Pentagon
 	PlayEffect Cyan Temp
-	CustomAlertSound "sounds/brian-06-shing.mp3"
+	CustomAlertSound "sounds/whakano-more-like-this.mp3"

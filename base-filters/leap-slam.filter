@@ -1,0 +1,123 @@
+## Leap slam maces
+#! links RGB axe
+	AreaLevel <= 24
+	BaseType == "Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Arming Axe" "Tomahawk" "Chest Splitter"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG axe
+	AreaLevel <= 24
+	BaseType == "Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Arming Axe" "Tomahawk" "Chest Splitter"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG axe
+	AreaLevel <= 24
+	BaseType == "Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Arming Axe" "Tomahawk" "Chest Splitter"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR axe
+	AreaLevel <= 24
+	BaseType == "Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Arming Axe" "Tomahawk" "Chest Splitter"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB axe
+	AreaLevel <= 24
+	BaseType == "Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Arming Axe" "Tomahawk" "Chest Splitter"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+## Leap slam maces
+#! links RGB mace
+	AreaLevel <= 24
+	BaseType == "Driftwood Club" "Tribal Club" "Spiked Club" "War Hammer" "Bladed Mace" "Dream Mace"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG mace
+	AreaLevel <= 24
+	BaseType == "Driftwood Club" "Tribal Club" "Spiked Club" "War Hammer" "Bladed Mace" "Dream Mace"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG mace
+	AreaLevel <= 24
+	BaseType == "Driftwood Club" "Tribal Club" "Spiked Club" "War Hammer" "Bladed Mace" "Dream Mace"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR mace
+	AreaLevel <= 24
+	BaseType == "Driftwood Club" "Tribal Club" "Spiked Club" "War Hammer" "Bladed Mace" "Dream Mace"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB mace
+	AreaLevel <= 24
+	BaseType == "Driftwood Club" "Tribal Club" "Spiked Club" "War Hammer" "Bladed Mace" "Dream Mace"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+## Leap slam sceptre
+#! links RGB sceptre
+	AreaLevel <= 24
+	BaseType == "Grinning Fetish" "Blood Sceptre" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG sceptre
+	AreaLevel <= 24
+	BaseType == "Grinning Fetish" "Blood Sceptre" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG sceptre
+	AreaLevel <= 24
+	BaseType == "Grinning Fetish" "Blood Sceptre" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR sceptre
+	AreaLevel <= 24
+	BaseType == "Grinning Fetish" "Blood Sceptre" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB sceptre
+	AreaLevel <= 24
+	BaseType == "Grinning Fetish" "Blood Sceptre" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+## Leap slam swords
+#! links RGB sword
+	AreaLevel <= 24
+	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG sword
+	AreaLevel <= 24
+	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG sword
+	AreaLevel <= 24
+	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR sword
+	AreaLevel <= 24
+	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB sword
+	AreaLevel <= 24
+	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross

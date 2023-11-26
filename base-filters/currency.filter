@@ -137,9 +137,9 @@ Show # T0 Currency
 	PlayEffect Green
 	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
 
-Show # T1 Currency
+Show # T0.5 Currency
 	Class "Currency"
-	BaseType == "Chaos Orb" "Orb of Scouring" "Orb of Regret" "Orb of Unmaking" "Regal Orb" "Instilling Orb"
+	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
@@ -147,6 +147,18 @@ Show # T1 Currency
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/t90-supplies1.mp3"
+
+
+Show # T1 Currency
+	Class "Currency"
+	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
+	SetFontSize 45
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/izaro-golden.mp3"
 
 Show
 	Class "Currency"
@@ -163,17 +175,6 @@ Show
 ## T2 Currency ##
 #################
 
-Show # Orb of Chance is important until yellow maps
-	Class "Currency"
-	BaseType == "Orb of Chance"
-	AreaLevel < 74
-	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
-	#!DefaultBackground!#
-	MinimapIcon 0 Yellow UpsideDownHouse
-	#! tts "chance" chance Amy 300 1.2
-
 Show # T2 Currency
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb"
@@ -187,6 +188,17 @@ Show # T2 Currency
 #################
 ## T3 Currency ##
 #################
+
+Show # Orb of Chance is more important until yellow maps
+	Class "Currency"
+	BaseType == "Orb of Chance"
+	AreaLevel < 74
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	#! tts "chance" chance Amy 300 1.2
 
 Hide # Red Maps
 	Class "Currency"
