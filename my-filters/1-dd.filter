@@ -25,6 +25,6 @@ Show
 #! import misc.filter
 #! import bases.filter
 
-#! import 20-sov2.filter
+#! import sov1.filter
 #! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
 #! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n

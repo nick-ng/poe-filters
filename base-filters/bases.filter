@@ -239,3 +239,39 @@ Show
 	SetTextColor 190 240 0 180
 	SetBorderColor 200 50 50 255
 	#!DefaultBackground!#
+
+# Hide uninteresting items as you progress
+Hide
+  Rarity Rare
+  AreaLevel >= 68
+  ItemLevel < 83
+  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Corrupted False
+  FracturedItem False
+  Identified False
+  HasInfluence None
+  SetBorderColor 0 200 157 255
+  Sockets < 6
+
+Hide
+  Rarity Magic
+  AreaLevel >= 40
+  ItemLevel < 83
+  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Corrupted False
+  FracturedItem False
+  Identified False
+  HasInfluence None
+  SetBorderColor 0 200 157 255
+  Sockets < 6
+
+Hide
+  Rarity Normal
+  AreaLevel >= 28
+  ItemLevel < 83
+  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Corrupted False
+  FracturedItem False
+  HasInfluence None
+  SetBorderColor 0 200 157 255
+  Sockets < 6

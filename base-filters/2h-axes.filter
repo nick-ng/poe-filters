@@ -1,0 +1,218 @@
+Show
+	AreaLevel <= 12
+	BaseType == "Longsword"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 12
+	BaseType == "Jade Chopper"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 23
+	BaseType == "Woodsplitter"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 23
+	BaseType == "Bastard Sword"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 23
+	BaseType == "Poleaxe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 33
+	BaseType == "Double Axe"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 37
+	BaseType == "Gilded Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 45
+	BaseType == "Shadow Axe"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 45
+	BaseType == "Jasper Chopper"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 49
+	BaseType == "Timber Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 62
+	BaseType == "Headsman Axe"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 62
+	BaseType == "Labrys"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 58
+	BaseType == "Noble Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 60
+	BaseType == "Abyssal Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 67
+	BaseType == "Karui Chopper"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 67
+	BaseType == "Sundering Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 67
+	BaseType == "Ezomyte Axe"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 67
+	BaseType == "Vaal Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+
+
+Show
+	AreaLevel <= 67
+	BaseType == "Despot Axe"
+	Corrupted False
+	SetFontSize 45
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 67
+	BaseType == "Void Axe"
+	Corrupted False
+	SetFontSize 25
+	Rarity <= Rare
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 255 88 255 200
+	MinimapIcon 1 Pink Cross

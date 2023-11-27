@@ -1,3 +1,4 @@
+# Orb of Chance bases
 Show
 	BaseType "Wyrmscale Gauntlets"
 	Rarity Normal
@@ -10,6 +11,30 @@ Show
 	ItemLevel >= 45
 	SetFontSize 45
 
+# Divination Cards
+Show
+	BaseType == "Earth Drinker"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Weapon Base
 Show
 	BaseType "Despot Axe"
 	Corrupted False
@@ -20,19 +45,57 @@ Show
 	MinimapIcon 1 Pink Star
 	#!DefaultBackground!#
 
+# Weapon Recipe
+Show
+	BaseType == "Granite Flask"
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	#!DefaultBackground!#
+	#! tts "granite" granite Amy 300 1.0
+
+
 #! linksa RRRG
 #! linksa RRRR
 #! linksa RGG 12
 #! linksa RRG
 #! linksa RRR
 
+# Rares during leveling
+
+Show
+	AreaLevel <= 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!str2!#
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+
+Show
+	AreaLevel < 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!strinthelm2!# #!strintboots!#
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	SetBorderColor 53 216 234 255
+	#!DefaultBackground!#
+
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
+#! import life-flasks.filter
 
-#! import 20-sov2.filter
+#! import sov1.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
 #! del ##+ Section 17 - Ranged(.|\n)+### Section 18 - Armour ##+\n
 #! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n

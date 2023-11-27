@@ -19,11 +19,6 @@ Make my item filters for Path of Exile
 
 ## ToDos
 
-- make common base filters
-  - 2h weapon progression
-- add rare hiding to bases(?) filter
-  - use sov general and hide rares on non-t0 bases in maps?
-
 ### ToDo Comments
 
 - main.go:89: @todo(nick-ng): move some functions to separate files
