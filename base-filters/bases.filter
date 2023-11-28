@@ -105,7 +105,7 @@ Show
 	PlayEffect Red
 	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
-	#! tts "life divine" life-divine Amy 300 1.0
+	#! tts "divine life" life-divine Amy 300 1.0
 
 ###########################
 ## Helmet, Gloves, Boots ##

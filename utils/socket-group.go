@@ -13,6 +13,8 @@ type armourSlot struct {
 	Icon      string
 }
 
+const SOCKET_GROUP_TEMPO = 1.8
+
 var armourSlots = []armourSlot{
 	{BaseType: "Boots", TtsString: "boots", Filename: "boots", Icon: "Square"},
 	{BaseType: "Gloves", TtsString: "gloves", Filename: "gloves", Icon: "Triangle"},
@@ -96,7 +98,7 @@ func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
 
 	ttsString := GetSocketGroupText(socketGroup, ttsStringPart)
 
-	_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart), "Brian", 2.2)
+	_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart), "Brian", SOCKET_GROUP_TEMPO)
 
 	if err != nil {
 		return "", err

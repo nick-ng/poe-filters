@@ -23,7 +23,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life large" life-large Amy 300 1.0
+	#! tts "large life" life-large Amy 300 1.0
 
 Show
 	AreaLevel <= 18
@@ -41,7 +41,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life greater" life-greater Amy 300 1.0
+	#! tts "greater life" life-greater Amy 300 1.0
 
 Show
 	AreaLevel <= 24
@@ -59,7 +59,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life grand" life-grand Amy 300 1.0
+	#! tts "grand life" life-grand Amy 300 1.0
 
 Show
 	AreaLevel <= 30
@@ -77,7 +77,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life giant" life-giant Amy 300 1.0
+	#! tts "giant life" life-giant Amy 300 1.0
 
 Show
 	AreaLevel <= 36
@@ -95,7 +95,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life colossal" life-colossal Amy 300 1.0
+	#! tts "colossal life" life-colossal Amy 300 1.0
 
 Show
 	AreaLevel <= 42
@@ -113,7 +113,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life sacred" life-sacred Amy 300 1.0
+	#! tts "sacred life" life-sacred Amy 300 1.0
 
 Show
 	AreaLevel <= 60
@@ -131,7 +131,7 @@ Show
 	SetBorderColor 255 0 0 200
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 2 Red Raindrop
-	#! tts "life hallowed" life-hallowed Amy 300 1.0
+	#! tts "hallowed life" life-hallowed Amy 300 1.0
 
 Show
 	AreaLevel <= 60
@@ -151,4 +151,4 @@ Show
 	PlayEffect Red
 	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
-	#! tts "life divine" life-divine Amy 300 1.0
+	#! tts "divine life" life-divine Amy 300 1.0
