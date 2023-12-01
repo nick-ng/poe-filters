@@ -3,7 +3,7 @@
 
 # Divination Cards
 Show
-	BaseType == "A Dab of Ink" "The Gladiator" "Alivia's Grace"
+	BaseType == "A Dab of Ink" "The Gladiator" "The Porcupine" "Alivia's Grace"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
 	SetTextColor 255 140 54 255
@@ -66,18 +66,26 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
+	#!GoodBaseBorder!#
 
 Show
-  Class "Gems"
-  BaseType "Shield Charge"
-  AreaLevel <= 30
-  SetFontSize 45
-  SetBackgroundColor 30 190 190 255
-  SetTextColor 0 0 0 255
-  SetBorderColor 0 0 0 255
-  MinimapIcon 1 White Triangle
-  PlayEffect Grey
-  #! tts "shield charge" shield-charge Amy 300 1.0
+	BaseType "Feathered Arrow Quiver"
+	ItemLevel >= 82 # T1 Projectile Speed, DoT Multi
+	Rarity = Rare
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+	#!GoodBaseBorder!#
+
+Show
+	BaseType "Feathered Arrow Quiver"
+	ItemLevel >= 76 # T2 DoT Multi
+	Rarity = Rare
+	SetFontSize 40
+	MinimapIcon 1 Yellow Cross
+	#!DefaultBackground!#
+	#!GoodBaseBorder!#
 
 Show
 	BaseType "Short Bow"
@@ -86,7 +94,7 @@ Show
 	SetFontSize 40
 
 Show
-	AreaLevel <= 72 # Tier 5
+	AreaLevel <= 72 # Tier 5 map
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
@@ -95,6 +103,7 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
+	#!GoodBaseBorder!#
 
 #! import leveling.filter
 #! import currency.filter

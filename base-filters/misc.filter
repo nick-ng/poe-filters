@@ -45,7 +45,7 @@ Show
 
 Show
 	AreaLevel >= 75
-	Quality >= 7
+	Quality >= 5
 	Quality < 20
 	Class "Gems"
 	SetFontSize 35
