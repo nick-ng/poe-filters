@@ -250,7 +250,7 @@ Hide
   FracturedItem False
   Identified False
   HasInfluence None
-  SetBorderColor 0 200 157 255
+  #!DullBorder!#
   Sockets < 6
 
 Hide
@@ -262,7 +262,7 @@ Hide
   FracturedItem False
   Identified False
   HasInfluence None
-  SetBorderColor 0 200 157 255
+  #!DullBorder!#
   Sockets < 6
 
 Hide
@@ -273,5 +273,5 @@ Hide
   Corrupted False
   FracturedItem False
   HasInfluence None
-  SetBorderColor 0 200 157 255
+  #!DullBorder!#
   Sockets < 6

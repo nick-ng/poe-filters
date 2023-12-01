@@ -1,6 +1,7 @@
 {
 	"DefaultBackground": "SetBackgroundColor 0 0 0 120",
 	"BrightBackground": "SetBackgroundColor 255 255 255 255",
+	"DullBorder": "SetBorderColor 122 122 122 255",
 	"ScrollOfWisdomText": "SetTextColor 210 178 135 220",
 	"PortalScrollText": "SetTextColor 50 240 240 220",
 	"T0CurrencyText": "SetTextColor 250 0 125 255",
@@ -10,6 +11,7 @@
 	"T9CurrencyText": "SetTextColor 190 178 135 255",
 	"CurrencyBorder": "SetBorderColor 0 255 0 255",
 	"GoodBaseBorder": "SetBorderColor 255 88 255 200",
+	"LevelingBorder": "SetBorderColor 13 255 201 255",
 	"LinkBorder": "SetBorderColor 200 0 0 255",
 	"LinkBackground": "SetBackgroundColor 88 0 87 255"
 }

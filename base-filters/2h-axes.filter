@@ -4,8 +4,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -15,8 +15,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -26,8 +26,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -37,8 +37,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -48,8 +48,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -59,8 +59,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -70,8 +70,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -81,8 +81,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -92,8 +92,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -103,8 +103,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -114,8 +114,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -125,8 +125,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -136,8 +136,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -147,8 +147,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -158,8 +158,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -169,8 +169,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -180,8 +180,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -191,8 +191,8 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 
@@ -202,8 +202,8 @@ Show
 	Corrupted False
 	SetFontSize 45
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -213,6 +213,6 @@ Show
 	Corrupted False
 	SetFontSize 25
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 120
-	SetBorderColor 255 88 255 200
+	#!DefaultBackground!#
+	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
