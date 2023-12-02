@@ -143,11 +143,11 @@ Show
 
 Show
 	BaseType == "Divine Life Flask"
-	ItemLevel <= 60
+	ItemLevel <= 66
 	SetFontSize 45
 	Rarity <= Magic
 	SetTextColor 255 0 0 200
-	SetBorderColor 255 255 0 200
+	SetBorderColor 255 0 0 200
 	PlayEffect Red
 	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
