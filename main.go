@@ -143,7 +143,7 @@ func processFilter(filterPath string) (string, []error) {
 									}
 
 									processedLines = append(processedLines, tempFilter)
-									processedLines = append(processedLines, fmt.Sprintf("# End of %s\n", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("# end of %s\n", options["file"]))
 								}
 
 							} else {

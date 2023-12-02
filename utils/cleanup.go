@@ -12,6 +12,8 @@ var blockPrefixes = []string{
 
 var commandCommentRe = regexp.MustCompile(`(^[^#]*)#!`)
 
+var fullHashLineRe = regexp.MustCompile(`^#+$`)
+
 func CleanUpFilter(filter string) string {
 	groups := []string{}
 	currentGroup := []string{}
@@ -35,10 +37,18 @@ func CleanUpFilter(filter string) string {
 
 			currentGroup = []string{"Hide"}
 		} else if strings.HasPrefix(trimmedLine, "#") {
-			currentGroup = append(currentGroup, rawLine)
+			match := fullHashLineRe.MatchString(trimmedLine)
+
+			if !match {
+				currentGroup = append(currentGroup, rawLine)
+			}
 		} else if len(trimmedLine) > 0 {
 			currentGroup = append(currentGroup, fmt.Sprintf("\t%s", trimmedLine))
 		}
+	}
+
+	if isGroupGood(currentGroup) {
+		groups = append(groups, strings.Join(currentGroup, "\n"))
 	}
 
 	return strings.Join(groups, "\n")
