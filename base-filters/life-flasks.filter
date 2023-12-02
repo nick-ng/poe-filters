@@ -5,7 +5,7 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 12
@@ -13,7 +13,7 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 12
@@ -21,7 +21,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "large life" life-large Amy 300 1.0
 
@@ -31,7 +31,15 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 18
+	BaseType == "Large Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 18
@@ -39,7 +47,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "greater life" life-greater Amy 300 1.0
 
@@ -49,7 +57,15 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 24
+	BaseType == "Greater Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 24
@@ -57,7 +73,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "grand life" life-grand Amy 300 1.0
 
@@ -67,7 +83,15 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 30
+	BaseType == "Grand Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 30
@@ -75,7 +99,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "giant life" life-giant Amy 300 1.0
 
@@ -85,7 +109,15 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 36
+	BaseType == "Giant Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 36
@@ -93,7 +125,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "colossal life" life-colossal Amy 300 1.0
 
@@ -103,7 +135,15 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 42
+	BaseType == "Colossal Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 42
@@ -111,17 +151,25 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "sacred life" life-sacred Amy 300 1.0
 
 Show
-	AreaLevel <= 60
+	AreaLevel <= 44
 	BaseType == "Sacred Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 44
+	BaseType == "Sacred Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	AreaLevel <= 44
@@ -129,7 +177,7 @@ Show
 	SetFontSize 45
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "hallowed life" life-hallowed Amy 300 1.0
 
@@ -139,14 +187,21 @@ Show
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
-	SetBackgroundColor 0 0 0 120
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 60
+	BaseType == "Hallowed Life Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+	#!DefaultBackground!#
 
 Show
 	BaseType == "Divine Life Flask"
 	ItemLevel <= 66
 	SetFontSize 45
 	Rarity <= Magic
-	SetTextColor 255 0 0 200
 	SetBorderColor 255 0 0 200
 	PlayEffect Red
 	#!DefaultBackground!#
