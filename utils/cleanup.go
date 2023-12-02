@@ -51,6 +51,8 @@ func CleanUpFilter(filter string) string {
 		groups = append(groups, strings.Join(currentGroup, "\n"))
 	}
 
+	groups = append(groups, "") // final newline
+
 	return strings.Join(groups, "\n")
 }
 

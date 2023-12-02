@@ -266,3 +266,38 @@ Show
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
 	#!DefaultBackground!#
+
+########################
+## Currency Div Cards ##
+########################
+
+Show
+	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate"
+	Class "Divination"
+	SetFontSize 45
+	#!T0CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
+
+Show
+	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
+	Class "Divination"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+Show
+	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
+	Class "Divination"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	#!DefaultBackground!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
