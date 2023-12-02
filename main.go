@@ -157,9 +157,12 @@ func processFilter(filterPath string) (string, []error) {
 						if subCommandArguments[0] == "import" {
 							currentCommand = "import"
 							options["file"] = []string{subCommandArguments[1]}
-						}
 
-						processedLines = append(processedLines, rawLine)
+							tempLine := utils.CleanUpCommand(rawLine)
+							processedLines = append(processedLines, tempLine)
+						} else {
+							processedLines = append(processedLines, rawLine)
+						}
 					}
 				default:
 					{
@@ -172,19 +175,21 @@ func processFilter(filterPath string) (string, []error) {
 			}
 		default:
 			{
-				processedLines = append(processedLines, rawLine)
-
 				commandArguments := getCommands(trimmedLine)
 				switch commandArguments[0] {
 				case "import":
 					{
 						currentCommand = "import"
 						options["file"] = []string{commandArguments[1]}
+
+						tempLine := utils.CleanUpCommand(rawLine)
+						processedLines = append(processedLines, tempLine)
 					}
 				case "del":
 					fallthrough
 				case "delete":
 					{
+						processedLines = append(processedLines, rawLine)
 						warning := fmt.Sprintf("# warning: %s only allowed during an import", commandArguments[0])
 						processedLines = append(processedLines, warning)
 					}
@@ -192,6 +197,7 @@ func processFilter(filterPath string) (string, []error) {
 					fallthrough
 				default:
 					{
+						processedLines = append(processedLines, rawLine)
 						// Handle in the next loop so we don't get double warnings
 						// noop is also here
 					}
@@ -221,7 +227,8 @@ func processFilter(filterPath string) (string, []error) {
 				}
 			case "links":
 				{
-					processedLines2 = append(processedLines2, rawLine)
+					tempLine := utils.CleanUpCommand(rawLine)
+					processedLines2 = append(processedLines2, tempLine)
 
 					if len(commandArguments) < 2 {
 						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
@@ -244,7 +251,8 @@ func processFilter(filterPath string) (string, []error) {
 				fallthrough
 			case "linksarmour":
 				{
-					processedLines2 = append(processedLines2, rawLine)
+					tempLine := utils.CleanUpCommand(rawLine)
+					processedLines2 = append(processedLines2, tempLine)
 
 					if len(commandArguments) < 2 {
 						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
@@ -274,11 +282,11 @@ func processFilter(filterPath string) (string, []error) {
 		}
 	}
 
-	joinedFilter := strings.Join(processedLines2, "\n")
+	filter := strings.Join(processedLines2, "\n")
+	filter = utils.ApplyAllTokens(filter)
+	filter = utils.CleanUpFilter(filter)
 
-	joinedFilter = utils.ApplyAllTokens(joinedFilter)
-
-	return joinedFilter, errorList
+	return filter, errorList
 }
 
 func importBaseFilter(filterName string) (string, error) {
