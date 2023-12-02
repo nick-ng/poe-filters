@@ -150,7 +150,7 @@ Show
 	BaseType #!body2!#
 	SetFontSize 45
 	PlayEffect Red
-	CustomAlertSound "sounds/haa-jj-all-stars.mp3"
+	CustomAlertSound "sounds/rue-woo.mp3"
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
 

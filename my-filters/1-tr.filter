@@ -55,3 +55,6 @@ Show
 #! del #hyrri's quiver recipe(.|\n)+#quivershit
 #! del #elemental bows \(ele dmg implicit\)(.|\n)+#chaos bows \(fastest\)
 #! del #bleed bows \(highest avg dmg\)(.|\n)+## Section 18 - Armour ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n

@@ -51,7 +51,7 @@ Show
 	BaseType "Battle Buckler" "Crusader Buckler" # 9% ms bucklers
 	SetFontSize 45
 	PlayEffect Red
-	CustomAlertSound "sounds/haa-jj-all-stars.mp3"
+	CustomAlertSound "sounds/rue-woo.mp3"
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
 
@@ -115,3 +115,6 @@ Show
 #! import sov1.filter
 #! del ##+ Section 14 - Caster(.|\n)+## Section 18 - Armour ##+\n
 #! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
