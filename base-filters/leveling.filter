@@ -16,7 +16,7 @@ Show # Show everything on the Twilight Strand
 Show
 	BaseType "Scroll of Wisdom"
 	Class "Currency"
-	AreaLevel <= 43
+	AreaLevel <= 24
 	#!ScrollOfWisdomText!#
 	#!CurrencyBorder!#
 	#!DefaultBackground!#
@@ -28,7 +28,7 @@ Show
 Show
 	BaseType "Portal Scroll"
 	Class "Currency"
-	AreaLevel <= 43
+	AreaLevel <= 24
 	#!PortalScrollText!#
 	#!CurrencyBorder!#
 	#!DefaultBackground!#
@@ -40,7 +40,7 @@ Show
 Show
 	BaseType "Armourer's Scrap"
 	Class "Currency"
-	AreaLevel <= 43
+	AreaLevel <= 24
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
@@ -50,7 +50,7 @@ Show
 	#! tts "armourer" armourer Amy 300 1.0
 
 Show
-	AreaLevel <= 43
+	AreaLevel <= 32
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
@@ -62,7 +62,7 @@ Show
 	#! tts "blacksmith" blacksmith Amy 300 1.0
 
 Show
-	AreaLevel <= 43
+	AreaLevel <= 32
 	Class "Currency"
 	BaseType "Orb of Transmutation"
 	SetFontSize 45
@@ -74,7 +74,7 @@ Show
 	#! tts "transmute" transmute Amy 300 1.0
 
 Show
-	AreaLevel <= 43
+	AreaLevel <= 32
 	Class "Currency"
 	BaseType "Orb of Alteration"
 	SetFontSize 45
@@ -86,7 +86,7 @@ Show
 	#! tts "alteration" alteration Amy 300 1.0
 
 Show
-	AreaLevel <= 43
+	AreaLevel <= 32
 	Class "Currency"
 	BaseType "Orb of Fusing"
 	SetFontSize 45
@@ -98,7 +98,7 @@ Show
 	#! tts "fusing" fusing Amy 300 1.0
 
 Show
-	AreaLevel <= 43
+	AreaLevel <= 32
 	Class "Currency"
 	BaseType "Orb of Alchemy"
 	SetFontSize 45

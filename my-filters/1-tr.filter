@@ -42,6 +42,47 @@ Show
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
 
+Show
+	BaseType == "Divine Life Flask"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 81 # T1 increased amount recovered
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/rue-woo.mp3"
+
+Show
+	BaseType "Feathered Arrow Quiver"
+	ItemLevel >= 82 # T1 Projectile Speed, DoT Multi
+	Rarity = Rare
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!DefaultBackground!#
+	#!GoodBaseBorder!#
+	CustomAlertSound "sounds/rue-woo.mp3"
+
+Show
+	BaseType "Feathered Arrow Quiver"
+	ItemLevel >= 76 # T2 DoT Multi
+	Rarity = Rare
+	SetFontSize 40
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Cross
+	#!DefaultBackground!#
+	#!LevelingBorder!#
+	CustomAlertSound "sounds/rue-limp.mp3"
+
+Show
+	BaseType "Feathered Arrow Quiver"
+	Rarity = Rare
+	SetFontSize 40
+	MinimapIcon 1 Yellow Cross
+	#!DefaultBackground!#
+	#!LevelingBorder!#
+
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
