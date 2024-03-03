@@ -1,8 +1,6 @@
 package utils
 
 import (
-	"bytes"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
@@ -16,7 +14,7 @@ import (
 	"time"
 )
 
-const API_URL = "https://us-central1-sunlit-context-217400.cloudfunctions.net/streamlabs-tts"
+const API_URL = "https://api.streamelements.com/kappa/v2/speech"
 const RAW_TTS_SOUNDS_PATH = "raw-tts-sounds"
 const TTS_SOUNDS_PATH = "tts-sounds"
 const SILENCE_PATH = "sounds/silence.mp3"
@@ -70,6 +68,7 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	rawPath, err := filepath.Abs(filepath.Join(RAW_TTS_SOUNDS_PATH, filename))
 
 	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
@@ -78,6 +77,7 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	finalPath, err := filepath.Abs(filepath.Join(TTS_SOUNDS_PATH, filename))
 
 	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
@@ -96,20 +96,23 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 
 	client := http.Client{}
 
-	requestJsonBytes, err := json.Marshal(ttsRequest{
-		Text:  text,
-		Voice: voice,
-	})
+	// requestJsonBytes, err := json.Marshal(ttsRequest{
+	// 	Text:  text,
+	// 	Voice: voice,
+	// })
+
+	// if err != nil { fmt.Println(err)
+	// 	return "", "", err
+	// }
+
+	// bodyReader := bytes.NewReader(requestJsonBytes)
+
+	// req, err := http.NewRequest(http.MethodPost, API_URL, bodyReader)
+	url := fmt.Sprintf("%s/?voice=%s&text=%s", API_URL, voice, text)
+	req, err := http.NewRequest(http.MethodGet, url, nil)
 
 	if err != nil {
-		return "", "", err
-	}
-
-	bodyReader := bytes.NewReader(requestJsonBytes)
-
-	req, err := http.NewRequest(http.MethodPost, API_URL, bodyReader)
-
-	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
@@ -120,38 +123,45 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	res, err := client.Do(req)
 
 	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
 	resBody, err := io.ReadAll(res.Body)
 
+	// if err != nil { fmt.Println(err)
+	// 	return "", "", err
+	// }
+
+	// resObj := ttsResponse{}
+
+	// json.Unmarshal(resBody, &resObj)
+
+	soundBody := resBody
+
+	// fmt.Println(temp)
+
+	// if !resObj.Success {
+	// 	return "", "", errors.New("couldn't get a speech url")
+	// }
+
+	// soundRes, err := http.Get(resObj.SpeakUrl)
+
+	// if err != nil { fmt.Println(err)
+	// 	return "", "", err
+	// }
+
+	// soundBody, err := io.ReadAll(soundRes.Body)
+
 	if err != nil {
-		return "", "", err
-	}
-
-	resObj := ttsResponse{}
-
-	json.Unmarshal(resBody, &resObj)
-
-	if !resObj.Success {
-		return "", "", errors.New("couldn't get a speech url")
-	}
-
-	soundRes, err := http.Get(resObj.SpeakUrl)
-
-	if err != nil {
-		return "", "", err
-	}
-
-	soundBody, err := io.ReadAll(soundRes.Body)
-
-	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
 	err = os.WriteFile(rawPath, soundBody, 0666)
 
 	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 
@@ -165,6 +175,7 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	err = os.WriteFile("templist.txt", []byte(fileList), 0666)
 
 	if err != nil {
+		fmt.Println(err)
 		return "", "", err
 	}
 

@@ -245,7 +245,7 @@ Hide
   Rarity Rare
   AreaLevel >= 68
   ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
   Corrupted False
   FracturedItem False
   Identified False
@@ -257,7 +257,7 @@ Hide
   Rarity Magic
   AreaLevel >= 40
   ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
   Corrupted False
   FracturedItem False
   Identified False
@@ -269,7 +269,7 @@ Hide
   Rarity Normal
   AreaLevel >= 28
   ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour"
+  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
   Corrupted False
   FracturedItem False
   HasInfluence None
