@@ -73,7 +73,7 @@ func GetSocketGroupText(socketGroup string, itemType string) string {
 		return itemType
 	}
 
-	if maxCount == 1 && minCount == 1 {
+	if maxCount == 1 && minCount == 1 && len(ttsArray) == 3 {
 		return fmt.Sprintf("%s R G B", itemType)
 	}
 

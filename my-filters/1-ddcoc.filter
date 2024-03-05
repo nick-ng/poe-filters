@@ -1,0 +1,67 @@
+# Divination Cards
+Show
+	BaseType == "The Lich" "The Penitent" "The Dreamer" "The Breach"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+Show
+	BaseType "Burnished Foil" "Battered Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 77 # T1 Attack Speed
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+
+# Anointed Amulets
+Show
+	Class Amulet
+	AnyEnchantment True
+	SetFontSize 45
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+	MinimapIcon 1 Pink Triangle
+	#!LinkBorder!#
+	#!DefaultBackground!#
+
+#! linksa BBBB
+#! linksa RBBB
+#! linksa GBBB
+#! linksa RRGB
+#! linksa RGGB
+#! linksa RGBB
+#! linksa GGBB
+#! linksa BBB
+#! linksa GBB
+
+#! import leap-slam.filter
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov1.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
