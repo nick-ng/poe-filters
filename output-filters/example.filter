@@ -1,0 +1,523 @@
+# Normal comments don't do anything
+# All .filter files in the my-filters directory will be processed. The repo has
+# this example filter and my personal filters
+# The output filter will have the same name as the source file and will be in
+# the output-filters directory and all filters apart from example.filter will be
+# copied to the directory the Path of Exile uses
+# Comments that begin with #! do something
+# You can highlight items with specific coloured links and play a text-to-speech
+# sound with the `links` command. Links with more colours have to be earlier in
+# the filter in order to work properly.
+#? links RRG axe
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrg-axe.mp3" 300
+# You can add extra conditions
+	AreaLevel <= 43
+	Class "Axe"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+# If the text-to-speech doesn't sound right, you can add a pronounciation.
+#? links RRG mace club
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrg-mace.mp3" 300
+	AreaLevel <= 43
+	Class "Mace"
+	SetFontSize 35
+	MinimapIcon 0 Cyan Cross
+# You usually want the same coloured links for helmet, gloves, boots, and body
+# armour slots. Use the `linksa` command to generate all four. The default is to
+# show the items from the Twilight Strand (1) to the Chamber of Innocence (43)
+# and stop showing the items from the Torched Courts (44) onwards.
+#? linksa RRRG
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-boots.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 43
+	Class "Boots"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Square
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-gloves.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 43
+	Class "Gloves"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Triangle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-helm.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 43
+	Class "Helmets"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Circle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-body.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 43
+	Class "Body Armours"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Pentagon
+# You can specify a max level
+#? linksa RGG 12
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-boots.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 12
+	Class "Boots"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Square
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-gloves.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 12
+	Class "Gloves"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Triangle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-helm.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 12
+	Class "Helmets"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Circle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGG
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-body.mp3" 300
+	AreaLevel >= 1
+	AreaLevel <= 12
+	Class "Body Armours"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Pentagon
+# Or a min and max level
+#? linksa RGB 35 43
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGB
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-boots.mp3" 300
+	AreaLevel >= 35
+	AreaLevel <= 43
+	Class "Boots"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Square
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGB
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-gloves.mp3" 300
+	AreaLevel >= 35
+	AreaLevel <= 43
+	Class "Gloves"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Triangle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGB
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-helm.mp3" 300
+	AreaLevel >= 35
+	AreaLevel <= 43
+	Class "Helmets"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Circle
+Show
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGB
+	SetBorderColor 200 0 0 255
+	SetBackgroundColor 88 0 87 255
+	DisableDropSound
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-body.mp3" 300
+	AreaLevel >= 35
+	AreaLevel <= 43
+	Class "Body Armours"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Pentagon
+# You can import a filter from the base-filters or third-party-filters directory
+# with the following
+#? import example.filter
+# If both directories have a filter with the same name, the one in base-filters
+# will be imported
+# You can remove parts of the filter with:
+# The filter will be imported as soon as you reach an uncommented line
+## example.filter
+Show
+	BaseType "Glorious Plate"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+# end of [example.filter]
+Show
+	BaseType "Wyrmscale Gauntlets"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+	# You can generate a text-to-speech drop sound. It takes these arguments
+	# 1. phrase - must be in double quotes
+	# 2. filename - this cannot contain a space. The voice will be prepended
+	# 3. voice (optional) - see https://textreader.pro/ for a list of voices
+	# 4. volume (optional) - 0 - 300 as per normal Path of Exile filter settings
+	# 5. tempo (optional) - speed of the voice. 1 is normal. Link colours is 2.2
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\brian-unique-base.mp3" 300
+#? import test3.filter
+# If the file couldn't be imported, the output filter will have an error
+# error: couldn't import [test3.filter]
+# open third-party-filters\test3.filter: The system cannot find the file specified.
+Show
+	BaseType "Prophecy Wand"
+	Rarity Normal
+	HasInfluence None
+	Corrupted False
+	FracturedItem False
+	Mirrored False
+	Sockets < 6
+	SetBorderColor 200 80 0
+	ItemLevel >= 45
+	SetFontSize 45
+# If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
+#? import currency.filter
+## Recombinator ##
+Show
+	BaseType "Recombinator"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 250 250 250
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	CustomAlertSound "d:\git\poe-filters\sounds\rue-bring-me-back.mp3"
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+Show
+	BaseType "Power Core"
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+Show
+	Class "Sentinel Drone"
+	BaseType "Apex Sentinel"
+	SetBackgroundColor 200 200 0
+	SetBorderColor 200 200 200
+	SetFontSize 30
+Show
+	Class "Sentinel Drone"
+	Rarity Unique
+	SetBackgroundColor 0 150 250
+	SetBorderColor 225 100 0
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+Show
+	Class "Sentinel Drone"
+	Rarity Magic Rare
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+Show
+	Class "Sentinel Drone"
+	Rarity Normal
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+## Wisdom and Portal ##
+Show
+	BaseType "Scroll of Wisdom"
+	SetTextColor 210 178 135 220
+	Continue
+Show
+	BaseType "Portal Scroll"
+	SetTextColor 50 240 240 220
+	Continue
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 77
+	StackSize < 8
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	SetFontSize 45
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 67
+	StackSize < 4
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	SetFontSize 45
+Show
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	SetFontSize 40
+	MinimapIcon 0 Grey Raindrop
+## T0/T1 Currency ##
+Show
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-aaaaaa.mp3"
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+Show
+	BaseType "Imprint"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+Show
+	Class "Currency"
+	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
+	SetFontSize 45
+	SetTextColor 250 0 125 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+Show
+	Class "Currency"
+	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\martin-brundle-is-that-glock.mp3"
+Show
+	Class "Currency"
+	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\t90-supplies1.mp3"
+Show
+	Class "Currency"
+	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\izaro-golden.mp3"
+Show
+	Class "Currency"
+	BaseType "Catalyst" "Eldritch"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\gamersnexus-thanks-intel.mp3"
+## T2 Currency ##
+Show
+	Class "Currency"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+## T3 Currency ##
+Show
+	Class "Currency"
+	BaseType == "Orb of Chance"
+	AreaLevel < 74
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-chance.mp3" 300
+Hide
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	AreaLevel > 77
+	StackSize < 3
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+Show
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Green UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\water-drop.mp3"
+## T4 Currency ##
+#Hide # Yellow Maps
+#	Class "Currency"
+#	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+#	SetFontSize 45
+#	AreaLevel > 72
+#	StackSize < 6
+#	SetTextColor 0 255 0 255
+#	SetBorderColor 0 255 0 255
+#	SetBackgroundColor 0 0 0 120
+Hide
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 45
+	AreaLevel > 67
+	StackSize < 3
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+Show
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Grey UpsideDownHouse
+	# CustomAlertSound "sounds/water-drop.mp3"
+## Other Currency ##
+Show
+	Class "Currency"
+	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
+	StackSize > 1
+	SetFontSize 45
+	SetTextColor 190 178 135 255
+	SetBorderColor 190 178 135 255
+	SetBackgroundColor 0 0 0 120
+## Currency Div Cards ##
+Show
+	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 250 0 125 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+Show
+	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+Show
+	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	SetBackgroundColor 0 0 0 120
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+# end of [currency.filter]

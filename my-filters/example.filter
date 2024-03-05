@@ -6,6 +6,12 @@
 # copied to the directory the Path of Exile uses
 
 # Comments that begin with #! do something
+# #! skip will stop processing the filter and skip writing the filter
+# The filter will be processed until the skip comment. This means any
+# text-to-speech comments before the skip comment will be processed. To save
+# processing time, you should skip as early as possible.
+#! skip
+
 # You can highlight items with specific coloured links and play a text-to-speech
 # sound with the `links` command. Links with more colours have to be earlier in
 # the filter in order to work properly.

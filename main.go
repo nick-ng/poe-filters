@@ -45,11 +45,16 @@ func main() {
 
 		filterName := dir.Name()
 
-		fmt.Printf("%d: %s...", i+1, filterName)
+		fmt.Printf("%d: %s... ", i+1, filterName)
 
 		path := filepath.Join(MY_FILTERS_PATH, filterName)
 
 		filter, errList := processFilter(path)
+
+		if len(filter) == 0 {
+			fmt.Println("skipped")
+			continue
+		}
 
 		filterData := []byte(filter)
 
@@ -73,13 +78,13 @@ func main() {
 		}
 
 		if len(errList) > 1 {
-			fmt.Printf(" done with %d errors\n", len(errList))
+			fmt.Printf("done with %d errors\n", len(errList))
 			continue
 		} else if len(errList) == 1 {
-			fmt.Println(" done with 1 error")
+			fmt.Println("done with 1 error")
 			continue
 		} else {
-			fmt.Println(" done")
+			fmt.Println("done")
 		}
 	}
 
@@ -192,6 +197,10 @@ func processFilter(filterPath string) (string, []error) {
 						processedLines = append(processedLines, rawLine)
 						warning := fmt.Sprintf("# warning: %s only allowed during an import", commandArguments[0])
 						processedLines = append(processedLines, warning)
+					}
+				case "skip":
+					{
+						return "", []error{}
 					}
 				case "noop":
 					fallthrough
