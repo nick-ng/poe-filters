@@ -42,6 +42,16 @@ Show
 	#!LinkBorder!#
 	#!DefaultBackground!#
 
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!#
+  #!GoodBaseBorder!#
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 300 1.0
+  MinimapIcon 1 Pink Star
+
 #! linksa BBBB
 #! linksa RBBB
 #! linksa GBBB
