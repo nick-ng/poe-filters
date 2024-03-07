@@ -29,8 +29,39 @@ Show
 	Rarity <= Rare
 	ItemLevel >= 77 # T1 Attack Speed
 	#!GoodBaseBorder!#
+	MinimapIcon 2 Pink Star
+	#!DefaultBackground!#
+
+Show
+	BaseType "Burnished Foil" "Battered Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 59 # T2 Crit Chance/Multi
+	#!MediumBaseBorder!#
 	MinimapIcon 1 Pink Star
 	#!DefaultBackground!#
+
+Show
+	Class "Thrusting"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 77 # T1 Attack Speed
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+
+Show
+  Class "Currency"
+  BaseType "of Loathing" "of Zeal"
+  SetFontSize 45
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 250
+  #!EssenceBackground!#
+  PlayAlertSound 2 50
+  PlayEffect White
+  MinimapIcon 2 White Circle
 
 # Anointed Amulets
 Show

@@ -10,8 +10,11 @@
 	"T3CurrencyText": "SetTextColor 0 255 0 255",
 	"T9CurrencyText": "SetTextColor 190 178 135 255",
 	"CurrencyBorder": "SetBorderColor 0 255 0 255",
-	"GoodBaseBorder": "SetBorderColor 255 88 255 200",
+	"GoodBaseBorder": "SetBorderColor 255 117 255 200",
+	"MediumBaseBorder": "SetBorderColor 236 0 236 200",
+	"OkBaseBorder": "SetBorderColor 132 0 132 200",
 	"LevelingBorder": "SetBorderColor 13 255 201 255",
 	"LinkBorder": "SetBorderColor 200 0 0 255",
-	"LinkBackground": "SetBackgroundColor 88 0 87 255"
+	"LinkBackground": "SetBackgroundColor 88 0 87 255",
+	"EssenceBackground": "SetBackgroundColor 154 141 207 255"
 }
