@@ -1,0 +1,95 @@
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 1
+	PlayAlertSound 1 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 2
+	PlayAlertSound 2 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 3
+	PlayAlertSound 3 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 4
+	PlayAlertSound 4 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 5
+	PlayAlertSound 5 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 6
+	PlayAlertSound 6 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 7
+	PlayAlertSound 7 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 8
+	PlayAlertSound 8 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 9
+	PlayAlertSound 9 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 10
+	PlayAlertSound 10 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 11
+	PlayAlertSound 11 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 12
+	PlayAlertSound 12 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 13
+	PlayAlertSound 13 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 14
+	PlayAlertSound 14 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 15
+	PlayAlertSound 15 200
+
+Show
+	BaseType "Scroll of Wisdom"
+	#!ScrollOfWisdomText!#
+	StackSize = 16
+	PlayAlertSound 16 200
