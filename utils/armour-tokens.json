@@ -46,6 +46,13 @@
 			],
 			[
 				"Assassin's Garb"
+			],
+			[
+				"Exquisite Leather"
+			],
+			[
+				"Destiny Leather",
+				"Sharkskin Tunic"
 			]
 		],
 		"helm": [
@@ -54,6 +61,13 @@
 			],
 			[
 				"Sinner Tricorne"
+			],
+			[
+				"Silken Hood"
+			],
+			[
+				"Ursine Pelt",
+				"Noble Tricorne"
 			]
 		],
 		"boots": [
@@ -63,6 +77,14 @@
 			[
 				"Stormrider Boots",
 				"Stealth Boots"
+			],
+			[
+				"Shagreen Boots"
+			],
+			[
+				"Windbreak Boots",
+				"Sharkskin Boots",
+				"Eelskin Boots"
 			]
 		],
 		"gloves": [
@@ -73,6 +95,13 @@
 			[
 				"Stealth Gloves",
 				"Gripped Gloves"
+			],
+			[
+				"Shagreen Gloves"
+			],
+			[
+				"Sharkskin Gloves",
+				"Eelskin Gloves"
 			]
 		]
 	},
@@ -121,6 +150,13 @@
 			[
 				"General's Brigandine",
 				"Triumphant Lamellar"
+			],
+			[
+				"Desert Brigandine"
+			],
+			[
+				"Dragonscale Doublet",
+				"Battle Lamellar"
 			]
 		],
 		"helm": [
@@ -130,6 +166,13 @@
 			[
 				"Nightmare Bascinet",
 				"Fluted Bascinet"
+			],
+			[
+				"Lacquered Helmet"
+			],
+			[
+				"Fencer Helm",
+				"Secutor Helm"
 			]
 		],
 		"boots": [
@@ -139,6 +182,13 @@
 			],
 			[
 				"Hydrascale Boots"
+			],
+			[
+				"Wyrmscale Boots"
+			],
+			[
+				"Serpentscale Boots",
+				"Steelscale Boots"
 			]
 		],
 		"gloves": [
@@ -147,6 +197,13 @@
 			],
 			[
 				"Hydrascale Gauntlets"
+			],
+			[
+				"Wyrmscale Gauntlets"
+			],
+			[
+				"Serpentscale Gauntlets",
+				"Steelscale Gauntlets"
 			]
 		]
 	},
@@ -196,7 +253,14 @@
 				"Carnal Armour",
 				"Sadist Garb"
 			],
-			[]
+			[],
+			[
+				"Varnished Coat"
+			],
+			[
+				"Sentinel Jacket",
+				"Crypt Armour"
+			]
 		],
 		"helm": [
 			[
@@ -204,7 +268,14 @@
 				"Vaal Mask",
 				"Deicide Mask"
 			],
-			[]
+			[],
+			[
+				"Harlequin Mask"
+			],
+			[
+				"Regicide Mask",
+				"Callous Mask"
+			]
 		],
 		"boots": [
 			[
@@ -214,6 +285,13 @@
 			[
 				"Fugitive Boots",
 				"Assassin's Boots"
+			],
+			[
+				"Carnal Boots"
+			],
+			[
+				"Ambush Boots",
+				"Trapper Boots"
 			]
 		],
 		"gloves": [
@@ -222,6 +300,13 @@
 			],
 			[
 				"Assassin's Mitts"
+			],
+			[
+				"Carnal Mitts"
+			],
+			[
+				"Ambush Mitts",
+				"Trapper Mitts"
 			]
 		]
 	}

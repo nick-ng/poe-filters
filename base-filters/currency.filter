@@ -293,7 +293,8 @@ Show
 	#!CurrencyBorder!#
 	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
 Show
 	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
@@ -303,4 +304,5 @@ Show
 	#!CurrencyBorder!#
 	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
