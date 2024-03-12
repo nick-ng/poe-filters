@@ -1,0 +1,37 @@
+# Divination Cards
+
+# Build Uniques
+
+# Leveling Items
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!strint3!# #!strdex3!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+	#!DefaultBackground!#
+
+Show
+	BaseType "Divine Mana Flask" "Eternal Mana Flask"
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Blue Star
+	#!BrightBorder!#
+	#!DefaultBackground!#
+
+#! import fire-templar-start.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov1.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n

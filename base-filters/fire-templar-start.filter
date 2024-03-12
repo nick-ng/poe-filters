@@ -1,4 +1,14 @@
 Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+	#!DefaultBackground!#
+
+Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
@@ -7,19 +17,6 @@ Show
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 300 1.0
   MinimapIcon 1 Pink Star
-
-# Leveling Items
-Show
-	AreaLevel < 77
-	Rarity = Rare
-	Corrupted False
-	Mirrored False
-	BaseType #!dex3!# #!dexint3!# #!strdex3!#
-	SetFontSize 35
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 #! linksa BBBB
 #! linksa RBBB
