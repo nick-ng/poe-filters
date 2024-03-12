@@ -129,8 +129,17 @@ func processFilter(filterPath string) (string, []error) {
 							// it's a non-comment line so import the filter here then write the line
 							_, present := options["file"]
 							if present {
-								tempFilter, err := importBaseFilter(options["file"][0])
+								_, fullPath, err := importBaseFilter(options["file"][0])
+
 								if err != nil {
+									errorList = append(errorList, err)
+									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
+								}
+
+								tempFilter, errs := processFilter(fullPath)
+								// if err != nil {
+								if len(errs) != 0 {
 									errorList = append(errorList, err)
 									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
 									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
@@ -298,7 +307,7 @@ func processFilter(filterPath string) (string, []error) {
 	return filter, errorList
 }
 
-func importBaseFilter(filterName string) (string, error) {
+func importBaseFilter(filterName string) (string, string, error) {
 	path := filepath.Join(BASE_FILTERS_PATH, filterName)
 
 	filterData, err := os.ReadFile(path)
@@ -308,7 +317,7 @@ func importBaseFilter(filterName string) (string, error) {
 		filterData, err = os.ReadFile(path)
 	}
 
-	return string(filterData), err
+	return string(filterData), path, err
 }
 
 func getCommands(rawCommand string) []string {

@@ -98,18 +98,7 @@ Show
 	#!MediumBaseBorder!#
 	#!DefaultBackground!#
 
-#! linksa BBBB
-#! linksa RBBB
-#! linksa GBBB
-#! linksa RRGB
-#! linksa RGGB
-#! linksa RGBB
-#! linksa GGBB
-#! linksa BBB
-#! linksa GBB
-
-#! import leap-slam.filter
-#! import leveling.filter
+#! import fire-templar-start.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

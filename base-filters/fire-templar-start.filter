@@ -1,0 +1,35 @@
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!#
+  #!GoodBaseBorder!#
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 300 1.0
+  MinimapIcon 1 Pink Star
+
+# Leveling Items
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex3!# #!dexint3!# #!strdex3!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+	#!DefaultBackground!#
+
+#! linksa BBBB
+#! linksa RBBB
+#! linksa GBBB
+#! linksa RRGB
+#! linksa RGGB
+#! linksa RGBB
+#! linksa GGBB
+#! linksa BBB
+#! linksa GBB
+
+#! import leap-slam.filter
+#! import leveling.filter
