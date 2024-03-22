@@ -75,6 +75,16 @@ Show
 	#!LinkBorder!#
 	#!DefaultBackground!#
 
+#
+Show
+	BaseType "Diamond Flask"
+	SetTextColor 200 150 250 200
+	SetFontSize 45
+	MinimapIcon 2 Yellow Raindrop
+	#!LinkBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 # Leveling Items
 Show
 	AreaLevel < 77
