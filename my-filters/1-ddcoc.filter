@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel"
+	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
@@ -23,17 +23,58 @@ Show
 
 # Item Bases
 Show
-	BaseType "Burnished Foil" "Battered Foil" "Thorn Rapier" "Apex Rapier" "Antique Rapier" "Primeval Rapier"
+	BaseType "Battered Foil"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel >= 77 # T1 Attack Speed
-	#!GoodBaseBorder!#
+	SetFontSize 45
+	PlayEffect Red
 	MinimapIcon 2 Pink Star
+	#!GoodBaseBorder!#
 	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
-	BaseType "Burnished Foil" "Battered Foil" "Thorn Rapier" "Apex Rapier" "Antique Rapier" "Primeval Rapier"
+	BaseType "Titanium Spirit Shield"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 81 # T1 Max All Res
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 2 Pink Star
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType "Diamond Flask"
+	Rarity <= Rare
+	ItemLevel >= 82 # T1 Crit chance during effect
+	SetTextColor 200 150 250 200
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 2 Pink Raindrop
+	#!LinkBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+# Back-up Bases
+# Show
+# 	BaseType "Tempered Foil"
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 77 # T1 Attack Speed
+# 	AreaLevel <= 80
+# 	#!GoodBaseBorder!#
+# 	MinimapIcon 2 Pink Star
+# 	#!DefaultBackground!#
+
+# Settle Item Bases
+Show
+	BaseType "Burnished Foil" "Battered Foil" "Tempered Foil" "Thorn Rapier" "Apex Rapier" "Antique Rapier" "Primeval Rapier"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
@@ -78,6 +119,7 @@ Show
 #
 Show
 	BaseType "Diamond Flask"
+	Rarity <= Rare
 	SetTextColor 200 150 250 200
 	SetFontSize 45
 	MinimapIcon 2 Yellow Raindrop

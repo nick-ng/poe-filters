@@ -132,7 +132,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!square2!#
-	SetFontSize 45
+	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
@@ -162,7 +162,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!body2!#
-	SetFontSize 45
+	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!DefaultBackground!#
@@ -171,17 +171,17 @@ Show
 ## Labyrinth Bases ##
 #####################
 
-Show
-	ItemLevel >= 85
-	Rarity <= Rare
-	BaseDefencePercentile >= 80
-	Corrupted False
-	Mirrored False
-	BaseType == #!helm0!# #!boots0!#
-	SetFontSize 45
-	MinimapIcon 1 Green Pentagon
-	SetBorderColor 0 255 0 255
-	#!DefaultBackground!#
+# Show
+# 	ItemLevel >= 85
+# 	Rarity <= Rare
+# 	BaseDefencePercentile >= 80
+# 	Corrupted False
+# 	Mirrored False
+# 	BaseType == #!helm0!# #!boots0!#
+# 	SetFontSize 45
+# 	MinimapIcon 1 Green Pentagon
+# 	SetBorderColor 0 255 0 255
+# 	#!DefaultBackground!#
 
 ###############
 ## Fractured ##
