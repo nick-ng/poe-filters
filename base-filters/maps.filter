@@ -3,7 +3,18 @@
 # Red Maps: 78 - 80
 # High Red Maps: 81 - 83
 
-Show
+Show # T17
+	MapTier >= 17
+	Class "Maps"
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	SetTextColor 255 117 255 200
+	SetBackgroundColor 255 255 255 255
+	MinimapIcon 2 Purple Square
+	PlayEffect Purple
+	CustomAlertSound "sounds/zana-what-are-you-doing.mp3"
+
+Show # Exarch/Eater Invitations
 	BaseType "Invitation"
 	SetTextColor 255 200 20 255
 	SetBorderColor 20 200 255 255
