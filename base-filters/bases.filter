@@ -29,7 +29,7 @@ Show
 Show
 	BaseType = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
 	ItemLevel >= 85
-	Rarity <= Rare
+	Rarity = Rare
 	Corrupted False
 	Mirrored False
 	SetFontSize 40
@@ -113,7 +113,7 @@ Show
 
 Show
 	ItemLevel >= 85
-	Rarity <= Rare
+	Rarity = Rare
 	BaseDefencePercentile >= 80
 	Corrupted False
 	Mirrored False

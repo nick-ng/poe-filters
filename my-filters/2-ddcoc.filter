@@ -1,0 +1,143 @@
+# Divination Cards
+Show
+	BaseType == "The Lich" "The Penitent" "The Dreamer" "The Breach"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+Show
+	BaseType "Battered Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 77 # T1 Attack Speed
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 2 Pink Star
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType "Titanium Spirit Shield"
+	Corrupted False
+	Mirrored False
+	Rarity = Rare
+	ItemLevel >= 84 # T1 Fire Damage
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 2 Pink Star
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType "Diamond Flask"
+	Rarity <= Rare
+	ItemLevel >= 82 # T1 Crit chance during effect
+	SetTextColor 200 150 250 200
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 2 Pink Raindrop
+	#!LinkBorder!#
+	#!DefaultBackground!#
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+# Back-up Bases
+# Show
+# 	BaseType "Tempered Foil"
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 77 # T1 Attack Speed
+# 	AreaLevel <= 80
+# 	#!GoodBaseBorder!#
+# 	MinimapIcon 2 Pink Star
+# 	#!DefaultBackground!#
+
+# Settle Item Bases
+Show
+	BaseType "Burnished Foil" "Battered Foil" "Tempered Foil" "Thorn Rapier" "Apex Rapier" "Antique Rapier" "Primeval Rapier"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 68
+	ItemLevel >= 59 # T2 Crit Chance/Multi
+	#!MediumBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+
+Show
+	Class "Thrusting"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 68
+	ItemLevel >= 68 # Merciless Lab.
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+  Class "Currency"
+  BaseType "of Loathing" "of Zeal"
+  SetFontSize 45
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 250
+  #!EssenceBackground!#
+  PlayAlertSound 2 50
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+# Anointed Amulets
+Show
+	Class Amulet
+	AnyEnchantment True
+	SetFontSize 45
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+	MinimapIcon 1 Pink Triangle
+	#!LinkBorder!#
+	#!DefaultBackground!#
+
+# Leveling Items
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex3!# #!dexint3!# #!strdex3!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+	#!DefaultBackground!#
+
+#! import fire-templar-start.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov2.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
