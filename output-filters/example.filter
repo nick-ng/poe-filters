@@ -5,6 +5,15 @@
 # the output-filters directory and all filters apart from example.filter will be
 # copied to the directory the Path of Exile uses
 # Comments that begin with #! do something
+# #! skip will stop processing the filter, skip writing the filter, and delete
+# the processed filter if it exists. This is to reduce the number of filters in
+# filter dropdown in-game.
+# The filter will be processed until the skip comment. This means any
+# text-to-speech comments before the skip comment will be processed. To save
+# processing time, you should skip as early as possible.
+# Because there is an extra # before the #! skip, this #! comment won't do
+# anything. example.filter won't get copied to the Path of Exile directory.
+# #! skip
 # You can highlight items with specific coloured links and play a text-to-speech
 # sound with the `links` command. Links with more colours have to be earlier in
 # the filter in order to work properly.
@@ -257,6 +266,8 @@ Show
 # If the file couldn't be imported, the output filter will have an error
 # error: couldn't import [test3.filter]
 # open third-party-filters\test3.filter: The system cannot find the file specified.
+# error: couldn't import [test3.filter]
+# open third-party-filters\test3.filter: The system cannot find the file specified.
 Show
 	BaseType "Prophecy Wand"
 	Rarity Normal
@@ -394,7 +405,8 @@ Show
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\git\poe-filters\sounds\t90-supplies1.mp3"
+	PlayAlertSound 10 200
+	# CustomAlertSound "sounds/t90-supplies1.mp3"
 Show
 	Class "Currency"
 	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
@@ -404,7 +416,8 @@ Show
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\git\poe-filters\sounds\izaro-golden.mp3"
+	PlayAlertSound 11 200
+	# CustomAlertSound "sounds/izaro-golden.mp3"
 Show
 	Class "Currency"
 	BaseType "Catalyst" "Eldritch"
@@ -424,7 +437,8 @@ Show
 	SetBorderColor 0 255 0 255
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 ## T3 Currency ##
 Show
 	Class "Currency"
@@ -510,7 +524,8 @@ Show
 	SetBorderColor 0 255 0 255
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 Show
 	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
 	Class "Divination"
@@ -519,5 +534,6 @@ Show
 	SetBorderColor 0 255 0 255
 	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
-	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 # end of [currency.filter]

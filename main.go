@@ -51,15 +51,28 @@ func main() {
 
 		filter, errList := processFilter(path)
 
+		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
+		gameFilterPath := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
 		if len(filter) == 0 {
+			err := os.Remove(outputFilterPath)
+			err2 := os.Remove(gameFilterPath)
+
+			if err != nil && !os.IsNotExist(err) {
+				fmt.Print(err)
+			}
+
+			if err2 != nil && !os.IsNotExist(err2) {
+				fmt.Print(err2)
+			}
+
 			fmt.Println("skipped")
+
 			continue
 		}
 
 		filterData := []byte(filter)
 
-		path = filepath.Join(OUTPUT_FILTERS_PATH, filterName)
-		err := os.WriteFile(path, filterData, 0666)
+		err := os.WriteFile(outputFilterPath, filterData, 0666)
 
 		if err != nil {
 			fmt.Println("\nError writing filter to output-filters", filterName, err)
@@ -67,9 +80,7 @@ func main() {
 		}
 
 		if filterName != "example.filter" {
-			path = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
-
-			err = os.WriteFile(path, filterData, 0666)
+			err = os.WriteFile(gameFilterPath, filterData, 0666)
 
 			if err != nil {
 				fmt.Println("\nError writing filter to PoE Directory", filterName, err)

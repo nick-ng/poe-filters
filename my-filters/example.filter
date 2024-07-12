@@ -6,11 +6,15 @@
 # copied to the directory the Path of Exile uses
 
 # Comments that begin with #! do something
-# #! skip will stop processing the filter and skip writing the filter
+# #! skip will stop processing the filter, skip writing the filter, and delete
+# the processed filter if it exists. This is to reduce the number of filters in
+# filter dropdown in-game.
 # The filter will be processed until the skip comment. This means any
 # text-to-speech comments before the skip comment will be processed. To save
 # processing time, you should skip as early as possible.
-#! skip
+# Because there is an extra # before the #! skip, this #! comment won't do
+# anything. example.filter won't get copied to the Path of Exile directory.
+# #! skip
 
 # You can highlight items with specific coloured links and play a text-to-speech
 # sound with the `links` command. Links with more colours have to be earlier in

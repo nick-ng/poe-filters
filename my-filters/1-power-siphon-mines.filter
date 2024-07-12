@@ -1,0 +1,123 @@
+# Leveling Items
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+	#!DefaultBackground!#
+
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!#
+  #!GoodBaseBorder!#
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 300 1.0
+  MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Spiraled Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 34
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Faun's Horn"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 45
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Crystal Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 55
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Coiled Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 59
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Demon's Horn"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 66
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Opal Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel <= 72
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	BaseType "Tornado Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	#!OkBaseBorder!#
+	MinimapIcon 1 Pink Circle
+	#!DefaultBackground!#
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex3!# #!dexint3!# #!strdex3!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+	#!DefaultBackground!#
+
+# Item Bases
+
+
+#! linksa GBBB
+#! linksa RGBB
+#! linksa GGBB
+#! linksa BBB
+#! linksa GBB
+
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov1.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n

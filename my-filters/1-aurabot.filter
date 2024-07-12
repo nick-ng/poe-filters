@@ -1,8 +1,28 @@
-#! skip
-
 # Divination Cards
+Show
+	BaseType == "The Dragon"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
+Show
+	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+
 
 # Leveling Items
 Show
@@ -10,19 +30,11 @@ Show
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!strint3!# #!strdex3!#
+	BaseType #!dex3!# #!dexint3!# #!strdex3!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
-
-Show
-	BaseType "Divine Mana Flask" "Eternal Mana Flask"
-	Rarity <= Rare
-	SetFontSize 45
-	MinimapIcon 1 Blue Star
-	#!BrightBorder!#
 	#!DefaultBackground!#
 
 #! import fire-templar-start.filter
