@@ -101,13 +101,20 @@ Show
 	#!DefaultBackground!#
 
 # Item Bases
-
+Show
+	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand" "Imbued Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 82 # T1 Generic DoT multi
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
 
 #! linksa GBBB
-#! linksa RGBB
-#! linksa GGBB
-#! linksa BBB
+#! linksa BBBB
 #! linksa GBB
+#! linksa BBB
 
 #! import library-shield-charge.filter
 #! import leveling.filter

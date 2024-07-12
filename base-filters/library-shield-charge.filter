@@ -1,0 +1,32 @@
+## Some classes don't get shield charge at Prisoner's Gate so this shows shields with move speed implicit for longer. Probably unnecessary.
+
+## Leap slam maces
+#! links RGB shield
+	AreaLevel <= 30
+	BaseType == "War Buckler" "Painted Buckler"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG shield
+	AreaLevel <= 30
+	BaseType == "War Buckler" "Painted Buckler"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG shield
+	AreaLevel <= 30
+	BaseType == "War Buckler" "Painted Buckler"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR shield
+	AreaLevel <= 30
+	BaseType == "War Buckler" "Painted Buckler"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB shield
+	AreaLevel <= 30
+	BaseType == "War Buckler" "Painted Buckler"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
