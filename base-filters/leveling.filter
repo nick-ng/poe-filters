@@ -1,4 +1,23 @@
 Show
+	Class "Currency"
+	BaseType == "Orb of Horizons"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	SetBorderColor 55 55 255 255
+	#!DefaultBackground!#
+	MinimapIcon 0 Blue UpsideDownHouse
+	#! tts "horizon" horizon Amy 300 1.0
+
+Show
+	Class "Currency"
+	BaseType == "Horizon Shard"
+	SetFontSize 45
+	#!T2CurrencyText!#
+	SetBorderColor 55 55 255 255
+	#!DefaultBackground!#
+	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
 	BaseType == "Quicksilver Flask"
 	AreaLevel <= 15
 	SetFontSize 45

@@ -1,3 +1,5 @@
+#! skip
+
 # Divination Cards
 Show
 	BaseType == "The Lich" "The Penitent" "The Dreamer" "The Breach"

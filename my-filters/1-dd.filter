@@ -28,7 +28,7 @@ Show
 #! linksa BBB
 #! linksa GBB
 
-#! import leap-slam.filter
+#! import library-leap-slam.filter
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter

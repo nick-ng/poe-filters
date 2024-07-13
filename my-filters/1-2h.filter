@@ -24,7 +24,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask"
+	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Vaal Greaves"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
