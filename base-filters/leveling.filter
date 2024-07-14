@@ -155,3 +155,13 @@ Show
 	BaseType "Topaz Ring"
 	AreaLevel <= 30
 	#! tts "topaz ring" topaz-ring Russell 300 1.0
+
+Show
+	BaseType == "Vaal Haste"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetBorderColor 250 125 125
+	SetTextColor 0 200 200
+	MinimapIcon 2 Brown Triangle
+	PlayEffect Brown
+	#! tts "vaal haste" vaal-haste Amy 300 1.0
