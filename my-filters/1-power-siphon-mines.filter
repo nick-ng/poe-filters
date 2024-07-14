@@ -101,7 +101,15 @@ Show
 	#!DefaultBackground!#
 
 # Item Bases
-
+Show
+	Class Wand
+	HasInfluence Hunter Shaper
+	ItemLevel >= 82
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 1 Red Star
+	#!GoodBaseBorder!#
+	#!DefaultBackground!#
 
 #! linksa GBBB
 #! linksa RGBB
