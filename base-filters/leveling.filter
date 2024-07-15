@@ -165,3 +165,6 @@ Show
 	MinimapIcon 2 Brown Triangle
 	PlayEffect Brown
 	#! tts "vaal haste" vaal-haste Amy 300 1.0
+
+#! import life-flasks.filter
+#! import mana-flasks.filter

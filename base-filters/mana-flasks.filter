@@ -1,0 +1,209 @@
+
+Show
+	AreaLevel <= 12
+	BaseType == "Small Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 12
+	BaseType == "Medium Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 12
+	BaseType == "Large Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "large mana" mana-large Amy 300 1.0
+
+Show
+	AreaLevel <= 18
+	BaseType == "Large Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 18
+	BaseType == "Large Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 18
+	BaseType == "Greater Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "greater mana" mana-greater Amy 300 1.0
+
+Show
+	AreaLevel <= 24
+	BaseType == "Greater Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 24
+	BaseType == "Greater Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 24
+	BaseType == "Grand Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "grand mana" mana-grand Amy 300 1.0
+
+Show
+	AreaLevel <= 30
+	BaseType == "Grand Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 30
+	BaseType == "Grand Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 30
+	BaseType == "Giant Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "giant mana" mana-giant Amy 300 1.0
+
+Show
+	AreaLevel <= 36
+	BaseType == "Giant Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 36
+	BaseType == "Giant Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 36
+	BaseType == "Colossal Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "colossal mana" mana-colossal Amy 300 1.0
+
+Show
+	AreaLevel <= 42
+	BaseType == "Colossal Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 42
+	BaseType == "Colossal Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 42
+	BaseType == "Sacred Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "sacred mana" mana-sacred Amy 300 1.0
+
+Show
+	AreaLevel <= 44
+	BaseType == "Sacred Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 44
+	BaseType == "Sacred Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	AreaLevel <= 44
+	BaseType == "Hallowed Mana Flask"
+	SetFontSize 45
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "hallowed mana" mana-hallowed Amy 300 1.0
+
+Show
+	AreaLevel <= 60
+	BaseType == "Hallowed Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Hide
+	AreaLevel > 60
+	BaseType == "Hallowed Mana Flask"
+	SetFontSize 30
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+	#!DefaultBackground!#
+
+Show
+	BaseType == "Divine Mana Flask"
+	ItemLevel <= 66
+	SetFontSize 45
+	Rarity <= Magic
+	SetBorderColor 0 0 255 200
+	PlayEffect Red
+	#!DefaultBackground!#
+	MinimapIcon 2 Blue Raindrop
+	#! tts "divine mana" mana-divine Amy 300 1.0

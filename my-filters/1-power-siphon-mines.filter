@@ -25,6 +25,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 34
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -35,6 +37,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 45
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -45,6 +49,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 55
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -55,6 +61,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 59
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -65,6 +73,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 66
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -75,6 +85,8 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel <= 72
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
@@ -84,6 +96,8 @@ Show
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
+	SetFontSize 45
+	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
 	#!DefaultBackground!#
