@@ -1,3 +1,26 @@
+# Divination Cards
+Show
+	BaseType == "A Chilling Wind"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Shadow Sceptre"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
 # Build Vaal Gems
 Show
 	BaseType == "Vaal Cold Snap"
@@ -53,6 +76,16 @@ Show
 	MinimapIcon 1 Pink Star
 	#!DefaultBackground!#
 
+Show
+	BaseType "Fingerless Silk Gloves" "Apothecary's Gloves"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 72 # T2 resist
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
+
 #! linksa GBBB
 #! linksa BBBB
 #! linksa GBB
@@ -61,6 +94,7 @@ Show
 #! import library-shield-charge.filter
 #! import library-shield-charge-spell.filter
 #! import leveling.filter
+#! import cold-gem-recipe.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

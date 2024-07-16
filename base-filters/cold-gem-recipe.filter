@@ -1,0 +1,11 @@
+Show  # +1 all Cold Gems recipe
+	Quality >= 1
+	Class "Gems"
+	BaseType "Glacial Hammer" "Vaal Glacial Hammer" "Cold to Fire Support" "Ice Crash" "Frozen Legion" "Elemental Hit" "Added Cold Damage Support" "Hatred" "Ice Shot" "Arctic Armour" "Vaal Arctic Armour" "Cold Penetration Support" "Spectral Shield Throw" "Purity of Ice" "Vaal Impurity of Ice" "Herald of Ice" "Summon Ice Golem" "Frost Blades" "Ice Bite Support" "Hypothermia Support" "Wild Strike" "Ice Trap" "Explosive Concoction" "Tornado" "Vaal Ice Shot" "Ice Nova" "Vaal Ice Nova" "Cold Snap" "Vaal Cold Snap" "Discharge" "Ice Spear" "Frost Wall" "Freezing Pulse" "Elemental Proliferation Support" "Icicle Mine" "Creeping Frost" "Frostbite" "Glacial Cascade" "Frost Bomb" "Frostbolt" "Vortex" "Siphoning Trap" "Bonechill Support" "Winter Orb" "Frostblink" "Summon Skitterbots" "Wintertide Brand" "Frost Shield" "Hydrosphere" "Eye of Winter" "Prismatic Burst Support" "Frigid Bond Support"
+	SetFontSize 45
+	SetBackgroundColor 30 190 190 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	MinimapIcon 1 White Triangle
+	PlayEffect Grey
+	#! tts "gem recipe" gem-recipe Amy 300 1.0

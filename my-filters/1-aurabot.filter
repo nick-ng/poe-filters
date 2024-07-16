@@ -26,6 +26,16 @@ Show
 
 # Leveling Items
 Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+	#!DefaultBackground!#
+
+Show
 	AreaLevel < 77
 	Rarity = Rare
 	Corrupted False
