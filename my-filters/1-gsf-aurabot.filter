@@ -1,6 +1,6 @@
 # Divination Cards
 Show
-	BaseType == "The Dragon"
+	BaseType == "The Dragon" "The Adventuring Spirit" "The Enthusiasts"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
 	SetTextColor 255 140 54 255
@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask"
+	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask" "Lacquered Garb"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
