@@ -1,6 +1,6 @@
 # Divination Cards
 Show
-	BaseType == "A Chilling Wind"
+	BaseType == "The Dragon"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
 	SetTextColor 255 140 54 255
@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Shadow Sceptre"
+	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
@@ -21,16 +21,16 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Build Vaal Gems
-Show
-	BaseType == "Vaal Cold Snap"
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
-	SetBorderColor 250 125 125
-	SetTextColor 0 200 200
-	MinimapIcon 2 Brown Triangle
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+# Item Bases
+Show # fast sceptres - smite + big mana
+	BaseType == "Grinning Fetish" "Karui Sceptre" "Blood Sceptre" "Vaal Sceptre"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 40
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	#!DefaultBackground!#
 
 # Leveling Items
 Show
@@ -44,58 +44,18 @@ Show
 	#!DefaultBackground!#
 
 Show
-  AreaLevel <= 10
-  BaseType "Goat's Horn"
-  SetFontSize 45
-  #!DefaultBackground!#
-  #!GoodBaseBorder!#
-  PlayEffect Red
-  #! tts "goat horn" goat-horn Amy 300 1.0
-  MinimapIcon 1 Pink Star
-
-Show
 	AreaLevel < 77
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!dex3!# #!dexint3!# #!strdex3!#
+	BaseType #!int3!# #!strint3!# #!dexint3!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
 	#!DefaultBackground!#
 
-# Item Bases
-Show
-	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand" "Imbued Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel = 82 # T1 Generic DoT multi
-	#!GoodBaseBorder!#
-	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
-
-Show
-	BaseType "Fingerless Silk Gloves" "Apothecary's Gloves"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	SetFontSize 45
-	ItemLevel >= 72 # T2 resist
-	#!GoodBaseBorder!#
-	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
-
-#! linksa GBBB
-#! linksa BBBB
-#! linksa GBB
-#! linksa BBB
-
-#! import library-shield-charge.filter
-#! import library-shield-charge-spell.filter
-#! import leveling.filter
-#! import cold-gem-recipe.filter
+#! import fire-templar-start.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
