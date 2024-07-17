@@ -1,6 +1,6 @@
 # Divination Cards
 Show
-	BaseType == "The Dragon" "The Adventuring Spirit" "The Enthusiasts"
+	BaseType == "The Dragon" "The Adventuring Spirit" "The Enthusiasts" "The Pack Leader"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
 	SetTextColor 255 140 54 255
@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask" "Lacquered Garb"
+	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask" "Lacquered Garb" "Legion Boots" "Bronzescale Gauntlets" "Mesh Gloves" "Cloth Belt" "Sinner Tricorne" "Great Mallet" "Tarnished Spirit Shield" "War Hammer" "Paua Ring" "Citrine Amulet"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
@@ -21,7 +21,18 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Item Bases
+# Build Vaal Gems
+Show
+	BaseType == "Vaal Haste" "Vaal Discipline" "Vaal Smite"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetBorderColor 250 125 125
+	SetTextColor 0 200 200
+	MinimapIcon 2 Brown Triangle
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Items
 Show # fast sceptres - smite + big mana
 	BaseType == "Grinning Fetish" "Karui Sceptre" "Blood Sceptre" "Vaal Sceptre"
 	Corrupted False
@@ -31,6 +42,17 @@ Show # fast sceptres - smite + big mana
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
 	#!DefaultBackground!#
+
+Show
+  Class "Currency"
+  BaseType "of Loathing"
+  SetFontSize 45
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 250
+  #!EssenceBackground!#
+  PlayAlertSound 2 50
+  PlayEffect White
+  MinimapIcon 2 White Circle
 
 # Leveling Items
 Show
