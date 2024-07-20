@@ -7,7 +7,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 Show
   AreaLevel <= 10
@@ -29,7 +28,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Faun's Horn"
@@ -41,7 +39,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Crystal Wand"
@@ -53,7 +50,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Coiled Wand"
@@ -65,7 +61,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Demon's Horn"
@@ -77,7 +72,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Opal Wand"
@@ -89,7 +83,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	BaseType "Tornado Wand"
@@ -100,7 +93,6 @@ Show
 	PlayEffect Red
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
 	AreaLevel < 77
@@ -112,7 +104,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 # Item Bases
 Show
@@ -123,7 +114,6 @@ Show
 	PlayEffect Red
 	MinimapIcon 1 Red Star
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 
 #! linksa GBBB
 #! linksa RGBB

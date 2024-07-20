@@ -4,7 +4,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
-	#!DefaultBackground!#
 	MinimapIcon 0 Blue UpsideDownHouse
 	#! tts "horizon" horizon Amy 300 1.0
 
@@ -14,7 +13,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
-	#!DefaultBackground!#
 	MinimapIcon 0 Blue UpsideDownHouse
 
 Show
@@ -38,7 +36,6 @@ Show
 	AreaLevel <= 24
 	#!ScrollOfWisdomText!#
 	#!GGGCurrencyBorder!# 200
-	#!DefaultBackground!#
 	SetFontSize 45
 	MinimapIcon 2 Grey Raindrop
 	PlayEffect Grey
@@ -50,7 +47,6 @@ Show
 	AreaLevel <= 24
 	#!PortalScrollText!#
 	#!GGGCurrencyBorder!# 200
-	#!DefaultBackground!#
 	SetFontSize 45
 	MinimapIcon 2 Grey Star
 	PlayEffect Grey
@@ -63,7 +59,6 @@ Show
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey
 	#! tts "armourer" armourer Amy 300 1.0
@@ -75,7 +70,6 @@ Show
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Green
 	#! tts "blacksmith" blacksmith Amy 300 1.0
@@ -87,7 +81,6 @@ Show
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 	#! tts "transmute" transmute Amy 300 1.0
@@ -99,7 +92,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "alteration" alteration Amy 300 1.0
@@ -111,7 +103,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "fusing" fusing Amy 300 1.0
@@ -123,7 +114,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "alchemy" alchemy Amy 300 1.0

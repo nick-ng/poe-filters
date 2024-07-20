@@ -6,7 +6,6 @@ Show
 	ItemLevel = 82 # T1 Generic DoT multi
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 Show
   AreaLevel <= 10

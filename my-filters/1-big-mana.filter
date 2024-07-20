@@ -32,7 +32,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 Show
 	BaseType "Divine Mana Flask" "Eternal Mana Flask"
@@ -40,7 +39,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Blue Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 #! import fire-templar-start.filter
 #! import currency.filter

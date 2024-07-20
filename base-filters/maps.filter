@@ -18,7 +18,6 @@ Show # Exarch/Eater Invitations
 	BaseType "Invitation"
 	SetTextColor 255 200 20 255
 	SetBorderColor 20 200 255 255
-	#!DefaultBackground!#
 	SetFontSize 45
 	MinimapIcon 0 Blue Kite
 	PlayEffect Blue
@@ -36,7 +35,6 @@ Show
 Show
 	Rarity < Unique
 	Class "Maps"
-	#!DefaultBackground!#
 	Continue
 
 # Map appearance

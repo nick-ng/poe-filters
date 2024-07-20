@@ -41,7 +41,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 Show
   AreaLevel <= 10
@@ -63,7 +62,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 # Item Bases
 Show
@@ -74,7 +72,6 @@ Show
 	ItemLevel = 82 # T1 Generic DoT multi
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 Show
 	BaseType "Fingerless Silk Gloves" "Apothecary's Gloves"
@@ -85,7 +82,6 @@ Show
 	ItemLevel >= 72 # T2 resist
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 #! linksa GBBB
 #! linksa BBBB

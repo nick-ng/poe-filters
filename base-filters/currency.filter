@@ -72,7 +72,6 @@ Hide # Red Maps
 	AreaLevel > 77
 	StackSize < 8
 	#!GGGCurrencyBorder!# 200
-	#!DefaultBackground!#
 	SetFontSize 45
 
 Hide # White-Yellow Maps
@@ -81,14 +80,12 @@ Hide # White-Yellow Maps
 	AreaLevel > 67
 	StackSize < 4
 	#!GGGCurrencyBorder!# 200
-	#!DefaultBackground!#
 	SetFontSize 45
 
 Show # Red Maps
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
 	#!GGGCurrencyBorder!# 200
-	#!DefaultBackground!#
 	SetFontSize 40
 	MinimapIcon 0 Grey Raindrop
 
@@ -121,7 +118,6 @@ Show # T0 Currency
 	SetFontSize 45
 	#!T0CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
@@ -132,7 +128,6 @@ Show # T0 Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
@@ -143,7 +138,6 @@ Show # T0.5 Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	PlayAlertSound 10 200
@@ -156,7 +150,6 @@ Show # T1 Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	PlayAlertSound 11 200
@@ -168,7 +161,6 @@ Show
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
@@ -183,7 +175,6 @@ Show # T2 Currency
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -199,7 +190,6 @@ Show # Orb of Chance is more important until yellow maps
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	#! tts "chance" chance Amy 300 1.2
 
@@ -211,7 +201,6 @@ Hide # Red Maps
 	StackSize < 3
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 
 Show # T3 Currency (3+ to show)
 	Class "Currency"
@@ -219,7 +208,6 @@ Show # T3 Currency (3+ to show)
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Green UpsideDownHouse
 	CustomAlertSound "sounds/water-drop.mp3"
 
@@ -235,8 +223,7 @@ Show # T3 Currency (3+ to show)
 #	StackSize < 6
 #	#!T3CurrencyText!#
 #	#!CurrencyBorder!#
-#	#!DefaultBackground!#
-
+#
 Hide # White Maps
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -245,7 +232,6 @@ Hide # White Maps
 	StackSize < 3
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 
 Show # T4 Currency (4+ to show)
 	Class "Currency"
@@ -253,7 +239,6 @@ Show # T4 Currency (4+ to show)
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Grey UpsideDownHouse
 	# CustomAlertSound "sounds/water-drop.mp3"
 
@@ -268,7 +253,6 @@ Show
 	SetFontSize 45
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
-	#!DefaultBackground!#
 
 ########################
 ## Currency Div Cards ##
@@ -280,7 +264,6 @@ Show
 	SetFontSize 45
 	#!T0CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
@@ -291,7 +274,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -302,7 +284,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"

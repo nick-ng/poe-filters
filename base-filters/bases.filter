@@ -3,7 +3,6 @@ Show
 	Mirrored False
 BaseType "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	Continue
 
 #####################
@@ -36,7 +35,6 @@ Show
 	#!GoodBaseBorder!#
 	PlayEffect Red
 	MinimapIcon 1 Yellow Cross
-	#!DefaultBackground!#
 
 Show # Influenced Rings
 	HasInfluence Crusader Hunter Redeemer Warlord
@@ -51,7 +49,6 @@ Show # Influenced Rings
 	PlayEffect Cyan
 	PlayAlertSound 1 300
 	MinimapIcon 1 Cyan Cross
-	#!DefaultBackground!#
 
 ########################
 ## Top Utility Flasks ##
@@ -65,7 +62,6 @@ Show
 	SetTextColor 0 203 221 200
 	PlayEffect Red
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 
 ###############################
 ## Flagellant Utility Flasks ##
@@ -80,7 +76,6 @@ Show
 	SetTextColor 0 203 221 200
 	SetBorderColor 255 255 0 200
 	PlayEffect Red
-	#!DefaultBackground!#
 
 Show
 	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
@@ -89,7 +84,6 @@ Show
 	Rarity <= Magic
 	SetTextColor 0 203 221 200
 	SetBorderColor 55 55 0 200
-	#!DefaultBackground!#
 
 ##########################
 ## Seething Life Flasks ##
@@ -103,7 +97,6 @@ Show
 	SetTextColor 255 0 0 200
 	SetBorderColor 255 255 0 200
 	PlayEffect Red
-	#!DefaultBackground!#
 	MinimapIcon 2 Red Raindrop
 	#! tts "divine life" life-divine Amy 300 1.0
 
@@ -122,7 +115,6 @@ Show
 	PlayEffect Red
 	CustomAlertSound "sounds/rue-limp.mp3"
 	MinimapIcon 1 Yellow Star
-	#!DefaultBackground!#
 
 # T2 Spell Suppression ##
 Show
@@ -135,7 +127,6 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!DefaultBackground!#
 
 ##########################
 ## Body Armour, Shields ##
@@ -152,7 +143,6 @@ Show
 	PlayEffect Red
 	CustomAlertSound "sounds/rue-woo.mp3"
 	MinimapIcon 1 Yellow Star
-	#!DefaultBackground!#
 
 # T2 Spell Suppression ##
 Show
@@ -165,7 +155,6 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!DefaultBackground!#
 
 #####################
 ## Labyrinth Bases ##
@@ -181,8 +170,7 @@ Show
 # 	SetFontSize 45
 # 	MinimapIcon 1 Green Pentagon
 # 	SetBorderColor 0 255 0 255
-# 	#!DefaultBackground!#
-
+#
 ###############
 ## Fractured ##
 ###############
@@ -197,7 +185,6 @@ Show
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
-	#!DefaultBackground!#
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Red Diamond
@@ -211,7 +198,6 @@ Show
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
-	#!DefaultBackground!#
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Red Diamond
@@ -225,7 +211,6 @@ Show
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
-	#!DefaultBackground!#
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Red Diamond
@@ -238,7 +223,6 @@ Show
 	SetFontSize 25
 	SetTextColor 190 240 0 180
 	SetBorderColor 200 50 50 255
-	#!DefaultBackground!#
 
 # Hide uninteresting items as you progress
 Hide

@@ -34,7 +34,6 @@ Show
 	PlayEffect Red
 	MinimapIcon 2 Pink Star
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
@@ -47,7 +46,6 @@ Show
 	PlayEffect Red
 	MinimapIcon 2 Pink Star
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
@@ -59,7 +57,6 @@ Show
 	PlayEffect Red
 	MinimapIcon 2 Pink Raindrop
 	#!LinkBorder!#
-	#!DefaultBackground!#
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 # Back-up Bases
@@ -72,8 +69,7 @@ Show
 # 	AreaLevel <= 80
 # 	#!GoodBaseBorder!#
 # 	MinimapIcon 2 Pink Star
-# 	#!DefaultBackground!#
-
+#
 # Settle Item Bases
 Show
 	BaseType "Burnished Foil" "Battered Foil" "Tempered Foil" "Thorn Rapier" "Apex Rapier" "Antique Rapier" "Primeval Rapier"
@@ -84,7 +80,6 @@ Show
 	ItemLevel >= 59 # T2 Crit Chance/Multi
 	#!MediumBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 Show
 	Class "Thrusting"
@@ -95,7 +90,6 @@ Show
 	ItemLevel >= 68 # Merciless Lab.
 	#!OkBaseBorder!#
 	MinimapIcon 1 Pink Circle
-	#!DefaultBackground!#
 
 Show
   Class "Currency"
@@ -116,7 +110,6 @@ Show
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 	MinimapIcon 1 Pink Triangle
 	#!LinkBorder!#
-	#!DefaultBackground!#
 
 # Leveling Items
 Show
@@ -129,7 +122,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 #! import leveling.filter
 #! import currency.filter

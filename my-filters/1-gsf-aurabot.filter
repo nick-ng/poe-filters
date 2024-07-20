@@ -41,7 +41,6 @@ Show # fast sceptres - smite + big mana
 	SetFontSize 40
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 Show
   Class "Currency"
@@ -63,7 +62,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 Show
 	AreaLevel < 77
@@ -75,7 +73,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 # Aurabot Swap Links
 #! linksa RRG 40 55

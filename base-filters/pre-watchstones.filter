@@ -4,7 +4,6 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
-	#!DefaultBackground!#
 	MinimapIcon 0 Blue UpsideDownHouse
 	#! tts "horizon" horizon Amy 300 1.0
 
@@ -14,5 +13,4 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
-	#!DefaultBackground!#
 	MinimapIcon 0 Blue UpsideDownHouse

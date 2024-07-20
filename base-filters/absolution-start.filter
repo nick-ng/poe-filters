@@ -17,7 +17,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 Show
   AreaLevel <= 10
