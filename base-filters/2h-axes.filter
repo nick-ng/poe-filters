@@ -1,22 +1,31 @@
 Show
-	AreaLevel <= 12
-	BaseType == "Longsword"
+	AreaLevel <= 7 # The Climb - Act 1
+	BaseType == "Corroded Blade"
 	Corrupted False
-	SetFontSize 35
+	SetFontSize 45
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 12
+	AreaLevel <= 12 # The Cavern of Wrath - Act 1
+	BaseType == "Longsword"
+	Corrupted False
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Jade Chopper"
 	Corrupted False
-	SetFontSize 25
+	SetFontSize 35
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 23
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Woodsplitter"
 	Corrupted False
 	SetFontSize 45
@@ -26,7 +35,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 23
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Woodsplitter"
 	Corrupted False
 	SetFontSize 35
@@ -35,7 +44,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 23
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Bastard Sword"
 	Corrupted False
 	SetFontSize 25
@@ -43,7 +52,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 23
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Poleaxe"
 	Corrupted False
 	SetFontSize 45
@@ -53,7 +62,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 23
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Poleaxe"
 	Corrupted False
 	SetFontSize 25
@@ -61,7 +70,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 33
+	AreaLevel <= 33 # The Upper Sceptre of God - Act 3
 	BaseType == "Double Axe"
 	Corrupted False
 	SetFontSize 45
@@ -71,7 +80,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 33
+	AreaLevel <= 33 # The Upper Sceptre of God - Act 3
 	BaseType == "Double Axe"
 	Corrupted False
 	SetFontSize 35
@@ -80,7 +89,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 37
+	AreaLevel <= 37 # Kaom's/Daresso's Dream - Act 4
 	BaseType == "Gilded Axe"
 	Corrupted False
 	SetFontSize 45
@@ -90,7 +99,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 37
+	AreaLevel <= 37 # Kaom's/Daresso's Dream - Act 4
 	BaseType == "Gilded Axe"
 	Corrupted False
 	SetFontSize 25
@@ -98,7 +107,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 45
+	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Shadow Axe"
 	Corrupted False
 	SetFontSize 45
@@ -108,7 +117,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 45
+	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Shadow Axe"
 	Corrupted False
 	SetFontSize 35
@@ -117,7 +126,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 45
+	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Jasper Chopper"
 	Corrupted False
 	SetFontSize 45
@@ -127,7 +136,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 45
+	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Jasper Chopper"
 	Corrupted False
 	SetFontSize 25
@@ -135,7 +144,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 49
+	AreaLevel <= 49 # The Southern Forest - Act 6
 	BaseType == "Timber Axe"
 	Corrupted False
 	SetFontSize 45
@@ -145,7 +154,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 49
+	AreaLevel <= 49 # The Southern Forest - Act 6
 	BaseType == "Timber Axe"
 	Corrupted False
 	SetFontSize 25
@@ -153,7 +162,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 62
+	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Headsman Axe"
 	Corrupted False
 	SetFontSize 45
@@ -163,7 +172,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 62
+	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Headsman Axe"
 	Corrupted False
 	SetFontSize 35
@@ -172,7 +181,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 62
+	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Labrys"
 	Corrupted False
 	SetFontSize 45
@@ -182,7 +191,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 62
+	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Labrys"
 	Corrupted False
 	SetFontSize 35
@@ -191,7 +200,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 58
+	AreaLevel <= 58 # The Imperial Fields - Act 8
 	BaseType == "Noble Axe"
 	Corrupted False
 	SetFontSize 45
@@ -201,7 +210,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 58
+	AreaLevel <= 58 # The Imperial Fields - Act 8
 	BaseType == "Noble Axe"
 	Corrupted False
 	SetFontSize 25
@@ -209,7 +218,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 60
+	AreaLevel <= 60 # The Harbour Bridge - Act 8
 	BaseType == "Abyssal Axe"
 	Corrupted False
 	SetFontSize 45
@@ -219,7 +228,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 60
+	AreaLevel <= 60 # The Harbour Bridge - Act 8
 	BaseType == "Abyssal Axe"
 	Corrupted False
 	SetFontSize 25
@@ -227,7 +236,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Karui Chopper"
 	Corrupted False
 	SetFontSize 45
@@ -237,7 +246,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Karui Chopper"
 	Corrupted False
 	SetFontSize 25
@@ -245,7 +254,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Sundering Axe"
 	Corrupted False
 	SetFontSize 45
@@ -255,7 +264,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Sundering Axe"
 	Corrupted False
 	SetFontSize 25
@@ -263,7 +272,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Ezomyte Axe"
 	Corrupted False
 	SetFontSize 45
@@ -273,7 +282,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Ezomyte Axe"
 	Corrupted False
 	SetFontSize 35
@@ -282,7 +291,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Vaal Axe"
 	Corrupted False
 	SetFontSize 45
@@ -292,7 +301,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Vaal Axe"
 	Corrupted False
 	SetFontSize 25
@@ -300,7 +309,7 @@ Show
 	MinimapIcon 1 Pink Cross
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Despot Axe"
 	Corrupted False
 	SetFontSize 45
@@ -310,7 +319,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Despot Axe"
 	Corrupted False
 	SetFontSize 35
@@ -319,7 +328,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Void Axe"
 	Corrupted False
 	SetFontSize 45
@@ -329,7 +338,7 @@ Show
 	PlayAlertSound 16 200
 
 Show
-	AreaLevel <= 67
+	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Void Axe"
 	Corrupted False
 	SetFontSize 25
