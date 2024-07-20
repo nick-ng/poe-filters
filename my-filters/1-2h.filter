@@ -43,7 +43,6 @@ Show
 	ItemLevel = 83 # T1 Phys, T1 Cast Speed
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	#!DefaultBackground!#
 
 # Weapon Recipe
 Show
@@ -53,9 +52,8 @@ Show
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
-	#!DefaultBackground!#
-	#! tts "granite" granite Amy 300 1.0
 
+	#! tts "granite" granite Amy 300 1.0
 
 #! linksa RRRG
 #! linksa RRRR
@@ -74,7 +72,6 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!DefaultBackground!#
 
 Show
 	AreaLevel < 72 # Tier 5
@@ -86,7 +83,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	SetBorderColor 53 216 234 255
-	#!DefaultBackground!#
 
 #! import leveling.filter
 #! import currency.filter

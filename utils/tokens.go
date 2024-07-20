@@ -63,6 +63,10 @@ func applyColourTokens(rawFilter string) string {
 	processedFilter := rawFilter
 
 	for key, value := range colourTokens {
+		if strings.IndexRune(key, '#') == 0 {
+			continue
+		}
+
 		token := fmt.Sprintf("#!%s!#", key)
 		processedFilter = strings.ReplaceAll(processedFilter, token, value)
 	}

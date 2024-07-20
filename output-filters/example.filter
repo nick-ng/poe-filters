@@ -1,3 +1,7 @@
+
+Show
+	SetBackgroundColor 0 0 0 120
+	Continue
 # Normal comments don't do anything
 # All .filter files in the my-filters directory will be processed. The repo has
 # this example filter and my personal filters
@@ -340,7 +344,7 @@ Hide
 	Class "Currency"
 	AreaLevel > 77
 	StackSize < 8
-	SetBorderColor 0 255 0 255
+	SetBorderColor 170 158 130 200
 	SetBackgroundColor 0 0 0 120
 	SetFontSize 45
 Hide
@@ -348,13 +352,13 @@ Hide
 	Class "Currency"
 	AreaLevel > 67
 	StackSize < 4
-	SetBorderColor 0 255 0 255
+	SetBorderColor 170 158 130 200
 	SetBackgroundColor 0 0 0 120
 	SetFontSize 45
 Show
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
-	SetBorderColor 0 255 0 255
+	SetBorderColor 170 158 130 200
 	SetBackgroundColor 0 0 0 120
 	SetFontSize 40
 	MinimapIcon 0 Grey Raindrop

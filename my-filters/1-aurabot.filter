@@ -33,7 +33,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!BrightBorder!#
-	#!DefaultBackground!#
 
 Show
 	AreaLevel < 77
@@ -45,7 +44,6 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
-	#!DefaultBackground!#
 
 #! import fire-templar-start.filter
 #! import currency.filter

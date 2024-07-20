@@ -77,7 +77,10 @@ Show
 	#!MediumBaseBorder!#
 	#!DefaultBackground!#
 
-#! import fire-templar-start.filter
+# Aurabot Swap Links
+#! linksa RRG 40 55
+
+#! import absolution-start.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

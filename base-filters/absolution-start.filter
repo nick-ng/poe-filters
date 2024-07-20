@@ -1,0 +1,38 @@
+# Build Vaal Gems
+Show
+	BaseType == "Vaal Absolution"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetBorderColor 250 125 125
+	SetTextColor 0 200 200
+	MinimapIcon 2 Brown Triangle
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+	#!DefaultBackground!#
+
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!#
+  #!GoodBaseBorder!#
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 300 1.0
+  MinimapIcon 1 Pink Star
+
+#! linksa RBBB
+#! linksa RRBB
+#! linksa RBB
+#! linksa RB
+
+#! import leap-slam.filter
+#! import leveling.filter

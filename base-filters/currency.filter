@@ -71,7 +71,7 @@ Hide # Red Maps
 	Class "Currency"
 	AreaLevel > 77
 	StackSize < 8
-	#!CurrencyBorder!#
+	#!GGGCurrencyBorder!# 200
 	#!DefaultBackground!#
 	SetFontSize 45
 
@@ -80,14 +80,14 @@ Hide # White-Yellow Maps
 	Class "Currency"
 	AreaLevel > 67
 	StackSize < 4
-	#!CurrencyBorder!#
+	#!GGGCurrencyBorder!# 200
 	#!DefaultBackground!#
 	SetFontSize 45
 
 Show # Red Maps
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
-	#!CurrencyBorder!#
+	#!GGGCurrencyBorder!# 200
 	#!DefaultBackground!#
 	SetFontSize 40
 	MinimapIcon 0 Grey Raindrop

@@ -37,7 +37,7 @@ Show
 	Class "Currency"
 	AreaLevel <= 24
 	#!ScrollOfWisdomText!#
-	#!CurrencyBorder!#
+	#!GGGCurrencyBorder!# 200
 	#!DefaultBackground!#
 	SetFontSize 45
 	MinimapIcon 2 Grey Raindrop
@@ -49,7 +49,7 @@ Show
 	Class "Currency"
 	AreaLevel <= 24
 	#!PortalScrollText!#
-	#!CurrencyBorder!#
+	#!GGGCurrencyBorder!# 200
 	#!DefaultBackground!#
 	SetFontSize 45
 	MinimapIcon 2 Grey Star
