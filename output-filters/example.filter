@@ -345,7 +345,6 @@ Hide
 	AreaLevel > 77
 	StackSize < 8
 	SetBorderColor 170 158 130 200
-	SetBackgroundColor 0 0 0 120
 	SetFontSize 45
 Hide
 	BaseType "Scroll of Wisdom" "Portal Scroll"
@@ -353,13 +352,11 @@ Hide
 	AreaLevel > 67
 	StackSize < 4
 	SetBorderColor 170 158 130 200
-	SetBackgroundColor 0 0 0 120
 	SetFontSize 45
 Show
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
 	SetBorderColor 170 158 130 200
-	SetBackgroundColor 0 0 0 120
 	SetFontSize 40
 	MinimapIcon 0 Grey Raindrop
 ## T0/T1 Currency ##
@@ -386,7 +383,6 @@ Show
 	SetFontSize 45
 	SetTextColor 250 0 125 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
@@ -396,7 +392,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\martin-brundle-is-that-glock.mp3"
@@ -406,7 +401,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	PlayAlertSound 10 200
@@ -417,7 +411,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	PlayAlertSound 11 200
@@ -428,7 +421,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\gamersnexus-thanks-intel.mp3"
@@ -439,7 +431,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -451,7 +442,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-chance.mp3" 300
 Hide
@@ -462,14 +452,12 @@ Hide
 	StackSize < 3
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 Show
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Green UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\water-drop.mp3"
 ## T4 Currency ##
@@ -481,7 +469,6 @@ Show
 #	StackSize < 6
 #	SetTextColor 0 255 0 255
 #	SetBorderColor 0 255 0 255
-#	SetBackgroundColor 0 0 0 120
 Hide
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -490,14 +477,12 @@ Hide
 	StackSize < 3
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 Show
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
 	SetFontSize 45
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Grey UpsideDownHouse
 	# CustomAlertSound "sounds/water-drop.mp3"
 ## Other Currency ##
@@ -508,7 +493,6 @@ Show
 	SetFontSize 45
 	SetTextColor 190 178 135 255
 	SetBorderColor 190 178 135 255
-	SetBackgroundColor 0 0 0 120
 ## Currency Div Cards ##
 Show
 	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate"
@@ -516,7 +500,6 @@ Show
 	SetFontSize 45
 	SetTextColor 250 0 125 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
@@ -526,7 +509,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -536,7 +518,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 255 0 255
-	SetBackgroundColor 0 0 0 120
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"

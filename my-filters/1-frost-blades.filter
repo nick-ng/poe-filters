@@ -1,30 +1,6 @@
-# Orb of Chance bases
-Show
-	BaseType "Wyrmscale Gauntlets"
-	Rarity Normal
-	HasInfluence None
-	Corrupted False
-	FracturedItem False
-	Mirrored False
-	Sockets < 6
-	SetBorderColor 200 80 0
-	ItemLevel >= 45
-	SetFontSize 45
-
-# Divination Cards
-Show
-	BaseType == "Earth Drinker"
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 232 99 0 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
-
 # Build Uniques
 Show
-	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Vaal Greaves"
+	BaseType == "Imperial Skean" "Soldier Gloves" "Leather Hood" "Dragonscale Boots"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -55,10 +31,9 @@ Show
 	#! tts "granite" granite Amy 300 1.0
 
 #! linksa RRRG
-#! linksa RRRR
-#! linksa RGG 12
+#! linksa RRGG
+#! linksa RGG
 #! linksa RRG
-#! linksa RRR
 
 # Rares during leveling
 
