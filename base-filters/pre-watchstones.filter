@@ -14,3 +14,12 @@ Show
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
+	BaseType == "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Amethyst Flask"
+	ItemLevel >= 63 # Masochist's
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	SetBorderColor 55 55 0 200
+	MinimapIcon 0 Blue UpsideDownHouse
