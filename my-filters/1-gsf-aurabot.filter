@@ -78,6 +78,7 @@ Show
 #! linksa RRG 40 55
 
 #! import absolution-start.filter
+#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

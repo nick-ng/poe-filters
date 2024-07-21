@@ -63,6 +63,7 @@ Show
 
 #! import fire-templar-start.filter
 #! import library-shield-chage-spell.filter
+#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

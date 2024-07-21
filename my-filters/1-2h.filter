@@ -84,6 +84,7 @@ Show
 	SetBorderColor 53 216 234 255
 
 #! import leveling.filter
+#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
