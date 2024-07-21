@@ -9,6 +9,7 @@
 	"GGGQuestText": "SetTextColor 74 230 58",
 	"ScrollOfWisdomText": "SetTextColor 210 178 135 220",
 	"PortalScrollText": "SetTextColor 50 240 240 220",
+	"EssenceText": "SetTextColor 154 141 207 255",
 	"T0CurrencyText": "SetTextColor 250 0 125 255",
 	"T1CurrencyText": "SetTextColor 255 127 0 255",
 	"T2CurrencyText": "SetTextColor 255 255 0 255",

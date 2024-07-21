@@ -1,17 +1,17 @@
 # Divination Cards
-# Show
-# 	BaseType == ""
-# 	SetFontSize 45
-# 	SetBackgroundColor 255 255 255 200
-# 	SetTextColor 255 140 54 255
-# 	SetBorderColor 47 252 47 255
-# 	MinimapIcon 2 Brown Star
-# 	PlayEffect Brown
-# 	CustomAlertSound "sounds/imexile-ok.mp3"
+Show
+	BaseType == "The Admirer"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 200
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
 Show
-	BaseType == "Sapphire Ring" "Aventail Helmet" "Praetor Crown" "Lacquered Garb" "Conjurer Boots"
+	BaseType == "Sapphire Ring" "Aventail Helmet" "Praetor Crown" "Lacquered Garb" "Conjurer Boots" "Paua Amulet" "Samnite Helmet"
 	Rarity Unique
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 200
@@ -27,11 +27,21 @@ Show
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!strint3!# #!strdex3!#
+	BaseType #!strint9!# #!dexint9!# #!int9!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
+
+# Item Bases
+Show
+	BaseType "Void Sceptre" "Opal Sceptre"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel <= 81 # T1 Mana
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
 
 Show
 	BaseType "Divine Mana Flask" "Eternal Mana Flask"

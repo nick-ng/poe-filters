@@ -127,7 +127,7 @@ Show
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!dex3!# #!dexint3!# #!strdex3!#
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star

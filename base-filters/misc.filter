@@ -10,7 +10,7 @@ Show
 	SetBorderColor 0 0 0 255
 	MinimapIcon 1 Yellow Hexagon
 	PlayEffect Yellow
-	PlayAlertSound 2 300
+	PlayAlertSound 1 300
 
 Show # Loreweave
 	Rarity = Unique

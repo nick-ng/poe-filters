@@ -14,7 +14,7 @@ Show
 	SetFontSize 45
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
@@ -32,7 +32,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
@@ -59,7 +59,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
@@ -77,7 +77,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 33 # The Upper Sceptre of God - Act 3
@@ -96,7 +96,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 37 # Kaom's/Daresso's Dream - Act 4
@@ -114,7 +114,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
@@ -133,7 +133,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
@@ -151,7 +151,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 49 # The Southern Forest - Act 6
@@ -169,7 +169,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
@@ -188,7 +188,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
@@ -207,7 +207,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 58 # The Imperial Fields - Act 8
@@ -225,7 +225,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 60 # The Harbour Bridge - Act 8
@@ -243,7 +243,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
@@ -261,7 +261,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
@@ -279,7 +279,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
@@ -298,7 +298,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
@@ -316,7 +316,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
@@ -335,7 +335,7 @@ Show
 	Rarity > Normal
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10

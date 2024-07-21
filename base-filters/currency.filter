@@ -103,7 +103,7 @@ Show # T-1 Currency
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 
-Show # Imprint - You're waiting for it to drop.
+Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
