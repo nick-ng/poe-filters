@@ -2,7 +2,7 @@
 Show
 	BaseType == "A Chilling Wind"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -14,7 +14,7 @@ Show
 	BaseType == "Shadow Sceptre"
 	Rarity Unique
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -25,7 +25,7 @@ Show
 Show
 	BaseType == "Vaal Cold Snap"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetBorderColor 250 125 125
 	SetTextColor 0 200 200
 	MinimapIcon 2 Brown Triangle

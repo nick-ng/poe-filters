@@ -4,7 +4,7 @@
 Show
 	BaseType == "The Lich" "The Penitent" "The Dreamer" "The Breach"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -16,7 +16,7 @@ Show
 	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
 	Rarity Unique
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star

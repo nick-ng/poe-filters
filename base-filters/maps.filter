@@ -9,7 +9,7 @@ Show # T17
 	SetFontSize 45
 	#!GoodBaseBorder!#
 	SetTextColor 255 117 255 200
-	SetBackgroundColor 255 255 255 255
+	#!BrightBackground!#
 	MinimapIcon 2 Purple Square
 	PlayEffect Purple
 	CustomAlertSound "sounds/zana-what-are-you-doing.mp3"

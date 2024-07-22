@@ -2,7 +2,7 @@
 Show
 	BaseType == "The Admirer"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -14,7 +14,7 @@ Show
 	BaseType == "Sapphire Ring" "Aventail Helmet" "Praetor Crown" "Lacquered Garb" "Conjurer Boots" "Paua Amulet" "Samnite Helmet"
 	Rarity Unique
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star

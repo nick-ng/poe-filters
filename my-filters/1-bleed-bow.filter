@@ -17,7 +17,7 @@ Show
 Show
 	BaseType == "Earth Drinker"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
+	#!BrightBackground!#
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star

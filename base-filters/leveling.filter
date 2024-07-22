@@ -149,7 +149,7 @@ Show
 Show
 	BaseType == "Vaal Haste"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetBorderColor 250 125 125
 	SetTextColor 0 200 200
 	MinimapIcon 2 Brown Triangle

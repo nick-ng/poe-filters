@@ -7,7 +7,7 @@
 Show
 	BaseType == "A Dab of Ink" "The Gladiator" "The Porcupine" "Alivia's Grace"
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -19,7 +19,7 @@ Show
 	BaseType == "Carved Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Nightmare Bascinet"
 	Rarity Unique
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 200
+	#!BrightBackground!#
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star

@@ -1,7 +1,3 @@
-
-Show
-	SetBackgroundColor 0 0 0 120
-	Continue
 # Normal comments don't do anything
 # All .filter files in the my-filters directory will be processed. The repo has
 # this example filter and my personal filters
