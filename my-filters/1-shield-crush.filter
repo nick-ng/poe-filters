@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Wyrmscale Gauntlets" "Gut Ripper" "Amethyst Ring" "Granite Flask"
+	BaseType == "Wyrmscale Gauntlets" "Gut Ripper" "Amethyst Ring" "Granite Flask" "Coral Ring"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!#
