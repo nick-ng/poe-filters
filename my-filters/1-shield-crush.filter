@@ -31,7 +31,6 @@ Show
 	Rarity <= Rare
 	ItemLevel >= 86
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Star
 	#! tts "big shield" big-shield Amy 300 1.0
 
@@ -43,7 +42,6 @@ Show
 	Rarity <= Rare
 	ItemLevel >= 69
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Star
 
 Show
@@ -53,7 +51,6 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	#!GoodBaseBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Star
 
 # Weapon Recipe
@@ -63,7 +60,6 @@ Show
 	Rarity <= Magic
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 0 200
-	#!DefaultBackground!#
 	PlayEffect Yellow
 	#! tts "granite" granite Amy 300 1.0
 
@@ -80,7 +76,6 @@ Show
 	Corrupted False
 	SetFontSize 45
 	#!LevelingBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -90,7 +85,6 @@ Show
 	Corrupted False
 	SetFontSize 45
 	#!LevelingBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -100,7 +94,6 @@ Show
 	Corrupted False
 	SetFontSize 25
 	#!LevelingBorder!#
-	#!DefaultBackground!#
 	MinimapIcon 1 Pink Cross
 
 # Rares during leveling
@@ -110,7 +103,6 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!str2!#
-	#!DefaultBackground!#
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -122,7 +114,6 @@ Show
 	Mirrored False
 	BaseType #!strinthelm2!# #!strintboots!#
 	SetBorderColor 53 216 234 255
-	#!DefaultBackground!#
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star

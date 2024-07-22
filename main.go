@@ -49,7 +49,7 @@ func main() {
 
 		path := filepath.Join(MY_FILTERS_PATH, filterName)
 
-		filter, errList := processFilter(path)
+		filter, errList := processFilter(path, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
 		gameFilterPath := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
@@ -103,7 +103,7 @@ func main() {
 }
 
 // @todo(nick-ng): move some functions to separate files
-func processFilter(filterPath string) (string, []error) {
+func processFilter(filterPath string, isImported bool) (string, []error) {
 	var errorList []error
 
 	filterData, err := os.ReadFile(filterPath)
@@ -115,6 +115,11 @@ func processFilter(filterPath string) (string, []error) {
 	rawLines := strings.Split(string(filterData), "\n")
 
 	var processedLines []string
+	if !isImported {
+		processedLines = append(processedLines, `Show
+	#!DefaultBackground!#
+	Continue`)
+	}
 
 	var currentCommand string
 	options := make(map[string][]string)
@@ -149,7 +154,7 @@ func processFilter(filterPath string) (string, []error) {
 									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
 								}
 
-								tempFilter, errs := processFilter(fullPath)
+								tempFilter, errs := processFilter(fullPath, true)
 								// if err != nil {
 								if len(errs) != 0 {
 									errorList = append(errorList, err)
