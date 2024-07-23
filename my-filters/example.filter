@@ -74,6 +74,10 @@ Show
 #! import test3.filter
 # If the file couldn't be imported, the output filter will have an error
 
+#! import gold.filter 1722020400
+# You can set a timestamp so your filters only refer to new items when the
+# league starts.
+
 Show
 	BaseType "Prophecy Wand"
 	Rarity Normal

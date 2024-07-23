@@ -7,7 +7,9 @@ import (
 	"path/filepath"
 	"poe-filters/utils"
 	"regexp"
+	"strconv"
 	"strings"
+	"time"
 )
 
 const MY_FILTERS_PATH string = "my-filters"
@@ -122,6 +124,8 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 	}
 
 	var currentCommand string
+	var importAfterTimestamp int64
+	now := time.Now().Unix()
 	options := make(map[string][]string)
 
 	for _, rawLine := range rawLines {
@@ -160,6 +164,8 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 									errorList = append(errorList, err)
 									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
 									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
+								} else if now < int64(importAfterTimestamp) {
+									processedLines = append(processedLines, fmt.Sprintf("#  skipped because generated at %d", now))
 								} else {
 									for _, deleteRegexpString := range options["delete"] {
 										deleteRegexp, err := regexp.Compile(deleteRegexpString)
@@ -212,6 +218,14 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					{
 						currentCommand = "import"
 						options["file"] = []string{commandArguments[1]}
+						if len(commandArguments) > 2 {
+							importAfterTimestamp, err = strconv.ParseInt(commandArguments[2], 10, 0)
+
+							if err != nil {
+								errorString := fmt.Sprintf("couldn't parse import after timestamp: %s", commandArguments[2])
+								errorList = append(errorList, errors.New(errorString))
+							}
+						}
 
 						tempLine := utils.CleanUpCommand(rawLine)
 						processedLines = append(processedLines, tempLine)

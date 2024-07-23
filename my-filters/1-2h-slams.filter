@@ -47,33 +47,6 @@ Show
 #! linksa RRG
 #! linksa RRR
 
-# Leveling Maces
-Show
-	AreaLevel <= 7 # The Climb - Act 1
-	BaseType == "Driftwood Maul"
-	Corrupted False
-	SetFontSize 45
-	#!LevelingBorder!#
-	MinimapIcon 1 Pink Cross
-	PlayAlertSound 16 200
-
-Show
-	AreaLevel <= 12 # The Cavern of Wrath - Act 1
-	BaseType == "Tribal Maul"
-	Corrupted False
-	SetFontSize 45
-	#!LevelingBorder!#
-	MinimapIcon 1 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-
-Show
-	AreaLevel <= 23 # Ancient Pyramid - Act 2
-	BaseType == "Mallet"
-	Corrupted False
-	SetFontSize 25
-	#!LevelingBorder!#
-	MinimapIcon 1 Pink Cross
-
 # Rares during leveling
 Show
 	AreaLevel <= 72 # Tier 5
@@ -96,13 +69,14 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! import leveling.filter
+#! import 2h-axes.filter
+#! del ### Swords Start(.|\n)+Swords End ###
+
 #! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
-#! import 2h-axes.filter
 
 #! import sov1.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n

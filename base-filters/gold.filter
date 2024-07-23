@@ -1,5 +1,6 @@
+# lots of gold
 Show
-	# lots of gold
+	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 45
 	#!GGGCurrencyText!# 180
@@ -7,16 +8,18 @@ Show
 	PlayEffect White
 	PlayAlertSound 2 200
 
+# a bit of gold
 Show
-	# a bit of gold
+	Class "Gold"
 	StackSize >= 500
 	SetFontSize 45
 	#!GGGCurrencyText!# 180
 	#!GGGCurrencyBorder!# 180
 	PlayEffect White
 
+# any gold
 Show
-	# any gold
+	Class "Gold"
 	SetFontSize 15
 	#!GGGCurrencyText!# 180
 	#!GGGCurrencyBorder!# 180

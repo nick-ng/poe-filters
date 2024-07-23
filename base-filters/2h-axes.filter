@@ -1,4 +1,28 @@
 Show
+	AreaLevel <= 55
+	Class "Currency"
+	BaseType "Blacksmith's Whetstone"
+	SetFontSize 45
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Green
+	#! tts "blacksmith" blacksmith Amy 300 1.0
+
+Show
+	AreaLevel <= 55
+	BaseType "Rustic Sash"
+	SetFontSize 45
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Green
+	#! tts "rustic sash" rustic-sash Amy 300 1.0
+
+#! import leveling.filter
+
+### Swords Start ###
+Show
 	AreaLevel <= 7 # The Climb - Act 1
 	BaseType == "Corroded Blade"
 	Corrupted False
@@ -16,6 +40,44 @@ Show
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
+Show
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
+	BaseType == "Bastard Sword"
+	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+### Swords End ###
+
+### Maces Start ###
+Show
+	AreaLevel <= 7 # The Climb - Act 1
+	BaseType == "Driftwood Maul"
+	Corrupted False
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 12 # The Cavern of Wrath - Act 1
+	BaseType == "Tribal Maul"
+	Corrupted False
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 23 # Ancient Pyramid - Act 2
+	BaseType == "Mallet"
+	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+### Maces End ###
+
+### Axes Start ###
 Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Jade Chopper"
@@ -43,13 +105,6 @@ Show
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
-Show
-	AreaLevel <= 23 # Ancient Pyramid - Act 2
-	BaseType == "Bastard Sword"
-	Corrupted False
-	SetFontSize 25
-	#!LevelingBorder!#
-	MinimapIcon 1 Pink Cross
 
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
@@ -344,3 +399,4 @@ Show
 	SetFontSize 25
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
+### Axes End ###

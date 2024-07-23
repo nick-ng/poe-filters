@@ -28,4 +28,4 @@ When you run it, it will try to copy filters to the Path of Exile directory
 
 ### ToDo Comments
 
-- main.go:105: @todo(nick-ng): move some functions to separate files
+- main.go:107: @todo(nick-ng): move some functions to separate files

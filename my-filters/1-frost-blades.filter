@@ -65,6 +65,7 @@ Show
 #! import misc.filter
 #! import bases.filter
 #! import 2h-axes.filter
+#! del # Maces Start(.|\n)+Maces End #
 
 #! import sov1.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
