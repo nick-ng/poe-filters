@@ -275,7 +275,7 @@ Show
 #? import gold.filter 1722020400
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
-# skipped because generated at 1721718955
+# skipped because generated at 1721728565
 Show
 	BaseType "Prophecy Wand"
 	Rarity Normal
@@ -289,4 +289,4 @@ Show
 	SetFontSize 45
 # If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
 #? import currency.filter
-# skipped because generated at 1721718955
+# skipped because generated at 1721728565
