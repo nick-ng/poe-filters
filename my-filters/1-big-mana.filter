@@ -35,7 +35,7 @@ Show
 
 # Item Bases
 Show
-	BaseType "Void Sceptre" "Opal Sceptre"
+	BaseType "Profane Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare

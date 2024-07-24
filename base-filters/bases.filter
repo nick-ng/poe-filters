@@ -1,7 +1,9 @@
+#! import new-bases.filter 1722020400
+
 Show
 	Corrupted False
 	Mirrored False
-	BaseType "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
+	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
 	#!GoodBaseBorder!#
 	Continue
 
@@ -225,37 +227,37 @@ Show
 	SetBorderColor 200 50 50 255
 
 # Hide uninteresting items as you progress
-Hide
-  Rarity Rare
-  AreaLevel >= 68
-  ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
-  Corrupted False
-  FracturedItem False
-  Identified False
-  HasInfluence None
-  #!DullBorder!#
-  Sockets < 6
+# Hide
+#   Rarity Rare
+#   AreaLevel >= 68
+#   ItemLevel < 83
+#   Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
+#   Corrupted False
+#   FracturedItem False
+#   Identified False
+#   HasInfluence None
+#   #!DullBorder!#
+#   Sockets < 6
 
-Hide
-  Rarity Magic
-  AreaLevel >= 40
-  ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
-  Corrupted False
-  FracturedItem False
-  Identified False
-  HasInfluence None
-  #!DullBorder!#
-  Sockets < 6
+# Hide
+#   Rarity Magic
+#   AreaLevel >= 40
+#   ItemLevel < 83
+#   Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
+#   Corrupted False
+#   FracturedItem False
+#   Identified False
+#   HasInfluence None
+#   #!DullBorder!#
+#   Sockets < 6
 
-Hide
-  Rarity Normal
-  AreaLevel >= 28
-  ItemLevel < 83
-  Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
-  Corrupted False
-  FracturedItem False
-  HasInfluence None
-  #!DullBorder!#
-  Sockets < 6
+# Hide
+#   Rarity Normal
+#   AreaLevel >= 28
+#   ItemLevel < 83
+#   Class "Helmets" "Gloves" "Boots" "Body Armour" "Shields"
+#   Corrupted False
+#   FracturedItem False
+#   HasInfluence None
+#   #!DullBorder!#
+#   Sockets < 6

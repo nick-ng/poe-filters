@@ -1,0 +1,43 @@
+# Helmets
+Show
+	BaseType = "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	#!GoodBaseBorder!#
+	#! tts "new helmet" new-helmet Amy 300 1.0
+
+# Body Armour
+Show
+	BaseType = "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	#!GoodBaseBorder!#
+	#! tts "new body" new-body Amy 300 1.0
+
+# Boots
+Show
+	BaseType = "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	#!GoodBaseBorder!#
+	#! tts "new boots" new-boots Amy 300 1.0
+
+# Golves
+Show
+	BaseType = "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	#!GoodBaseBorder!#
+	#! tts "new gloves" new-gloves Amy 300 1.0
