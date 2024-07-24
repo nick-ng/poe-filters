@@ -158,18 +158,18 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 
 								if err != nil {
 									errorList = append(errorList, err)
-									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
-									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
+									processedLines = append(processedLines, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
 								}
 
 								tempFilter, errs := processFilter(fullPath, true)
 
 								if len(errs) != 0 {
 									errorList = append(errorList, err)
-									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
-									processedLines = append(processedLines, fmt.Sprintf("#  %s\n", err))
+									processedLines = append(processedLines, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
 								} else if now < int64(importAfterTimestamp) {
-									processedLines = append(processedLines, fmt.Sprintf("#  skipped because generated at %d", now))
+									processedLines = append(processedLines, fmt.Sprintf("#?  skipped because generated at %d", now))
 								} else {
 									for _, deleteRegexpString := range options["delete"] {
 										deleteRegexp, err := regexp.Compile(deleteRegexpString)
@@ -177,7 +177,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 										if err != nil {
 											errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
 											errorList = append(errorList, errors.New(errorString))
-											processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
 										}
@@ -189,14 +189,14 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 										if err != nil {
 											errorString := fmt.Sprintf("maxarea argument not an integer: %s", options["maxarea"][0])
 											errorList = append(errorList, errors.New(errorString))
-											processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter2, err := utils.LimitMaxAreaLevel(tempFilter, int(maxarea))
 
 											if err != nil {
 												errorString := fmt.Sprintf("couldn't lower filter's level: %s", err)
 												errorList = append(errorList, errors.New(errorString))
-												processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+												processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
 											} else {
 												tempFilter = tempFilter2
 											}
@@ -204,11 +204,11 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 									}
 
 									processedLines = append(processedLines, tempFilter)
-									processedLines = append(processedLines, fmt.Sprintf("# end of %s\n", options["file"]))
+									processedLines = append(processedLines, fmt.Sprintf("#? end of %s\n", options["file"]))
 								}
 
 							} else {
-								processedLines = append(processedLines, "# error: No file specified.\n")
+								processedLines = append(processedLines, "#? error: No file specified.\n")
 							}
 
 							currentCommand = ""
@@ -229,7 +229,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					{
 						processedLines = append(processedLines, trimmedLine)
 
-						warning := fmt.Sprintf("# warning: Unknown sub-command %s", subCommandArguments[0])
+						warning := fmt.Sprintf("#? warning: Unknown sub-command %s", subCommandArguments[0])
 						processedLines = append(processedLines, warning)
 					}
 				}
@@ -259,7 +259,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 				case "delete":
 					{
 						processedLines = append(processedLines, rawLine)
-						warning := fmt.Sprintf("# warning: %s only allowed during an import", commandArguments[0])
+						warning := fmt.Sprintf("#? warning: %s only allowed during an import", commandArguments[0])
 						processedLines = append(processedLines, warning)
 					}
 				case "skip":
@@ -304,14 +304,14 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					processedLines2 = append(processedLines2, tempLine)
 
 					if len(commandArguments) < 2 {
-						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
+						processedLines2 = append(processedLines2, "#? warning: need at least coloured links (SocketGroup) to work")
 						continue
 					}
 
 					filterBlock, err := utils.GetSocketGroupFilter(commandArguments[1], commandArguments[2:]...)
 
 					if err != nil {
-						e := fmt.Sprintf("# error: couldn't generate links\n#  %s", err)
+						e := fmt.Sprintf("#? error: couldn't generate links\n#?  %s", err)
 						processedLines2 = append(processedLines2, e)
 					} else {
 						processedLines2 = append(processedLines2, filterBlock)
@@ -328,7 +328,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					processedLines2 = append(processedLines2, tempLine)
 
 					if len(commandArguments) < 2 {
-						processedLines2 = append(processedLines2, "# warning: need at least coloured links (SocketGroup) to work")
+						processedLines2 = append(processedLines2, "#? warning: need at least coloured links (SocketGroup) to work")
 						continue
 					}
 
@@ -342,7 +342,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 				}
 			default:
 				{
-					warning := fmt.Sprintf("# warning: Unknown command %s", commandArguments[0])
+					warning := fmt.Sprintf("#? warning: Unknown command %s", commandArguments[0])
 					processedLines2 = append(processedLines2, warning)
 				}
 			}

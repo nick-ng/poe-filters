@@ -21,6 +21,17 @@ Show
 	#! tts "blacksmith" blacksmith Amy 300 1.0
 
 Show
+	AreaLevel <= 22
+	Class "One Hand" "Two Hand" "Wand" "Sceptre" "Dagger" "Bow" "Staves" "Dagger" "Claw"
+	Quality >= 20
+	SetFontSize 45
+	#!T3CurrencyText!#
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "20 quality weapon" 20-quality-weapon Amy 300 1.0
+
+Show
 	AreaLevel <= 55
 	BaseType "Rustic Sash"
 	SetFontSize 45

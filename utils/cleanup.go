@@ -22,6 +22,12 @@ func CleanUpFilter(filter string) string {
 
 	for _, rawLine := range rawLines {
 		trimmedLine := strings.TrimSpace(rawLine)
+
+		// if the filter is very long, remove normal comments
+		// if len(rawLines) > 10000 && strings.HasPrefix(trimmedLine, "#") && !strings.HasPrefix(trimmedLine, "#?") {
+		// 	continue
+		// }
+
 		lowercaseLine := strings.ToLower(trimmedLine)
 
 		if strings.HasPrefix(lowercaseLine, "show") {

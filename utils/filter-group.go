@@ -118,5 +118,7 @@ func LimitMaxAreaLevel(filter string, maxAreaLevel int) (string, error) {
 		newFilterLines = append(newFilterLines, filterGroup.Lines...)
 	}
 
+	newFilterLines = append(newFilterLines, "") // add final newline
+
 	return strings.Join(newFilterLines, "\n"), nil
 }
