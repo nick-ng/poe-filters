@@ -74,6 +74,17 @@ Show
 #! import test3.filter
 # If the file couldn't be imported, the output filter will have an error
 
+#! import 2h-axes.filter
+# You can delete portions of a filter with del and a regular expression
+# Anything that matches the regular expression will be removed
+#! del ### Swords Start(.|\n)+Swords End ###
+
+#! import bases.filter
+# You can add a AreaLevel <= X clause to every item in the filter.
+# If an item already has a AreaLevel < or AreaLevel <=, it will get replaced.
+# You can add comments after the level e.g. to remind you what the level means.
+#! maxarea 40 Act 4 - The Harvest
+
 #! import gold.filter 1722020400
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.

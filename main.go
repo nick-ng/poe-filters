@@ -142,6 +142,10 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 						regexpString := strings.Join(subCommandArguments[1:], " ")
 						options["delete"] = append(options["delete"], regexpString)
 					}
+				case "maxarea":
+					{
+						options["maxarea"] = []string{subCommandArguments[1]}
+					}
 				case "import":
 					fallthrough
 				case "noop":
@@ -159,7 +163,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 								}
 
 								tempFilter, errs := processFilter(fullPath, true)
-								// if err != nil {
+
 								if len(errs) != 0 {
 									errorList = append(errorList, err)
 									processedLines = append(processedLines, fmt.Sprintf("# error: couldn't import %s", options["file"]))
@@ -176,6 +180,26 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 											processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
 										} else {
 											tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
+										}
+									}
+
+									if options["maxarea"] != nil && len(options["maxarea"]) > 0 {
+										maxarea, err := strconv.ParseInt(options["maxarea"][0], 10, 0)
+
+										if err != nil {
+											errorString := fmt.Sprintf("maxarea argument not an integer: %s", options["maxarea"][0])
+											errorList = append(errorList, errors.New(errorString))
+											processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+										} else {
+											tempFilter2, err := utils.LimitMaxAreaLevel(tempFilter, int(maxarea))
+
+											if err != nil {
+												errorString := fmt.Sprintf("couldn't lower filter's level: %s", err)
+												errorList = append(errorList, errors.New(errorString))
+												processedLines = append(processedLines, fmt.Sprintf("# error: %s", errorString))
+											} else {
+												tempFilter = tempFilter2
+											}
 										}
 									}
 
