@@ -2,7 +2,9 @@
 	"str": {
 		"body": [
 			[
-				"Titan Plate"
+				"Royal Plate",
+				"Titan Plate",
+				"Legion Plate"
 			],
 			[
 				"Glorious Plate"
@@ -14,9 +16,10 @@
 		],
 		"helm": [
 			[
-				"General's Helmet"
+				"Conqueror's Helmet"
 			],
 			[
+				"General's Helmet",
 				"Royal Burgonet"
 			],
 			[
@@ -24,6 +27,9 @@
 			]
 		],
 		"boots": [
+			[
+				"Precursor Greaves"
+			],
 			[
 				"Titan Greaves"
 			],
@@ -33,6 +39,9 @@
 			]
 		],
 		"gloves": [
+			[
+				"Precursor Gauntlets"
+			],
 			[
 				"Titan Gauntlets"
 			],
@@ -46,6 +55,10 @@
 	},
 	"dex": {
 		"body": [
+			[
+				"Supreme Leather",
+				"Astral Leather"
+			],
 			[
 				"Zodiac Leather"
 			],
@@ -62,7 +75,9 @@
 		],
 		"helm": [
 			[
-				"Dire Pelt"
+				"Majestic Pelt",
+				"Dire Pelt",
+				"Grizzly Pelt"
 			],
 			[
 				"Lion Pelt"
@@ -79,6 +94,9 @@
 			]
 		],
 		"boots": [
+			[
+				"Harpyskin Boots"
+			],
 			[
 				"Slink Boots"
 			],
@@ -131,6 +149,11 @@
 		],
 		"helm": [
 			[
+				"Lich's Circlet",
+				"Sunfire Circlet",
+				"Moonlit Circlet"
+			],
+			[
 				"Hubris Circlet"
 			],
 			[
@@ -138,6 +161,9 @@
 			]
 		],
 		"boots": [
+			[
+				"Sage Slippers"
+			],
 			[
 				"Sorcerer Boots"
 			],
@@ -147,6 +173,9 @@
 			]
 		],
 		"gloves": [
+			[
+				"Sage Gloves"
+			],
 			[
 				"Sorcerer Gloves"
 			],
@@ -159,6 +188,10 @@
 	},
 	"strdex": {
 		"body": [
+			[
+				"Full Wyvernscale",
+				"Marshall's Brigandine"
+			],
 			[
 				"Full Dragonscale"
 			],
@@ -176,7 +209,8 @@
 		],
 		"helm": [
 			[
-				"Knight Helm"
+				"Knight Helm",
+				"Conquest Helmet"
 			],
 			[
 				"Pig-Faced Bascinet"
@@ -194,6 +228,9 @@
 			]
 		],
 		"boots": [
+			[
+				"Chimerascale Boots"
+			],
 			[
 				"Two-Toned Boots",
 				"Dragonscale Boots"
@@ -228,7 +265,9 @@
 	"strint": {
 		"body": [
 			[
-				"Grand Ringmail"
+				"Sacred Chainmail",
+				"Grand Ringmail",
+				"Paladin's Hauberk"
 			],
 			[
 				"Saint's Hauberk"
@@ -266,6 +305,9 @@
 		],
 		"gloves": [
 			[
+				"Martyr Gloves"
+			],
+			[
 				"Crusader Gloves"
 			],
 			[
@@ -296,7 +338,9 @@
 		],
 		"helm": [
 			[
-				"Jester Mask"
+				"Ancient Mask",
+				"Jester Mask",
+				"Torturer's Mask"
 			],
 			[
 				"Blizzard Crown",
@@ -314,6 +358,9 @@
 		],
 		"boots": [
 			[
+				"Infiltrator Boots"
+			],
+			[
 				"Two-Toned Boots",
 				"Murder Boots"
 			],
@@ -330,6 +377,9 @@
 			]
 		],
 		"gloves": [
+			[
+				"Infiltrator Mitts"
+			],
 			[
 				"Murder Mitts"
 			],
