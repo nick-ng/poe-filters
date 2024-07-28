@@ -20,7 +20,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "large life" life-large Amy 300 1.0
+	#! tts "large life" life-large Amy 200 1.0
 
 Show
 	AreaLevel <= 18
@@ -43,7 +43,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "greater life" life-greater Amy 300 1.0
+	#! tts "greater life" life-greater Amy 200 1.0
 
 Show
 	AreaLevel <= 24
@@ -66,7 +66,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "grand life" life-grand Amy 300 1.0
+	#! tts "grand life" life-grand Amy 200 1.0
 
 Show
 	AreaLevel <= 30
@@ -89,7 +89,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "giant life" life-giant Amy 300 1.0
+	#! tts "giant life" life-giant Amy 200 1.0
 
 Show
 	AreaLevel <= 36
@@ -112,7 +112,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "colossal life" life-colossal Amy 300 1.0
+	#! tts "colossal life" life-colossal Amy 200 1.0
 
 Show
 	AreaLevel <= 42
@@ -135,7 +135,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "sacred life" life-sacred Amy 300 1.0
+	#! tts "sacred life" life-sacred Amy 200 1.0
 
 Show
 	AreaLevel <= 44
@@ -158,7 +158,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	#! tts "hallowed life" life-hallowed Amy 300 1.0
+	#! tts "hallowed life" life-hallowed Amy 200 1.0
 
 Show
 	AreaLevel <= 60
@@ -182,4 +182,4 @@ Show
 	SetBorderColor 255 0 0 200
 	PlayEffect Red
 	MinimapIcon 2 Red Raindrop
-	#! tts "divine life" life-divine Amy 300 1.0
+	#! tts "divine life" life-divine Amy 200 1.0

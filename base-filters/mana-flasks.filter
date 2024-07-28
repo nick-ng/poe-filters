@@ -20,7 +20,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "large mana" mana-large Amy 300 1.0
+	#! tts "large mana" mana-large Amy 200 1.0
 
 Show
 	AreaLevel <= 18
@@ -43,7 +43,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "greater mana" mana-greater Amy 300 1.0
+	#! tts "greater mana" mana-greater Amy 200 1.0
 
 Show
 	AreaLevel <= 24
@@ -66,7 +66,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "grand mana" mana-grand Amy 300 1.0
+	#! tts "grand mana" mana-grand Amy 200 1.0
 
 Show
 	AreaLevel <= 30
@@ -89,7 +89,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "giant mana" mana-giant Amy 300 1.0
+	#! tts "giant mana" mana-giant Amy 200 1.0
 
 Show
 	AreaLevel <= 36
@@ -112,7 +112,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "colossal mana" mana-colossal Amy 300 1.0
+	#! tts "colossal mana" mana-colossal Amy 200 1.0
 
 Show
 	AreaLevel <= 42
@@ -135,7 +135,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "sacred mana" mana-sacred Amy 300 1.0
+	#! tts "sacred mana" mana-sacred Amy 200 1.0
 
 Show
 	AreaLevel <= 44
@@ -158,7 +158,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	#! tts "hallowed mana" mana-hallowed Amy 300 1.0
+	#! tts "hallowed mana" mana-hallowed Amy 200 1.0
 
 Show
 	AreaLevel <= 60
@@ -182,4 +182,4 @@ Show
 	SetBorderColor 0 0 255 200
 	PlayEffect Red
 	MinimapIcon 2 Blue Raindrop
-	#! tts "divine mana" mana-divine Amy 300 1.0
+	#! tts "divine mana" mana-divine Amy 200 1.0

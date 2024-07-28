@@ -193,7 +193,7 @@ Show # Orb of Chance is more important until yellow maps
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
 	MinimapIcon 0 Yellow UpsideDownHouse
-	#! tts "chance" chance Amy 300 1.2
+	#! tts "chance" chance Amy 200 1.2
 
 Hide # Red Maps
 	Class "Currency"

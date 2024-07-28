@@ -15,7 +15,7 @@ Show
   #!DefaultBackground!#
   #!GoodBaseBorder!#
   PlayEffect Red
-  #! tts "goat horn" goat-horn Amy 300 1.0
+  #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star
 
 Show

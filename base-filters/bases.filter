@@ -100,7 +100,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Red
 	MinimapIcon 2 Red Raindrop
-	#! tts "divine life" life-divine Amy 300 1.0
+	#! tts "divine life" life-divine Amy 200 1.0
 
 ###########################
 ## Helmet, Gloves, Boots ##

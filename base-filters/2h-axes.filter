@@ -7,7 +7,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "granite" granite Amy 300 1.0
+	#! tts "granite" granite Amy 200 1.0
 
 Show
 	AreaLevel <= 55
@@ -18,7 +18,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "blacksmith" blacksmith Amy 300 1.0
+	#! tts "blacksmith" blacksmith Amy 200 1.0
 
 Show
 	AreaLevel <= 22
@@ -29,7 +29,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "20 quality weapon" 20-quality-weapon Amy 300 1.0
+	#! tts "20 quality weapon" 20-quality-weapon Amy 200 1.0
 
 Show
 	AreaLevel <= 55
@@ -39,7 +39,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "rustic sash" rustic-sash Amy 300 1.0
+	#! tts "rustic sash" rustic-sash Amy 200 1.0
 
 #! import leveling.filter
 

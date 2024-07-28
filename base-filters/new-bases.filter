@@ -7,7 +7,7 @@ Show
 	PlayEffect Cyan
 	MinimapIcon 2 Cyan Star
 	#!GoodBaseBorder!#
-	#! tts "new helmet" new-helmet Amy 300 1.0
+	#! tts "new helmet" new-helmet Amy 200 1.0
 
 # Body Armour
 Show
@@ -18,7 +18,7 @@ Show
 	PlayEffect Cyan
 	MinimapIcon 2 Cyan Star
 	#!GoodBaseBorder!#
-	#! tts "new body" new-body Amy 300 1.0
+	#! tts "new body" new-body Amy 200 1.0
 
 # Boots
 Show
@@ -29,7 +29,7 @@ Show
 	PlayEffect Cyan
 	MinimapIcon 2 Cyan Star
 	#!GoodBaseBorder!#
-	#! tts "new boots" new-boots Amy 300 1.0
+	#! tts "new boots" new-boots Amy 200 1.0
 
 # Golves
 Show
@@ -40,4 +40,4 @@ Show
 	PlayEffect Cyan
 	MinimapIcon 2 Cyan Star
 	#!GoodBaseBorder!#
-	#! tts "new gloves" new-gloves Amy 300 1.0
+	#! tts "new gloves" new-gloves Amy 200 1.0

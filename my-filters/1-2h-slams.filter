@@ -58,7 +58,7 @@ Show
 	#!LevelingBorder!#
 	#!BrightBackground!#
 	MinimapIcon 1 Pink Star
-	#! tts "lapis" lapis-amulet Amy 300 1.0
+	#! tts "lapis" lapis-amulet Amy 200 1.0
 
 # Rares during leveling
 Show
@@ -98,7 +98,7 @@ Show
 #! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
 #! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
 
-#! tts "check filter" check-filter Amy 300 1.0
+#! tts "check filter" check-filter Amy 200 1.0
 
 #! import sov2.filter
 #! maxarea 80 tier 13
@@ -109,7 +109,7 @@ Show
 #! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
 #! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
 
-#! tts "check filter" check-filter Amy 300 1.0
+#! tts "check filter" check-filter Amy 200 1.0
 
 #! import sov3.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
@@ -119,4 +119,4 @@ Show
 #! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
 #! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
 
-#! tts "check filter" check-filter Amy 300 1.0
+#! tts "check filter" check-filter Amy 200 1.0
