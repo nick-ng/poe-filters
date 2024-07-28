@@ -225,15 +225,15 @@ Show # T3 Currency (3+ to show)
 #	StackSize < 6
 #	#!T3CurrencyText!#
 #	#!CurrencyBorder!#
-#
-Hide # White Maps
-	Class "Currency"
-	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
-	SetFontSize 45
-	AreaLevel > 67
-	StackSize < 3
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+
+# Hide # White Maps
+# 	Class "Currency"
+# 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
+# 	SetFontSize 45
+# 	AreaLevel > 67
+# 	StackSize < 3
+# 	#!T3CurrencyText!#
+# 	#!CurrencyBorder!#
 
 Show # T4 Currency (4+ to show)
 	Class "Currency"
