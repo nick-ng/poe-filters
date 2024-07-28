@@ -32,7 +32,36 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Leveling Items
+# Item Bases
+Show
+	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand" "Imbued Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 82 # T1 Generic DoT multi
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Fingerless Silk Gloves" "Apothecary's Gloves"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	ItemLevel >= 72 # T2 resist
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+
+#! linksa GBBB
+#! linksa BBBB
+#! linksa GBB
+#! linksa BBB
+
+#! import library-shield-charge.filter
+#! import library-shield-charge-spell.filter
+#! import leveling.filter
+
+# More Leveling Items
 Show
 	AreaLevel < 68
 	Rarity = Rare
@@ -63,34 +92,6 @@ Show
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
 
-# Item Bases
-Show
-	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand" "Imbued Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel = 82 # T1 Generic DoT multi
-	#!GoodBaseBorder!#
-	MinimapIcon 1 Pink Star
-
-Show
-	BaseType "Fingerless Silk Gloves" "Apothecary's Gloves"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	SetFontSize 45
-	ItemLevel >= 72 # T2 resist
-	#!GoodBaseBorder!#
-	MinimapIcon 1 Pink Star
-
-#! linksa GBBB
-#! linksa BBBB
-#! linksa GBB
-#! linksa BBB
-
-#! import library-shield-charge.filter
-#! import library-shield-charge-spell.filter
-#! import leveling.filter
 #! import cold-gem-recipe.filter
 #! import currency.filter
 #! import maps.filter

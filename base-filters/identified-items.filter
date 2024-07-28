@@ -1,0 +1,40 @@
+### Good identified items
+# +1 Spells
+# Magister's: All
+# of the Underground: Delve. Potential +1 <attribute> Socketed
+Show
+  Class == "Rune Daggers" "Sceptres" "Wands"
+  HasExplicitMod "of the Underground" "Subterranean" "of Many" "Matatl's" "Tacati" "Topotante's"
+  Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 135 206 235
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+
+Show
+  HasExplicitMod "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's" "Exalter's" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "Dictator's" "Merciless" "Flaring" "of Dissolution" "of Destruction" "of Incision" "of Exsanguinating" "of the Fanatical" "of Heartstopping" "of Disintegrating" "of the Deathless" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of Unmaking" "Martinet's" "Overseer's" "of Celebration"
+  Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 135 206 235
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+
+Show
+  HasExplicitMod "The Shaper's" "of Shaping" "The Elder's" "of the Elder" "Crusader's" "of the Crusade" "Redeemer's" "of Redemption" "Hunter's" "of the Hunt" "Warlord's" "of the Conquest"
+  Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White

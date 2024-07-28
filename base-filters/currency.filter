@@ -1,4 +1,4 @@
-#! import gold.filter 1722020400
+#! import gold.filter
 
 ##################
 ## Recombinator ##
@@ -289,3 +289,51 @@ Show
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+## Always show Oils
+Show
+	BaseType "Golden Oil"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 75 125 75
+	SetFontSize 45
+	PlayEffect White
+	PlayAlertSound 6 200
+	MinimapIcon 0 White Raindrop
+Show
+	BaseType "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
+	SetBackgroundColor 200 250 200
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayEffect Orange
+	PlayAlertSound 10 200
+	MinimapIcon 0 Orange Triangle
+Show
+	BaseType "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil"
+	SetBackgroundColor 150 200 150
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayEffect Orange Temp
+	PlayAlertSound 11 200
+	MinimapIcon 1 Orange Triangle
+Show
+	BaseType "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+	SetBackgroundColor 100 150 100
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 25
+	MinimapIcon 2 Orange Triangle
+
+Show
+	AreaLevel > 83
+	Class Amulet
+	AnyEnchantment True
+	#!BrightBackground!#
+	#!DullBorder!#
+	#!EssenceText!#
+	SetFontSize 45
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+#! import identified-items.filter

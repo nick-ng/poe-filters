@@ -21,15 +21,26 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Weapon Base
+# Item Bases
 Show
 	BaseType = "Vaal Axe" "Karui Chopper"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 83 # T1 Phys, T1 Cast Speed
+	SetFontSize 45
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Medium Cluster Jewel"
+	EnchantmentPassiveNode "Exerted"
+	ItemLevel <= 83
+	ItemLevel >= 68
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 #! linksa RRRG
 #! linksa RRRR
@@ -37,7 +48,10 @@ Show
 #! linksa RRG
 #! linksa RRR
 
-# Leveling Items
+#! import 2h-axes.filter
+#! del ### Swords Start(.|\n)+Swords End ###
+
+# More Leveling Items
 Show
 	BaseType = "Lapis Amulet"
 	AreaLevel <= 7
@@ -68,9 +82,7 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! import 2h-axes.filter
-#! del ### Swords Start(.|\n)+Swords End ###
-
+#! import cold-gem-recipe.filter
 #! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter

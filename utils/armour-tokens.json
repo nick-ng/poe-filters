@@ -2,6 +2,9 @@
 	"str": {
 		"body": [
 			[
+				"Titan Plate"
+			],
+			[
 				"Glorious Plate"
 			],
 			[
@@ -10,6 +13,9 @@
 			]
 		],
 		"helm": [
+			[
+				"General's Helmet"
+			],
 			[
 				"Royal Burgonet"
 			],
@@ -31,8 +37,7 @@
 				"Titan Gauntlets"
 			],
 			[
-				"Vaal Gauntlets",
-				"Debilitation Gauntlets"
+				"Vaal Gauntlets"
 			],
 			[
 				"Spiked Gloves"
@@ -56,6 +61,9 @@
 			]
 		],
 		"helm": [
+			[
+				"Dire Pelt"
+			],
 			[
 				"Lion Pelt"
 			],
@@ -89,8 +97,10 @@
 		],
 		"gloves": [
 			[
-				"Slink Gloves",
-				"Sinistral Gloves"
+				"Harpyskin Gloves"
+			],
+			[
+				"Slink Gloves"
 			],
 			[
 				"Stealth Gloves",
@@ -107,6 +117,11 @@
 	},
 	"int": {
 		"body": [
+			[
+				"Arcane Vestment",
+				"Nightweave Robe",
+				"Twilight Regalia"
+			],
 			[
 				"Vaal Regalia"
 			],
@@ -161,6 +176,9 @@
 		],
 		"helm": [
 			[
+				"Knight Helm"
+			],
+			[
 				"Pig-Faced Bascinet"
 			],
 			[
@@ -210,6 +228,9 @@
 	"strint": {
 		"body": [
 			[
+				"Grand Ringmail"
+			],
+			[
 				"Saint's Hauberk"
 			],
 			[
@@ -218,6 +239,10 @@
 			]
 		],
 		"helm": [
+			[
+				"Paladin Crown",
+				"Faithful Helmet"
+			],
 			[
 				"Archdemon Crown",
 				"Bone Helmet",
@@ -228,6 +253,9 @@
 			]
 		],
 		"boots": [
+			[
+				"Martyr Boots"
+			],
 			[
 				"Two-Toned Boots",
 				"Crusader Boots"
@@ -249,6 +277,10 @@
 	"dexint": {
 		"body": [
 			[
+				"Torturer Garb",
+				"Sanguine Raiment"
+			],
+			[
 				"Blood Raiment",
 				"Carnal Armour",
 				"Sadist Garb"
@@ -263,6 +295,9 @@
 			]
 		],
 		"helm": [
+			[
+				"Jester Mask"
+			],
 			[
 				"Blizzard Crown",
 				"Vaal Mask",

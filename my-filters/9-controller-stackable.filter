@@ -1,0 +1,46 @@
+## Show stackable items
+Show
+	AreaLevel < 68
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	MinimapIcon 2 Orange Circle
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+#! import gold.filter
+
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
+	StackSize < 5
+
+Show
+	Class "Currency"
+	MinimapIcon 0 Orange Triangle
+	SetFontSize 15
+	PlayEffect Orange
+
+Show
+	Class "Divination"
+	MinimapIcon 0 Orange Triangle
+	SetFontSize 15
+	PlayEffect Orange
+
+Show
+	BaseType "Scarab"
+	Class "Map Fragment"
+	MinimapIcon 0 Orange Triangle
+	SetFontSize 15
+	PlayEffect Orange
+
+Show
+	BaseType "Golden Oil" "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+	MinimapIcon 0 Orange Triangle
+	SetFontSize 15
+	PlayEffect Orange
+
+# hide almost everything else
+#! import neversink-uber-plus.filter
+
+#! import sov3.filter

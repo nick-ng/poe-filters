@@ -1,3 +1,5 @@
+## Make sure this is after any links
+
 Show
 	Class "Currency"
 	BaseType == "Orb of Horizons"
@@ -158,3 +160,20 @@ Show
 
 #! import life-flasks.filter
 #! import mana-flasks.filter
+
+Show
+	Class "Helmets" "Gloves" "Boots" "Body Armour"
+	Rarity = Rare
+	AreaLevel <= 67
+	Sockets >= 4
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Moon
+
+# Show
+# 	Class == "Stackable Currency"
+# 	BaseType "Golden Oil" "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+# 	MinimapIcon 0 Orange Triangle
+# 	#!GGGCurrencyBorder!#
+# 	SetFontSize 25
+# 	PlayEffect Orange

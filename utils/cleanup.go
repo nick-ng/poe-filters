@@ -28,6 +28,11 @@ func CleanUpFilter(filter string) string {
 		// 	continue
 		// }
 
+		if strings.HasPrefix(trimmedLine, "## ") {
+			// Comments that are meant to be removed
+			continue
+		}
+
 		lowercaseLine := strings.ToLower(trimmedLine)
 
 		if strings.HasPrefix(lowercaseLine, "show") {

@@ -53,10 +53,28 @@ Show
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
+## Priority for Brutus
+Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Longsword"
+	Corrupted False
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Longsword"
 	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+
+## Priority for Merveil
+Show
+	AreaLevel <= 13 # The Cavern of Anger - Act 1
+	BaseType == "Bastard Sword"
 	SetFontSize 45
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
@@ -81,10 +99,27 @@ Show
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
+## Priority for Brutus
+Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Tribal Maul"
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Tribal Maul"
 	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+
+## Priority for Merveil
+Show
+	AreaLevel <= 13 # The Cavern of Anger - Act 1
+	BaseType == "Mallet"
 	SetFontSize 45
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
@@ -100,6 +135,15 @@ Show
 ### Maces End ###
 
 ### Axes Start ###
+## Priority for Brutus
+Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Jade Chopper"
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Jade Chopper"
@@ -108,10 +152,19 @@ Show
 	#!LevelingBorder!#
 	MinimapIcon 1 Pink Cross
 
+## Priority for Merveil
+Show
+	AreaLevel <= 13 # The Cavern of Anger - Act 1
+	BaseType == "Woodsplitter"
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Woodsplitter"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -127,11 +180,9 @@ Show
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
-
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Poleaxe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -149,7 +200,6 @@ Show
 Show
 	AreaLevel <= 33 # The Upper Sceptre of God - Act 3
 	BaseType == "Double Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -168,7 +218,6 @@ Show
 Show
 	AreaLevel <= 37 # Kaom's/Daresso's Dream - Act 4
 	BaseType == "Gilded Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -186,7 +235,6 @@ Show
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Shadow Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -205,7 +253,6 @@ Show
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Jasper Chopper"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -223,7 +270,6 @@ Show
 Show
 	AreaLevel <= 49 # The Southern Forest - Act 6
 	BaseType == "Timber Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -241,7 +287,6 @@ Show
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Headsman Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -260,7 +305,6 @@ Show
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Labrys"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -279,7 +323,6 @@ Show
 Show
 	AreaLevel <= 58 # The Imperial Fields - Act 8
 	BaseType == "Noble Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -297,7 +340,6 @@ Show
 Show
 	AreaLevel <= 60 # The Harbour Bridge - Act 8
 	BaseType == "Abyssal Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -315,7 +357,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Karui Chopper"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -333,7 +374,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Sundering Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -351,7 +391,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Ezomyte Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -370,7 +409,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Vaal Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -388,7 +426,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Despot Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#
@@ -407,7 +444,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Void Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	#!LevelingBorder!#

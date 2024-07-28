@@ -235,7 +235,6 @@ Show
 # will be imported
 # You can remove parts of the filter with:
 # The filter will be imported as soon as you reach an uncommented line
-## example.filter
 Show
 	BaseType "Glorious Plate"
 	Rarity Normal
@@ -782,6 +781,21 @@ Show
 	MinimapIcon 2 Blue Raindrop
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-mana-divine.mp3" 300
 #? end of [mana-flasks.filter]
+Show
+	Class "Helmets" "Gloves" "Boots" "Body Armour"
+	Rarity = Rare
+	AreaLevel <= 67
+	Sockets >= 4
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Moon
+# Show
+# 	Class == "Stackable Currency"
+# 	BaseType "Golden Oil" "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+# 	MinimapIcon 0 Orange Triangle
+# 	SetBorderColor 170 158 130
+# 	SetFontSize 25
+# 	PlayEffect Orange
 #? end of [leveling.filter]
 ### Maces Start ###
 Show
@@ -793,9 +807,22 @@ Show
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Tribal Maul"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Tribal Maul"
 	Corrupted False
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 13 # The Cavern of Anger - Act 1
+	BaseType == "Mallet"
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
 	MinimapIcon 1 Pink Cross
@@ -810,6 +837,13 @@ Show
 ### Maces End ###
 ### Axes Start ###
 Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Jade Chopper"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 12 # The Cavern of Wrath - Act 1
 	BaseType == "Jade Chopper"
 	Corrupted False
@@ -817,9 +851,16 @@ Show
 	SetBorderColor 13 255 201 255
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 13 # The Cavern of Anger - Act 1
+	BaseType == "Woodsplitter"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Woodsplitter"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -836,7 +877,6 @@ Show
 Show
 	AreaLevel <= 23 # Ancient Pyramid - Act 2
 	BaseType == "Poleaxe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -852,7 +892,6 @@ Show
 Show
 	AreaLevel <= 33 # The Upper Sceptre of God - Act 3
 	BaseType == "Double Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -869,7 +908,6 @@ Show
 Show
 	AreaLevel <= 37 # Kaom's/Daresso's Dream - Act 4
 	BaseType == "Gilded Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -885,7 +923,6 @@ Show
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Shadow Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -902,7 +939,6 @@ Show
 Show
 	AreaLevel <= 45 # The Cathedra Rooftop - Act 5
 	BaseType == "Jasper Chopper"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -918,7 +954,6 @@ Show
 Show
 	AreaLevel <= 49 # The Southern Forest - Act 6
 	BaseType == "Timber Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -934,7 +969,6 @@ Show
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Headsman Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -951,7 +985,6 @@ Show
 Show
 	AreaLevel <= 62 # The Foothills - Act 9
 	BaseType == "Labrys"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -968,7 +1001,6 @@ Show
 Show
 	AreaLevel <= 58 # The Imperial Fields - Act 8
 	BaseType == "Noble Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -984,7 +1016,6 @@ Show
 Show
 	AreaLevel <= 60 # The Harbour Bridge - Act 8
 	BaseType == "Abyssal Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1000,7 +1031,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Karui Chopper"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1016,7 +1046,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Sundering Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1032,7 +1061,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Ezomyte Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1049,7 +1077,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Vaal Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1065,7 +1092,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Despot Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1082,7 +1108,6 @@ Show
 Show
 	AreaLevel <= 67 # The Feeding Trough - Act 10
 	BaseType == "Void Axe"
-	Corrupted False
 	SetFontSize 45
 	Rarity > Normal
 	SetBorderColor 13 255 201 255
@@ -1102,15 +1127,58 @@ Show
 # If an item already has a AreaLevel < or AreaLevel <=, it will get replaced.
 # You can add comments after the level e.g. to remind you what the level means.
 #? import new-bases.filter 1722020400
-#? skipped because generated at 1721819777
+# Helmets
+Show
+	AreaLevel <= 40
+	BaseType = "Conqueror's Helmet" "Giantslayer Helmet" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Conquest Helmet" "Haunted Bascinet" "Divine Crown" "Ancient Mask" "Torturer's Mask"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	SetBorderColor 255 117 255 200
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-new-helmet.mp3" 300
+# Body Armour
+Show
+	AreaLevel <= 40
+	BaseType = "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Paladin's Hauberk" "Sacred Chainmail" "Necrotic Armour"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	SetBorderColor 255 117 255 200
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-new-body.mp3" 300
+# Boots
+Show
+	AreaLevel <= 40
+	BaseType = "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	SetBorderColor 255 117 255 200
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-new-boots.mp3" 300
+# Golves
+Show
+	AreaLevel <= 40
+	BaseType = "Precursor Gauntlets" "Leviathan Gauntlets" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Star
+	SetBorderColor 255 117 255 200
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-new-gloves.mp3" 300
+#? end of [new-bases.filter]
 Show
 	AreaLevel <= 40
 	Corrupted False
 	Mirrored False
-	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Blood Raiment" "Carnal Armour" "Sadist Garb" "Varnished Coat" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Harlequin Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Debilitation Gauntlets" "Spiked Gloves" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Slink Gloves" "Sinistral Gloves" "Stealth Gloves" "Gripped Gloves" "Shagreen Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Lacquered Helmet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots"
+	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Titan Plate" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine" "Grand Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Torturer Garb" "Sanguine Raiment" "Blood Raiment" "Carnal Armour" "Sadist Garb" "General's Helmet" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Spiked Gloves" "Dire Pelt" "Lion Pelt" "Sinner Tricorne" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Harpyskin Gloves" "Slink Gloves" "Stealth Gloves" "Gripped Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Knight Helm" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Jester Mask" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts"
 	SetBorderColor 255 117 255 200
 	Continue
-## Vermillion Ring ##
 Show
 	AreaLevel <= 40
 	BaseType "Vermillion Ring"
@@ -1123,7 +1191,6 @@ Show
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 	PlayAlertSound 6 200
-## Rings, Amulets, Belts ##
 Show
 	AreaLevel <= 40
 	BaseType = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
@@ -1149,7 +1216,6 @@ Show
 	PlayEffect Cyan
 	PlayAlertSound 1 300
 	MinimapIcon 1 Cyan Cross
-## Top Utility Flasks ##
 Show
 	AreaLevel <= 40
 	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
@@ -1159,7 +1225,6 @@ Show
 	SetTextColor 0 203 221 200
 	PlayEffect Red
 	SetBorderColor 255 117 255 200
-## Flagellant Utility Flasks ##
 Show
 	AreaLevel <= 40
 	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Amethyst Flask"
@@ -1178,7 +1243,6 @@ Show
 	Rarity <= Magic
 	SetTextColor 0 203 221 200
 	SetBorderColor 55 55 0 200
-## Seething Life Flasks ##
 Show
 	AreaLevel <= 40
 	BaseType == "Divine Life Flask"
@@ -1190,7 +1254,6 @@ Show
 	PlayEffect Red
 	MinimapIcon 2 Red Raindrop
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-life-divine.mp3" 300
-## Helmet, Gloves, Boots ##
 Show
 	AreaLevel <= 40
 	ItemLevel >= 85
@@ -1198,7 +1261,7 @@ Show
 	BaseDefencePercentile >= 80
 	Corrupted False
 	Mirrored False
-	BaseType "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Two-Toned Boots" "Murder Boots" "Murder Mitts" "Royal Burgonet" "Titan Greaves" "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Slink Gloves" "Sinistral Gloves" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Pig-Faced Bascinet" "Two-Toned Boots" "Dragonscale Boots" "Dragonscale Gauntlets" "Crusader Gloves" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Two-Toned Boots" "Crusader Boots"
+	BaseType "Titan Greaves" "Titan Gauntlets" "General's Helmet" "Harpyskin Gloves" "Dire Pelt" "Slink Boots" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Knight Helm" "Two-Toned Boots" "Dragonscale Boots" "Dragonscale Gauntlets" "Paladin Crown" "Faithful Helmet" "Martyr Boots" "Crusader Gloves" "Jester Mask" "Two-Toned Boots" "Murder Boots" "Murder Mitts"
 	SetFontSize 40
 	PlayEffect Red
 	CustomAlertSound "d:\git\poe-filters\sounds\rue-limp.mp3"
@@ -1211,11 +1274,10 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Harlequin Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Debilitation Gauntlets" "Spiked Gloves" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Slink Gloves" "Sinistral Gloves" "Stealth Gloves" "Gripped Gloves" "Shagreen Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Lacquered Helmet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots"
+	BaseType "General's Helmet" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Spiked Gloves" "Dire Pelt" "Lion Pelt" "Sinner Tricorne" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Harpyskin Gloves" "Slink Gloves" "Stealth Gloves" "Gripped Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Knight Helm" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Jester Mask" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-## Body Armour, Shields ##
 Show
 	AreaLevel <= 40
 	ItemLevel >= 86
@@ -1223,7 +1285,7 @@ Show
 	BaseDefencePercentile >= 50
 	Corrupted False
 	Mirrored False
-	BaseType "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Blood Raiment" "Carnal Armour" "Sadist Garb" "Varnished Coat" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine"
+	BaseType "Titan Plate" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine" "Grand Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Torturer Garb" "Sanguine Raiment" "Blood Raiment" "Carnal Armour" "Sadist Garb"
 	SetFontSize 45
 	PlayEffect Red
 	CustomAlertSound "d:\git\poe-filters\sounds\rue-woo.mp3"
@@ -1236,22 +1298,20 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Blood Raiment" "Carnal Armour" "Sadist Garb" "Varnished Coat" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine"
+	BaseType "Titan Plate" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine" "Grand Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Torturer Garb" "Sanguine Raiment" "Blood Raiment" "Carnal Armour" "Sadist Garb"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-## Labyrinth Bases ##
 # Show
 # 	ItemLevel >= 85
 # 	Rarity <= Rare
 # 	BaseDefencePercentile >= 80
 # 	Corrupted False
 # 	Mirrored False
-# 	BaseType == "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Pig-Faced Bascinet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Two-Toned Boots" "Murder Boots" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Two-Toned Boots" "Crusader Boots"
+# 	BaseType == "General's Helmet" "Dire Pelt" "Hubris Circlet" "Knight Helm" "Paladin Crown" "Faithful Helmet" "Jester Mask" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Martyr Boots" "Two-Toned Boots" "Murder Boots"
 # 	SetFontSize 45
 # 	MinimapIcon 1 Green Pentagon
 # 	SetBorderColor 0 255 0 255
-## Fractured ##
 Show
 	AreaLevel <= 40
 	Corrupted False
@@ -1259,7 +1319,7 @@ Show
 	Mirrored False
 	Identified False
 	ItemLevel >= 85
-	BaseType == "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Harlequin Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Debilitation Gauntlets" "Spiked Gloves" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Slink Gloves" "Sinistral Gloves" "Stealth Gloves" "Gripped Gloves" "Shagreen Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Lacquered Helmet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Blood Raiment" "Carnal Armour" "Sadist Garb" "Varnished Coat" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine"
+	BaseType == "General's Helmet" "Royal Burgonet" "Eternal Burgonet" "Titan Greaves" "Brimstone Treads" "Vaal Greaves" "Titan Gauntlets" "Vaal Gauntlets" "Spiked Gloves" "Dire Pelt" "Lion Pelt" "Sinner Tricorne" "Slink Boots" "Stormrider Boots" "Stealth Boots" "Shagreen Boots" "Harpyskin Gloves" "Slink Gloves" "Stealth Gloves" "Gripped Gloves" "Hubris Circlet" "Mind Cage" "Sorcerer Boots" "Dreamquest Slippers" "Arcanist Slippers" "Sorcerer Gloves" "Nexus Gloves" "Fingerless Silk Gloves" "Arcanist Gloves" "Knight Helm" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Praetor Crown" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Legion Boots" "Crusader Gloves" "Apothecary's Gloves" "Legion Gloves" "Jester Mask" "Blizzard Crown" "Vaal Mask" "Deicide Mask" "Two-Toned Boots" "Murder Boots" "Fugitive Boots" "Assassin's Boots" "Carnal Boots" "Murder Mitts" "Assassin's Mitts" "Carnal Mitts" "Titan Plate" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Exquisite Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Widowsilk Robe" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Desert Brigandine" "Grand Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Elegant Ringmail" "Torturer Garb" "Sanguine Raiment" "Blood Raiment" "Carnal Armour" "Sadist Garb"
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
@@ -1338,7 +1398,34 @@ Show
 #? import gold.filter 1722020400
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
-#? skipped because generated at 1721819777
+# lots of gold
+Show
+	Class "Gold"
+	StackSize >= 1000
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+	PlayAlertSound 2 200
+# a bit of gold
+Show
+	Class "Gold"
+	StackSize >= 500
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+# any gold
+Show
+	Class "Gold"
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+#? end of [gold.filter]
 Show
 	BaseType "Prophecy Wand"
 	Rarity Normal
@@ -1352,4 +1439,344 @@ Show
 	SetFontSize 45
 # If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
 #? import currency.filter
-#? skipped because generated at 1721819777
+#? import gold.filter
+# lots of gold
+Show
+	Class "Gold"
+	StackSize >= 1000
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+	PlayAlertSound 2 200
+# a bit of gold
+Show
+	Class "Gold"
+	StackSize >= 500
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+# any gold
+Show
+	Class "Gold"
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	PlayEffect White
+#? end of [gold.filter]
+Show
+	BaseType "Recombinator"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 250 250 250
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	CustomAlertSound "d:\git\poe-filters\sounds\rue-bring-me-back.mp3"
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+Show
+	BaseType "Power Core"
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+Show
+	Class "Sentinel Drone"
+	BaseType "Apex Sentinel"
+	SetBackgroundColor 200 200 0
+	SetBorderColor 200 200 200
+	SetFontSize 30
+Show
+	Class "Sentinel Drone"
+	Rarity Unique
+	SetBackgroundColor 0 150 250
+	SetBorderColor 225 100 0
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+Show
+	Class "Sentinel Drone"
+	Rarity Magic Rare
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+Show
+	Class "Sentinel Drone"
+	Rarity Normal
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetFontSize 40
+Show
+	BaseType "Scroll of Wisdom"
+	SetTextColor 210 178 135 220
+	Continue
+Show
+	BaseType "Portal Scroll"
+	SetTextColor 50 240 240 220
+	Continue
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 77
+	StackSize < 8
+	SetBorderColor 170 158 130 200
+	SetFontSize 45
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	AreaLevel > 67
+	StackSize < 4
+	SetBorderColor 170 158 130 200
+	SetFontSize 45
+Show
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	Class "Currency"
+	SetBorderColor 170 158 130 200
+	SetFontSize 40
+	MinimapIcon 0 Grey Raindrop
+Show
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-aaaaaa.mp3"
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+Show
+	BaseType "Imprint"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+Show
+	Class "Currency"
+	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
+	SetFontSize 45
+	SetTextColor 250 0 125 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+Show
+	Class "Currency"
+	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\martin-brundle-is-that-glock.mp3"
+Show
+	Class "Currency"
+	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	PlayAlertSound 10 200
+	# CustomAlertSound "sounds/t90-supplies1.mp3"
+Show
+	Class "Currency"
+	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	PlayAlertSound 11 200
+	# CustomAlertSound "sounds/izaro-golden.mp3"
+Show
+	Class "Currency"
+	BaseType "Catalyst" "Eldritch"
+	SetFontSize 45
+	SetTextColor 255 127 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\gamersnexus-thanks-intel.mp3"
+Show
+	Class "Currency"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
+Show
+	Class "Currency"
+	BaseType == "Orb of Chance"
+	AreaLevel < 74
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Yellow UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-chance.mp3" 300
+Hide
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	AreaLevel > 77
+	StackSize < 3
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+Show
+	Class "Currency"
+	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Green UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\water-drop.mp3"
+#Hide # Yellow Maps
+#	Class "Currency"
+#	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+#	SetFontSize 45
+#	AreaLevel > 72
+#	StackSize < 6
+#	SetTextColor 0 255 0 255
+#	SetBorderColor 0 255 0 255
+Hide
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 45
+	AreaLevel > 67
+	StackSize < 3
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+Show
+	Class "Currency"
+	BaseType == "Blacksmith's Whetstone" "Glassblower's Bauble" "Armourer's Scrap"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Grey UpsideDownHouse
+	# CustomAlertSound "sounds/water-drop.mp3"
+Show
+	Class "Currency"
+	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
+	StackSize > 1
+	SetFontSize 45
+	SetTextColor 190 178 135 255
+	SetBorderColor 190 178 135 255
+Show
+	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 250 0 125 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+Show
+	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
+Show
+	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
+	Class "Divination"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayAlertSound 9 200
+	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
+Show
+	BaseType "Golden Oil"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 75 125 75
+	SetFontSize 45
+	PlayEffect White
+	PlayAlertSound 6 200
+	MinimapIcon 0 White Raindrop
+Show
+	BaseType "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
+	SetBackgroundColor 200 250 200
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayEffect Orange
+	PlayAlertSound 10 200
+	MinimapIcon 0 Orange Triangle
+Show
+	BaseType "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil"
+	SetBackgroundColor 150 200 150
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayEffect Orange Temp
+	PlayAlertSound 11 200
+	MinimapIcon 1 Orange Triangle
+Show
+	BaseType "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+	SetBackgroundColor 100 150 100
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 25
+	MinimapIcon 2 Orange Triangle
+Show
+	AreaLevel > 83
+	Class Amulet
+	AnyEnchantment True
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 122 122 122 255
+	SetTextColor 154 141 207 255
+	SetFontSize 45
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+#? import identified-items.filter
+### Good identified items
+# +1 Spells
+# Magister's: All
+# of the Underground: Delve. Potential +1 <attribute> Socketed
+Show
+	Class == "Rune Daggers" "Sceptres" "Wands"
+	HasExplicitMod "of the Underground" "Subterranean" "of Many" "Matatl's" "Tacati" "Topotante's"
+	Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 135 206 235
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+Show
+	HasExplicitMod "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's" "Exalter's" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "Dictator's" "Merciless" "Flaring" "of Dissolution" "of Destruction" "of Incision" "of Exsanguinating" "of the Fanatical" "of Heartstopping" "of Disintegrating" "of the Deathless" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of Unmaking" "Martinet's" "Overseer's" "of Celebration"
+	Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 135 206 235
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+Show
+	HasExplicitMod "The Shaper's" "of Shaping" "The Elder's" "of the Elder" "Crusader's" "of the Crusade" "Redeemer's" "of Redemption" "Hunter's" "of the Hunt" "Warlord's" "of the Conquest"
+	Mirrored False
+	Identified True
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 136 32 251 255
+	SetFontSize 45
+	PlayAlertSound 2 100
+	MinimapIcon 0 White UpsideDownHouse
+	PlayEffect White
+#? end of [identified-items.filter]
+#? end of [currency.filter]
