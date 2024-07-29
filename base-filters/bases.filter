@@ -1,5 +1,3 @@
-#! import new-bases.filter 1722020400
-
 Show
 	Corrupted False
 	Mirrored False
@@ -102,6 +100,16 @@ Show
 	MinimapIcon 2 Red Raindrop
 	#! tts "divine life" life-divine Amy 200 1.0
 
+## Glassblower's Recipe ##
+
+Show
+	Class Flask
+	Quality >= 1
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+
 ###########################
 ## Helmet, Gloves, Boots ##
 ###########################
@@ -115,8 +123,8 @@ Show
 	BaseType #!square0!#
 	SetFontSize 40
 	PlayEffect Red
-	CustomAlertSound "sounds/rue-limp.mp3"
 	MinimapIcon 1 Yellow Star
+	#! tts "eighty five rare" 85-rare Amy 200 1.0
 
 # T2 Spell Suppression ##
 Show
@@ -143,8 +151,8 @@ Show
 	BaseType #!body2!#
 	SetFontSize 45
 	PlayEffect Red
-	CustomAlertSound "sounds/rue-woo.mp3"
 	MinimapIcon 1 Yellow Star
+	#! tts "eighty six rare" 86-rare Amy 200 1.0
 
 # T2 Spell Suppression ##
 Show

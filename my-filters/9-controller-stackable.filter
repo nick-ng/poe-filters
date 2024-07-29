@@ -1,3 +1,5 @@
+#! skip
+
 ## Show stackable items
 Show
 	AreaLevel < 68
@@ -11,34 +13,56 @@ Show
 
 #! import gold.filter
 
-Hide
-	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
-	StackSize < 5
-
 Show
-	Class "Currency"
-	MinimapIcon 0 Orange Triangle
-	SetFontSize 15
+	Class == "Stackable Currency"
+	MinimapIcon 0 Orange Circle
+	SetFontSize 25
 	PlayEffect Orange
-
-Show
-	Class "Divination"
-	MinimapIcon 0 Orange Triangle
-	SetFontSize 15
-	PlayEffect Orange
+	#!CurrencyBorder!#
 
 Show
 	BaseType "Scarab"
 	Class "Map Fragment"
+	SetFontSize 35
 	MinimapIcon 0 Orange Triangle
-	SetFontSize 15
-	PlayEffect Orange
+	#!BrightBorder!#
 
 Show
-	BaseType "Golden Oil" "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
-	MinimapIcon 0 Orange Triangle
-	SetFontSize 15
-	PlayEffect Orange
+	Class "Divination Card"
+	SetFontSize 35
+	MinimapIcon 0 Orange Square
+	#!GoodBaseBorder!#
+
+Hide
+
+# Hide
+# 	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
+# 	StackSize < 5
+
+# Show
+# 	Class "Currency"
+# 	MinimapIcon 0 Orange Triangle
+# 	SetFontSize 15
+# 	PlayEffect Orange
+
+# Show
+# 	Class "Divination"
+# 	MinimapIcon 0 Orange Triangle
+# 	SetFontSize 15
+# 	PlayEffect Orange
+
+# Show
+# 	BaseType "Scarab"
+# 	Class "Map Fragment"
+# 	MinimapIcon 0 Orange Triangle
+# 	SetFontSize 15
+# 	PlayEffect Orange
+
+# Show
+# 	BaseType "Golden Oil" "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil" "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
+# 	MinimapIcon 0 Orange Triangle
+# 	SetFontSize 15
+# 	PlayEffect Orange
 
 # hide almost everything else
 #! import neversink-uber-plus.filter

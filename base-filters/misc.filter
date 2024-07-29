@@ -58,6 +58,14 @@ Show
 #################
 
 Show
+	BaseType "Contract:"
+	Class "Quest"
+	SetBorderColor 0 150 0
+	SetTextColor 0 150 0
+	SetFontSize 25
+	MinimapIcon 2 Green UpsideDownHouse
+
+Show
 	Class "Quest"
 	SetBorderColor 0 250 0
 	SetTextColor 0 250 0

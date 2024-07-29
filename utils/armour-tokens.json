@@ -3,10 +3,10 @@
 		"body": [
 			[
 				"Royal Plate",
-				"Titan Plate",
 				"Legion Plate"
 			],
 			[
+				"Titan Plate",
 				"Glorious Plate"
 			],
 			[
@@ -16,7 +16,8 @@
 		],
 		"helm": [
 			[
-				"Conqueror's Helmet"
+				"Conqueror's Helmet",
+				"Giantslayer Helmet"
 			],
 			[
 				"General's Helmet",
@@ -28,6 +29,7 @@
 		],
 		"boots": [
 			[
+				"Leviathan Greaves",
 				"Precursor Greaves"
 			],
 			[
@@ -40,6 +42,7 @@
 		],
 		"gloves": [
 			[
+				"Leviathan Gauntlets",
 				"Precursor Gauntlets"
 			],
 			[
@@ -56,10 +59,11 @@
 	"dex": {
 		"body": [
 			[
-				"Supreme Leather",
+				"Syndicate's Garb",
 				"Astral Leather"
 			],
 			[
+				"Supreme Leather",
 				"Zodiac Leather"
 			],
 			[
@@ -76,10 +80,10 @@
 		"helm": [
 			[
 				"Majestic Pelt",
-				"Dire Pelt",
 				"Grizzly Pelt"
 			],
 			[
+				"Dire Pelt",
 				"Lion Pelt"
 			],
 			[
@@ -95,6 +99,7 @@
 		],
 		"boots": [
 			[
+				"Velour Boots",
 				"Harpyskin Boots"
 			],
 			[
@@ -115,6 +120,7 @@
 		],
 		"gloves": [
 			[
+				"Velour Gloves",
 				"Harpyskin Gloves"
 			],
 			[
@@ -136,11 +142,11 @@
 	"int": {
 		"body": [
 			[
-				"Arcane Vestment",
 				"Nightweave Robe",
 				"Twilight Regalia"
 			],
 			[
+				"Arcane Vestment",
 				"Vaal Regalia"
 			],
 			[
@@ -150,10 +156,10 @@
 		"helm": [
 			[
 				"Lich's Circlet",
-				"Sunfire Circlet",
-				"Moonlit Circlet"
+				"Sunfire Circlet"
 			],
 			[
+				"Moonlit Circlet",
 				"Hubris Circlet"
 			],
 			[
@@ -162,6 +168,7 @@
 		],
 		"boots": [
 			[
+				"Warlock Boots",
 				"Sage Slippers"
 			],
 			[
@@ -174,6 +181,7 @@
 		],
 		"gloves": [
 			[
+				"Warlock Gloves",
 				"Sage Gloves"
 			],
 			[
@@ -189,10 +197,11 @@
 	"strdex": {
 		"body": [
 			[
-				"Full Wyvernscale",
+				"Conquest Lamellar",
 				"Marshall's Brigandine"
 			],
 			[
+				"Full Wyvernscale",
 				"Full Dragonscale"
 			],
 			[
@@ -209,10 +218,11 @@
 		],
 		"helm": [
 			[
-				"Knight Helm",
+				"Haunted Bascinet",
 				"Conquest Helmet"
 			],
 			[
+				"Knight Helm",
 				"Pig-Faced Bascinet"
 			],
 			[
@@ -229,6 +239,7 @@
 		],
 		"boots": [
 			[
+				"Wyvernscale Boots",
 				"Chimerascale Boots"
 			],
 			[
@@ -248,6 +259,10 @@
 		],
 		"gloves": [
 			[
+				"Chimerascale Gauntlets",
+				"Wyvernscale Gauntlets"
+			],
+			[
 				"Dragonscale Gauntlets"
 			],
 			[
@@ -266,10 +281,10 @@
 		"body": [
 			[
 				"Sacred Chainmail",
-				"Grand Ringmail",
 				"Paladin's Hauberk"
 			],
 			[
+				"Grand Ringmail",
 				"Saint's Hauberk"
 			],
 			[
@@ -279,10 +294,11 @@
 		],
 		"helm": [
 			[
-				"Paladin Crown",
-				"Faithful Helmet"
+				"Divine Crown",
+				"Paladin Crown"
 			],
 			[
+				"Faithful Helmet",
 				"Archdemon Crown",
 				"Bone Helmet",
 				"Prophet Crown"
@@ -293,6 +309,7 @@
 		],
 		"boots": [
 			[
+				"Paladin Boots",
 				"Martyr Boots"
 			],
 			[
@@ -305,6 +322,7 @@
 		],
 		"gloves": [
 			[
+				"Paladin Gloves",
 				"Martyr Gloves"
 			],
 			[
@@ -319,10 +337,11 @@
 	"dexint": {
 		"body": [
 			[
-				"Torturer Garb",
-				"Sanguine Raiment"
+				"Necrotic Armour",
+				"Torturer Garb"
 			],
 			[
+				"Sanguine Raiment",
 				"Blood Raiment",
 				"Carnal Armour",
 				"Sadist Garb"
@@ -339,10 +358,10 @@
 		"helm": [
 			[
 				"Ancient Mask",
-				"Jester Mask",
 				"Torturer's Mask"
 			],
 			[
+				"Jester Mask",
 				"Blizzard Crown",
 				"Vaal Mask",
 				"Deicide Mask"
@@ -358,6 +377,7 @@
 		],
 		"boots": [
 			[
+				"Phantom Boots",
 				"Infiltrator Boots"
 			],
 			[
@@ -378,6 +398,7 @@
 		],
 		"gloves": [
 			[
+				"Phantom Mitts",
 				"Infiltrator Mitts"
 			],
 			[
