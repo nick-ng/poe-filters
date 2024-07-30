@@ -133,7 +133,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!square2!#
+	BaseType #!square1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -148,7 +148,7 @@ Show
 	BaseDefencePercentile >= 50
 	Corrupted False
 	Mirrored False
-	BaseType #!body2!#
+	BaseType #!body1!#
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -156,12 +156,13 @@ Show
 
 # T2 Spell Suppression ##
 Show
+	AreaLevel < 83
 	ItemLevel >= 77
 	Rarity = Rare
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!body2!#
+	BaseType #!body1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star

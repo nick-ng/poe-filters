@@ -78,7 +78,7 @@ func applyColourTokens(rawFilter string) string {
 // #!strbody0!# = "Glorious Plate"
 // #!strbody1!# = "Glorious Plate" "Gladiator Plate" "Astral Plate"
 // #!strbody2!# = "Glorious Plate" "Gladiator Plate" "Astral Plate"
-// #!str0!# = "Glorious Plate" "Royal Burgonet" "Titan Greaves" "Titan Gauntlets"
+// #!str0!# = "Royal Plate" "Royal Burgonet" "Titan Greaves" "Titan Gauntlets"
 // #!helm0!# = "Royal Burgonet" "Lion Pelt" "Hubris Circlet" etc.
 func applyArmourTokens(rawFilter string) string {
 	processedFilter := rawFilter

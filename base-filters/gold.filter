@@ -1,29 +1,26 @@
 # lots of gold
 Show
 	Class "Gold"
-	StackSize >= 1000
+	StackSize >= 200
 	SetFontSize 45
-	SetBackgroundColor 0 0 0 255
-	SetBorderColor 255 255 255 255
-	SetTextColor 255 255 255 255
+	#!GGGCurrencyBorder!#
+	#!GGGCurrencyText!#
 	PlayEffect White
 	PlayAlertSound 2 200
 
 # a bit of gold
 Show
 	Class "Gold"
-	StackSize >= 500
+	StackSize >= 50
 	SetFontSize 45
-	SetBackgroundColor 0 0 0 255
-	SetBorderColor 255 255 255 255
-	SetTextColor 255 255 255 255
+	#!GGGCurrencyBorder!#
+	#!GGGCurrencyText!#
 	PlayEffect White
 
 # any gold
 Show
 	Class "Gold"
-	SetFontSize 45
-	SetBackgroundColor 0 0 0 255
-	SetBorderColor 255 255 255 255
-	SetTextColor 255 255 255 255
+	SetFontSize 35
+	#!GGGCurrencyBorder!#
+	#!GGGCurrencyText!#
 	PlayEffect White
