@@ -84,19 +84,27 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "sounds/zana-you-idiot.mp3"
 
+# Blight Maps
 Show
 	Rarity < Unique
 	Class "Maps"
 	UberBlightedMap True
-	SetTextColor 255 100 253 255
-	Continue
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 100 253 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Square
+	PlayEffect Purple
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 Show
 	Rarity < Unique
 	Class "Maps"
 	BlightedMap True
 	SetTextColor 255 100 253 255
-	Continue
+	SetFontSize 45
+	MinimapIcon 0 Purple Square
+	PlayEffect Purple
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 Show
 	Rarity < Unique

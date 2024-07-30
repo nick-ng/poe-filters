@@ -1,18 +1,6 @@
-#! skip
-
-## Show stackable items
-Show
-	AreaLevel < 68
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBackgroundColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	MinimapIcon 2 Orange Circle
-	PlayEffect Red
-	PlayAlertSound 11 300
-
 #! import gold.filter
 
+## Show stackable items
 Show
 	Class == "Stackable Currency"
 	MinimapIcon 0 Orange Circle
@@ -21,7 +9,7 @@ Show
 	#!CurrencyBorder!#
 
 Show
-	BaseType "Scarab"
+	# BaseType "Scarab"
 	Class "Map Fragment"
 	SetFontSize 35
 	MinimapIcon 0 Orange Triangle
@@ -33,6 +21,18 @@ Show
 	MinimapIcon 0 Orange Square
 	#!GoodBaseBorder!#
 
+## Warn if using filter in wrong zone
+Show
+	AreaLevel < 68
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	MinimapIcon 2 Orange Circle
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+## Hide everything else
 Hide
 
 # Hide

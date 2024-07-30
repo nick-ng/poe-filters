@@ -1,3 +1,18 @@
+# Blight
+Show
+	ItemLevel >= 85
+	Class == "Amulets" "Belts" "Jewels" "Rings" "Utility Flasks"
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	SetBorderColor 0 0 255 255
+
+Show
+	Rarity = Rare
+	Class == "Amulets" "Belts" "Jewels" "Rings"
+	SetFontSize 35
+	MinimapIcon 1 Cyan Pentagon
+	SetBorderColor 0 180 255 255
+
 # Divination Cards
 Show
 	BaseType == "Earth Drinker"

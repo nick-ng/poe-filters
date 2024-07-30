@@ -142,7 +142,7 @@ Show # T0.5 Currency
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	PlayAlertSound 10 200
+	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
 
 
