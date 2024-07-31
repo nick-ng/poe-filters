@@ -101,9 +101,9 @@ Show # T-1 Currency
 	SetBorderColor 0 0 0
 	SetTextColor 250 0 0
 	SetFontSize 45
-	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
 	MinimapIcon 0 White Diamond
 	PlayEffect White
+	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
 
 Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"

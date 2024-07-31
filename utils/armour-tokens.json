@@ -2,7 +2,9 @@
 	"str": {
 		"body": [
 			[
-				"Royal Plate",
+				"Royal Plate"
+			],
+			[
 				"Legion Plate"
 			],
 			[
@@ -16,8 +18,10 @@
 		],
 		"helm": [
 			[
-				"Conqueror's Helmet",
 				"Giantslayer Helmet"
+			],
+			[
+				"Conqueror's Helmet"
 			],
 			[
 				"General's Helmet",
@@ -29,7 +33,9 @@
 		],
 		"boots": [
 			[
-				"Leviathan Greaves",
+				"Leviathan Greaves"
+			],
+			[
 				"Precursor Greaves"
 			],
 			[
@@ -42,7 +48,9 @@
 		],
 		"gloves": [
 			[
-				"Leviathan Gauntlets",
+				"Leviathan Gauntlets"
+			],
+			[
 				"Precursor Gauntlets"
 			],
 			[
@@ -59,7 +67,9 @@
 	"dex": {
 		"body": [
 			[
-				"Syndicate's Garb",
+				"Syndicate's Garb"
+			],
+			[
 				"Astral Leather"
 			],
 			[
@@ -79,7 +89,9 @@
 		],
 		"helm": [
 			[
-				"Majestic Pelt",
+				"Majestic Pelt"
+			],
+			[
 				"Grizzly Pelt"
 			],
 			[
@@ -99,7 +111,9 @@
 		],
 		"boots": [
 			[
-				"Velour Boots",
+				"Velour Boots"
+			],
+			[
 				"Harpyskin Boots"
 			],
 			[
@@ -120,7 +134,9 @@
 		],
 		"gloves": [
 			[
-				"Velour Gloves",
+				"Velour Gloves"
+			],
+			[
 				"Harpyskin Gloves"
 			],
 			[
@@ -142,8 +158,10 @@
 	"int": {
 		"body": [
 			[
-				"Nightweave Robe",
 				"Twilight Regalia"
+			],
+			[
+				"Nightweave Robe"
 			],
 			[
 				"Arcane Vestment",
@@ -155,7 +173,9 @@
 		],
 		"helm": [
 			[
-				"Lich's Circlet",
+				"Lich's Circlet"
+			],
+			[
 				"Sunfire Circlet"
 			],
 			[
@@ -168,7 +188,9 @@
 		],
 		"boots": [
 			[
-				"Warlock Boots",
+				"Warlock Boots"
+			],
+			[
 				"Sage Slippers"
 			],
 			[
@@ -181,7 +203,9 @@
 		],
 		"gloves": [
 			[
-				"Warlock Gloves",
+				"Warlock Gloves"
+			],
+			[
 				"Sage Gloves"
 			],
 			[
@@ -197,7 +221,9 @@
 	"strdex": {
 		"body": [
 			[
-				"Conquest Lamellar",
+				"Conquest Lamellar"
+			],
+			[
 				"Marshall's Brigandine"
 			],
 			[
@@ -218,7 +244,9 @@
 		],
 		"helm": [
 			[
-				"Haunted Bascinet",
+				"Haunted Bascinet"
+			],
+			[
 				"Conquest Helmet"
 			],
 			[
@@ -239,7 +267,9 @@
 		],
 		"boots": [
 			[
-				"Wyvernscale Boots",
+				"Wyvernscale Boots"
+			],
+			[
 				"Chimerascale Boots"
 			],
 			[
@@ -259,8 +289,10 @@
 		],
 		"gloves": [
 			[
-				"Chimerascale Gauntlets",
 				"Wyvernscale Gauntlets"
+			],
+			[
+				"Chimerascale Gauntlets"
 			],
 			[
 				"Dragonscale Gauntlets"
@@ -280,7 +312,9 @@
 	"strint": {
 		"body": [
 			[
-				"Sacred Chainmail",
+				"Sacred Chainmail"
+			],
+			[
 				"Paladin's Hauberk"
 			],
 			[
@@ -294,7 +328,9 @@
 		],
 		"helm": [
 			[
-				"Divine Crown",
+				"Divine Crown"
+			],
+			[
 				"Paladin Crown"
 			],
 			[
@@ -309,7 +345,9 @@
 		],
 		"boots": [
 			[
-				"Paladin Boots",
+				"Paladin Boots"
+			],
+			[
 				"Martyr Boots"
 			],
 			[
@@ -322,7 +360,9 @@
 		],
 		"gloves": [
 			[
-				"Paladin Gloves",
+				"Paladin Gloves"
+			],
+			[
 				"Martyr Gloves"
 			],
 			[
@@ -337,7 +377,9 @@
 	"dexint": {
 		"body": [
 			[
-				"Necrotic Armour",
+				"Necrotic Armour"
+			],
+			[
 				"Torturer Garb"
 			],
 			[
@@ -358,8 +400,10 @@
 		],
 		"helm": [
 			[
-				"Ancient Mask",
 				"Torturer's Mask"
+			],
+			[
+				"Ancient Mask"
 			],
 			[
 				"Jester Mask"
@@ -379,7 +423,9 @@
 		],
 		"boots": [
 			[
-				"Phantom Boots",
+				"Phantom Boots"
+			],
+			[
 				"Infiltrator Boots"
 			],
 			[
@@ -400,7 +446,9 @@
 		],
 		"gloves": [
 			[
-				"Phantom Mitts",
+				"Phantom Mitts"
+			],
+			[
 				"Infiltrator Mitts"
 			],
 			[

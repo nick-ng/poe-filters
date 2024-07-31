@@ -1,44 +1,6 @@
-# Blight
-Show
-	ItemLevel >= 85
-	Class == "Amulets" "Belts" "Jewels" "Rings" "Utility Flasks"
-	SetFontSize 45
-	MinimapIcon 1 Blue Circle
-	SetBorderColor 0 0 255 255
-
-Show
-	Rarity = Rare
-	Class == "Amulets" "Belts" "Jewels" "Rings"
-	SetFontSize 35
-	MinimapIcon 1 Cyan Pentagon
-	SetBorderColor 0 180 255 255
-
-# Divination Cards
-Show
-	BaseType == "Earth Drinker"
-	SetFontSize 45
-	SetTextColor 232 99 0 255
-	SetBorderColor 47 252 47 255
-	#!BrightBackground!#
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
-
-# Build Uniques
-Show
-	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Coral Ring"
-	Rarity Unique
-	SetFontSize 45
-	#!BrightBackground!#
-	SetTextColor 232 99 0 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
-
 # Item Bases
 Show
-	BaseType = "Vaal Axe" "Karui Chopper"
+	BaseType = "Vaal Axe"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare

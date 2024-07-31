@@ -1,5 +1,74 @@
 #! import gold.filter
 
+# Blight
+Show
+	Class == "Amulets" "Belts" "Jewels" "Rings"
+	FracturedItem True
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	#!BrightBackground!#
+	SetBorderColor 255 0 0 255
+
+Show
+	ItemLevel >= 85
+	Class == "Amulets" "Belts" "Jewels" "Rings" "Utility Flasks"
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	SetBorderColor 0 0 255 255
+
+Show
+	Rarity = Rare
+	Class == "Belts"
+	SetFontSize 30
+	MinimapIcon 1 Cyan Pentagon
+	SetBorderColor 0 180 255 255
+
+Show
+	Rarity = Rare
+	Class == "Amulets" "Jewels" "Rings"
+	SetFontSize 35
+	MinimapIcon 1 Green Pentagon
+	SetBorderColor 0 255 180 255
+
+
+Show # T-1 Currency
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
+	SetFontSize 45
+	#!T0CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	SetFontSize 45
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+
+## Bound to map owner
+Show
+	BaseType == "Orb of Unmaking"
+	MinimapIcon 0 Grey Circle
+	SetFontSize 25
+	PlayEffect Grey
+	#!CurrencyBorder!#
+
 ## Show stackable items
 Show
 	Class == "Stackable Currency"

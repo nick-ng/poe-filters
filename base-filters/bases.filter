@@ -116,11 +116,24 @@ Show
 
 Show
 	ItemLevel >= 85
+	Rarity <= Rare
+	BaseDefencePercentile >= 70
+	Corrupted False
+	Mirrored False
+	BaseType #!square0!#
+	#!BrightBorder!#
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 1 Yellow Star
+	#! tts "eighty five top base" 85-top-base Amy 200 1.0
+
+Show
+	ItemLevel >= 85
 	Rarity = Rare
 	BaseDefencePercentile >= 80
 	Corrupted False
 	Mirrored False
-	BaseType #!square0!#
+	BaseType #!square1!#
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -149,6 +162,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!body1!#
+	#!BrightBorder!#
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
