@@ -165,7 +165,7 @@ Show
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	PlayAlertSound 1 200
+	PlayAlertSound 1 100
 	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 #################
