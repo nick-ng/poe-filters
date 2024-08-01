@@ -165,7 +165,8 @@ Show
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
+	PlayAlertSound 1 200
+	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 #################
 ## T2 Currency ##

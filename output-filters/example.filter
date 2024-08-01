@@ -1130,7 +1130,7 @@ Show
 	AreaLevel <= 40
 	Corrupted False
 	Mirrored False
-	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail" "Saint's Hauberk" "Necrotic Armour" "Torturer Garb" "Sanguine Raiment" "Royal Plate" "Legion Plate" "Titan Plate" "Glorious Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Zodiac Leather" "Twilight Regalia" "Nightweave Robe" "Arcane Vestment" "Vaal Regalia" "Conquest Lamellar" "Marshall's Brigandine" "Full Wyvernscale" "Full Dragonscale" "Paladin Boots" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves" "Divine Crown" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Torturer's Mask" "Ancient Mask" "Jester Mask" "Phantom Boots" "Infiltrator Boots" "Two-Toned Boots" "Murder Boots" "Phantom Mitts" "Infiltrator Mitts" "Murder Mitts" "Giantslayer Helmet" "Conqueror's Helmet" "General's Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Dire Pelt" "Lion Pelt" "Velour Boots" "Harpyskin Boots" "Slink Boots" "Velour Gloves" "Harpyskin Gloves" "Slink Gloves" "Warlock Boots" "Sage Slippers" "Sorcerer Boots" "Warlock Gloves" "Sage Gloves" "Sorcerer Gloves" "Lich's Circlet" "Sunfire Circlet" "Moonlit Circlet" "Hubris Circlet" "Wyvernscale Boots" "Chimerascale Boots" "Two-Toned Boots" "Dragonscale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Haunted Bascinet" "Conquest Helmet" "Knight Helm" "Pig-Faced Bascinet"
+	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Necrotic Armour" "Torturer Garb" "Sanguine Raiment" "Royal Plate" "Legion Plate" "Titan Plate" "Glorious Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Zodiac Leather" "Twilight Regalia" "Nightweave Robe" "Arcane Vestment" "Vaal Regalia" "Conquest Lamellar" "Marshall's Brigandine" "Full Wyvernscale" "Full Dragonscale" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail" "Saint's Hauberk" "Phantom Boots" "Infiltrator Boots" "Two-Toned Boots" "Murder Boots" "Phantom Mitts" "Infiltrator Mitts" "Murder Mitts" "Torturer's Mask" "Ancient Mask" "Jester Mask" "Giantslayer Helmet" "Conqueror's Helmet" "General's Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Dire Pelt" "Lion Pelt" "Velour Boots" "Harpyskin Boots" "Slink Boots" "Velour Gloves" "Harpyskin Gloves" "Slink Gloves" "Warlock Boots" "Sage Slippers" "Sorcerer Boots" "Warlock Gloves" "Sage Gloves" "Sorcerer Gloves" "Lich's Circlet" "Sunfire Circlet" "Moonlit Circlet" "Hubris Circlet" "Haunted Bascinet" "Conquest Helmet" "Knight Helm" "Pig-Faced Bascinet" "Wyvernscale Boots" "Chimerascale Boots" "Two-Toned Boots" "Dragonscale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Divine Crown" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Paladin Boots" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves"
 	SetBorderColor 255 117 255 200
 	Continue
 Show
@@ -1215,7 +1215,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Divine Crown" "Paladin Boots" "Paladin Gloves" "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets" "Velour Boots" "Velour Gloves" "Majestic Pelt" "Lich's Circlet" "Warlock Boots" "Warlock Gloves"
+	BaseType "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets" "Majestic Pelt" "Velour Boots" "Velour Gloves" "Lich's Circlet" "Warlock Boots" "Warlock Gloves" "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Paladin Boots" "Paladin Gloves" "Divine Crown"
 	SetBorderColor 200 255 180 200
 	SetFontSize 45
 	PlayEffect Red
@@ -1228,7 +1228,7 @@ Show
 	BaseDefencePercentile >= 80
 	Corrupted False
 	Mirrored False
-	BaseType "Giantslayer Helmet" "Conqueror's Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Velour Boots" "Harpyskin Boots" "Velour Gloves" "Harpyskin Gloves" "Lich's Circlet" "Sunfire Circlet" "Warlock Boots" "Sage Slippers" "Warlock Gloves" "Sage Gloves" "Haunted Bascinet" "Conquest Helmet" "Wyvernscale Boots" "Chimerascale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Divine Crown" "Paladin Crown" "Paladin Boots" "Martyr Boots" "Paladin Gloves" "Martyr Gloves" "Phantom Mitts" "Infiltrator Mitts" "Torturer's Mask" "Ancient Mask" "Phantom Boots" "Infiltrator Boots"
+	BaseType "Giantslayer Helmet" "Conqueror's Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Velour Boots" "Harpyskin Boots" "Velour Gloves" "Harpyskin Gloves" "Majestic Pelt" "Grizzly Pelt" "Warlock Boots" "Sage Slippers" "Warlock Gloves" "Sage Gloves" "Lich's Circlet" "Sunfire Circlet" "Haunted Bascinet" "Conquest Helmet" "Wyvernscale Boots" "Chimerascale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Divine Crown" "Paladin Crown" "Paladin Boots" "Martyr Boots" "Paladin Gloves" "Martyr Gloves" "Torturer's Mask" "Ancient Mask" "Phantom Boots" "Infiltrator Boots" "Phantom Mitts" "Infiltrator Mitts"
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -1241,7 +1241,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Giantslayer Helmet" "Conqueror's Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Velour Boots" "Harpyskin Boots" "Velour Gloves" "Harpyskin Gloves" "Lich's Circlet" "Sunfire Circlet" "Warlock Boots" "Sage Slippers" "Warlock Gloves" "Sage Gloves" "Haunted Bascinet" "Conquest Helmet" "Wyvernscale Boots" "Chimerascale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Divine Crown" "Paladin Crown" "Paladin Boots" "Martyr Boots" "Paladin Gloves" "Martyr Gloves" "Phantom Mitts" "Infiltrator Mitts" "Torturer's Mask" "Ancient Mask" "Phantom Boots" "Infiltrator Boots"
+	BaseType "Giantslayer Helmet" "Conqueror's Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Velour Boots" "Harpyskin Boots" "Velour Gloves" "Harpyskin Gloves" "Majestic Pelt" "Grizzly Pelt" "Warlock Boots" "Sage Slippers" "Warlock Gloves" "Sage Gloves" "Lich's Circlet" "Sunfire Circlet" "Haunted Bascinet" "Conquest Helmet" "Wyvernscale Boots" "Chimerascale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Divine Crown" "Paladin Crown" "Paladin Boots" "Martyr Boots" "Paladin Gloves" "Martyr Gloves" "Torturer's Mask" "Ancient Mask" "Phantom Boots" "Infiltrator Boots" "Phantom Mitts" "Infiltrator Mitts"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -1276,7 +1276,7 @@ Show
 # 	BaseDefencePercentile >= 80
 # 	Corrupted False
 # 	Mirrored False
-# 	BaseType == "Haunted Bascinet" "Divine Crown" "Torturer's Mask" "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots" "Leviathan Greaves" "Velour Boots" "Warlock Boots"
+# 	BaseType == "Torturer's Mask" "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Phantom Boots" "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots"
 # 	SetFontSize 45
 # 	MinimapIcon 1 Green Pentagon
 # 	SetBorderColor 0 255 0 255
@@ -1287,7 +1287,7 @@ Show
 	Mirrored False
 	Identified False
 	ItemLevel >= 85
-	BaseType == "Paladin Boots" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves" "Divine Crown" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Torturer's Mask" "Ancient Mask" "Jester Mask" "Phantom Boots" "Infiltrator Boots" "Two-Toned Boots" "Murder Boots" "Phantom Mitts" "Infiltrator Mitts" "Murder Mitts" "Giantslayer Helmet" "Conqueror's Helmet" "General's Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Dire Pelt" "Lion Pelt" "Velour Boots" "Harpyskin Boots" "Slink Boots" "Velour Gloves" "Harpyskin Gloves" "Slink Gloves" "Warlock Boots" "Sage Slippers" "Sorcerer Boots" "Warlock Gloves" "Sage Gloves" "Sorcerer Gloves" "Lich's Circlet" "Sunfire Circlet" "Moonlit Circlet" "Hubris Circlet" "Wyvernscale Boots" "Chimerascale Boots" "Two-Toned Boots" "Dragonscale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Haunted Bascinet" "Conquest Helmet" "Knight Helm" "Pig-Faced Bascinet" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail" "Saint's Hauberk" "Necrotic Armour" "Torturer Garb" "Sanguine Raiment" "Royal Plate" "Legion Plate" "Titan Plate" "Glorious Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Zodiac Leather" "Twilight Regalia" "Nightweave Robe" "Arcane Vestment" "Vaal Regalia" "Conquest Lamellar" "Marshall's Brigandine" "Full Wyvernscale" "Full Dragonscale"
+	BaseType == "Phantom Boots" "Infiltrator Boots" "Two-Toned Boots" "Murder Boots" "Phantom Mitts" "Infiltrator Mitts" "Murder Mitts" "Torturer's Mask" "Ancient Mask" "Jester Mask" "Giantslayer Helmet" "Conqueror's Helmet" "General's Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Majestic Pelt" "Grizzly Pelt" "Dire Pelt" "Lion Pelt" "Velour Boots" "Harpyskin Boots" "Slink Boots" "Velour Gloves" "Harpyskin Gloves" "Slink Gloves" "Warlock Boots" "Sage Slippers" "Sorcerer Boots" "Warlock Gloves" "Sage Gloves" "Sorcerer Gloves" "Lich's Circlet" "Sunfire Circlet" "Moonlit Circlet" "Hubris Circlet" "Haunted Bascinet" "Conquest Helmet" "Knight Helm" "Pig-Faced Bascinet" "Wyvernscale Boots" "Chimerascale Boots" "Two-Toned Boots" "Dragonscale Boots" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Divine Crown" "Paladin Crown" "Faithful Helmet" "Archdemon Crown" "Bone Helmet" "Prophet Crown" "Paladin Boots" "Martyr Boots" "Two-Toned Boots" "Crusader Boots" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves" "Necrotic Armour" "Torturer Garb" "Sanguine Raiment" "Royal Plate" "Legion Plate" "Titan Plate" "Glorious Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Zodiac Leather" "Twilight Regalia" "Nightweave Robe" "Arcane Vestment" "Vaal Regalia" "Conquest Lamellar" "Marshall's Brigandine" "Full Wyvernscale" "Full Dragonscale" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail" "Saint's Hauberk"
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
@@ -1569,7 +1569,8 @@ Show
 	SetBorderColor 0 255 0 255
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\git\poe-filters\sounds\gamersnexus-thanks-intel.mp3"
+	PlayAlertSound 1 200
+	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 Show
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble"
