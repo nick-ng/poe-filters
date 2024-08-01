@@ -256,6 +256,29 @@ Show
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
 
+#############################
+## Currency Vendor Recipes ##
+#############################
+
+# Gem Cutter's Prism Recipe
+Show
+	Quality >= 1
+	Quality < 20
+	Class "Gems"
+	SetFontSize 35
+	SetTextColor 30 190 190 255
+	SetBorderColor 30 190 190 255
+	MinimapIcon 1 White Triangle
+
+# Glassblower's Recipe
+Show
+	Class Flask
+	Quality >= 1
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Yellow UpsideDownHouse
+
 ########################
 ## Currency Div Cards ##
 ########################
@@ -315,7 +338,7 @@ Show
 	BaseType "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
 	SetBackgroundColor 200 250 200
 	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	#!BlackText!#
 	SetFontSize 45
 	PlayEffect Orange
 	PlayAlertSound 10 200
@@ -324,7 +347,7 @@ Show
 	BaseType "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil"
 	SetBackgroundColor 150 200 150
 	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	#!BlackText!#
 	SetFontSize 45
 	PlayEffect Orange Temp
 	PlayAlertSound 11 200
@@ -333,7 +356,7 @@ Show
 	BaseType "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
 	SetBackgroundColor 100 150 100
 	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	#!BlackText!#
 	SetFontSize 25
 	MinimapIcon 2 Orange Triangle
 
@@ -362,7 +385,7 @@ Show
 	StackSize >= 20
 	SetBackgroundColor 0 160 240
 	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	#!BlackText!#
 	SetFontSize 45
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp
@@ -371,7 +394,7 @@ Show
 	BaseType "Crystallised Lifeforce"
 	SetBackgroundColor 0 160 240
 	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	#!BlackText!#
 	SetFontSize 40
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp

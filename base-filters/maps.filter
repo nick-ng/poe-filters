@@ -84,13 +84,26 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "sounds/zana-you-idiot.mp3"
 
-# Blight Maps
+#################
+## Blight Maps ##
+#################
 Show
 	Rarity < Unique
 	Class "Maps"
 	UberBlightedMap True
-	SetTextColor 0 0 0 255
-	SetBackgroundColor 255 100 253 255
+	#!BlackText!# 255
+	#!BlightRavagedMapBackground!# 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Square
+	PlayEffect Purple
+	CustomAlertSound "sounds/cassia_the-blight-is-reacting.mp3"
+
+Show
+	Rarity < Unique
+	Class "Maps"
+	BlightedMap True
+	MapTier >= 13 # Can drop Golden Oils
+	#!HighBlightMapText!# 255
 	SetFontSize 45
 	MinimapIcon 0 Purple Square
 	PlayEffect Purple
@@ -100,11 +113,11 @@ Show
 	Rarity < Unique
 	Class "Maps"
 	BlightedMap True
-	SetTextColor 255 100 253 255
-	SetFontSize 45
-	MinimapIcon 0 Purple Square
+	#!LowBlightMapText!# 255
+	SetFontSize 40
+	MinimapIcon 1 Purple Square
 	PlayEffect Purple
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+	CustomAlertSound "sounds/cassia_oh.mp3"
 
 Show
 	Rarity < Unique

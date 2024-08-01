@@ -100,16 +100,6 @@ Show
 	MinimapIcon 2 Red Raindrop
 	#! tts "divine life" life-divine Amy 200 1.0
 
-## Glassblower's Recipe ##
-
-Show
-	Class Flask
-	Quality >= 1
-	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
-	MinimapIcon 0 Yellow UpsideDownHouse
-
 ###########################
 ## Helmet, Gloves, Boots ##
 ###########################

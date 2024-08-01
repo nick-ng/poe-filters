@@ -46,7 +46,7 @@ Show
   Class "Currency"
   BaseType "of Loathing"
   SetFontSize 45
-  SetTextColor 0 0 0 255
+  #!BlackText!# 255
   SetBorderColor 0 0 0 250
   #!EssenceBackground!#
   PlayAlertSound 2 50

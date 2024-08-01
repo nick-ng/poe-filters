@@ -11,7 +11,7 @@ Show
 
 Show
 	ItemLevel >= 85
-	Class == "Amulets" "Belts" "Jewels" "Rings" "Utility Flasks"
+	Class == "Utility Flasks"
 	SetFontSize 45
 	MinimapIcon 1 Blue Circle
 	SetBorderColor 0 0 255 255

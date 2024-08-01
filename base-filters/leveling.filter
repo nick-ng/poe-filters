@@ -21,7 +21,7 @@ Show
 	BaseType == "Quicksilver Flask"
 	AreaLevel <= 15
 	SetFontSize 45
-	SetTextColor 255 255 255 255
+	#!WhiteText!# 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 0 203 221 255
 	PlayEffect Green
