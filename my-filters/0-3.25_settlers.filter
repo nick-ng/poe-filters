@@ -24,6 +24,32 @@ Show
 	PlayAlertSound 1 150
 	MinimapIcon 1 Pink Star
 
+# 1.6 aps swords for next build
+Show
+	BaseType = "Elegant Foil" "Serrated Foil" "Fancy Foil" "Spiraled Foil" "Jewelled Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 77 # T1 Attack Speed
+	SetFontSize 35
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Diamond
+
+# AG Uniques
+# Leer Cast - Festival Mask
+# Dying Breath - Iron Staff
+# Zahndethus' Cassock - Sage's Robe
+# Windscream - Reinforced Greaves
+Show
+	BaseType = "Festival Mask" "Iron Staff" "Sage's Robe" "Reinforced Greaves"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

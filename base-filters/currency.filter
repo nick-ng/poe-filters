@@ -277,7 +277,7 @@ Show
 	Quality >= 1
 	SetFontSize 45
 	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 
 ########################

@@ -43,14 +43,14 @@ Show
 	PlayEffect White
 
 # other weapon affixes
-Show
-	HasExplicitMod "of Dissolution" "of Destruction" "of Incision" "of Disintegrating" "of Heartstopping" "of the Fanatical"
-	SetBackgroundColor 100 100 100
-	SetBorderColor 0 184 0
-	SetTextColor 200 80 251 255
-	SetFontSize 30
-	MinimapIcon 0 White UpsideDownHouse
-	PlayEffect White
+# Show
+# 	HasExplicitMod "of Dissolution" "of Destruction" "of Incision" "of Disintegrating" "of Heartstopping" "of the Fanatical"
+# 	SetBackgroundColor 100 100 100
+# 	SetBorderColor 0 184 0
+# 	SetTextColor 200 80 251 255
+# 	SetFontSize 30
+# 	MinimapIcon 0 White UpsideDownHouse
+# 	PlayEffect White
 
 # shield affixes
 Show

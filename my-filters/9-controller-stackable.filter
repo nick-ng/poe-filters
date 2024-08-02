@@ -19,6 +19,7 @@ Show
 Show
 	Rarity = Rare
 	Class == "Belts"
+	ItemLevel >= 85
 	SetFontSize 30
 	MinimapIcon 1 Cyan Pentagon
 	SetBorderColor 0 180 255 255
@@ -59,7 +60,11 @@ Show # T0 Currency
 	PlayEffect Green
 
 Hide
-	BaseType "Scroll of Wisdom" "Portal Scroll"
+	BaseType "Portal Scroll"
+
+Hide
+	BaseType "Scroll of Wisdom"
+	StackSize < 20
 
 ## Bound to map owner
 Show
@@ -89,6 +94,10 @@ Show
 	SetFontSize 35
 	MinimapIcon 0 Orange Square
 	#!GoodBaseBorder!#
+
+Show
+	Class Incubator
+	MinimapIcon 0 Orange Moon
 
 ## Warn if using filter in wrong zone
 Show
