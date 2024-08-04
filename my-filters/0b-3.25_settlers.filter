@@ -11,6 +11,19 @@ Show
 	PlayAlertSound 1 200
 	MinimapIcon 1 Pink Star
 
+# Shaper Shield
+Show
+	BaseType = "Fossilised Spirit Shield"
+	HasInfluence Shaper
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!LinkBackground!#
+	PlayAlertSound 1 150
+	MinimapIcon 1 Pink Star
+
 # Low dex 1h swords for next build
 Show
 	BaseType = "Whalebone Rapier" "Jagged Foil"
