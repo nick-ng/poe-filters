@@ -99,10 +99,6 @@ func LimitMaxAreaLevel(filter string, maxAreaLevel int) (string, error) {
 			continue
 		}
 
-		if filterGroup.MinArea > filterGroup.MaxArea {
-			continue
-		}
-
 		newFilterLines = append(newFilterLines, filterGroup.Type)
 
 		if filterGroup.MinArea > 1 {
