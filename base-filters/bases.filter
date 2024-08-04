@@ -78,7 +78,7 @@ Show
 	PlayEffect Red
 
 Show
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask"
 	ItemLevel >= 80 # Any Flagellant Chance
 	SetFontSize 45
 	Rarity <= Magic
@@ -148,7 +148,7 @@ Show
 Show
 	ItemLevel >= 86
 	Rarity <= Rare
-	BaseDefencePercentile >= 50
+	BaseDefencePercentile >= 30
 	Corrupted False
 	Mirrored False
 	BaseType #!body1!#
@@ -238,6 +238,15 @@ Show
 	SetFontSize 25
 	SetTextColor 190 240 0 180
 	SetBorderColor 200 50 50 255
+
+## March of the Legion (maybe)
+Show
+	BaseType "Legion Boots"
+	Rarity Unique
+	SetBackgroundColor 180 80 0
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 34
 
 # Hide uninteresting items as you progress
 # Hide

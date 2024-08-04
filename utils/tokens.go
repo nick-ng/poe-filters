@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"slices"
 	"strings"
 )
 
@@ -83,62 +84,66 @@ func applyColourTokens(rawFilter string) string {
 func applyArmourTokens(rawFilter string) string {
 	processedFilter := rawFilter
 
-	tiers := 5
+	maxTiers := 9
 
 	// groups
 	byAttribute := map[string][]string{
-		"str":    make([]string, tiers),
-		"dex":    make([]string, tiers),
-		"int":    make([]string, tiers),
-		"strdex": make([]string, tiers),
-		"strint": make([]string, tiers),
-		"dexint": make([]string, tiers),
+		"str":    make([]string, maxTiers),
+		"dex":    make([]string, maxTiers),
+		"int":    make([]string, maxTiers),
+		"strdex": make([]string, maxTiers),
+		"strint": make([]string, maxTiers),
+		"dexint": make([]string, maxTiers),
 	}
 
 	bySlot := map[string][]string{
-		"body":   make([]string, tiers),
-		"helm":   make([]string, tiers),
-		"boots":  make([]string, tiers),
-		"gloves": make([]string, tiers),
-		"square": make([]string, tiers),
+		"body":   make([]string, maxTiers),
+		"helm":   make([]string, maxTiers),
+		"boots":  make([]string, maxTiers),
+		"gloves": make([]string, maxTiers),
+		"square": make([]string, maxTiers),
 	}
 
-	for n := 0; n < tiers; n++ {
-		for attribute, value := range armourTokens {
-			for slot, value2 := range value {
-				token := fmt.Sprintf("#!%s%s%d!#", attribute, slot, n)
+	for tierLimit := 0; tierLimit < maxTiers; tierLimit++ {
+		for attribute, armourTokensForAttribute := range armourTokens {
+			for slot, armourBases := range armourTokensForAttribute {
+				token := fmt.Sprintf("#!%s%s%d!#", attribute, slot, tierLimit)
 
-				bases := ""
-				for m := 0; m <= n; m++ {
+				bases := []string{}
+				for tier := 0; tier <= tierLimit; tier++ {
 					// each token should include all items from lower tiers
-					if len(value2) >= (m+1) && len(value2[m]) > 0 {
-						tempBases := strings.Join(value2[m], "\" \"")
-
-						bases = fmt.Sprintf("%s \"%s\"", bases, tempBases)
+					if len(armourBases) >= (tier+1) && len(armourBases[tier]) > 0 {
+						bases = append(bases, armourBases[tier]...)
 					}
 				}
 
-				processedFilter = strings.ReplaceAll(processedFilter, token, bases)
+				slices.Sort(bases)
 
-				byAttribute[attribute][n] = fmt.Sprintf("%s%s", byAttribute[attribute][n], bases)
+				basesString := fmt.Sprintf("\"%s\" ", strings.Join(bases, "\" \""))
 
-				bySlot[slot][n] = fmt.Sprintf("%s%s", bySlot[slot][n], bases)
+				processedFilter = strings.ReplaceAll(processedFilter, token, basesString)
+
+				// @todo(nick-ng): convert slice to string just before replacement so you can sort all bases
+				byAttribute[attribute][tierLimit] = fmt.Sprintf("%s%s", byAttribute[attribute][tierLimit], basesString)
+
+				bySlot[slot][tierLimit] = fmt.Sprintf("%s%s", bySlot[slot][tierLimit], basesString)
 				if slot != "body" {
-					bySlot["square"][n] = fmt.Sprintf("%s%s", bySlot["square"][n], bases)
+					bySlot["square"][tierLimit] = fmt.Sprintf("%s%s", bySlot["square"][tierLimit], basesString)
 				}
 			}
 		}
 
-		for attribute, bases := range byAttribute {
-			token := fmt.Sprintf("#!%s%d!#", attribute, n)
+		// @todo(nick-ng): remove duplicates - i.e. two-toned boots
+		for attribute, basesString := range byAttribute {
+			token := fmt.Sprintf("#!%s%d!#", attribute, tierLimit)
 
-			processedFilter = strings.ReplaceAll(processedFilter, token, bases[n])
+			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
 		}
 
-		for slot, bases := range bySlot {
-			token := fmt.Sprintf("#!%s%d!#", slot, n)
+		for slot, basesString := range bySlot {
+			token := fmt.Sprintf("#!%s%d!#", slot, tierLimit)
 
-			processedFilter = strings.ReplaceAll(processedFilter, token, bases[n])
+			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
 		}
 	}
 

@@ -1,0 +1,89 @@
+Show
+	BaseType = "Vaal Axe" "Karui Chopper"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
+	Quality >= 24
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	MinimapIcon 1 Pink Star
+
+# Low dex 1h swords for next build
+Show
+	BaseType = "Whalebone Rapier" "Jagged Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 77 # T1 Attack Speed
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!LinkBackground!#
+	PlayAlertSound 1 150
+	MinimapIcon 1 Pink Star
+
+# 1.6 aps swords for next build
+Show
+	BaseType = "Elegant Foil" "Serrated Foil" "Fancy Foil" "Spiraled Foil" "Jewelled Foil"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 77 # T1 Attack Speed
+	SetFontSize 35
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Diamond
+
+Show
+	Class "Abyss Jewel"
+	BaseType "Ghastly"
+	ItemLevel >= 83
+	Rarity <= Rare
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!LinkBackground!#
+	PlayAlertSound 1 150
+	MinimapIcon 1 Pink Star
+
+# AG Uniques
+# Leer Cast - Festival Mask
+# Dying Breath - Iron Staff
+# Zahndethus' Cassock - Sage's Robe
+# Windscream - Reinforced Greaves
+Show
+	BaseType = "Festival Mask" "Iron Staff" "Sage's Robe" "Reinforced Greaves"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+
+# AG Despair on hit gloves
+Show
+	Class Gloves
+	HasImplicitMod True
+	Corrupted True
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov3.filter
+#! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
+#! del ##+ Section 17 - Ranged(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
+
+#! tts "check filter" check-filter Amy 200 1.0

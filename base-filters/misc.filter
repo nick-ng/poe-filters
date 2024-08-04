@@ -60,19 +60,29 @@ Hide
 ## Quest Items ##
 #################
 
+## Chains of Emancipation quest
 Show
+	BaseType = "Contract: Slaver's Revenge" "Contract: Follow the Paper Trail"
+	Class "Quest"
+	SetBorderColor 0 150 0
+	SetTextColor 0 250 0
+	SetFontSize 25
+
+## Heist contracts
+Hide
 	BaseType "Contract:"
 	Class "Quest"
 	SetBorderColor 0 150 0
-	SetTextColor 0 150 0
-	SetFontSize 25
-	MinimapIcon 2 Green UpsideDownHouse
+	SetTextColor 0 250 0
+	SetFontSize 30
 
 Show
 	Class "Quest"
 	SetBorderColor 0 250 0
 	SetTextColor 0 250 0
 	SetFontSize 45
-	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
+	MinimapIcon 0 Green UpsideDownHouse
 	CustomAlertSound "sounds/clack-v2-3blue1brown.mp3"
+
+#! import identified-items.filter
