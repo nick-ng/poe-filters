@@ -17,7 +17,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 0 255 255
 	#!BrightBackground!#
-	SetBorderColor 0 0 255 255
+	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 	PlayAlertSound 6 200
@@ -30,7 +30,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 0 255 255
 	#!BrightBackground!#
-	SetBorderColor 0 0 255 255
+	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 	PlayAlertSound 6 200
@@ -42,7 +42,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 0 255 255
 	#!BrightBackground!#
-	SetBorderColor 0 0 255 255
+	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
@@ -137,23 +137,24 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!suppressionsquare0!# #!strsquare0!#
-	#!BrightBorder!#
+	#!TopBaseBorder!# 222
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
-	PlayAlertSound 3 200
+	PlayAlertSound 8 200
 
 Show
 	ItemLevel >= 85
 	Rarity = Rare
-	BaseDefencePercentile >= 80
+	BaseDefencePercentile >= 99
 	Corrupted False
 	Mirrored False
 	BaseType #!suppressionsquare0!# #!strsquare0!#
-	SetFontSize 40
+	#!TopBaseBorder!# 222
+	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
-	PlayAlertSound 8 200
+	PlayAlertSound 3 200
 
 # T2 Spell Suppression ##
 Show
@@ -178,7 +179,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!suppressionbody0!# #!strbody0!#
-	#!BrightBorder!#
+	#!TopBaseBorder!# 222
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -191,7 +192,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType #!suppressionbody1!# #!strbody1!#
-	#!BrightBorder!#
+	#!TopBaseBorder!# 222
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star

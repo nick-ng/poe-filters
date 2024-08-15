@@ -212,7 +212,7 @@ Show # T3 Currency (3+ to show)
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
 	MinimapIcon 0 Green UpsideDownHouse
-	CustomAlertSound "sounds/water-drop.mp3"
+	PlayAlertSound 11 200
 
 #################
 ## T4 Currency ##

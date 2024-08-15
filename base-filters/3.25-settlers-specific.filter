@@ -104,7 +104,7 @@ Show
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
-	ItemLevel <= 81 # T1 Mana
+	ItemLevel >= 81 # T1 Mana
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
 
