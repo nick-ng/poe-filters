@@ -1,0 +1,10 @@
+#! import 3.25-settlers-specific.filter
+
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import neversink-very-strict.filter
+
+#! tts "check filter" check-filter Amy 200 1.0

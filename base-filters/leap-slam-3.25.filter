@@ -1,0 +1,61 @@
+## Leap slam swords
+#! links RGB whalebone
+	AreaLevel <= 30
+	BaseType == "Whalebone Rapier"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG whalebone
+	AreaLevel <= 24
+	BaseType == "Whalebone Rapier"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG whalebone
+	AreaLevel <= 30
+	BaseType == "Whalebone Rapier"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR whalebone
+	AreaLevel <= 24
+	BaseType == "Whalebone Rapier"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB whalebone
+	AreaLevel <= 30
+	BaseType == "Whalebone Rapier"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+## Leap slam Grinning fetish
+#! links RGB grinning
+	AreaLevel <= 55
+	BaseType == "Grinning fetish"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG grinning
+	AreaLevel <= 55
+	BaseType == "Grinning fetish"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG grinning
+	AreaLevel <= 55
+	BaseType == "Grinning fetish"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR grinning
+	AreaLevel <= 55
+	BaseType == "Grinning fetish"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB grinning
+	AreaLevel <= 55
+	BaseType == "Grinning fetish"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross

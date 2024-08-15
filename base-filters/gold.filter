@@ -3,7 +3,6 @@ Show
 	Class "Gold"
 	StackSize >= 200
 	SetFontSize 45
-	#!GGGCurrencyBorder!# 255
 	#!WhiteText!# 255
 	MinimapIcon 1 White Circle
 	PlayEffect White
@@ -13,8 +12,7 @@ Show
 Show
 	Class "Gold"
 	StackSize >= 50
-	SetFontSize 45
-	#!GGGCurrencyBorder!# 255
+	SetFontSize 35
 	#!WhiteText!# 255
 	MinimapIcon 2 White Circle
 	PlayEffect White
@@ -22,7 +20,6 @@ Show
 # any gold
 Show
 	Class "Gold"
-	SetFontSize 35
-	#!GGGCurrencyBorder!# 255
+	SetFontSize 25
 	#!WhiteText!# 255
 	PlayEffect White

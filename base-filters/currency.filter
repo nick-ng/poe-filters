@@ -245,17 +245,23 @@ Show # T4 Currency (4+ to show)
 	MinimapIcon 0 Grey UpsideDownHouse
 	# CustomAlertSound "sounds/water-drop.mp3"
 
-####################
-## Other Currency ##
-####################
+Show
+	Class "Currency"
+	BaseType == "Chaos Shard" "Horizon Shard" "Regal Shard"
+	StackSize >= 1
+	SetFontSize 40
+	#!T9CurrencyText!#
+	SetBorderColor 190 178 135 255
+	PlayEffect Grey
 
 Show
 	Class "Currency"
-	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
-	StackSize > 1
-	SetFontSize 45
+	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard"
+	StackSize >= 5
+	SetFontSize 35
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
+	PlayEffect Grey
 
 #############################
 ## Currency Vendor Recipes ##
@@ -285,7 +291,7 @@ Show
 ########################
 
 Show
-	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate"
+	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
 	Class "Divination"
 	SetFontSize 45
 	#!T0CurrencyText!#

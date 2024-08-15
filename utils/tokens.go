@@ -84,16 +84,17 @@ func applyColourTokens(rawFilter string) string {
 func applyArmourTokens(rawFilter string) string {
 	processedFilter := rawFilter
 
-	maxTiers := 9
+	maxTiers := 10
 
 	// groups
 	byAttribute := map[string][]string{
-		"str":    make([]string, maxTiers),
-		"dex":    make([]string, maxTiers),
-		"int":    make([]string, maxTiers),
-		"strdex": make([]string, maxTiers),
-		"strint": make([]string, maxTiers),
-		"dexint": make([]string, maxTiers),
+		"str":         make([]string, maxTiers),
+		"dex":         make([]string, maxTiers),
+		"int":         make([]string, maxTiers),
+		"strdex":      make([]string, maxTiers),
+		"strint":      make([]string, maxTiers),
+		"dexint":      make([]string, maxTiers),
+		"suppression": make([]string, maxTiers),
 	}
 
 	bySlot := map[string][]string{
@@ -102,6 +103,13 @@ func applyArmourTokens(rawFilter string) string {
 		"boots":  make([]string, maxTiers),
 		"gloves": make([]string, maxTiers),
 		"square": make([]string, maxTiers),
+	}
+
+	byBoth := map[string][]string{
+		"strbody":           make([]string, maxTiers),
+		"suppressionbody":   make([]string, maxTiers),
+		"strsquare":         make([]string, maxTiers),
+		"suppressionsquare": make([]string, maxTiers),
 	}
 
 	for tierLimit := 0; tierLimit < maxTiers; tierLimit++ {
@@ -130,6 +138,24 @@ func applyArmourTokens(rawFilter string) string {
 				if slot != "body" {
 					bySlot["square"][tierLimit] = fmt.Sprintf("%s%s", bySlot["square"][tierLimit], basesString)
 				}
+
+				if strings.Contains(attribute, "dex") {
+					byAttribute["suppression"][tierLimit] = fmt.Sprintf("%s%s", byAttribute["suppression"][tierLimit], basesString)
+
+					if slot != "body" {
+						byBoth["suppressionsquare"][tierLimit] = fmt.Sprintf("%s%s", byBoth["suppressionsquare"][tierLimit], basesString)
+					} else {
+						byBoth["suppressionbody"][tierLimit] = fmt.Sprintf("%s%s", byBoth["suppressionbody"][tierLimit], basesString)
+					}
+				}
+
+				if attribute == "str" {
+					if slot != "body" {
+						byBoth["strsquare"][tierLimit] = fmt.Sprintf("%s%s", byBoth["strsquare"][tierLimit], basesString)
+					} else {
+						byBoth["strbody"][tierLimit] = fmt.Sprintf("%s%s", byBoth["strbody"][tierLimit], basesString)
+					}
+				}
 			}
 		}
 
@@ -142,6 +168,12 @@ func applyArmourTokens(rawFilter string) string {
 
 		for slot, basesString := range bySlot {
 			token := fmt.Sprintf("#!%s%d!#", slot, tierLimit)
+
+			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
+		}
+
+		for both, basesString := range byBoth {
+			token := fmt.Sprintf("#!%s%d!#", both, tierLimit)
 
 			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
 		}

@@ -1,71 +1,30 @@
-Show
-	BaseType = "Vaal Axe" "Karui Chopper"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
-	Quality >= 24
-	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!BrightBackground!#
-	PlayAlertSound 1 200
-	MinimapIcon 1 Pink Star
-
-# Low dex 1h swords for next build
-Show
-	BaseType = "Whalebone Rapier" "Jagged Foil"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 77 # T1 Attack Speed
-	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!LinkBackground!#
-	PlayAlertSound 1 150
-	MinimapIcon 1 Pink Star
-
-# 1.6 aps swords for next build
-Show
-	BaseType = "Elegant Foil" "Serrated Foil" "Fancy Foil" "Spiraled Foil" "Jewelled Foil"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 77 # T1 Attack Speed
-	SetFontSize 35
-	#!GoodBaseBorder!#
-	MinimapIcon 1 Pink Diamond
-
-# AG Uniques
-# Leer Cast - Festival Mask
-# Dying Breath - Iron Staff
-# Zahndethus' Cassock - Sage's Robe
-# Windscream - Reinforced Greaves
-Show
-	BaseType = "Festival Mask" "Iron Staff" "Sage's Robe" "Reinforced Greaves"
-	Rarity Unique
-	SetFontSize 45
-	#!BrightBackground!#
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-
-# AG Despair on hit gloves
-Show
-	Class Gloves
-	HasImplicitMod True
-	Corrupted False
-	SetFontSize 45
-	#!BrightBackground!#
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
+#! import 3.25-settlers-specific.filter
 
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
+
+# Leveling Items
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!strint9!# #!dexint9!# #!int9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+
+Show
+	Class "Sceptre" "Wand"
+	AreaLevel < 77
+	Rarity = Rare
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!LevelingBorder!#
 
 #! import sov2.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n

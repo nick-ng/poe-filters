@@ -5,9 +5,35 @@ Show
 	#!GoodBaseBorder!#
 	Continue
 
-#####################
-## Vermillion Ring ##
-#####################
+##################################
+## Vermillion and Cerulean Ring ##
+##################################
+
+Show
+	BaseType "Cerulean Ring"
+	Corrupted False
+	Mirrored False
+	ItemLevel >= 85 # t1 mana
+	SetFontSize 45
+	SetTextColor 0 0 255 255
+	#!BrightBackground!#
+	SetBorderColor 0 0 255 255
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	PlayAlertSound 6 200
+
+Show
+	BaseType "Vermillion Ring"
+	Corrupted False
+	Mirrored False
+	ItemLevel >= 84 # t1 resists
+	SetFontSize 45
+	SetTextColor 0 0 255 255
+	#!BrightBackground!#
+	SetBorderColor 0 0 255 255
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	PlayAlertSound 6 200
 
 Show
 	BaseType "Vermillion Ring"
@@ -19,7 +45,6 @@ Show
 	SetBorderColor 0 0 255 255
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	PlayAlertSound 6 200
 
 ###########################
 ## Rings, Amulets, Belts ##
@@ -106,16 +131,17 @@ Show
 
 Show
 	ItemLevel >= 85
+	AreaLevel <= 83
 	Rarity <= Rare
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!square0!#
+	BaseType #!suppressionsquare0!# #!strsquare0!#
 	#!BrightBorder!#
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
-	#! tts "eighty five top base" 85-top-base Amy 200 1.0
+	PlayAlertSound 3 200
 
 Show
 	ItemLevel >= 85
@@ -123,20 +149,21 @@ Show
 	BaseDefencePercentile >= 80
 	Corrupted False
 	Mirrored False
-	BaseType #!square1!#
+	BaseType #!suppressionsquare0!# #!strsquare0!#
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
-	#! tts "eighty five rare" 85-rare Amy 200 1.0
+	PlayAlertSound 8 200
 
 # T2 Spell Suppression ##
 Show
 	ItemLevel >= 76
+	AreaLevel <= 82
 	Rarity = Rare
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!square1!#
+	BaseType #!suppressionsquare1!# #!strsquare1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -148,25 +175,37 @@ Show
 Show
 	ItemLevel >= 86
 	Rarity <= Rare
-	BaseDefencePercentile >= 30
 	Corrupted False
 	Mirrored False
-	BaseType #!body1!#
+	BaseType #!suppressionbody0!# #!strbody0!#
 	#!BrightBorder!#
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
-	#! tts "eighty six rare" 86-rare Amy 200 1.0
+	PlayAlertSound 3 200
+
+Show
+	ItemLevel >= 86
+	Rarity <= Rare
+	BaseDefencePercentile >= 30
+	Corrupted False
+	Mirrored False
+	BaseType #!suppressionbody1!# #!strbody1!#
+	#!BrightBorder!#
+	SetFontSize 40
+	PlayEffect Red
+	MinimapIcon 1 Yellow Star
+	PlayAlertSound 8 200
 
 # T2 Spell Suppression ##
 Show
-	AreaLevel < 83
+	AreaLevel <= 82
 	ItemLevel >= 77
 	Rarity = Rare
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!body1!#
+	BaseType #!suppressionbody1!# #!strbody1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star

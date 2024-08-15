@@ -1,5 +1,34 @@
-#! skip
+# Divination Cards
+# Dark Temptation - Obliteration
+# The Spark and the Flame - Berek's Respite
+# The Coming Storm - Lightning Coil
+Show
+	BaseType == "Dark Temptation" "The Spark and the Flame" "The Coming Storm"
+	SetFontSize 45
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	#!BrightBackground!#
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
 
+# Build Uniques
+# Imbued Wand - Obliteration
+# Two-Stone Ring - Berek's Respite
+# Desert Brigadine - Lightning Coil
+# Scholar's Robe - Cloak of Flame
+Show
+	BaseType == "Imbued Wand" "Two-Stone Ring" "Desert Brigandine" "Scholar's Robe"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Bossing Weapon
 Show
 	BaseType "Void Sceptre" "Opal Sceptre"
 	Corrupted False

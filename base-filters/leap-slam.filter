@@ -121,3 +121,34 @@
 	BaseType == "Rusted Sword" "Copper Sword" "Sabre" "Broad Sword" "War Sword" "Ancient Sword" "Elegant Sword" "Cutlass" "Graceful Sword" "Rusted Spike" "Whalebone Rapier" "Battered Foil" "Basket Rapier" "Jagged Foil"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Cross
+
+## Leap slam Karui Sceptre
+#! links RGB karui
+	AreaLevel <= 77
+	BaseType == "Karui Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RG karui
+	AreaLevel <= 24
+	BaseType == "Karui Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBG karui
+	AreaLevel <= 77
+	BaseType == "Karui Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBR karui
+	AreaLevel <= 24
+	BaseType == "Karui Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links BBB karui
+	AreaLevel <= 77
+	BaseType == "Karui Sceptre"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross

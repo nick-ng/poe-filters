@@ -39,7 +39,6 @@ Show
 	SetTextColor 147 49 147 200
 	SetBorderColor 147 49 147 200
 	SetBackgroundColor 200 200 200 255
-	MinimapIcon 2 Purple Diamond
 	PlayEffect Purple
 	PlayAlertSound 3 300
 
@@ -55,6 +54,17 @@ Hide
 	SetBorderColor 200 200 200
 	SetTextColor 225 225 225
 	SetFontSize 35
+
+#########################
+## Map Icon by default ##
+#########################
+
+Show
+	BaseType "Scarab"
+	Class "Map Fragment"
+	PlayEffect Purple
+	MinimapIcon 2 Purple Hexagon
+	Continue
 
 #################
 ## Quest Items ##
