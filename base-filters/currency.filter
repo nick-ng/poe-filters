@@ -341,6 +341,7 @@ Show
 	PlayEffect White
 	PlayAlertSound 6 200
 	MinimapIcon 0 White Raindrop
+
 Show
 	BaseType "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
 	SetBackgroundColor 200 250 200
@@ -350,15 +351,17 @@ Show
 	PlayEffect Orange
 	PlayAlertSound 10 200
 	MinimapIcon 0 Orange Triangle
+
 Show
 	BaseType "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil"
 	SetBackgroundColor 150 200 150
 	SetBorderColor 0 0 0
 	#!BlackText!#
 	SetFontSize 45
-	PlayEffect Orange Temp
+	PlayEffect Grey
 	PlayAlertSound 11 200
 	MinimapIcon 1 Orange Triangle
+
 Show
 	BaseType "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
 	SetBackgroundColor 100 150 100
@@ -366,6 +369,7 @@ Show
 	#!BlackText!#
 	SetFontSize 25
 	MinimapIcon 2 Orange Triangle
+	PlayEffect Grey
 
 Show
 	AreaLevel > 83

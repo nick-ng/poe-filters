@@ -8,7 +8,7 @@ Show # T17
 	Class "Maps"
 	SetFontSize 45
 	#!GoodBaseBorder!#
-	SetTextColor 167 0 230 200
+	SetTextColor 120 0 166 200
 	#!BrightBackground!#
 	MinimapIcon 2 Purple Square
 	PlayEffect Purple
