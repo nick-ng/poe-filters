@@ -1,5 +1,6 @@
 #! import 3.25-settlers-specific.filter
 
+#! import full-stack-divination-cards.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

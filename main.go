@@ -25,6 +25,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	utils.MakeDivinationCardsFilter()
+
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
