@@ -168,6 +168,16 @@ Show
 	PlayAlertSound 1 100
 	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
+Show
+	Class "Currency"
+	BaseType == "Exalted Shard" "Ancient Shard"
+	SetFontSize 35
+	#!T1CurrencyText!#
+	#!CurrencyBorder!#
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+	PlayAlertSound 11 150
+
 #################
 ## T2 Currency ##
 #################
@@ -247,7 +257,7 @@ Show # T4 Currency (4+ to show)
 
 Show
 	Class "Currency"
-	BaseType == "Chaos Shard" "Horizon Shard" "Regal Shard"
+	BaseType == "Chaos Shard" "Regal Shard"
 	StackSize >= 1
 	SetFontSize 40
 	#!T9CurrencyText!#
@@ -256,11 +266,30 @@ Show
 
 Show
 	Class "Currency"
-	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard"
+	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
 	StackSize >= 5
 	SetFontSize 35
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
+	PlayEffect Grey
+
+# Show
+# 	Class "Currency"
+# 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard"
+# 	SetFontSize 15
+# 	PlayEffect Grey
+
+# Show
+# 	Class "Currency"
+# 	BaseType "Shard"
+# 	StackSize >= 5
+# 	SetFontSize 15
+# 	PlayEffect Grey
+
+Show
+	Class "Currency"
+	BaseType "Engineer's Orb"
+	SetFontSize 15
 	PlayEffect Grey
 
 #############################

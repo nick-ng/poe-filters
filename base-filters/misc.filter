@@ -35,12 +35,10 @@ Show
 	Identified True
 	Rarity = Rare
 	HasExplicitMod = "Catarina's Veiled" "Elreon's Veiled" "Leo's Veiled" "Rin's Veiled" "Vagan's Veiled" "Vorici's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's" "It That Fled's Veiled" "Korell's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "Riker" "Tora's Veiled"
-	SetFontSize 45
-	SetTextColor 147 49 147 200
-	SetBorderColor 147 49 147 200
-	SetBackgroundColor 200 200 200 255
+	SetFontSize 30
+	SetTextColor 177 159 255 200
+	SetBorderColor 177 159 255 200
 	PlayEffect Purple
-	PlayAlertSound 3 300
 
 ###############
 ## Tinctures ##

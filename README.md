@@ -28,6 +28,6 @@ When you run it, it will try to copy filters to the Path of Exile directory
 
 ### ToDo Comments
 
-- main.go:109: @todo(nick-ng): move some functions to separate files
 - utils\tokens.go:134: @todo(nick-ng): convert slice to string just before replacement so you can sort all bases
 - utils\tokens.go:162: @todo(nick-ng): remove duplicates - i.e. two-toned boots
+- main.go:109: @todo(nick-ng): move some functions to separate files

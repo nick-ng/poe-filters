@@ -137,3 +137,16 @@ Show
 	MinimapIcon 2 Brown Star
 	PlayEffect Orange
 	PlayAlertSound 1 200
+
+## Veiled Suffix Golves
+Show
+	Identified True
+	Rarity = Rare
+	Class Gloves
+	HasExplicitMod = "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	SetFontSize 45
+	SetBorderColor 107 99 187 200
+	SetTextColor 107 99 187 200
+	#!BrightBackground!#
+	PlayEffect Purple
+	PlayAlertSound 3 200
