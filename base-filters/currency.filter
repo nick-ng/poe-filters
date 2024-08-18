@@ -309,6 +309,17 @@ Show
 # Glassblower's Recipe
 Show
 	Class Flask
+	BaseType "Divine" "Eternal"
+	Quality >= 19
+	SetFontSize 45
+	#!T2CurrencyText!#
+	#!BrightBackground!#
+	SetBorderColor 0 140 255 255
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayAlertSound 9 200
+
+Show
+	Class Flask
 	Quality >= 1
 	SetFontSize 45
 	#!T2CurrencyText!#

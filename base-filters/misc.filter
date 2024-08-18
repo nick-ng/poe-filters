@@ -94,3 +94,13 @@ Show
 	CustomAlertSound "sounds/clack-v2-3blue1brown.mp3"
 
 #! import identified-items.filter
+
+## Crane Technique
+Show
+	BaseType == "Driftwood Maul" "Rustic Sash" "Corroded Blade" "Paua Ring"
+	Rarity = Rare
+	AreaLevel < 10
+	SetFontSize 45
+	#!BrightBorder!#
+	PlayEffect Grey
+	MinimapIcon 0 Grey UpsideDownHouse
