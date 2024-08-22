@@ -151,3 +151,18 @@ Show
 	#!BrightBackground!#
 	PlayEffect Purple
 	PlayAlertSound 3 200
+
+Hide
+	Class "Currency"
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	StackSize < 8
+	#!GGGCurrencyBorder!# 200
+	SetFontSize 45
+
+Hide # Red Maps
+	Class "Currency"
+	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	SetFontSize 45
+	StackSize < 3
+	#!T3CurrencyText!#
+	#!CurrencyBorder!#

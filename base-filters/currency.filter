@@ -95,8 +95,8 @@ Show # Red Maps
 ## T0/T1 Currency ##
 ####################
 
-Show # T-1 Currency
-	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+Show # T-2 Currency
+	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 250 0 0
@@ -104,6 +104,16 @@ Show # T-1 Currency
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
+
+Show # T-1 Currency
+	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	CustomAlertSound "sounds/aahh.mp3"
 
 Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"
@@ -131,7 +141,7 @@ Show # T0 Currency
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Green
+	PlayEffect Blue
 	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
 
 Show # T0.5 Currency
@@ -141,7 +151,7 @@ Show # T0.5 Currency
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Green
+	PlayEffect Pink
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
 
@@ -208,7 +218,7 @@ Show # Orb of Chance is more important until yellow maps
 
 Hide # Red Maps
 	Class "Currency"
-	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
 	AreaLevel > 77
 	StackSize < 3
