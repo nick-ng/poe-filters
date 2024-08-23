@@ -2,20 +2,22 @@
 
 Show
 	Class "Currency"
-	BaseType == "Orb of Horizons"
+	BaseType == "Orb of Horizons" "Harbinger's Orb"
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
+	PlayAlertSound 9 200
 	#! tts "horizon" horizon Amy 200 1.0
 
 Show
 	Class "Currency"
-	BaseType == "Horizon Shard"
+	BaseType == "Horizon Shard" "Harbinger's Shard"
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
+	PlayAlertSound 9 200
 
 Show
 	BaseType == "Quicksilver Flask"

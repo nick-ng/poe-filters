@@ -132,19 +132,19 @@ Show # T0 Currency
 	#!CurrencyBorder!#
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
+	CustomAlertSound "sounds/thps-special-trick-1.mp3"
 
 Show # T0 Currency
 	Class "Currency"
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Blue
-	CustomAlertSound "sounds/martin-brundle-is-that-glock.mp3"
+	CustomAlertSound "sounds/thps-special-trick-2.mp3"
 
-Show # T0.5 Currency
+Show # Mapping Currency
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
@@ -154,7 +154,6 @@ Show # T0.5 Currency
 	PlayEffect Pink
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
-
 
 Show # T1 Currency
 	Class "Currency"
@@ -194,7 +193,7 @@ Show
 
 Show # T2 Currency
 	Class "Currency"
-	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#

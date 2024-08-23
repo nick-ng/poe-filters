@@ -166,3 +166,25 @@ Hide # Red Maps
 	StackSize < 3
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
+
+## Retaliation
+Hide
+	ItemLevel < 84
+	Class "Tincture"
+	SetBackgroundColor 75 50 40
+	SetBorderColor 200 200 200
+	SetTextColor 225 225 225
+	SetFontSize 35
+
+Show
+	BaseType = "Reaver Axe"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
+	Quality >= 24
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	MinimapIcon 1 Pink Star

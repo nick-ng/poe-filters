@@ -26,6 +26,9 @@ When you run it, it will try to copy filters to the Path of Exile directory
 
 ## ToDos
 
+- make `colour-tokens.json` only have rgb values and automatically make text, background and border versions when replacing
+- remove alpha values from colour tokens
+
 ### ToDo Comments
 
 - utils\tokens.go:134: @todo(nick-ng): convert slice to string just before replacement so you can sort all bases

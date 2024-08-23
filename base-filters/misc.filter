@@ -46,6 +46,7 @@ Show
 
 Hide
 	AreaLevel >= 80
+	ItemLevel < 84
 	Rarity < Rare
 	Class "Tincture"
 	SetBackgroundColor 75 50 40
