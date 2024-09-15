@@ -1,0 +1,154 @@
+# Weapon Recipe
+Show
+	Class "Currency"
+	BaseType "of Contempt" "of Hatred" "of Anger" "of Wrath"
+	SetFontSize 45
+	#!WhiteText!# 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "essence" essence Amy 200 1.0
+
+#! import leveling.filter
+
+## Priority for Brutus
+Show
+	AreaLevel <= 9 # The Upper Prison - Act 1
+	BaseType == "Long Bow"
+	Corrupted False
+	SetFontSize 45
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 13
+	BaseType == "Long Bow"
+	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+
+Show
+	AreaLevel < 23
+	BaseType == "Composite Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel < 23
+	BaseType == "Composite Bow"
+	Corrupted False
+	SetFontSize 35
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 33
+	BaseType == "Bone Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 33
+	BaseType == "Bone Bow"
+	Corrupted False
+	SetFontSize 35
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel < 41
+	BaseType == "Royal Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel < 41
+	BaseType == "Royal Bow"
+	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+
+Show
+	AreaLevel < 47
+	BaseType == "Compound Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel < 47
+	BaseType == "Compound Bow"
+	Corrupted False
+	SetFontSize 35
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel <= 52
+	BaseType == "Ivory Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 52
+	BaseType == "Ivory Bow"
+	Corrupted False
+	SetFontSize 25
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+
+Show
+	AreaLevel < 64
+	BaseType == "Highborn Bow" "Ranger Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 64
+	BaseType == "Highborn Bow" "Ranger Bow"
+	Corrupted False
+	SetFontSize 35
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200
+
+Show
+	AreaLevel < 70
+	BaseType == "Spine Bow"
+	SetFontSize 45
+	Rarity > Normal
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel < 77
+	BaseType == "Spine Bow"
+	Corrupted False
+	SetFontSize 35
+	#!LevelingBorder!#
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 16 200

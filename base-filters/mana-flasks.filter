@@ -174,12 +174,13 @@ Hide
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 
-Show
-	BaseType == "Divine Mana Flask"
-	ItemLevel <= 66
-	SetFontSize 45
-	Rarity <= Magic
-	SetBorderColor 0 0 255 200
-	PlayEffect Red
-	MinimapIcon 2 Blue Raindrop
-	#! tts "divine mana" mana-divine Amy 200 1.0
+## Most builds don't need divine mana flasks
+# Show
+# 	BaseType == "Divine Mana Flask"
+# 	ItemLevel <= 66
+# 	SetFontSize 45
+# 	Rarity <= Magic
+# 	SetBorderColor 0 0 255 200
+# 	PlayEffect Red
+# 	MinimapIcon 2 Blue Raindrop
+# 	#! tts "divine mana" mana-divine Amy 200 1.0

@@ -130,7 +130,7 @@ Show # T0 Currency
 	SetFontSize 45
 	#!T0CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Pink UpsideDownHouse
+	MinimapIcon 0 Pink Circle
 	PlayEffect Green
 	CustomAlertSound "sounds/thps-special-trick-1.mp3"
 
@@ -140,7 +140,7 @@ Show # T0 Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
 	CustomAlertSound "sounds/thps-special-trick-2.mp3"
 
@@ -150,7 +150,7 @@ Show # Mapping Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Orange Circle
 	PlayEffect Pink
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
@@ -161,7 +161,7 @@ Show # T1 Currency
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/izaro-golden.mp3"
@@ -172,7 +172,7 @@ Show
 	SetFontSize 45
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 1 100
 	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
@@ -183,7 +183,7 @@ Show
 	SetFontSize 35
 	#!T1CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 150
 
@@ -197,7 +197,7 @@ Show # T2 Currency
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Yellow UpsideDownHouse
+	MinimapIcon 0 Yellow Circle
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
@@ -212,7 +212,7 @@ Show # Orb of Chance is more important until yellow maps
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Yellow UpsideDownHouse
+	MinimapIcon 0 Yellow Circle
 	#! tts "chance" chance Amy 200 1.2
 
 Hide # Red Maps
@@ -230,7 +230,7 @@ Show # T3 Currency (3+ to show)
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Green UpsideDownHouse
+	MinimapIcon 0 Green Circle
 	PlayAlertSound 11 200
 
 #################
@@ -261,7 +261,7 @@ Show # T4 Currency (4+ to show)
 	SetFontSize 45
 	#!T3CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Grey UpsideDownHouse
+	MinimapIcon 0 Grey Circle
 	# CustomAlertSound "sounds/water-drop.mp3"
 
 Show
@@ -307,7 +307,7 @@ Show
 
 # Gem Cutter's Prism Recipe
 Show
-	Quality >= 1
+	Quality >= 15
 	Quality < 20
 	Class "Gems"
 	SetFontSize 35
@@ -329,15 +329,15 @@ Show
 
 Show
 	Class Flask
-	Quality >= 1
+	Quality >= 15
 	SetFontSize 45
 	#!T2CurrencyText!#
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 
-########################
-## Currency Div Cards ##
-########################
+######################
+## Divination Cards ##
+######################
 
 Show
 	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
@@ -345,7 +345,7 @@ Show
 	SetFontSize 45
 	#!T0CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Pink UpsideDownHouse
+	MinimapIcon 0 Pink Square
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
 
@@ -355,7 +355,7 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Yellow UpsideDownHouse
+	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
@@ -365,9 +365,16 @@ Show
 	SetFontSize 45
 	#!T2CurrencyText!#
 	#!CurrencyBorder!#
-	MinimapIcon 0 Yellow UpsideDownHouse
+	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+Show
+	BaseType == "Cameria's Cut"
+	Class "Divination"
+	SetFontSize 45
+	MinimapIcon 0 Blue UpsideDownHouse
+	PlayAlertSound 9 200
 
 # Essence
 Show

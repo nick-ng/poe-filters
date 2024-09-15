@@ -1,0 +1,2 @@
+#! import storm-rain.filter
+#! include ## red maps start ##(.|\n)+## red maps end ##

@@ -1,10 +1,20 @@
 #! import 3.25-settlers-specific.filter
 
+#! import full-stack-divination-cards.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
 
-#! import neversink-very-strict.filter
+#! import sov3.filter
+#! maxarea 1 kingsmarch
+#! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
+#! del ##+ Section 17 - Ranged(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
+
+#! import neversink-uber.filter
 
 #! tts "check filter" check-filter Amy 200 1.0

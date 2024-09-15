@@ -14,6 +14,7 @@ import (
 
 const MY_FILTERS_PATH string = "my-filters"
 const BASE_FILTERS_PATH string = "base-filters"
+const BUILD_FILTERS_PATH string = "build-filters"
 const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 
@@ -137,12 +138,19 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 			{
 				subCommandArguments := getCommands(trimmedLine)
 				switch subCommandArguments[0] {
+				case "exclude":
+					fallthrough
 				case "del":
 					fallthrough
 				case "delete":
 					{
 						regexpString := strings.Join(subCommandArguments[1:], " ")
 						options["delete"] = append(options["delete"], regexpString)
+					}
+				case "include":
+					{
+						regexpString := strings.Join(subCommandArguments[1:], " ")
+						options["include"] = append(options["delete"], regexpString)
 					}
 				case "maxarea":
 					{
@@ -172,7 +180,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
 								} else if now < int64(importAfterTimestamp) {
 									processedLines = append(processedLines, fmt.Sprintf("#?  skipped because generated at %d", now))
-								} else {
+								} else { // nothing wrong. we can modify the imported filter
 									for _, deleteRegexpString := range options["delete"] {
 										deleteRegexp, err := regexp.Compile(deleteRegexpString)
 
@@ -182,6 +190,21 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
+										}
+									}
+
+									for _, includeRegexpString := range options["include"] {
+										fmt.Println(includeRegexpString)
+										includeRegexp, err := regexp.Compile(includeRegexpString)
+
+										if err != nil {
+											errorString := fmt.Sprintf("couldn't compile regexp: %s", includeRegexpString)
+											errorList = append(errorList, errors.New(errorString))
+											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
+										} else {
+											a := includeRegexp.FindString(tempFilter)
+											fmt.Println(a)
+											tempFilter = includeRegexp.ReplaceAllString(tempFilter, "")
 										}
 									}
 
@@ -361,20 +384,27 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 	filter = utils.ApplyAllTokens(filter)
 	filter = utils.CleanUpFilter(filter)
 
+	if strings.HasSuffix(filterPath, ".ruthlessfilter") {
+		filter = strings.ReplaceAll(filter, "Hide", "Show")
+	}
+
 	return filter, errorList
 }
 
 func importBaseFilter(filterName string) (string, string, error) {
-	path := filepath.Join(BASE_FILTERS_PATH, filterName)
+	var err error
 
-	filterData, err := os.ReadFile(path)
+	for _, directoryName := range []string{BASE_FILTERS_PATH, BUILD_FILTERS_PATH, THIRD_PARTY_FILTERS_PATH} {
+		path := filepath.Join(directoryName, filterName)
 
-	if err != nil {
-		path = filepath.Join(THIRD_PARTY_FILTERS_PATH, filterName)
-		filterData, err = os.ReadFile(path)
+		filterData, err := os.ReadFile(path)
+
+		if err == nil {
+			return string(filterData), path, err
+		}
 	}
 
-	return string(filterData), path, err
+	return "", "", err
 }
 
 func getCommands(rawCommand string) []string {

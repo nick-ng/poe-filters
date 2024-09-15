@@ -1,0 +1,36 @@
+# Leveling Items
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+
+#! linksa RRBB
+#! linksa RBBB
+
+#! import fire-templar-start.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import sov1.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n

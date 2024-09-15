@@ -80,8 +80,17 @@ Show # Influenced Rings
 ########################
 
 Show
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask"
-	ItemLevel >= 85 # Best Move Speed suffix
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	ItemLevel >= 85 # t1 move speed
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	PlayEffect Red
+	SetBorderColor 255 0 0 200
+
+Show
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	ItemLevel >= 84 # Everything except t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
 	SetTextColor 0 203 221 200
@@ -93,7 +102,7 @@ Show
 ###############################
 
 Show
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Amethyst Flask"
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
 	ItemLevel >= 80 # Best Flagellant Chance
 	ItemLevel <= 81 # includes a tier of resists during flask effect
 	SetFontSize 45
@@ -103,7 +112,7 @@ Show
 	PlayEffect Red
 
 Show
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask"
+	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
 	ItemLevel >= 80 # Any Flagellant Chance
 	SetFontSize 45
 	Rarity <= Magic

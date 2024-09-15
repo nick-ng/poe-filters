@@ -1,0 +1,52 @@
+# Divination Cards
+Show
+	BaseType == "The Dragon"
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+
+
+# Leveling Items
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+
+#! import fire-templar-start.filter
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter

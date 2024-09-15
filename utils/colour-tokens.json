@@ -49,5 +49,6 @@
 	"MediumBaseBorder": "SetBorderColor 91 200 236 200",
 	"OkBaseBorder": "SetBorderColor 0 102 140 200",
 	"LevelingBorder": "SetBorderColor 13 255 201 255",
-	"LinkBorder": "SetBorderColor 200 0 0 255"
+	"LinkBorder": "SetBorderColor 200 0 0 255",
+	"BlueBorder": "SetBorderColor 55 55 255"
 }

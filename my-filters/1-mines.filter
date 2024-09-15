@@ -1,0 +1,135 @@
+# Divination Cards
+# The Battle Born - Unique axe (Dreadarc)
+# The Body - Unique body armour (The Restless Ward)
+# Doedre's Madness - Doedre item (Doedre's Tenure)
+# Mitts - Unique gloves (Doedre's Tenure)
+# The Penitent - Random Unset Ring (Profane Proxy)
+# Hubris - Random unique ring (Profane Proxy)
+Show
+	BaseType == "The Battle Born" "The Body" "Doedre's Madness" "Mitts" "The Penitent" "Hubris"
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+# Cleaver - Dreadarc
+# Carnal Armour - The Restless Ward (Charge duration)
+# Velvet Gloves - Doedre's Tenure
+# Unset Ring - Profane Proxy
+Show
+	BaseType == "Cleaver" "Carnal Armour" "Velvet Gloves" "Unset Ring"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+
+# Prophecy Wand has too high int requirement
+Show
+	BaseType "Omen Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 84 # T1 Spell Damage
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+	PlayAlertSound 11 200
+
+Show
+	BaseType "Sage Wand" "Omen Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 80 # T1 Hybrid Spell Damage (Woe Essence)
+	SetFontSize 35
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Diamond
+
+Show
+	HasInfluence Crusader Hunter Redeemer Warlord
+	Class == "Rings"
+	ItemLevel >= 80 # Curse on hit
+	SetFontSize 45
+	SetTextColor 0 200 20 255
+	SetBorderColor 0 200 20 255
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	PlayEffect Green
+	MinimapIcon 0 Green Diamond
+
+Show
+	HasInfluence Shaper
+	BaseType #!dexint2!#
+	ItemLevel >= 84 # +#%Spell Critical Strike Chance
+	SetFontSize 45
+	SetTextColor 0 200 20 255
+	SetBorderColor 0 200 20 255
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	PlayEffect Green
+	MinimapIcon 0 Green Diamond
+
+
+#! linksa GBBB
+#! linksa BBBB
+#! linksa GBB
+#! linksa BBB
+
+#! import library-shield-charge.filter
+#! import library-shield-charge-spell.filter
+#! import leveling.filter
+
+# More Leveling Items
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!#
+
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!#
+  #!GoodBaseBorder!#
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 200 1.0
+  MinimapIcon 1 Pink Star
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!#
+
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+#! import 3.25-settlers-specific.filter
+
+#! import sov1.filter
+#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
+#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
+#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
+#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n

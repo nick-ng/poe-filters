@@ -1,3 +1,12 @@
+## Shipments and Atlas Runners
+Show
+	AreaLevel = 1
+	Class "Currency" "Map Fragment" "Divination Card"
+
+Show
+	AreaLevel = 1
+	Rarity Unique
+
 # # Divination Cards
 # Show
 # 	BaseType == "The Admirer"
@@ -103,9 +112,20 @@ Show
 	BaseType "Profane Wand"
 	Corrupted False
 	Mirrored False
-	Rarity = Rare
-	ItemLevel >= 84 # T1 Spell Damage
+	# ItemLevel >= 83 # T1 cast speed (woe essence)
+	ItemLevel = 84 # T1 spell damage
 	SetFontSize 45
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Profane Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	# ItemLevel >= 83 # T1 cast speed (woe essence)
+	ItemLevel >= 84 # T1 spell damage
+	SetFontSize 35
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
 
@@ -137,7 +157,6 @@ Show
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
 	PlayEffect Orange
-	PlayAlertSound 1 200
 
 ## Veiled Suffix Golves
 Show
@@ -188,3 +207,104 @@ Show
 	#!BrightBackground!#
 	PlayAlertSound 1 200
 	MinimapIcon 1 Pink Star
+
+Show
+	BaseType = "Turquoise Amulet"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 85
+	Quality >= 24
+	SetFontSize 45
+	#!GoodBaseBorder!#
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	MinimapIcon 1 Pink Star
+
+## Hexblast Mines
+# Prophecy Wand has too high int requirement
+Show
+	BaseType "Omen Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 82 # Ventrua said
+	SetFontSize 40
+	#!BlueBorder!#
+	MinimapIcon 1 Blue Star
+	PlayAlertSound 11 200
+
+Show
+	BaseType "Sage Wand" "Omen Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 80 # T1 Hybrid Spell Damage (Woe Essence)
+	SetFontSize 25
+	#!BlueBorder!#
+	MinimapIcon 1 Blue Diamond
+
+Show
+	HasInfluence Crusader Hunter Redeemer Warlord
+	Class == "Rings"
+	ItemLevel >= 80 # Curse on hit
+	SetFontSize 45
+	SetTextColor 0 200 20 255
+	SetBorderColor 0 200 20 255
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	PlayEffect Green
+	MinimapIcon 0 Green Diamond
+
+Show
+	HasInfluence Shaper
+	BaseType #!dexint2!#
+	ItemLevel >= 84 # +#%Spell Critical Strike Chance
+	SetFontSize 45
+	SetTextColor 0 200 20 255
+	SetBorderColor 0 200 20 255
+	#!BrightBackground!#
+	PlayAlertSound 1 200
+	PlayEffect Green
+	MinimapIcon 0 Green Diamond
+
+
+Show # %HS3 $type->fragments->scarabs $tier->t5
+	Class == "Map Fragments"
+	BaseType == "Abyss Scarab" "Abyss Scarab of Emptiness" "Abyss Scarab of Multitudes" "Ambush Scarab of Potency" "Anarchy Scarab" "Anarchy Scarab of Gigantification" "Bestiary Scarab" "Bestiary Scarab of the Herd" "Betrayal Scarab" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab" "Beyond Scarab of Corruption" "Beyond Scarab of the Invasion" "Blight Scarab" "Breach Scarab" "Breach Scarab of Resonant Cascade" "Delirium Scarab" "Delirium Scarab of Delusions" "Domination Scarab" "Essence Scarab of Adaptation" "Essence Scarab of Stability" "Expedition Scarab" "Expedition Scarab of Verisium Powder" "Harvest Scarab" "Incursion Scarab of Champions" "Influencing Scarab of Hordes" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Scarab of Adversaries" "Scarab of Radiant Storms" "Sulphite Scarab" "Sulphite Scarab of Fumes" "Torment Scarab of Release" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Inscription"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	MinimapIcon 2 Purple Hexagon
+
+Show # %HS3 $type->fragments->scarabs $tier->t6
+	Class == "Map Fragments"
+	BaseType == "Beyond Scarab of Haemophilia" "Breach Scarab of Splintering" "Incursion Scarab" "Incursion Scarab of Invasion" "Influencing Scarab of the Elder" "Influencing Scarab of the Shaper" "Scarab of Wisps" "Sulphite Scarab of Greed" "Torment Scarab" "Torment Scarab of Peculiarity" "Torment Scarab of Possession" "Ultimatum Scarab"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 0 0 0
+	MinimapIcon 2 Purple Hexagon
+
+## Small uniques to dust
+Show
+	Rarity Unique
+	Height 1
+	Width <= 2
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 10 30 45 255
+	PlayAlertSound 3 200
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+
+Show
+	BaseType == "Baited Expectations"
+	SetFontSize 45
+
+Show
+	Class "Rings" "Amulets" "Axe" "Mace" "Sword" "Daggers" "Sceptre" "Wand" "Jewel"
+	Height <= 3
+	Width = 1
+	Rarity = Rare
+	SetFontSize 35
