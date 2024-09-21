@@ -1,0 +1,319 @@
+{
+	"slow-wands": [
+		{
+			"baseType": "Goat's Horn",
+			"requiresLevel": 6,
+			"serious": true
+		},
+		{
+			"baseType": "Sage Wand",
+			"requiresLevel": 30,
+			"serious": true
+		},
+		{
+			"baseType": "Faun's Horn",
+			"requiresLevel": 35,
+			"serious": true
+		},
+		{
+			"baseType": "Omen Wand",
+			"requiresLevel": 53,
+			"serious": true
+		},
+		{
+			"baseType": "Demon's Horn",
+			"requiresLevel": 56,
+			"serious": true
+		},
+		{
+			"baseType": "Prophecy Wand",
+			"requiresLevel": 68,
+			"serious": true
+		}
+	],
+	"crit-bows": [
+		{
+			"baseType": "Long Bow",
+			"requiresLevel": 9,
+			"serious": true
+		},
+		{
+			"baseType": "Composite Bow",
+			"requiresLevel": 14,
+			"serious": true
+		},
+		{
+			"baseType": "Bone Bow",
+			"requiresLevel": 23,
+			"serious": true
+		},
+		{
+			"baseType": "Compound Bow",
+			"requiresLevel": 41,
+			"serious": true
+		},
+		{
+			"baseType": "Ivory Bow",
+			"requiresLevel": 47,
+			"serious": true
+		},
+		{
+			"baseType": "Ranger Bow",
+			"requiresLevel": 60,
+			"serious": true
+		},
+		{
+			"baseType": "Spine Bow",
+			"requiresLevel": 64,
+			"serious": true
+		}
+	],
+	"fast-2h-axes": [
+		{
+			"baseType": "Stone Axe",
+			"requiresLevel": 1,
+			"serious": false
+		},
+		{
+			"baseType": "Jade Chopper",
+			"requiresLevel": 9,
+			"serious": false
+		},
+		{
+			"baseType": "Woodsplitter",
+			"requiresLevel": 13,
+			"serious": true
+		},
+		{
+			"baseType": "Poleaxe",
+			"requiresLevel": 18,
+			"serious": false
+		},
+		{
+			"baseType": "Double Axe",
+			"requiresLevel": 23,
+			"serious": true
+		},
+		{
+			"baseType": "Gilded Axe",
+			"requiresLevel": 28,
+			"serious": false
+		},
+		{
+			"baseType": "Shadow Axe",
+			"requiresLevel": 33,
+			"serious": false
+		},
+		{
+			"baseType": "Timber Axe",
+			"requiresLevel": 41,
+			"serious": true
+		},
+		{
+			"baseType": "Headsman Axe",
+			"requiresLevel": 45,
+			"serious": true
+		},
+		{
+			"baseType": "Labrys",
+			"requiresLevel": 49,
+			"serious": false
+		},
+		{
+			"baseType": "Honed Cleaver",
+			"requiresLevel": 50,
+			"serious": true
+		},
+		{
+			"baseType": "Noble Axe",
+			"requiresLevel": 52,
+			"serious": true
+		},
+		{
+			"baseType": "Abyssal Axe",
+			"requiresLevel": 55,
+			"serious": false
+		},
+		{
+			"baseType": "Sundering Axe",
+			"requiresLevel": 60,
+			"serious": false
+		},
+		{
+			"baseType": "Ezomyte Axe",
+			"requiresLevel": 62,
+			"serious": true
+		},
+		{
+			"baseType": "Despot Axe",
+			"requiresLevel": 66,
+			"serious": true
+		},
+		{
+			"baseType": "Void Axe",
+			"requiresLevel": 68,
+			"serious": false
+		},
+		{
+			"baseType": "Apex Cleaver",
+			"requiresLevel": 70,
+			"serious": true
+		}
+	],
+	"slow-2h-axes": [
+		{
+			"baseType": "Stone Axe",
+			"requiresLevel": 1,
+			"serious": false
+		},
+		{
+			"baseType": "Jade Chopper",
+			"requiresLevel": 9,
+			"serious": false
+		},
+		{
+			"baseType": "Woodsplitter",
+			"requiresLevel": 13,
+			"serious": true
+		},
+		{
+			"baseType": "Poleaxe",
+			"requiresLevel": 18,
+			"serious": false
+		},
+		{
+			"baseType": "Double Axe",
+			"requiresLevel": 23,
+			"serious": true
+		},
+		{
+			"baseType": "Gilded Axe",
+			"requiresLevel": 28,
+			"serious": false
+		},
+		{
+			"baseType": "Shadow Axe",
+			"requiresLevel": 33,
+			"serious": false
+		},
+		{
+			"baseType": "Dagger Axe",
+			"requiresLevel": 36,
+			"serious": false
+		},
+		{
+			"baseType": "Jasper Chopper",
+			"requiresLevel": 37,
+			"serious": false
+		},
+		{
+			"baseType": "Timber Axe",
+			"requiresLevel": 41,
+			"serious": true
+		},
+		{
+			"baseType": "Headsman Axe",
+			"requiresLevel": 45,
+			"serious": false
+		},
+		{
+			"baseType": "Labrys",
+			"requiresLevel": 49,
+			"serious": false
+		},
+		{
+			"baseType": "Honed Cleaver",
+			"requiresLevel": 50,
+			"serious": true
+		},
+		{
+			"baseType": "Noble Axe",
+			"requiresLevel": 52,
+			"serious": false
+		},
+		{
+			"baseType": "Abyssal Axe",
+			"requiresLevel": 55,
+			"serious": false
+		},
+		{
+			"baseType": "Karui Chopper",
+			"requiresLevel": 58,
+			"serious": false
+		},
+		{
+			"baseType": "Talon Axe",
+			"requiresLevel": 59,
+			"serious": false
+		},
+		{
+			"baseType": "Sundering Axe",
+			"requiresLevel": 60,
+			"serious": false
+		},
+		{
+			"baseType": "Ezomyte Axe",
+			"requiresLevel": 62,
+			"serious": false
+		},
+		{
+			"baseType": "Vaal Axe",
+			"requiresLevel": 64,
+			"serious": true
+		},
+		{
+			"baseType": "Apex Cleaver",
+			"requiresLevel": 70,
+			"serious": true
+		}
+	],
+	"fast-2h-swords": [
+		{
+			"baseType": "Corroded Blade",
+			"requiresLevel": 1,
+			"serious": false
+		},
+		{
+			"baseType": "Longsword",
+			"requiresLevel": 8,
+			"serious": true
+		},
+		{
+			"baseType": "Bastard Sword",
+			"requiresLevel": 12,
+			"serious": true
+		},
+		{
+			"baseType": "Two-Handed Sword",
+			"requiresLevel": 17,
+			"serious": false
+		},
+		{
+			"baseType": "Etched Greatsword",
+			"requiresLevel": 22,
+			"serious": false
+		}
+	],
+	"fast-2h-maces": [
+		{
+			"baseType": "Driftwood Maul",
+			"requiresLevel": 1,
+			"serious": false
+		},
+		{
+			"baseType": "Tribal Maul",
+			"requiresLevel": 8,
+			"serious": false
+		},
+		{
+			"baseType": "Mallet",
+			"requiresLevel": 12,
+			"serious": true
+		},
+		{
+			"baseType": "Sledgehammer",
+			"requiresLevel": 17,
+			"serious": true
+		}
+	]
+}

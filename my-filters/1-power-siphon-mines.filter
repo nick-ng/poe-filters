@@ -1,3 +1,26 @@
+# Divination Cards
+Show
+	BaseType == "Doedre's Madness"
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Velvet Gloves" "Lapis Amulet"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!#
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
 # Leveling Items
 Show
 	AreaLevel < 68
@@ -9,6 +32,16 @@ Show
 	#!BrightBorder!#
 
 Show
+	Class "Currency"
+	BaseType "of Woe" "of Hatred" "of Anger" "of Wrath"
+	SetFontSize 45
+	#!WhiteText!# 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "essence" essence Amy 200 1.0
+
+Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
@@ -17,82 +50,6 @@ Show
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star
-
-Show
-	BaseType "Spiraled Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 34
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Faun's Horn"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 45
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Crystal Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 55
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Coiled Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 59
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Demon's Horn"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 66
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Opal Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	AreaLevel <= 72
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType "Tornado Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	SetFontSize 45
-	PlayEffect Red
-	#!OkBaseBorder!#
-	MinimapIcon 1 Pink Circle
 
 Show
 	AreaLevel < 77
@@ -115,11 +72,32 @@ Show
 	MinimapIcon 1 Red Star
 	#!GoodBaseBorder!#
 
+Show
+	BaseType "Prophecy Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	ItemLevel = 83 # T1 Phys, T1 Cast Speed
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Prophecy Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 30
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
+
 #! linksa GBBB
 #! linksa RGBB
 #! linksa GGBB
 #! linksa BBB
 #! linksa GBB
+
+#! weapons slow-wands
 
 #! import library-shield-charge.filter
 #! import leveling.filter

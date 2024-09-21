@@ -73,13 +73,12 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! import leveling.filter
+#! import 2h-axes.filter
 #! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
-#! import 2h-axes.filter
 
 #! import sov1.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n

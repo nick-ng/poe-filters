@@ -194,7 +194,6 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 									}
 
 									for _, includeRegexpString := range options["include"] {
-										fmt.Println(includeRegexpString)
 										includeRegexp, err := regexp.Compile(includeRegexpString)
 
 										if err != nil {
@@ -202,8 +201,6 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 											errorList = append(errorList, errors.New(errorString))
 											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
 										} else {
-											a := includeRegexp.FindString(tempFilter)
-											fmt.Println(a)
 											tempFilter = includeRegexp.ReplaceAllString(tempFilter, "")
 										}
 									}
@@ -360,6 +357,71 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					newLine := utils.GetArmourSocketGroupFilter(commandArguments[1], commandArguments[2:]...)
 					processedLines2 = append(processedLines2, newLine)
 				}
+			case "weapon":
+				fallthrough
+			case "weapons":
+				{
+					tempLine := utils.CleanUpCommand(rawLine)
+					processedLines2 = append(processedLines2, tempLine)
+					maxLevel := 99
+					minLevel := 0
+					seriousAdjustment := 1
+					showAdjustment := 7
+
+					if len(commandArguments) < 2 {
+						processedLines2 = append(processedLines2, "#? warning: need at least the weapon group (slow-wands, crit-bows, etc.) to work")
+						continue
+					}
+
+					if len(commandArguments) >= 3 {
+						maxLevel64, err := strconv.ParseInt(commandArguments[2], 10, 64)
+
+						if err != nil {
+							processedLines2 = append(processedLines2, "#? couldn't parse max level")
+						} else {
+							maxLevel = int(maxLevel64)
+						}
+					}
+
+					if len(commandArguments) >= 4 {
+						minLevel64, err := strconv.ParseInt(commandArguments[3], 10, 64)
+
+						if err != nil {
+							processedLines2 = append(processedLines2, "#? couldn't parse min level")
+						} else {
+							minLevel = int(minLevel64)
+						}
+					}
+
+					if len(commandArguments) >= 5 {
+						seriousAdjustment64, err := strconv.ParseInt(commandArguments[4], 10, 64)
+
+						if err != nil {
+							processedLines2 = append(processedLines2, "#? couldn't parse serious adjustment")
+						} else {
+							seriousAdjustment = int(seriousAdjustment64)
+						}
+					}
+
+					if len(commandArguments) >= 6 {
+						showAdjustment64, err := strconv.ParseInt(commandArguments[5], 10, 64)
+
+						if err != nil {
+							processedLines2 = append(processedLines2, "#? couldn't parse show adjustment")
+						} else {
+							showAdjustment = int(showAdjustment64)
+						}
+					}
+
+					newLine, err := utils.GetWeaponGroupFilter(commandArguments[1], maxLevel, minLevel, seriousAdjustment, showAdjustment)
+
+					if err != nil {
+						processedLines2 = append(processedLines2, "#? warning: couldn't get weapon group")
+						continue
+					}
+
+					processedLines2 = append(processedLines2, newLine)
+				}
 			case "tts":
 				{
 					newLine := utils.MakeTts(trimmedLine)
@@ -371,18 +433,17 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					processedLines2 = append(processedLines2, warning)
 				}
 			}
-		} else if regexp.MustCompile(
-			`^[^#]*CustomAlertSound(Optional)? +"[^:"]+"`,
-		).MatchString(trimmedLine) {
-			processedLines2 = append(processedLines2, utils.FixSoundPath(trimmedLine))
 		} else {
 			processedLines2 = append(processedLines2, rawLine)
 		}
 	}
 
 	filter := strings.Join(processedLines2, "\n")
-	filter = utils.ApplyAllTokens(filter)
-	filter = utils.CleanUpFilter(filter)
+
+	if !isImported {
+		filter = utils.ApplyAllTokens(filter)
+		filter = utils.CleanUpFilter(filter)
+	}
 
 	if strings.HasSuffix(filterPath, ".ruthlessfilter") {
 		filter = strings.ReplaceAll(filter, "Hide", "Show")

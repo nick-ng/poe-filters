@@ -1,5 +1,15 @@
 ## campaign start ##
 
+Show
+	Class "Currency"
+	BaseType "of Contempt" "of Hatred" "of Anger" "of Wrath"
+	SetFontSize 45
+	#!WhiteText!# 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "essence" essence Amy 200 1.0
+
 #! linksa RGGG
 #! linksa GGGB
 #! linksa RGGB
@@ -8,7 +18,15 @@
 #! linksa GGG
 #! linksa GGB
 
-#! import ele-bows.filter
+#! weapons crit-bows
+
+#! import leveling.filter
+
+Show
+	Class "One Hand" "Daggers" "Sceptre" "Wand"
+	AreaLevel <= 25
+	Sockets >= 3GG
+	SetFontSize 35
 
 ## campaign end ##
 

@@ -11,8 +11,8 @@ var blockPrefixes = []string{
 }
 
 var commandCommentRe = regexp.MustCompile(`(^[^#]*)#!`)
-
 var fullHashLineRe = regexp.MustCompile(`^#+$`)
+var customAlertSoundRe = regexp.MustCompile(`^[^#]*CustomAlertSound(Optional)? +"[^:"]+"`)
 
 func CleanUpFilter(filter string) string {
 	groups := []string{}
@@ -23,14 +23,8 @@ func CleanUpFilter(filter string) string {
 	for _, rawLine := range rawLines {
 		trimmedLine := strings.TrimSpace(rawLine)
 
-		// if the filter is very long, remove normal comments
-		// if len(rawLines) > 10000 && strings.HasPrefix(trimmedLine, "#") && !strings.HasPrefix(trimmedLine, "#?") {
-		// 	continue
-		// }
-
-		if strings.HasPrefix(trimmedLine, "## ") {
-			// Comments that are meant to be removed
-			continue
+		if customAlertSoundRe.MatchString(trimmedLine) {
+			trimmedLine = FixSoundPath(trimmedLine)
 		}
 
 		lowercaseLine := strings.ToLower(trimmedLine)
