@@ -1,7 +1,7 @@
 Show
 	Corrupted False
 	Mirrored False
-	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
+	BaseType == "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
 	#!GoodBaseBorder!#
 	Continue
 
@@ -10,7 +10,7 @@ Show
 ##################################
 
 Show
-	BaseType "Cerulean Ring"
+	BaseType == "Cerulean Ring"
 	Corrupted False
 	Mirrored False
 	ItemLevel >= 85 # t1 mana
@@ -23,7 +23,7 @@ Show
 	PlayAlertSound 6 200
 
 Show
-	BaseType "Vermillion Ring"
+	BaseType == "Vermillion Ring"
 	Corrupted False
 	Mirrored False
 	ItemLevel >= 84 # t1 resists
@@ -36,7 +36,7 @@ Show
 	PlayAlertSound 6 200
 
 Show
-	BaseType "Vermillion Ring"
+	BaseType == "Vermillion Ring"
 	Corrupted False
 	Mirrored False
 	SetFontSize 45
@@ -51,7 +51,7 @@ Show
 ###########################
 
 Show
-	BaseType = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
+	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
 	ItemLevel >= 85
 	Rarity = Rare
 	Corrupted False
@@ -145,7 +145,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionsquare0!# #!strsquare0!#
+	BaseType == #!suppressionsquare0!# #!strsquare0!#
 	#!TopBaseBorder!# 222
 	SetFontSize 45
 	PlayEffect Red
@@ -158,7 +158,7 @@ Show
 	BaseDefencePercentile >= 99
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionsquare0!# #!strsquare0!#
+	BaseType == #!suppressionsquare0!# #!strsquare0!#
 	#!TopBaseBorder!# 222
 	SetFontSize 45
 	PlayEffect Red
@@ -173,7 +173,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionsquare1!# #!strsquare1!#
+	BaseType == #!suppressionsquare1!# #!strsquare1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -187,7 +187,7 @@ Show
 	Rarity <= Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionbody0!# #!strbody0!#
+	BaseType == #!suppressionbody0!# #!strbody0!#
 	#!TopBaseBorder!# 222
 	SetFontSize 45
 	PlayEffect Red
@@ -200,7 +200,7 @@ Show
 	BaseDefencePercentile >= 30
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionbody1!# #!strbody1!#
+	BaseType == #!suppressionbody1!# #!strbody1!#
 	#!TopBaseBorder!# 222
 	SetFontSize 40
 	PlayEffect Red
@@ -215,7 +215,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType #!suppressionbody1!# #!strbody1!#
+	BaseType == #!suppressionbody1!# #!strbody1!#
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -234,7 +234,7 @@ Show
 # 	SetFontSize 45
 # 	MinimapIcon 1 Green Pentagon
 # 	SetBorderColor 0 255 0 255
-#
+
 ###############
 ## Fractured ##
 ###############
@@ -258,7 +258,7 @@ Show
 	Mirrored False
 	FracturedItem True
 	Identified False
-	BaseType "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Imbued Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
+	BaseType == "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Imbued Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
@@ -290,7 +290,7 @@ Show
 
 ## March of the Legion (maybe)
 Show
-	BaseType "Legion Boots"
+	BaseType == "Legion Boots"
 	Rarity Unique
 	SetBackgroundColor 180 80 0
 	SetBorderColor 0 0 0

@@ -1132,13 +1132,13 @@ Show
 	AreaLevel <= 40
 	Corrupted False
 	Mirrored False
-	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Arcane Vestment" "Astral Leather" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Glorious Plate" "Grand Ringmail" "Legion Plate" "Marshall's Brigandine" "Necrotic Armour" "Nightweave Robe" "Paladin's Hauberk" "Royal Plate" "Sacred Chainmail" "Saint's Hauberk" "Sanguine Raiment" "Supreme Leather" "Syndicate's Garb" "Titan Plate" "Torturer Garb" "Twilight Regalia" "Vaal Regalia" "Zodiac Leather" "Ancient Mask" "Archdemon Crown" "Bone Helmet" "Chimerascale Boots" "Chimerascale Gauntlets" "Conqueror's Helmet" "Conquest Helmet" "Crusader Boots" "Crusader Gloves" "Dire Pelt" "Divine Crown" "Dragonscale Boots" "Dragonscale Gauntlets" "Faithful Helmet" "General's Helmet" "Giantslayer Helmet" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Haunted Bascinet" "Hubris Circlet" "Infiltrator Boots" "Infiltrator Mitts" "Jester Mask" "Knight Helm" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Lion Pelt" "Majestic Pelt" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Paladin Boots" "Paladin Crown" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Pig-Faced Bascinet" "Precursor Gauntlets" "Precursor Greaves" "Prophet Crown" "Royal Burgonet" "Sage Gloves" "Sage Slippers" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Sunfire Circlet" "Titan Gauntlets" "Titan Greaves" "Torturer's Mask" "Two-Toned Boots" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+	BaseType == "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Arcane Vestment" "Astral Leather" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Glorious Plate" "Grand Ringmail" "Legion Plate" "Marshall's Brigandine" "Necrotic Armour" "Nightweave Robe" "Paladin's Hauberk" "Royal Plate" "Sacred Chainmail" "Saint's Hauberk" "Sanguine Raiment" "Supreme Leather" "Syndicate's Garb" "Titan Plate" "Torturer Garb" "Twilight Regalia" "Vaal Regalia" "Zodiac Leather" "Ancient Mask" "Archdemon Crown" "Bone Helmet" "Chimerascale Boots" "Chimerascale Gauntlets" "Conqueror's Helmet" "Conquest Helmet" "Crusader Boots" "Crusader Gloves" "Dire Pelt" "Divine Crown" "Dragonscale Boots" "Dragonscale Gauntlets" "Faithful Helmet" "General's Helmet" "Giantslayer Helmet" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Haunted Bascinet" "Hubris Circlet" "Infiltrator Boots" "Infiltrator Mitts" "Jester Mask" "Knight Helm" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Lion Pelt" "Majestic Pelt" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Paladin Boots" "Paladin Crown" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Pig-Faced Bascinet" "Precursor Gauntlets" "Precursor Greaves" "Prophet Crown" "Royal Burgonet" "Sage Gloves" "Sage Slippers" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Sunfire Circlet" "Titan Gauntlets" "Titan Greaves" "Torturer's Mask" "Two-Toned Boots" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
 	SetBorderColor 255 117 255 200
 	Continue
 ## Vermillion and Cerulean Ring ##
 Show
 	AreaLevel <= 40
-	BaseType "Cerulean Ring"
+	BaseType == "Cerulean Ring"
 	Corrupted False
 	Mirrored False
 	ItemLevel >= 85 # t1 mana
@@ -1151,7 +1151,7 @@ Show
 	PlayAlertSound 6 200
 Show
 	AreaLevel <= 40
-	BaseType "Vermillion Ring"
+	BaseType == "Vermillion Ring"
 	Corrupted False
 	Mirrored False
 	ItemLevel >= 84 # t1 resists
@@ -1164,7 +1164,7 @@ Show
 	PlayAlertSound 6 200
 Show
 	AreaLevel <= 40
-	BaseType "Vermillion Ring"
+	BaseType == "Vermillion Ring"
 	Corrupted False
 	Mirrored False
 	SetFontSize 45
@@ -1176,7 +1176,7 @@ Show
 ## Rings, Amulets, Belts ##
 Show
 	AreaLevel <= 40
-	BaseType = "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
+	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Amethyst Ring" "Unset Ring" "Leather Belt"
 	ItemLevel >= 85
 	Rarity = Rare
 	Corrupted False
@@ -1257,7 +1257,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"
+	BaseType == "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1270,7 +1270,7 @@ Show
 	BaseDefencePercentile >= 99
 	Corrupted False
 	Mirrored False
-	BaseType "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"
+	BaseType == "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1284,7 +1284,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Ancient Mask" "Chimerascale Boots" "Chimerascale Gauntlets" "Conquest Helmet" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Haunted Bascinet" "Infiltrator Boots" "Infiltrator Mitts" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Conqueror's Helmet" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves" "Precursor Gauntlets" "Precursor Greaves"
+	BaseType == "Ancient Mask" "Chimerascale Boots" "Chimerascale Gauntlets" "Conquest Helmet" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Haunted Bascinet" "Infiltrator Boots" "Infiltrator Mitts" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Conqueror's Helmet" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves" "Precursor Gauntlets" "Precursor Greaves"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -1295,7 +1295,7 @@ Show
 	Rarity <= Rare
 	Corrupted False
 	Mirrored False
-	BaseType "Conquest Lamellar" "Necrotic Armour" "Syndicate's Garb" "Royal Plate"
+	BaseType == "Conquest Lamellar" "Necrotic Armour" "Syndicate's Garb" "Royal Plate"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1308,7 +1308,7 @@ Show
 	BaseDefencePercentile >= 30
 	Corrupted False
 	Mirrored False
-	BaseType "Astral Leather" "Conquest Lamellar" "Marshall's Brigandine" "Necrotic Armour" "Syndicate's Garb" "Torturer Garb" "Legion Plate" "Royal Plate"
+	BaseType == "Astral Leather" "Conquest Lamellar" "Marshall's Brigandine" "Necrotic Armour" "Syndicate's Garb" "Torturer Garb" "Legion Plate" "Royal Plate"
 	SetBorderColor 45 107 255 222
 	SetFontSize 40
 	PlayEffect Red
@@ -1322,7 +1322,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Astral Leather" "Conquest Lamellar" "Marshall's Brigandine" "Necrotic Armour" "Syndicate's Garb" "Torturer Garb" "Legion Plate" "Royal Plate"
+	BaseType == "Astral Leather" "Conquest Lamellar" "Marshall's Brigandine" "Necrotic Armour" "Syndicate's Garb" "Torturer Garb" "Legion Plate" "Royal Plate"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -1358,7 +1358,7 @@ Show
 	Mirrored False
 	FracturedItem True
 	Identified False
-	BaseType "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Imbued Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
+	BaseType == "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Imbued Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
@@ -1390,7 +1390,7 @@ Show
 ## March of the Legion (maybe)
 Show
 	AreaLevel <= 40
-	BaseType "Legion Boots"
+	BaseType == "Legion Boots"
 	Rarity Unique
 	SetBackgroundColor 180 80 0
 	SetBorderColor 0 0 0
