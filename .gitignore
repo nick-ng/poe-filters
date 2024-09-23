@@ -36,3 +36,8 @@ temp.bat
 templist.txt
 
 config.jsonc
+
+notes/*
+!notes/NOTES.md
+
+cache/*

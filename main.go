@@ -17,6 +17,7 @@ const BASE_FILTERS_PATH string = "base-filters"
 const BUILD_FILTERS_PATH string = "build-filters"
 const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
+const CACHE_PATH string = "cache"
 
 func main() {
 	homeDir, err := os.UserHomeDir()
@@ -26,12 +27,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	utils.MakeDivinationCardsFilter()
+	utils.MakeDivinationCardsFilterPoeNinja()
 
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
 	utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
+	utils.MkDirIfNotExist(CACHE_PATH)
 
 	path1 := filepath.Join(MY_FILTERS_PATH)
 

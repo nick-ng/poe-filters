@@ -25,15 +25,15 @@ var MissingSounds map[string]bool
 var SilencePath string
 var NextTimestamp int64
 
-type ttsRequest struct {
-	Text  string `json:"text"`
-	Voice string `json:"voice"`
-}
+// type ttsRequest struct {
+// 	Text  string `json:"text"`
+// 	Voice string `json:"voice"`
+// }
 
-type ttsResponse struct {
-	Success  bool   `json:"success"`
-	SpeakUrl string `json:"speak_url"`
-}
+// type ttsResponse struct {
+// 	Success  bool   `json:"success"`
+// 	SpeakUrl string `json:"speak_url"`
+// }
 
 func init() {
 	SoundCount = 0

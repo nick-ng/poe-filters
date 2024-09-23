@@ -465,3 +465,5 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp
+
+#! import full-stack-divination-cards.filter

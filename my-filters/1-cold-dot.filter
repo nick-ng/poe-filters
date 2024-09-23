@@ -92,7 +92,6 @@ Show
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!#
 
-#! import leveling.filter
 #! import cold-gem-recipe.filter
 #! import pre-watchstones.filter
 #! import currency.filter

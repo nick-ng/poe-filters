@@ -1132,7 +1132,7 @@ Show
 	AreaLevel <= 40
 	Corrupted False
 	Mirrored False
-	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Glorious Plate" "Legion Plate" "Royal Plate" "Titan Plate" "Astral Leather" "Supreme Leather" "Syndicate's Garb" "Zodiac Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Marshall's Brigandine" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Saint's Hauberk" "Necrotic Armour" "Sanguine Raiment" "Torturer Garb" "Conqueror's Helmet" "General's Helmet" "Giantslayer Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Dire Pelt" "Grizzly Pelt" "Lion Pelt" "Majestic Pelt" "Harpyskin Boots" "Slink Boots" "Velour Boots" "Harpyskin Gloves" "Slink Gloves" "Velour Gloves" "Hubris Circlet" "Lich's Circlet" "Moonlit Circlet" "Sunfire Circlet" "Sage Slippers" "Sorcerer Boots" "Warlock Boots" "Sage Gloves" "Sorcerer Gloves" "Warlock Gloves" "Conquest Helmet" "Haunted Bascinet" "Knight Helm" "Pig-Faced Bascinet" "Chimerascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Wyvernscale Gauntlets" "Crusader Boots" "Martyr Boots" "Paladin Boots" "Two-Toned Boots" "Crusader Gloves" "Martyr Gloves" "Paladin Gloves" "Archdemon Crown" "Bone Helmet" "Divine Crown" "Faithful Helmet" "Paladin Crown" "Prophet Crown" "Infiltrator Boots" "Murder Boots" "Phantom Boots" "Two-Toned Boots" "Infiltrator Mitts" "Murder Mitts" "Phantom Mitts" "Ancient Mask" "Jester Mask" "Torturer's Mask"
+	BaseType = "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Glorious Plate" "Legion Plate" "Royal Plate" "Titan Plate" "Astral Leather" "Supreme Leather" "Syndicate's Garb" "Zodiac Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Marshall's Brigandine" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Saint's Hauberk" "Necrotic Armour" "Sanguine Raiment" "Torturer Garb" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Conqueror's Helmet" "General's Helmet" "Giantslayer Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Dire Pelt" "Grizzly Pelt" "Lion Pelt" "Majestic Pelt" "Harpyskin Boots" "Slink Boots" "Velour Boots" "Harpyskin Gloves" "Slink Gloves" "Velour Gloves" "Hubris Circlet" "Lich's Circlet" "Moonlit Circlet" "Sunfire Circlet" "Sage Slippers" "Sorcerer Boots" "Warlock Boots" "Sage Gloves" "Sorcerer Gloves" "Warlock Gloves" "Chimerascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Wyvernscale Gauntlets" "Conquest Helmet" "Haunted Bascinet" "Knight Helm" "Pig-Faced Bascinet" "Archdemon Crown" "Bone Helmet" "Divine Crown" "Faithful Helmet" "Paladin Crown" "Prophet Crown" "Crusader Boots" "Martyr Boots" "Paladin Boots" "Two-Toned Boots" "Crusader Gloves" "Martyr Gloves" "Paladin Gloves" "Ancient Mask" "Jester Mask" "Torturer's Mask" "Infiltrator Boots" "Murder Boots" "Phantom Boots" "Two-Toned Boots" "Infiltrator Mitts" "Murder Mitts" "Phantom Mitts"
 	SetBorderColor 255 117 255 200
 	Continue
 ## Vermillion and Cerulean Ring ##
@@ -1257,7 +1257,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Majestic Pelt" "Velour Boots" "Velour Gloves" "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets"
+	BaseType "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Majestic Pelt" "Velour Boots" "Velour Gloves" "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Leviathan Greaves" "Leviathan Gauntlets" "Giantslayer Helmet"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1270,7 +1270,7 @@ Show
 	BaseDefencePercentile >= 99
 	Corrupted False
 	Mirrored False
-	BaseType "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Majestic Pelt" "Velour Boots" "Velour Gloves" "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets"
+	BaseType "Torturer's Mask" "Phantom Boots" "Phantom Mitts" "Majestic Pelt" "Velour Boots" "Velour Gloves" "Haunted Bascinet" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Leviathan Greaves" "Leviathan Gauntlets" "Giantslayer Helmet"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1284,7 +1284,7 @@ Show
 	BaseDefencePercentile >= 70
 	Corrupted False
 	Mirrored False
-	BaseType "Harpyskin Gloves" "Velour Gloves" "Grizzly Pelt" "Majestic Pelt" "Harpyskin Boots" "Velour Boots" "Conquest Helmet" "Haunted Bascinet" "Chimerascale Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Ancient Mask" "Torturer's Mask" "Infiltrator Boots" "Phantom Boots" "Infiltrator Mitts" "Phantom Mitts" "Conqueror's Helmet" "Giantslayer Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets"
+	BaseType "Grizzly Pelt" "Majestic Pelt" "Harpyskin Boots" "Velour Boots" "Harpyskin Gloves" "Velour Gloves" "Chimerascale Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Conquest Helmet" "Haunted Bascinet" "Ancient Mask" "Torturer's Mask" "Infiltrator Boots" "Phantom Boots" "Infiltrator Mitts" "Phantom Mitts" "Conqueror's Helmet" "Giantslayer Helmet" "Leviathan Greaves" "Precursor Greaves" "Leviathan Gauntlets" "Precursor Gauntlets"
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
@@ -1295,7 +1295,7 @@ Show
 	Rarity <= Rare
 	Corrupted False
 	Mirrored False
-	BaseType "Conquest Lamellar" "Necrotic Armour" "Syndicate's Garb" "Royal Plate"
+	BaseType "Necrotic Armour" "Syndicate's Garb" "Conquest Lamellar" "Royal Plate"
 	SetBorderColor 45 107 255 222
 	SetFontSize 45
 	PlayEffect Red
@@ -1333,7 +1333,7 @@ Show
 # 	BaseDefencePercentile >= 80
 # 	Corrupted False
 # 	Mirrored False
-# 	BaseType == "Haunted Bascinet" "Divine Crown" "Torturer's Mask" "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots" "Leviathan Greaves" "Velour Boots" "Warlock Boots" 
+# 	BaseType == "Torturer's Mask" "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Phantom Boots" "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots" 
 # 	SetFontSize 45
 # 	MinimapIcon 1 Green Pentagon
 # 	SetBorderColor 0 255 0 255
@@ -1345,7 +1345,7 @@ Show
 	Mirrored False
 	Identified False
 	ItemLevel >= 85
-	BaseType == "Conqueror's Helmet" "General's Helmet" "Giantslayer Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Dire Pelt" "Grizzly Pelt" "Lion Pelt" "Majestic Pelt" "Harpyskin Boots" "Slink Boots" "Velour Boots" "Harpyskin Gloves" "Slink Gloves" "Velour Gloves" "Hubris Circlet" "Lich's Circlet" "Moonlit Circlet" "Sunfire Circlet" "Sage Slippers" "Sorcerer Boots" "Warlock Boots" "Sage Gloves" "Sorcerer Gloves" "Warlock Gloves" "Conquest Helmet" "Haunted Bascinet" "Knight Helm" "Pig-Faced Bascinet" "Chimerascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Wyvernscale Gauntlets" "Crusader Boots" "Martyr Boots" "Paladin Boots" "Two-Toned Boots" "Crusader Gloves" "Martyr Gloves" "Paladin Gloves" "Archdemon Crown" "Bone Helmet" "Divine Crown" "Faithful Helmet" "Paladin Crown" "Prophet Crown" "Infiltrator Boots" "Murder Boots" "Phantom Boots" "Two-Toned Boots" "Infiltrator Mitts" "Murder Mitts" "Phantom Mitts" "Ancient Mask" "Jester Mask" "Torturer's Mask" "Glorious Plate" "Legion Plate" "Royal Plate" "Titan Plate" "Astral Leather" "Supreme Leather" "Syndicate's Garb" "Zodiac Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Marshall's Brigandine" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Saint's Hauberk" "Necrotic Armour" "Sanguine Raiment" "Torturer Garb"
+	BaseType == "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Conqueror's Helmet" "General's Helmet" "Giantslayer Helmet" "Royal Burgonet" "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Dire Pelt" "Grizzly Pelt" "Lion Pelt" "Majestic Pelt" "Harpyskin Boots" "Slink Boots" "Velour Boots" "Harpyskin Gloves" "Slink Gloves" "Velour Gloves" "Hubris Circlet" "Lich's Circlet" "Moonlit Circlet" "Sunfire Circlet" "Sage Slippers" "Sorcerer Boots" "Warlock Boots" "Sage Gloves" "Sorcerer Gloves" "Warlock Gloves" "Chimerascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Wyvernscale Boots" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Wyvernscale Gauntlets" "Conquest Helmet" "Haunted Bascinet" "Knight Helm" "Pig-Faced Bascinet" "Archdemon Crown" "Bone Helmet" "Divine Crown" "Faithful Helmet" "Paladin Crown" "Prophet Crown" "Crusader Boots" "Martyr Boots" "Paladin Boots" "Two-Toned Boots" "Crusader Gloves" "Martyr Gloves" "Paladin Gloves" "Ancient Mask" "Jester Mask" "Torturer's Mask" "Infiltrator Boots" "Murder Boots" "Phantom Boots" "Two-Toned Boots" "Infiltrator Mitts" "Murder Mitts" "Phantom Mitts" "Glorious Plate" "Legion Plate" "Royal Plate" "Titan Plate" "Astral Leather" "Supreme Leather" "Syndicate's Garb" "Zodiac Leather" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Vaal Regalia" "Conquest Lamellar" "Full Dragonscale" "Full Wyvernscale" "Marshall's Brigandine" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Saint's Hauberk" "Necrotic Armour" "Sanguine Raiment" "Torturer Garb"
 	SetFontSize 45
 	SetTextColor 190 240 0 255
 	SetBorderColor 255 100 100 255
@@ -1890,4 +1890,158 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp
+#? import full-stack-divination-cards.filter
+Show
+	BaseType == "Brother's Gift" "Brother's Stash" "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+Show
+	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 2
+Show
+	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 3
+Show
+	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 4
+Show
+	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 5
+Show
+	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 6
+Show
+	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 7
+Show
+	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 8
+Show
+	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 9
+Show
+	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 10
+Show
+	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 11
+Show
+	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 12
+Show
+	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 13
+Show
+	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 16
+Show
+	BaseType == "The Catch"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 18
+Show
+	BaseType == "Imperial Legacy"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 22
+Show
+	BaseType == "Rebirth"
+	Class "Divination"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 255 0 255
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
+	StackSize >= 27
+#? end of [full-stack-divination-cards.filter]
 #? end of [currency.filter]

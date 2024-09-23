@@ -26,14 +26,14 @@ func MkDirIfNotExist(dirPath string) {
 }
 
 func MakeDivinationCardsFilter() {
-	divinationCardsTxtPath := filepath.Join("utils", "divination-cards.txt")
+	divinationCardsTxtPath := filepath.Join("notes", "divination-cards.txt")
 	divinationCardsFilterPath := filepath.Join("base-filters", "full-stack-divination-cards.filter")
 
 	rawDivinationCards, err := os.ReadFile(divinationCardsTxtPath)
 
 	if err != nil {
-		fmt.Println("error when opening divination cards file")
-		os.Exit(1)
+		fmt.Println("no divination cards file")
+		return
 	}
 
 	var divinationCards []DivinationCard
@@ -110,4 +110,6 @@ func MakeDivinationCardsFilter() {
 	filter := strings.Join(filterGroups, "\n\n")
 
 	os.WriteFile(divinationCardsFilterPath, []byte(filter), 0666)
+
+	fmt.Printf("%d divination cards found\n", len(divinationCards))
 }
