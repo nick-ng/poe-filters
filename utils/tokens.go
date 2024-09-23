@@ -87,29 +87,29 @@ func applyArmourTokens(rawFilter string) string {
 	maxTiers := 10
 
 	// groups
-	byAttribute := map[string][]string{
-		"str":         make([]string, maxTiers),
-		"dex":         make([]string, maxTiers),
-		"int":         make([]string, maxTiers),
-		"strdex":      make([]string, maxTiers),
-		"strint":      make([]string, maxTiers),
-		"dexint":      make([]string, maxTiers),
-		"suppression": make([]string, maxTiers),
+	byAttribute := map[string][][]string{
+		"str":         make([][]string, maxTiers),
+		"dex":         make([][]string, maxTiers),
+		"int":         make([][]string, maxTiers),
+		"strdex":      make([][]string, maxTiers),
+		"strint":      make([][]string, maxTiers),
+		"dexint":      make([][]string, maxTiers),
+		"suppression": make([][]string, maxTiers),
 	}
 
-	bySlot := map[string][]string{
-		"body":   make([]string, maxTiers),
-		"helm":   make([]string, maxTiers),
-		"boots":  make([]string, maxTiers),
-		"gloves": make([]string, maxTiers),
-		"square": make([]string, maxTiers),
+	bySlot := map[string][][]string{
+		"body":   make([][]string, maxTiers),
+		"helm":   make([][]string, maxTiers),
+		"boots":  make([][]string, maxTiers),
+		"gloves": make([][]string, maxTiers),
+		"square": make([][]string, maxTiers),
 	}
 
-	byBoth := map[string][]string{
-		"strbody":           make([]string, maxTiers),
-		"suppressionbody":   make([]string, maxTiers),
-		"strsquare":         make([]string, maxTiers),
-		"suppressionsquare": make([]string, maxTiers),
+	byBoth := map[string][][]string{
+		"strbody":           make([][]string, maxTiers),
+		"suppressionbody":   make([][]string, maxTiers),
+		"strsquare":         make([][]string, maxTiers),
+		"suppressionsquare": make([][]string, maxTiers),
 	}
 
 	for tierLimit := 0; tierLimit < maxTiers; tierLimit++ {
@@ -131,51 +131,63 @@ func applyArmourTokens(rawFilter string) string {
 
 				processedFilter = strings.ReplaceAll(processedFilter, token, basesString)
 
-				// @todo(nick-ng): convert slice to string just before replacement so you can sort all bases
-				byAttribute[attribute][tierLimit] = fmt.Sprintf("%s%s", byAttribute[attribute][tierLimit], basesString)
+				byAttribute[attribute][tierLimit] = append(byAttribute[attribute][tierLimit], bases...)
 
-				bySlot[slot][tierLimit] = fmt.Sprintf("%s%s", bySlot[slot][tierLimit], basesString)
+				bySlot[slot][tierLimit] = append(bySlot[slot][tierLimit], bases...)
+
 				if slot != "body" {
-					bySlot["square"][tierLimit] = fmt.Sprintf("%s%s", bySlot["square"][tierLimit], basesString)
+					bySlot["square"][tierLimit] = append(bySlot["square"][tierLimit], bases...)
 				}
 
 				if strings.Contains(attribute, "dex") {
-					byAttribute["suppression"][tierLimit] = fmt.Sprintf("%s%s", byAttribute["suppression"][tierLimit], basesString)
+					byAttribute["suppression"][tierLimit] = append(byAttribute["suppression"][tierLimit], bases...)
 
 					if slot != "body" {
-						byBoth["suppressionsquare"][tierLimit] = fmt.Sprintf("%s%s", byBoth["suppressionsquare"][tierLimit], basesString)
+						byBoth["suppressionsquare"][tierLimit] = append(byBoth["suppressionsquare"][tierLimit], bases...)
+
 					} else {
-						byBoth["suppressionbody"][tierLimit] = fmt.Sprintf("%s%s", byBoth["suppressionbody"][tierLimit], basesString)
+						byBoth["suppressionbody"][tierLimit] = append(byBoth["suppressionbody"][tierLimit], bases...)
 					}
 				}
 
 				if attribute == "str" {
 					if slot != "body" {
-						byBoth["strsquare"][tierLimit] = fmt.Sprintf("%s%s", byBoth["strsquare"][tierLimit], basesString)
+						byBoth["strsquare"][tierLimit] = append(byBoth["strsquare"][tierLimit], bases...)
 					} else {
-						byBoth["strbody"][tierLimit] = fmt.Sprintf("%s%s", byBoth["strbody"][tierLimit], basesString)
+						byBoth["strbody"][tierLimit] = append(byBoth["strbody"][tierLimit], bases...)
 					}
 				}
 			}
 		}
 
-		// @todo(nick-ng): remove duplicates - i.e. two-toned boots
-		for attribute, basesString := range byAttribute {
+		for attribute, bases := range byAttribute {
 			token := fmt.Sprintf("#!%s%d!#", attribute, tierLimit)
 
-			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
+			slices.Sort(bases[tierLimit])
+			compactedBases := slices.Compact(bases[tierLimit])
+			replacement := fmt.Sprintf("\"%s\" ", strings.Join(compactedBases, "\" \""))
+
+			processedFilter = strings.ReplaceAll(processedFilter, token, replacement)
 		}
 
-		for slot, basesString := range bySlot {
+		for slot, bases := range bySlot {
 			token := fmt.Sprintf("#!%s%d!#", slot, tierLimit)
 
-			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
+			slices.Sort(bases[tierLimit])
+			compactedBases := slices.Compact(bases[tierLimit])
+			replacement := fmt.Sprintf("\"%s\" ", strings.Join(compactedBases, "\" \""))
+
+			processedFilter = strings.ReplaceAll(processedFilter, token, replacement)
 		}
 
-		for both, basesString := range byBoth {
+		for both, bases := range byBoth {
 			token := fmt.Sprintf("#!%s%d!#", both, tierLimit)
 
-			processedFilter = strings.ReplaceAll(processedFilter, token, basesString[tierLimit])
+			slices.Sort(bases[tierLimit])
+			compactedBases := slices.Compact(bases[tierLimit])
+			replacement := fmt.Sprintf("\"%s\" ", strings.Join(compactedBases, "\" \""))
+
+			processedFilter = strings.ReplaceAll(processedFilter, token, replacement)
 		}
 	}
 
