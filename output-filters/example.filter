@@ -649,7 +649,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 18
+	AreaLevel >= 19
+	AreaLevel <= 55
 	BaseType == "Large Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -669,7 +670,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 24
+	AreaLevel >= 25
+	AreaLevel <= 55
 	BaseType == "Greater Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -689,7 +691,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 30
+	AreaLevel >= 31
+	AreaLevel <= 55
 	BaseType == "Grand Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -709,7 +712,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 36
+	AreaLevel >= 37
+	AreaLevel <= 55
 	BaseType == "Giant Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -729,7 +733,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 42
+	AreaLevel >= 43
+	AreaLevel <= 55
 	BaseType == "Colossal Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -749,7 +754,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 Hide
-	AreaLevel > 44
+	AreaLevel >= 45
+	AreaLevel <= 55
 	BaseType == "Sacred Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -763,27 +769,11 @@ Show
 	MinimapIcon 2 Blue Raindrop
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-mana-hallowed.mp3" 200
 Show
-	AreaLevel <= 60
+	AreaLevel <= 55
 	BaseType == "Hallowed Mana Flask"
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
-Hide
-	AreaLevel > 60
-	BaseType == "Hallowed Mana Flask"
-	SetFontSize 30
-	Rarity <= Rare
-	SetBorderColor 0 0 255 200
-## Most builds don't need divine mana flasks
-# Show
-# 	BaseType == "Divine Mana Flask"
-# 	ItemLevel <= 66
-# 	SetFontSize 45
-# 	Rarity <= Magic
-# 	SetBorderColor 0 0 255 200
-# 	PlayEffect Red
-# 	MinimapIcon 2 Blue Raindrop
-# 	#! tts "divine mana" mana-divine Amy 200 1.0
 #? end of [mana-flasks.filter]
 Show
 	Class "Helmets" "Gloves" "Boots" "Body Armour"
@@ -808,6 +798,31 @@ Show
 	SetFontSize 45
 	SetTextColor 190 178 135 255
 	SetBorderColor 190 178 135 255
+#? import pre-watchstones.filter
+Show
+	Class "Currency"
+	BaseType == "Orb of Horizons"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 55 55 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-horizon.mp3" 200
+Show
+	Class "Currency"
+	BaseType == "Horizon Shard"
+	SetFontSize 45
+	SetTextColor 255 255 0 255
+	SetBorderColor 55 55 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+Show
+	BaseType == "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Amethyst Flask"
+	ItemLevel >= 63 # Masochist's
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	SetBorderColor 55 55 0 200
+	MinimapIcon 0 Blue UpsideDownHouse
+#? end of [pre-watchstones.filter]
 #? end of [leveling.filter]
 ### Maces Start ###
 #? weapons fast-2h-maces 18
