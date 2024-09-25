@@ -83,7 +83,6 @@ Show
 	MinimapIcon 1 Yellow Star
 
 #! import cold-gem-recipe.filter
-#! import pre-watchstones.filter
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter

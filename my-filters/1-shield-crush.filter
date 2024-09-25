@@ -96,7 +96,6 @@ Show
 #! import 2h-axes.filter
 #! del # Swords Start(.|\n)+Swords End #
 
-#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

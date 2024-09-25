@@ -162,6 +162,7 @@ Show
 
 #! import life-flasks.filter
 #! import mana-flasks.filter
+#! maxarea 55 Import the filer directly if the build needs mana flask progression past Act 7
 
 Show
 	Class "Helmets" "Gloves" "Boots" "Body Armour"
@@ -191,3 +192,5 @@ Show
 	SetFontSize 45
 	#!T9CurrencyText!#
 	SetBorderColor 190 178 135 255
+
+#! import pre-watchstones.filter

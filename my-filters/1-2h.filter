@@ -74,7 +74,6 @@ Show
 	MinimapIcon 1 Yellow Star
 
 #! import 2h-axes.filter
-#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

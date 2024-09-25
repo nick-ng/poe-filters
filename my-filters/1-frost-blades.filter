@@ -49,7 +49,6 @@ Show
 #! import 2h-axes.filter
 #! del # Maces Start(.|\n)+Maces End #
 
-#! import pre-watchstones.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter

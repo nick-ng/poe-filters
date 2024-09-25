@@ -1,11 +1,9 @@
-#! skip
-
 # Orb of Chance bases
 
 
 # Divination Cards
 Show
-	BaseType == "A Dab of Ink" "The Gladiator" "The Porcupine" "Alivia's Grace"
+	BaseType == "A Dab of Ink" "The Escape" "The Gladiator" "Alivia's Grace"
 	SetFontSize 45
 	#!BrightBackground!#
 	SetTextColor 255 140 54 255
@@ -16,7 +14,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Carved Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Nightmare Bascinet"
+	BaseType == "Carved Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Mirrored Spiked Shield"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!#
@@ -41,7 +39,7 @@ Show
 	ItemLevel >= 81 # T1 increased amount recovered
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	CustomAlertSound "sounds/rue-limp.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	ItemLevel >= 86
@@ -49,7 +47,7 @@ Show
 	BaseDefencePercentile >= 50
 	Corrupted False
 	Mirrored False
-	BaseType "Battle Buckler" "Crusader Buckler" # 9% ms bucklers
+	BaseType "Battle Buckler" "Crusader Buckler" "Cardinal Round Shield" "Elegant Round Shield" "Spiny Round Shield"
 	SetFontSize 45
 	PlayEffect Red
 	CustomAlertSound "sounds/rue-woo.mp3"
@@ -61,45 +59,25 @@ Show
 	BaseDefencePercentile >= 60
 	Corrupted False
 	Mirrored False
-	BaseType "Battle Buckler" "Crusader Buckler"
+	BaseType "Battle Buckler" "Crusader Buckler" "Cardinal Round Shield" "Elegant Round Shield" "Spiny Round Shield"
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 	#!LevelingBorder!#
 
 Show
-	BaseType "Feathered Arrow Quiver"
-	ItemLevel >= 82 # T1 Projectile Speed, DoT Multi
-	Rarity = Rare
-	SetFontSize 45
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Star
-	#!GoodBaseBorder!#
-
-Show
-	BaseType "Feathered Arrow Quiver"
-	ItemLevel >= 76 # T2 DoT Multi
-	Rarity = Rare
-	SetFontSize 40
-	MinimapIcon 1 Yellow Cross
-	#!LevelingBorder!#
-
-Show
-	BaseType "Short Bow"
-	AreaLevel <= 13
-	#!LevelingBorder!#
-	SetFontSize 40
-
-Show
-	AreaLevel <= 72 # Tier 5 map
+	AreaLevel <= 72 # Tier 5
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType "Painted Buckler" "War Buckler" "Gilded Buckler" "Enameled Buckler" "Battle Buckler" "Golden Buckler" "Lacquered Buckler" "Crusader Buckler" "Imperial Buckler" #!dex2!#
+	DropLevel >= 60
+	BaseEvasion >= 10
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!LevelingBorder!#
+
+#! weapons fast-2h-swords 12
+#! weapons fast-2h-axes 12
 
 #! import leveling.filter
 #! import currency.filter
