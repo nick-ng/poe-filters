@@ -6,7 +6,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!BrightBorder!#
+	#!BrightBorder!# 200
 
 Show
 	AreaLevel < 77
@@ -17,7 +17,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 
 #! linksa RRBB
 #! linksa RBBB

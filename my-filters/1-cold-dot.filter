@@ -2,7 +2,7 @@
 Show
 	BaseType == "A Chilling Wind"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -14,7 +14,7 @@ Show
 	BaseType == "Shadow Sceptre"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -25,7 +25,7 @@ Show
 Show
 	BaseType == "Vaal Cold Snap"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetBorderColor 250 125 125
 	SetTextColor 0 200 200
 	MinimapIcon 2 Brown Triangle
@@ -39,7 +39,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 82 # T1 Generic DoT multi
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -49,7 +49,7 @@ Show
 	Rarity <= Rare
 	SetFontSize 45
 	ItemLevel >= 72 # T2 resist
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 #! linksa GBBB
@@ -69,14 +69,14 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!BrightBorder!#
+	#!BrightBorder!# 200
 
 Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
-  #!DefaultBackground!#
-  #!GoodBaseBorder!#
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star
@@ -90,7 +90,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 
 #! import cold-gem-recipe.filter
 #! import currency.filter

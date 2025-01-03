@@ -6,8 +6,8 @@ Show
 	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
 	Quality >= 24
 	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!BrightBackground!#
+	#!GoodBaseBorder!# 200
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	MinimapIcon 1 Pink Star
 
@@ -19,8 +19,8 @@ Show
 	Rarity <= Rare
 	ItemLevel >= 77 # T1 Attack Speed
 	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!LinkBackground!#
+	#!GoodBaseBorder!# 200
+	#!LinkBackground!# 255
 	PlayAlertSound 1 150
 	MinimapIcon 1 Pink Star
 

@@ -4,7 +4,7 @@
 Show
 	BaseType == "The Lich" "The Penitent" "The Dreamer" "The Breach"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -16,7 +16,7 @@ Show
 	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -33,7 +33,7 @@ Show
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 2 Pink Star
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
@@ -45,7 +45,7 @@ Show
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 2 Pink Star
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
@@ -56,7 +56,7 @@ Show
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 2 Pink Raindrop
-	#!LinkBorder!#
+	#!LinkBorder!# 230
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 # Back-up Bases
@@ -67,7 +67,7 @@ Show
 # 	Rarity <= Rare
 # 	ItemLevel >= 77 # T1 Attack Speed
 # 	AreaLevel <= 80
-# 	#!GoodBaseBorder!#
+# 	#!GoodBaseBorder!# 200
 # 	MinimapIcon 2 Pink Star
 #
 # Settle Item Bases
@@ -78,7 +78,7 @@ Show
 	Rarity <= Rare
 	AreaLevel <= 68
 	ItemLevel >= 59 # T2 Crit Chance/Multi
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -88,7 +88,7 @@ Show
 	Rarity <= Rare
 	AreaLevel <= 68
 	ItemLevel >= 68 # Merciless Lab.
-	#!OkBaseBorder!#
+	#!OkBaseBorder!# 200
 	MinimapIcon 1 Pink Circle
 
 Show
@@ -97,7 +97,7 @@ Show
   SetFontSize 45
   #!BlackText!# 255
   SetBorderColor 0 0 0 250
-  #!EssenceBackground!#
+  #!EssenceBackground!# 230
   PlayAlertSound 2 50
   PlayEffect White
   MinimapIcon 2 White Circle
@@ -109,7 +109,7 @@ Show
 	SetFontSize 45
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 	MinimapIcon 1 Pink Triangle
-	#!LinkBorder!#
+	#!LinkBorder!# 230
 
 #
 Show
@@ -118,7 +118,7 @@ Show
 	SetTextColor 200 150 250 200
 	SetFontSize 45
 	MinimapIcon 2 Yellow Raindrop
-	#!LinkBorder!#
+	#!LinkBorder!# 230
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 # Leveling Items
@@ -131,7 +131,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 
 #! import fire-templar-start.filter
 #! import currency.filter

@@ -6,15 +6,15 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 82 # T1 Generic DoT multi
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
-  #!DefaultBackground!#
-  #!GoodBaseBorder!#
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star

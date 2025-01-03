@@ -11,7 +11,7 @@ Show
 # Show
 # 	BaseType == "The Admirer"
 # 	SetFontSize 45
-# 	#!BrightBackground!#
+# 	#!BrightBackground!# 255
 # 	SetTextColor 255 140 54 255
 # 	SetBorderColor 47 252 47 255
 # 	MinimapIcon 2 Brown Star
@@ -23,7 +23,7 @@ Show
 # 	BaseType == "Sapphire Ring" "Aventail Helmet" "Praetor Crown" "Lacquered Garb" "Conjurer Boots" "Paua Amulet" "Samnite Helmet"
 # 	Rarity Unique
 # 	SetFontSize 45
-# 	#!BrightBackground!#
+# 	#!BrightBackground!# 255
 # 	SetTextColor 255 140 54 255
 # 	SetBorderColor 47 252 47 255
 # 	MinimapIcon 2 Brown Star
@@ -39,8 +39,8 @@ Show
 # 	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
 # 	Quality >= 24
 # 	SetFontSize 45
-# 	#!GoodBaseBorder!#
-# 	#!BrightBackground!#
+# 	#!GoodBaseBorder!# 200
+# 	#!BrightBackground!# 255
 # 	PlayAlertSound 1 200
 # 	MinimapIcon 1 Pink Star
 
@@ -53,8 +53,8 @@ Show
 # 	Rarity <= Rare
 # 	ItemLevel >= 77 # T1 Attack Speed
 # 	SetFontSize 45
-# 	#!GoodBaseBorder!#
-# 	#!LinkBackground!#
+# 	#!GoodBaseBorder!# 200
+# 	#!LinkBackground!# 255
 # 	PlayAlertSound 1 150
 # 	MinimapIcon 1 Pink Star
 
@@ -66,7 +66,7 @@ Show
 # 	Rarity <= Rare
 # 	ItemLevel >= 77 # T1 Attack Speed
 # 	SetFontSize 35
-# 	#!GoodBaseBorder!#
+# 	#!GoodBaseBorder!# 200
 # 	MinimapIcon 1 Pink Diamond
 
 # Show
@@ -75,8 +75,8 @@ Show
 # 	ItemLevel >= 83
 # 	Rarity <= Rare
 # 	SetFontSize 45
-# 	#!GoodBaseBorder!#
-# 	#!LinkBackground!#
+# 	#!GoodBaseBorder!# 200
+# 	#!LinkBackground!# 255
 # 	PlayAlertSound 1 150
 # 	MinimapIcon 1 Pink Star
 
@@ -89,7 +89,7 @@ Show
 # 	BaseType = "Festival Mask" "Iron Staff" "Sage's Robe" "Reinforced Greaves"
 # 	Rarity Unique
 # 	SetFontSize 45
-# 	#!BrightBackground!#
+# 	#!BrightBackground!# 255
 # 	SetTextColor 255 140 54 255
 # 	SetBorderColor 47 252 47 255
 # 	MinimapIcon 2 Brown Star
@@ -101,7 +101,7 @@ Show
 # 	HasImplicitMod True
 # 	Corrupted True
 # 	SetFontSize 45
-# 	#!BrightBackground!#
+# 	#!BrightBackground!# 255
 # 	SetTextColor 255 140 54 255
 # 	SetBorderColor 47 252 47 255
 # 	MinimapIcon 2 Brown Star
@@ -115,7 +115,7 @@ Show
 	# ItemLevel >= 83 # T1 cast speed (woe essence)
 	ItemLevel = 84 # T1 spell damage
 	SetFontSize 45
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -126,7 +126,7 @@ Show
 	# ItemLevel >= 83 # T1 cast speed (woe essence)
 	ItemLevel >= 84 # T1 spell damage
 	SetFontSize 35
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 # Show
@@ -134,7 +134,7 @@ Show
 # 	Rarity = Magic
 # 	SetFontSize 45
 # 	MinimapIcon 1 Blue Star
-# 	#!BrightBorder!#
+# 	#!BrightBorder!# 200
 
 Show
 	HasInfluence Hunter
@@ -143,7 +143,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 200 20 255
 	SetBorderColor 0 200 20 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	PlayEffect Green
 	MinimapIcon 0 Green Diamond
@@ -152,7 +152,7 @@ Show
 Show
 	BaseType == "A Chilling Wind" "Deathly Designs" "Desecrated Virtue" "Dialla's Subjugation" "Doryani's Epiphany" "Terrible Secret of Space" "The Bitter Blossom" "The Blessing of Moosh" "The Bones" "The Cataclysm" "The Hook" "The Magma Crab" "The Rite of Elements" "The Skeleton" "The Wilted Rose"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 0 0 255 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -167,7 +167,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 107 99 187 200
 	SetTextColor 107 99 187 200
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	PlayEffect Purple
 	PlayAlertSound 3 200
 
@@ -183,8 +183,8 @@ Hide # Red Maps
 	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
 	StackSize < 3
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 
 ## Retaliation
 Hide
@@ -203,8 +203,8 @@ Show
 	ItemLevel >= 83 # T1 Phys, T1 Cast Speed
 	Quality >= 24
 	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!BrightBackground!#
+	#!GoodBaseBorder!# 200
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	MinimapIcon 1 Pink Star
 
@@ -216,8 +216,8 @@ Show
 	ItemLevel >= 85
 	Quality >= 24
 	SetFontSize 45
-	#!GoodBaseBorder!#
-	#!BrightBackground!#
+	#!GoodBaseBorder!# 200
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	MinimapIcon 1 Pink Star
 
@@ -251,7 +251,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 200 20 255
 	SetBorderColor 0 200 20 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	PlayEffect Green
 	MinimapIcon 0 Green Diamond
@@ -263,7 +263,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 200 20 255
 	SetBorderColor 0 200 20 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	PlayAlertSound 1 200
 	PlayEffect Green
 	MinimapIcon 0 Green Diamond

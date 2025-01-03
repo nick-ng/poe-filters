@@ -4,7 +4,7 @@ Show
 	Class "Currency"
 	BaseType == "Orb of Horizons" "Harbinger's Orb"
 	SetFontSize 45
-	#!T2CurrencyText!#
+	#!T2CurrencyText!# 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
@@ -14,7 +14,7 @@ Show
 	Class "Currency"
 	BaseType == "Horizon Shard" "Harbinger's Shard"
 	SetFontSize 45
-	#!T2CurrencyText!#
+	#!T2CurrencyText!# 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
@@ -38,7 +38,7 @@ Show
 	BaseType "Scroll of Wisdom"
 	Class "Currency"
 	AreaLevel <= 24
-	#!ScrollOfWisdomText!#
+	#!ScrollOfWisdomText!# 220
 	#!GGGCurrencyBorder!# 200
 	SetFontSize 45
 	MinimapIcon 2 Grey Raindrop
@@ -49,7 +49,7 @@ Show
 	BaseType "Portal Scroll"
 	Class "Currency"
 	AreaLevel <= 24
-	#!PortalScrollText!#
+	#!PortalScrollText!# 220
 	#!GGGCurrencyBorder!# 200
 	SetFontSize 45
 	MinimapIcon 2 Grey Star
@@ -61,8 +61,8 @@ Show
 	Class "Currency"
 	AreaLevel <= 24
 	SetFontSize 45
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey
 	#! tts "armourer" armourer Amy 200 1.0
@@ -72,8 +72,8 @@ Show
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Green
 	#! tts "blacksmith" blacksmith Amy 200 1.0
@@ -83,8 +83,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Transmutation"
 	SetFontSize 45
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 	#! tts "transmute" transmute Amy 200 1.0
@@ -94,8 +94,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Alteration"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "alteration" alteration Amy 200 1.0
@@ -105,8 +105,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Fusing"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "fusing" fusing Amy 200 1.0
@@ -116,8 +116,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Alchemy"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	#! tts "alchemy" alchemy Amy 200 1.0
@@ -153,7 +153,7 @@ Show
 Show
 	BaseType == "Vaal Haste"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetBorderColor 250 125 125
 	SetTextColor 0 200 200
 	MinimapIcon 2 Brown Triangle
@@ -170,7 +170,7 @@ Show
 	AreaLevel <= 67
 	Sockets >= 4
 	SetFontSize 45
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Moon
 
 # Show
@@ -190,7 +190,7 @@ Show
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
 	StackSize > 1
 	SetFontSize 45
-	#!T9CurrencyText!#
+	#!T9CurrencyText!# 230
 	SetBorderColor 190 178 135 255
 
 #! import pre-watchstones.filter

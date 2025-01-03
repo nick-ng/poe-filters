@@ -7,9 +7,9 @@ Show # T17
 	MapTier >= 17
 	Class "Maps"
 	SetFontSize 45
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	SetTextColor 120 0 166 200
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	MinimapIcon 2 Purple Square
 	PlayEffect Purple
 	CustomAlertSound "sounds/zana-what-are-you-doing.mp3"

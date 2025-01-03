@@ -205,8 +205,8 @@ func MakeDivinationCardsFilterPoeNinja() error {
 					fmt.Sprintf("\tBaseType == \"%s\"", strings.Join(divinationCardNames, "\" \"")),
 					"\tClass \"Divination\"",
 					"\tSetFontSize 45",
-					"\t#!BrightBackground!#",
-					"\t#!CurrencyBorder!#",
+					"\t#!BrightBackground!# 255",
+					"\t#!CurrencyBorder!# 230",
 					"\tMinimapIcon 0 Pink UpsideDownHouse",
 					"\tCustomAlertSound \"sounds/intel-thanks-steve.mp3\"")
 

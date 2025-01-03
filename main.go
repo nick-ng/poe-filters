@@ -135,7 +135,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	var processedLines []string
 	if !isImported {
 		processedLines = append(processedLines, `Show
-	#!DefaultBackground!#
+	#!DefaultBackground!# 120
 	Continue`)
 	}
 

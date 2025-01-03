@@ -51,7 +51,7 @@ Show
 	Rarity = Rare
 	SetFontSize 40
 	MinimapIcon 1 Yellow Cross
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 
 #! import life-flasks.filter
 
@@ -66,7 +66,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	CustomAlertSound "sounds/rue-woo.mp3"
 
 Show
@@ -76,7 +76,7 @@ Show
 	SetFontSize 40
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Cross
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	CustomAlertSound "sounds/rue-limp.mp3"
 
 #! import currency.filter

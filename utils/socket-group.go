@@ -110,8 +110,8 @@ func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
 		"\tRarity <= Rare",
 		"\tLinkedSockets <= 4",
 		fmt.Sprintf("\tSocketGroup = %s", socketGroup),
-		"\t#!LinkBorder!#",
-		"\t#!LinkBackground!#",
+		"\t#!LinkBorder!# 230",
+		"\t#!LinkBackground!# 255",
 		"\tDisableDropSound",
 		fmt.Sprintf("\tCustomAlertSound \"%s\" 300", soundPath),
 	}

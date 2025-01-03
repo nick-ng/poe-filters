@@ -8,7 +8,7 @@ Show
 	FracturedItem True
 	SetFontSize 45
 	MinimapIcon 1 Blue Circle
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetBorderColor 255 0 0 255
 
 Show
@@ -47,8 +47,8 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
-	#!T0CurrencyText!#
-	#!CurrencyBorder!#
+	#!T0CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 
@@ -56,8 +56,8 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Green
 
@@ -74,7 +74,7 @@ Show
 	MinimapIcon 0 Grey Circle
 	SetFontSize 25
 	PlayEffect Grey
-	#!CurrencyBorder!#
+	#!CurrencyBorder!# 230
 
 ## Show stackable items
 Show
@@ -82,20 +82,20 @@ Show
 	MinimapIcon 0 Orange Circle
 	SetFontSize 25
 	PlayEffect Orange
-	#!CurrencyBorder!#
+	#!CurrencyBorder!# 230
 
 Show
 	# BaseType "Scarab"
 	Class "Map Fragment"
 	SetFontSize 35
 	MinimapIcon 0 Orange Triangle
-	#!BrightBorder!#
+	#!BrightBorder!# 200
 
 Show
 	Class "Divination Card"
 	SetFontSize 35
 	MinimapIcon 0 Orange Square
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 
 Show
 	Class Incubator

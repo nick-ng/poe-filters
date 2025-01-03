@@ -6,7 +6,7 @@
 Show
 	BaseType == "A Dab of Ink" "The Gladiator" "The Porcupine" "Alivia's Grace"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -18,7 +18,7 @@ Show
 	BaseType == "Carved Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Nightmare Bascinet"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -48,7 +48,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel >= 81 # T1 increased amount recovered
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 	CustomAlertSound "sounds/rue-woo.mp3"
 
@@ -59,7 +59,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	CustomAlertSound "sounds/rue-woo.mp3"
 
 Show
@@ -69,7 +69,7 @@ Show
 	SetFontSize 40
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Cross
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	CustomAlertSound "sounds/rue-limp.mp3"
 
 Show
@@ -77,7 +77,7 @@ Show
 	Rarity = Rare
 	SetFontSize 40
 	MinimapIcon 1 Yellow Cross
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 
 #! import leveling.filter
 #! import currency.filter

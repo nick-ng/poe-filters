@@ -103,8 +103,8 @@ func MakeDivinationCardsFilter() {
 
 		filterGroup = append(filterGroup, "Show", baseTypesLine, stackSizeLine, `	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"`)

@@ -3,7 +3,7 @@ Show
 	BaseType == "Imperial Skean" "Soldier Gloves" "Leather Hood" "Dragonscale Boots"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -17,7 +17,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 83 # T1 Phys, T1 Cast Speed
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -26,7 +26,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 82 # T1 flat ele
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 #! linksa RRRG

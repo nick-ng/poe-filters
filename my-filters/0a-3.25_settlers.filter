@@ -15,7 +15,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 
 Show
 	Class "Sceptre" "Wand"
@@ -24,7 +24,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 
 #! import sov2.filter
 #! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n

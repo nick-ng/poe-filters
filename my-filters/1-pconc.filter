@@ -5,7 +5,7 @@
 Show
 	BaseType == "The Escape" "The Gladiator" "Alivia's Grace"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -17,7 +17,7 @@ Show
 	BaseType == "Rawhide Boots" "Stibnite Flask" "Mirrored Spiked Shield" "Assassin's Mitts" "Dragonscale Boots"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -37,7 +37,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel >= 81 # T1 increased amount recovered
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -63,7 +63,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 
 Show
 	AreaLevel <= 72 # Tier 5

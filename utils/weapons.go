@@ -64,7 +64,7 @@ func GetWeaponGroupFilter(weaponGroupName string, maxLevel int, minLevel int, se
 				fmt.Sprintf("\tBaseType == \"%s\" # requires level %d", weapon.BaseType, weapon.RequiresLevel),
 				"\tCorrupted False",
 				"\tSetFontSize 45",
-				"\t#!LevelingBorder!#",
+				"\t#!LevelingBorder!# 230",
 				"\tMinimapIcon 2 Pink Cross",
 				"\tCustomAlertSound \"sounds/ben-finegold-this-is-serious.mp3\"",
 			}
@@ -79,7 +79,7 @@ func GetWeaponGroupFilter(weaponGroupName string, maxLevel int, minLevel int, se
 				fmt.Sprintf("\tBaseType == \"%s\" # requires level %d", weapon.BaseType, weapon.RequiresLevel),
 				"\tCorrupted False",
 				"\tSetFontSize 25",
-				"\t#!LevelingBorder!#",
+				"\t#!LevelingBorder!# 230",
 				"\tMinimapIcon 1 Pink Cross",
 			)
 		}
@@ -171,7 +171,7 @@ func GetDropLevelFilter(rawCommand string) (string, error) {
 			fmt.Sprintf("\tDropLevel < \"%d\"", upperDropLevel),
 			// "\tCorrupted False",
 			"\tSetFontSize 45",
-			"\t#!LevelingBorder!#",
+			"\t#!LevelingBorder!# 230",
 			"\tMinimapIcon 2 Pink Cross",
 			// "\tCustomAlertSound \"sounds/ben-finegold-this-is-serious.mp3\"",
 			// small highlight
@@ -183,7 +183,7 @@ func GetDropLevelFilter(rawCommand string) (string, error) {
 			fmt.Sprintf("\tDropLevel < \"%d\"", upperDropLevel),
 			// "\tCorrupted False",
 			"\tSetFontSize 25",
-			"\t#!LevelingBorder!#",
+			"\t#!LevelingBorder!# 230",
 			"\tMinimapIcon 1 Pink Cross",
 		}
 

@@ -15,7 +15,7 @@ Show
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
-	#!T3CurrencyText!#
+	#!T3CurrencyText!# 230
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
@@ -26,7 +26,7 @@ Show
 	Class "One Hand" "Two Hand" "Wand" "Sceptre" "Dagger" "Bow" "Staves" "Dagger" "Claw"
 	Quality >= 20
 	SetFontSize 45
-	#!T3CurrencyText!#
+	#!T3CurrencyText!# 230
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse

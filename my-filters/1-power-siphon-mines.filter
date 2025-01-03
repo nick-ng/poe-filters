@@ -2,7 +2,7 @@
 Show
 	BaseType == "Doedre's Madness"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -14,7 +14,7 @@ Show
 	BaseType == "Velvet Gloves" "Lapis Amulet"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -29,7 +29,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!BrightBorder!#
+	#!BrightBorder!# 200
 
 Show
 	Class "Currency"
@@ -54,8 +54,8 @@ Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
-  #!DefaultBackground!#
-  #!GoodBaseBorder!#
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star
@@ -69,7 +69,7 @@ Show
 	SetFontSize 35
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!#
+	#!MediumBaseBorder!# 200
 
 # Item Bases
 Show
@@ -79,7 +79,7 @@ Show
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Red Star
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 
 Show
 	BaseType "Prophecy Wand"
@@ -88,7 +88,7 @@ Show
 	Rarity <= Rare
 	SetFontSize 45
 	ItemLevel = 82 # T1 Flat damage
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -97,7 +97,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	SetFontSize 30
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 #! linksa GBBB

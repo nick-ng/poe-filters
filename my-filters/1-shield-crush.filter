@@ -4,7 +4,7 @@
 Show
 	BaseType == "Earth Drinker"
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -16,7 +16,7 @@ Show
 	BaseType == "Wyrmscale Gauntlets" "Gut Ripper" "Amethyst Ring" "Granite Flask" "Coral Ring"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -32,7 +32,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel >= 86
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 	#! tts "big shield" big-shield Amy 200 1.0
 
@@ -43,7 +43,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel >= 69
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -52,7 +52,7 @@ Show
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 # Weapon Recipe

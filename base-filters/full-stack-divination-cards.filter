@@ -2,8 +2,8 @@ Show
 	BaseType == "The Void"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
@@ -11,8 +11,8 @@ Show
 	BaseType == "Cameria's Cut" "The Easy Stroll" "The Finishing Touch" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 2
@@ -21,8 +21,8 @@ Show
 	BaseType == "Akil's Prophecy" "Altered Perception" "Bijoux" "Buried Treasure" "Darker Half" "Echoes of Love" "Ever-Changing" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Last Hope" "Sambodhi's Vow" "The Catalyst" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Polymath" "The Risk" "The Samurai's Eye" "The Scholar" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 3
@@ -31,8 +31,8 @@ Show
 	BaseType == "A Chilling Wind" "Atziri's Arsenal" "Boundless Realms" "Dark Dreams" "Death" "Eldritch Perfection" "Forbidden Power" "Jack in the Box" "Left to Fate" "The Body" "The Card Sharp" "The Carrion Crow" "The Dragon" "The Eldritch Decay" "The Endurance" "The Fool" "The Gentleman" "The Messenger" "The Professor" "The Stormcaller" "The Surveyor" "The Warden" "The Wolf's Legacy" "Unchained"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 4
@@ -41,8 +41,8 @@ Show
 	BaseType == "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Call to the First Ones" "Destined to Crumble" "Emperor's Luck" "Hope" "Hubris" "Imperfect Memories" "Loyalty" "Mitts" "The Aspirant" "The Battle Born" "The Deep Ones" "The Demoness" "The Escape" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The King's Blade" "The Landing" "The Lion" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Transformation" "The Undaunted" "Thirst for Knowledge" "Vinia's Token"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 5
@@ -51,8 +51,8 @@ Show
 	BaseType == "Boon of Justice" "Deadly Joy" "Immortal Resolve" "Lysah's Respite" "Misery in Darkness" "Succor of the Sinless" "The Army of Blood" "The Bear Woman" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Dark Mage" "The Explorer" "The Magma Crab" "The Metalsmith's Gift" "The One With All" "The Porcupine" "The Skeleton" "The Summoner" "The Tower" "The Visionary" "The Warlord" "The Wretched"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 6
@@ -61,8 +61,8 @@ Show
 	BaseType == "Deathly Designs" "Dialla's Subjugation" "Endless Night" "More is Never Enough" "Prejudice" "Scholar of the Seas" "The Ethereal" "The Mad King" "The Obscured" "The Ruthless Ceinture" "The Siren" "The Sun" "The Trial" "The Wilted Rose" "Three Faces in the Dark"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 7
@@ -71,8 +71,8 @@ Show
 	BaseType == "Arrogance of the Vaal" "Dying Anguish" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Pride Before the Fall" "Rain of Chaos" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Nurse" "The Offering" "The Patient" "The Scavenger" "The Scout" "The Tireless Extractor" "The Valkyrie" "The Whiteout" "The Wrath"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 8
@@ -81,8 +81,8 @@ Show
 	BaseType == "A Dab of Ink" "Assassin's Favour" "Doedre's Madness" "Etched in Blood" "Rain Tempter" "The Betrayal" "The Rusted Bard" "The Scarred Meadow" "Vanity"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 9
@@ -91,8 +91,8 @@ Show
 	BaseType == "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 10
@@ -101,8 +101,8 @@ Show
 	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Harvester" "The Sephirot"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 11
@@ -111,8 +111,8 @@ Show
 	BaseType == "Divine Beauty" "The Fortunate" "The Hoarder" "The Lich"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 12
@@ -121,8 +121,8 @@ Show
 	BaseType == "Anarchy's Price" "Cursed Words" "The Cataclysm" "Triskaidekaphobia"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 13
@@ -131,8 +131,8 @@ Show
 	BaseType == "Lingering Remnants" "Mawr Blaidd"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 16
@@ -141,8 +141,8 @@ Show
 	BaseType == "Imperial Legacy"
 	Class "Divination"
 	SetFontSize 45
-	#!BrightBackground!#
-	#!CurrencyBorder!#
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 22

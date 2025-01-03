@@ -2,7 +2,7 @@ Show
 	Corrupted False
 	Mirrored False
 	BaseType == "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" #!body2!# #!square2!#
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	Continue
 
 ##################################
@@ -16,7 +16,7 @@ Show
 	ItemLevel >= 85 # t1 mana
 	SetFontSize 45
 	SetTextColor 0 0 255 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
@@ -29,7 +29,7 @@ Show
 	ItemLevel >= 84 # t1 resists
 	SetFontSize 45
 	SetTextColor 0 0 255 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
@@ -41,7 +41,7 @@ Show
 	Mirrored False
 	SetFontSize 45
 	SetTextColor 0 0 255 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
@@ -57,7 +57,7 @@ Show
 	Corrupted False
 	Mirrored False
 	SetFontSize 40
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	PlayEffect Red
 	MinimapIcon 1 Yellow Cross
 
@@ -69,7 +69,7 @@ Show # Influenced Rings
 	Corrupted False
 	Mirrored False
 	SetFontSize 45
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	SetTextColor 100 0 122 255
 	PlayEffect Cyan
 	PlayAlertSound 1 300
@@ -95,7 +95,7 @@ Show
 	Rarity <= Magic
 	SetTextColor 0 203 221 200
 	PlayEffect Red
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 
 ###############################
 ## Flagellant Utility Flasks ##
@@ -307,7 +307,7 @@ Show
 #   FracturedItem False
 #   Identified False
 #   HasInfluence None
-#   #!DullBorder!#
+#   #!DullBorder!# 230
 #   Sockets < 6
 
 # Hide
@@ -319,7 +319,7 @@ Show
 #   FracturedItem False
 #   Identified False
 #   HasInfluence None
-#   #!DullBorder!#
+#   #!DullBorder!# 230
 #   Sockets < 6
 
 # Hide
@@ -330,5 +330,5 @@ Show
 #   Corrupted False
 #   FracturedItem False
 #   HasInfluence None
-#   #!DullBorder!#
+#   #!DullBorder!# 230
 #   Sockets < 6

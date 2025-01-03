@@ -5,7 +5,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 83 # T1 Phys, T1 Cast Speed
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -14,7 +14,7 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 84 # T1 Increased effec + mana burn rate, T1 DoT Multi with weapons.
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
@@ -39,7 +39,7 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 
 Show
 	AreaLevel <= 72 # Tier 5

@@ -17,7 +17,7 @@ Show
 	BaseType == "Long Bow"
 	Corrupted False
 	SetFontSize 45
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -26,7 +26,7 @@ Show
 	BaseType == "Long Bow"
 	Corrupted False
 	SetFontSize 25
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 
 Show
@@ -34,7 +34,7 @@ Show
 	BaseType == "Composite Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -43,7 +43,7 @@ Show
 	BaseType == "Composite Bow"
 	Corrupted False
 	SetFontSize 35
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -52,7 +52,7 @@ Show
 	BaseType == "Bone Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -61,7 +61,7 @@ Show
 	BaseType == "Bone Bow"
 	Corrupted False
 	SetFontSize 35
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -70,7 +70,7 @@ Show
 	BaseType == "Royal Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -79,7 +79,7 @@ Show
 	BaseType == "Royal Bow"
 	Corrupted False
 	SetFontSize 25
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 
 Show
@@ -87,7 +87,7 @@ Show
 	BaseType == "Compound Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -96,7 +96,7 @@ Show
 	BaseType == "Compound Bow"
 	Corrupted False
 	SetFontSize 35
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -105,7 +105,7 @@ Show
 	BaseType == "Ivory Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -114,7 +114,7 @@ Show
 	BaseType == "Ivory Bow"
 	Corrupted False
 	SetFontSize 25
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 
 Show
@@ -122,7 +122,7 @@ Show
 	BaseType == "Highborn Bow" "Ranger Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -131,7 +131,7 @@ Show
 	BaseType == "Highborn Bow" "Ranger Bow"
 	Corrupted False
 	SetFontSize 35
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200
 
@@ -140,7 +140,7 @@ Show
 	BaseType == "Spine Bow"
 	SetFontSize 45
 	Rarity > Normal
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
@@ -149,6 +149,6 @@ Show
 	BaseType == "Spine Bow"
 	Corrupted False
 	SetFontSize 35
-	#!LevelingBorder!#
+	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Cross
 	PlayAlertSound 16 200

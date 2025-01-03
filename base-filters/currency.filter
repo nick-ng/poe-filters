@@ -60,12 +60,12 @@ Show
 
 Show
 	BaseType "Scroll of Wisdom"
-	#!ScrollOfWisdomText!#
+	#!ScrollOfWisdomText!# 220
 	Continue
 
 Show
 	BaseType "Portal Scroll"
-	#!PortalScrollText!#
+	#!PortalScrollText!# 220
 	Continue
 
 Hide # Red Maps
@@ -128,8 +128,8 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
-	#!T0CurrencyText!#
-	#!CurrencyBorder!#
+	#!T0CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink Circle
 	PlayEffect Green
 	CustomAlertSound "sounds/thps-special-trick-1.mp3"
@@ -138,8 +138,8 @@ Show # T0 Currency
 	Class "Currency"
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
 	CustomAlertSound "sounds/thps-special-trick-2.mp3"
@@ -148,8 +148,8 @@ Show # Mapping Currency
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Pink
 	PlayAlertSound 11 200
@@ -159,8 +159,8 @@ Show # T1 Currency
 	Class "Currency"
 	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
 	SetFontSize 45
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 200
@@ -170,8 +170,8 @@ Show
 	Class "Currency"
 	BaseType "Catalyst" "Eldritch"
 	SetFontSize 45
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 1 100
@@ -181,8 +181,8 @@ Show
 	Class "Currency"
 	BaseType == "Exalted Shard" "Ancient Shard"
 	SetFontSize 35
-	#!T1CurrencyText!#
-	#!CurrencyBorder!#
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 150
@@ -195,8 +195,8 @@ Show # T2 Currency
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow Circle
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -210,8 +210,8 @@ Show # Orb of Chance is more important until yellow maps
 	BaseType == "Orb of Chance"
 	AreaLevel < 74
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow Circle
 	#! tts "chance" chance Amy 200 1.2
 
@@ -221,15 +221,15 @@ Hide # Red Maps
 	SetFontSize 45
 	AreaLevel > 77
 	StackSize < 3
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 
 Show # T3 Currency (3+ to show)
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Green Circle
 	PlayAlertSound 11 200
 
@@ -243,8 +243,8 @@ Show # T3 Currency (3+ to show)
 #	SetFontSize 45
 #	AreaLevel > 72
 #	StackSize < 6
-#	#!T3CurrencyText!#
-#	#!CurrencyBorder!#
+#	#!T3CurrencyText!# 230
+#	#!CurrencyBorder!# 230
 
 # Hide # White Maps
 # 	Class "Currency"
@@ -252,15 +252,15 @@ Show # T3 Currency (3+ to show)
 # 	SetFontSize 45
 # 	AreaLevel > 67
 # 	StackSize < 3
-# 	#!T3CurrencyText!#
-# 	#!CurrencyBorder!#
+# 	#!T3CurrencyText!# 230
+# 	#!CurrencyBorder!# 230
 
 Show # T4 Currency (4+ to show)
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 45
-	#!T3CurrencyText!#
-	#!CurrencyBorder!#
+	#!T3CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Grey Circle
 	# CustomAlertSound "sounds/water-drop.mp3"
 
@@ -269,7 +269,7 @@ Show
 	BaseType == "Chaos Shard" "Regal Shard"
 	StackSize >= 1
 	SetFontSize 40
-	#!T9CurrencyText!#
+	#!T9CurrencyText!# 230
 	SetBorderColor 190 178 135 255
 	PlayEffect Grey
 
@@ -278,7 +278,7 @@ Show
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
 	StackSize >= 5
 	SetFontSize 35
-	#!T9CurrencyText!#
+	#!T9CurrencyText!# 230
 	SetBorderColor 190 178 135 255
 	PlayEffect Grey
 
@@ -321,8 +321,8 @@ Show
 	BaseType "Divine" "Eternal"
 	Quality >= 19
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!BrightBackground!#
+	#!T2CurrencyText!# 230
+	#!BrightBackground!# 255
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
@@ -331,7 +331,7 @@ Show
 	Class Flask
 	Quality >= 15
 	SetFontSize 45
-	#!T2CurrencyText!#
+	#!T2CurrencyText!# 230
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 
@@ -343,8 +343,8 @@ Show
 	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
 	Class "Divination"
 	SetFontSize 45
-	#!T0CurrencyText!#
-	#!CurrencyBorder!#
+	#!T0CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Pink Square
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
@@ -353,8 +353,8 @@ Show
 	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -363,8 +363,8 @@ Show
 	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
 	Class "Divination"
 	SetFontSize 45
-	#!T2CurrencyText!#
-	#!CurrencyBorder!#
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -431,9 +431,9 @@ Show
 	AreaLevel > 83
 	Class Amulet
 	AnyEnchantment True
-	#!BrightBackground!#
-	#!DullBorder!#
-	#!EssenceText!#
+	#!BrightBackground!# 255
+	#!DullBorder!# 230
+	#!EssenceText!# 230
 	SetFontSize 45
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 

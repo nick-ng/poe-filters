@@ -9,7 +9,7 @@ Show
 	SetFontSize 45
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
@@ -23,7 +23,7 @@ Show
 	BaseType == "Imbued Wand" "Two-Stone Ring" "Desert Brigandine" "Scholar's Robe"
 	Rarity Unique
 	SetFontSize 45
-	#!BrightBackground!#
+	#!BrightBackground!# 255
 	SetTextColor 232 99 0 255
 	SetBorderColor 47 252 47 255
 	MinimapIcon 2 Brown Star
@@ -37,15 +37,15 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	ItemLevel = 82 # T1 Generic DoT multi
-	#!GoodBaseBorder!#
+	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
   AreaLevel <= 10
   BaseType "Goat's Horn"
   SetFontSize 45
-  #!DefaultBackground!#
-  #!GoodBaseBorder!#
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
   PlayEffect Red
   #! tts "goat horn" goat-horn Amy 200 1.0
   MinimapIcon 1 Pink Star

@@ -102,6 +102,6 @@ Show
 	Rarity = Rare
 	AreaLevel < 10
 	SetFontSize 45
-	#!BrightBorder!#
+	#!BrightBorder!# 200
 	PlayEffect Grey
 	MinimapIcon 0 Grey UpsideDownHouse
