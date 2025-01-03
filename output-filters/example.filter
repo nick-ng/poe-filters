@@ -2,12 +2,14 @@
 Show
 	SetBackgroundColor 0 0 0 120
 	Continue
+# example.filter and example2.filter won't get copied to the Path of Exile
+# directory. They are meant to explain how to use all the different commands.
 # Normal comments don't do anything
 # All .filter files in the my-filters directory will be processed. The repo has
-# this example filter and my personal filters
+# two example filter and my personal filters.
 # The output filter will have the same name as the source file and will be in
 # the output-filters directory and all filters apart from example.filter will be
-# copied to the directory the Path of Exile uses
+# copied to the directory the Path of Exile uses.
 # Comments that begin with #! do something
 # #! skip will stop processing the filter, skip writing the filter, and delete
 # the processed filter if it exists. This is to reduce the number of filters in
@@ -16,7 +18,8 @@ Show
 # text-to-speech comments before the skip comment will be processed. To save
 # processing time, you should skip as early as possible.
 # Because there is an extra # before the #! skip, this #! comment won't do
-# anything. example.filter won't get copied to the Path of Exile directory.
+# anything. Note that since example.filter won't get copied to the Path of Exile
+# directory,
 # #! skip
 # You can highlight items with specific coloured links and play a text-to-speech
 # sound with the `links` command. Links with more colours have to be earlier in
@@ -830,7 +833,7 @@ Show
 	AreaLevel <= 8
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Driftwood Maul"
+	BaseType == "Driftwood Maul" # requires level 1
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -839,7 +842,7 @@ Show
 	AreaLevel <= 15
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Tribal Maul"
+	BaseType == "Tribal Maul" # requires level 8
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -848,7 +851,7 @@ Show
 	AreaLevel <= 13
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Mallet"
+	BaseType == "Mallet" # requires level 12
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -858,7 +861,7 @@ Show
 	AreaLevel <= 19
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Mallet"
+	BaseType == "Mallet" # requires level 12
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -867,7 +870,7 @@ Show
 	AreaLevel <= 18
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Sledgehammer"
+	BaseType == "Sledgehammer" # requires level 17
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -877,7 +880,7 @@ Show
 	AreaLevel <= 24
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Sledgehammer"
+	BaseType == "Sledgehammer" # requires level 17
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -889,7 +892,7 @@ Show
 	AreaLevel <= 8
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Stone Axe"
+	BaseType == "Stone Axe" # requires level 1
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -898,7 +901,7 @@ Show
 	AreaLevel <= 16
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Jade Chopper"
+	BaseType == "Jade Chopper" # requires level 9
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -907,7 +910,7 @@ Show
 	AreaLevel <= 14
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Woodsplitter"
+	BaseType == "Woodsplitter" # requires level 13
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -917,7 +920,7 @@ Show
 	AreaLevel <= 20
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Woodsplitter"
+	BaseType == "Woodsplitter" # requires level 13
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -926,7 +929,7 @@ Show
 	AreaLevel <= 25
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Poleaxe"
+	BaseType == "Poleaxe" # requires level 18
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -935,7 +938,7 @@ Show
 	AreaLevel <= 24
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Double Axe"
+	BaseType == "Double Axe" # requires level 23
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -945,7 +948,7 @@ Show
 	AreaLevel <= 30
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Double Axe"
+	BaseType == "Double Axe" # requires level 23
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -954,7 +957,7 @@ Show
 	AreaLevel <= 35
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Gilded Axe"
+	BaseType == "Gilded Axe" # requires level 28
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -963,7 +966,7 @@ Show
 	AreaLevel <= 40
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Shadow Axe"
+	BaseType == "Shadow Axe" # requires level 33
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -972,7 +975,7 @@ Show
 	AreaLevel <= 42
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Timber Axe"
+	BaseType == "Timber Axe" # requires level 41
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -982,7 +985,7 @@ Show
 	AreaLevel <= 48
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Timber Axe"
+	BaseType == "Timber Axe" # requires level 41
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -991,7 +994,7 @@ Show
 	AreaLevel <= 46
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Headsman Axe"
+	BaseType == "Headsman Axe" # requires level 45
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1001,7 +1004,7 @@ Show
 	AreaLevel <= 52
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Headsman Axe"
+	BaseType == "Headsman Axe" # requires level 45
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1010,7 +1013,7 @@ Show
 	AreaLevel <= 56
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Labrys"
+	BaseType == "Labrys" # requires level 49
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1019,7 +1022,7 @@ Show
 	AreaLevel <= 51
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Honed Cleaver"
+	BaseType == "Honed Cleaver" # requires level 50
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1029,7 +1032,7 @@ Show
 	AreaLevel <= 57
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Honed Cleaver"
+	BaseType == "Honed Cleaver" # requires level 50
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1038,7 +1041,7 @@ Show
 	AreaLevel <= 53
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Noble Axe"
+	BaseType == "Noble Axe" # requires level 52
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1048,7 +1051,7 @@ Show
 	AreaLevel <= 59
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Noble Axe"
+	BaseType == "Noble Axe" # requires level 52
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1057,7 +1060,7 @@ Show
 	AreaLevel <= 62
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Abyssal Axe"
+	BaseType == "Abyssal Axe" # requires level 55
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1066,7 +1069,7 @@ Show
 	AreaLevel <= 67
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Sundering Axe"
+	BaseType == "Sundering Axe" # requires level 60
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1075,7 +1078,7 @@ Show
 	AreaLevel <= 63
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Ezomyte Axe"
+	BaseType == "Ezomyte Axe" # requires level 62
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1085,7 +1088,7 @@ Show
 	AreaLevel <= 69
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Ezomyte Axe"
+	BaseType == "Ezomyte Axe" # requires level 62
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1094,7 +1097,7 @@ Show
 	AreaLevel <= 67
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Despot Axe"
+	BaseType == "Despot Axe" # requires level 66
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1104,7 +1107,7 @@ Show
 	AreaLevel <= 73
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Despot Axe"
+	BaseType == "Despot Axe" # requires level 66
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1113,7 +1116,7 @@ Show
 	AreaLevel <= 75
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Void Axe"
+	BaseType == "Void Axe" # requires level 68
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1122,7 +1125,7 @@ Show
 	AreaLevel <= 71
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Apex Cleaver"
+	BaseType == "Apex Cleaver" # requires level 70
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 255
@@ -1132,7 +1135,7 @@ Show
 	AreaLevel <= 77
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Apex Cleaver"
+	BaseType == "Apex Cleaver" # requires level 70
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 255
@@ -1907,7 +1910,7 @@ Show
 	PlayEffect Cyan Temp
 #? import full-stack-divination-cards.filter
 Show
-	BaseType == "Brother's Gift" "Brother's Stash" "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void"
+	BaseType == "The Void"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1915,7 +1918,7 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 Show
-	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
+	BaseType == "Cameria's Cut" "The Easy Stroll" "The Finishing Touch" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1924,7 +1927,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 2
 Show
-	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
+	BaseType == "Akil's Prophecy" "Altered Perception" "Bijoux" "Buried Treasure" "Darker Half" "Echoes of Love" "Ever-Changing" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Last Hope" "Sambodhi's Vow" "The Catalyst" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Polymath" "The Risk" "The Samurai's Eye" "The Scholar" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1933,7 +1936,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 3
 Show
-	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
+	BaseType == "A Chilling Wind" "Atziri's Arsenal" "Boundless Realms" "Dark Dreams" "Death" "Eldritch Perfection" "Forbidden Power" "Jack in the Box" "Left to Fate" "The Body" "The Card Sharp" "The Carrion Crow" "The Dragon" "The Eldritch Decay" "The Endurance" "The Fool" "The Gentleman" "The Messenger" "The Professor" "The Stormcaller" "The Surveyor" "The Warden" "The Wolf's Legacy" "Unchained"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1942,7 +1945,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 4
 Show
-	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
+	BaseType == "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Call to the First Ones" "Destined to Crumble" "Emperor's Luck" "Hope" "Hubris" "Imperfect Memories" "Loyalty" "Mitts" "The Aspirant" "The Battle Born" "The Deep Ones" "The Demoness" "The Escape" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The King's Blade" "The Landing" "The Lion" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Transformation" "The Undaunted" "Thirst for Knowledge" "Vinia's Token"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1951,7 +1954,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 5
 Show
-	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
+	BaseType == "Boon of Justice" "Deadly Joy" "Immortal Resolve" "Lysah's Respite" "Misery in Darkness" "Succor of the Sinless" "The Army of Blood" "The Bear Woman" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Dark Mage" "The Explorer" "The Magma Crab" "The Metalsmith's Gift" "The One With All" "The Porcupine" "The Skeleton" "The Summoner" "The Tower" "The Visionary" "The Warlord" "The Wretched"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1960,7 +1963,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 6
 Show
-	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
+	BaseType == "Deathly Designs" "Dialla's Subjugation" "Endless Night" "More is Never Enough" "Prejudice" "Scholar of the Seas" "The Ethereal" "The Mad King" "The Obscured" "The Ruthless Ceinture" "The Siren" "The Sun" "The Trial" "The Wilted Rose" "Three Faces in the Dark"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1969,7 +1972,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 7
 Show
-	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
+	BaseType == "Arrogance of the Vaal" "Dying Anguish" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Pride Before the Fall" "Rain of Chaos" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Nurse" "The Offering" "The Patient" "The Scavenger" "The Scout" "The Tireless Extractor" "The Valkyrie" "The Whiteout" "The Wrath"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1978,7 +1981,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 8
 Show
-	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
+	BaseType == "A Dab of Ink" "Assassin's Favour" "Doedre's Madness" "Etched in Blood" "Rain Tempter" "The Betrayal" "The Rusted Bard" "The Scarred Meadow" "Vanity"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1987,7 +1990,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 9
 Show
-	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
+	BaseType == "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -1996,7 +1999,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 10
 Show
-	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
+	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Harvester" "The Sephirot"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -2005,7 +2008,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 11
 Show
-	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
+	BaseType == "Divine Beauty" "The Fortunate" "The Hoarder" "The Lich"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -2014,7 +2017,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 12
 Show
-	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
+	BaseType == "Anarchy's Price" "Cursed Words" "The Cataclysm" "Triskaidekaphobia"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -2023,7 +2026,7 @@ Show
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 13
 Show
-	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
+	BaseType == "Lingering Remnants" "Mawr Blaidd"
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -2031,15 +2034,6 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 16
-Show
-	BaseType == "The Catch"
-	Class "Divination"
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
-	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
-	StackSize >= 18
 Show
 	BaseType == "Imperial Legacy"
 	Class "Divination"
@@ -2049,14 +2043,700 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 22
-Show
-	BaseType == "Rebirth"
-	Class "Divination"
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
-	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
-	StackSize >= 27
 #? end of [full-stack-divination-cards.filter]
 #? end of [currency.filter]
+# You can generate a series of filters for a particular item class. This will
+# use AreaLevel and DropLevel to hide lower level base types as you progress
+# through the game.
+# You can control when the items appear. The example shows the default values.
+# min: the minimum drop level to show
+# max: the maximum drop level to show
+# big: how many area levels past the drop level to show a larger style
+# show: how many area levels past the drop level to show at all
+Show
+	AreaLevel <= 2
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "1"
+	DropLevel < "5"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 8
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "1"
+	DropLevel < "5"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 6
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "5"
+	DropLevel < "10"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 12
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "5"
+	DropLevel < "10"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 11
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "10"
+	DropLevel < "15"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 17
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "10"
+	DropLevel < "15"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 16
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "15"
+	DropLevel < "20"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 22
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "15"
+	DropLevel < "20"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 21
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "20"
+	DropLevel < "25"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 27
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "20"
+	DropLevel < "25"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 26
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "25"
+	DropLevel < "30"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 32
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "25"
+	DropLevel < "30"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 31
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "30"
+	DropLevel < "35"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 37
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "30"
+	DropLevel < "35"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 36
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "35"
+	DropLevel < "40"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 42
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "35"
+	DropLevel < "40"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 41
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "40"
+	DropLevel < "45"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 47
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "40"
+	DropLevel < "45"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 46
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "45"
+	DropLevel < "50"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 52
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "45"
+	DropLevel < "50"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 51
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "50"
+	DropLevel < "55"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 57
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "50"
+	DropLevel < "55"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 56
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "55"
+	DropLevel < "60"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 62
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "55"
+	DropLevel < "60"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 61
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "60"
+	DropLevel < "65"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 67
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "60"
+	DropLevel < "65"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 66
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "65"
+	DropLevel < "70"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 72
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "65"
+	DropLevel < "70"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 71
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "70"
+	DropLevel < "75"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 77
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "70"
+	DropLevel < "75"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 76
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "75"
+	DropLevel < "80"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 82
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "75"
+	DropLevel < "80"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 81
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "80"
+	DropLevel < "85"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 87
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "80"
+	DropLevel < "85"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 86
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "85"
+	DropLevel < "90"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 92
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "85"
+	DropLevel < "90"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 91
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "90"
+	DropLevel < "95"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 97
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "90"
+	DropLevel < "95"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 96
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "95"
+	DropLevel < "99"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 102
+	Rarity <= Rare
+	Class == "Two Hand Maces"
+	DropLevel >= "95"
+	DropLevel < "99"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+# By default, filters are in increments of 5 DropLevels. If you know the
+# DropLevels of your item class, you can manually specify them. This ensures all
+# base types get highlighted at the appropriate time.
+Show
+	AreaLevel <= 11
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "10"
+	DropLevel < "15"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 17
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "10"
+	DropLevel < "15"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 16
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "15"
+	DropLevel < "20"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 22
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "15"
+	DropLevel < "20"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 21
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "20"
+	DropLevel < "25"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 27
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "20"
+	DropLevel < "25"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 26
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "25"
+	DropLevel < "30"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 32
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "25"
+	DropLevel < "30"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 31
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "30"
+	DropLevel < "35"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 37
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "30"
+	DropLevel < "35"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 36
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "35"
+	DropLevel < "40"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 42
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "35"
+	DropLevel < "40"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 41
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "40"
+	DropLevel < "45"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 47
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "40"
+	DropLevel < "45"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 46
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "45"
+	DropLevel < "50"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 52
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "45"
+	DropLevel < "50"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 51
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "50"
+	DropLevel < "55"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 57
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "50"
+	DropLevel < "55"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 56
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "55"
+	DropLevel < "60"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 62
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "55"
+	DropLevel < "60"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 61
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "60"
+	DropLevel < "65"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 67
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "60"
+	DropLevel < "65"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 66
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "65"
+	DropLevel < "70"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 72
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "65"
+	DropLevel < "70"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 71
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "70"
+	DropLevel < "75"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 77
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "70"
+	DropLevel < "75"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 76
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "75"
+	DropLevel < "80"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 82
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "75"
+	DropLevel < "80"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 81
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "80"
+	DropLevel < "85"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 87
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "80"
+	DropLevel < "85"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 86
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "85"
+	DropLevel < "90"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 92
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "85"
+	DropLevel < "90"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 91
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "90"
+	DropLevel < "95"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 97
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "90"
+	DropLevel < "95"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 96
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "95"
+	DropLevel < "99"
+	SetFontSize 45
+	SetBorderColor 13 255 201 255
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 102
+	Rarity <= Rare
+	Class == "Quarterstaves"
+	DropLevel >= "95"
+	DropLevel < "99"
+	SetFontSize 25
+	SetBorderColor 13 255 201 255
+	MinimapIcon 1 Pink Cross

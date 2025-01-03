@@ -1,0 +1,10 @@
+# example.filter and example2.filter won't get copied to the Path of Exile
+# directory. They are meant to explain how to use all the different commands.
+
+# Please see example.filter for a full explaination of commands.
+
+# #! poe2 means the filter is for Path of Exile 2.
+#
+# Path of Exile (1) filters seems to be mostly compatible with Path of Exile 2
+# besides the absence of socket links in items.
+#! poe2

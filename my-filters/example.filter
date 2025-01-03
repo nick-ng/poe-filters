@@ -1,19 +1,27 @@
+# example.filter and example2.filter won't get copied to the Path of Exile
+# directory. They are meant to explain how to use all the different commands.
+
 # Normal comments don't do anything
 # All .filter files in the my-filters directory will be processed. The repo has
-# this example filter and my personal filters
+# two example filter and my personal filters.
+#
 # The output filter will have the same name as the source file and will be in
 # the output-filters directory and all filters apart from example.filter will be
-# copied to the directory the Path of Exile uses
+# copied to the directory the Path of Exile uses.
 
 # Comments that begin with #! do something
+
 # #! skip will stop processing the filter, skip writing the filter, and delete
 # the processed filter if it exists. This is to reduce the number of filters in
 # filter dropdown in-game.
+#
 # The filter will be processed until the skip comment. This means any
 # text-to-speech comments before the skip comment will be processed. To save
 # processing time, you should skip as early as possible.
+#
 # Because there is an extra # before the #! skip, this #! comment won't do
-# anything. example.filter won't get copied to the Path of Exile directory.
+# anything. Note that since example.filter won't get copied to the Path of Exile
+# directory,
 # #! skip
 
 # You can highlight items with specific coloured links and play a text-to-speech
@@ -103,3 +111,20 @@ Show
 
 # If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
 #! import currency.filter
+
+# You can generate a series of filters for a particular item class. This will
+# use AreaLevel and DropLevel to hide lower level base types as you progress
+# through the game.
+#
+# You can control when the items appear. The example shows the default values.
+#
+# min: the minimum drop level to show
+# max: the maximum drop level to show
+# big: how many area levels past the drop level to show a larger style
+# show: how many area levels past the drop level to show at all
+#! droplevel class="Two Hand Maces" min=1 max=99 big=1 show=7
+
+# By default, filters are in increments of 5 DropLevels. If you know the
+# DropLevels of your item class, you can manually specify them. This ensures all
+# base types get highlighted at the appropriate time.
+#! droplevel class="Quarterstaves" min=10 levels=1,11,16,20,28,33,37,45,48,51,55,59,62,67,72,77,78

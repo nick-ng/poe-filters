@@ -1,0 +1,18 @@
+#! poe2
+
+Show
+ BaseType "Gold"
+
+Show
+ Class Currency
+ SetFontSize 50
+ SetTextColor 0 0 0
+ SetBorderColor 0 0 0
+ SetBackgroundColor 0 121 255
+
+Show
+ BaseType "Rune"
+ SetFontSize 50
+ SetTextColor 0 0 0
+ SetBorderColor 0 0 0
+ SetBackgroundColor 111 255 111

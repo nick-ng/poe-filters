@@ -315,5 +315,57 @@
 			"requiresLevel": 17,
 			"serious": true
 		}
+	],
+	"slow-1h-axes": [
+		{
+			"baseType": "Cleaver",
+			"requiresLevel": 16,
+			"serious": false
+		},
+		{
+			"baseType": "Decorative Axe",
+			"requiresLevel": 29,
+			"serious": true
+		},
+		{
+			"baseType": "Spectral Axe",
+			"requiresLevel": 33,
+			"serious": false
+		},
+		{
+			"baseType": "Jasper Axe",
+			"requiresLevel": 36,
+			"serious": false
+		},
+		{
+			"baseType": "Wrist Chopper",
+			"requiresLevel": 42,
+			"serious": true
+		},
+		{
+			"baseType": "Ceremonial Axe",
+			"requiresLevel": 51,
+			"serious": true
+		},
+		{
+			"baseType": "Wraith Axe",
+			"requiresLevel": 54,
+			"serious": false
+		},
+		{
+			"baseType": "Karui Axe",
+			"requiresLevel": 57,
+			"serious": false
+		},
+		{
+			"baseType": "Reaver Axe",
+			"requiresLevel": 61,
+			"serious": true
+		},
+		{
+			"baseType": "Royal Axe",
+			"requiresLevel": 67,
+			"serious": true
+		}
 	]
 }

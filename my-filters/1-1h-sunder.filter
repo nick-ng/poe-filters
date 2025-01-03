@@ -1,45 +1,21 @@
-# Orb of Chance bases
-
-
-# Divination Cards
+# Item Bases
 Show
-	BaseType == "The Escape" "The Gladiator" "Alivia's Grace"
-	SetFontSize 45
-	#!BrightBackground!#
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
-
-# Build Uniques
-Show
-	BaseType == "Rawhide Boots" "Stibnite Flask" "Mirrored Spiked Shield" "Assassin's Mitts" "Dragonscale Boots"
-	Rarity Unique
-	SetFontSize 45
-	#!BrightBackground!#
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
-
-#! linksa RGGG
-#! linksa GGGB
-#! linksa GGGG
-#! linksa RGG
-#! linksa GGG
-#! linksa GGB
-
-Show
-	BaseType == "Divine Life Flask"
+	BaseType "Reaver Axe"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
-	ItemLevel >= 81 # T1 increased amount recovered
+	ItemLevel = 83 # T1 Phys, T1 Cast Speed
 	#!GoodBaseBorder!#
 	MinimapIcon 1 Pink Star
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType "Blood Sap Tincture"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 84 # T1 Increased effec + mana burn rate, T1 DoT Multi with weapons.
+	#!GoodBaseBorder!#
+	MinimapIcon 1 Pink Star
 
 Show
 	ItemLevel >= 86
@@ -76,8 +52,16 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! weapons fast-2h-swords 12
-#! weapons fast-2h-axes 12
+#! linksa RRRG
+#! linksa RRRR
+#! linksa RGG 12
+#! linksa RRG
+#! linksa RRR
+
+#! weapons fast-2h-swords 11
+#! weapons fast-2h-maces 18
+#! weapons fast-2h-axes 35
+#! weapons slow-1h-axes 99 33
 
 #! import leveling.filter
 #! import currency.filter

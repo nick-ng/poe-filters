@@ -16,6 +16,11 @@ type DivinationCard struct {
 	Tier      int
 }
 
+type Flag struct {
+	Name  string
+	Value string
+}
+
 func MkDirIfNotExist(dirPath string) {
 	err := os.Mkdir(dirPath, 0755)
 
@@ -112,4 +117,57 @@ func MakeDivinationCardsFilter() {
 	os.WriteFile(divinationCardsFilterPath, []byte(filter), 0666)
 
 	fmt.Printf("%d divination cards found\n", len(divinationCards))
+}
+
+// given a string, returns a map with all flags. includes the name if present. otherwise, the name will be nil.
+// the flag's name, if present, must not contain an equals sign
+func ParseFlags(rawCommand string) []Flag {
+	fullCommand := strings.TrimSpace(rawCommand)
+	var flags []Flag
+
+	var word []rune
+	inQuote := false
+
+	for _, runeValue := range fullCommand {
+		if !inQuote && runeValue == ' ' {
+			flagString := string(word)
+			word = nil
+
+			if flagString == "#!" {
+				continue
+			}
+
+			hasEquals := strings.Contains(flagString, "=")
+			if !hasEquals {
+				flags = append(flags, Flag{
+					Value: flagString,
+				})
+
+			} else {
+				flagParts := strings.Split(flagString, "=")
+				flagName := flagParts[0]
+				flagValue := strings.Join(flagParts[1:], "=")
+				flagValue = strings.TrimSpace(flagValue)
+				flags = append(flags, Flag{
+					Name:  flagName,
+					Value: flagValue,
+				})
+			}
+
+			continue
+		}
+
+		// @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
+		if !inQuote && runeValue == '"' {
+			inQuote = true
+			continue
+		} else if inQuote && runeValue == '"' {
+			inQuote = false
+			continue
+		}
+
+		word = append(word, runeValue)
+	}
+
+	return flags
 }

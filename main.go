@@ -12,6 +12,10 @@ import (
 	"time"
 )
 
+type ProcessedFilterFlags struct {
+	Game string // poe1, poe2, or unset
+}
+
 const MY_FILTERS_PATH string = "my-filters"
 const BASE_FILTERS_PATH string = "base-filters"
 const BUILD_FILTERS_PATH string = "build-filters"
@@ -56,10 +60,15 @@ func main() {
 
 		path := filepath.Join(MY_FILTERS_PATH, filterName)
 
-		filter, errList := processFilter(path, false)
+		filter, flags, errList := processFilter(path, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
 		gameFilterPath := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
+
+		if flags.Game == "poe2" {
+			gameFilterPath = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile 2", filterName)
+		}
+
 		if len(filter) == 0 {
 			err := os.Remove(outputFilterPath)
 			err2 := os.Remove(gameFilterPath)
@@ -86,7 +95,7 @@ func main() {
 			continue
 		}
 
-		if filterName != "example.filter" {
+		if filterName != "example.filter" && filterName != "example2.filter" {
 			err = os.WriteFile(gameFilterPath, filterData, 0666)
 
 			if err != nil {
@@ -110,13 +119,15 @@ func main() {
 }
 
 // @todo(nick-ng): move some functions to separate files
-func processFilter(filterPath string, isImported bool) (string, []error) {
+func processFilter(filterPath string, isImported bool) (string, ProcessedFilterFlags, []error) {
 	var errorList []error
+
+	flags := ProcessedFilterFlags{}
 
 	filterData, err := os.ReadFile(filterPath)
 
 	if err != nil {
-		return "", append(errorList, err)
+		return "", flags, append(errorList, err)
 	}
 
 	rawLines := strings.Split(string(filterData), "\n")
@@ -128,11 +139,11 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 	Continue`)
 	}
 
+	// @todo(nick-ng): just get the command and pass the "raw" command to the relevant method. the method is responsible for getting arguments and flags.
 	var currentCommand string
 	var importAfterTimestamp int64
 	now := time.Now().Unix()
 	options := make(map[string][]string)
-
 	for _, rawLine := range rawLines {
 		trimmedLine := strings.TrimSpace(rawLine)
 		switch currentCommand {
@@ -174,7 +185,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
 								}
 
-								tempFilter, errs := processFilter(fullPath, true)
+								tempFilter, _, errs := processFilter(fullPath, true)
 
 								if len(errs) != 0 {
 									errorList = append(errorList, err)
@@ -262,6 +273,10 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 			{
 				commandArguments := getCommands(trimmedLine)
 				switch commandArguments[0] {
+				case "poe2":
+					{
+						flags.Game = "poe2"
+					}
 				case "import":
 					{
 						currentCommand = "import"
@@ -288,7 +303,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 					}
 				case "skip":
 					{
-						return "", []error{}
+						return "", flags, []error{}
 					}
 				case "noop":
 					fallthrough
@@ -424,6 +439,19 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 
 					processedLines2 = append(processedLines2, newLine)
 				}
+			case "droplevel":
+				{
+					// makes item filter based on item drop level
+					_ = utils.ParseFlags(rawLine)
+					newLine, err := utils.GetDropLevelFilter(rawLine)
+
+					if err != nil {
+						processedLines2 = append(processedLines2, "#? warning: couldn't get drop level filter")
+						continue
+					}
+
+					processedLines2 = append(processedLines2, newLine)
+				}
 			case "tts":
 				{
 					newLine := utils.MakeTts(trimmedLine)
@@ -451,7 +479,7 @@ func processFilter(filterPath string, isImported bool) (string, []error) {
 		filter = strings.ReplaceAll(filter, "Hide", "Show")
 	}
 
-	return filter, errorList
+	return filter, flags, errorList
 }
 
 func importBaseFilter(filterName string) (string, string, error) {
