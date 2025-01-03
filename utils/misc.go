@@ -169,5 +169,31 @@ func ParseFlags(rawCommand string) []Flag {
 		word = append(word, runeValue)
 	}
 
+	// handle the last flag
+	if word != nil {
+		flagString := string(word)
+
+		if flagString == "#!" {
+			return flags
+		}
+
+		hasEquals := strings.Contains(flagString, "=")
+		if !hasEquals {
+			flags = append(flags, Flag{
+				Value: flagString,
+			})
+
+		} else {
+			flagParts := strings.Split(flagString, "=")
+			flagName := flagParts[0]
+			flagValue := strings.Join(flagParts[1:], "=")
+			flagValue = strings.TrimSpace(flagValue)
+			flags = append(flags, Flag{
+				Name:  flagName,
+				Value: flagValue,
+			})
+		}
+	}
+
 	return flags
 }
