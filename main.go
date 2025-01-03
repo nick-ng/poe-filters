@@ -59,7 +59,6 @@ func main() {
 		fmt.Printf("%d: %s... ", i+1, filterName)
 
 		path := filepath.Join(MY_FILTERS_PATH, filterName)
-
 		filter, flags, errList := processFilter(path, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
@@ -139,11 +138,11 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	Continue`)
 	}
 
-	// @todo(nick-ng): just get the command and pass the "raw" command to the relevant method. the method is responsible for getting arguments and flags.
 	var currentCommand string
 	var importAfterTimestamp int64
 	now := time.Now().Unix()
 	options := make(map[string][]string)
+	// handle import command (multi-line)
 	for _, rawLine := range rawLines {
 		trimmedLine := strings.TrimSpace(rawLine)
 		switch currentCommand {
@@ -171,8 +170,9 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					}
 				case "import":
 					fallthrough
-				case "noop":
+				case "noop": // the line didn't start with #!
 					{
+						// why is this "if" statement necessary? doesn't it match both cases?
 						if !strings.HasPrefix(trimmedLine, "#") || subCommandArguments[0] == "import" {
 							// it's a non-comment line so import the filter here then write the line
 							_, present := options["file"]
@@ -269,13 +269,17 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					}
 				}
 			}
+		// there is no current command or the current line isn't a sub command of the current command
 		default:
 			{
 				commandArguments := getCommands(trimmedLine)
 				switch commandArguments[0] {
 				case "poe2":
 					{
+						// when a filter is imported, the game flag is ignored
 						flags.Game = "poe2"
+						tempLine := utils.CleanUpCommand(rawLine)
+						processedLines = append(processedLines, tempLine)
 					}
 				case "import":
 					{
@@ -318,6 +322,13 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 		}
 	}
 
+	// @todo(nick-ng): handle droplevel command
+	// handle import command (multi-line)
+
+	// @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
+	// separate loop for all non-multi-line commands. if we encounter a
+	// different command during a multi-line command, we need to handle the
+	// multi-line command and the new command.
 	rawLines = strings.Split(strings.Join(processedLines, "\n"), "\n")
 	var processedLines2 []string
 	for _, rawLine := range rawLines {
@@ -439,6 +450,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 					processedLines2 = append(processedLines2, newLine)
 				}
+			// @todo(nick-ng): move this to its own loop
 			case "droplevel":
 				{
 					// makes item filter based on item drop level

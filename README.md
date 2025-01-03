@@ -34,5 +34,7 @@ When you run it, it will try to copy filters to the Path of Exile directory
 - utils\weapons.go:94: @todo(nick-ng): add a way to add custom lines to each filter. #! custom and #! custombig
 - utils\weapons.go:105: @todo(nick-ng): base the defaults on the item class
 - utils\misc.go:160: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
-- main.go:121: @todo(nick-ng): move some functions to separate files
-- main.go:142: @todo(nick-ng): just get the command and pass the "raw" command to the relevant method. the method is responsible for getting arguments and flags.
+- main.go:120: @todo(nick-ng): move some functions to separate files
+- main.go:325: @todo(nick-ng): handle droplevel command
+- main.go:328: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
+- main.go:453: @todo(nick-ng): move this to its own loop
