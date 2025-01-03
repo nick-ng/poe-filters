@@ -103,7 +103,7 @@ func GetDropLevelFilter(rawCommand string) (string, error) {
 		"show": 7,
 	}
 	// @todo(nick-ng): base the defaults on the item class
-	levels := []int{1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95}
+	levels := []int{1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80}
 
 	for _, flag := range rawFlags {
 		switch flag.Name {
@@ -148,7 +148,7 @@ func GetDropLevelFilter(rawCommand string) (string, error) {
 	filterStrings := []string{}
 
 	for i, dropLevel := range levels {
-		upperDropLevel := 99
+		upperDropLevel := 86
 		if i < (len(levels) - 1) {
 			upperDropLevel = levels[i+1]
 		}

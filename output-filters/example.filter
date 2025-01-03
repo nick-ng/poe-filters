@@ -30,7 +30,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrg-axe.mp3" 300
@@ -46,7 +46,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrg-mace.mp3" 300
@@ -64,7 +64,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-boots.mp3" 300
@@ -78,7 +78,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-gloves.mp3" 300
@@ -92,7 +92,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-helm.mp3" 300
@@ -106,7 +106,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RRRG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rrrg-body.mp3" 300
@@ -122,7 +122,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-boots.mp3" 300
@@ -136,7 +136,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-gloves.mp3" 300
@@ -150,7 +150,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-helm.mp3" 300
@@ -164,7 +164,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGG
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgg-body.mp3" 300
@@ -180,7 +180,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGB
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-boots.mp3" 300
@@ -194,7 +194,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGB
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-gloves.mp3" 300
@@ -208,7 +208,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGB
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-helm.mp3" 300
@@ -222,7 +222,7 @@ Show
 	Rarity <= Rare
 	LinkedSockets <= 4
 	SocketGroup = RGB
-	SetBorderColor 200 0 0 255
+	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\rgb-body.mp3" 300
@@ -292,7 +292,7 @@ Show
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
+	SetTextColor 0 255 0 230
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
@@ -302,7 +302,7 @@ Show
 	Class "One Hand" "Two Hand" "Wand" "Sceptre" "Dagger" "Bow" "Staves" "Dagger" "Claw"
 	Quality >= 20
 	SetFontSize 45
-	SetTextColor 0 255 0 255
+	SetTextColor 0 255 0 230
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
@@ -322,7 +322,7 @@ Show
 	Class "Currency"
 	BaseType == "Orb of Horizons" "Harbinger's Orb"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
@@ -331,7 +331,7 @@ Show
 	Class "Currency"
 	BaseType == "Horizon Shard" "Harbinger's Shard"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
@@ -373,8 +373,8 @@ Show
 	Class "Currency"
 	AreaLevel <= 24
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-armourer.mp3" 200
@@ -383,8 +383,8 @@ Show
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-blacksmith.mp3" 200
@@ -393,8 +393,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Transmutation"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-transmute.mp3" 200
@@ -403,8 +403,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Alteration"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-alteration.mp3" 200
@@ -413,8 +413,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Fusing"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-fusing.mp3" 200
@@ -423,8 +423,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Alchemy"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-alchemy.mp3" 200
@@ -784,7 +784,7 @@ Show
 	AreaLevel <= 67
 	Sockets >= 4
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Moon
 # Show
 # 	Class == "Stackable Currency"
@@ -799,14 +799,14 @@ Show
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
 	StackSize > 1
 	SetFontSize 45
-	SetTextColor 190 178 135 255
+	SetTextColor 190 178 135 230
 	SetBorderColor 190 178 135 255
 #? import pre-watchstones.filter
 Show
 	Class "Currency"
 	BaseType == "Orb of Horizons"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-horizon.mp3" 200
@@ -814,7 +814,7 @@ Show
 	Class "Currency"
 	BaseType == "Horizon Shard"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 Show
@@ -836,7 +836,7 @@ Show
 	BaseType == "Driftwood Maul" # requires level 1
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 15
@@ -845,7 +845,7 @@ Show
 	BaseType == "Tribal Maul" # requires level 8
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 13
@@ -854,7 +854,7 @@ Show
 	BaseType == "Mallet" # requires level 12
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -864,7 +864,7 @@ Show
 	BaseType == "Mallet" # requires level 12
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 18
@@ -873,7 +873,7 @@ Show
 	BaseType == "Sledgehammer" # requires level 17
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -883,7 +883,7 @@ Show
 	BaseType == "Sledgehammer" # requires level 17
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 ### Maces End ###
 ### Axes Start ###
@@ -895,7 +895,7 @@ Show
 	BaseType == "Stone Axe" # requires level 1
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 16
@@ -904,7 +904,7 @@ Show
 	BaseType == "Jade Chopper" # requires level 9
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 14
@@ -913,7 +913,7 @@ Show
 	BaseType == "Woodsplitter" # requires level 13
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -923,7 +923,7 @@ Show
 	BaseType == "Woodsplitter" # requires level 13
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 25
@@ -932,7 +932,7 @@ Show
 	BaseType == "Poleaxe" # requires level 18
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 24
@@ -941,7 +941,7 @@ Show
 	BaseType == "Double Axe" # requires level 23
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -951,7 +951,7 @@ Show
 	BaseType == "Double Axe" # requires level 23
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 35
@@ -960,7 +960,7 @@ Show
 	BaseType == "Gilded Axe" # requires level 28
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 40
@@ -969,7 +969,7 @@ Show
 	BaseType == "Shadow Axe" # requires level 33
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 42
@@ -978,7 +978,7 @@ Show
 	BaseType == "Timber Axe" # requires level 41
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -988,7 +988,7 @@ Show
 	BaseType == "Timber Axe" # requires level 41
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 46
@@ -997,7 +997,7 @@ Show
 	BaseType == "Headsman Axe" # requires level 45
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1007,7 +1007,7 @@ Show
 	BaseType == "Headsman Axe" # requires level 45
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 56
@@ -1016,7 +1016,7 @@ Show
 	BaseType == "Labrys" # requires level 49
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 51
@@ -1025,7 +1025,7 @@ Show
 	BaseType == "Honed Cleaver" # requires level 50
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1035,7 +1035,7 @@ Show
 	BaseType == "Honed Cleaver" # requires level 50
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 53
@@ -1044,7 +1044,7 @@ Show
 	BaseType == "Noble Axe" # requires level 52
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1054,7 +1054,7 @@ Show
 	BaseType == "Noble Axe" # requires level 52
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 62
@@ -1063,7 +1063,7 @@ Show
 	BaseType == "Abyssal Axe" # requires level 55
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 67
@@ -1072,7 +1072,7 @@ Show
 	BaseType == "Sundering Axe" # requires level 60
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 63
@@ -1081,7 +1081,7 @@ Show
 	BaseType == "Ezomyte Axe" # requires level 62
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1091,7 +1091,7 @@ Show
 	BaseType == "Ezomyte Axe" # requires level 62
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 67
@@ -1100,7 +1100,7 @@ Show
 	BaseType == "Despot Axe" # requires level 66
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1110,7 +1110,7 @@ Show
 	BaseType == "Despot Axe" # requires level 66
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 75
@@ -1119,7 +1119,7 @@ Show
 	BaseType == "Void Axe" # requires level 68
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 71
@@ -1128,7 +1128,7 @@ Show
 	BaseType == "Apex Cleaver" # requires level 70
 	Corrupted False
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "d:\git\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
@@ -1138,7 +1138,7 @@ Show
 	BaseType == "Apex Cleaver" # requires level 70
 	Corrupted False
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 ### Axes End ###
 #? end of [2h-axes.filter]
@@ -1424,7 +1424,7 @@ Show
 # FracturedItem False
 # Identified False
 # HasInfluence None
-# SetBorderColor 122 122 122 255
+# SetBorderColor 122 122 122 230
 # Sockets < 6
 # Hide
 # Rarity Magic
@@ -1435,7 +1435,7 @@ Show
 # FracturedItem False
 # Identified False
 # HasInfluence None
-# SetBorderColor 122 122 122 255
+# SetBorderColor 122 122 122 230
 # Sockets < 6
 # Hide
 # Rarity Normal
@@ -1445,7 +1445,7 @@ Show
 # Corrupted False
 # FracturedItem False
 # HasInfluence None
-# SetBorderColor 122 122 122 255
+# SetBorderColor 122 122 122 230
 # Sockets < 6
 #? end of [bases.filter]
 #? import gold.filter 1722020400
@@ -1618,8 +1618,8 @@ Show
 	Class "Currency"
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
-	SetTextColor 250 0 125 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 250 0 125 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink Circle
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\thps-special-trick-1.mp3"
@@ -1627,8 +1627,8 @@ Show
 	Class "Currency"
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
-	SetTextColor 255 127 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 127 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
 	CustomAlertSound "d:\git\poe-filters\sounds\thps-special-trick-2.mp3"
@@ -1636,8 +1636,8 @@ Show
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
-	SetTextColor 255 127 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 127 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Pink
 	PlayAlertSound 11 200
@@ -1646,8 +1646,8 @@ Show
 	Class "Currency"
 	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
 	SetFontSize 45
-	SetTextColor 255 127 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 127 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 200
@@ -1656,8 +1656,8 @@ Show
 	Class "Currency"
 	BaseType "Catalyst" "Eldritch"
 	SetFontSize 45
-	SetTextColor 255 127 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 127 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 1 100
@@ -1666,8 +1666,8 @@ Show
 	Class "Currency"
 	BaseType == "Exalted Shard" "Ancient Shard"
 	SetFontSize 35
-	SetTextColor 255 127 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 127 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 150
@@ -1676,8 +1676,8 @@ Show
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow Circle
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1687,8 +1687,8 @@ Show
 	BaseType == "Orb of Chance"
 	AreaLevel < 74
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow Circle
 	CustomAlertSound "d:\git\poe-filters\tts-sounds\amy-chance.mp3" 200
 Hide
@@ -1697,14 +1697,14 @@ Hide
 	SetFontSize 45
 	AreaLevel > 77
 	StackSize < 3
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 Show
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Green Circle
 	PlayAlertSound 11 200
 ## T4 Currency ##
@@ -1714,22 +1714,22 @@ Show
 #	SetFontSize 45
 #	AreaLevel > 72
 #	StackSize < 6
-#	SetTextColor 0 255 0 255
-#	SetBorderColor 0 255 0 255
+#	SetTextColor 0 255 0 230
+#	SetBorderColor 0 255 0 230
 # Hide # White Maps
 # 	Class "Currency"
 # 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
 # 	SetFontSize 45
 # 	AreaLevel > 67
 # 	StackSize < 3
-# 	SetTextColor 0 255 0 255
-# 	SetBorderColor 0 255 0 255
+# 	SetTextColor 0 255 0 230
+# 	SetBorderColor 0 255 0 230
 Show
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 0 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Grey Circle
 	# CustomAlertSound "sounds/water-drop.mp3"
 Show
@@ -1737,7 +1737,7 @@ Show
 	BaseType == "Chaos Shard" "Regal Shard"
 	StackSize >= 1
 	SetFontSize 40
-	SetTextColor 190 178 135 255
+	SetTextColor 190 178 135 230
 	SetBorderColor 190 178 135 255
 	PlayEffect Grey
 Show
@@ -1745,7 +1745,7 @@ Show
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
 	StackSize >= 5
 	SetFontSize 35
-	SetTextColor 190 178 135 255
+	SetTextColor 190 178 135 230
 	SetBorderColor 190 178 135 255
 	PlayEffect Grey
 # Show
@@ -1780,7 +1780,7 @@ Show
 	BaseType "Divine" "Eternal"
 	Quality >= 19
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
@@ -1789,7 +1789,7 @@ Show
 	Class Flask
 	Quality >= 15
 	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetTextColor 255 255 0 230
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 ## Divination Cards ##
@@ -1797,8 +1797,8 @@ Show
 	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
 	Class "Divination"
 	SetFontSize 45
-	SetTextColor 250 0 125 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 250 0 125 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink Square
 	PlayEffect Green
 	CustomAlertSound "d:\git\poe-filters\sounds\ai_rue-oh-my-god.mp3"
@@ -1806,8 +1806,8 @@ Show
 	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1815,8 +1815,8 @@ Show
 	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
 	Class "Divination"
 	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 255 0 255
+	SetTextColor 255 255 0 230
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1877,8 +1877,8 @@ Show
 	Class Amulet
 	AnyEnchantment True
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 122 122 122 255
-	SetTextColor 154 141 207 255
+	SetBorderColor 122 122 122 230
+	SetTextColor 154 141 207 230
 	SetFontSize 45
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 ## Harvest
@@ -1914,7 +1914,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 Show
@@ -1922,7 +1922,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 2
@@ -1931,7 +1931,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 3
@@ -1940,7 +1940,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 4
@@ -1949,7 +1949,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 5
@@ -1958,7 +1958,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 6
@@ -1967,7 +1967,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 7
@@ -1976,7 +1976,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 8
@@ -1985,7 +1985,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 9
@@ -1994,7 +1994,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 10
@@ -2003,7 +2003,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 11
@@ -2012,7 +2012,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 12
@@ -2021,7 +2021,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 13
@@ -2030,7 +2030,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 16
@@ -2039,7 +2039,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 255
+	SetBorderColor 0 255 0 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\git\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 22
@@ -2060,7 +2060,7 @@ Show
 	DropLevel >= "1"
 	DropLevel < "5"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 8
@@ -2069,7 +2069,7 @@ Show
 	DropLevel >= "1"
 	DropLevel < "5"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 6
@@ -2078,7 +2078,7 @@ Show
 	DropLevel >= "5"
 	DropLevel < "10"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 12
@@ -2087,7 +2087,7 @@ Show
 	DropLevel >= "5"
 	DropLevel < "10"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 11
@@ -2096,7 +2096,7 @@ Show
 	DropLevel >= "10"
 	DropLevel < "15"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 17
@@ -2105,7 +2105,7 @@ Show
 	DropLevel >= "10"
 	DropLevel < "15"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 16
@@ -2114,7 +2114,7 @@ Show
 	DropLevel >= "15"
 	DropLevel < "20"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 22
@@ -2123,7 +2123,7 @@ Show
 	DropLevel >= "15"
 	DropLevel < "20"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 21
@@ -2132,7 +2132,7 @@ Show
 	DropLevel >= "20"
 	DropLevel < "25"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 27
@@ -2141,7 +2141,7 @@ Show
 	DropLevel >= "20"
 	DropLevel < "25"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 26
@@ -2150,7 +2150,7 @@ Show
 	DropLevel >= "25"
 	DropLevel < "30"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 32
@@ -2159,7 +2159,7 @@ Show
 	DropLevel >= "25"
 	DropLevel < "30"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 31
@@ -2168,7 +2168,7 @@ Show
 	DropLevel >= "30"
 	DropLevel < "35"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 37
@@ -2177,7 +2177,7 @@ Show
 	DropLevel >= "30"
 	DropLevel < "35"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 36
@@ -2186,7 +2186,7 @@ Show
 	DropLevel >= "35"
 	DropLevel < "40"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 42
@@ -2195,7 +2195,7 @@ Show
 	DropLevel >= "35"
 	DropLevel < "40"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 41
@@ -2204,7 +2204,7 @@ Show
 	DropLevel >= "40"
 	DropLevel < "45"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 47
@@ -2213,7 +2213,7 @@ Show
 	DropLevel >= "40"
 	DropLevel < "45"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 46
@@ -2222,7 +2222,7 @@ Show
 	DropLevel >= "45"
 	DropLevel < "50"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 52
@@ -2231,7 +2231,7 @@ Show
 	DropLevel >= "45"
 	DropLevel < "50"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 51
@@ -2240,7 +2240,7 @@ Show
 	DropLevel >= "50"
 	DropLevel < "55"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 57
@@ -2249,7 +2249,7 @@ Show
 	DropLevel >= "50"
 	DropLevel < "55"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 56
@@ -2258,7 +2258,7 @@ Show
 	DropLevel >= "55"
 	DropLevel < "60"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 62
@@ -2267,7 +2267,7 @@ Show
 	DropLevel >= "55"
 	DropLevel < "60"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 61
@@ -2276,7 +2276,7 @@ Show
 	DropLevel >= "60"
 	DropLevel < "65"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 67
@@ -2285,7 +2285,7 @@ Show
 	DropLevel >= "60"
 	DropLevel < "65"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 66
@@ -2294,7 +2294,7 @@ Show
 	DropLevel >= "65"
 	DropLevel < "70"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 72
@@ -2303,7 +2303,7 @@ Show
 	DropLevel >= "65"
 	DropLevel < "70"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 71
@@ -2312,7 +2312,7 @@ Show
 	DropLevel >= "70"
 	DropLevel < "75"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 77
@@ -2321,7 +2321,7 @@ Show
 	DropLevel >= "70"
 	DropLevel < "75"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 76
@@ -2330,7 +2330,7 @@ Show
 	DropLevel >= "75"
 	DropLevel < "80"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 82
@@ -2339,79 +2339,25 @@ Show
 	DropLevel >= "75"
 	DropLevel < "80"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 81
 	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "80"
-	DropLevel < "85"
+	DropLevel < "86"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 87
 	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "80"
-	DropLevel < "85"
+	DropLevel < "86"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 86
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "85"
-	DropLevel < "90"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 92
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "85"
-	DropLevel < "90"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 91
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "90"
-	DropLevel < "95"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 97
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "90"
-	DropLevel < "95"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 96
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "95"
-	DropLevel < "99"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 102
-	Rarity <= Rare
-	Class == "Two Hand Maces"
-	DropLevel >= "95"
-	DropLevel < "99"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 # By default, filters are in increments of 5 DropLevels. If you know the
 # DropLevels of your item class, you can manually specify them. This ensures all
@@ -2423,7 +2369,7 @@ Show
 	DropLevel >= "10"
 	DropLevel < "15"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 17
@@ -2432,7 +2378,7 @@ Show
 	DropLevel >= "10"
 	DropLevel < "15"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 16
@@ -2441,7 +2387,7 @@ Show
 	DropLevel >= "15"
 	DropLevel < "20"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 22
@@ -2450,7 +2396,7 @@ Show
 	DropLevel >= "15"
 	DropLevel < "20"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 21
@@ -2459,7 +2405,7 @@ Show
 	DropLevel >= "20"
 	DropLevel < "25"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 27
@@ -2468,7 +2414,7 @@ Show
 	DropLevel >= "20"
 	DropLevel < "25"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 26
@@ -2477,7 +2423,7 @@ Show
 	DropLevel >= "25"
 	DropLevel < "30"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 32
@@ -2486,7 +2432,7 @@ Show
 	DropLevel >= "25"
 	DropLevel < "30"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 31
@@ -2495,7 +2441,7 @@ Show
 	DropLevel >= "30"
 	DropLevel < "35"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 37
@@ -2504,7 +2450,7 @@ Show
 	DropLevel >= "30"
 	DropLevel < "35"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 36
@@ -2513,7 +2459,7 @@ Show
 	DropLevel >= "35"
 	DropLevel < "40"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 42
@@ -2522,7 +2468,7 @@ Show
 	DropLevel >= "35"
 	DropLevel < "40"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 41
@@ -2531,7 +2477,7 @@ Show
 	DropLevel >= "40"
 	DropLevel < "45"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 47
@@ -2540,7 +2486,7 @@ Show
 	DropLevel >= "40"
 	DropLevel < "45"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 46
@@ -2549,7 +2495,7 @@ Show
 	DropLevel >= "45"
 	DropLevel < "50"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 52
@@ -2558,7 +2504,7 @@ Show
 	DropLevel >= "45"
 	DropLevel < "50"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 51
@@ -2567,7 +2513,7 @@ Show
 	DropLevel >= "50"
 	DropLevel < "55"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 57
@@ -2576,7 +2522,7 @@ Show
 	DropLevel >= "50"
 	DropLevel < "55"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 56
@@ -2585,7 +2531,7 @@ Show
 	DropLevel >= "55"
 	DropLevel < "60"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 62
@@ -2594,7 +2540,7 @@ Show
 	DropLevel >= "55"
 	DropLevel < "60"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 61
@@ -2603,7 +2549,7 @@ Show
 	DropLevel >= "60"
 	DropLevel < "65"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 67
@@ -2612,7 +2558,7 @@ Show
 	DropLevel >= "60"
 	DropLevel < "65"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 66
@@ -2621,7 +2567,7 @@ Show
 	DropLevel >= "65"
 	DropLevel < "70"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 72
@@ -2630,7 +2576,7 @@ Show
 	DropLevel >= "65"
 	DropLevel < "70"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 71
@@ -2639,7 +2585,7 @@ Show
 	DropLevel >= "70"
 	DropLevel < "75"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 77
@@ -2648,7 +2594,7 @@ Show
 	DropLevel >= "70"
 	DropLevel < "75"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 76
@@ -2657,7 +2603,7 @@ Show
 	DropLevel >= "75"
 	DropLevel < "80"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 82
@@ -2666,77 +2612,23 @@ Show
 	DropLevel >= "75"
 	DropLevel < "80"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 81
 	Rarity <= Rare
 	Class == "Quarterstaves"
 	DropLevel >= "80"
-	DropLevel < "85"
+	DropLevel < "86"
 	SetFontSize 45
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 87
 	Rarity <= Rare
 	Class == "Quarterstaves"
 	DropLevel >= "80"
-	DropLevel < "85"
+	DropLevel < "86"
 	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 86
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "85"
-	DropLevel < "90"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 92
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "85"
-	DropLevel < "90"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 91
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "90"
-	DropLevel < "95"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 97
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "90"
-	DropLevel < "95"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 96
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "95"
-	DropLevel < "99"
-	SetFontSize 45
-	SetBorderColor 13 255 201 255
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 102
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "95"
-	DropLevel < "99"
-	SetFontSize 25
-	SetBorderColor 13 255 201 255
+	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
