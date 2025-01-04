@@ -2053,600 +2053,839 @@ Show
 # max: the maximum drop level to show
 # big: how many area levels past the drop level to show a larger style
 # show: how many area levels past the drop level to show at all
+#? droplevel class="Two Hand Maces" min=1 max=99 big=2 show=7
 Show
-	AreaLevel <= 2
-	Rarity <= Rare
+	AreaLevel <= 3
 	Class == "Two Hand Maces"
 	DropLevel >= "1"
 	DropLevel < "5"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 8
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "1"
 	DropLevel < "5"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 6
-	Rarity <= Rare
+	AreaLevel <= 7
 	Class == "Two Hand Maces"
 	DropLevel >= "5"
 	DropLevel < "10"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 12
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "5"
 	DropLevel < "10"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 11
-	Rarity <= Rare
+	AreaLevel <= 12
 	Class == "Two Hand Maces"
 	DropLevel >= "10"
 	DropLevel < "15"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 17
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "10"
 	DropLevel < "15"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 16
-	Rarity <= Rare
+	AreaLevel <= 17
 	Class == "Two Hand Maces"
 	DropLevel >= "15"
 	DropLevel < "20"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 22
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "15"
 	DropLevel < "20"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 21
-	Rarity <= Rare
+	AreaLevel <= 22
 	Class == "Two Hand Maces"
 	DropLevel >= "20"
 	DropLevel < "25"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 27
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "20"
 	DropLevel < "25"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 26
-	Rarity <= Rare
+	AreaLevel <= 27
 	Class == "Two Hand Maces"
 	DropLevel >= "25"
 	DropLevel < "30"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 32
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "25"
 	DropLevel < "30"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 31
-	Rarity <= Rare
+	AreaLevel <= 32
 	Class == "Two Hand Maces"
 	DropLevel >= "30"
 	DropLevel < "35"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 37
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "30"
 	DropLevel < "35"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 36
-	Rarity <= Rare
+	AreaLevel <= 37
 	Class == "Two Hand Maces"
 	DropLevel >= "35"
 	DropLevel < "40"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 42
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "35"
 	DropLevel < "40"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 41
-	Rarity <= Rare
+	AreaLevel <= 42
 	Class == "Two Hand Maces"
 	DropLevel >= "40"
 	DropLevel < "45"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 47
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "40"
 	DropLevel < "45"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 46
-	Rarity <= Rare
+	AreaLevel <= 47
 	Class == "Two Hand Maces"
 	DropLevel >= "45"
 	DropLevel < "50"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 52
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "45"
 	DropLevel < "50"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 51
-	Rarity <= Rare
+	AreaLevel <= 52
 	Class == "Two Hand Maces"
 	DropLevel >= "50"
 	DropLevel < "55"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 57
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "50"
 	DropLevel < "55"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 56
-	Rarity <= Rare
+	AreaLevel <= 57
 	Class == "Two Hand Maces"
 	DropLevel >= "55"
 	DropLevel < "60"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 62
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "55"
 	DropLevel < "60"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 61
-	Rarity <= Rare
+	AreaLevel <= 62
 	Class == "Two Hand Maces"
 	DropLevel >= "60"
 	DropLevel < "65"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 67
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "60"
 	DropLevel < "65"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 66
-	Rarity <= Rare
+	AreaLevel <= 67
 	Class == "Two Hand Maces"
 	DropLevel >= "65"
 	DropLevel < "70"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 72
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "65"
 	DropLevel < "70"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 71
-	Rarity <= Rare
+	AreaLevel <= 72
 	Class == "Two Hand Maces"
 	DropLevel >= "70"
 	DropLevel < "75"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 77
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "70"
 	DropLevel < "75"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 76
-	Rarity <= Rare
+	AreaLevel <= 77
 	Class == "Two Hand Maces"
 	DropLevel >= "75"
 	DropLevel < "80"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 82
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "75"
 	DropLevel < "80"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 81
-	Rarity <= Rare
+	AreaLevel <= 82
 	Class == "Two Hand Maces"
 	DropLevel >= "80"
 	DropLevel < "86"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 87
-	Rarity <= Rare
 	Class == "Two Hand Maces"
 	DropLevel >= "80"
 	DropLevel < "86"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 # By default, filters are in increments of 5 DropLevels. If you know the
-# DropLevels of your item class, you can manually specify them. This ensures all
-# base types get highlighted at the appropriate time.
+# DropLevels of your item class, you can manually specify them.
+# If you do, items are only shown if they have the exact drop level. This is
+# useful if you want to exclude some base types.
+# 16, 51, 78 = lightning damage quarterstaves
+#? droplevel class="Quarterstaves" min=10 levels=1,11,20,28,33,37,45,48,55,59,62,67,72,77,79
 Show
 	AreaLevel <= 12
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "11"
-	DropLevel < "16"
+	DropLevel == "11"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 18
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "11"
-	DropLevel < "16"
-	SetFontSize 25
-	SetBorderColor 13 255 201 230
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 17
+	DropLevel == "11"
 	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "16"
-	DropLevel < "20"
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 23
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "16"
-	DropLevel < "20"
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 21
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "20"
-	DropLevel < "28"
+	DropLevel == "20"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 27
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "20"
-	DropLevel < "28"
+	DropLevel == "20"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 29
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "28"
-	DropLevel < "33"
+	DropLevel == "28"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 35
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "28"
-	DropLevel < "33"
+	DropLevel == "28"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 34
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "33"
-	DropLevel < "37"
+	DropLevel == "33"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 40
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "33"
-	DropLevel < "37"
+	DropLevel == "33"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 38
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "37"
-	DropLevel < "45"
+	DropLevel == "37"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 44
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "37"
-	DropLevel < "45"
+	DropLevel == "37"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 46
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "45"
-	DropLevel < "48"
+	DropLevel == "45"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 52
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "45"
-	DropLevel < "48"
+	DropLevel == "45"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 49
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "48"
-	DropLevel < "51"
+	DropLevel == "48"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 55
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "48"
-	DropLevel < "51"
-	SetFontSize 25
-	SetBorderColor 13 255 201 230
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 52
+	DropLevel == "48"
 	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "51"
-	DropLevel < "55"
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-Show
-	AreaLevel <= 58
-	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "51"
-	DropLevel < "55"
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 56
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "55"
-	DropLevel < "59"
+	DropLevel == "55"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 62
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "55"
-	DropLevel < "59"
+	DropLevel == "55"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 60
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "59"
-	DropLevel < "62"
+	DropLevel == "59"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 66
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "59"
-	DropLevel < "62"
+	DropLevel == "59"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 63
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "62"
-	DropLevel < "67"
+	DropLevel == "62"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 69
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "62"
-	DropLevel < "67"
+	DropLevel == "62"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 68
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "67"
-	DropLevel < "72"
+	DropLevel == "67"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 74
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "67"
-	DropLevel < "72"
+	DropLevel == "67"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 73
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "72"
-	DropLevel < "77"
+	DropLevel == "72"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 79
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "72"
-	DropLevel < "77"
+	DropLevel == "72"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 78
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "77"
-	DropLevel < "78"
+	DropLevel == "77"
+	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 84
-	Rarity <= Rare
 	Class == "Quarterstaves"
-	DropLevel >= "77"
-	DropLevel < "78"
+	DropLevel == "77"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 80
+	Class == "Quarterstaves"
+	DropLevel == "79"
+	Rarity <= Rare
+	SetFontSize 45
+	SetBorderColor 13 255 201 230
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 86
+	Class == "Quarterstaves"
+	DropLevel == "79"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+# You can set custom appearances by using the #! custom command. The same style
+# will be used for both "show" and "big".
+# You can further customise "big" items with the #! custombig command.
+# The example shows the default style.
+#? droplevel class="Bows" levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
+#? custom Rarity <= Rare
+#? custom SetFontSize 25
+#? custom SetBorderColor 13 255 201 230
+#? custom MinimapIcon 1 Pink Cross
+#? custombig SetFontSize 45
+#? custombig MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 2
+	Class == "Bows"
+	DropLevel == "1"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 8
+	Class == "Bows"
+	DropLevel == "1"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 6
+	Class == "Bows"
+	DropLevel == "5"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 12
+	Class == "Bows"
+	DropLevel == "5"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 12
+	Class == "Bows"
+	DropLevel == "11"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 18
+	Class == "Bows"
+	DropLevel == "11"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 17
+	Class == "Bows"
+	DropLevel == "16"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 23
+	Class == "Bows"
+	DropLevel == "16"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 23
+	Class == "Bows"
+	DropLevel == "22"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 29
+	Class == "Bows"
+	DropLevel == "22"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 29
+	Class == "Bows"
+	DropLevel == "28"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 35
+	Class == "Bows"
+	DropLevel == "28"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 34
+	Class == "Bows"
+	DropLevel == "33"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 40
+	Class == "Bows"
+	DropLevel == "33"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 40
+	Class == "Bows"
+	DropLevel == "39"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 46
+	Class == "Bows"
+	DropLevel == "39"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 46
+	Class == "Bows"
+	DropLevel == "45"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 52
+	Class == "Bows"
+	DropLevel == "45"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 49
+	Class == "Bows"
+	DropLevel == "48"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 55
+	Class == "Bows"
+	DropLevel == "48"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 52
+	Class == "Bows"
+	DropLevel == "51"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 58
+	Class == "Bows"
+	DropLevel == "51"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 56
+	Class == "Bows"
+	DropLevel == "55"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 62
+	Class == "Bows"
+	DropLevel == "55"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 60
+	Class == "Bows"
+	DropLevel == "59"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 66
+	Class == "Bows"
+	DropLevel == "59"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 63
+	Class == "Bows"
+	DropLevel == "62"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 69
+	Class == "Bows"
+	DropLevel == "62"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 73
+	Class == "Bows"
+	DropLevel == "72"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 79
+	Class == "Bows"
+	DropLevel == "72"
+	Rarity <= Rare
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 78
+	Class == "Bows"
+	DropLevel == "77"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 84
+	Class == "Bows"
+	DropLevel == "77"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
 	AreaLevel <= 79
+	Class == "Bows"
+	DropLevel == "78"
 	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "78"
-	DropLevel < "86"
-	SetFontSize 45
 	SetBorderColor 13 255 201 230
+	SetFontSize 45
 	MinimapIcon 2 Pink Cross
 Show
 	AreaLevel <= 85
+	Class == "Bows"
+	DropLevel == "78"
 	Rarity <= Rare
-	Class == "Quarterstaves"
-	DropLevel >= "78"
-	DropLevel < "86"
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 80
+	Class == "Bows"
+	DropLevel == "79"
+	Rarity <= Rare
+	SetBorderColor 13 255 201 230
+	SetFontSize 45
+	MinimapIcon 2 Pink Cross
+Show
+	AreaLevel <= 86
+	Class == "Bows"
+	DropLevel == "79"
+	Rarity <= Rare
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross

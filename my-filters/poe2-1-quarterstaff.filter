@@ -5,8 +5,78 @@
 # level 14 = ice strike
 #! droplevel class="Bows" max=16 levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
 
-#! droplevel class="Quarterstaves" min=11 big=2 levels=1,11,16,20,28,33,37,45,48,51,55,59,62,67,72,77,78
+# 16, 51, 78 = lightning damage quarterstaves
+#! droplevel class="Quarterstaves" min=11 big=2 levels=1,11,20,28,33,37,45,48,55,59,62,67,72,77,79
 
+# dex body armour 1,11,16,22,26,33,36,45,48,51,55,59,62,65,70,75
+# dex/int body armour 1,11,16,28,33,39,45,48,51,55,59,62,65,70,75
+#! droplevel class="Body Armours" min=1 big=2 levels=1,11,16,22,26,28,33,36,39,45,48,51,55,59,62,65,70,75
+#! custom BaseType = "Vest" "Coat" "Garb" "Jacket"
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# int helmet 1,10,16,26,33,40,45,48,51,55,59,65,70,75
+#! droplevel class="Helmets" min=1 big=2 levels=1,10,16,26,33,40,45,48,51,55,59,65,70,75
+#! custom BaseType = "Circlet" "Tiara"
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# int boots 1,11,16,27,33,45,51,55,59,65,70,75
+# dex/int boots 5,16,33,45,51,59,65,70,75
+#! droplevel class="Boots" min=1 big=2 levels=1,5,11,16,27,33,45,51,55,59,65,70,75
+#! custom BaseType = "Sandals" "Slippers" "Shoes"
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# int golves 1,12,16,26,33,45,51,55,59,65,70,75
+# dex/int golves 1,16,33,45,51,65,70
+#! droplevel class="Gloves" min=1 big=2 levels=1,5,11,16,27,33,45,51,55,59,65,70,75
+#! custom BaseType = "Bracers" "Gloves"
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# hide all normal weapons that weren't shown in a filter above
 Hide
-  Class == "Bows" "Crossbows" "One Hand Maces" "Quarterstaves" "Two Hand Maces" "Sceptres" "Staves" "Wands" "Foci"
+  Class == "Bows" "Crossbows" "One Hand Maces" "Quarterstaves" "Two Hand Maces" "Sceptres" "Staves" "Wands"
   Rarity == Normal
+
+# hide all magic weapons that weren't shown in a filter above
+Hide
+  AreaLevel > 20
+  Class == "Bows" "Crossbows" "One Hand Maces" "Quarterstaves" "Two Hand Maces" "Sceptres" "Staves" "Wands"
+  Rarity == Magic
+
+# hide all magic off hands that weren't shown in a filter above
+Hide
+  Class == "Foci" "Shields"
+  Rarity == Normal
+
+# hide all magic off hands that weren't shown in a filter above
+Hide
+  AreaLevel > 20
+  Class == "Quivers" "Foci" "Shields"
+  Rarity == Magic
+
+# hide all normal armour that wasn't shown in a filter above
+Hide
+  AreaLevel > 10
+  Class == "Body Armours" "Helmets" "Boots" "Gloves"
+  Rarity == Normal
+
+# hide all magic armour that wasn't shown in a filter above
+Hide
+  AreaLevel > 20
+  Class == "Body Armours" "Helmets" "Boots" "Gloves"
+  Rarity == Magic

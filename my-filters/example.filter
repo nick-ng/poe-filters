@@ -122,9 +122,23 @@ Show
 # max: the maximum drop level to show
 # big: how many area levels past the drop level to show a larger style
 # show: how many area levels past the drop level to show at all
-#! droplevel class="Two Hand Maces" min=1 max=99 big=1 show=7
+#! droplevel class="Two Hand Maces" min=1 max=99 big=2 show=7
 
 # By default, filters are in increments of 5 DropLevels. If you know the
-# DropLevels of your item class, you can manually specify them. This ensures all
-# base types get highlighted at the appropriate time.
-#! droplevel class="Quarterstaves" min=10 levels=1,11,16,20,28,33,37,45,48,51,55,59,62,67,72,77,78
+# DropLevels of your item class, you can manually specify them.
+# If you do, items are only shown if they have the exact drop level. This is
+# useful if you want to exclude some base types.
+# 16, 51, 78 = lightning damage quarterstaves
+#! droplevel class="Quarterstaves" min=10 levels=1,11,20,28,33,37,45,48,55,59,62,67,72,77,79
+
+# You can set custom appearances by using the #! custom command. The same style
+# will be used for both "show" and "big".
+# You can further customise "big" items with the #! custombig command.
+# The example shows the default style.
+#! droplevel class="Bows" levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom SetBorderColor 13 255 201 230
+#! custom MinimapIcon 1 Pink Cross
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 2 Pink Cross

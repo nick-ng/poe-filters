@@ -131,9 +131,9 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 	rawLines := strings.Split(string(filterData), "\n")
 
-	var processedLines []string
+	var filterChunks []string
 	if !isImported {
-		processedLines = append(processedLines, `Show
+		filterChunks = append(filterChunks, `Show
 	#!DefaultBackground!# 120
 	Continue`)
 	}
@@ -181,18 +181,18 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 								if err != nil {
 									errorList = append(errorList, err)
-									processedLines = append(processedLines, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
-									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
+									filterChunks = append(filterChunks, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
+									filterChunks = append(filterChunks, fmt.Sprintf("#?  %s\n", err))
 								}
 
 								tempFilter, _, errs := processFilter(fullPath, true)
 
 								if len(errs) != 0 {
 									errorList = append(errorList, err)
-									processedLines = append(processedLines, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
-									processedLines = append(processedLines, fmt.Sprintf("#?  %s\n", err))
+									filterChunks = append(filterChunks, fmt.Sprintf("#? error: couldn't import %s", options["file"]))
+									filterChunks = append(filterChunks, fmt.Sprintf("#?  %s\n", err))
 								} else if now < int64(importAfterTimestamp) {
-									processedLines = append(processedLines, fmt.Sprintf("#?  skipped because generated at %d", now))
+									filterChunks = append(filterChunks, fmt.Sprintf("#?  skipped because generated at %d", now))
 								} else { // nothing wrong. we can modify the imported filter
 									for _, deleteRegexpString := range options["delete"] {
 										deleteRegexp, err := regexp.Compile(deleteRegexpString)
@@ -200,7 +200,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 										if err != nil {
 											errorString := fmt.Sprintf("couldn't compile regexp: %s", deleteRegexpString)
 											errorList = append(errorList, errors.New(errorString))
-											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
+											filterChunks = append(filterChunks, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter = deleteRegexp.ReplaceAllString(tempFilter, "")
 										}
@@ -212,7 +212,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 										if err != nil {
 											errorString := fmt.Sprintf("couldn't compile regexp: %s", includeRegexpString)
 											errorList = append(errorList, errors.New(errorString))
-											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
+											filterChunks = append(filterChunks, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter = includeRegexp.ReplaceAllString(tempFilter, "")
 										}
@@ -224,26 +224,26 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 										if err != nil {
 											errorString := fmt.Sprintf("maxarea argument not an integer: %s", options["maxarea"][0])
 											errorList = append(errorList, errors.New(errorString))
-											processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
+											filterChunks = append(filterChunks, fmt.Sprintf("#? error: %s", errorString))
 										} else {
 											tempFilter2, err := utils.LimitMaxAreaLevel(tempFilter, int(maxarea))
 
 											if err != nil {
 												errorString := fmt.Sprintf("couldn't lower filter's level: %s", err)
 												errorList = append(errorList, errors.New(errorString))
-												processedLines = append(processedLines, fmt.Sprintf("#? error: %s", errorString))
+												filterChunks = append(filterChunks, fmt.Sprintf("#? error: %s", errorString))
 											} else {
 												tempFilter = tempFilter2
 											}
 										}
 									}
 
-									processedLines = append(processedLines, tempFilter)
-									processedLines = append(processedLines, fmt.Sprintf("#? end of %s\n", options["file"]))
+									filterChunks = append(filterChunks, tempFilter)
+									filterChunks = append(filterChunks, fmt.Sprintf("#? end of %s\n", options["file"]))
 								}
 
 							} else {
-								processedLines = append(processedLines, "#? error: No file specified.\n")
+								filterChunks = append(filterChunks, "#? error: No file specified.\n")
 							}
 
 							currentCommand = ""
@@ -255,17 +255,17 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 							options["file"] = []string{subCommandArguments[1]}
 
 							tempLine := utils.CleanUpCommand(rawLine)
-							processedLines = append(processedLines, tempLine)
+							filterChunks = append(filterChunks, tempLine)
 						} else {
-							processedLines = append(processedLines, rawLine)
+							filterChunks = append(filterChunks, rawLine)
 						}
 					}
 				default:
 					{
-						processedLines = append(processedLines, trimmedLine)
+						filterChunks = append(filterChunks, trimmedLine)
 
 						warning := fmt.Sprintf("#? warning: Unknown sub-command %s", subCommandArguments[0])
-						processedLines = append(processedLines, warning)
+						filterChunks = append(filterChunks, warning)
 					}
 				}
 			}
@@ -279,7 +279,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						// when a filter is imported, the game flag is ignored
 						flags.Game = "poe2"
 						tempLine := utils.CleanUpCommand(rawLine)
-						processedLines = append(processedLines, tempLine)
+						filterChunks = append(filterChunks, tempLine)
 					}
 				case "import":
 					{
@@ -295,15 +295,15 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						}
 
 						tempLine := utils.CleanUpCommand(rawLine)
-						processedLines = append(processedLines, tempLine)
+						filterChunks = append(filterChunks, tempLine)
 					}
 				case "del":
 					fallthrough
 				case "delete":
 					{
-						processedLines = append(processedLines, rawLine)
+						filterChunks = append(filterChunks, rawLine)
 						warning := fmt.Sprintf("#? warning: %s only allowed during an import", commandArguments[0])
-						processedLines = append(processedLines, warning)
+						filterChunks = append(filterChunks, warning)
 					}
 				case "skip":
 					{
@@ -313,7 +313,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					fallthrough
 				default:
 					{
-						processedLines = append(processedLines, rawLine)
+						filterChunks = append(filterChunks, rawLine)
 						// Handle in the next loop so we don't get double warnings
 						// noop is also here
 					}
@@ -322,16 +322,61 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 		}
 	}
 
-	// @todo(nick-ng): handle droplevel command
+	tempFilter := strings.Join(filterChunks, "\n")
+	tempFilterLines := strings.Split(tempFilter, "\n")
 	// handle import command (multi-line)
+	var tempFilterChunks []string
+	var rawCommand string
+	var isCommandStarted bool
+	clear(options)
+	for _, line := range tempFilterLines {
+		trimmedLine := strings.TrimSpace(line)
+		commandArgs := getCommands(trimmedLine)
+		command := strings.ToLower(commandArgs[0])
+		if isCommandStarted && command != "custom" && command != "custombig" {
+			isCommandStarted = false
+			dropLevelChunk, err := utils.GetDropLevelFilter(rawCommand, options["custom"], options["custombig"])
+			if err != nil {
+				tempFilterChunks = append(tempFilterChunks, fmt.Sprintf("#? error: couldn't make droplevel filter from \"%s\" because %s", rawCommand, err))
+			} else {
+				tempFilterChunks = append(tempFilterChunks, dropLevelChunk)
+			}
+		}
+
+		completedCommand := utils.CleanUpCommand(line)
+		switch command {
+		case "droplevel":
+			{
+				isCommandStarted = true
+				rawCommand = line
+				clear(options)
+				tempFilterChunks = append(tempFilterChunks, completedCommand)
+			}
+		case "custom":
+			fallthrough
+		case "custombig":
+			{
+				customStyle := strings.Join(commandArgs[1:], " ")
+				options[command] = append(options[command], customStyle)
+				tempFilterChunks = append(tempFilterChunks, completedCommand)
+			}
+		default:
+			{
+				tempFilterChunks = append(tempFilterChunks, line)
+			}
+		}
+	}
+
+	filterChunks = tempFilterChunks
 
 	// @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
 	// separate loop for all non-multi-line commands. if we encounter a
 	// different command during a multi-line command, we need to handle the
 	// multi-line command and the new command.
-	rawLines = strings.Split(strings.Join(processedLines, "\n"), "\n")
-	var processedLines2 []string
-	for _, rawLine := range rawLines {
+	tempFilter = strings.Join(filterChunks, "\n")
+	tempFilterLines = strings.Split(tempFilter, "\n")
+	clear(tempFilterChunks)
+	for _, rawLine := range tempFilterLines {
 		trimmedLine := strings.TrimSpace(rawLine)
 
 		if strings.HasPrefix(trimmedLine, "#! ") {
@@ -345,16 +390,16 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 				fallthrough
 			case "noop":
 				{
-					processedLines2 = append(processedLines2, rawLine)
+					tempFilterChunks = append(tempFilterChunks, rawLine)
 					// noop
 				}
 			case "links":
 				{
 					tempLine := utils.CleanUpCommand(rawLine)
-					processedLines2 = append(processedLines2, tempLine)
+					tempFilterChunks = append(tempFilterChunks, tempLine)
 
 					if len(commandArguments) < 2 {
-						processedLines2 = append(processedLines2, "#? warning: need at least coloured links (SocketGroup) to work")
+						tempFilterChunks = append(tempFilterChunks, "#? warning: need at least coloured links (SocketGroup) to work")
 						continue
 					}
 
@@ -362,9 +407,9 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 					if err != nil {
 						e := fmt.Sprintf("#? error: couldn't generate links\n#?  %s", err)
-						processedLines2 = append(processedLines2, e)
+						tempFilterChunks = append(tempFilterChunks, e)
 					} else {
-						processedLines2 = append(processedLines2, filterBlock)
+						tempFilterChunks = append(tempFilterChunks, filterBlock)
 					}
 
 				}
@@ -375,29 +420,29 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 			case "linksarmour":
 				{
 					tempLine := utils.CleanUpCommand(rawLine)
-					processedLines2 = append(processedLines2, tempLine)
+					tempFilterChunks = append(tempFilterChunks, tempLine)
 
 					if len(commandArguments) < 2 {
-						processedLines2 = append(processedLines2, "#? warning: need at least coloured links (SocketGroup) to work")
+						tempFilterChunks = append(tempFilterChunks, "#? warning: need at least coloured links (SocketGroup) to work")
 						continue
 					}
 
 					newLine := utils.GetArmourSocketGroupFilter(commandArguments[1], commandArguments[2:]...)
-					processedLines2 = append(processedLines2, newLine)
+					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
 			case "weapon":
 				fallthrough
 			case "weapons":
 				{
 					tempLine := utils.CleanUpCommand(rawLine)
-					processedLines2 = append(processedLines2, tempLine)
+					tempFilterChunks = append(tempFilterChunks, tempLine)
 					maxLevel := 99
 					minLevel := 0
 					seriousAdjustment := 1
 					showAdjustment := 7
 
 					if len(commandArguments) < 2 {
-						processedLines2 = append(processedLines2, "#? warning: need at least the weapon group (slow-wands, crit-bows, etc.) to work")
+						tempFilterChunks = append(tempFilterChunks, "#? warning: need at least the weapon group (slow-wands, crit-bows, etc.) to work")
 						continue
 					}
 
@@ -405,7 +450,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						maxLevel64, err := strconv.ParseInt(commandArguments[2], 10, 64)
 
 						if err != nil {
-							processedLines2 = append(processedLines2, "#? couldn't parse max level")
+							tempFilterChunks = append(tempFilterChunks, "#? couldn't parse max level")
 						} else {
 							maxLevel = int(maxLevel64)
 						}
@@ -415,7 +460,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						minLevel64, err := strconv.ParseInt(commandArguments[3], 10, 64)
 
 						if err != nil {
-							processedLines2 = append(processedLines2, "#? couldn't parse min level")
+							tempFilterChunks = append(tempFilterChunks, "#? couldn't parse min level")
 						} else {
 							minLevel = int(minLevel64)
 						}
@@ -425,7 +470,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						seriousAdjustment64, err := strconv.ParseInt(commandArguments[4], 10, 64)
 
 						if err != nil {
-							processedLines2 = append(processedLines2, "#? couldn't parse serious adjustment")
+							tempFilterChunks = append(tempFilterChunks, "#? couldn't parse serious adjustment")
 						} else {
 							seriousAdjustment = int(seriousAdjustment64)
 						}
@@ -435,7 +480,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 						showAdjustment64, err := strconv.ParseInt(commandArguments[5], 10, 64)
 
 						if err != nil {
-							processedLines2 = append(processedLines2, "#? couldn't parse show adjustment")
+							tempFilterChunks = append(tempFilterChunks, "#? couldn't parse show adjustment")
 						} else {
 							showAdjustment = int(showAdjustment64)
 						}
@@ -444,43 +489,44 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					newLine, err := utils.GetWeaponGroupFilter(commandArguments[1], maxLevel, minLevel, seriousAdjustment, showAdjustment)
 
 					if err != nil {
-						processedLines2 = append(processedLines2, "#? warning: couldn't get weapon group")
+						tempFilterChunks = append(tempFilterChunks, "#? warning: couldn't get weapon group")
 						continue
 					}
 
-					processedLines2 = append(processedLines2, newLine)
+					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
-			// @todo(nick-ng): move this to its own loop
-			case "droplevel":
-				{
-					// makes item filter based on item drop level
-					_ = utils.ParseFlags(rawLine)
-					newLine, err := utils.GetDropLevelFilter(rawLine)
+			// // @todo(nick-ng): move this to its own loop
+			// case "droplevel":
+			// 	{
+			// 		// makes item filter based on item drop level
+			// 		_ = utils.ParseFlags(rawLine)
+			// 		newLine, err := utils.GetDropLevelFilter(rawLine)
 
-					if err != nil {
-						processedLines2 = append(processedLines2, "#? warning: couldn't get drop level filter")
-						continue
-					}
+			// 		if err != nil {
+			// 			tempFilterChunks = append(tempFilterChunks, "#? warning: couldn't get drop level filter")
+			// 			continue
+			// 		}
 
-					processedLines2 = append(processedLines2, newLine)
-				}
+			// 		tempFilterChunks = append(tempFilterChunks, newLine)
+			// 	}
 			case "tts":
 				{
 					newLine := utils.MakeTts(trimmedLine)
-					processedLines2 = append(processedLines2, newLine)
+					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
 			default:
 				{
 					warning := fmt.Sprintf("#? warning: Unknown command %s", commandArguments[0])
-					processedLines2 = append(processedLines2, warning)
+					tempFilterChunks = append(tempFilterChunks, warning)
 				}
 			}
 		} else {
-			processedLines2 = append(processedLines2, rawLine)
+			tempFilterChunks = append(tempFilterChunks, rawLine)
 		}
 	}
 
-	filter := strings.Join(processedLines2, "\n")
+	filterChunks = tempFilterChunks
+	filter := strings.Join(filterChunks, "\n")
 
 	if !isImported {
 		filter = utils.ApplyAllTokens(filter)

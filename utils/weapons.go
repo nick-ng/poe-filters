@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"slices"
-	"strconv"
 	"strings"
 )
 
@@ -82,109 +80,6 @@ func GetWeaponGroupFilter(weaponGroupName string, maxLevel int, minLevel int, se
 				"\t#!LevelingBorder!# 230",
 				"\tMinimapIcon 1 Pink Cross",
 			)
-		}
-
-		filterStrings = append(filterStrings, strings.Join(filterLines, "\n"))
-	}
-
-	return strings.Join(filterStrings, "\n\n"), nil
-}
-
-// @todo(nick-ng): move to "items" file
-// @todo(nick-ng): add a way to add custom lines to each filter. #! custom and #! custombig
-func GetDropLevelFilter(rawCommand string) (string, error) {
-	rawFlags := ParseFlags(rawCommand)
-
-	var itemClass string
-	flags := map[string]int{
-		"min":  0,
-		"max":  99,
-		"big":  1,
-		"show": 7,
-	}
-	// @todo(nick-ng): base the defaults on the item class
-	levels := []int{1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80}
-
-	for _, flag := range rawFlags {
-		switch flag.Name {
-		case "class":
-			{
-				itemClass = flag.Value
-			}
-		case "levels":
-			{
-				levelsStrings := strings.Split(flag.Value, ",")
-				var tempLevels []int
-				for _, levelString := range levelsStrings {
-					dropLevel, err := strconv.ParseInt(levelString, 10, 0)
-
-					if err != nil {
-						continue
-					}
-
-					tempLevels = append(tempLevels, int(dropLevel))
-				}
-
-				if len(tempLevels) == 0 {
-					continue
-				}
-
-				slices.Sort(tempLevels)
-
-				levels = tempLevels
-			}
-		default:
-			{
-				flagValueInt, err := strconv.ParseInt(flag.Value, 10, 0)
-				if err != nil {
-					continue
-				}
-
-				flags[flag.Name] = int(flagValueInt)
-			}
-		}
-	}
-
-	filterStrings := []string{}
-
-	for i, dropLevel := range levels {
-		upperDropLevel := 86
-		if i < (len(levels) - 1) {
-			upperDropLevel = levels[i+1]
-		}
-
-		if dropLevel > flags["max"] {
-			continue
-		}
-
-		if dropLevel < flags["min"] {
-			continue
-		}
-
-		filterLines := []string{
-			// big highlight
-			"Show",
-			fmt.Sprintf("\tAreaLevel <= %d", dropLevel+flags["big"]),
-			"\tRarity <= Rare",
-			fmt.Sprintf("\tClass == \"%s\"", itemClass),
-			fmt.Sprintf("\tDropLevel >= \"%d\"", dropLevel),
-			fmt.Sprintf("\tDropLevel < \"%d\"", upperDropLevel),
-			// "\tCorrupted False",
-			"\tSetFontSize 45",
-			"\t#!LevelingBorder!# 230",
-			"\tMinimapIcon 2 Pink Cross",
-			// "\tCustomAlertSound \"sounds/ben-finegold-this-is-serious.mp3\"",
-			// small highlight
-			"Show",
-			fmt.Sprintf("\tAreaLevel <= %d", dropLevel+flags["show"]),
-			"\tRarity <= Rare",
-			fmt.Sprintf("\tClass == \"%s\"", itemClass),
-			fmt.Sprintf("\tDropLevel >= \"%d\"", dropLevel),
-			fmt.Sprintf("\tDropLevel < \"%d\"", upperDropLevel),
-			// "\tCorrupted False",
-			"\tSetFontSize 25",
-			"\t#!LevelingBorder!# 230",
-			"\tMinimapIcon 1 Pink Cross",
 		}
 
 		filterStrings = append(filterStrings, strings.Join(filterLines, "\n"))
