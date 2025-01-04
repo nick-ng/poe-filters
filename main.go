@@ -47,14 +47,28 @@ func main() {
 		fmt.Println("Error reading file", err)
 	}
 
-	fmt.Printf("Found %d filters\n", len(dat1))
-
-	for i, dir := range dat1 {
-		if err != nil {
-			continue
-		}
-
+	// parse poe2 filters first
+	var poe1Filters []string
+	var poe2Filters []string
+	for _, dir := range dat1 {
 		filterName := dir.Name()
+		if strings.Contains(filterName, "poe2") {
+			poe2Filters = append(poe2Filters, filterName)
+		} else {
+			poe1Filters = append(poe1Filters, filterName)
+		}
+	}
+
+	allFilters := append(poe2Filters, poe1Filters...)
+
+	fmt.Printf("Found %d filters\n", len(allFilters))
+
+	for i, filterName := range allFilters {
+		// if err != nil {
+		// 	continue
+		// }
+
+		// filterName := dir.Name()
 
 		fmt.Printf("%d: %s... ", i+1, filterName)
 

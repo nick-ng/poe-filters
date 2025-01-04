@@ -1,6 +1,7 @@
 #! poe2
 
 #! import poe2-currency.filter
+#! import poe2-gems.filter
 
 # level 14 = ice strike
 #! droplevel class="Bows" max=16 levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
@@ -12,6 +13,7 @@
 # dex/int body armour 1,11,16,28,33,39,45,48,51,55,59,62,65,70,75
 #! droplevel class="Body Armours" min=1 big=2 levels=1,11,16,22,26,28,33,36,39,45,48,51,55,59,62,65,70,75
 #! custom BaseType = "Vest" "Coat" "Garb" "Jacket"
+#! custom BaseEvasion >= 1
 #! custom Rarity <= Rare
 #! custom SetFontSize 25
 #! custom #!OkBaseBorder!#

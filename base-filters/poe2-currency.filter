@@ -1,7 +1,26 @@
 #! poe2
 
 Show
- BaseType "Gold"
+	BaseType "Gold"
+	StackSize >= 200
+	SetFontSize 45
+	#!WhiteText!# 255
+	MinimapIcon 2 Grey Circle
+	PlayEffect Grey
+
+Show
+	BaseType "Gold"
+	StackSize >= 50
+	SetFontSize 35
+	#!WhiteText!# 255
+	MinimapIcon 2 Grey Circle
+	PlayEffect Grey
+
+# gold has the currency class. don't emphasize small piles of gold
+Show
+	BaseType "Gold"
+	SetFontSize 15
+	PlayEffect Grey
 
 Show
  Class Currency
