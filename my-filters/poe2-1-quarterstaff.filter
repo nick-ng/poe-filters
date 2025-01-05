@@ -1,5 +1,6 @@
 #! poe2
 
+#! import poe2-maps.filter
 #! import poe2-currency.filter
 #! import poe2-gems.filter
 
@@ -69,7 +70,7 @@ Hide
 Hide
   AreaLevel > 20
   Class == "Quivers" "Foci" "Shields"
-  Rarity == Magic
+  Rarity <= Magic
 
 # hide all normal armour that wasn't shown in a filter above
 Hide

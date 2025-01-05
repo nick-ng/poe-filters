@@ -1,0 +1,8 @@
+Show
+	Class == "Trial Coins"
+	SetBackgroundColor 255 221 153
+	SetBorderColor 100 200 250
+	SetTextColor 100 200 250
+	SetFontSize 45
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue

@@ -1,72 +1,83 @@
 Show
 	BaseType == "Uncut Skill Gem"
 	ItemLevel >= 14
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Skill Gem"
 	ItemLevel >= 13 # requires lvl 52
 	AreaLevel < 57
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Skill Gem"
 	ItemLevel >= 11 # requires 41
 	AreaLevel < 46
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Skill Gem"
 	ItemLevel >= 9 # requires 31
 	AreaLevel < 36
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Skill Gem"
 	ItemLevel >= 7 # requires 22
 	AreaLevel < 27
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Skill Gem"
 	AreaLevel < 23
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Spirit Gem"
 	ItemLevel >= 14 #
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Spirit Gem"
 	ItemLevel >= 8
 	AreaLevel < 55
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Support Gem"
 	ItemLevel = 2
 	AreaLevel < 40
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Support Gem"
 	ItemLevel = 3
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45
 
 Show
 	BaseType "Uncut Support Gem"
 	ItemLevel = 2
 	AreaLevel < 40
-	#!LinkBorder!#
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200
 	SetFontSize 45

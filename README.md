@@ -24,15 +24,19 @@ When you run it, it will try to copy filters to the Path of Exile directory
 
 - `CustomAlertSound` can handle absolute paths i.e. `D:\etc\sound.mp3`
 
+## Attributions
+
+- `utils\tailwindcss-colours.json` taken from https://tailwindcss.com
+
 ## ToDos
 
 - make `colour-tokens.json` only have rgb values and automatically make text, background and border versions when replacing
 
 ### ToDo Comments
 
-- utils\misc.go:160: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
-- utils\items.go:10: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
-- utils\items.go:21: @todo(nick-ng): base the defaults on the item class
 - main.go:134: @todo(nick-ng): move some functions to separate files
 - main.go:386: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
 - main.go:512: // @todo(nick-ng): move this to its own loop
+- utils\items.go:10: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
+- utils\items.go:21: @todo(nick-ng): base the defaults on the item class
+- utils\misc.go:160: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
