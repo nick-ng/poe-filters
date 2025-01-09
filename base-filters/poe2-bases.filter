@@ -1,0 +1,5 @@
+Show
+	Class == "Jewels"
+	SetFontSize 45
+	MinimapIcon 0 Pink Square
+	#!GoodBaseBorder!#

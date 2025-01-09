@@ -1,7 +1,7 @@
 #! poe2
 
 Show
-	Class "Currency"
+	Class == "Currency"
 	BaseType == "Gold"
 	StackSize >= 200
 	SetFontSize 45
@@ -11,7 +11,7 @@ Show
 	PlayEffect Grey
 
 Show
-	Class "Currency"
+	Class == "Currency"
 	BaseType == "Gold"
 	StackSize >= 50
 	SetFontSize 35
@@ -22,22 +22,69 @@ Show
 
 # gold has the currency class. don't emphasize small piles of gold
 Show
-	Class "Currency"
+	Class == "Currency"
 	BaseType == "Gold"
 	SetFontSize 15
 	SetBackgroundColor 0 0 0 0
 	PlayEffect Grey
 
 Show
- Class "Currency"
- SetFontSize 50
- SetTextColor 0 0 0
- SetBorderColor 0 0 0
- SetBackgroundColor 0 121 255
+	BaseType == "Scroll of Wisdom"
+	Class == "Currency"
+	#!ScrollOfWisdomText!# 220
+	#!GGGCurrencyBorder!# 200
+
+Show # T-1 Currency
+	Class == "Currency"
+	BaseType "Divine Orb" "Orb of Annulment"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	PlayAlertSound 6 200
+
+Show # T0 Currency
+	Class == "Currency"
+	BaseType "Chaos Orb"
+	SetFontSize 45
+	#!T0CurrencyText!# 230
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Pink Circle
+	PlayEffect Green
+	PlayAlertSound 11 200
+
+Show # T1 Currency
+	Class == "Currency"
+	BaseType == "Exalted Orb" "Regal Orb" "Regal Shard" "Orb of Alchemy"
+	SetFontSize 45
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Orange Circle
+	PlayEffect Green
+	PlayAlertSound 11 200
+
+Show # T2 Currency
+	Class "Currency"
+	BaseType == "Vaal Orb" "Glassblower's Bauble" "Orb of Chance"
+	SetFontSize 45
+	#!T2CurrencyText!# 230
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Yellow Circle
+	PlayAlertSound 9 200
 
 Show
- BaseType "Rune"
- SetFontSize 50
- SetTextColor 0 0 0
- SetBorderColor 0 0 0
- SetBackgroundColor 111 255 111
+	Class == "Currency"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 0 121 255
+
+Show
+	Class == "Socketable"
+#	BaseType == "Rune"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 255 111

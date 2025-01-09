@@ -6,3 +6,136 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue
+
+Show
+	Class == "Tablet"
+	PlayEffect Purple
+	SetBorderColor 225 225 225 230
+	SetTextColor 150 0 200 230
+	MinimapIcon 2 Purple Hexagon
+	PlayAlertSound 11 200
+
+# Map appearance
+Show
+	Rarity < Unique
+	WaystoneTier >= 14
+	Class "Waystones"
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 0 255 255
+	Continue
+
+Show
+	Rarity < Unique
+	WaystoneTier >= 11
+	WaystoneTier <= 13
+	Class "Waystones"
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	Continue
+
+Show
+	Rarity < Unique
+	WaystoneTier >= 6
+	WaystoneTier <= 10
+	Class "Waystones"
+	SetTextColor 200 200 0 255
+	SetBorderColor 200 200 0 255
+	Continue
+
+Show
+	Rarity < Unique
+	WaystoneTier >= 1
+	WaystoneTier <= 5
+	Class "Waystones"
+	SetTextColor 200 200 200 255
+	SetBorderColor 200 200 200 255
+	Continue
+
+# Waystone size and sound
+# sound 5 if it's in the same map tier range or higher, otherwise 4
+# High area = same tier of maps (except high reds)
+Show # T16
+	Rarity < Unique
+	WaystoneTier >= 16
+	Class "Waystones"
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/sirus-take-it.mp3"
+
+Show # High Reds
+	Rarity < Unique
+	WaystoneTier >= 14
+	Class "Waystones"
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	PlayAlertSound 5 100 # map drop sound
+
+Show
+	AreaLevel >= 83
+	Rarity < Unique
+	WaystoneTier < 14
+	Class "Waystones"
+	SetFontSize 25
+	DisableDropSound True
+
+Show # Low Reds - high area
+	AreaLevel >= 78
+	Rarity < Unique
+	WaystoneTier >= 11
+	WaystoneTier <= 13
+	Class "Waystones"
+	SetFontSize 40
+	MinimapIcon 2 Red Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # Low Reds - low area
+	Rarity < Unique
+	WaystoneTier >= 11
+	WaystoneTier <= 13
+	Class "Waystones"
+	SetFontSize 45
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	PlayAlertSound 5 100 # map drop sound
+
+Show # yellow - high area
+	AreaLevel >= 73
+	Rarity < Unique
+	WaystoneTier >= 6
+	WaystoneTier <= 10
+	Class "Waystones"
+	SetFontSize 40
+	MinimapIcon 2 Yellow Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # yellow - low area
+	Rarity < Unique
+	WaystoneTier >= 6
+	WaystoneTier <= 10
+	Class "Waystones"
+	SetFontSize 45
+	MinimapIcon 0 Yellow Square
+	PlayEffect Yellow
+	PlayAlertSound 5 100 # map drop sound
+
+Show # white - high area
+	AreaLevel >= 68
+	Rarity < Unique
+	WaystoneTier >= 1
+	WaystoneTier <= 5
+	Class "Waystones"
+	SetFontSize 40
+	MinimapIcon 2 White Square
+	PlayAlertSound 16 100 # map drop sound
+
+Show # white - low area
+	Rarity < Unique
+	WaystoneTier >= 1
+	WaystoneTier <= 5
+	Class "Waystones"
+	SetFontSize 45
+	MinimapIcon 0 White Square
+	PlayEffect White
+	PlayAlertSound 5 100 # map drop sound

@@ -81,3 +81,9 @@ Show
 	#!GGGGemText!# 250
 	#!GGGGemBorder!# 200
 	SetFontSize 45
+
+Show
+	Class = "Currency"
+	BaseType "Gem"
+	#!GGGGemText!# 250
+	#!GGGGemBorder!# 200

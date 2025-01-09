@@ -3,6 +3,38 @@
 #! import poe2-maps.filter
 #! import poe2-currency.filter
 #! import poe2-gems.filter
+#! import poe2-flasks.filter
+#! import poe2-bases.filter
+
+Show
+  Class == "Quarterstaves"
+	BaseType "Expert"
+	Rarity <= Rare
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+Show
+  Class == "Helmets" "Boots" "Gloves"
+  BaseType "Expert"
+  Rarity <= Rare
+  BaseEnergyShield >= 1
+  BaseArmour = 0
+  SetFontSize 35
+  #!GoodBaseBorder!# 200
+	PlayEffect Yellow
+  MinimapIcon 1 Yellow Star
+
+Show
+  Class == "Body Armours"
+  BaseType "Expert"
+  Rarity <= Rare
+  BaseEvasion >= 1
+  BaseArmour = 0
+  SetFontSize 35
+  #!GoodBaseBorder!# 200
+	PlayEffect Yellow
+  MinimapIcon 1 Yellow Star
 
 # level 14 = ice strike
 #! droplevel class="Bows" max=16 levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
@@ -21,7 +53,7 @@
 #! custombig SetFontSize 45
 #! custombig MinimapIcon 1 Blue Cross
 
-# int helmet 1,10,16,26,33,40,45,48,51,55,59,65,70,75
+# int circlet/tiara 1,10,16,26,33,40,45,48,51,55,59,65,70,75
 #! droplevel class="Helmets" min=1 big=2 levels=1,10,16,26,33,40,45,48,51,55,59,65,70,75
 #! custom BaseType = "Circlet" "Tiara"
 #! custom Rarity <= Rare
@@ -30,8 +62,8 @@
 #! custombig SetFontSize 45
 #! custombig MinimapIcon 1 Blue Cross
 
-# int boots 1,11,16,27,33,45,51,55,59,65,70,75
-# dex/int boots 5,16,33,45,51,59,65,70,75
+# int sandals/slippers 1,11,16,27,33,45,51,55,59,65,70,75
+# dex/int shoes 5,16,33,45,51,59,65,70,75
 #! droplevel class="Boots" min=1 big=2 levels=1,5,11,16,27,33,45,51,55,59,65,70,75
 #! custom BaseType = "Sandals" "Slippers" "Shoes"
 #! custom Rarity <= Rare
@@ -41,9 +73,9 @@
 #! custombig MinimapIcon 1 Blue Cross
 
 # int golves 1,12,16,26,33,45,51,55,59,65,70,75
-# dex/int golves 1,16,33,45,51,65,70
+# dex/int wraps 1,16,33,45,51,65,70
 #! droplevel class="Gloves" min=1 big=2 levels=1,5,11,16,27,33,45,51,55,59,65,70,75
-#! custom BaseType = "Bracers" "Gloves"
+#! custom BaseType = "Wraps" "Gloves"
 #! custom Rarity <= Rare
 #! custom SetFontSize 25
 #! custom #!OkBaseBorder!#

@@ -1,0 +1,30 @@
+# life flasks
+#! droplevel class="Life Flasks" big=3 levels=1,4,10,16,23,30,40,50,60
+#! custom Rarity <= Rare
+#! custom SetBorderColor 255 0 0 200
+#! custom SetFontSize 30
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 2 Red Raindrop
+
+Show
+	Class "Life Flask"
+	BaseType == "Ultimate Life Flask"
+	Rarity <= Rare
+	SetBorderColor 255 0 0 200
+
+# mana flasks
+#! droplevel class="Mana Flasks" big=3 levels=1,4,10,16,23,30,40,50,60
+#! custom Rarity <= Rare
+#! custom SetBorderColor 0 0 255 200
+#! custom SetFontSize 30
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 2 Blue Raindrop
+
+Show
+	Class "Life Flask"
+	BaseType == "Ultimate Mana Flask"
+	Rarity <= Rare
+	SetBorderColor 0 0 255 200
+
+Hide
+	Class == "Life Flasks" "Mana Flasks"
