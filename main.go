@@ -17,6 +17,7 @@ type ProcessedFilterFlags struct {
 }
 
 const MY_FILTERS_PATH string = "my-filters"
+const MY_POE2_FILTERS_PATH string = "my-poe2-filters"
 const BASE_FILTERS_PATH string = "base-filters"
 const BUILD_FILTERS_PATH string = "build-filters"
 const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
@@ -34,15 +35,14 @@ func main() {
 	utils.MakeDivinationCardsFilterPoeNinja()
 
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
+	utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
 	utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 	utils.MkDirIfNotExist(CACHE_PATH)
 
 	path1 := filepath.Join(MY_FILTERS_PATH)
-
 	dat1, err := os.ReadDir(path1)
-
 	if err != nil {
 		fmt.Println("Error reading file", err)
 	}
@@ -52,18 +52,33 @@ func main() {
 	var poe2Filters []string
 	for _, dir := range dat1 {
 		filterName := dir.Name()
+		filterPath := filepath.Join(MY_FILTERS_PATH, filterName)
 		if strings.Contains(filterName, "poe2") {
-			poe2Filters = append(poe2Filters, filterName)
+			poe2Filters = append(poe2Filters, filterPath)
 		} else {
-			poe1Filters = append(poe1Filters, filterName)
+			poe1Filters = append(poe1Filters, filterPath)
 		}
+	}
+
+	path2 := filepath.Join(MY_POE2_FILTERS_PATH)
+	dat2, err := os.ReadDir(path2)
+	if err != nil {
+		fmt.Println("Error reading file", err)
+	}
+
+	for _, dir := range dat2 {
+		filterName := dir.Name()
+		filterPath := filepath.Join(MY_POE2_FILTERS_PATH, filterName)
+		poe2Filters = append(poe2Filters, filterPath)
 	}
 
 	allFilters := append(poe2Filters, poe1Filters...)
 
 	fmt.Printf("Found %d filters\n", len(allFilters))
 
-	for i, filterName := range allFilters {
+	for i, filterPath := range allFilters {
+		temp := strings.Split(filterPath, string(filepath.Separator))
+		filterName := temp[len(temp)-1]
 		// if err != nil {
 		// 	continue
 		// }
@@ -72,13 +87,13 @@ func main() {
 
 		fmt.Printf("%d: %s... ", i+1, filterName)
 
-		path := filepath.Join(MY_FILTERS_PATH, filterName)
-		filter, flags, errList := processFilter(path, false)
+		filter, flags, errList := processFilter(filterPath, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
 		gameFilterPath := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
 
 		if flags.Game == "poe2" {
+			fmt.Print("PoE 2 ")
 			gameFilterPath = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile 2", filterName)
 		}
 

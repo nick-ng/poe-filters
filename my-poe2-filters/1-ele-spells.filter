@@ -7,46 +7,35 @@
 #! import poe2-bases.filter
 
 Show
-  Class == "Quarterstaves"
-	BaseType "Expert"
-	Rarity <= Rare
+  Class == "Wands"
+	Rarity >= Magic
 	SetFontSize 45
 	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
 Show
-  Class == "Helmets" "Boots" "Gloves"
+  Class == "Shields"
   BaseType "Expert"
+  BaseType "Crest Shield"
   Rarity <= Rare
-  BaseEnergyShield >= 1
-  BaseArmour = 0
   SetFontSize 35
   #!GoodBaseBorder!# 200
 	PlayEffect Yellow
   MinimapIcon 1 Yellow Star
 
 Show
-  Class == "Body Armours"
+  Class == "Body Armours" "Helmets" "Boots" "Gloves"
   BaseType "Expert"
   Rarity <= Rare
-  BaseEvasion >= 1
-  BaseArmour = 0
   SetFontSize 35
   #!GoodBaseBorder!# 200
 	PlayEffect Yellow
   MinimapIcon 1 Yellow Star
 
-# level 14 = ice strike
-#! droplevel class="Bows" max=16 levels=1,5,11,16,22,28,33,39,45,48,51,55,59,62,72,77,78,79
-
-# 16, 51, 78 = lightning damage quarterstaves
-#! droplevel class="Quarterstaves" min=11 big=2 levels=1,11,20,28,33,37,45,48,55,59,62,67,72,77,79
-
-# dex body armour 1,11,16,22,26,33,36,45,48,51,55,59,62,65,70,75
-# dex/int body armour 1,11,16,28,33,39,45,48,51,55,59,62,65,70,75
-#! droplevel class="Body Armours" min=1 big=2 levels=1,11,16,22,26,28,33,36,39,45,48,51,55,59,62,65,70,75
-#! custom BaseType = "Vest" "Coat" "Garb" "Jacket"
-#! custom BaseEvasion >= 1
+# int body armour 1,5,11,16,22,28,33,40,45,48,51,55,59,62,65,70,75
+#! droplevel class="Body Armours" min=1 big=2 levels=1,5,11,16,22,28,33,40,45,48,51,55,59,62,65,70,75
+#! custom BaseType = "Robe"
+#! custom BaseEnergyShield >= 1
 #! custom Rarity <= Rare
 #! custom SetFontSize 25
 #! custom #!OkBaseBorder!#
@@ -82,8 +71,18 @@ Show
 #! custombig SetFontSize 45
 #! custombig MinimapIcon 1 Blue Cross
 
+# str/int shields 7,8,24,28,33,36,45,48,51,55,59,62,65,70,75
+#! droplevel class="Shields" min=1 big=2 levels=7,8,24,28,33,36,45,48,51,55,59,62,65,70,75
+#! custom BaseType = "Crest Shield"
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
 # hide all normal weapons that weren't shown in a filter above
 Hide
+	AreaLevel > 2
   Class == "Bows" "Crossbows" "One Hand Maces" "Quarterstaves" "Two Hand Maces" "Sceptres" "Staves" "Wands"
   Rarity == Normal
 
@@ -95,6 +94,7 @@ Hide
 
 # hide all magic off hands that weren't shown in a filter above
 Hide
+	AreaLevel > 2
   Class == "Foci" "Shields"
   Rarity == Normal
 
