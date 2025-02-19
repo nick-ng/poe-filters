@@ -1,0 +1,64 @@
+# Divination Cards
+# Show
+# 	BaseType == "Earth Drinker"
+# 	SetFontSize 45
+# 	SetTextColor 232 99 0 255
+# 	SetBorderColor 47 252 47 255
+# 	#!BrightBackground!# 255
+# 	MinimapIcon 2 Brown Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Mirrored Spiked Shield" "Moonstone Ring"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+Show
+	BaseType = "Carved Wand" "Engraved Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 78 # T1 Chaos DoT Multi
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType = "Imbued Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 78 # T1 Chaos DoT Multi
+	SetFontSize 35
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Large Cluster Jewel"
+	EnchantmentPassiveNode "Chaos"
+	ItemLevel <= 67
+	ItemLevel >= 50
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType "Large Cluster Jewel"
+	EnchantmentPassiveNode "Chaos"
+	ItemLevel >= 50
+	SetFontSize 40
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+#! import storm-rain.filter
