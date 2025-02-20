@@ -43,6 +43,17 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
+	BaseType = "Carved Wand" "Engraved Wand" "Imbued Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel >= 60
+	AreaLevel <= 68
+	SetFontSize 25
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+Show
 	BaseType "Large Cluster Jewel"
 	EnchantmentPassiveNode "Chaos"
 	ItemLevel <= 67
