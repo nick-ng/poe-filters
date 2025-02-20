@@ -1,3 +1,12 @@
+# Idols
+Show
+	Class "Idol"
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	SetBackgroundColor 200 200 255 255
+	MinimapIcon 2 Cyan UpsideDownHouse
+	PlayEffect Cyan
+
 # White Maps: 68 - 72
 # Yellow Maps: 73 - 77
 # Red Maps: 78 - 80
