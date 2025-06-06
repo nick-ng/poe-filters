@@ -115,6 +115,9 @@ Show # T-1 Currency
 	PlayEffect White
 	CustomAlertSound "sounds/aahh.mp3"
 
+# Show # 3.Currency
+#	BaseType ""
+
 Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"
 	SetBackgroundColor 250 250 250

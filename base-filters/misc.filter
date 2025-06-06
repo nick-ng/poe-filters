@@ -105,3 +105,27 @@ Show
 	#!BrightBorder!# 200
 	PlayEffect Grey
 	MinimapIcon 0 Grey UpsideDownHouse
+
+## Small uniques to dust
+Show
+	Rarity Unique
+	Height 1
+	Width <= 2
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 10 30 45 255
+	PlayAlertSound 3 200
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+
+Show
+	BaseType == "Baited Expectations"
+	SetFontSize 45
+
+Show
+	Class "Rings" "Amulets" "Axe" "Mace" "Sword" "Daggers" "Sceptre" "Wand" "Jewel"
+	Height <= 3
+	Width = 1
+	Rarity = Rare
+	SetFontSize 35
