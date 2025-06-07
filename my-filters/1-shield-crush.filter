@@ -23,6 +23,37 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
+# Leveling shields
+
+# not showing heist shilds nad stop at colossal tower shield because it has the highest armour
+#! droplevel class="Shield" min=11 big=2 levels=5,11,17,24,30,35,39,43,47,51,55,58,61,64,67
+#! custom BaseArmour >= 1
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# dex shields
+#! droplevel class="Shield" min=11 big=2 levels=8,16,23,29,34,38,42,46,50,54,57,60,63,66,69
+#! custom BaseEvasion >= 1
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+# str/dex shields
+#! droplevel class="Shield" min=11 big=2 levels=5,12,20,27,33,39,45,49,54,58,62,66
+#! custom BaseEvasion >= 1
+#! custom BaseArmour >= 1
+#! custom Rarity <= Rare
+#! custom SetFontSize 25
+#! custom #!OkBaseBorder!#
+#! custombig SetFontSize 45
+#! custombig MinimapIcon 1 Blue Cross
+
+
 # Item Bases
 # Add new bases
 Show
