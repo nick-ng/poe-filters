@@ -1,5 +1,5 @@
 Show
-	BaseType == "The Void"
+	BaseType == "Brother's Gift" "Brother's Stash" "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -8,7 +8,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
 Show
-	BaseType == "Cameria's Cut" "The Easy Stroll" "The Finishing Touch" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift"
+	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -18,7 +18,7 @@ Show
 	StackSize >= 2
 
 Show
-	BaseType == "Akil's Prophecy" "Altered Perception" "Bijoux" "Buried Treasure" "Darker Half" "Echoes of Love" "Ever-Changing" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Last Hope" "Sambodhi's Vow" "The Catalyst" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Polymath" "The Risk" "The Samurai's Eye" "The Scholar" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices"
+	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -28,7 +28,7 @@ Show
 	StackSize >= 3
 
 Show
-	BaseType == "A Chilling Wind" "Atziri's Arsenal" "Boundless Realms" "Dark Dreams" "Death" "Eldritch Perfection" "Forbidden Power" "Jack in the Box" "Left to Fate" "The Body" "The Card Sharp" "The Carrion Crow" "The Dragon" "The Eldritch Decay" "The Endurance" "The Fool" "The Gentleman" "The Messenger" "The Professor" "The Stormcaller" "The Surveyor" "The Warden" "The Wolf's Legacy" "Unchained"
+	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -38,7 +38,7 @@ Show
 	StackSize >= 4
 
 Show
-	BaseType == "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Call to the First Ones" "Destined to Crumble" "Emperor's Luck" "Hope" "Hubris" "Imperfect Memories" "Loyalty" "Mitts" "The Aspirant" "The Battle Born" "The Deep Ones" "The Demoness" "The Escape" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The King's Blade" "The Landing" "The Lion" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Transformation" "The Undaunted" "Thirst for Knowledge" "Vinia's Token"
+	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -48,7 +48,7 @@ Show
 	StackSize >= 5
 
 Show
-	BaseType == "Boon of Justice" "Deadly Joy" "Immortal Resolve" "Lysah's Respite" "Misery in Darkness" "Succor of the Sinless" "The Army of Blood" "The Bear Woman" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Dark Mage" "The Explorer" "The Magma Crab" "The Metalsmith's Gift" "The One With All" "The Porcupine" "The Skeleton" "The Summoner" "The Tower" "The Visionary" "The Warlord" "The Wretched"
+	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -58,7 +58,7 @@ Show
 	StackSize >= 6
 
 Show
-	BaseType == "Deathly Designs" "Dialla's Subjugation" "Endless Night" "More is Never Enough" "Prejudice" "Scholar of the Seas" "The Ethereal" "The Mad King" "The Obscured" "The Ruthless Ceinture" "The Siren" "The Sun" "The Trial" "The Wilted Rose" "Three Faces in the Dark"
+	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -68,7 +68,7 @@ Show
 	StackSize >= 7
 
 Show
-	BaseType == "Arrogance of the Vaal" "Dying Anguish" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Pride Before the Fall" "Rain of Chaos" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Nurse" "The Offering" "The Patient" "The Scavenger" "The Scout" "The Tireless Extractor" "The Valkyrie" "The Whiteout" "The Wrath"
+	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -78,7 +78,7 @@ Show
 	StackSize >= 8
 
 Show
-	BaseType == "A Dab of Ink" "Assassin's Favour" "Doedre's Madness" "Etched in Blood" "Rain Tempter" "The Betrayal" "The Rusted Bard" "The Scarred Meadow" "Vanity"
+	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -88,7 +88,7 @@ Show
 	StackSize >= 9
 
 Show
-	BaseType == "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
+	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -98,7 +98,7 @@ Show
 	StackSize >= 10
 
 Show
-	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Harvester" "The Sephirot"
+	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -108,7 +108,7 @@ Show
 	StackSize >= 11
 
 Show
-	BaseType == "Divine Beauty" "The Fortunate" "The Hoarder" "The Lich"
+	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -118,7 +118,7 @@ Show
 	StackSize >= 12
 
 Show
-	BaseType == "Anarchy's Price" "Cursed Words" "The Cataclysm" "Triskaidekaphobia"
+	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -128,7 +128,7 @@ Show
 	StackSize >= 13
 
 Show
-	BaseType == "Lingering Remnants" "Mawr Blaidd"
+	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
 	Class "Divination"
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -136,6 +136,16 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 16
+
+Show
+	BaseType == "The Catch"
+	Class "Divination"
+	SetFontSize 45
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+	StackSize >= 18
 
 Show
 	BaseType == "Imperial Legacy"
@@ -146,3 +156,13 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 22
+
+Show
+	BaseType == "Rebirth"
+	Class "Divination"
+	SetFontSize 45
+	#!BrightBackground!# 255
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Pink UpsideDownHouse
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+	StackSize >= 27
