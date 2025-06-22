@@ -88,3 +88,13 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 0 0 0
 	SetBackgroundColor 111 255 111
+
+Show # Other currency
+	Class == "Currency"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 250 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	PlayAlertSound 6 200
