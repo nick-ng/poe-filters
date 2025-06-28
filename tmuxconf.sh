@@ -1,4 +1,4 @@
-/#!/bin/bash
+#!/bin/bash
 
 MY_SESSION=$(tmux list-sessions | grep "poefilters")
 if [[ ! $MY_SESSION ]]; then
@@ -7,4 +7,5 @@ if [[ ! $MY_SESSION ]]; then
 		tmux send "nvim ." Enter
 		tmux new-window
 		# tmux split-window -h
+		tmux attach-session -d -t poefilters
 fi
