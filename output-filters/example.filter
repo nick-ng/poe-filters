@@ -374,7 +374,7 @@ Show
 	AreaLevel <= 24
 	SetFontSize 45
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-armourer.mp3" 200
@@ -384,7 +384,7 @@ Show
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-blacksmith.mp3" 200
@@ -394,7 +394,7 @@ Show
 	BaseType "Orb of Transmutation"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-transmute.mp3" 200
@@ -404,7 +404,7 @@ Show
 	BaseType "Orb of Alteration"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-alteration.mp3" 200
@@ -414,7 +414,7 @@ Show
 	BaseType "Orb of Fusing"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-fusing.mp3" 200
@@ -424,7 +424,7 @@ Show
 	BaseType "Orb of Alchemy"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-alchemy.mp3" 200
@@ -1621,7 +1621,7 @@ Show
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
 	SetTextColor 250 0 125 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Circle
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\sounds\thps-special-trick-1.mp3"
@@ -1630,7 +1630,7 @@ Show
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
 	SetTextColor 255 127 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
 	CustomAlertSound "d:\gitd\poe-filters\sounds\thps-special-trick-2.mp3"
@@ -1639,7 +1639,7 @@ Show
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
 	SetTextColor 255 127 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Pink
 	PlayAlertSound 11 200
@@ -1649,7 +1649,7 @@ Show
 	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
 	SetFontSize 45
 	SetTextColor 255 127 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 200
@@ -1659,7 +1659,7 @@ Show
 	BaseType "Catalyst" "Eldritch"
 	SetFontSize 45
 	SetTextColor 255 127 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 1 100
@@ -1669,7 +1669,7 @@ Show
 	BaseType == "Exalted Shard" "Ancient Shard"
 	SetFontSize 35
 	SetTextColor 255 127 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Green
 	PlayAlertSound 11 150
@@ -1679,7 +1679,7 @@ Show
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Circle
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1690,7 +1690,7 @@ Show
 	AreaLevel < 74
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Circle
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-chance.mp3" 200
 Hide
@@ -1700,13 +1700,13 @@ Hide
 	AreaLevel > 77
 	StackSize < 3
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 Show
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Green Circle
 	PlayAlertSound 11 200
 ## T4 Currency ##
@@ -1717,7 +1717,7 @@ Show
 #	AreaLevel > 72
 #	StackSize < 6
 #	SetTextColor 0 255 0 230
-#	SetBorderColor 0 255 0 230
+#	SetBorderColor 130 130 255 230
 # Hide # White Maps
 # 	Class "Currency"
 # 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -1725,13 +1725,13 @@ Show
 # 	AreaLevel > 67
 # 	StackSize < 3
 # 	SetTextColor 0 255 0 230
-# 	SetBorderColor 0 255 0 230
+# 	SetBorderColor 130 130 255 230
 Show
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Grey Circle
 	# CustomAlertSound "sounds/water-drop.mp3"
 Show
@@ -1800,7 +1800,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetTextColor 250 0 125 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Square
 	PlayEffect Green
 	CustomAlertSound "d:\gitd\poe-filters\sounds\ai_rue-oh-my-god.mp3"
@@ -1809,7 +1809,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1818,7 +1818,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Square
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
@@ -1916,7 +1916,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 Show
@@ -1924,7 +1924,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 2
@@ -1933,7 +1933,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 3
@@ -1942,7 +1942,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 4
@@ -1951,7 +1951,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 5
@@ -1960,7 +1960,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 6
@@ -1969,7 +1969,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 7
@@ -1978,7 +1978,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 8
@@ -1987,7 +1987,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 9
@@ -1996,7 +1996,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 10
@@ -2005,7 +2005,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 11
@@ -2014,7 +2014,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 12
@@ -2023,7 +2023,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 13
@@ -2032,7 +2032,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 16
@@ -2041,7 +2041,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 18
@@ -2050,7 +2050,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 22
@@ -2059,7 +2059,7 @@ Show
 	Class "Divination"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 255 0 230
+	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 27

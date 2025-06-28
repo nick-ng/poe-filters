@@ -42,7 +42,7 @@
 	"GGGQuestBorder": "SetBorderColor 74 230 58",
 	"T9CurrencyBorder": "SetBorderColor 190 178 135",
 	"DullBorder": "SetBorderColor 122 122 122",
-	"CurrencyBorder": "SetBorderColor 0 255 0",
+	"CurrencyBorder": "SetBorderColor 130 130 255",
 	"BrightBorder": "SetBorderColor 200 255 180",
 	"TopBaseBorder": "SetBorderColor 45 107 255",
 	"GoodBaseBorder": "SetBorderColor 255 117 255",
