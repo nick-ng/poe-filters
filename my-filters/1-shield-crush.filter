@@ -98,7 +98,7 @@ Show
 
 # Foil for respec
 Show
-	BaseType = "Jewelled Foil"
+	BaseType = "Jewelled Foil" "Spiraled Foil"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare

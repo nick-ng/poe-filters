@@ -1,5 +1,3 @@
-#!/bin/bash
-
 MY_SESSION=$(tmux list-sessions | grep "poefilters")
 if [[ ! $MY_SESSION ]]; then
 		# create a new session and `-d`etach
