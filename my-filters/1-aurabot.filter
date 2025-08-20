@@ -11,12 +11,24 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Sulphur Flask"
+	BaseType == "Sulphur Flask" "Bronzescale Gauntlets" "Dusk Blade"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255
 	SetTextColor 255 140 54 255
 	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Other
+Show
+	BaseType == "Vaal Grace" "Vaal Impurity of Fire" "Vaal Impurity of Ice" "Vaal Impurity of Lightning"
+	Class Gem
+	SetFontSize 45
+	#!BrightBackground!# 255
+		#!GGGGemText!# 255
+		#!GGGGemBorder!# 255
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
