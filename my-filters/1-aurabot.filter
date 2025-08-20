@@ -11,7 +11,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Tyrant's Sekhem" "Sulphur Flask" "Sanctified Mana Flask" "Quartz Flask"
+	BaseType == "Sulphur Flask"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -45,14 +45,48 @@ Show
 	MinimapIcon 1 Yellow Star
 	#!MediumBaseBorder!# 200
 
-#! import fire-templar-start.filter
+#! linksa RGGG
+#! linksa RGGB
+#! linksa RRGG
+#! linksa RGG
+#! linksa GGG
+#! linksa GGB
+
+Show
+	BaseType == "Divine Life Flask"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 81 # T1 increased amount recovered
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	DropLevel >= 60
+	BaseEvasion >= 10
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+
+#! import library-shield-charge.filter
+
+#! weapons fast-2h-swords 12
+#! weapons fast-2h-axes 12
+
+#! import leveling.filter
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
+#! import life-flasks.filter
 
 #! import sov1.filter
-#! del ##+ Section 15 - Summoner Levelling #(.|\n)+### Section 18 - Armour ##+\n
+#! del ##+ Section 14 - Caster(.|\n)+## Section 18 - Armour ##+\n
 #! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
 #! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
 #! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
