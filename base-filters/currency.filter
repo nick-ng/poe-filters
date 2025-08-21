@@ -113,10 +113,8 @@ Show # T-1 Currency
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-	CustomAlertSound "sounds/aahh.mp3"
-
-# Show # 3.Currency
-#	BaseType ""
+#	CustomAlertSound "sounds/aahh.mp3"
+		CustomAlertSound "sounds/neon-what-the-heck.mp3"
 
 Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"
