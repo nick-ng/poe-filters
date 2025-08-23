@@ -35,7 +35,7 @@ Show # Show everything on the Twilight Strand
 	SetFontSize 45
 
 Show
-	BaseType "Scroll of Wisdom"
+	BaseType == "Scroll of Wisdom"
 	Class "Currency"
 	AreaLevel <= 24
 	#!ScrollOfWisdomText!# 220
@@ -46,7 +46,7 @@ Show
 	#! tts "wisdom" wisdom Amy 200 1.0
 
 Show
-	BaseType "Portal Scroll"
+	BaseType == "Portal Scroll"
 	Class "Currency"
 	AreaLevel <= 24
 	#!PortalScrollText!# 220
@@ -57,7 +57,7 @@ Show
 	#! tts "portal" portal Amy 200 1.0
 
 Show
-	BaseType "Armourer's Scrap"
+	BaseType == "Armourer's Scrap"
 	Class "Currency"
 	AreaLevel <= 24
 	SetFontSize 45
@@ -70,7 +70,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Blacksmith's Whetstone"
+	BaseType == "Blacksmith's Whetstone"
 	SetFontSize 45
 	#!T3CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -81,7 +81,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Transmutation"
+	BaseType == "Orb of Transmutation"
 	SetFontSize 45
 	#!T3CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -92,7 +92,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Alteration"
+	BaseType == "Orb of Alteration"
 	SetFontSize 45
 	#!T2CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -103,7 +103,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Fusing"
+	BaseType == "Orb of Fusing"
 	SetFontSize 45
 	#!T2CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -114,7 +114,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Alchemy"
+	BaseType == "Orb of Alchemy"
 	SetFontSize 45
 	#!T2CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -125,28 +125,28 @@ Show
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Iron Ring"
+	BaseType == "Iron Ring"
 	AreaLevel <= 30
 	#! tts "iron ring" iron-ring Russell 300 1.0
 
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Ruby Ring"
+	BaseType == "Ruby Ring"
 	AreaLevel <= 30
 	#! tts "ruby ring" ruby-ring Russell 300 1.0
 
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Sapphire Ring"
+	BaseType == "Sapphire Ring"
 	AreaLevel <= 30
 	#! tts "sapphire ring" sapphire-ring Russell 300 1.0
 
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Topaz Ring"
+	BaseType == "Topaz Ring"
 	AreaLevel <= 30
 	#! tts "topaz ring" topaz-ring Russell 300 1.0
 

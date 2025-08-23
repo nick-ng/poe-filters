@@ -197,3 +197,13 @@ func ParseFlags(rawCommand string) []Flag {
 
 	return flags
 }
+
+func PatchThirdPartyFilter(filterText string) string {
+	newFilterText := filterText
+
+	// BaseType == "Ring" doesn't perform exact match on "Ring" and will match Ringmail, etc
+	// Neversink's filter only uses this to show non-unique "Rings"
+	newFilterText = strings.ReplaceAll(newFilterText, "BaseType == \"Nameless Ring\" \"Ornate Quiver\" \"Prismatic Jewel\" \"Ring\" \"Ruby Amulet\" \"Unset Amulet\"", `BaseType == "Nameless Ring" "Ornate Quiver" "Prismatic Jewel" "Ruby Amulet" "Unset Amulet"`)
+
+	return newFilterText
+}

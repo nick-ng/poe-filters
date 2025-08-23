@@ -1,7 +1,7 @@
 # lots of gold
 Show
-	Class "Gold"
-	StackSize >= 1000
+	BaseType == "Gold"
+	StackSize >= 2000
 	SetFontSize 15
 	#!WhiteText!# 100
 	SetTextColor 170 158 130 100
@@ -12,7 +12,7 @@ Show
 
 # a bit of gold
 Show
-	Class "Gold"
+	BaseType == "Gold"
 	StackSize >= 300
 	SetFontSize 5
 		SetTextColor 170 158 13 50
@@ -23,7 +23,7 @@ Show
 
 # any gold
 Show
-	Class "Gold"
+	BaseType == "Gold"
 	SetFontSize 1
 SetTextColor 170 158 13 20
 		SetBackgroundColor 0 0 0 0

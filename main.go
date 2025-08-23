@@ -578,7 +578,8 @@ func importBaseFilter(filterName string) (string, string, error) {
 		filterData, err := os.ReadFile(path)
 
 		if err == nil {
-			return string(filterData), path, err
+			patchedFilterData := utils.PatchThirdPartyFilter(string(filterData))
+			return string(patchedFilterData), path, err
 		}
 	}
 

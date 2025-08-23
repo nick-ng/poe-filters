@@ -1,0 +1,13 @@
+#! poe2
+
+#! import poe2-gold.filter
+
+# chaos dot wands
+Show
+		AreaLevel <= 55
+		Rarity <= Rare
+		Class == "Wands"
+		SetFontSize 35
+		#!LevelingBorder!#
+
+#! import poe2/FilterBlade_2_Semi-Strict.filter
