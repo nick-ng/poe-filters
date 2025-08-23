@@ -349,7 +349,7 @@ Show
 	AreaLevel = 1
 	SetFontSize 45
 Show
-	BaseType "Scroll of Wisdom"
+	BaseType == "Scroll of Wisdom"
 	Class "Currency"
 	AreaLevel <= 24
 	SetTextColor 210 178 135 220
@@ -359,7 +359,7 @@ Show
 	PlayEffect Grey
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-wisdom.mp3" 200
 Show
-	BaseType "Portal Scroll"
+	BaseType == "Portal Scroll"
 	Class "Currency"
 	AreaLevel <= 24
 	SetTextColor 50 240 240 220
@@ -369,7 +369,7 @@ Show
 	PlayEffect Grey
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-portal.mp3" 200
 Show
-	BaseType "Armourer's Scrap"
+	BaseType == "Armourer's Scrap"
 	Class "Currency"
 	AreaLevel <= 24
 	SetFontSize 45
@@ -381,7 +381,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Blacksmith's Whetstone"
+	BaseType == "Blacksmith's Whetstone"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
 	SetBorderColor 130 130 255 230
@@ -391,7 +391,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Transmutation"
+	BaseType == "Orb of Transmutation"
 	SetFontSize 45
 	SetTextColor 0 255 0 230
 	SetBorderColor 130 130 255 230
@@ -401,7 +401,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Alteration"
+	BaseType == "Orb of Alteration"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
 	SetBorderColor 130 130 255 230
@@ -411,7 +411,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Fusing"
+	BaseType == "Orb of Fusing"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
 	SetBorderColor 130 130 255 230
@@ -421,7 +421,7 @@ Show
 Show
 	AreaLevel <= 32
 	Class "Currency"
-	BaseType "Orb of Alchemy"
+	BaseType == "Orb of Alchemy"
 	SetFontSize 45
 	SetTextColor 255 255 0 230
 	SetBorderColor 130 130 255 230
@@ -431,25 +431,25 @@ Show
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Iron Ring"
+	BaseType == "Iron Ring"
 	AreaLevel <= 30
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-iron-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Ruby Ring"
+	BaseType == "Ruby Ring"
 	AreaLevel <= 30
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-ruby-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Sapphire Ring"
+	BaseType == "Sapphire Ring"
 	AreaLevel <= 30
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-sapphire-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
-	BaseType "Topaz Ring"
+	BaseType == "Topaz Ring"
 	AreaLevel <= 30
 	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-topaz-ring.mp3" 300
 Show

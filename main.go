@@ -94,6 +94,8 @@ func main() {
 
 		if flags.Game == "poe2" {
 			fmt.Print("PoE 2 ")
+			poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
+			outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
 			gameFilterPath = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile 2", filterName)
 		}
 
@@ -153,12 +155,15 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	flags := ProcessedFilterFlags{}
 
 	filterData, err := os.ReadFile(filterPath)
+	filterString := string(filterData)
+
+	filterString = utils.PatchThirdPartyFilter(filterString)
 
 	if err != nil {
 		return "", flags, append(errorList, err)
 	}
 
-	rawLines := strings.Split(string(filterData), "\n")
+	rawLines := strings.Split(filterString, "\n")
 
 	var filterChunks []string
 	if !isImported {
@@ -578,8 +583,8 @@ func importBaseFilter(filterName string) (string, string, error) {
 		filterData, err := os.ReadFile(path)
 
 		if err == nil {
-			patchedFilterData := utils.PatchThirdPartyFilter(string(filterData))
-			return string(patchedFilterData), path, err
+			filterString := string(filterData)
+			return filterString, path, err
 		}
 	}
 
