@@ -224,32 +224,3 @@ Show # white - low area
 	PlayEffect White
 	PlayAlertSound 5 100 # map drop sound
 
-###########
-## Heist ##
-###########
-
-Show	# Repeatable Contracts
-	BaseType == "Forbidden Contract" "Preventative Contract" "Familial Contract" "Vigilante Contract" "Naval Contract" "Vengeful Contract"
-	SetFontSize 40
-	SetBorderColor 255 150 100
-	MinimapIcon 1 Red Pentagon
-	PlayEffect Red Temp
-	PlayAlertSound 16 100 # map drop sound
-
-Show
-	Class == "Contract"
-	SetTextColor 255 150 100
-	SetBorderColor 255 150 100
-	MinimapIcon 1 Red Pentagon
-	PlayEffect Red Temp
-	PlayAlertSound 16 100 # map drop sound
-	SetFontSize 40
-
-Show
-	Class "Blueprint"
-	SetFontSize 45
-	SetTextColor 203 240 252
-	SetBorderColor 203 240 252
-	MinimapIcon 0 Cyan Pentagon
-	PlayEffect Cyan Temp
-	CustomAlertSound "sounds/whakano-more-like-this.mp3"

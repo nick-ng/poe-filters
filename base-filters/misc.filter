@@ -78,7 +78,7 @@ Show
 	SetFontSize 25
 
 ## Heist contracts
-Hide
+Show
 	BaseType "Contract:"
 	Class "Quest"
 	SetBorderColor 0 150 0

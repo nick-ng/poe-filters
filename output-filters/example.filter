@@ -856,7 +856,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 19
 	Sockets < 6
@@ -875,7 +875,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 24
 	Sockets < 6
@@ -915,7 +915,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 20
 	Sockets < 6
@@ -943,7 +943,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 30
 	Sockets < 6
@@ -980,7 +980,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 48
 	Sockets < 6
@@ -999,7 +999,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 52
 	Sockets < 6
@@ -1027,7 +1027,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 57
 	Sockets < 6
@@ -1046,7 +1046,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 59
 	Sockets < 6
@@ -1083,7 +1083,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 69
 	Sockets < 6
@@ -1102,7 +1102,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 73
 	Sockets < 6
@@ -1130,7 +1130,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 77
 	Sockets < 6
@@ -1534,7 +1534,7 @@ Show
 	SetBorderColor 250 250 250
 	SetTextColor 136 32 251 255
 	SetFontSize 45
-	CustomAlertSound "d:\gitd\poe-filters\sounds\rue-bring-me-back.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\rue-bring-me-back.mp3"
 	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
 Show
@@ -1610,7 +1610,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ai_rue-aaaaaa.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ai_rue-aaaaaa.mp3"
 Show
 	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
 	SetBackgroundColor 250 250 250
@@ -1620,7 +1620,7 @@ Show
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 #	CustomAlertSound "sounds/aahh.mp3"
-	CustomAlertSound "d:\gitd\poe-filters\sounds\neon-what-the-heck.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\neon-what-the-heck.mp3"
 Show
 	BaseType "Imprint"
 	SetBackgroundColor 250 250 250
@@ -1637,7 +1637,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Circle
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\sounds\thps-special-trick-1.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\thps-special-trick-1.mp3"
 Show
 	Class "Currency"
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
@@ -1646,7 +1646,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
-	CustomAlertSound "d:\gitd\poe-filters\sounds\thps-special-trick-2.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\thps-special-trick-2.mp3"
 Show
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
@@ -1816,7 +1816,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Square
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\ai_rue-oh-my-god.mp3"
 Show
 	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
@@ -1895,7 +1895,7 @@ Show
 	SetBorderColor 122 122 122 230
 	SetTextColor 154 141 207 230
 	SetFontSize 45
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 ## Harvest
 Show
 	BaseType "Sacred Crystallised Lifeforce"
@@ -1931,7 +1931,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 Show
 	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
 	Class "Divination"
@@ -1939,7 +1939,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 2
 Show
 	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
@@ -1948,7 +1948,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 3
 Show
 	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
@@ -1957,7 +1957,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 4
 Show
 	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
@@ -1966,7 +1966,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 5
 Show
 	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
@@ -1975,7 +1975,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 6
 Show
 	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
@@ -1984,7 +1984,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 7
 Show
 	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
@@ -1993,7 +1993,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 8
 Show
 	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
@@ -2002,7 +2002,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 9
 Show
 	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
@@ -2011,7 +2011,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 10
 Show
 	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
@@ -2020,7 +2020,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 11
 Show
 	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
@@ -2029,7 +2029,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 12
 Show
 	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
@@ -2038,7 +2038,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 13
 Show
 	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
@@ -2047,7 +2047,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 16
 Show
 	BaseType == "The Catch"
@@ -2056,7 +2056,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 18
 Show
 	BaseType == "Imperial Legacy"
@@ -2065,7 +2065,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 22
 Show
 	BaseType == "Rebirth"
@@ -2074,7 +2074,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
 	StackSize >= 27
 #? end of [full-stack-divination-cards.filter]
 #? end of [currency.filter]
