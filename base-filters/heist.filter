@@ -35,3 +35,21 @@ Show
 	MinimapIcon 0 Cyan Pentagon
 	PlayEffect Cyan
 	CustomAlertSound "sounds/whakano-more-like-this.mp3"
+
+Show
+		BaseType == "Foliate Brooch" "Whisper-woven Cloak"
+	SetFontSize 45
+	SetTextColor 255 150 100
+	SetBorderColor 255 150 100
+	MinimapIcon 1 Red Pentagon
+	PlayEffect Red
+	CustomAlertSound "sounds/whakano-more-like-this.mp3"
+
+Show
+	Class == "Heist Gear" "Heist Tools"
+	SetFontSize 45
+	SetTextColor 255 150 100
+	SetBorderColor 255 150 100
+	MinimapIcon 1 Red Pentagon
+	PlayEffect Red
+	CustomAlertSound "sounds/whakano-more-like-this.mp3"
