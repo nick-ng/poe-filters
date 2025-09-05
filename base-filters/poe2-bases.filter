@@ -3,3 +3,14 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Pink Square
 	#!GoodBaseBorder!#
+
+Show # %D2 $type->chancing $tier->chanceany !itemproperty_bchancing
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Heavy Belt" "Stellar Amulet"
+	SetFontSize 40
+	SetBorderColor 0 200 95
+	PlayAlertSound 3 300
+	PlayEffect Green Temp
+	MinimapIcon 1 Green Diamond

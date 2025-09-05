@@ -1,6 +1,9 @@
 #! poe2
 
 #! import poe2-gold.filter
+#! import poe2-maps.filter
+#! import poe2-bases.filter
+#! import poe2-flasks.filter
 
 # chaos dot wands
 Show
@@ -10,4 +13,4 @@ Show
 		SetFontSize 35
 		#!LevelingBorder!#
 
-#! import poe2/FilterBlade_2_Semi-Strict.filter
+#! import poe2/FilterBlade_4_Very_Strict.filter

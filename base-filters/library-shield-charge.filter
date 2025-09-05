@@ -1,32 +1,20 @@
-## Some classes don't get shield charge at Prisoner's Gate so this shows shields with move speed implicit for longer. Probably unnecessary.
+## Mainly for Explosive Concoction swap
 
 ## Shield Charge shields
 #! links RGB shield
-	AreaLevel <= 31
-	BaseType == "War Buckler" "Painted Buckler"
+	AreaLevel <= 35
+	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
+	SetFontSize 45
+	MinimapIcon 0 Cyan Cross
+
+#! links RGG shield
+	AreaLevel <= 35
+	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Cross
 
 #! links RG shield
-	AreaLevel <= 31
-	BaseType == "War Buckler" "Painted Buckler"
-	SetFontSize 45
-	MinimapIcon 0 Cyan Cross
-
-#! links BBG shield
-	AreaLevel <= 31
-	BaseType == "War Buckler" "Painted Buckler"
-	SetFontSize 45
-	MinimapIcon 0 Cyan Cross
-
-#! links BBR shield
-	AreaLevel <= 31
-	BaseType == "War Buckler" "Painted Buckler"
-	SetFontSize 45
-	MinimapIcon 0 Cyan Cross
-
-#! links BBB shield
-	AreaLevel <= 31
-	BaseType == "War Buckler" "Painted Buckler"
-	SetFontSize 45
+	AreaLevel <= 35
+	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
+	SetFontSize 40
 	MinimapIcon 0 Cyan Cross

@@ -1,14 +1,14 @@
 # lots of gold
 Show
 	BaseType == "Gold"
-	StackSize >= 2000
+	StackSize >= 1500
 	SetFontSize 15
 	#!WhiteText!# 100
 	SetTextColor 170 158 130 100
 		SetBackgroundColor 0 0 0 0
 		SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 
 # a bit of gold
 Show
