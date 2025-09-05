@@ -1448,7 +1448,7 @@ Show
 # SetBorderColor 122 122 122 230
 # Sockets < 6
 #? end of [bases.filter]
-#? import gold.filter 1722020400
+#? import gold.filter
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
 # lots of gold

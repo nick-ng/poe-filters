@@ -202,6 +202,14 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					{
 						options["maxarea"] = []string{subCommandArguments[1]}
 					}
+				case "after":
+					{
+						importAfterTimestamp, err = strconv.ParseInt(subCommandArguments[1], 10, 0)
+						if err != nil {
+							errorString := fmt.Sprintf("couldn't parse import after timestamp: %s", subCommandArguments[1])
+							errorList = append(errorList, errors.New(errorString))
+						}
+					}
 				case "import":
 					fallthrough
 				case "noop": // the line didn't start with #!
@@ -252,7 +260,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 										}
 									}
 
-									if options["maxarea"] != nil && len(options["maxarea"]) > 0 {
+									if len(options["maxarea"]) > 0 {
 										maxarea, err := strconv.ParseInt(options["maxarea"][0], 10, 0)
 
 										if err != nil {
@@ -318,15 +326,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 				case "import":
 					{
 						currentCommand = "import"
-						options["file"] = []string{commandArguments[1]}
-						if len(commandArguments) > 2 {
-							importAfterTimestamp, err = strconv.ParseInt(commandArguments[2], 10, 0)
-
-							if err != nil {
-								errorString := fmt.Sprintf("couldn't parse import after timestamp: %s", commandArguments[2])
-								errorList = append(errorList, errors.New(errorString))
-							}
-						}
+						options["file"] = []string{strings.Join(commandArguments[1:], " ")}
 
 						tempLine := utils.CleanUpCommand(rawLine)
 						filterChunks = append(filterChunks, tempLine)

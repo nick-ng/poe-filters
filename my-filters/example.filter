@@ -93,7 +93,8 @@ Show
 # You can add comments after the level e.g. to remind you what the level means.
 #! maxarea 40 Act 4 - The Harvest
 
-#! import gold.filter 1722020400
+#! import gold.filter
+#! after 1722020400
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
 
