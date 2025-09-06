@@ -1,116 +1,116 @@
 # Divination Cards
 Show
-	BaseType == "The Dragon"
-	SetFontSize 45
-	#!BrightBackground!# 255
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+		BaseType == "The Dragon"
+		SetFontSize 45
+		#!BrightBackground!# 255
+		SetTextColor 255 140 54 255
+		SetBorderColor 47 252 47 255
+		MinimapIcon 2 Brown Star
+		PlayEffect Brown
+		CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Build Uniques
+		# Build Uniques
 Show
-	BaseType == "Sulphur Flask" "Bronzescale Gauntlets" "Dusk Blade"
-	Rarity Unique
-	SetFontSize 45
-	#!BrightBackground!# 255
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+		BaseType == "Sulphur Flask" "Bronzescale Gauntlets" "Dusk Blade"
+		Rarity Unique
+		SetFontSize 45
+		#!BrightBackground!# 255
+		SetTextColor 255 140 54 255
+		SetBorderColor 47 252 47 255
+		MinimapIcon 2 Brown Star
+		PlayEffect Brown
+		CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Build Other
+		# Build Other
 Show
-	BaseType == "Vaal Grace" "Vaal Impurity of Fire" "Vaal Impurity of Ice" "Vaal Impurity of Lightning"
-	Class Gem
-	SetFontSize 45
-	#!BrightBackground!# 255
+		BaseType == "Vaal Grace" "Vaal Impurity of Fire" "Vaal Impurity of Ice" "Vaal Impurity of Lightning"
+		Class Gem
+		SetFontSize 45
+		#!BrightBackground!# 255
 		#!GGGGemText!# 255
 		#!GGGGemBorder!# 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+		MinimapIcon 2 Brown Star
+		PlayEffect Brown
+		CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Item Bases
+		# Item Bases
 Show
-	BaseType "Topaz Flask" "Sapphire Flask"
+		BaseType "Topaz Flask" "Sapphire Flask"
 		AreaLevel < 60
-	Rarity <= Rare
-	SetFontSize 45
-	MinimapIcon 1 Cyan Star
-	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+		Rarity <= Rare
+		SetFontSize 45
+		MinimapIcon 1 Cyan Star
+		#!BrightBorder!# 200
+		CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
-# Leveling Items
+		# Leveling Items
 Show
-	BaseType "Heavy Belt"
-		AreaLevel < 60
-	Rarity <= Rare
-	SetFontSize 45
-	MinimapIcon 1 Cyan Star
-	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+		BaseType "Heavy Belt"
+		AreaLevel < 30
+		Rarity <= Rare
+		SetFontSize 45
+		MinimapIcon 1 Cyan Star
+		#!BrightBorder!# 200
+		CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 Show
-	BaseType "Large Life Flask"
+		BaseType "Large Life Flask"
 		AreaLevel < 12
-	Rarity <= Rare
-	SetFontSize 45
-	MinimapIcon 1 Cyan Raindrop
-	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+		Rarity <= Rare
+		SetFontSize 45
+		MinimapIcon 1 Cyan Raindrop
+		#!BrightBorder!# 200
+		CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 Show
-	AreaLevel < 68
-	Rarity = Rare
-	Class "Boots"
-	SetFontSize 45
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Star
-	#!BrightBorder!# 200
+		AreaLevel < 68
+		Rarity = Rare
+		Class "Boots"
+		SetFontSize 45
+		PlayEffect Yellow
+		MinimapIcon 1 Yellow Star
+		#!BrightBorder!# 200
 
 Show
-	AreaLevel < 77
-	Rarity = Rare
-	Corrupted False
-	Mirrored False
-	BaseType #!dex9!# #!dexint9!# #!strdex9!#
-	SetFontSize 35
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Star
-	#!MediumBaseBorder!# 200
+		AreaLevel < 77
+		Rarity = Rare
+		Corrupted False
+		Mirrored False
+		BaseType #!dex9!# #!dexint9!# #!strdex9!#
+		SetFontSize 35
+		PlayEffect Yellow
+		MinimapIcon 1 Yellow Star
+		#!MediumBaseBorder!# 200
 
-#! linksa RGGG
-#! linksa RGGB
-#! linksa RRGG
-#! linksa RGG
-#! linksa GGG
-#! linksa GGB
+		#! linksa RGGG
+		#! linksa RGGB
+		#! linksa RRGG
+		#! linksa RGG
+		#! linksa GGG
+		#! linksa GGB
 
 Show
-	AreaLevel <= 72 # Tier 5
-	Rarity = Rare
-	Corrupted False
-	Mirrored False
-	DropLevel >= 60
-	BaseEvasion >= 10
-	SetFontSize 45
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Star
+		AreaLevel <= 72 # Tier 5
+		Rarity = Rare
+		Corrupted False
+		Mirrored False
+		DropLevel >= 60
+		BaseEvasion >= 10
+		SetFontSize 45
+		PlayEffect Yellow
+		MinimapIcon 1 Yellow Star
 
-#! import library-shield-charge.filter
+		#! import library-shield-charge.filter
 
-#! weapons fast-2h-swords 30
-#! weapons fast-2h-axes 30
+		#! weapons fast-2h-swords 30
+		#! weapons fast-2h-axes 30
 
-#! import leveling.filter
-#! import currency.filter
-#! import maps.filter
-#! import heist.filter
-#! import misc.filter
-#! import bases.filter
-#! import life-flasks.filter
+		#! import leveling.filter
+		#! import currency.filter
+		#! import maps.filter
+		#! import heist.filter
+		#! import misc.filter
+		#! import bases.filter
+		#! import life-flasks.filter
 
-#! import FilterBlade_2_Semi-Strict.filter
+		#! import FilterBlade_2_Semi-Strict.filter
