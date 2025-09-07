@@ -1191,6 +1191,17 @@ Show
 	SetBorderColor 45 107 255 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
+## Jewels ##
+Show
+	AreaLevel <= 40
+	Class == "Jewels"
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	SetBorderColor 255 117 255 200
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 ## Rings, Amulets, Belts ##
 Show
 	AreaLevel <= 40
@@ -1405,15 +1416,6 @@ Show
 	SetFontSize 25
 	SetTextColor 190 240 0 180
 	SetBorderColor 200 50 50 255
-## March of the Legion (maybe)
-Show
-	AreaLevel <= 40
-	BaseType == "Legion Boots"
-	Rarity Unique
-	SetBackgroundColor 180 80 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 34
 # Hide uninteresting items as you progress
 # Hide
 # Rarity Rare
