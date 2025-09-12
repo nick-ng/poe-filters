@@ -78,9 +78,9 @@ Show
 #! import currency.filter
 #! import maps.filter
 #! import heist.filter
-#! import misc.filter
 #! import bases.filter
 #! import life-flasks.filter
+#! import misc.filter
 
 Show
 	AreaLevel < 68

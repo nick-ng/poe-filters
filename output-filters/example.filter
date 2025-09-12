@@ -1459,7 +1459,7 @@ Show
 	StackSize >= 1000
 	SetFontSize 15
 	SetTextColor 255 255 255 100
-	SetTextColor 170 158 130 100
+	#	SetTextColor 170 158 130 100
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
@@ -1468,8 +1468,8 @@ Show
 Show
 	Class "Gold"
 	StackSize >= 300
-	SetFontSize 5
-	SetTextColor 170 158 13 50
+	SetFontSize 12
+	#	SetTextColor 170 158 13 50
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1477,8 +1477,8 @@ Show
 # any gold
 Show
 	Class "Gold"
-	SetFontSize 1
-	SetTextColor 170 158 13 20
+	SetFontSize 12
+	# SetTextColor 170 158 13 20
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1504,7 +1504,7 @@ Show
 	StackSize >= 1000
 	SetFontSize 15
 	SetTextColor 255 255 255 100
-	SetTextColor 170 158 130 100
+	#	SetTextColor 170 158 130 100
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
@@ -1513,8 +1513,8 @@ Show
 Show
 	Class "Gold"
 	StackSize >= 300
-	SetFontSize 5
-	SetTextColor 170 158 13 50
+	SetFontSize 12
+	#	SetTextColor 170 158 13 50
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1522,8 +1522,8 @@ Show
 # any gold
 Show
 	Class "Gold"
-	SetFontSize 1
-	SetTextColor 170 158 13 20
+	SetFontSize 12
+	# SetTextColor 170 158 13 20
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle

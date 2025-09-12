@@ -1,32 +1,41 @@
+Show
+	Class "Gold"
+	AreaLevel < 55
+	SetFontSize 30
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
+
 # lots of gold
 Show
 	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 15
-	#!WhiteText!# 100
-	SetTextColor 170 158 130 100
-		SetBackgroundColor 0 0 0 0
-		SetBorderColor 0 0 0 0
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 
 # a bit of gold
 Show
 	Class "Gold"
 	StackSize >= 300
-	SetFontSize 5
-		SetTextColor 170 158 13 50
-		SetBackgroundColor 0 0 0 0
-		SetBorderColor 0 0 0 0
+	SetFontSize 12
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
 	PlayEffect Yellow Temp
 
 # any gold
 Show
 	Class "Gold"
-	SetFontSize 1
-SetTextColor 170 158 13 20
-		SetBackgroundColor 0 0 0 0
-		SetBorderColor 0 0 0 0
+	SetFontSize 12
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
 	PlayEffect Yellow Temp
