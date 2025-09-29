@@ -95,6 +95,7 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	ttsDelay()
 
 	fmt.Println("getting \"", text, "\"")
+	text = strings.ReplaceAll(text, " ", "+")
 
 	client := http.Client{}
 
