@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"poe-filters/utils"
 	"regexp"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -24,14 +25,39 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
 
-func main() {
+func getPoe1Path(pathSuffix string) string {
 	homeDir, err := os.UserHomeDir()
-
 	if err != nil {
 		fmt.Println("\nCouldn't get home directory", err)
 		os.Exit(1)
 	}
 
+	if runtime.GOOS == "windows" {
+		poe1Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
+		return poe1Dir
+	}
+
+	poe1Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "238960", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile", pathSuffix)
+	return poe1Dir
+}
+
+func getPoe2Path(pathSuffix string) string {
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		fmt.Println("\nCouldn't get home directory", err)
+		os.Exit(1)
+	}
+
+	if runtime.GOOS == "windows" {
+		poe2Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
+		return poe2Dir
+	}
+
+	poe2Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "2694490", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile 2", pathSuffix)
+	return poe2Dir
+}
+
+func main() {
 	utils.MakeDivinationCardsFilterPoeNinja()
 
 	utils.MkDirIfNotExist(MY_FILTERS_PATH)
@@ -90,13 +116,13 @@ func main() {
 		filter, flags, errList := processFilter(filterPath, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
-		gameFilterPath := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", filterName)
+		gameFilterPath := getPoe1Path(filterName)
 
 		if flags.Game == "poe2" {
 			fmt.Print("PoE 2 ")
 			poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
 			outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
-			gameFilterPath = filepath.Join(homeDir, "Documents", "My Games", "Path of Exile 2", filterName)
+			gameFilterPath = getPoe2Path(filterName)
 		}
 
 		if len(filter) == 0 {
@@ -146,6 +172,8 @@ func main() {
 	}
 
 	utils.PrintSoundStats()
+
+	// @todo(nick-ng): copy sounds to Path of Exile (2)/sounds
 }
 
 // @todo(nick-ng): move some functions to separate files

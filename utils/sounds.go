@@ -94,6 +94,8 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 
 	ttsDelay()
 
+	fmt.Println("getting \"", text, "\"")
+
 	client := http.Client{}
 
 	// requestJsonBytes, err := json.Marshal(ttsRequest{
@@ -116,15 +118,24 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 		return "", "", err
 	}
 
-	req.Header = http.Header{
-		"Content-Type": {"application/json"},
-	}
+	// req.Header = http.Header{
+	// 	// "Content-Type": {"application/json"},
+	// 	"Host":       {"api.streamelements.com"},
+	// 	"Accept":     {"*/*"},
+	// 	"User-Agent": {"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0"},
+	// }
 
 	res, err := client.Do(req)
 
 	if err != nil {
 		fmt.Println(err)
 		return "", "", err
+	}
+
+	if res.StatusCode == 400 {
+		fmt.Println(req)
+		fmt.Println(res)
+		os.Exit(1)
 	}
 
 	resBody, err := io.ReadAll(res.Body)
