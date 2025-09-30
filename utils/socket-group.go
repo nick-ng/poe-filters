@@ -1,7 +1,11 @@
 package utils
 
 import (
+	"bytes"
 	"fmt"
+	"os/exec"
+	"path/filepath"
+	"runtime"
 	"sort"
 	"strings"
 )
@@ -97,8 +101,26 @@ func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
 	}
 
 	ttsString := GetSocketGroupText(socketGroup, ttsStringPart)
+	ttsFileName := fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart)
+	_, soundPath, err := GetTextToSpeech(ttsString, ttsFileName, "Brian", SOCKET_GROUP_TEMPO)
+	if runtime.GOOS != "windows" {
+		gameDir := GetPoe1Path("tts/")
+		cmd := exec.Command(
+			"cp",
+			"--update=none",
+			soundPath,
+			gameDir,
+		)
+		var outb, errb bytes.Buffer
+		cmd.Stdout = &outb
+		cmd.Stderr = &errb
+		err = cmd.Run()
+		if err != nil {
+			fmt.Println("error copying sound file to game directory", err, outb.String(), errb.String())
+		}
 
-	_, soundPath, err := GetTextToSpeech(ttsString, fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart), "Brian", SOCKET_GROUP_TEMPO)
+		soundPath = strings.ToLower(filepath.Join("tts", ttsFileName))
+	}
 
 	if err != nil {
 		return "", err

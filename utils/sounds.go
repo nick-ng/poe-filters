@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"bytes"
 	"errors"
 	"fmt"
 	"io"
@@ -9,6 +10,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -213,7 +215,7 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 	return rawPath, finalPath, err
 }
 
-func MakeTts(rawCommand string) string {
+func MakeTts(rawCommand string, game string) string {
 	args := strings.Split(rawCommand, "\"")
 
 	if len(args) < 3 {
@@ -261,11 +263,41 @@ func MakeTts(rawCommand string) string {
 		return output
 	}
 
+	if runtime.GOOS != "windows" {
+		gameDir := GetPoe1Path("tts/")
+
+		if game == "poe2" {
+			gameDir = GetPoe2Path("tts/")
+		}
+
+		cmd := exec.Command(
+			"cp",
+			"--update=none",
+			path,
+			gameDir,
+		)
+
+		var outb, errb bytes.Buffer
+		cmd.Stdout = &outb
+		cmd.Stderr = &errb
+		err = cmd.Run()
+
+		if err != nil {
+			fmt.Println("error copying sound file to game directory", err, outb.String(), errb.String())
+		}
+
+		path = filepath.Join("tts", filename)
+	}
+
 	output := fmt.Sprintf("\tCustomAlertSound \"%s\" %s", path, volume)
 	return output
 }
 
+// @todo(nick-ng): change the path based on operating system
 func FixSoundPath(originalLine string) string {
+	if runtime.GOOS != "windows" {
+		return originalLine
+	}
 	// I think file names can't contain "
 	arguments := strings.Split(originalLine, "\"")
 

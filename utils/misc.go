@@ -6,6 +6,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strconv"
 	"strings"
 )
@@ -206,4 +207,42 @@ func PatchThirdPartyFilter(filterText string) string {
 	newFilterText = strings.ReplaceAll(newFilterText, "BaseType == \"Nameless Ring\" \"Ornate Quiver\" \"Prismatic Jewel\" \"Ring\" \"Ruby Amulet\" \"Unset Amulet\"", `BaseType == "Nameless Ring" "Ornate Quiver" "Prismatic Jewel" "Ruby Amulet" "Unset Amulet"`)
 
 	return newFilterText
+}
+
+func GetPoe1Path(pathSuffix string) string {
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		fmt.Println("\nCouldn't get home directory", err)
+		os.Exit(1)
+	}
+
+	if runtime.GOOS == "windows" {
+		poe1Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
+		return poe1Dir
+	}
+
+	poe1Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "238960", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile", pathSuffix)
+	if strings.HasSuffix(pathSuffix, "/") {
+		poe1Dir = fmt.Sprintf("%s/", poe1Dir)
+	}
+	return poe1Dir
+}
+
+func GetPoe2Path(pathSuffix string) string {
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		fmt.Println("\nCouldn't get home directory", err)
+		os.Exit(1)
+	}
+
+	if runtime.GOOS == "windows" {
+		poe2Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
+		return poe2Dir
+	}
+
+	poe2Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "2694490", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile 2", pathSuffix)
+	if strings.HasSuffix(pathSuffix, "/") {
+		poe2Dir = fmt.Sprintf("%s/", poe2Dir)
+	}
+	return poe2Dir
 }

@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"errors"
 	"fmt"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"poe-filters/utils"
 	"regexp"
@@ -25,38 +27,6 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
 
-func getPoe1Path(pathSuffix string) string {
-	homeDir, err := os.UserHomeDir()
-	if err != nil {
-		fmt.Println("\nCouldn't get home directory", err)
-		os.Exit(1)
-	}
-
-	if runtime.GOOS == "windows" {
-		poe1Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
-		return poe1Dir
-	}
-
-	poe1Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "238960", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile", pathSuffix)
-	return poe1Dir
-}
-
-func getPoe2Path(pathSuffix string) string {
-	homeDir, err := os.UserHomeDir()
-	if err != nil {
-		fmt.Println("\nCouldn't get home directory", err)
-		os.Exit(1)
-	}
-
-	if runtime.GOOS == "windows" {
-		poe2Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
-		return poe2Dir
-	}
-
-	poe2Dir := filepath.Join(homeDir, ".steam", "steam", "steamapps", "compatdata", "2694490", "pfx", "drive_c", "users", "steamuser", "Documents", "My Games", "Path of Exile 2", pathSuffix)
-	return poe2Dir
-}
-
 func main() {
 	utils.MakeDivinationCardsFilterPoeNinja()
 
@@ -66,6 +36,14 @@ func main() {
 	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
 	utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 	utils.MkDirIfNotExist(CACHE_PATH)
+
+	if runtime.GOOS != "windows" {
+		poe1TtsDir := utils.GetPoe1Path("tts/")
+		utils.MkDirIfNotExist(poe1TtsDir)
+
+		poe2TtsDir := utils.GetPoe2Path("tts/")
+		utils.MkDirIfNotExist(poe2TtsDir)
+	}
 
 	path1 := filepath.Join(MY_FILTERS_PATH)
 	dat1, err := os.ReadDir(path1)
@@ -116,13 +94,13 @@ func main() {
 		filter, flags, errList := processFilter(filterPath, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
-		gameFilterPath := getPoe1Path(filterName)
+		gameFilterPath := utils.GetPoe1Path(filterName)
 
 		if flags.Game == "poe2" {
 			fmt.Print("PoE 2 ")
 			poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
 			outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
-			gameFilterPath = getPoe2Path(filterName)
+			gameFilterPath = utils.GetPoe2Path(filterName)
 		}
 
 		if len(filter) == 0 {
@@ -173,14 +151,57 @@ func main() {
 
 	utils.PrintSoundStats()
 
-	// @todo(nick-ng): copy sounds to Path of Exile (2)/sounds
+	if runtime.GOOS != "windows" {
+		temp, err := filepath.Abs(filepath.Join("sounds"))
+		if err != nil {
+			fmt.Println("error getting sounds directory", err)
+			os.Exit(1)
+		}
+		soundsPath := fmt.Sprintf("%s/", temp)
+
+		fmt.Println("soundsPath", soundsPath)
+
+		temp = utils.GetPoe1Path("")
+		gameDir1 := fmt.Sprintf("%s/", temp)
+		utils.MkDirIfNotExist(gameDir1)
+		cmd1 := exec.Command(
+			"cp",
+			"--update=none",
+			"-r",
+			soundsPath,
+			gameDir1,
+		)
+		var outb, errb bytes.Buffer
+		cmd1.Stdout = &outb
+		cmd1.Stderr = &errb
+		err = cmd1.Run()
+
+		if err != nil {
+			fmt.Println("error copying PoE 1 sound files", err, outb.String(), errb.String())
+		}
+
+		temp = utils.GetPoe2Path("")
+		gameDir2 := fmt.Sprintf("%s/", temp)
+		utils.MkDirIfNotExist(gameDir2)
+		cmd2 := exec.Command(
+			"cp",
+			"--update=none",
+			"-r",
+			soundsPath,
+			gameDir2,
+		)
+		err = cmd2.Run()
+		if err != nil {
+			fmt.Println("error copying PoE 2 sound files", err)
+		}
+	}
 }
 
 // @todo(nick-ng): move some functions to separate files
 func processFilter(filterPath string, isImported bool) (string, ProcessedFilterFlags, []error) {
 	var errorList []error
 
-	flags := ProcessedFilterFlags{}
+	flags := ProcessedFilterFlags{Game: "poe1"}
 
 	filterData, err := os.ReadFile(filterPath)
 	filterString := string(filterData)
@@ -573,7 +594,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 			// 	}
 			case "tts":
 				{
-					newLine := utils.MakeTts(trimmedLine)
+					newLine := utils.MakeTts(trimmedLine, flags.Game)
 					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
 			default:

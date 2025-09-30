@@ -33,7 +33,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrg-axe.mp3" 300
+	CustomAlertSound "tts/rrg-axe.mp3" 300
 # You can add extra conditions
 	AreaLevel <= 43
 	Class "Axe"
@@ -49,7 +49,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrg-mace.mp3" 300
+	CustomAlertSound "tts/rrg-mace.mp3" 300
 	AreaLevel <= 43
 	Class "Mace"
 	SetFontSize 35
@@ -67,7 +67,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrrg-boots.mp3" 300
+	CustomAlertSound "tts/rrrg-boots.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 43
 	Class "Boots"
@@ -81,7 +81,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrrg-gloves.mp3" 300
+	CustomAlertSound "tts/rrrg-gloves.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 43
 	Class "Gloves"
@@ -95,7 +95,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrrg-helm.mp3" 300
+	CustomAlertSound "tts/rrrg-helm.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 43
 	Class "Helmets"
@@ -109,7 +109,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rrrg-body.mp3" 300
+	CustomAlertSound "tts/rrrg-body.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 43
 	Class "Body Armours"
@@ -125,7 +125,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgg-boots.mp3" 300
+	CustomAlertSound "tts/rgg-boots.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 12
 	Class "Boots"
@@ -139,7 +139,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgg-gloves.mp3" 300
+	CustomAlertSound "tts/rgg-gloves.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 12
 	Class "Gloves"
@@ -153,7 +153,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgg-helm.mp3" 300
+	CustomAlertSound "tts/rgg-helm.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 12
 	Class "Helmets"
@@ -167,7 +167,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgg-body.mp3" 300
+	CustomAlertSound "tts/rgg-body.mp3" 300
 	AreaLevel >= 1
 	AreaLevel <= 12
 	Class "Body Armours"
@@ -183,7 +183,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgb-boots.mp3" 300
+	CustomAlertSound "tts/rgb-boots.mp3" 300
 	AreaLevel >= 35
 	AreaLevel <= 43
 	Class "Boots"
@@ -197,7 +197,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgb-gloves.mp3" 300
+	CustomAlertSound "tts/rgb-gloves.mp3" 300
 	AreaLevel >= 35
 	AreaLevel <= 43
 	Class "Gloves"
@@ -211,7 +211,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgb-helm.mp3" 300
+	CustomAlertSound "tts/rgb-helm.mp3" 300
 	AreaLevel >= 35
 	AreaLevel <= 43
 	Class "Helmets"
@@ -225,7 +225,7 @@ Show
 	SetBorderColor 200 0 0 230
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\rgb-body.mp3" 300
+	CustomAlertSound "tts/rgb-body.mp3" 300
 	AreaLevel >= 35
 	AreaLevel <= 43
 	Class "Body Armours"
@@ -268,7 +268,7 @@ Show
 	# 3. voice (optional) - see https://textreader.pro/ for a list of voices
 	# 4. volume (optional) - 0 - 300 as per normal Path of Exile filter settings
 	# 5. tempo (optional) - speed of the voice. 1 is normal. Link colours is 2.2
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\brian-unique-base.mp3" 300
+	CustomAlertSound "tts/brian-unique-base.mp3" 300
 #? import test3.filter
 # If the file couldn't be imported, the output filter will have an error
 #? error: couldn't import [test3.filter]
@@ -286,7 +286,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-granite.mp3" 200
+	CustomAlertSound "tts/amy-granite.mp3" 200
 Show
 	AreaLevel <= 55
 	Class "Currency"
@@ -296,7 +296,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-blacksmith.mp3" 200
+	CustomAlertSound "tts/amy-blacksmith.mp3" 200
 Show
 	AreaLevel <= 22
 	Class "One Hand" "Two Hand" "Wand" "Sceptre" "Dagger" "Bow" "Staves" "Dagger" "Claw"
@@ -306,7 +306,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-20-quality-weapon.mp3" 200
+	CustomAlertSound "tts/amy-20-quality-weapon.mp3" 200
 Show
 	AreaLevel <= 55
 	BaseType "Rustic Sash"
@@ -315,7 +315,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-rustic-sash.mp3" 200
+	CustomAlertSound "tts/amy-rustic-sash.mp3" 200
 #? import leveling.filter
 ## Make sure this is after any links
 Show
@@ -326,7 +326,7 @@ Show
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-horizon.mp3" 200
+	CustomAlertSound "tts/amy-horizon.mp3" 200
 Show
 	Class "Currency"
 	BaseType == "Horizon Shard" "Harbinger's Shard"
@@ -357,7 +357,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Grey Raindrop
 	PlayEffect Grey
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-wisdom.mp3" 200
+	CustomAlertSound "tts/amy-wisdom.mp3" 200
 Show
 	BaseType == "Portal Scroll"
 	Class "Currency"
@@ -367,7 +367,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Grey Star
 	PlayEffect Grey
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-portal.mp3" 200
+	CustomAlertSound "tts/amy-portal.mp3" 200
 Show
 	BaseType == "Armourer's Scrap"
 	Class "Currency"
@@ -377,7 +377,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-armourer.mp3" 200
+	CustomAlertSound "tts/amy-armourer.mp3" 200
 Show
 	AreaLevel <= 32
 	Class "Currency"
@@ -387,7 +387,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-blacksmith.mp3" 200
+	CustomAlertSound "tts/amy-blacksmith.mp3" 200
 Show
 	AreaLevel <= 32
 	Class "Currency"
@@ -397,7 +397,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-transmute.mp3" 200
+	CustomAlertSound "tts/amy-transmute.mp3" 200
 Show
 	AreaLevel <= 32
 	Class "Currency"
@@ -407,7 +407,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-alteration.mp3" 200
+	CustomAlertSound "tts/amy-alteration.mp3" 200
 Show
 	AreaLevel <= 32
 	Class "Currency"
@@ -417,7 +417,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-fusing.mp3" 200
+	CustomAlertSound "tts/amy-fusing.mp3" 200
 Show
 	AreaLevel <= 32
 	Class "Currency"
@@ -427,31 +427,31 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Green
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-alchemy.mp3" 200
+	CustomAlertSound "tts/amy-alchemy.mp3" 200
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Iron Ring"
 	AreaLevel <= 30
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-iron-ring.mp3" 300
+	CustomAlertSound "tts/russell-iron-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Ruby Ring"
 	AreaLevel <= 30
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-ruby-ring.mp3" 300
+	CustomAlertSound "tts/russell-ruby-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Sapphire Ring"
 	AreaLevel <= 30
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-sapphire-ring.mp3" 300
+	CustomAlertSound "tts/russell-sapphire-ring.mp3" 300
 Show
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Topaz Ring"
 	AreaLevel <= 30
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\russell-topaz-ring.mp3" 300
+	CustomAlertSound "tts/russell-topaz-ring.mp3" 300
 Show
 	BaseType == "Vaal Haste"
 	SetFontSize 45
@@ -460,7 +460,7 @@ Show
 	SetTextColor 0 200 200
 	MinimapIcon 2 Brown Triangle
 	PlayEffect Brown
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-vaal-haste.mp3" 200
+	CustomAlertSound "tts/amy-vaal-haste.mp3" 200
 #? import life-flasks.filter
 Show
 	AreaLevel <= 12
@@ -481,7 +481,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-large.mp3" 200
+	CustomAlertSound "tts/amy-life-large.mp3" 200
 Show
 	AreaLevel <= 18
 	BaseType == "Large Life Flask"
@@ -501,7 +501,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-greater.mp3" 200
+	CustomAlertSound "tts/amy-life-greater.mp3" 200
 Show
 	AreaLevel <= 24
 	BaseType == "Greater Life Flask"
@@ -521,7 +521,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-grand.mp3" 200
+	CustomAlertSound "tts/amy-life-grand.mp3" 200
 Show
 	AreaLevel <= 30
 	BaseType == "Grand Life Flask"
@@ -541,7 +541,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-giant.mp3" 200
+	CustomAlertSound "tts/amy-life-giant.mp3" 200
 Show
 	AreaLevel <= 36
 	BaseType == "Giant Life Flask"
@@ -561,7 +561,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-colossal.mp3" 200
+	CustomAlertSound "tts/amy-life-colossal.mp3" 200
 Show
 	AreaLevel <= 42
 	BaseType == "Colossal Life Flask"
@@ -581,7 +581,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-sacred.mp3" 200
+	CustomAlertSound "tts/amy-life-sacred.mp3" 200
 Show
 	AreaLevel <= 44
 	BaseType == "Sacred Life Flask"
@@ -601,7 +601,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-hallowed.mp3" 200
+	CustomAlertSound "tts/amy-life-hallowed.mp3" 200
 Show
 	AreaLevel <= 60
 	BaseType == "Hallowed Life Flask"
@@ -622,7 +622,7 @@ Show
 	SetBorderColor 255 0 0 200
 	PlayEffect Red
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-divine.mp3" 200
+	CustomAlertSound "tts/amy-life-divine.mp3" 200
 #? end of [life-flasks.filter]
 #? import mana-flasks.filter
 Show
@@ -644,7 +644,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-large.mp3" 200
+	CustomAlertSound "tts/amy-mana-large.mp3" 200
 Show
 	AreaLevel <= 18
 	BaseType == "Large Mana Flask"
@@ -665,7 +665,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-greater.mp3" 200
+	CustomAlertSound "tts/amy-mana-greater.mp3" 200
 Show
 	AreaLevel <= 24
 	BaseType == "Greater Mana Flask"
@@ -686,7 +686,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-grand.mp3" 200
+	CustomAlertSound "tts/amy-mana-grand.mp3" 200
 Show
 	AreaLevel <= 30
 	BaseType == "Grand Mana Flask"
@@ -707,7 +707,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-giant.mp3" 200
+	CustomAlertSound "tts/amy-mana-giant.mp3" 200
 Show
 	AreaLevel <= 36
 	BaseType == "Giant Mana Flask"
@@ -728,7 +728,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-colossal.mp3" 200
+	CustomAlertSound "tts/amy-mana-colossal.mp3" 200
 Show
 	AreaLevel <= 42
 	BaseType == "Colossal Mana Flask"
@@ -749,7 +749,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-sacred.mp3" 200
+	CustomAlertSound "tts/amy-mana-sacred.mp3" 200
 Show
 	AreaLevel <= 44
 	BaseType == "Sacred Mana Flask"
@@ -770,7 +770,7 @@ Show
 	Rarity <= Rare
 	SetBorderColor 0 0 255 200
 	MinimapIcon 2 Blue Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-mana-hallowed.mp3" 200
+	CustomAlertSound "tts/amy-mana-hallowed.mp3" 200
 Show
 	AreaLevel <= 55
 	BaseType == "Hallowed Mana Flask"
@@ -809,7 +809,7 @@ Show
 	SetTextColor 255 255 0 230
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-horizon.mp3" 200
+	CustomAlertSound "tts/amy-horizon.mp3" 200
 Show
 	Class "Currency"
 	BaseType == "Horizon Shard"
@@ -856,7 +856,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 19
 	Sockets < 6
@@ -875,7 +875,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 24
 	Sockets < 6
@@ -915,7 +915,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 20
 	Sockets < 6
@@ -943,7 +943,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 30
 	Sockets < 6
@@ -980,7 +980,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 48
 	Sockets < 6
@@ -999,7 +999,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 52
 	Sockets < 6
@@ -1027,7 +1027,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 57
 	Sockets < 6
@@ -1046,7 +1046,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 59
 	Sockets < 6
@@ -1083,7 +1083,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 69
 	Sockets < 6
@@ -1102,7 +1102,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 73
 	Sockets < 6
@@ -1130,7 +1130,7 @@ Show
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 77
 	Sockets < 6
@@ -1277,7 +1277,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Red
 	MinimapIcon 2 Red Raindrop
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-life-divine.mp3" 200
+	CustomAlertSound "tts/amy-life-divine.mp3" 200
 ## Helmet, Gloves, Boots ##
 Show
 	AreaLevel <= 40
@@ -1453,23 +1453,31 @@ Show
 #? import gold.filter
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
+Show
+	Class "Gold"
+	AreaLevel < 55
+	SetFontSize 30
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
 # lots of gold
 Show
 	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 15
-	SetTextColor 255 255 255 100
-	#	SetTextColor 170 158 130 100
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 # a bit of gold
 Show
 	Class "Gold"
 	StackSize >= 300
 	SetFontSize 12
-	#	SetTextColor 170 158 13 50
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1478,7 +1486,7 @@ Show
 Show
 	Class "Gold"
 	SetFontSize 12
-	# SetTextColor 170 158 13 20
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1498,23 +1506,31 @@ Show
 # If you have any special comments at the end of the file, make sure you include a final newline otherwise the last comment won't be processed
 #? import currency.filter
 #? import gold.filter
+Show
+	Class "Gold"
+	AreaLevel < 55
+	SetFontSize 30
+	SetTextColor 255 255 20 250
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
 # lots of gold
 Show
 	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 15
-	SetTextColor 255 255 255 100
-	#	SetTextColor 170 158 130 100
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 # a bit of gold
 Show
 	Class "Gold"
 	StackSize >= 300
 	SetFontSize 12
-	#	SetTextColor 170 158 13 50
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1523,7 +1539,7 @@ Show
 Show
 	Class "Gold"
 	SetFontSize 12
-	# SetTextColor 170 158 13 20
+	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
 	MinimapIcon 2 Yellow Circle
@@ -1536,7 +1552,7 @@ Show
 	SetBorderColor 250 250 250
 	SetTextColor 136 32 251 255
 	SetFontSize 45
-	CustomAlertSound "D:\gitd\poe-filters\sounds\rue-bring-me-back.mp3"
+	CustomAlertSound "sounds/rue-bring-me-back.mp3"
 	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
 Show
@@ -1612,7 +1628,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ai_rue-aaaaaa.mp3"
+	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
 Show
 	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
 	SetBackgroundColor 250 250 250
@@ -1622,7 +1638,7 @@ Show
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 #	CustomAlertSound "sounds/aahh.mp3"
-	CustomAlertSound "D:\gitd\poe-filters\sounds\neon-what-the-heck.mp3"
+	CustomAlertSound "sounds/neon-what-the-heck.mp3"
 Show
 	BaseType "Imprint"
 	SetBackgroundColor 250 250 250
@@ -1639,7 +1655,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Circle
 	PlayEffect Green
-	CustomAlertSound "D:\gitd\poe-filters\sounds\thps-special-trick-1.mp3"
+	CustomAlertSound "sounds/thps-special-trick-1.mp3"
 Show
 	Class "Currency"
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
@@ -1648,7 +1664,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Orange Circle
 	PlayEffect Blue
-	CustomAlertSound "D:\gitd\poe-filters\sounds\thps-special-trick-2.mp3"
+	CustomAlertSound "sounds/thps-special-trick-2.mp3"
 Show
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
@@ -1707,7 +1723,7 @@ Show
 	SetTextColor 255 255 0 230
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Circle
-	CustomAlertSound "d:\gitd\poe-filters\tts-sounds\amy-chance.mp3" 200
+	CustomAlertSound "tts/amy-chance.mp3" 200
 Hide
 	Class "Currency"
 	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
@@ -1818,7 +1834,7 @@ Show
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink Square
 	PlayEffect Green
-	CustomAlertSound "D:\gitd\poe-filters\sounds\ai_rue-oh-my-god.mp3"
+	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
 Show
 	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
@@ -1897,7 +1913,7 @@ Show
 	SetBorderColor 122 122 122 230
 	SetTextColor 154 141 207 230
 	SetFontSize 45
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 ## Harvest
 Show
 	BaseType "Sacred Crystallised Lifeforce"
@@ -1933,7 +1949,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 Show
 	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
 	Class "Divination"
@@ -1941,7 +1957,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 2
 Show
 	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
@@ -1950,7 +1966,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 3
 Show
 	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
@@ -1959,7 +1975,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 4
 Show
 	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
@@ -1968,7 +1984,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 5
 Show
 	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
@@ -1977,7 +1993,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 6
 Show
 	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
@@ -1986,7 +2002,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 7
 Show
 	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
@@ -1995,7 +2011,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 8
 Show
 	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
@@ -2004,7 +2020,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 9
 Show
 	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
@@ -2013,7 +2029,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 10
 Show
 	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
@@ -2022,7 +2038,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 11
 Show
 	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
@@ -2031,7 +2047,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 12
 Show
 	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
@@ -2040,7 +2056,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 13
 Show
 	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
@@ -2049,7 +2065,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 16
 Show
 	BaseType == "The Catch"
@@ -2058,7 +2074,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 18
 Show
 	BaseType == "Imperial Legacy"
@@ -2067,7 +2083,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 22
 Show
 	BaseType == "Rebirth"
@@ -2076,7 +2092,7 @@ Show
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Pink UpsideDownHouse
-	CustomAlertSound "D:\gitd\poe-filters\sounds\intel-thanks-steve.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 27
 #? end of [full-stack-divination-cards.filter]
 #? end of [currency.filter]
