@@ -38,10 +38,13 @@ func main() {
 	utils.MkDirIfNotExist(CACHE_PATH)
 
 	if runtime.GOOS != "windows" {
-		poe1TtsDir := utils.GetPoe1Path("tts/")
+		poe1TtsDir := utils.GetPoe1SteamPath("tts/")
 		utils.MkDirIfNotExist(poe1TtsDir)
 
-		poe2TtsDir := utils.GetPoe2Path("tts/")
+		poe1LutrisTtsDir := utils.GetPoe1LutrisPath("tts/")
+		utils.MkDirIfNotExist(poe1LutrisTtsDir)
+
+		poe2TtsDir := utils.GetPoe2SteamPath("tts/")
 		utils.MkDirIfNotExist(poe2TtsDir)
 	}
 
@@ -94,13 +97,13 @@ func main() {
 		filter, flags, errList := processFilter(filterPath, false)
 
 		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
-		gameFilterPath := utils.GetPoe1Path(filterName)
+		gameFilterPath := utils.GetPoe1SteamPath(filterName)
 
 		if flags.Game == "poe2" {
 			fmt.Print("PoE 2 ")
 			poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
 			outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
-			gameFilterPath = utils.GetPoe2Path(filterName)
+			gameFilterPath = utils.GetPoe2SteamPath(filterName)
 		}
 
 		if len(filter) == 0 {
@@ -159,9 +162,7 @@ func main() {
 		}
 		soundsPath := fmt.Sprintf("%s/", temp)
 
-		fmt.Println("soundsPath", soundsPath)
-
-		temp = utils.GetPoe1Path("")
+		temp = utils.GetPoe1SteamPath("")
 		gameDir1 := fmt.Sprintf("%s/", temp)
 		utils.MkDirIfNotExist(gameDir1)
 		cmd1 := exec.Command(
@@ -175,12 +176,16 @@ func main() {
 		cmd1.Stdout = &outb
 		cmd1.Stderr = &errb
 		err = cmd1.Run()
-
 		if err != nil {
 			fmt.Println("error copying PoE 1 sound files", err, outb.String(), errb.String())
 		}
 
-		temp = utils.GetPoe2Path("")
+		// lutris
+		utils.Exec("cp", "--update=none", "-r", utils.GetPoe1SteamPath("sounds/"), utils.GetPoe1LutrisPath("/"))
+		utils.Exec("cp", "--update=none", "-r", utils.GetPoe1SteamPath("tts/"), utils.GetPoe1LutrisPath("/"))
+		utils.CpGlob(fmt.Sprintf("%s*.filter", gameDir1), utils.GetPoe1LutrisPath("/"))
+
+		temp = utils.GetPoe2SteamPath("")
 		gameDir2 := fmt.Sprintf("%s/", temp)
 		utils.MkDirIfNotExist(gameDir2)
 		cmd2 := exec.Command(

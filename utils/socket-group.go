@@ -104,7 +104,7 @@ func GetSocketGroupFilter(socketGroup string, args ...string) (string, error) {
 	ttsFileName := fmt.Sprintf("%s-%s.mp3", socketGroup, filenamePart)
 	_, soundPath, err := GetTextToSpeech(ttsString, ttsFileName, "Brian", SOCKET_GROUP_TEMPO)
 	if runtime.GOOS != "windows" {
-		gameDir := GetPoe1Path("tts/")
+		gameDir := GetPoe1SteamPath("tts/")
 		cmd := exec.Command(
 			"cp",
 			"--update=none",

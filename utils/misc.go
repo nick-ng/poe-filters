@@ -1,10 +1,12 @@
 package utils
 
 import (
+	"bytes"
 	"errors"
 	"fmt"
 	"io/fs"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"runtime"
 	"strconv"
@@ -209,7 +211,7 @@ func PatchThirdPartyFilter(filterText string) string {
 	return newFilterText
 }
 
-func GetPoe1Path(pathSuffix string) string {
+func GetPoe1SteamPath(pathSuffix string) string {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
 		fmt.Println("\nCouldn't get home directory", err)
@@ -228,7 +230,27 @@ func GetPoe1Path(pathSuffix string) string {
 	return poe1Dir
 }
 
-func GetPoe2Path(pathSuffix string) string {
+func GetPoe1LutrisPath(pathSuffix string) string {
+	// /homine/pux/Games/path-of-exile/drive_c/users/pux/Documents/My Games/Path of Exile
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		fmt.Println("\nCouldn't get home directory", err)
+		os.Exit(1)
+	}
+
+	if runtime.GOOS == "windows" {
+		poe1Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
+		return poe1Dir
+	}
+
+	poe1Dir := filepath.Join(homeDir, "Games", "path-of-exile", "drive_c", "users", "pux", "Documents", "My Games", "Path of Exile", pathSuffix)
+	if strings.HasSuffix(pathSuffix, "/") {
+		poe1Dir = fmt.Sprintf("%s/", poe1Dir)
+	}
+	return poe1Dir
+}
+
+func GetPoe2SteamPath(pathSuffix string) string {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
 		fmt.Println("\nCouldn't get home directory", err)
@@ -245,4 +267,43 @@ func GetPoe2Path(pathSuffix string) string {
 		poe2Dir = fmt.Sprintf("%s/", poe2Dir)
 	}
 	return poe2Dir
+}
+
+func Exec(command string, args ...string) error {
+	cmd := exec.Command(command, args...)
+	var outb, errb bytes.Buffer
+	cmd.Stdout = &outb
+	cmd.Stderr = &errb
+	err := cmd.Run()
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func CpGlob(pattern string, destination string) error {
+	globResults, err := filepath.Glob(pattern)
+	if err != nil {
+		fmt.Println("error globbing files", err)
+		return err
+	}
+
+	myArgs := append([]string{"-u"}, globResults...)
+	myArgs = append(myArgs, destination)
+	cmd := exec.Command(
+		"cp",
+		myArgs...,
+	)
+
+	var outb, errb bytes.Buffer
+	cmd.Stdout = &outb
+	cmd.Stderr = &errb
+	err = cmd.Run()
+	if err != nil {
+		fmt.Println(fmt.Sprintf("error copying %s to %s", pattern, destination), err, outb.String(), errb.String())
+		return err
+	}
+
+	return nil
 }
