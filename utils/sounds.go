@@ -366,3 +366,12 @@ func PrintSoundStats() {
 		}
 	}
 }
+
+func GetSoundStats() (int, int) {
+	return SoundCount, len(MissingSounds)
+}
+
+func ResetSoundStats() {
+	SoundCount = 0
+	MissingSounds = map[string]bool{}
+}

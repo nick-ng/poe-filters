@@ -34,6 +34,12 @@ Show
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 	# Item Bases
+Hide
+	BaseType "Bismuth Flask"
+	AreaLevel == 9
+	Rarity < Magic
+	SetFontSize 45
+
 Show
 	BaseType "Topaz Flask" "Sapphire Flask"
 	AreaLevel < 60
@@ -41,7 +47,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Star
 	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
 	# Leveling Items
 Show
@@ -53,14 +59,14 @@ Show
 	#!BrightBorder!# 200
 	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
-Show
-	BaseType "Large Life Flask"
-	AreaLevel < 12
-	Rarity <= Rare
-	SetFontSize 45
-	MinimapIcon 1 Cyan Raindrop
-	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+# Show
+# 	BaseType "Large Life Flask"
+# 	AreaLevel < 12
+# 	Rarity <= Rare
+# 	SetFontSize 45
+# 	MinimapIcon 1 Cyan Raindrop
+# 	#!BrightBorder!# 200
+# 	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 #! linksa RGGG
 #! linksa RGGB

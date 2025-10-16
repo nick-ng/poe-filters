@@ -1,0 +1,9 @@
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+## hide bad bases
+
+
+#! import FilterBlade_6_Uber Plus Strict.filter

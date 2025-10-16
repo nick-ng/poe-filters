@@ -3,4 +3,7 @@
 #! import misc.filter
 #! import bases.filter
 
-#! import sov3.filter
+## choose one
+#! import FilterBlade_4_Very Strict.filter
+# import FilterBlade_5_Uber Strict.filter
+# import FilterBlade_6_Uber Plus Strict.filter
