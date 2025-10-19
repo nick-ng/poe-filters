@@ -24,13 +24,16 @@ type Flag struct {
 	Value string
 }
 
-func MkDirIfNotExist(dirPath string) {
+func MkDirIfNotExist(dirPath string) string {
 	err := os.Mkdir(dirPath, 0755)
 
 	if err != nil && !errors.Is(err, fs.ErrExist) {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	joinedPath := filepath.Join(dirPath)
+	return joinedPath
 }
 
 func MakeDivinationCardsFilter() {

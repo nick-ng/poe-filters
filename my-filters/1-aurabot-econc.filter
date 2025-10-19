@@ -1,4 +1,3 @@
-#! skip
 # Aurabot
 # Leveling:
 # 1-11: Spectral Throw
@@ -14,7 +13,7 @@ Show
 	#!BrightBorder!# 200
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 
-	# Leveling Items
+# Leveling Items
 Show
 	BaseType "Heavy Belt"
 	AreaLevel < 30
@@ -24,14 +23,16 @@ Show
 	#!BrightBorder!# 200
 	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
-# links from aurabot.filter
-# RGGG
-# GGGG
-# RRGG
-# RRG
-# RGG
-# GGG
-# GGB
+# Party Links
+#! linksa RGGG
+#! linksa GGGG
+#! linksa RRGG
+#! linksa RRG
+#! linksa RGG
+#! linksa GGG
+#! linksa GGB
+
+# 2-links
 #! linksa RG
 #! linksa GG
 #! linksa GB

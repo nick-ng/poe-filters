@@ -32,11 +32,11 @@ const CACHE_PATH string = "cache"
 func main() {
 	utils.MakeDivinationCardsFilterPoeNinja()
 
-	utils.MkDirIfNotExist(MY_FILTERS_PATH)
-	utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
+	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
+	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)
-	utils.MkDirIfNotExist(BASE_FILTERS_PATH)
-	utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
+	baseFiltersPath := utils.MkDirIfNotExist(BASE_FILTERS_PATH)
+	thirdPartyFiltersPath := utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 	utils.MkDirIfNotExist(CACHE_PATH)
 
 	if runtime.GOOS != "windows" {
@@ -49,8 +49,6 @@ func main() {
 		poe2TtsDir := utils.GetPoe2SteamPath("tts/")
 		utils.MkDirIfNotExist(poe2TtsDir)
 	}
-
-	path1 := filepath.Join(MY_FILTERS_PATH)
 
 	watchPtr := flag.Bool("watch", false, fmt.Sprintf("Watch %s for file changes", path1))
 	flag.Parse()
@@ -71,6 +69,10 @@ func main() {
 						return
 					}
 					if event.Has(fsnotify.Write) {
+						if !strings.HasPrefix(event.Name, path1) {
+							processAllFilters(path1, path2)
+							return
+						}
 						if strings.HasSuffix(event.Name, ".filter") {
 							filterPath := event.Name
 							fmt.Printf("%s modified, reprocessing... ", filterPath)
@@ -147,115 +149,128 @@ func main() {
 			fmt.Println("error adding path to watch", err)
 		}
 
+		err = watcher.Add(baseFiltersPath)
+		if err != nil {
+			fmt.Println("error adding path to watch", err)
+		}
+
+		err = watcher.Add(thirdPartyFiltersPath)
+		if err != nil {
+			fmt.Println("error adding path to watch", err)
+		}
+
 		<-make(chan struct{})
 	} else {
-		dat1, err := os.ReadDir(path1)
-		if err != nil {
-			fmt.Println("Error reading file", err)
-		}
+		processAllFilters(path1, path2)
+	}
+}
 
-		// parse poe2 filters first
-		var poe1Filters []string
-		var poe2Filters []string
-		for _, dir := range dat1 {
-			filterName := dir.Name()
-			filterPath := filepath.Join(MY_FILTERS_PATH, filterName)
-			if strings.Contains(filterName, "poe2") {
-				poe2Filters = append(poe2Filters, filterPath)
-			} else {
-				poe1Filters = append(poe1Filters, filterPath)
-			}
-		}
+func processAllFilters(path1 string, path2 string) {
+	dat1, err := os.ReadDir(path1)
+	if err != nil {
+		fmt.Println("Error reading file", err)
+	}
 
-		path2 := filepath.Join(MY_POE2_FILTERS_PATH)
-		dat2, err := os.ReadDir(path2)
-		if err != nil {
-			fmt.Println("Error reading file", err)
-		}
-
-		for _, dir := range dat2 {
-			filterName := dir.Name()
-			filterPath := filepath.Join(MY_POE2_FILTERS_PATH, filterName)
+	// parse poe2 filters first
+	var poe1Filters []string
+	var poe2Filters []string
+	for _, dir := range dat1 {
+		filterName := dir.Name()
+		filterPath := filepath.Join(MY_FILTERS_PATH, filterName)
+		if strings.Contains(filterName, "poe2") {
 			poe2Filters = append(poe2Filters, filterPath)
+		} else {
+			poe1Filters = append(poe1Filters, filterPath)
+		}
+	}
+
+	dat2, err := os.ReadDir(path2)
+	if err != nil {
+		fmt.Println("Error reading file", err)
+	}
+
+	for _, dir := range dat2 {
+		filterName := dir.Name()
+		filterPath := filepath.Join(MY_POE2_FILTERS_PATH, filterName)
+		poe2Filters = append(poe2Filters, filterPath)
+	}
+
+	allFilters := append(poe2Filters, poe1Filters...)
+
+	fmt.Printf("Found %d filters\n", len(allFilters))
+
+	for i, filterPath := range allFilters {
+		temp := strings.Split(filterPath, string(filepath.Separator))
+		filterName := temp[len(temp)-1]
+		// if err != nil {
+		// 	continue
+		// }
+
+		// filterName := dir.Name()
+
+		fmt.Printf("%d: %s... ", i+1, filterName)
+
+		filter, filterFlags, errList := processFilter(filterPath, false)
+
+		outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
+		gameFilterPath := utils.GetPoe1SteamPath(filterName)
+
+		if filterFlags.Game == "poe2" {
+			fmt.Print("PoE 2 ")
+			poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
+			outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
+			gameFilterPath = utils.GetPoe2SteamPath(filterName)
 		}
 
-		allFilters := append(poe2Filters, poe1Filters...)
+		if len(filter) == 0 {
+			err := os.Remove(outputFilterPath)
+			err2 := os.Remove(gameFilterPath)
 
-		fmt.Printf("Found %d filters\n", len(allFilters))
-
-		for i, filterPath := range allFilters {
-			temp := strings.Split(filterPath, string(filepath.Separator))
-			filterName := temp[len(temp)-1]
-			// if err != nil {
-			// 	continue
-			// }
-
-			// filterName := dir.Name()
-
-			fmt.Printf("%d: %s... ", i+1, filterName)
-
-			filter, filterFlags, errList := processFilter(filterPath, false)
-
-			outputFilterPath := filepath.Join(OUTPUT_FILTERS_PATH, filterName)
-			gameFilterPath := utils.GetPoe1SteamPath(filterName)
-
-			if filterFlags.Game == "poe2" {
-				fmt.Print("PoE 2 ")
-				poe2FilterName := fmt.Sprintf("poe2-%s", filterName)
-				outputFilterPath = filepath.Join(OUTPUT_FILTERS_PATH, poe2FilterName)
-				gameFilterPath = utils.GetPoe2SteamPath(filterName)
+			if err != nil && !os.IsNotExist(err) {
+				fmt.Print(err)
 			}
 
-			if len(filter) == 0 {
-				err := os.Remove(outputFilterPath)
-				err2 := os.Remove(gameFilterPath)
-
-				if err != nil && !os.IsNotExist(err) {
-					fmt.Print(err)
-				}
-
-				if err2 != nil && !os.IsNotExist(err2) {
-					fmt.Print(err2)
-				}
-
-				fmt.Println("skipped")
-
-				continue
+			if err2 != nil && !os.IsNotExist(err2) {
+				fmt.Print(err2)
 			}
 
-			filterData := []byte(filter)
+			fmt.Println("skipped")
 
-			err := os.WriteFile(outputFilterPath, filterData, 0666)
+			continue
+		}
+
+		filterData := []byte(filter)
+
+		err := os.WriteFile(outputFilterPath, filterData, 0666)
+
+		if err != nil {
+			fmt.Println("\nError writing filter to output-filters", filterName, err)
+			continue
+		}
+
+		if filterName != "example.filter" && filterName != "example2.filter" {
+			err = os.WriteFile(gameFilterPath, filterData, 0666)
 
 			if err != nil {
-				fmt.Println("\nError writing filter to output-filters", filterName, err)
+				fmt.Println("\nError writing filter to PoE Directory", filterName, err)
 				continue
-			}
-
-			if filterName != "example.filter" && filterName != "example2.filter" {
-				err = os.WriteFile(gameFilterPath, filterData, 0666)
-
-				if err != nil {
-					fmt.Println("\nError writing filter to PoE Directory", filterName, err)
-					continue
-				}
-			}
-
-			if len(errList) > 1 {
-				fmt.Printf("done with %d errors\n", len(errList))
-				continue
-			} else if len(errList) == 1 {
-				fmt.Println("done with 1 error")
-				continue
-			} else {
-				fmt.Println("done")
 			}
 		}
 
-		utils.PrintSoundStats()
-
-		copySounds()
+		if len(errList) > 1 {
+			fmt.Printf("done with %d errors\n", len(errList))
+			continue
+		} else if len(errList) == 1 {
+			fmt.Println("done with 1 error")
+			continue
+		} else {
+			fmt.Println("done")
+		}
 	}
+
+	utils.PrintSoundStats()
+
+	copySounds()
 }
 
 func copySounds() {

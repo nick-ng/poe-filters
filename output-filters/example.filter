@@ -839,6 +839,16 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 9
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Tribal Maul" # requires level 8
+	Corrupted False
+	SetFontSize 45
+	SetBorderColor 13 255 201 230
+	MinimapIcon 2 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 15
 	Sockets < 6
 	Rarity <= Rare
@@ -898,6 +908,16 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 10
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Jade Chopper" # requires level 9
+	Corrupted False
+	SetFontSize 45
+	SetBorderColor 13 255 201 230
+	MinimapIcon 2 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 16
 	Sockets < 6
 	Rarity <= Rare
@@ -907,16 +927,6 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 14
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Woodsplitter" # requires level 13
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-Show
 	AreaLevel <= 20
 	Sockets < 6
 	Rarity <= Rare
@@ -925,6 +935,16 @@ Show
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 19
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Poleaxe" # requires level 18
+	Corrupted False
+	SetFontSize 45
+	SetBorderColor 13 255 201 230
+	MinimapIcon 2 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 25
 	Sockets < 6

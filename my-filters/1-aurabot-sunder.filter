@@ -1,0 +1,43 @@
+# Aurabot
+# Leveling:
+# 1-11: Spectral Throw
+# 12+: Sunder
+
+# Leveling Items
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+
+# Party Links
+#! linksa RGGG
+#! linksa GGGG
+#! linksa RRGG
+#! linksa RRG
+#! linksa RGG
+#! linksa GGG
+#! linksa GGB
+
+# 4-links
+#! linksa RRRR
+#! linksa RRRG
+
+# 3-links
+#! linksa RRR
+
+# 2-links
+#! linksa RR
+#! linksa RG
+#! linksa GB
+
+#! weapons fast-2h-swords 12
+#! weapons fast-2h-axes
+#! weapons fast-2h-maces 40
+#! weapons staves 40
+#! weapons warstaves 40
+
+#! import aurabot.filter
