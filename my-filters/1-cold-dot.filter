@@ -34,7 +34,7 @@ Show
 
 # Item Bases
 Show
-	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand" "Imbued Wand"
+	BaseType "Void Sceptre" "Opal Sceptre" "Heathen Wand" "Prophecy Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare

@@ -15,12 +15,12 @@ Show
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
-# Imbued Wand - Obliteration
+# Omen Wand - Obliteration
 # Two-Stone Ring - Berek's Respite
 # Desert Brigadine - Lightning Coil
 # Scholar's Robe - Cloak of Flame
 Show
-	BaseType == "Imbued Wand" "Two-Stone Ring" "Desert Brigandine" "Scholar's Robe"
+	BaseType == "Omen Wand" "Two-Stone Ring" "Desert Brigandine" "Scholar's Robe"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255

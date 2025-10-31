@@ -33,9 +33,9 @@ Show
 #! linksa GGB
 
 # 2-links
-#! linksa RG
-#! linksa GG
-#! linksa GB
+#! linksa RG 10
+#! linksa GG 10
+#! linksa GB 10
 
 #! import library-shield-charge.filter
 

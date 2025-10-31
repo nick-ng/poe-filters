@@ -13,7 +13,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Engraved Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
+	BaseType == "Somatic Wand" "Unset Ring" "Crimson Jewel" "Golden Mask"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255

@@ -16,7 +16,7 @@ Show
 
 # Build Uniques
 Show
-	BaseType == "Carved Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Nightmare Bascinet"
+	BaseType == "Somatic Wand" "Rawhide Boots" "Destiny Leather" "Stibnite Flask" "Nightmare Bascinet"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255

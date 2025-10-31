@@ -30,14 +30,14 @@ Show
 #! linksa RRR
 
 # 2-links
-#! linksa RR
-#! linksa RG
-#! linksa GB
+#! linksa RR 10
+#! linksa RG 10
+#! linksa GB 10
 
 #! weapons fast-2h-swords 12
 #! weapons fast-2h-axes
-#! weapons fast-2h-maces 40
-#! weapons staves 40
-#! weapons warstaves 40
+#! weapons fast-2h-maces 18
+#! weapons staves 18
+#! weapons warstaves 18
 
 #! import aurabot.filter

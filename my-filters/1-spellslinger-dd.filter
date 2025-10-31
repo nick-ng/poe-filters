@@ -1,3 +1,5 @@
+#! skip
+
 # Divination Cards
 # Show
 # 	BaseType == "Earth Drinker"
@@ -23,7 +25,7 @@ Show
 
 # Item Bases
 Show
-	BaseType = "Carved Wand" "Engraved Wand"
+	BaseType = "Blasting Wand" "Somatic Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
@@ -33,7 +35,7 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
-	BaseType = "Imbued Wand"
+	BaseType = "Somatic Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
@@ -43,7 +45,7 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
-	BaseType = "Carved Wand" "Engraved Wand" "Imbued Wand"
+	BeType = "Somatic Wand" "Blasting Wand" "Somatic Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
