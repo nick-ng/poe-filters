@@ -1,4 +1,4 @@
-#! import currency.filter
+#! import currency2.filter
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter

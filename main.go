@@ -121,6 +121,7 @@ func main() {
 
 							copySounds()
 
+							elapsed := time.Since(start)
 							if len(errList) > 1 {
 								fmt.Printf("done with %d errors\n", len(errList))
 								for err := range errList {
@@ -129,10 +130,8 @@ func main() {
 							} else if len(errList) == 1 {
 								fmt.Println("done with 1 error")
 								fmt.Println(errList[0])
-							} else {
-								elapsed := time.Since(start)
-								fmt.Printf("done in %d ms\n", int(elapsed.Milliseconds()))
 							}
+							fmt.Printf("done in %d ms\n", int(elapsed.Milliseconds()))
 						}
 					}
 				case err, ok := <-watcher.Errors:

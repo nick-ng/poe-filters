@@ -1,9 +1,35 @@
-#! import currency.filter
+Show
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	#!BlackText!# 255
+	SetBackgroundColor 159 15 213 255
+	SetBorderColor 0 0 0 255
+	MinimapIcon 1 Yellow Hexagon
+	PlayEffect Yellow
+	PlayAlertSound 1 150
+
+Show
+	BaseType "Heavy Belt"
+	Rarity Unique
+	SetBackgroundColor 102 0 239 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Purple Hexagon
+
+Show
+	BaseType "Leather Belt"
+	Rarity Unique
+	SetBackgroundColor 255 10 10 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Red Hexagon
+
+#! import currency2.filter
 #! import maps.filter
-#! import misc.filter
-#! import bases.filter
+#? import misc.filter
+#? import bases.filter
 
-## hide bad bases
+## hide bad bases here
 
-
+#? import FilterBlade_5_Uber Strict.filter
 #! import FilterBlade_6_Uber Plus Strict.filter
