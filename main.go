@@ -337,7 +337,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	filterData, err := os.ReadFile(filterPath)
 	filterString := string(filterData)
 
-	// filterString = utils.PatchThirdPartyFilter(filterString)
+	filterString = utils.PatchThirdPartyFilter(filterString)
 
 	if err != nil {
 		return "", flags, append(errorList, err)

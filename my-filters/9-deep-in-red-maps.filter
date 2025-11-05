@@ -3,7 +3,7 @@ Hide
 
 Show
 	BaseType "Divine Vessel"
-	SetFontSize 45
+	SetFontSize 30
 	#!BlackText!# 255
 	SetBackgroundColor 159 15 213 255
 	SetBorderColor 0 0 0 255
@@ -14,6 +14,7 @@ Show
 Show
 	BaseType "Jewel"
 	Rarity Unique
+	SetFontSize 45
 	SetBackgroundColor 155 10 155 255
 	SetBorderColor 255 255 255 255
 	SetTextColor 255 255 255 255
@@ -23,7 +24,7 @@ Show
 	BaseType "Leather Belt" "Heavy Belt"
 	Rarity Unique
 	SetBackgroundColor 255 10 10 255
-	SetBorderColor 255 255 255 255
+	#	SetBorderColor 255 255 255 255
 	SetTextColor 255 255 255 255
 	MinimapIcon 0 Red Hexagon
 
@@ -37,6 +38,9 @@ Show
 Hide # $type->exoticbases $tier->exoticuniquebases
 	Rarity Normal Magic Rare
 	BaseType == "Ring"
+
+Hide
+	BaseType == "Latticed Ringmail" "Ornate Ringmail" "Elegant Ringmail"
 
 Show # $type->exoticbases $tier->exoticuniquebases
 	Rarity Unique
