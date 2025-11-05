@@ -34,5 +34,13 @@ Show
 
 ## hide bad bases here
 
+Hide # $type->exoticbases $tier->exoticuniquebases
+	Rarity Normal Magic Rare
+	BaseType == "Ring"
+
+Show # $type->exoticbases $tier->exoticuniquebases
+	Rarity Unique
+	BaseType == "Ring"
+
 #? import FilterBlade_5_Uber Strict.filter
 #! import FilterBlade_6_Uber Plus Strict.filter
