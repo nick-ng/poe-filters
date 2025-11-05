@@ -54,28 +54,6 @@ Show
 	SetBorderColor 200 200 200
 	SetFontSize 40
 
-#######################
-## Wisdom and Portal ##
-#######################
-
-Show
-	BaseType "Scroll of Wisdom"
-	#!ScrollOfWisdomText!# 220
-	Continue
-
-Show
-	BaseType "Portal Scroll"
-	#!PortalScrollText!# 220
-	Continue
-
-Show # Red Maps
-	BaseType "Scroll of Wisdom" "Portal Scroll"
-	Class "Currency"
-	StackSize >= 8
-	#!GGGCurrencyBorder!# 200
-	SetFontSize 30
-	MinimapIcon 0 Grey Raindrop
-
 ####################
 ## T0/T1 Currency ##
 ####################
