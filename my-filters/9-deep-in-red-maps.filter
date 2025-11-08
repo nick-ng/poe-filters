@@ -29,6 +29,8 @@ Show
 	SetTextColor 255 255 255 255
 	MinimapIcon 0 Red Hexagon
 
+#? import FilterBlade_6_Uber Plus Strict.filter
+
 Show
 	BaseType == "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring"
 	Rarity Unique
@@ -37,6 +39,15 @@ Show
 	#	SetBorderColor 255 255 255 255
 	SetTextColor 255 255 255 255
 	MinimapIcon 0 Red Hexagon
+
+Show
+	BaseType == "Serpentscale Gauntlets"
+	Rarity Unique
+	SetFontSize 40
+	SetBackgroundColor 10 150 10 255
+	#	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Green Hexagon
 
 #? import currency2.filter
 #? import maps.filter
@@ -82,44 +93,22 @@ Show # %HS6 $type->rare->exotic->breachrings $tier->high
 	Class == "Rings"
 	BaseType == "Breach Ring" "Cryonic Ring" "Enthalpic Ring" "Formless Ring" "Fugitive Ring" "Organic Ring" "Synaptic Ring"
 	SetFontSize 35
-	SetTextColor 0 240 190 255
-	SetBorderColor 0 240 190 255
-	SetBackgroundColor 20 20 0 255
 
 Show
 	BaseType == "Vermillion Ring"
 	Corrupted False
 	Mirrored False
 	ItemLevel >= 84 # t1 resists
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 0 0 255 255
-	#!BrightBackground!# 255
+	#!BrightBackground!# 200
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
 ## hide bad bases here
 
-Hide # $type->exoticbases $tier->exoticuniquebases
-	Rarity Normal Magic Rare
-	BaseType == "Ring"
-	Corrupted False
-
-Hide # "Ring"mail. all under 2c
-	BaseType == "Latticed Ringmail" "Ornate Ringmail" "Elegant Ringmail"
-
-Hide
-	BaseType == "Iron Ring" "Coral Ring" "Paua Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Unset Ring"
-	Corrupted False
-
-Show # Kalandra's Touch (maybe)
-	Rarity Unique
-	BaseType == "Ring"
-	SetBackgroundColor 255 255 255 255
-	SetBorderColor 0 0 255 255
-	SetTextColor 0 0 255 255
-	MinimapIcon 0 Blue Hexagon
-	PlayAlertSound 6 300
+#! import ring-fix.filter
 
 ####################
 ## T0/T1 Currency ##
@@ -173,38 +162,6 @@ Show # Mapping Currency
 	#!T1CurrencyText!# 230
 	#!CurrencyBorder!# 230
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
-
-Show # Mapping Currency
-	Class "Currency"
-	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
-	SetFontSize 35
-	#!T1CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	PlayEffect Pink
-	PlayAlertSound 11 100
-	# CustomAlertSound "sounds/t90-supplies1.mp3"
-
-Show # T1 Currency
-	Class "Currency"
-	BaseType == "Chaos Orb"
-	SetFontSize 40
-	#!T1CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	MinimapIcon 0 Orange Circle
-	PlayEffect Green
-	PlayAlertSound 11 100
-	# CustomAlertSound "sounds/izaro-golden.mp3"
-
-Show
-	Class "Currency"
-	BaseType "Catalyst" "Eldritch"
-	SetFontSize 40
-	#!T1CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	MinimapIcon 0 Orange Circle
-	PlayEffect Green
-	PlayAlertSound 1 100
-	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 #? import FilterBlade_5_Uber Strict.filter
 #! import FilterBlade_6_Uber Plus Strict.filter
