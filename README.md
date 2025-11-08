@@ -34,9 +34,9 @@ When you run it, it will try to copy filters to the Path of Exile directory
 
 ### ToDo Comments
 
-- main.go:338: @todo(nick-ng): move some functions to separate files
-- main.go:593: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
-- main.go:719: // @todo(nick-ng): move this to its own loop
+- main.go:410: @todo(nick-ng): move some functions to separate files
+- main.go:665: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
+- main.go:791: // @todo(nick-ng): move this to its own loop
 - utils/items.go:66: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
 - utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
 - utils/sounds.go:314: @todo(nick-ng): change the path based on operating system

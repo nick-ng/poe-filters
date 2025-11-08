@@ -21,6 +21,14 @@ type ProcessedFilterFlags struct {
 	Game string // poe1, poe2, or unset
 }
 
+type OnlineFilter struct {
+	Name string
+	Hash string
+}
+
+var onlineFilterHashes = make(map[string]string)
+var onlineFilterLastSave int64 = 0
+
 const MY_FILTERS_PATH string = "my-filters"
 const MY_POE2_FILTERS_PATH string = "my-poe2-filters"
 const BASE_FILTERS_PATH string = "base-filters"
@@ -39,7 +47,7 @@ func main() {
 	thirdPartyFiltersPath := utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 	utils.MkDirIfNotExist(CACHE_PATH)
 
-	onlineFiltersPath := utils.GetPoe1SteamPath("/")
+	onlineFiltersPath := utils.GetPoe1SteamPath("OnlineFilters/")
 
 	if runtime.GOOS != "windows" {
 		poe1TtsDir := utils.GetPoe1SteamPath("tts/")
@@ -72,11 +80,12 @@ func main() {
 						continue
 					}
 					if event.Has(fsnotify.Write) {
-						if !strings.HasPrefix(event.Name, path1) {
-							processAllFilters(path1, path2)
+						if strings.HasPrefix(event.Name, onlineFiltersPath) {
+							fetchOnlineFilters(onlineFiltersPath, THIRD_PARTY_FILTERS_PATH)
 							continue
 						}
-						if strings.HasPrefix(event.Name, onlineFiltersPath) {
+						if !strings.HasPrefix(event.Name, path1) {
+							processAllFilters(path1, path2)
 							continue
 						}
 						if strings.HasSuffix(event.Name, ".filter") {
@@ -165,10 +174,73 @@ func main() {
 			fmt.Println("error adding path to watch", err)
 		}
 
+		err = watcher.Add(onlineFiltersPath)
+		if err != nil {
+			fmt.Println("error adding path to watch", err)
+		}
+
 		<-make(chan struct{})
 	} else {
+		fetchOnlineFilters(onlineFiltersPath, THIRD_PARTY_FILTERS_PATH)
 		processAllFilters(path1, path2)
 	}
+}
+
+func fetchOnlineFilters(onlineFiltersPath string, outputDir string) {
+	nowUnix := time.Now().Unix()
+	if (onlineFilterLastSave + 10) > nowUnix {
+		return
+	}
+	onlineFilterLastSave = nowUnix
+
+	fmt.Println("updating online filters", nowUnix)
+
+	datOnline, err := os.ReadDir(onlineFiltersPath)
+	if err != nil {
+		fmt.Println("Error reading file", err)
+	}
+
+	for _, dir := range datOnline {
+		filename := dir.Name()
+		filePath := filepath.Join(onlineFiltersPath, filename)
+
+		fetchOnlineFilter(filePath, outputDir)
+	}
+}
+
+var filterNameRe = regexp.MustCompile(`#name:.+\n`)
+var filterHashRe = regexp.MustCompile(`#hash:.+\n`)
+
+func fetchOnlineFilter(filterPath string, outputDir string) {
+	filterData, err := os.ReadFile(filterPath)
+	if err != nil {
+		fmt.Println("error reading online filter:", filterPath)
+		return
+	}
+
+	filterString := string(filterData)
+
+	filterName := filterNameRe.FindString(filterString)
+	filterName = strings.Replace(filterName, "#name:", "online-", 1)
+	filterName = strings.Replace(filterName, "\n", "", 1)
+
+	filterHash := filterHashRe.FindString(filterString)
+
+	cachedFilterHash, ok := onlineFilterHashes[filterName]
+
+	if ok && cachedFilterHash == filterHash {
+		return
+	}
+
+	outputFilterPath := filepath.Join(outputDir, fmt.Sprintf("%s.filter", filterName))
+
+	err = os.WriteFile(outputFilterPath, filterData, 0666)
+	if err != nil {
+		fmt.Println("error saving online filter", filterName, filterPath)
+		return
+	}
+
+	onlineFilterHashes[filterName] = filterHash
 }
 
 func processAllFilters(path1 string, path2 string) {
@@ -344,7 +416,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	filterData, err := os.ReadFile(filterPath)
 	filterString := string(filterData)
 
-	filterString = utils.PatchThirdPartyFilter(filterString)
+	// filterString = utils.PatchThirdPartyFilter(filterString)
 
 	if err != nil {
 		return "", flags, append(errorList, err)

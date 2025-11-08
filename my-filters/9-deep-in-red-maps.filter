@@ -29,12 +29,10 @@ Show
 	SetTextColor 255 255 255 255
 	MinimapIcon 0 Red Hexagon
 
-#? import FilterBlade_6_Uber Plus Strict.filter
-
 Show
 	BaseType == "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring"
 	Rarity Unique
-	SetFontSize 40
+	SetFontSize 35
 	SetBackgroundColor 10 150 10 255
 	#	SetBorderColor 255 255 255 255
 	SetTextColor 255 255 255 255
@@ -163,5 +161,6 @@ Show # Mapping Currency
 	#!CurrencyBorder!# 230
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
 
+#! import online-NeverSink-6uberplu-softcore.filter
 #? import FilterBlade_5_Uber Strict.filter
-#! import FilterBlade_6_Uber Plus Strict.filter
+#? import FilterBlade_6_Uber Plus Strict.filter
