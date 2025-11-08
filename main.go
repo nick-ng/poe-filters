@@ -39,6 +39,8 @@ func main() {
 	thirdPartyFiltersPath := utils.MkDirIfNotExist(THIRD_PARTY_FILTERS_PATH)
 	utils.MkDirIfNotExist(CACHE_PATH)
 
+	onlineFiltersPath := utils.GetPoe1SteamPath("/")
+
 	if runtime.GOOS != "windows" {
 		poe1TtsDir := utils.GetPoe1SteamPath("tts/")
 		utils.MkDirIfNotExist(poe1TtsDir)
@@ -66,12 +68,16 @@ func main() {
 				select {
 				case event, ok := <-watcher.Events:
 					if !ok {
-						return
+						fmt.Println("watcher.Events not ok")
+						continue
 					}
 					if event.Has(fsnotify.Write) {
 						if !strings.HasPrefix(event.Name, path1) {
 							processAllFilters(path1, path2)
-							return
+							continue
+						}
+						if strings.HasPrefix(event.Name, onlineFiltersPath) {
+							continue
 						}
 						if strings.HasSuffix(event.Name, ".filter") {
 							filterPath := event.Name
@@ -136,7 +142,8 @@ func main() {
 					}
 				case err, ok := <-watcher.Errors:
 					if !ok {
-						return
+						fmt.Println("watcher.Errors not ok")
+						continue
 					}
 					fmt.Println("error:", err)
 				}
