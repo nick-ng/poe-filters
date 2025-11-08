@@ -1,3 +1,5 @@
+#! skip
+
 # Divination Cards
 Show
 	BaseType == "The Admirer"

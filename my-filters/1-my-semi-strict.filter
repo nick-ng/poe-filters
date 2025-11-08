@@ -1,5 +1,6 @@
 Show
 	BaseType "Large Cluster Jewel"
+	SetBorderColor 255 255 30 250
 	SetFontSize 45
 
 #! import currency.filter
@@ -10,7 +11,7 @@ Show
 #! import ring-fix.filter
 
 ## choose one
-#? import FilterBlade_2_Semi-Strict.filter
-#! import FilterBlade_4_Very Strict.filter
+#! import FilterBlade_2_Semi-Strict.filter
+#? import FilterBlade_4_Very Strict.filter
 # import FilterBlade_5_Uber Strict.filter
 # import FilterBlade_6_Uber Plus Strict.filter

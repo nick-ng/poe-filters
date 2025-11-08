@@ -15,7 +15,7 @@ Show
 Show # Loreweave
 	Rarity = Unique
 	Class "Rings"
-	SetFontSize 45
+	SetFontSize 35
 	#!WhiteText!# 255
 	SetBackgroundColor 255 0 0 200
 	SetBorderColor 100 100 100 255

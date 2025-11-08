@@ -33,10 +33,10 @@ Show
 	BaseType == "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring"
 	Rarity Unique
 	SetFontSize 35
-	SetBackgroundColor 10 150 10 255
+	SetBackgroundColor 5 100 5 255
 	#	SetBorderColor 255 255 255 255
 	SetTextColor 255 255 255 255
-	MinimapIcon 0 Red Hexagon
+	MinimapIcon 0 green Hexagon
 
 Show
 	BaseType == "Serpentscale Gauntlets"
@@ -48,7 +48,7 @@ Show
 	MinimapIcon 0 Green Hexagon
 
 #? import currency2.filter
-#? import maps.filter
+#! import maps.filter
 #? import misc.filter
 #? import bases.filter
 
@@ -106,7 +106,7 @@ Show
 
 ## hide bad bases here
 
-#! import ring-fix.filter
+#! import ring-fix-b.filter
 
 ####################
 ## T0/T1 Currency ##

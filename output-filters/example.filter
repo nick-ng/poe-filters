@@ -1,5 +1,6 @@
 
 Show
+	AreaLevel <= 100
 	SetBackgroundColor 0 0 0 120
 	Continue
 # example.filter and example2.filter won't get copied to the Path of Exile
@@ -26,6 +27,7 @@ Show
 # the filter in order to work properly.
 #? links RRG axe
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -35,13 +37,13 @@ Show
 	DisableDropSound
 	CustomAlertSound "tts/rrg-axe.mp3" 300
 # You can add extra conditions
-	AreaLevel <= 43
 	Class "Axe"
 	SetFontSize 35
 	MinimapIcon 0 Cyan Cross
 # If the text-to-speech doesn't sound right, you can add a pronounciation.
 #? links RRG mace club
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -50,7 +52,6 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rrg-mace.mp3" 300
-	AreaLevel <= 43
 	Class "Mace"
 	SetFontSize 35
 	MinimapIcon 0 Cyan Cross
@@ -60,6 +61,7 @@ Show
 # and stop showing the items from the Torched Courts (44) onwards.
 #? linksa RRRG
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -68,12 +70,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rrrg-boots.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 43
 	Class "Boots"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Square
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -82,12 +83,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rrrg-gloves.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 43
 	Class "Gloves"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Triangle
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -96,12 +96,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rrrg-helm.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 43
 	Class "Helmets"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Circle
 Show
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -110,14 +109,13 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rrrg-body.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 43
 	Class "Body Armours"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Pentagon
 # You can specify a max level
 #? linksa RGG 12
 Show
+	AreaLevel <= 12
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -126,12 +124,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgg-boots.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 12
 	Class "Boots"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Square
 Show
+	AreaLevel <= 12
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -140,12 +137,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgg-gloves.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 12
 	Class "Gloves"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Triangle
 Show
+	AreaLevel <= 12
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -154,12 +150,11 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgg-helm.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 12
 	Class "Helmets"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Circle
 Show
+	AreaLevel <= 12
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -168,14 +163,14 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgg-body.mp3" 300
-	AreaLevel >= 1
-	AreaLevel <= 12
 	Class "Body Armours"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Pentagon
 # Or a min and max level
 #? linksa RGB 35 43
 Show
+	AreaLevel >= 35
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -184,12 +179,12 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgb-boots.mp3" 300
-	AreaLevel >= 35
-	AreaLevel <= 43
 	Class "Boots"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Square
 Show
+	AreaLevel >= 35
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -198,12 +193,12 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgb-gloves.mp3" 300
-	AreaLevel >= 35
-	AreaLevel <= 43
 	Class "Gloves"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Triangle
 Show
+	AreaLevel >= 35
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -212,12 +207,12 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgb-helm.mp3" 300
-	AreaLevel >= 35
-	AreaLevel <= 43
 	Class "Helmets"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Circle
 Show
+	AreaLevel >= 35
+	AreaLevel <= 43
 	Sockets < 6
 	Rarity <= Rare
 	LinkedSockets <= 4
@@ -226,8 +221,6 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	CustomAlertSound "tts/rgb-body.mp3" 300
-	AreaLevel >= 35
-	AreaLevel <= 43
 	Class "Body Armours"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Pentagon
@@ -240,6 +233,7 @@ Show
 # The filter will be imported as soon as you reach an uncommented line
 ## example.filter
 Show
+	AreaLevel <= 100
 	BaseType "Glorious Plate"
 	Rarity Normal
 	HasInfluence None
@@ -252,6 +246,7 @@ Show
 	SetFontSize 45
 #? end of [example.filter]
 Show
+	AreaLevel <= 100
 	BaseType "Wyrmscale Gauntlets"
 	Rarity Normal
 	HasInfluence None
@@ -319,6 +314,7 @@ Show
 #? import leveling.filter
 ## Make sure this is after any links
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Orb of Horizons" "Harbinger's Orb"
 	SetFontSize 45
@@ -328,6 +324,7 @@ Show
 	PlayAlertSound 9 200
 	CustomAlertSound "tts/amy-horizon.mp3" 200
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Horizon Shard" "Harbinger's Shard"
 	SetFontSize 45
@@ -336,8 +333,8 @@ Show
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayAlertSound 9 200
 Show
-	BaseType == "Quicksilver Flask"
 	AreaLevel <= 15
+	BaseType == "Quicksilver Flask"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -346,12 +343,12 @@ Show
 	MinimapIcon 2 Green Circle
 	PlayAlertSound 5 200
 Show
-	AreaLevel = 1
+	AreaLevel <= 1
 	SetFontSize 45
 Show
+	AreaLevel <= 24
 	BaseType == "Scroll of Wisdom"
 	Class "Currency"
-	AreaLevel <= 24
 	SetTextColor 210 178 135 220
 	SetBorderColor 170 158 130 200
 	SetFontSize 45
@@ -359,9 +356,9 @@ Show
 	PlayEffect Grey
 	CustomAlertSound "tts/amy-wisdom.mp3" 200
 Show
+	AreaLevel <= 24
 	BaseType == "Portal Scroll"
 	Class "Currency"
-	AreaLevel <= 24
 	SetTextColor 50 240 240 220
 	SetBorderColor 170 158 130 200
 	SetFontSize 45
@@ -369,9 +366,9 @@ Show
 	PlayEffect Grey
 	CustomAlertSound "tts/amy-portal.mp3" 200
 Show
+	AreaLevel <= 24
 	BaseType == "Armourer's Scrap"
 	Class "Currency"
-	AreaLevel <= 24
 	SetFontSize 45
 	SetTextColor 0 255 0 230
 	SetBorderColor 130 130 255 230
@@ -429,30 +426,31 @@ Show
 	PlayEffect Green
 	CustomAlertSound "tts/amy-alchemy.mp3" 200
 Show
+	AreaLevel <= 30
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Iron Ring"
-	AreaLevel <= 30
 	CustomAlertSound "tts/russell-iron-ring.mp3" 300
 Show
+	AreaLevel <= 30
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Ruby Ring"
-	AreaLevel <= 30
 	CustomAlertSound "tts/russell-ruby-ring.mp3" 300
 Show
+	AreaLevel <= 30
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Sapphire Ring"
-	AreaLevel <= 30
 	CustomAlertSound "tts/russell-sapphire-ring.mp3" 300
 Show
+	AreaLevel <= 30
 	SetBorderColor 200 0 0
 	SetFontSize 45
 	BaseType == "Topaz Ring"
-	AreaLevel <= 30
 	CustomAlertSound "tts/russell-topaz-ring.mp3" 300
 Show
+	AreaLevel <= 100
 	BaseType == "Vaal Haste"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255
@@ -489,7 +487,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 18
+	AreaLevel >= 19
+	AreaLevel <= 100
 	BaseType == "Large Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -509,7 +508,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 24
+	AreaLevel >= 25
+	AreaLevel <= 100
 	BaseType == "Greater Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -529,7 +529,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 30
+	AreaLevel >= 31
+	AreaLevel <= 100
 	BaseType == "Grand Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -549,7 +550,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 36
+	AreaLevel >= 37
+	AreaLevel <= 100
 	BaseType == "Giant Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -569,7 +571,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 42
+	AreaLevel >= 43
+	AreaLevel <= 100
 	BaseType == "Colossal Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -589,7 +592,8 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 44
+	AreaLevel >= 45
+	AreaLevel <= 100
 	BaseType == "Sacred Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
@@ -609,12 +613,14 @@ Show
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Hide
-	AreaLevel > 60
+	AreaLevel >= 61
+	AreaLevel <= 100
 	BaseType == "Hallowed Life Flask"
 	SetFontSize 30
 	Rarity <= Rare
 	SetBorderColor 255 0 0 200
 Show
+	AreaLevel <= 100
 	BaseType == "Divine Life Flask"
 	ItemLevel <= 66
 	SetFontSize 45
@@ -779,9 +785,9 @@ Show
 	SetBorderColor 0 0 255 200
 #? end of [mana-flasks.filter]
 Show
+	AreaLevel <= 67
 	Class "Helmets" "Gloves" "Boots" "Body Armour"
 	Rarity = Rare
-	AreaLevel <= 67
 	Sockets >= 4
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
@@ -795,6 +801,7 @@ Show
 # 	PlayEffect Orange
 ## Low value shards ##
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
 	StackSize > 1
@@ -803,6 +810,7 @@ Show
 	SetBorderColor 190 178 135 255
 #? import pre-watchstones.filter
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Orb of Horizons"
 	SetFontSize 45
@@ -811,6 +819,7 @@ Show
 	MinimapIcon 0 Blue UpsideDownHouse
 	CustomAlertSound "tts/amy-horizon.mp3" 200
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Horizon Shard"
 	SetFontSize 45
@@ -818,6 +827,7 @@ Show
 	SetBorderColor 55 55 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 Show
+	AreaLevel <= 100
 	BaseType == "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Amethyst Flask"
 	ItemLevel >= 63 # Masochist's
 	SetFontSize 45
@@ -1474,8 +1484,8 @@ Show
 # You can set a timestamp so your filters only refer to new items when the
 # league starts.
 Show
+	AreaLevel <= 54
 	Class "Gold"
-	AreaLevel < 55
 	SetFontSize 30
 	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
@@ -1484,6 +1494,7 @@ Show
 	PlayEffect Yellow
 # lots of gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 15
@@ -1494,6 +1505,7 @@ Show
 	PlayEffect Yellow
 # a bit of gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	StackSize >= 300
 	SetFontSize 12
@@ -1504,6 +1516,7 @@ Show
 	PlayEffect Yellow Temp
 # any gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	SetFontSize 12
 	SetTextColor 255 255 20 250
@@ -1513,6 +1526,7 @@ Show
 	PlayEffect Yellow Temp
 #? end of [gold.filter]
 Show
+	AreaLevel <= 100
 	BaseType "Prophecy Wand"
 	Rarity Normal
 	HasInfluence None
@@ -1527,8 +1541,8 @@ Show
 #? import currency.filter
 #? import gold.filter
 Show
+	AreaLevel <= 54
 	Class "Gold"
-	AreaLevel < 55
 	SetFontSize 30
 	SetTextColor 255 255 20 250
 	SetBackgroundColor 0 0 0 0
@@ -1537,6 +1551,7 @@ Show
 	PlayEffect Yellow
 # lots of gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	StackSize >= 1000
 	SetFontSize 15
@@ -1547,6 +1562,7 @@ Show
 	PlayEffect Yellow
 # a bit of gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	StackSize >= 300
 	SetFontSize 12
@@ -1557,6 +1573,7 @@ Show
 	PlayEffect Yellow Temp
 # any gold
 Show
+	AreaLevel <= 100
 	Class "Gold"
 	SetFontSize 12
 	SetTextColor 255 255 20 250
@@ -1567,6 +1584,7 @@ Show
 #? end of [gold.filter]
 ## Recombinator ##
 Show
+	AreaLevel <= 100
 	BaseType "Recombinator"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 250 250 250
@@ -1576,17 +1594,20 @@ Show
 	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
 Show
+	AreaLevel <= 100
 	BaseType "Power Core"
 	SetBackgroundColor 0 150 250
 	SetBorderColor 200 200 200
 	SetFontSize 40
 Show
+	AreaLevel <= 100
 	Class "Sentinel Drone"
 	BaseType "Apex Sentinel"
 	SetBackgroundColor 200 200 0
 	SetBorderColor 200 200 200
 	SetFontSize 30
 Show
+	AreaLevel <= 100
 	Class "Sentinel Drone"
 	Rarity Unique
 	SetBackgroundColor 0 150 250
@@ -1596,6 +1617,7 @@ Show
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 Show
+	AreaLevel <= 100
 	Class "Sentinel Drone"
 	Rarity Magic Rare
 	SetBackgroundColor 0 150 250
@@ -1605,6 +1627,7 @@ Show
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue
 Show
+	AreaLevel <= 100
 	Class "Sentinel Drone"
 	Rarity Normal
 	SetBackgroundColor 0 150 250
@@ -1612,28 +1635,33 @@ Show
 	SetFontSize 40
 ## Wisdom and Portal ##
 Show
+	AreaLevel <= 100
 	BaseType "Scroll of Wisdom"
 	SetTextColor 210 178 135 220
 	Continue
 Show
+	AreaLevel <= 100
 	BaseType "Portal Scroll"
 	SetTextColor 50 240 240 220
 	Continue
 Hide
+	AreaLevel >= 78
+	AreaLevel <= 100
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
-	AreaLevel > 77
 	StackSize < 8
 	SetBorderColor 170 158 130 200
 	SetFontSize 45
 Hide
+	AreaLevel >= 68
+	AreaLevel <= 100
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
-	AreaLevel > 67
 	StackSize < 4
 	SetBorderColor 170 158 130 200
 	SetFontSize 45
 Show
+	AreaLevel <= 100
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 	Class "Currency"
 	SetBorderColor 170 158 130 200
@@ -1641,6 +1669,7 @@ Show
 	MinimapIcon 0 Grey Raindrop
 ## T0/T1 Currency ##
 Show
+	AreaLevel <= 100
 	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
@@ -1650,6 +1679,7 @@ Show
 	PlayEffect White
 	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
 Show
+	AreaLevel <= 100
 	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
@@ -1660,6 +1690,7 @@ Show
 #	CustomAlertSound "sounds/aahh.mp3"
 	CustomAlertSound "sounds/neon-what-the-heck.mp3"
 Show
+	AreaLevel <= 100
 	BaseType "Imprint"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
@@ -1668,6 +1699,7 @@ Show
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
 	SetFontSize 45
@@ -1677,6 +1709,7 @@ Show
 	PlayEffect Green
 	CustomAlertSound "sounds/thps-special-trick-1.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
@@ -1686,6 +1719,7 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "sounds/thps-special-trick-2.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Orb of Scouring" "Orb of Unmaking" "Instilling Orb"
 	SetFontSize 45
@@ -1696,6 +1730,7 @@ Show
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/t90-supplies1.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Chaos Orb" "Orb of Regret" "Regal Orb"
 	SetFontSize 45
@@ -1706,6 +1741,7 @@ Show
 	PlayAlertSound 11 200
 	# CustomAlertSound "sounds/izaro-golden.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType "Catalyst" "Eldritch"
 	SetFontSize 45
@@ -1716,6 +1752,7 @@ Show
 	PlayAlertSound 1 100
 	# CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Exalted Shard" "Ancient Shard"
 	SetFontSize 35
@@ -1726,6 +1763,7 @@ Show
 	PlayAlertSound 11 150
 ## T2 Currency ##
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
 	SetFontSize 45
@@ -1736,23 +1774,25 @@ Show
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 ## T3 Currency ##
 Show
+	AreaLevel <= 73
 	Class "Currency"
 	BaseType == "Orb of Chance"
-	AreaLevel < 74
 	SetFontSize 45
 	SetTextColor 255 255 0 230
 	SetBorderColor 130 130 255 230
 	MinimapIcon 0 Yellow Circle
 	CustomAlertSound "tts/amy-chance.mp3" 200
 Hide
+	AreaLevel >= 78
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
-	AreaLevel > 77
 	StackSize < 3
 	SetTextColor 0 255 0 230
 	SetBorderColor 130 130 255 230
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
@@ -1778,6 +1818,7 @@ Show
 # 	SetTextColor 0 255 0 230
 # 	SetBorderColor 130 130 255 230
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 45
@@ -1786,6 +1827,7 @@ Show
 	MinimapIcon 0 Grey Circle
 	# CustomAlertSound "sounds/water-drop.mp3"
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Chaos Shard" "Regal Shard"
 	StackSize >= 1
@@ -1794,6 +1836,7 @@ Show
 	SetBorderColor 190 178 135 255
 	PlayEffect Grey
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
 	StackSize >= 5
@@ -1813,6 +1856,7 @@ Show
 # 	SetFontSize 15
 # 	PlayEffect Grey
 Show
+	AreaLevel <= 100
 	Class "Currency"
 	BaseType "Engineer's Orb"
 	SetFontSize 15
@@ -1820,6 +1864,7 @@ Show
 ## Currency Vendor Recipes ##
 # Gem Cutter's Prism Recipe
 Show
+	AreaLevel <= 100
 	Quality >= 15
 	Quality < 20
 	Class "Gems"
@@ -1829,6 +1874,7 @@ Show
 	MinimapIcon 1 White Triangle
 # Glassblower's Recipe
 Show
+	AreaLevel <= 100
 	Class Flask
 	BaseType "Divine" "Eternal"
 	Quality >= 19
@@ -1839,6 +1885,7 @@ Show
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
 Show
+	AreaLevel <= 100
 	Class Flask
 	Quality >= 15
 	SetFontSize 45
@@ -1847,6 +1894,7 @@ Show
 	MinimapIcon 0 Yellow UpsideDownHouse
 ## Divination Cards ##
 Show
+	AreaLevel <= 100
 	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
 	Class "Divination"
 	SetFontSize 45
@@ -1856,6 +1904,7 @@ Show
 	PlayEffect Green
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
 Show
+	AreaLevel <= 100
 	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
 	SetFontSize 45
@@ -1865,6 +1914,7 @@ Show
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 Show
+	AreaLevel <= 100
 	BaseType == "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Jeweller's Boon" "The Porcupine" "The Sacrifice" "The White Knight" "Vanity"
 	Class "Divination"
 	SetFontSize 45
@@ -1874,6 +1924,7 @@ Show
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 Show
+	AreaLevel <= 100
 	BaseType == "Cameria's Cut"
 	Class "Divination"
 	SetFontSize 45
@@ -1881,6 +1932,7 @@ Show
 	PlayAlertSound 9 200
 # Essence
 Show
+	AreaLevel <= 100
 	BaseType "Screaming Essence"
 	Class Currency
 	SetBackgroundColor 0 75 75
@@ -1891,6 +1943,7 @@ Show
 	PlayEffect Cyan Temp
 ## Always show Oils
 Show
+	AreaLevel <= 100
 	BaseType "Golden Oil"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
@@ -1900,6 +1953,7 @@ Show
 	PlayAlertSound 6 200
 	MinimapIcon 0 White Raindrop
 Show
+	AreaLevel <= 100
 	BaseType "Silver Oil" "Opalescent Oil" "Black Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
 	SetBackgroundColor 200 250 200
 	SetBorderColor 0 0 0
@@ -1909,6 +1963,7 @@ Show
 	PlayAlertSound 10 200
 	MinimapIcon 0 Orange Triangle
 Show
+	AreaLevel <= 100
 	BaseType "Crimson Oil" "Indigo Oil" "Violet Oil" "Azure Oil" "Teal Oil"
 	SetBackgroundColor 150 200 150
 	SetBorderColor 0 0 0
@@ -1918,6 +1973,7 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 1 Orange Triangle
 Show
+	AreaLevel <= 100
 	BaseType "Verdant Oil" "Clear Oil" "Sepia Oil" "Amber Oil"
 	SetBackgroundColor 100 150 100
 	SetBorderColor 0 0 0
@@ -1926,7 +1982,8 @@ Show
 	MinimapIcon 2 Orange Triangle
 	PlayEffect Grey
 Show
-	AreaLevel > 83
+	AreaLevel >= 84
+	AreaLevel <= 100
 	Class Amulet
 	AnyEnchantment True
 	SetBackgroundColor 255 255 255 255
@@ -1936,6 +1993,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 ## Harvest
 Show
+	AreaLevel <= 100
 	BaseType "Sacred Crystallised Lifeforce"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
@@ -1945,6 +2003,7 @@ Show
 	MinimapIcon 0 White Raindrop
 	PlayEffect White
 Show
+	AreaLevel <= 100
 	BaseType "Crystallised Lifeforce"
 	StackSize >= 20
 	SetBackgroundColor 0 160 240
@@ -1954,6 +2013,7 @@ Show
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp
 Show
+	AreaLevel <= 100
 	BaseType "Crystallised Lifeforce"
 	SetBackgroundColor 0 160 240
 	SetBorderColor 0 0 0
@@ -1963,6 +2023,7 @@ Show
 	PlayEffect Cyan Temp
 #? import full-stack-divination-cards.filter
 Show
+	AreaLevel <= 100
 	BaseType == "Brother's Gift" "Brother's Stash" "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void"
 	Class "Divination"
 	SetFontSize 45
@@ -1971,6 +2032,7 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 Show
+	AreaLevel <= 100
 	BaseType == "Acclimatisation" "Broken Promises" "Cameria's Cut" "Duality" "Father's Love" "Heterochromia" "I See Brothers" "Light and Truth" "The Doppelganger" "The Easy Stroll" "The Finishing Touch" "The Lover" "The Progeny of Lunaris" "The Spark and the Flame" "The Throne" "The Tumbleweed" "The Unexpected Prize" "The Wedding Gift" "Winter's Embrace"
 	Class "Divination"
 	SetFontSize 45
@@ -1980,6 +2042,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 2
 Show
+	AreaLevel <= 100
 	BaseType == "A Familiar Call" "A Modest Request" "A Sea of Blue" "Akil's Prophecy" "Altered Perception" "Avian Pursuit" "Bijoux" "Buried Treasure" "Cartographer's Delight" "Darker Half" "Desperate Crusade" "Doryani's Epiphany" "Echoes of Love" "Ever-Changing" "Friendship" "Gemcutter's Mercy" "Gemcutter's Promise" "Home" "Hunter's Reward" "Lachrymal Necrosis" "Last Hope" "Man With Bear" "Sambodhi's Vow" "Struck by Lightning" "The Bitter Blossom" "The Catalyst" "The Cheater" "The Enthusiasts" "The Gemcutter" "The Insatiable" "The Journey" "The Long Watch" "The Polymath" "The Return of the Rat" "The Risk" "The Samurai's Eye" "The Scholar" "The Shepherd's Sandals" "The Sigil" "The Standoff" "The Survivalist" "The Wolf's Shadow" "Three Voices" "Turn the Other Cheek" "Void of the Elements"
 	Class "Divination"
 	SetFontSize 45
@@ -1989,6 +2052,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 3
 Show
+	AreaLevel <= 100
 	BaseType == "A Chilling Wind" "A Fate Worse Than Death" "A Note in the Wind" "Ambitious Obsession" "Atziri's Arsenal" "Auspicious Ambitions" "Azure Rage" "Boundless Realms" "Chasing Risk" "Council of Cats" "Dark Dreams" "Death" "Eldritch Perfection" "Eternal Bonds" "Forbidden Power" "Further Invention" "Guardian's Challenge" "Haunting Shadows" "Her Mask" "Jack in the Box" "Left to Fate" "Love Through Ice" "Merciless Armament" "Nook's Crown" "Rebirth and Renewal" "Shard of Fate" "Temperance" "The Blessing of Moosh" "The Body" "The Breach" "The Card Sharp" "The Carrion Crow" "The Craving" "The Deceiver" "The Dragon" "The Eldritch Decay" "The Endurance" "The Enforcer" "The Eternal War" "The Fishmonger" "The Fool" "The Garish Power" "The Gentleman" "The Hale Heart" "The Incantation" "The Inoculated" "The Long Con" "The Lord of Celebration" "The Messenger" "The Price of Loyalty" "The Professor" "The Rabid Rhoa" "The Sacrifice" "The Spoiled Prince" "The Stormcaller" "The Surgeon" "The Surveyor" "The Traitor" "The Warden" "The Wolf's Legacy" "The Wolverine" "Unchained"
 	Class "Divination"
 	SetFontSize 45
@@ -1998,6 +2062,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 4
 Show
+	AreaLevel <= 100
 	BaseType == "A Dusty Memory" "A Stone Perfected" "Abandoned Wealth" "Alone in the Darkness" "Astral Protection" "Audacity" "Beauty Through Death" "Broken Truce" "Brotherhood in Exile" "Brush, Paint and Palette" "Call to the First Ones" "Dark Temptation" "Destined to Crumble" "Disdain" "Draped in Dreams" "Earth Drinker" "Emperor's Luck" "Gift of Asenath" "Hope" "Hubris" "Imperfect Memories" "Justified Ambition" "Loyalty" "Magnum Opus" "Mitts" "Peaceful Moments" "Perfection" "Something Dark" "The Apothecary" "The Aspirant" "The Battle Born" "The Brawny Battle Mage" "The Chosen" "The Deal" "The Deep Ones" "The Demoness" "The Escape" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Gladiator" "The Gulf" "The Jeweller's Boon" "The King's Blade" "The Landing" "The Lion" "The Lunaris Priestess" "The Master Artisan" "The Mercenary" "The Opulent" "The Penitent" "The Price of Prescience" "The Price of Protection" "The Primordial" "The Puzzle" "The Realm" "The Rite of Elements" "The Side Quest" "The Tinkerer's Table" "The Transformation" "The Undaunted" "The Wolf" "Thirst for Knowledge" "Thunderous Skies" "Toxic Tidings" "Vile Power" "Vinia's Token"
 	Class "Divination"
 	SetFontSize 45
@@ -2007,6 +2072,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 5
 Show
+	AreaLevel <= 100
 	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Boon of Justice" "Boon of the First Ones" "Bowyer's Dream" "Burning Blood" "Choking Guilt" "Costly Curio" "Deadly Joy" "Grave Knowledge" "Immortal Resolve" "Lethean Temptation" "Lysah's Respite" "Misery in Darkness" "Prometheus' Armoury" "Reckless Ambition" "Succor of the Sinless" "The Adventuring Spirit" "The Army of Blood" "The Awakened" "The Bear Woman" "The Beast" "The Blazing Fire" "The Bones" "The Cache" "The Calling" "The Celestial Justicar" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Emptiness" "The Enlightened" "The Explorer" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Hive of Knowledge" "The Inventor" "The Last Supper" "The Life Thief" "The Lord in Black" "The Magma Crab" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Pack Leader" "The Porcupine" "The Prince of Darkness" "The Skeleton" "The Strategist" "The Summoner" "The Tower" "The Twilight Moon" "The Visionary" "The Warlord" "The Wretched"
 	Class "Divination"
 	SetFontSize 45
@@ -2016,6 +2082,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 6
 Show
+	AreaLevel <= 100
 	BaseType == "Alluring Bounty" "Blind Venture" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" "Endless Night" "Fire Of Unknown Origin" "Keeper's Corruption" "Lantador's Lost Love" "Lucky Connections" "Luminous Trove" "More is Never Enough" "Prejudice" "Pride of the First Ones" "Scholar of the Seas" "Silence and Frost" "The Archmage's Right Hand" "The Astromancer" "The Dungeon Master" "The Ethereal" "The Formless Sea" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Leviathan" "The Mad King" "The Mind's Eyes" "The Obscured" "The One That Got Away" "The Price of Devotion" "The Road to Power" "The Ruthless Ceinture" "The Siren" "The Sun" "The Sword King's Salute" "The Trial" "The Union" "The Vast" "The Wilted Rose" "The Wind" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter"
 	Class "Divination"
 	SetFontSize 45
@@ -2025,6 +2092,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 7
 Show
+	AreaLevel <= 100
 	BaseType == "Arrogance of the Vaal" "Baited Expectations" "Checkmate" "Dying Anguish" "From Bone to Ashes" "Glimmer of Hope" "Hunter's Resolve" "Lost Worlds" "Matryoshka" "Parasitic Passengers" "Poisoned Faith" "Pride Before the Fall" "Rain of Chaos" "Rats" "Remembrance" "Terrible Secret of Space" "The Academic" "The Aesthete" "The Brittle Emperor" "The Cacophony" "The Coming Storm" "The Cursed King" "The Doctor" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Eye of Terror" "The Fathomless Depths" "The Hook" "The King's Heart" "The Nurse" "The Offering" "The Patient" "The Rabbit's Foot" "The Scavenger" "The Scout" "The Shieldbearer" "The Thaumaturgist" "The Tireless Extractor" "The Twins" "The Undisputed" "The Valkyrie" "The Web" "The White Knight" "The Whiteout" "The Witch" "The Wolven King's Bite" "The World Eater" "The Wrath"
 	Class "Divination"
 	SetFontSize 45
@@ -2034,6 +2102,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 8
 Show
+	AreaLevel <= 100
 	BaseType == "A Dab of Ink" "Assassin's Favour" "Assassin's Gift" "Azyran's Reward" "Coveted Possession" "Desecrated Virtue" "Doedre's Madness" "Etched in Blood" "Fateful Meeting" "Gift of the Gemling Queen" "Harmony of Souls" "House of Mirrors" "Humility" "Judging Voices" "Lucky Deck" "Might is Right" "No Traces" "Rain Tempter" "The Admirer" "The Betrayal" "The Conduit" "The Destination" "The Endless Darkness" "The Hermit" "The Hunger" "The Insane Cat" "The Jester" "The Offspring" "The Pact" "The Poet" "The Rusted Bard" "The Scarred Meadow" "The Seeker" "The Soul" "The Tyrant" "Vanity" "Volatile Power" "Who Asked"
 	Class "Divination"
 	SetFontSize 45
@@ -2043,6 +2112,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 9
 Show
+	AreaLevel <= 100
 	BaseType == "Dying Light" "Lonely Warrior" "Prosperity" "The Arena Champion" "The Celestial Stone" "The Demon" "The Eye of the Dragon" "The Greatest Intentions" "The Immortal" "The Innocent" "The Journalist" "The Last One Standing" "The Saint's Treasure" "Time-Lost Relic"
 	Class "Divination"
 	SetFontSize 45
@@ -2052,6 +2122,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 10
 Show
+	AreaLevel <= 100
 	BaseType == "Dementophobia" "The Artist" "The Chains that Bind" "The Dragon's Heart" "The Fiend" "The Harvester" "The Sephirot" "Wealth and Power"
 	Class "Divination"
 	SetFontSize 45
@@ -2061,6 +2132,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 11
 Show
+	AreaLevel <= 100
 	BaseType == "Divine Beauty" "The Avenger" "The Fortunate" "The Hoarder" "The Lich" "The Old Man" "The Watcher"
 	Class "Divination"
 	SetFontSize 45
@@ -2070,6 +2142,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 12
 Show
+	AreaLevel <= 100
 	BaseType == "Anarchy's Price" "Cursed Words" "Seven Years Bad Luck" "The Cataclysm" "Triskaidekaphobia"
 	Class "Divination"
 	SetFontSize 45
@@ -2079,6 +2152,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 13
 Show
+	AreaLevel <= 100
 	BaseType == "Lingering Remnants" "Mawr Blaidd" "The Queen" "Unrequited Love"
 	Class "Divination"
 	SetFontSize 45
@@ -2088,6 +2162,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 16
 Show
+	AreaLevel <= 100
 	BaseType == "The Catch"
 	Class "Divination"
 	SetFontSize 45
@@ -2097,6 +2172,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 18
 Show
+	AreaLevel <= 100
 	BaseType == "Imperial Legacy"
 	Class "Divination"
 	SetFontSize 45
@@ -2106,6 +2182,7 @@ Show
 	CustomAlertSound "sounds/intel-thanks-steve.mp3"
 	StackSize >= 22
 Show
+	AreaLevel <= 100
 	BaseType == "Rebirth"
 	Class "Divination"
 	SetFontSize 45
@@ -2960,3 +3037,4 @@ Show
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
+

@@ -58,7 +58,14 @@ func CleanUpFilter(filter string) string {
 
 	groups = append(groups, "") // final newline
 
-	return strings.Join(groups, "\n")
+	filterString := strings.Join(groups, "\n")
+	// @todo(nick-ng): this isn't what this method is supposed to do
+	tempFilter, err := LimitMaxAreaLevel(filterString, 100)
+	if err == nil {
+		filterString = tempFilter
+	}
+
+	return filterString
 }
 
 func isGroupGood(group []string) bool {

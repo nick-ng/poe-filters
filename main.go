@@ -414,13 +414,13 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 	flags := ProcessedFilterFlags{Game: "poe1"}
 
 	filterData, err := os.ReadFile(filterPath)
-	filterString := string(filterData)
-
-	// filterString = utils.PatchThirdPartyFilter(filterString)
-
 	if err != nil {
 		return "", flags, append(errorList, err)
 	}
+
+	filterString := string(filterData)
+
+	// filterString = utils.PatchThirdPartyFilter(filterString)
 
 	rawLines := strings.Split(filterString, "\n")
 

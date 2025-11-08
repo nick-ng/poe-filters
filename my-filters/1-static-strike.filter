@@ -1,3 +1,5 @@
+#! skip
+
 # Build Uniques
 Show
 	BaseType == "Ornate Mace" "Leather Hood" "Girded Tower Shield"
