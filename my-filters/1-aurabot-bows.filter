@@ -1,8 +1,8 @@
 # Aurabot
 # Leveling:
-# 1-11: Spectral Throw
-# 12-27: Spectral Throw + Spectral Helix
-# 28+: Explosive Concoction
+# 1-11: Spectral Throw?
+# 12-27: Rain of Arrows
+# 28+: Lightning Arrow + Storm Rain
 
 Show
 	BaseType "Topaz Flask" "Sapphire Flask"
@@ -41,4 +41,3 @@ Show
 #! import storm-rain.filter
 
 #! import aurabot.filter
-
