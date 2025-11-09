@@ -53,9 +53,6 @@ func main() {
 		poe1TtsDir := utils.GetPoe1SteamPath("tts/")
 		utils.MkDirIfNotExist(poe1TtsDir)
 
-		poe1LutrisTtsDir := utils.GetPoe1LutrisPath("tts/")
-		utils.MkDirIfNotExist(poe1LutrisTtsDir)
-
 		poe2TtsDir := utils.GetPoe2SteamPath("tts/")
 		utils.MkDirIfNotExist(poe2TtsDir)
 	}
@@ -116,13 +113,6 @@ func main() {
 									err = os.WriteFile(gameFilterPath, filterData, 0666)
 									if err != nil {
 										fmt.Println("\nError writing filter to PoE 1, Steam directory", filterName, err)
-										return
-									}
-
-									gameFilterPath = utils.GetPoe1LutrisPath(filterName)
-									err = os.WriteFile(gameFilterPath, filterData, 0666)
-									if err != nil {
-										fmt.Println("\nError writing filter to PoE 1, Lutris Steam directory", filterName, err)
 										return
 									}
 								}
@@ -382,11 +372,6 @@ func copySounds() {
 		if err != nil {
 			fmt.Println("error copying PoE 1 sound files", err, outb.String(), errb.String())
 		}
-
-		// lutris
-		utils.Exec("cp", "--update=none", "-r", utils.GetPoe1SteamPath("sounds/"), utils.GetPoe1LutrisPath("/"))
-		utils.Exec("cp", "--update=none", "-r", utils.GetPoe1SteamPath("tts/"), utils.GetPoe1LutrisPath("/"))
-		utils.CpGlob(fmt.Sprintf("%s*.filter", gameDir1), utils.GetPoe1LutrisPath("/"))
 
 		temp = utils.GetPoe2SteamPath("")
 		gameDir2 := fmt.Sprintf("%s/", temp)

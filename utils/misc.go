@@ -233,26 +233,6 @@ func GetPoe1SteamPath(pathSuffix string) string {
 	return poe1Dir
 }
 
-func GetPoe1LutrisPath(pathSuffix string) string {
-	// /homine/pux/Games/path-of-exile/drive_c/users/pux/Documents/My Games/Path of Exile
-	homeDir, err := os.UserHomeDir()
-	if err != nil {
-		fmt.Println("\nCouldn't get home directory", err)
-		os.Exit(1)
-	}
-
-	if runtime.GOOS == "windows" {
-		poe1Dir := filepath.Join(homeDir, "Documents", "My Games", "Path of Exile", pathSuffix)
-		return poe1Dir
-	}
-
-	poe1Dir := filepath.Join(homeDir, "Games", "path-of-exile", "drive_c", "users", "pux", "Documents", "My Games", "Path of Exile", pathSuffix)
-	if strings.HasSuffix(pathSuffix, "/") {
-		poe1Dir = fmt.Sprintf("%s/", poe1Dir)
-	}
-	return poe1Dir
-}
-
 func GetPoe2SteamPath(pathSuffix string) string {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {

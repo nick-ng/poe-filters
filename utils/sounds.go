@@ -285,25 +285,6 @@ func MakeTts(rawCommand string, game string) string {
 			fmt.Println("error copying sound file to game directory", err, outb.String(), errb.String())
 		}
 
-		if game != "poe2" {
-			// lutris version
-			gameDirLutris := GetPoe1LutrisPath("tts/")
-			cmd := exec.Command(
-				"cp",
-				"--update=none",
-				path,
-				gameDirLutris,
-			)
-			var outb, errb bytes.Buffer
-			cmd.Stdout = &outb
-			cmd.Stderr = &errb
-			err = cmd.Run()
-
-			if err != nil {
-				fmt.Println("error copying sound file to lutris game directory", err, outb.String(), errb.String())
-			}
-		}
-
 		path = filepath.Join("tts", filename)
 	}
 
