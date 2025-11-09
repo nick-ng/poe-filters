@@ -108,59 +108,6 @@ Show
 
 #! import ring-fix-b.filter
 
-####################
-## T0/T1 Currency ##
-####################
-
-Show # T-2 Currency
-	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard"
-	SetBackgroundColor 250 250 250
-	SetBorderColor 0 0 0
-	SetTextColor 250 0 0
-	SetFontSize 45
-	MinimapIcon 0 White Diamond
-	PlayEffect White
-	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
-
-Show # T-1 Currency
-	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
-	SetBackgroundColor 250 250 250
-	SetBorderColor 0 0 0
-	SetTextColor 250 0 0
-	SetFontSize 45
-	MinimapIcon 0 White Diamond
-	PlayEffect White
-#	CustomAlertSound "sounds/aahh.mp3"
-	CustomAlertSound "sounds/neon-what-the-heck.mp3"
-
-Show # T0 Currency
-	Class "Currency"
-	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
-	SetFontSize 45
-	#!T0CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	MinimapIcon 0 Pink Circle
-	PlayEffect Green
-	CustomAlertSound "sounds/thps-special-trick-1.mp3"
-
-Show # T0 Currency
-	Class "Currency"
-	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
-	SetFontSize 40
-	#!T1CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	MinimapIcon 0 Orange Circle
-	PlayEffect Blue
-	CustomAlertSound "sounds/thps-special-trick-2.mp3"
-
-Show # Mapping Currency
-	Class "Currency"
-	BaseType == "Orb of Unmaking"
-	SetFontSize 35
-	#!T1CurrencyText!# 230
-	#!CurrencyBorder!# 230
-	# CustomAlertSound "sounds/t90-supplies1.mp3"
-
 #! import online-NeverSink-6uberplu-softcore.filter
 #? import FilterBlade_5_Uber Strict.filter
 #? import FilterBlade_6_Uber Plus Strict.filter
