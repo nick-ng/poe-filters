@@ -1,0 +1,44 @@
+# Aurabot
+# Leveling:
+# 1-11: Spectral Throw
+# 12-27: Spectral Throw + Spectral Helix
+# 28+: Explosive Concoction
+
+Show
+	BaseType "Topaz Flask" "Sapphire Flask"
+	AreaLevel < 60
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/intel-thanks-steve.mp3"
+
+# Leveling Items
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+
+# Party Links
+#! linksa RGGG
+#! linksa GGGG
+#! linksa GGGB
+#! linksa RRGG
+#! linksa RRG
+#! linksa RGG
+#! linksa GGG
+#! linksa GGB
+
+# 2-links
+#! linksa RG 10
+#! linksa GG 10
+#! linksa GB 10
+
+#! import storm-rain.filter
+
+#! import aurabot.filter
+

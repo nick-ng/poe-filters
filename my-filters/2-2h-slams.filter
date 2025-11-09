@@ -1,3 +1,5 @@
+#! skip
+
 # Item Bases
 Show
 	BaseType = "Vaal Axe" "Karui Chopper"

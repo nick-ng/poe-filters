@@ -1,14 +1,24 @@
 ## campaign start ##
 
-Show
+Show # flat weapon damage essences
 	Class "Currency"
 	BaseType "of Contempt" "of Hatred" "of Anger" "of Wrath"
 	SetFontSize 45
+	AreaLevel <= 72
 	#!WhiteText!# 255
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
 	#! tts "essence" essence Amy 200 1.0
+
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
 
 #! linksa RGGG
 #! linksa GGGB
@@ -83,15 +93,5 @@ Show
 #! import maps.filter
 #! import misc.filter
 #! import bases.filter
-
-#? import sov1.filter
-#? del ##+ Section 14 - Caster(.|\n)+on 17 - Ranged Levelling ##+\n
-#? del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
-#? del #hyrri's quiver recipe(.|\n)+#quivershit
-#? del #elemental bows \(ele dmg implicit\)(.|\n)+#chaos bows \(fastest\)
-#? del #bleed bows \(highest avg dmg\)(.|\n)+## Section 18 - Armour ##+\n
-#? del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
-#? del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
-#? del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
 
 ## red maps end ##

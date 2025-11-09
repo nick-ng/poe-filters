@@ -38,10 +38,10 @@ When you run it, it will try to copy filters to the Path of Exile directory
 - main.go:650: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
 - main.go:776: // @todo(nick-ng): move this to its own loop
 - utils/items.go:66: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
-- utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
-- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
-- utils/sounds.go:295: @todo(nick-ng): change the path based on operating system
 - utils/filter-group.go:21: @todo(nick-ng): actually convert the filter group to lines instead of just returning the lines
 - utils/filter-group.go:52: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:115: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:136: @todo(nick-ng): split the area limit and to string parts into separate methods
+- utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
+- utils/sounds.go:295: @todo(nick-ng): change the path based on operating system
+- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do

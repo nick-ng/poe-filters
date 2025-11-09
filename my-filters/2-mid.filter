@@ -1,3 +1,5 @@
+#! skip
+
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
