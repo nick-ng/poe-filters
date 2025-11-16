@@ -1,0 +1,144 @@
+# Aurabot
+# Leveling:
+# 1-27: Rolling Magma
+# 28-75?: Armageddon Brand + Cremation
+# 75+: Penance Brand of Dissipation
+
+# Leveling Items
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 200 1.0
+  MinimapIcon 1 Pink Star
+
+Show
+  AreaLevel <= 40
+  BaseType "Faun's Horn"
+  SetFontSize 45
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
+  PlayEffect Red
+  #! tts "faun horn" faun-horn Amy 200 1.0
+  MinimapIcon 1 Pink Star
+
+Show
+  AreaLevel <= 67
+  BaseType "Demon's Horn"
+  SetFontSize 45
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
+  PlayEffect Red
+  #! tts "demon horn" demon-horn Amy 200 1.0
+  MinimapIcon 1 Pink Star
+
+# My Links
+#! linksa BBBB
+#! linksa RBBB
+#! linksa GBBB
+#! linksa RGBB
+#! linksa RGGB
+#! linksa BBB
+#! linksa GBB
+#! linksa GGB
+#! linksa RGB
+
+# Party Links
+#! linksa RGGG
+#! linksa GGGG
+#! linksa RRGG
+#! linksa RRG
+#! linksa RGG
+#! linksa GGG
+
+# 2-links
+#! linksa RG 10
+#! linksa BB 10
+#! linksa BG 10
+
+# Divination Cards
+Show
+	BaseType == "The Dragon"
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Sulphur Flask" "Dusk Blade"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 255 140 54 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Other
+
+# Item Bases
+Hide # Upper Prison strong box
+	BaseType "Bismuth Flask"
+	AreaLevel == 9
+	Rarity < Magic
+	SetFontSize 45
+
+#! import gold.filter
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#! import heist.filter
+#! import bases.filter
+#! import life-flasks.filter
+#! import misc.filter
+#! import leap-slam-3.25.filter
+
+Show
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!# 200
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!# 200
+
+Show
+	AreaLevel <= 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	DropLevel >= 60
+	BaseEvasion >= 10
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+
+#! import FilterBlade_2_Semi-Strict.filter
