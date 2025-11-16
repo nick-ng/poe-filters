@@ -1,0 +1,115 @@
+#! skip
+
+Hide
+	Class "Gold"
+
+Show
+	BaseType "Divine Vessel"
+	SetFontSize 30
+	#!BlackText!# 255
+	SetBackgroundColor 159 15 213 255
+	SetBorderColor 0 0 0 255
+	MinimapIcon 1 Yellow Hexagon
+	PlayEffect Yellow
+	PlayAlertSound 1 150
+
+Show
+	BaseType "Jewel"
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 155 10 155 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Red Hexagon
+
+Show
+	BaseType "Leather Belt" "Heavy Belt"
+	Rarity Unique
+	SetFontSize 40
+	SetBackgroundColor 255 10 10 255
+	#	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Red Hexagon
+
+Show
+	BaseType == "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring"
+	Rarity Unique
+	SetFontSize 35
+	SetBackgroundColor 5 100 5 255
+	#	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Green Hexagon
+
+Show
+	BaseType == "Serpentscale Gauntlets"
+	Rarity Unique
+	SetFontSize 40
+	SetBackgroundColor 10 150 10 255
+	#	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	MinimapIcon 0 Green Hexagon
+
+#? import currency2.filter
+#! import maps.filter
+#? import misc.filter
+#? import bases.filter
+
+Show # $type->exoticbases $tier->exoticheistbases
+	Rarity Normal Magic Rare
+	BaseType == "Cogwork Ring" "Composite Ring" "Geodesic Ring" "Helical Ring" "Manifold Ring" "Ratcheting Ring"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+Show # $type->exoticbases $tier->exoticlakekala
+	Rarity Normal Magic Rare
+	BaseType == "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Shadowed Ring" "Tenebrous Ring"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+Show # $type->exoticbases $tier->exoticuniquebases
+	Rarity Normal Magic Rare
+	BaseType == "Nameless Ring"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+Show # %HS6 $type->rare->exotic->breachrings $tier->high
+	ItemLevel >= 82
+	Rarity Normal Magic Rare
+	Class == "Rings"
+	BaseType == "Breach Ring" "Cryonic Ring" "Enthalpic Ring" "Formless Ring" "Fugitive Ring" "Organic Ring" "Synaptic Ring"
+	SetFontSize 35
+
+Show
+	BaseType == "Vermillion Ring"
+	Corrupted False
+	Mirrored False
+	ItemLevel >= 84 # t1 resists
+	SetFontSize 40
+	SetTextColor 0 0 255 255
+	#!BrightBackground!# 200
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+## hide bad bases here
+
+#! import ring-fix-b.filter
+
+#! import online-NeverSink-6uberplu-softcore.filter
+#? import FilterBlade_5_Uber Strict.filter
+#? import FilterBlade_6_Uber Plus Strict.filter

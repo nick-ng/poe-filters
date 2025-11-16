@@ -1486,44 +1486,20 @@ Show
 Show
 	AreaLevel <= 54
 	Class "Gold"
-	SetFontSize 30
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-# lots of gold
-Show
-	AreaLevel <= 100
-	Class "Gold"
-	StackSize >= 1000
-	SetFontSize 15
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-# a bit of gold
-Show
-	AreaLevel <= 100
-	Class "Gold"
-	StackSize >= 300
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
-# any gold
+	MinimapIcon 2 Yellow Raindrop
+	PlayEffect Yellow
 Show
 	AreaLevel <= 100
 	Class "Gold"
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 #? end of [gold.filter]
 Show
 	AreaLevel <= 100
@@ -1543,44 +1519,20 @@ Show
 Show
 	AreaLevel <= 54
 	Class "Gold"
-	SetFontSize 30
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-# lots of gold
-Show
-	AreaLevel <= 100
-	Class "Gold"
-	StackSize >= 1000
-	SetFontSize 15
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-# a bit of gold
-Show
-	AreaLevel <= 100
-	Class "Gold"
-	StackSize >= 300
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
-# any gold
+	MinimapIcon 2 Yellow Raindrop
+	PlayEffect Yellow
 Show
 	AreaLevel <= 100
 	Class "Gold"
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
 #? end of [gold.filter]
 ## Recombinator ##
 Show
