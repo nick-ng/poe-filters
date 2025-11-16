@@ -1,41 +1,17 @@
-Show
+Show # campaign gold
 	Class "Gold"
 	AreaLevel < 55
-	SetFontSize 30
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-
-# lots of gold
-Show
-	Class "Gold"
-	StackSize >= 1000
-	SetFontSize 15
-	SetTextColor 255 255 20 250
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	MinimapIcon 1 Yellow Circle
-	PlayEffect Yellow
-
-# a bit of gold
-Show
-	Class "Gold"
-	StackSize >= 300
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
+	MinimapIcon 2 Yellow Raindrop
+	PlayEffect Yellow
 
-# any gold
 Show
 	Class "Gold"
 	SetFontSize 12
-	SetTextColor 255 255 20 250
+	SetTextColor 255 255 20 0
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 0 0 0 0
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow Temp
+	PlayEffect Yellow
