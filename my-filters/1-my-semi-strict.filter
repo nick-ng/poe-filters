@@ -1,3 +1,5 @@
+#! skip
+
 Show
 	BaseType "Large Cluster Jewel"
 	SetBorderColor 255 255 30 250

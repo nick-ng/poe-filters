@@ -1,0 +1,56 @@
+Show
+	Rarity Rare
+	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+	SetFontSize 45
+	SetBorderColor 0 220 220 255
+	PlayEffect Grey
+	MinimapIcon 2 Grey Diamond
+
+Show
+	BaseType == "Syndicate Medallion"
+	SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+
+Show
+	Identified True
+	HasExplicitMod = "Haku's"
+	SetFontSize 45
+	SetTextColor 177 159 255 200
+	SetBorderColor 177 159 255 200
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Purple
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+
+Show
+	StackSize < 3
+	Class == "Stackable Currency"
+	BaseType == "Simulacrum Splinter"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 130 15 255 255
+	SetBackgroundColor 65 20 80
+
+Hide
+	BaseType == "Sacrifice at Midnight" "Sacrifice at Noon"
+	SetFontSize 45
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	SetBackgroundColor 65 20 80
+
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+#! import bases.filter
+
+## choose one
+#! import online-NeverSink-5uberstr-softcore.filter
+#? import online-NeverSink-6uberplu-softcore.filter
+#? import FilterBlade_2_Semi-Strict.filter
+#! import FilterBlade_4_Very Strict.filter
+#? import FilterBlade_5_Uber Strict.filter
+# import FilterBlade_6_Uber Plus Strict.filter

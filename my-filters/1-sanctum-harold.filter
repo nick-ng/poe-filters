@@ -108,7 +108,7 @@ Hide # Upper Prison strong box
 #! import bases.filter
 #! import life-flasks.filter
 #! import misc.filter
-#! import leap-slam-3.25.filter
+#! import leap-slam.filter
 
 Show
 	AreaLevel < 68
