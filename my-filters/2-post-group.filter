@@ -35,17 +35,38 @@ Show
 	SetBorderColor 130 15 255 255
 	SetBackgroundColor 65 20 80
 
-Hide
+Show
 	BaseType == "Sacrifice at Midnight" "Sacrifice at Noon"
 	SetFontSize 45
 	SetTextColor 175 120 230 240
 	SetBorderColor 175 120 230 240
 	SetBackgroundColor 65 20 80
 
+Show
+	BaseType "Essence Scarab"
+	SetFontSize 45
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	SetBackgroundColor 65 20 80
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Aberrant Fossil" "Aetheric Fossil" "Bloodstained Fossil" "Bound Fossil" "Deft Fossil" "Dense Fossil" "Frigid Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Opulent Fossil" "Prismatic Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Aberrant Fossil" "Aetheric Fossil" "Bloodstained Fossil" "Bound Fossil" "Corroded Fossil" "Deft Fossil" "Dense Fossil" "Faceted Fossil" "Fractured Fossil" "Frigid Fossil" "Fundamental Fossil" "Gilded Fossil" "Glyphic Fossil" "Hollow Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Opulent Fossil" "Prismatic Fossil" "Pristine Fossil" "Sanctified Fossil" "Scorched Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
+	SetFontSize 35
+	SetBorderColor 0 0 0
+
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
-#! import bases.filter
+#? import bases.filter
 
 ## choose one
 #! import online-NeverSink-5uberstr-softcore.filter

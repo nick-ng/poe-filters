@@ -125,6 +125,7 @@ Show
 
 Show
 	Class "Rings" "Amulets" "Axe" "Mace" "Sword" "Daggers" "Sceptre" "Wand" "Jewel"
+	AreaLevel < 70
 	Height <= 3
 	Width = 1
 	Rarity = Rare
