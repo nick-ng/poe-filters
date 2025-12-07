@@ -43,11 +43,26 @@ Show
 	SetBackgroundColor 65 20 80
 
 Show
-	BaseType "Essence Scarab"
-	SetFontSize 45
+	BaseType == "Sacrifice at Dusk" "Sacrifice at Dawn"
+	StackSize >= 2
+	SetFontSize 40
 	SetTextColor 175 120 230 240
 	SetBorderColor 175 120 230 240
-	SetBackgroundColor 65 20 80
+	# SetBackgroundColor 65 20 80
+
+Show
+	BaseType "Essence Scarab" "Beyond Scarab" "Torment Scarab" "Betrayal Scarab" "Anarchy Scarab" "Expedition Scarab" "Kalguuran Scarab"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	# SetBackgroundColor 65 20 80
+
+Show
+	BaseType == "Abyss Scarab" "Scarab of Hunted Traitors" "Bestiary Scarab" "Scarab of Bisection" "Incursion Scarab of Invasion" "Blight Scarab" "Ultimatum Scarab" "Delirium Scarab" "Legion Scarab of Officers" "Harvest Scarab" "Titanic Scarab of Treasures" "Incursion Scarab" "Abyss Scarab of Edifice" "Influencing Scarab of the Shaper" "Domination Scarab of Apparitions" "Abyss Scarab of Multitudes" "Sulphite Scarab of Fumes" "Sulphite Scarab" "Scarab of Divinity" "Blight Scarab of the Blightheart" "Ritual Scarab of Wisps" "Influencing Scarab of the Elder" "Titanic Scarab" "Ambush Scarab of Hidden Compartments"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	# SetBackgroundColor 65 20 80
 
 Show
 	Class == "Stackable Currency"
@@ -63,6 +78,9 @@ Show
 	SetFontSize 35
 	SetBorderColor 0 0 0
 
+Hide
+	BaseType "Scroll of Wisdom" "Portal Scroll" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+
 #! import currency.filter
 #! import maps.filter
 #! import misc.filter
@@ -72,6 +90,6 @@ Show
 #! import online-NeverSink-5uberstr-softcore.filter
 #? import online-NeverSink-6uberplu-softcore.filter
 #? import FilterBlade_2_Semi-Strict.filter
-#! import FilterBlade_4_Very Strict.filter
+#? import FilterBlade_4_Very Strict.filter
 #? import FilterBlade_5_Uber Strict.filter
 # import FilterBlade_6_Uber Plus Strict.filter

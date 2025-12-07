@@ -49,7 +49,27 @@ Show
 # Map appearance
 Show
 	Rarity < Unique
+	MapTier >= 16
+	Class "Maps"
+	SetTextColor 255 0 0 255
+	SetBorderColor 50 0 255 255
+	Continue
+
+Show
+	AreaLevel >= 83
+	Rarity < Unique
 	MapTier >= 14
+	MapTier < 16
+	Class "Maps"
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	Continue
+
+Show
+	AreaLevel < 83
+	Rarity < Unique
+	MapTier >= 14
+	MapTier < 16
 	Class "Maps"
 	SetTextColor 255 0 0 255
 	SetBorderColor 0 0 255 255
@@ -146,6 +166,14 @@ Show # T16
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 	CustomAlertSound "sounds/sirus-take-it.mp3"
+
+Show # High Reds
+	Rarity < Unique
+	MapTier < 16
+	MapTier >= 14
+	Class "Maps"
+	SetFontSize 40
+	PlayAlertSound 5 100 # map drop sound
 
 Show # High Reds
 	Rarity < Unique
