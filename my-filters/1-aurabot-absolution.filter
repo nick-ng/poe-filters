@@ -30,7 +30,7 @@ Show
 	#!DefaultBackground!# 120
 	#!GoodBaseBorder!# 200
 	PlayEffect Red
-	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
 	MinimapIcon 1 Pink Star
 
 Show
@@ -40,7 +40,7 @@ Show
 	#!DefaultBackground!# 120
 	#!GoodBaseBorder!# 200
 	PlayEffect Red
-	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
 	MinimapIcon 1 Pink Star
 
 Show
@@ -49,7 +49,7 @@ Show
 	#!DefaultBackground!# 120
 	#!GoodBaseBorder!# 200
 	PlayEffect Red
-	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
 	MinimapIcon 1 Pink Star
 
 #! linksa RBBB
