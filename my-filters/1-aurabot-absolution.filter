@@ -1,0 +1,116 @@
+# Aurabot
+# Leveling:
+# 1-38: Absolution
+# 12+: Sunder
+
+# Leveling Items
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+
+Show
+  AreaLevel <= 10
+  BaseType "Goat's Horn"
+  SetFontSize 45
+  #!DefaultBackground!# 120
+  #!GoodBaseBorder!# 200
+  PlayEffect Red
+  #! tts "goat horn" goat-horn Amy 200 1.0
+  MinimapIcon 1 Pink Star
+
+Show
+	AreaLevel <= 50
+	BaseType "Calling Wand"
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	MinimapIcon 1 Pink Star
+
+Show
+	AreaLevel <= 72
+	BaseType "Convening Wand"
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Convoking Wand"
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	MinimapIcon 1 Pink Star
+
+#! linksa RBBB
+#! linksa RRBB
+#! linksa RBB
+#! linksa RB
+
+# Party Links
+Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RGGG
+	SetBorderColor 200 0 0 230
+	SetBackgroundColor 88 0 87 255
+	Class "Gloves" "Boots" "Gloves" "Body Armours"
+	SetFontSize 40
+
+Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = GGGG
+	SetBorderColor 200 0 0 230
+	SetBackgroundColor 88 0 87 255
+	Class "Gloves" "Boots" "Gloves" "Body Armours"
+	SetFontSize 40
+
+Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRGG
+	SetBorderColor 200 0 0 230
+	SetBackgroundColor 88 0 87 255
+	Class "Gloves" "Boots" "Gloves" "Body Armours"
+	SetFontSize 40
+
+Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRG
+	SetBorderColor 200 0 0 230
+	SetBackgroundColor 88 0 87 255
+	Class "Gloves" "Boots" "Gloves" "Body Armours"
+	SetFontSize 40
+
+Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	LinkedSockets <= 4
+	SocketGroup = RRRR
+	SetBorderColor 200 0 0 230
+	SetBackgroundColor 88 0 87 255
+	Class "Gloves" "Boots" "Gloves" "Body Armours"
+	SetFontSize 40
+
+#! import aurabot.filter

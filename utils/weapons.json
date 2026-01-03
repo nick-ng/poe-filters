@@ -31,6 +31,23 @@
       "serious": true
     }
   ],
+  "minion-wands": [
+    {
+      "baseType": "Calling Wand",
+      "requiresLevel": 20,
+      "serious": true
+    },
+    {
+      "baseType": "Convening Wand",
+      "requiresLevel": 50,
+      "serious": true
+    },
+    {
+      "baseType": "Convoking Wand",
+      "requiresLevel": 72,
+      "serious": true
+    }
+  ],
   "crit-bows": [
     {
       "baseType": "Long Bow",
