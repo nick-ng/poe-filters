@@ -150,7 +150,7 @@ Show
 
 ## "Turn in a divination card set that rewards a Level 21 and/or 23% Quality Gem"
 Show
-	BaseType == "A Chilling Wind" "Deathly Designs" "Desecrated Virtue" "Dialla's Subjugation" "Doryani's Epiphany" "Terrible Secret of Space" "The Bitter Blossom" "The Blessing of Moosh" "The Bones" "The Cataclysm" "The Hook" "The Magma Crab" "The Rite of Elements" "The Skeleton" "The Wilted Rose"
+	BaseType == "A Chilling Wind" "Deathly Designs" "Dialla's Subjugation" "Doryani's Epiphany" "Terrible Secret of Space" "The Bitter Blossom" "The Blessing of Moosh" "The Bones" "The Cataclysm" "The Hook" "The Magma Crab" "The Rite of Elements" "The Skeleton" "The Wilted Rose"
 	SetFontSize 45
 	#!BrightBackground!# 255
 	SetTextColor 0 0 255 255

@@ -1,25 +1,6 @@
 ## Make sure this is after any links
 
 Show
-	Class "Currency"
-	BaseType == "Orb of Horizons" "Harbinger's Orb"
-	SetFontSize 45
-	#!T2CurrencyText!# 230
-	SetBorderColor 55 55 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-	PlayAlertSound 9 200
-	#! tts "horizon" horizon Amy 200 1.0
-
-Show
-	Class "Currency"
-	BaseType == "Horizon Shard" "Harbinger's Shard"
-	SetFontSize 45
-	#!T2CurrencyText!# 230
-	SetBorderColor 55 55 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-	PlayAlertSound 9 200
-
-Show
 	BaseType == "Quicksilver Flask"
 	AreaLevel <= 15
 	SetFontSize 45
@@ -165,13 +146,33 @@ Show
 #! maxarea 55 Import the filer directly if the build needs mana flask progression past Act 7
 
 Show
-	Class "Helmets" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 68
+	Rarity = Rare
+	Class "Boots"
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!BrightBorder!# 200
+
+Show
+	Class "Helmets" "Gloves" "Body Armour"
 	Rarity = Rare
 	AreaLevel <= 67
 	Sockets >= 4
 	SetFontSize 45
 	#!LevelingBorder!# 230
 	MinimapIcon 1 Pink Moon
+
+Show
+	AreaLevel <= 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	DropLevel >= 60
+	BaseEvasion >= 10
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 
 # Show
 # 	Class == "Stackable Currency"
@@ -187,7 +188,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Horizon Shard" "Regal Shard"
+	BaseType == "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard"
 	StackSize > 1
 	SetFontSize 45
 	#!T9CurrencyText!# 230

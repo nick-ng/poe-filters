@@ -54,7 +54,7 @@ Show # T0 Currency
 
 Show # T0 Currency
 	Class "Currency"
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
 	SetFontSize 45
 	#!T1CurrencyText!# 230
 	#!CurrencyBorder!# 230

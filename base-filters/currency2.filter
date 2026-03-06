@@ -151,7 +151,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType == "Exalted Shard" "Ancient Shard"
+	BaseType == "Exalted Shard"
 	SetFontSize 35
 	#!T1CurrencyText!# 230
 	#!CurrencyBorder!# 230
@@ -161,7 +161,7 @@ Show
 
 Show # T2 Currency
 	Class "Currency"
-	BaseType == "Orb of Alteration" "Cartographer's Chisel" "Annulment Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Jeweller's Orb" "Chromatic Orb"
+	BaseType == "Orb of Alteration" "Annulment Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Jeweller's Orb" "Chromatic Orb"
 	SetFontSize 35
 	#!T2CurrencyText!# 230
 	#!CurrencyBorder!# 230

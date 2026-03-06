@@ -1,21 +1,4 @@
 Show
-	Class "Currency"
-	BaseType == "Orb of Horizons"
-	SetFontSize 45
-	#!T2CurrencyText!# 230
-	SetBorderColor 55 55 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-	#! tts "horizon" horizon Amy 200 1.0
-
-Show
-	Class "Currency"
-	BaseType == "Horizon Shard"
-	SetFontSize 45
-	#!T2CurrencyText!# 230
-	SetBorderColor 55 55 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-Show
 	BaseType == "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Amethyst Flask"
 	ItemLevel >= 63 # Masochist's
 	SetFontSize 45

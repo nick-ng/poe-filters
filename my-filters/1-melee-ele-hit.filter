@@ -1,0 +1,179 @@
+# Divination Cards
+# Show
+# 	BaseType == "Earth Drinker"
+# 	SetFontSize 45
+# 	SetTextColor 232 99 0 255
+# 	SetBorderColor 47 252 47 255
+# 	#!BrightBackground!# 255
+# 	MinimapIcon 2 Brown Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Build Uniques
+Show
+	BaseType == "Wyrmscale Gauntlets" "Amethyst Ring" "Fright Claw"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
+
+# Item Bases
+Show
+	BaseType = "Imperial Claw"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel = 83 # Shaper Mods
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	#!BrightBackground!# 255
+	MinimapIcon 1 Pink Star
+
+Show
+	Rarity <= Rare
+	EnchantmentPassiveNum 8
+	BaseType == "Large Cluster Jewel"
+	EnchantmentPassiveNode "Attack Damage while holding a Shield"
+	ItemLevel < 68
+	ItemLevel >= 50
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	Rarity <= Rare
+	EnchantmentPassiveNum 8
+	BaseType == "Large Cluster Jewel"
+	EnchantmentPassiveNode "Attack Damage while holding a Shield"
+	SetFontSize 40
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+# Leveling Items
+Show
+	BaseType = "Rusted Hatchet" "Boarding Axe" "Tomahawk" "Siege Axe"
+	Rarity <= Rare
+	AreaLevel <= 32
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	SocketGroup = GG
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType = "Rusted Hatchet" "Boarding Axe" "Tomahawk" "Siege Axe"
+	Rarity <= Rare
+	AreaLevel <= 32
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	SocketGroup = RG
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType = "Rusted Hatchet" "Boarding Axe" "Tomahawk" "Siege Axe"
+	Rarity <= Rare
+	AreaLevel <= 32
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	PlayEffect Red
+	SocketGroup = RR
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType = "Rusted Hatchet" "Boarding Axe" "Tomahawk" "Siege Axe"
+	Rarity <= Rare
+	AreaLevel <= 20
+	Corrupted False
+	Mirrored False
+	SetFontSize 40
+	#!DefaultBackground!# 120
+	#!GoodBaseBorder!# 200
+	MinimapIcon 1 Pink Star
+
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+
+#! linksa RRGB
+#! linksa RGGB
+#! linksa RGG 12
+#! linksa RGB
+#! linksa RRG
+#! linksa RRR
+#! linksa GGB
+
+#! weapons fast-2h-axes 30
+
+# More Leveling Items
+Show
+	BaseType = "Lapis Amulet"
+	AreaLevel <= 7
+	#!LevelingBorder!# 230
+	#!BrightBackground!# 255
+	MinimapIcon 1 Pink Star
+	#! tts "lapis" lapis-amulet Amy 200 1.0
+
+# Rares during leveling
+Show
+	AreaLevel <= 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!str2!#
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+
+Show
+	AreaLevel < 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!strinthelm2!# #!strintboots!#
+	SetBorderColor 53 216 234 255
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#! import heist.filter
+#! import bases.filter
+#! import misc.filter
+
+Show
+	AreaLevel < 77
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!dex9!# #!dexint9!# #!strdex9!#
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
+	#!MediumBaseBorder!# 200
+
+#! import FilterBlade_2_Semi-Strict.filter

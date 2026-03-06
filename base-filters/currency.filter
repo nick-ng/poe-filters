@@ -181,7 +181,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType == "Exalted Shard" "Ancient Shard"
+	BaseType == "Exalted Shard"
 	SetFontSize 35
 	#!T1CurrencyText!# 255
 	#!CurrencyBorder!# 255
@@ -195,7 +195,7 @@ Show
 
 Show # T2 Currency
 	Class "Currency"
-	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Orb of Horizons" "Annulment Shard" "Harbinger's Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble" "Harbinger's Orb"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" ""Annulment Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble"
 	SetFontSize 45
 	#!T2CurrencyText!# 255
 	#!CurrencyBorder!# 255
@@ -277,7 +277,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
+	BaseType == "Alchemy Shard" "Alteration Shard"
 	StackSize >= 5
 	SetFontSize 35
 	#!T9CurrencyText!# 255
@@ -286,7 +286,7 @@ Show
 
 # Show
 # 	Class "Currency"
-# 	BaseType == "Alchemy Shard" "Alteration Shard" "Binding Shard"
+# 	BaseType == "Alchemy Shard" "Alteration Shard"
 # 	SetFontSize 15
 # 	PlayEffect Grey
 
@@ -296,12 +296,6 @@ Show
 # 	StackSize >= 5
 # 	SetFontSize 15
 # 	PlayEffect Grey
-
-Show
-	Class "Currency"
-	BaseType "Engineer's Orb"
-	SetFontSize 15
-	PlayEffect Grey
 
 #############################
 ## Currency Vendor Recipes ##
@@ -352,7 +346,7 @@ Show
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
 
 Show
-	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Cartographer" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Journey" "The Master Artisan" "The Puzzle" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
+	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Master Artisan" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
 	SetFontSize 45
 	#!T2CurrencyText!# 255
