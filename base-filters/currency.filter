@@ -195,7 +195,7 @@ Show
 
 Show # T2 Currency
 	Class "Currency"
-	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" ""Annulment Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble"
+	BaseType == "Orb of Alteration" "Orb of Alchemy" "Orb of Binding" "Annulment Shard" "Enkindling Orb" "Vaal Orb" "Orb of Fusing" "Blessed Orb" "Glassblower's Bauble"
 	SetFontSize 45
 	#!T2CurrencyText!# 255
 	#!CurrencyBorder!# 255
