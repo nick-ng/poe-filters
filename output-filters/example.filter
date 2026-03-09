@@ -889,7 +889,7 @@ Show
 	MinimapIcon 1 Pink Cross
 ### Maces End ###
 ### Axes Start ###
-#? weapons fast-2h-axes
+#? weapons slow-2h-axes
 Show
 	AreaLevel <= 8
 	Sockets < 6
@@ -900,16 +900,6 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 10
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Jade Chopper" # requires level 9
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-Show
 	AreaLevel <= 16
 	Sockets < 6
 	Rarity <= Rare
@@ -919,6 +909,16 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 14
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Woodsplitter" # requires level 13
+	Corrupted False
+	SetFontSize 45
+	SetBorderColor 13 255 201 230
+	MinimapIcon 2 Pink Cross
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+Show
 	AreaLevel <= 20
 	Sockets < 6
 	Rarity <= Rare
@@ -927,16 +927,6 @@ Show
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 19
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Poleaxe" # requires level 18
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 25
 	Sockets < 6
@@ -984,6 +974,24 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 43
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Dagger Axe" # requires level 36
+	Corrupted False
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 44
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Jasper Chopper" # requires level 37
+	Corrupted False
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
 	AreaLevel <= 42
 	Sockets < 6
 	Rarity <= Rare
@@ -1002,16 +1010,6 @@ Show
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 46
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Headsman Axe" # requires level 45
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 52
 	Sockets < 6
@@ -1050,16 +1048,6 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 53
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Noble Axe" # requires level 52
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-Show
 	AreaLevel <= 59
 	Sockets < 6
 	Rarity <= Rare
@@ -1078,6 +1066,24 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
+	AreaLevel <= 65
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Karui Chopper" # requires level 58
+	Corrupted False
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
+	AreaLevel <= 66
+	Sockets < 6
+	Rarity <= Rare
+	BaseType == "Talon Axe" # requires level 59
+	Corrupted False
+	SetFontSize 25
+	SetBorderColor 13 255 201 230
+	MinimapIcon 1 Pink Cross
+Show
 	AreaLevel <= 67
 	Sockets < 6
 	Rarity <= Rare
@@ -1086,16 +1092,6 @@ Show
 	SetFontSize 25
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 63
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Ezomyte Axe" # requires level 62
-	Corrupted False
-	SetFontSize 45
-	SetBorderColor 13 255 201 230
-	MinimapIcon 2 Pink Cross
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 69
 	Sockets < 6
@@ -1106,29 +1102,20 @@ Show
 	SetBorderColor 13 255 201 230
 	MinimapIcon 1 Pink Cross
 Show
-	AreaLevel <= 67
+	AreaLevel <= 65
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Despot Axe" # requires level 66
+	BaseType == "Vaal Axe" # requires level 64
 	Corrupted False
 	SetFontSize 45
 	SetBorderColor 13 255 201 230
 	MinimapIcon 2 Pink Cross
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
-	AreaLevel <= 73
+	AreaLevel <= 71
 	Sockets < 6
 	Rarity <= Rare
-	BaseType == "Despot Axe" # requires level 66
-	Corrupted False
-	SetFontSize 25
-	SetBorderColor 13 255 201 230
-	MinimapIcon 1 Pink Cross
-Show
-	AreaLevel <= 75
-	Sockets < 6
-	Rarity <= Rare
-	BaseType == "Void Axe" # requires level 68
+	BaseType == "Vaal Axe" # requires level 64
 	Corrupted False
 	SetFontSize 25
 	SetBorderColor 13 255 201 230

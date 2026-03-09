@@ -34,6 +34,17 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
+	BaseType = "Imperial Claw"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 83 # Shaper Mods
+	SetFontSize 40
+	#!GoodBaseBorder!# 200
+	#!BrightBackground!# 255
+	MinimapIcon 1 Pink Star
+
+Show
 	Rarity <= Rare
 	EnchantmentPassiveNum 8
 	BaseType == "Large Cluster Jewel"
@@ -177,3 +188,8 @@ Show
 	#!MediumBaseBorder!# 200
 
 #! import online-NeverSink-2semistr-softcore.filter
+#! maxarea 70 tier 3
+
+#! import online-NeverSink-3strict-softcore.filter
+
+#! tts "check filter" check-filter Amy 300 1.0
