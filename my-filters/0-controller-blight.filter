@@ -1,0 +1,158 @@
+#! import gold.filter
+
+# Blight
+Show
+	Class == "Amulets" "Belts" "Jewels" "Rings"
+	FracturedItem True
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	#!BrightBackground!# 255
+	SetBorderColor 255 0 0 255
+
+Show
+	ItemLevel >= 85
+	Class == "Utility Flasks"
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	SetBorderColor 0 0 255 255
+
+Hide
+	ItemLevel < 85
+	Class == "Utility Flasks"
+	SetFontSize 45
+	MinimapIcon 1 Blue Circle
+	SetBorderColor 0 0 255 255
+
+Show
+	Rarity = Rare
+	Class == "Belts"
+	ItemLevel >= 85
+	SetFontSize 30
+	MinimapIcon 1 Cyan Pentagon
+	SetBorderColor 0 180 255 255
+
+Show
+	Rarity = Rare
+	BaseType == "Amethyst Ring" "Unset Ring" "Two-Stone Ring" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Marble Amulet" "Vermillion Ring"
+	SetFontSize 35
+	MinimapIcon 1 Green Pentagon
+	SetBorderColor 0 255 180 255
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	Rarity = Rare
+	Class == "Jewels"
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Hide
+	Rarity = Normal Magic
+	Class == "Amulets" "Jewels" "Rings"
+
+Show # T-1 Currency
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Exalted Orb" "Eldritch Chaos" "Orb of Conflict" "Fracturing Orb"
+	SetFontSize 45
+	#!T0CurrencyText!# 230
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Green
+
+Show # T0 Currency
+	Class "Currency"
+	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	SetFontSize 45
+	#!T1CurrencyText!# 230
+	#!CurrencyBorder!# 230
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Green
+
+Hide
+	BaseType "Portal Scroll"
+	StackSize < 20
+
+Hide
+	BaseType "Scroll of Wisdom"
+	StackSize < 20
+
+## Bound to map owner
+Show
+	BaseType == "Orb of Unmaking"
+	MinimapIcon 0 Grey Circle
+	SetFontSize 25
+	PlayEffect Grey
+	#!CurrencyBorder!# 230
+
+## Show stackable items
+Show
+	Class == "Stackable Currency"
+	MinimapIcon 0 Orange Circle
+	SetFontSize 25
+	PlayEffect Orange
+	#!CurrencyBorder!# 230
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	# BaseType "Scarab"
+	Class "Map Fragment"
+	SetFontSize 35
+	MinimapIcon 0 Purple Triangle
+	#!BrightBorder!# 200
+	SetBackgroundColor 180 0 255 255
+
+Show
+	Class Incubator
+	MinimapIcon 0 Orange Moon
+
+Show
+	Corrupted False
+	FracturedItem True
+	Mirrored False
+	Identified False
+	ItemLevel >= 85
+	BaseType == #!square2!# #!body2!#
+	SetFontSize 45
+	SetTextColor 190 240 0 255
+	SetBorderColor 255 100 100 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Red Diamond
+
+Show
+	Corrupted False
+	Mirrored False
+	FracturedItem True
+	Identified False
+	BaseType == "Alder Spiked Shield" "Archon Kite Shield" "Cardinal Round Shield" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Colossal Tower Shield" "Convening Wand" "Convoking Wand" "Copper Kris" "Corsair Sword" "Crusader Buckler" "Crystal Wand" "Demon Dagger" "Demon's Horn" "Despot Axe" "Eclipse Staff" "Elegant Round Shield" "Exquisite Blade" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Fiend Dagger" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Golden Kris" "Harbinger Bow" "Harmonic Spirit Shield" "Heathen Wand" "Heavy Arrow Quiver" "Kinetic Wand" "Imp Dagger" "Imperial Bow" "Imperial Buckler" "Imperial Claw" "Ironwood Buckler" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maraketh Bow" "Mirrored Spiked Shield" "Omen Wand" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Pinnacle Tower Shield" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Runic Hatchet" "Sambar Sceptre" "Short Bow" "Siege Axe" "Skean" "Sovereign Spiked Shield" "Spike-Point Arrow Quiver" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Supreme Spiked Shield" "Thicket Bow" "Titanium Spirit Shield" "Tornado Wand" "Vaal Buckler" "Vaal Sceptre" "Vaal Spirit Shield" "Void Sceptre"
+	SetFontSize 45
+	SetTextColor 190 240 0 255
+	SetBorderColor 255 100 100 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Red Diamond
+
+Hide
+	Class "Body Armours" "Boots" "Gloves" "Helmets"
+	Rarity = Normal Magic Rare
+
+## Warn if using filter in wrong zone
+Show
+	AreaLevel < 68
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	MinimapIcon 2 Orange Circle
+	PlayEffect Red
+	#! tts "check filter" check-filter Amy 300 1.0
+
+# hide almost everything else
+#! import online-NeverSink-4verystr-softcore.filter

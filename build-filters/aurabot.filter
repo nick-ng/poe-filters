@@ -79,4 +79,9 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! import FilterBlade_2_Semi-Strict.filter
+#! import online-NeverSink-2semistr-softcore.filter
+#! maxarea 70 tier 3
+
+#! import online-NeverSink-3strict-softcore.filter
+
+#! tts "check filter" check-filter Amy 300 1.0
