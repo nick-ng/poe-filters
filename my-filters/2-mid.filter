@@ -1,8 +1,9 @@
-#! skip
-
 #! import currency.filter
 #! import maps.filter
-#! import misc.filter
+#! import heist.filter
 #! import bases.filter
+#! import misc.filter
 
-#! import sov2.filter
+#! import online-NeverSink-4verystr-softcore.filter
+
+#! tts "check filter" check-filter Amy 300 1.0
