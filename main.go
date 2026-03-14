@@ -38,7 +38,8 @@ const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
 
 func main() {
-	utils.MakeDivinationCardsFilterPoeNinja()
+	// @todo(nick-ng): fix/remove divination cards filter"
+	// utils.MakeDivinationCardsFilterPoeNinja()
 
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
