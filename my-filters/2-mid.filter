@@ -1,3 +1,13 @@
+Show
+	BaseType == "Cord Belt"
+	SetFontSize 45
+	SetTextColor 0 188 0 255
+	#!BrightBackground!# 255
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+
 #! import currency.filter
 #! import maps.filter
 #! import heist.filter
