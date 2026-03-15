@@ -5,7 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/fsnotify/fsnotify"
+	"log/slog"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -15,6 +15,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/fsnotify/fsnotify"
 )
 
 type ProcessedFilterFlags struct {
@@ -38,8 +40,23 @@ const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
 
 func main() {
+	envLogLevel := os.Getenv("LOG_LEVEL")
+	logLevel := slog.LevelInfo
+	switch strings.ToLower(envLogLevel) {
+	case "debug":
+		{
+			logLevel = slog.LevelDebug
+		}
+	}
+
+	handler := slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{Level: logLevel})
+	slog.SetDefault(slog.New(handler))
+
 	// @todo(nick-ng): fix/remove divination cards filter"
 	// utils.MakeDivinationCardsFilterPoeNinja()
+	poeNinjaData := utils.CreatePoeNinjaData()
+
+	slog.Debug("poeNinjaData initialised", "poeNinjaData", poeNinjaData)
 
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)

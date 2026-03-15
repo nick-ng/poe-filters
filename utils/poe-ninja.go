@@ -57,6 +57,23 @@ var divinationCardsFilterPath = filepath.Join("base-filters", "full-stack-divina
 
 const MAX_CACHE_AGE = 2 * 60 * 60 // 2 hours in seconds
 
+func CreatePoeNinjaData() PoeNinjaData {
+	poeNinjaData := PoeNinjaData{}
+	poeNinjaData.UpdateLeagues()
+
+	return poeNinjaData
+}
+
+func (pnd *PoeNinjaData) UpdateLeagues() {
+	leagues, err := GetTradeChallengeLeagues()
+	if err != nil {
+		slog.Error("error getting challenge leagues", "err", err)
+		return
+	}
+
+	pnd.Leagues = leagues
+}
+
 func GetIndexState() (map[string][]PoeNinjaIndexStateItem, error) {
 	resp, err := http.Get("https://poe.ninja/poe1/api/data/index-state")
 
