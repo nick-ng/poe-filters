@@ -13,8 +13,8 @@ Show
 # High Red Maps: 81 - 83
 
 Show # T17
-	MapTier >= 17
 	Class "Maps"
+	BaseType "Nightmare Map"
 	SetFontSize 45
 	#!GoodBaseBorder!# 200
 	SetTextColor 120 0 166 200
@@ -167,6 +167,7 @@ Show # T16
 	PlayEffect Blue
 	CustomAlertSound "sounds/sirus-take-it.mp3"
 
+# @todo(nick-ng): is this group required?
 Show # High Reds
 	Rarity < Unique
 	MapTier < 16
@@ -184,11 +185,12 @@ Show # High Reds
 	PlayEffect Blue
 	PlayAlertSound 5 100 # map drop sound
 
-Show
-	AreaLevel >= 83
+Hide # 3.28 map changes means you don't need these once you are in T14+
+	AreaLevel >= 81
 	Rarity < Unique
 	MapTier < 14
 	Class "Maps"
+	AnyEnchantment False
 	SetFontSize 25
 	DisableDropSound True
 
@@ -251,4 +253,3 @@ Show # white - low area
 	MinimapIcon 0 White Square
 	PlayEffect White
 	PlayAlertSound 5 100 # map drop sound
-
