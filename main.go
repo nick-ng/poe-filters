@@ -56,7 +56,9 @@ func main() {
 	// utils.MakeDivinationCardsFilterPoeNinja()
 	poeNinjaData := utils.CreatePoeNinjaData()
 
-	slog.Debug("poeNinjaData initialised", "poeNinjaData", poeNinjaData)
+	// slog.Debug("poeNinjaData initialised", "poeNinjaData", poeNinjaData)
+	poeNinjaData.UpdateCurrencyPrices(false, false)
+	slog.Debug("poeNinjaData CurrencyPrices", "CurrencyPrices", poeNinjaData.CurrencyPrices)
 
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
