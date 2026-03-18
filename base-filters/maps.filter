@@ -185,6 +185,17 @@ Show # High Reds
 	PlayEffect Blue
 	PlayAlertSound 5 100 # map drop sound
 
+
+Show # yellow, <= 74 cluster jewels for delirium
+	AreaLevel >= 73
+	Rarity < Unique
+	MapTier >= 6
+	MapTier <= 7
+	Class "Maps"
+	SetFontSize 40
+	MinimapIcon 2 Yellow Square
+	PlayAlertSound 16 100 # map drop sound
+
 Hide # 3.28 map changes means you don't need these once you are in T14+
 	AreaLevel >= 81
 	Rarity < Unique
