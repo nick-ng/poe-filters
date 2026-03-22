@@ -60,6 +60,11 @@ func main() {
 	poeNinjaData.UpdateCurrencyPrices(false, false)
 	slog.Debug("poeNinjaData CurrencyPrices", "CurrencyPrices", poeNinjaData.CurrencyPrices)
 
+	currencyPrices, err := poeNinjaData.GetCurrencyPrices(false, false)
+	if err == nil {
+		utils.GetStackableCurrencyFilter(currencyPrices, 81, 0)
+	}
+
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
 	utils.MkDirIfNotExist(OUTPUT_FILTERS_PATH)

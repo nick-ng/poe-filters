@@ -7,6 +7,12 @@ import (
 	"strings"
 )
 
+type CurrencyBreakpoint struct {
+	Comment    string
+	Styles     []string
+	ChaosValue float64
+}
+
 var defaultDropLevels = []int{1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80}
 
 // returns drop levels and "isExact", whether the drop levels correspond to
@@ -196,4 +202,123 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 	}
 
 	return strings.Join(filterStrings, "\n\n"), nil
+}
+
+// var wisdomStyle = []string{
+// 	"SetFontSize 35",
+// 	"SetTextColor 210 178 135 220",
+// 	"SetBackgroundColor 0 0 0 120",
+// 	"SetBorderColor 130 130 255 255",
+// }
+// var portalStyle = []string{
+// 	"SetFontSize 35",
+// 	"SetTextColor 50 240 240 220",
+// 	"SetBackgroundColor 0 0 0 120",
+// 	"SetBorderColor 130 130 255 255",
+// }
+
+// @todo(nick-ng): make wisdom and portal scrolls use the correct style
+func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minAreaLevel int, minChaos float64) string {
+	breakPoints := []CurrencyBreakpoint{
+		{
+			Comment:    "1+ divine",
+			ChaosValue: 1 / currencyPrices.DivinePerChaos,
+			Styles: []string{
+				"SetFontSize 45",
+				"SetTextColor 255 0 0 255",
+				"SetBackgroundColor 255 255 255",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 0 White Diamond",
+				"PlayAlertSound 6 300",
+				"PlayEffect Red",
+			},
+		},
+		{
+			Comment:    "0.5+ divine",
+			ChaosValue: 0.5 / currencyPrices.DivinePerChaos,
+			Styles: []string{
+				"SetFontSize 43",
+				"SetTextColor 255 0 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 0 Pink Circle",
+				"CustomAlertSound \"sounds/thps-special-trick-1.mp3\" 300",
+				"PlayEffect Green",
+			},
+		},
+		{
+			Comment:    "1+ chaos",
+			ChaosValue: 1,
+			Styles: []string{
+				"SetFontSize 41",
+				"SetTextColor 255 150 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 1 Orange Circle",
+				"PlayAlertSound 11 250",
+				"PlayEffect Green",
+			},
+		},
+		{
+			Comment:    "0.5+ chaos",
+			ChaosValue: 0.5,
+			Styles: []string{
+				"SetFontSize 39",
+				"SetTextColor 255 255 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 1 Yellow Circle",
+				"PlayAlertSound 9 250",
+			},
+		},
+		{
+			Comment:    "0.1+ chaos",
+			ChaosValue: 0.1,
+			Styles: []string{
+				"SetFontSize 37",
+				"SetTextColor 0 255 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+			},
+		},
+	}
+
+	filterString := "# Auto Currency Filter\n"
+	for i, breakPoint := range breakPoints {
+		if breakPoint.ChaosValue < minChaos {
+			continue
+		}
+
+		baseTypesInBreakPoint := []string{}
+		for _, curr := range currencyPrices.Prices {
+			if i > 0 && curr.ChaosValue >= breakPoints[i-1].ChaosValue {
+				continue
+			}
+
+			if curr.ChaosValue >= breakPoint.ChaosValue {
+				baseTypesInBreakPoint = append(baseTypesInBreakPoint, curr.BaseType)
+			}
+		}
+
+		if len(baseTypesInBreakPoint) > 0 {
+			baseTypes := strings.Join(baseTypesInBreakPoint, "\" \"")
+			styles := strings.Join(breakPoint.Styles, "\n\t")
+			thisFilterGroup := fmt.Sprintf(`# %s
+Show
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseTypes == "%s"
+	%s
+`, breakPoint.Comment, minAreaLevel, baseTypes, styles)
+
+			filterString = fmt.Sprintf("%s\n%s\n", filterString, thisFilterGroup)
+		}
+	}
+
+	// @todo(nick-ng): add section that always shows must show currency
+	// @todo(nick-ng): add section that shows stacks of currency that meat the minimum value
+
+	fmt.Println(filterString)
+
+	return filterString
 }

@@ -118,6 +118,26 @@ func (pnd *PoeNinjaData) GetLeague(hardcore bool, eternal bool) (PoeLeague, erro
 	return PoeLeague{}, newError
 }
 
+func (pnd *PoeNinjaData) GetCurrencyPrices(hardcore bool, eternal bool) (CurrencyPrices, error) {
+	league, err := pnd.GetLeague(hardcore, eternal)
+	if err != nil {
+		return CurrencyPrices{}, err
+	}
+	temp, ok := pnd.CurrencyPrices[league.Name]
+
+	cutoffTime := time.Now().Add(-time.Second * MAX_CACHE_AGE)
+	if !ok || temp.FetchedAt.Before(cutoffTime) {
+		pnd.UpdateCurrencyPrices(hardcore, eternal)
+	}
+
+	temp, ok = pnd.CurrencyPrices[league.Name]
+	if !ok {
+		return CurrencyPrices{}, errors.New("no prices even after update")
+	}
+
+	return temp, nil
+}
+
 func (pnd *PoeNinjaData) UpdateCurrencyPrices(hardcore bool, eternal bool) error {
 	league, err := pnd.GetLeague(hardcore, eternal)
 	if err != nil {
