@@ -30,6 +30,7 @@ type OnlineFilter struct {
 
 var onlineFilterHashes = make(map[string]string)
 var onlineFilterLastSave int64 = 0
+var poeNinjaData utils.PoeNinjaData
 
 const MY_FILTERS_PATH string = "my-filters"
 const MY_POE2_FILTERS_PATH string = "my-poe2-filters"
@@ -38,6 +39,10 @@ const BUILD_FILTERS_PATH string = "build-filters"
 const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
+
+func init() {
+	poeNinjaData = utils.CreatePoeNinjaData()
+}
 
 func main() {
 	envLogLevel := os.Getenv("LOG_LEVEL")
@@ -54,16 +59,6 @@ func main() {
 
 	// @todo(nick-ng): fix/remove divination cards filter"
 	// utils.MakeDivinationCardsFilterPoeNinja()
-	poeNinjaData := utils.CreatePoeNinjaData()
-
-	// slog.Debug("poeNinjaData initialised", "poeNinjaData", poeNinjaData)
-	poeNinjaData.UpdateCurrencyPrices(false, false)
-	slog.Debug("poeNinjaData CurrencyPrices", "CurrencyPrices", poeNinjaData.CurrencyPrices)
-
-	currencyPrices, err := poeNinjaData.GetCurrencyPrices(false, false)
-	if err == nil {
-		utils.GetStackableCurrencyFilter(currencyPrices, 81, 0)
-	}
 
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
@@ -798,24 +793,40 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
-			// // @todo(nick-ng): move this to its own loop
-			// case "droplevel":
-			// 	{
-			// 		// makes item filter based on item drop level
-			// 		_ = utils.ParseFlags(rawLine)
-			// 		newLine, err := utils.GetDropLevelFilter(rawLine)
-
-			// 		if err != nil {
-			// 			tempFilterChunks = append(tempFilterChunks, "#? warning: couldn't get drop level filter")
-			// 			continue
-			// 		}
-
-			// 		tempFilterChunks = append(tempFilterChunks, newLine)
-			// 	}
 			case "tts":
 				{
 					newLine := utils.MakeTts(trimmedLine, flags.Game)
 					tempFilterChunks = append(tempFilterChunks, newLine)
+				}
+			case "autocurrency":
+				// #! autocurrency [min chaos] [min arealevel]
+				{
+					minChaos := 0.0
+					minAreaLevel := 81 // T14
+					if len(commandArguments) >= 2 {
+						minChaos64, err := strconv.ParseFloat(commandArguments[1], 64)
+						if err != nil {
+							slog.Error("error parsing min chaos for autocurrency", "full command", rawCommand)
+						} else {
+							minChaos = minChaos64
+						}
+					}
+					if len(commandArguments) >= 3 {
+						minLevel64, err := strconv.ParseInt(commandArguments[2], 10, 64)
+						if err != nil {
+							slog.Error("error parsing min area level for autocurrency", "full command", rawCommand)
+						} else {
+							minAreaLevel = int(minLevel64)
+						}
+					}
+
+					currencyPrices, err := poeNinjaData.GetCurrencyPrices(false, false)
+					if err != nil {
+						slog.Error("error getting currency prices for autocurrency", "err", err)
+					} else {
+						newLines := utils.GetStackableCurrencyFilter(currencyPrices, minAreaLevel, minChaos)
+						tempFilterChunks = append(tempFilterChunks, newLines)
+					}
 				}
 			default:
 				{

@@ -35,6 +35,7 @@ Show
 	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
+#! autocurrency 0 81
 #! import currency.filter
 #! import maps.filter
 #! import heist.filter
