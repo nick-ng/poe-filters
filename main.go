@@ -5,7 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/fsnotify/fsnotify"
+	"log/slog"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -15,6 +15,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/fsnotify/fsnotify"
 )
 
 type ProcessedFilterFlags struct {
@@ -28,6 +30,7 @@ type OnlineFilter struct {
 
 var onlineFilterHashes = make(map[string]string)
 var onlineFilterLastSave int64 = 0
+var poeNinjaData utils.PoeNinjaData
 
 const MY_FILTERS_PATH string = "my-filters"
 const MY_POE2_FILTERS_PATH string = "my-poe2-filters"
@@ -37,8 +40,25 @@ const THIRD_PARTY_FILTERS_PATH string = "third-party-filters"
 const OUTPUT_FILTERS_PATH string = "output-filters"
 const CACHE_PATH string = "cache"
 
+func init() {
+	poeNinjaData = utils.CreatePoeNinjaData()
+}
+
 func main() {
-	utils.MakeDivinationCardsFilterPoeNinja()
+	envLogLevel := os.Getenv("LOG_LEVEL")
+	logLevel := slog.LevelInfo
+	switch strings.ToLower(envLogLevel) {
+	case "debug":
+		{
+			logLevel = slog.LevelDebug
+		}
+	}
+
+	handler := slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{Level: logLevel})
+	slog.SetDefault(slog.New(handler))
+
+	// @todo(nick-ng): fix/remove divination cards filter"
+	// utils.MakeDivinationCardsFilterPoeNinja()
 
 	path1 := utils.MkDirIfNotExist(MY_FILTERS_PATH)
 	path2 := utils.MkDirIfNotExist(MY_POE2_FILTERS_PATH)
@@ -773,24 +793,40 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 
 					tempFilterChunks = append(tempFilterChunks, newLine)
 				}
-			// // @todo(nick-ng): move this to its own loop
-			// case "droplevel":
-			// 	{
-			// 		// makes item filter based on item drop level
-			// 		_ = utils.ParseFlags(rawLine)
-			// 		newLine, err := utils.GetDropLevelFilter(rawLine)
-
-			// 		if err != nil {
-			// 			tempFilterChunks = append(tempFilterChunks, "#? warning: couldn't get drop level filter")
-			// 			continue
-			// 		}
-
-			// 		tempFilterChunks = append(tempFilterChunks, newLine)
-			// 	}
 			case "tts":
 				{
 					newLine := utils.MakeTts(trimmedLine, flags.Game)
 					tempFilterChunks = append(tempFilterChunks, newLine)
+				}
+			case "autocurrency":
+				// #! autocurrency [min chaos] [min arealevel]
+				{
+					minChaos := 0.0
+					minAreaLevel := 81 // T14
+					if len(commandArguments) >= 2 {
+						minChaos64, err := strconv.ParseFloat(commandArguments[1], 64)
+						if err != nil {
+							slog.Error("error parsing min chaos for autocurrency", "full command", rawCommand)
+						} else {
+							minChaos = minChaos64
+						}
+					}
+					if len(commandArguments) >= 3 {
+						minLevel64, err := strconv.ParseInt(commandArguments[2], 10, 64)
+						if err != nil {
+							slog.Error("error parsing min area level for autocurrency", "full command", rawCommand)
+						} else {
+							minAreaLevel = int(minLevel64)
+						}
+					}
+
+					currencyPrices, err := poeNinjaData.GetCurrencyPrices(false, false)
+					if err != nil {
+						slog.Error("error getting currency prices for autocurrency", "err", err)
+					} else {
+						newLines := utils.GetStackableCurrencyFilter(currencyPrices, minChaos, minAreaLevel)
+						tempFilterChunks = append(tempFilterChunks, newLines)
+					}
 				}
 			default:
 				{

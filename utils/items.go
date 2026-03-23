@@ -2,10 +2,18 @@ package utils
 
 import (
 	"fmt"
+	"math"
 	"slices"
 	"strconv"
 	"strings"
 )
+
+type CurrencyBreakpoint struct {
+	Comment    string
+	Styles     []string
+	ChaosValue float64
+	HasMapIcon bool
+}
 
 var defaultDropLevels = []int{1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80}
 
@@ -196,4 +204,222 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 	}
 
 	return strings.Join(filterStrings, "\n\n"), nil
+}
+
+func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
+	needMapIcon := map[string]bool{
+		"Orb of Fusing":                true,
+		"Orb of Regret":                true,
+		"Eldritch Chaos Orb":           true,
+		"Eldritch Exalted Orb":         true,
+		"Eldritch Orb of Annulment":    true,
+		"Lesser Eldritch Ember":        true,
+		"Greater Eldritch Ember":       true,
+		"Grand Eldritch Ember":         true,
+		"Exceptional Eldritch Ember":   true,
+		"Lesser Eldritch Ichor":        true,
+		"Greater Eldritch Ichor":       true,
+		"Grand Eldritch Ichor":         true,
+		"Exceptional Eldritch Ichor":   true,
+		"Foulborn Exalted Orb":         true,
+		"Foulborn Regal Orb":           true,
+		"Foulborn Orb of Augmentation": true,
+	}
+	needShow := map[string]bool{
+		"Jeweller's Orb":  true,
+		"Orb of Chance":   true,
+		"Orb of Alchemy":  true,
+		"Orb of Binding":  true,
+		"Orb of Scouring": true,
+	}
+	breakPoints := []CurrencyBreakpoint{
+		{
+			Comment:    "1+ divine",
+			ChaosValue: 1 / currencyPrices.DivinePerChaos,
+			Styles: []string{
+				"SetFontSize 45",
+				"SetTextColor 255 0 0 255",
+				"SetBackgroundColor 255 255 255",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 0 White Diamond",
+				"PlayAlertSound 6 300",
+				"PlayEffect Red",
+			},
+			HasMapIcon: true,
+		},
+		{
+			Comment:    "0.5+ divine",
+			ChaosValue: 0.5 / currencyPrices.DivinePerChaos,
+			Styles: []string{
+				"SetFontSize 43",
+				"SetTextColor 255 0 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 0 Pink Circle",
+				"CustomAlertSound \"sounds/thps-special-trick-1.mp3\" 300",
+				"PlayEffect Green",
+			},
+			HasMapIcon: true,
+		},
+		{
+			Comment:    "1+ chaos",
+			ChaosValue: 1,
+			Styles: []string{
+				"SetFontSize 41",
+				"SetTextColor 255 150 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 1 Orange Circle",
+				"PlayAlertSound 11 250",
+				"PlayEffect Green",
+			},
+			HasMapIcon: true,
+		},
+		{
+			Comment:    "0.5+ chaos",
+			ChaosValue: 0.5,
+			Styles: []string{
+				"SetFontSize 39",
+				"SetTextColor 255 255 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 1 Yellow Circle",
+				"PlayAlertSound 9 250",
+			},
+			HasMapIcon: true,
+		},
+		{
+			Comment:    "0.1+ chaos",
+			ChaosValue: 0.1,
+			Styles: []string{
+				"SetFontSize 37",
+				"SetTextColor 0 255 0 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+			},
+			HasMapIcon: false,
+		},
+	}
+
+	filterString := fmt.Sprintf(`# Auto Currency Filter
+Hide
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom" "Portal Scroll"
+`, minAreaLevel)
+	for i, breakPoint := range breakPoints {
+		if breakPoint.ChaosValue < minChaos {
+			continue
+		}
+
+		if !breakPoint.HasMapIcon {
+			mapIconBaseTypes := []string{}
+			for baseType, b := range needMapIcon {
+				if b {
+					mapIconBaseTypes = append(mapIconBaseTypes, baseType)
+				}
+			}
+
+			if len(mapIconBaseTypes) > 0 {
+				baseTypes := strings.Join(mapIconBaseTypes, "\" \"")
+				temp := fmt.Sprintf(`Show
+	BaseTypes == "%s"
+	MinimapIcon 2 Green Circle
+	Continue
+`, baseTypes)
+
+				filterString = fmt.Sprintf("%s\n%s\n", filterString, temp)
+			}
+		}
+
+		baseTypesInBreakPoint := []string{}
+		for _, curr := range currencyPrices.Prices {
+			if i > 0 && curr.ChaosValue >= breakPoints[i-1].ChaosValue {
+				continue
+			}
+
+			if curr.ChaosValue >= breakPoint.ChaosValue {
+				baseTypesInBreakPoint = append(baseTypesInBreakPoint, curr.BaseType)
+				// since the currency is shown in this group, we don't need to show anymore
+				needShow[curr.BaseType] = false
+				if breakPoint.HasMapIcon {
+					needMapIcon[curr.BaseType] = false
+				}
+			}
+		}
+
+		if len(baseTypesInBreakPoint) > 0 {
+			baseTypes := strings.Join(baseTypesInBreakPoint, "\" \"")
+			styles := strings.Join(breakPoint.Styles, "\n\t")
+			thisFilterGroup := fmt.Sprintf(`# %s
+Show
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseTypes == "%s"
+	%s
+`, breakPoint.Comment, minAreaLevel, baseTypes, styles)
+
+			filterString = fmt.Sprintf("%s\n%s\n", filterString, thisFilterGroup)
+		}
+	}
+
+	mustShowBaseTypes := []string{}
+	for baseType, b := range needShow {
+		if b {
+			mustShowBaseTypes = append(mustShowBaseTypes, baseType)
+		}
+	}
+	for baseType, b := range needMapIcon {
+		if b {
+			mustShowBaseTypes = append(mustShowBaseTypes, baseType)
+		}
+	}
+
+	baseTypes := strings.Join(mustShowBaseTypes, "\" \"")
+	mustShowFilter := fmt.Sprintf(`# must show
+Show
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseTypes == "%s"
+	SetFontSize 35,
+	SetTextColor 0 255 150 255
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 130 130 255 255
+`, minAreaLevel, baseTypes)
+
+	filterString = fmt.Sprintf("%s\n%s\n", filterString, mustShowFilter)
+
+	// @todo(nick-ng): omit items that were in earlier groups
+	minStackSize := map[int][]string{}
+	chaosThreshold := math.Max(0.1, minChaos)
+	for _, curr := range currencyPrices.Prices {
+		if curr.ChaosValue < chaosThreshold {
+			requiredStackSize := int(math.Ceil(chaosThreshold / curr.ChaosValue))
+
+			_, ok := minStackSize[requiredStackSize]
+			if !ok {
+				minStackSize[requiredStackSize] = []string{}
+			}
+			minStackSize[requiredStackSize] = append(minStackSize[requiredStackSize], curr.BaseType)
+		}
+	}
+
+	for stackSize, bb := range minStackSize {
+		baseTypes := strings.Join(bb, "\" \"")
+		stackSizeFilter := fmt.Sprintf(`# stack size
+Show
+	AreaLevel >= %d
+	StackSize >= %d
+	Class == "Stackable Currency"
+	BaseTypes == "%s"
+	SetFontSize 35,
+	SetTextColor 0 255 150 255
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 130 130 255 255
+`, minAreaLevel, stackSize, baseTypes)
+
+		filterString = fmt.Sprintf("%s\n%s\n", filterString, stackSizeFilter)
+	}
+
+	return filterString
 }

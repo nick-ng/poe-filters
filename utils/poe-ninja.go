@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -13,12 +14,27 @@ import (
 	"time"
 )
 
+type PoeNinjaData struct {
+	Leagues        []PoeLeague
+	CurrencyPrices map[string]CurrencyPrices
+}
+
+type CurrencyPrices struct {
+	FetchedAt      time.Time
+	DivinePerChaos float64
+	Prices         []CurrencyPrice
+}
+
+type CurrencyPrice struct {
+	PoeNinjaId string
+	BaseType   string
+	ChaosValue float64
+}
+
 type PoeNinjaIndexStateItem struct {
 	Name        string `json:"name"`
 	Url         string `json:"url"`
 	DisplayName string `json:"displayName"`
-	Hardcore    bool   `json:"hardcore"`
-	Indexed     bool   `json:"indexed"`
 }
 
 type PoeNinjaDivinationCardItem struct {
@@ -37,20 +53,158 @@ type PoeNinjaDivinationCardsResponse struct {
 	Timestamp int64                        `json:"timestamp"`
 }
 
+type PoeNinjaCurrencyResponse struct {
+	Core  PoeNinjaCurrencyResponseCore `json:"core"`
+	Lines []PoeNinjaCurrencyLine       `json:"lines"`
+	Items []PoeNinjaCurrencyItem       `json:"items"`
+}
+
+type PoeNinjaCurrencyResponseCore struct {
+	Rates map[string]float64 `json:"rates"`
+}
+
+type PoeNinjaCurrencyLine struct {
+	Id           string  `json:"id"`
+	PrimaryValue float64 `json:"primaryValue"`
+}
+
+type PoeNinjaCurrencyItem struct {
+	Id        string `json:"id"`
+	Name      string `json:"name"`
+	DetailsId string `json:"detailsId"`
+}
+
 type PoeLeague struct {
 	Name        string
 	DisplayName string
 	Url         string
-	Hardcore    bool
+	IsHardcore  bool
+	IsEternal   bool
 }
 
-var permanentLeagues = []string{"standard", "hardcore"}
+var eternalLeagues = []string{"standard", "hardcore"}
 var divinationCardsFilterPath = filepath.Join("base-filters", "full-stack-divination-cards.filter")
 
 const MAX_CACHE_AGE = 2 * 60 * 60 // 2 hours in seconds
 
+func CreatePoeNinjaData() PoeNinjaData {
+	poeNinjaData := PoeNinjaData{
+		CurrencyPrices: map[string]CurrencyPrices{},
+	}
+	poeNinjaData.UpdateLeagues()
+
+	return poeNinjaData
+}
+
+func (pnd *PoeNinjaData) UpdateLeagues() {
+	leagues, err := GetTradeChallengeLeagues()
+	if err != nil {
+		slog.Error("error getting challenge leagues", "err", err)
+		return
+	}
+
+	pnd.Leagues = leagues
+}
+
+func (pnd *PoeNinjaData) GetLeague(hardcore bool, eternal bool) (PoeLeague, error) {
+	for _, league := range pnd.Leagues {
+		if league.IsEternal == eternal && league.IsHardcore == hardcore {
+			return league, nil
+		}
+	}
+
+	newError := errors.New("no matching league found")
+
+	return PoeLeague{}, newError
+}
+
+func (pnd *PoeNinjaData) GetCurrencyPrices(hardcore bool, eternal bool) (CurrencyPrices, error) {
+	league, err := pnd.GetLeague(hardcore, eternal)
+	if err != nil {
+		return CurrencyPrices{}, err
+	}
+	temp, ok := pnd.CurrencyPrices[league.Name]
+
+	cutoffTime := time.Now().Add(-time.Second * MAX_CACHE_AGE)
+	if !ok || temp.FetchedAt.Before(cutoffTime) {
+		pnd.UpdateCurrencyPrices(hardcore, eternal)
+	}
+
+	temp, ok = pnd.CurrencyPrices[league.Name]
+	if !ok {
+		return CurrencyPrices{}, errors.New("no prices even after update")
+	}
+
+	return temp, nil
+}
+
+func (pnd *PoeNinjaData) UpdateCurrencyPrices(hardcore bool, eternal bool) error {
+	league, err := pnd.GetLeague(hardcore, eternal)
+	if err != nil {
+		return err
+	}
+
+	currencyUrl := fmt.Sprintf("https://poe.ninja/poe1/api/economy/exchange/current/overview?league=%s&type=Currency", league.Name)
+
+	slog.Debug("currencyUrl", "url", currencyUrl)
+
+	resp, err := http.Get(currencyUrl)
+
+	if err != nil {
+		slog.Error("error: couldn't fetch currency", "league", league, "currencyUrl", currencyUrl, "error", err)
+		return err
+	}
+
+	resBody, err := io.ReadAll(resp.Body)
+
+	if err != nil {
+		slog.Error("error: couldn't get currency body", "league", league, "currencyUrl", currencyUrl, "error", err)
+		return err
+	}
+
+	var poeNinjaCurrencyResponse PoeNinjaCurrencyResponse
+	err = json.Unmarshal(resBody, &poeNinjaCurrencyResponse)
+
+	if err != nil {
+		slog.Error("error: couldn't decode currency body", "league", league, "currencyUrl", currencyUrl, "error", err)
+		return err
+	}
+
+	// slog.Debug("currencyResponse", "response", poeNinjaCurrencyResponse)
+
+	newPrices := []CurrencyPrice{}
+	for _, item := range poeNinjaCurrencyResponse.Items {
+		for _, line := range poeNinjaCurrencyResponse.Lines {
+			if item.Id == line.Id {
+				newPrice := CurrencyPrice{
+					PoeNinjaId: item.Id,
+					BaseType:   item.Name,
+					ChaosValue: line.PrimaryValue,
+				}
+
+				newPrices = append(newPrices, newPrice)
+
+				break
+			}
+		}
+	}
+
+	divinePerChaos, ok := poeNinjaCurrencyResponse.Core.Rates["divine"]
+	if !ok {
+		divinePerChaos = 150
+	}
+
+	pnd.CurrencyPrices[league.Name] = CurrencyPrices{
+		FetchedAt:      time.Now(),
+		DivinePerChaos: divinePerChaos,
+		Prices:         newPrices,
+	}
+
+	return nil
+}
+
 func GetIndexState() (map[string][]PoeNinjaIndexStateItem, error) {
-	resp, err := http.Get("https://poe.ninja/api/data/getindexstate")
+	resp, err := http.Get("https://poe.ninja/poe1/api/data/index-state")
 
 	if err != nil {
 		fmt.Println("couldn't fetch poe.ninja stats", err)
@@ -82,44 +236,39 @@ func GetTradeChallengeLeagues() ([]PoeLeague, error) {
 	}
 
 	for _, v := range poeNinjaStateIndex["economyLeagues"] {
-		isPermanentLeague := true
+		isEternalLeague := slices.Contains(eternalLeagues, v.Url)
 
-		for _, permanentLeague := range permanentLeagues {
-			if permanentLeague == strings.ToLower(v.DisplayName) {
-				isPermanentLeague = false
-				break
-			}
-		}
-
-		if isPermanentLeague {
-			poeLeagues = append(poeLeagues, PoeLeague{
-				Name:        v.Name,
-				DisplayName: v.DisplayName,
-				Url:         v.Url,
-				Hardcore:    v.Hardcore,
-			})
-		}
+		poeLeagues = append(poeLeagues, PoeLeague{
+			Name:        v.Name,
+			DisplayName: v.DisplayName,
+			Url:         v.Url,
+			IsHardcore:  v.Url == "hardcore" || strings.HasSuffix(v.Url, "hc"),
+			IsEternal:   isEternalLeague,
+		})
 	}
 
 	return poeLeagues, nil
 }
 
+// @todo(nick-ng): the poe.ninja endpoint this calls doesn't return stack size anymore. That is in a different endpoint. you have to update this before you can use it again
 func MakeDivinationCardsFilterPoeNinja() error {
 	leagues, err := GetTradeChallengeLeagues()
-
 	if err != nil {
+		slog.Error("error getting challenge leagues", "err", err)
 		return err
 	}
 
 	var softcoreLeague PoeLeague
 
 	for _, league := range leagues {
-		if !league.Hardcore {
+		if !league.IsHardcore && !league.IsEternal {
 			softcoreLeague = league
+			break
 		}
 	}
 
 	if softcoreLeague.Name == "" {
+		slog.Error("error getting challenge leagues", "err", err)
 		return errors.New("no softcore trade league found")
 	}
 
@@ -142,7 +291,7 @@ func MakeDivinationCardsFilterPoeNinja() error {
 	}
 
 	if needRefetch {
-		url := fmt.Sprintf("https://poe.ninja/api/data/itemoverview?league=%s&type=DivinationCard", softcoreLeague.Name)
+		url := fmt.Sprintf("https://poe.ninja/poe1/api/economy/exchange/current/overview?league=%s&type=DivinationCard", softcoreLeague.Name)
 
 		resp, err := http.Get(url)
 
@@ -154,13 +303,14 @@ func MakeDivinationCardsFilterPoeNinja() error {
 		resBody, err := io.ReadAll(resp.Body)
 
 		if err != nil {
-			fmt.Println("couldn't get body")
+			slog.Error("error: couldn't get body", "err", err)
 			return errors.New("couldn't get body")
 		}
 
 		err = json.Unmarshal(resBody, &poeNinjaDivinationCardsResponse)
 
 		if err != nil {
+			slog.Error("error decoding divination cards response", "err", err, "url", url)
 			return err
 		}
 
@@ -172,6 +322,7 @@ func MakeDivinationCardsFilterPoeNinja() error {
 			err = os.WriteFile(cachePath, []byte(cacheData), 0666)
 
 			if err != nil {
+				slog.Error("error encoding divination cards to JSON", "err", err)
 				return err
 			}
 		}
