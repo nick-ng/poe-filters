@@ -391,8 +391,12 @@ Show
 
 	// @todo(nick-ng): omit items that were in earlier groups
 	minStackSize := map[int][]string{}
+	belowMinChaos := []string{}
 	chaosThreshold := math.Max(0.1, minChaos)
 	for _, curr := range currencyPrices.Prices {
+		if curr.ChaosValue < minChaos {
+			belowMinChaos = append(belowMinChaos, curr.BaseType)
+		}
 		if curr.ChaosValue < chaosThreshold {
 			requiredStackSize := int(math.Ceil(chaosThreshold / curr.ChaosValue))
 
@@ -420,6 +424,19 @@ Show
 
 		filterString = fmt.Sprintf("%s\n%s\n", filterString, stackSizeFilter)
 	}
+
+	hideBaseTypes := strings.Join(belowMinChaos, "\" \"")
+	hideFilter := fmt.Sprintf(`# below min chaos
+Hide
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseType == "%s"
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 0 255 255
+`, minAreaLevel, hideBaseTypes)
+	filterString = fmt.Sprintf("%s\n%s\n", filterString, hideFilter)
 
 	return filterString
 }
