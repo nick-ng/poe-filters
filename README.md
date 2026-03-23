@@ -41,14 +41,13 @@ When you run it, it will try to copy filters to the Path of Exile directory
 - main.go:60: @todo(nick-ng): fix/remove divination cards filter"
 - main.go:415: @todo(nick-ng): move some functions to separate files
 - main.go:670: @todo(nick-ng): move these to a method so we can process all commands (multi-line or otherwise) in a single loop?
-- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
-- utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
+- utils/items.go:74: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
+- utils/items.go:392: @todo(nick-ng): omit items that were in earlier groups
+- utils/sounds.go:295: @todo(nick-ng): change the path based on operating system
 - utils/filter-group.go:21: @todo(nick-ng): actually convert the filter group to lines instead of just returning the lines
 - utils/filter-group.go:52: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:115: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:136: @todo(nick-ng): split the area limit and to string parts into separate methods
-- utils/items.go:74: @todo(nick-ng): since you have custom styles, the item class can also be part of the custom styles...
-- utils/items.go:222: @todo(nick-ng): make wisdom and portal scrolls use the correct style
-- utils/items.go:406: @todo(nick-ng): omit items that were in earlier groups
-- utils/sounds.go:295: @todo(nick-ng): change the path based on operating system
+- utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
 - utils/poe-ninja.go:253: @todo(nick-ng): the poe.ninja endpoint this calls doesn't return stack size anymore. That is in a different endpoint. you have to update this before you can use it again
+- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do

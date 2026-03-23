@@ -206,21 +206,7 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 	return strings.Join(filterStrings, "\n\n"), nil
 }
 
-// var wisdomStyle = []string{
-// 	"SetFontSize 35",
-// 	"SetTextColor 210 178 135 220",
-// 	"SetBackgroundColor 0 0 0 120",
-// 	"SetBorderColor 130 130 255 255",
-// }
-// var portalStyle = []string{
-// 	"SetFontSize 35",
-// 	"SetTextColor 50 240 240 220",
-// 	"SetBackgroundColor 0 0 0 120",
-// 	"SetBorderColor 130 130 255 255",
-// }
-
-// @todo(nick-ng): make wisdom and portal scrolls use the correct style
-func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minAreaLevel int, minChaos float64) string {
+func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
 	needMapIcon := map[string]bool{
 		"Orb of Fusing":                true,
 		"Orb of Regret":                true,

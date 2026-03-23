@@ -824,7 +824,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					if err != nil {
 						slog.Error("error getting currency prices for autocurrency", "err", err)
 					} else {
-						newLines := utils.GetStackableCurrencyFilter(currencyPrices, minAreaLevel, minChaos)
+						newLines := utils.GetStackableCurrencyFilter(currencyPrices, minChaos, minAreaLevel)
 						tempFilterChunks = append(tempFilterChunks, newLines)
 					}
 				}
