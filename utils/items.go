@@ -323,7 +323,7 @@ Hide
 			if len(mapIconBaseTypes) > 0 {
 				baseTypes := strings.Join(mapIconBaseTypes, "\" \"")
 				temp := fmt.Sprintf(`Show
-	BaseTypes == "%s"
+	BaseType == "%s"
 	MinimapIcon 2 Green Circle
 	Continue
 `, baseTypes)
@@ -355,7 +355,7 @@ Hide
 Show
 	AreaLevel >= %d
 	Class == "Stackable Currency"
-	BaseTypes == "%s"
+	BaseType == "%s"
 	%s
 `, breakPoint.Comment, minAreaLevel, baseTypes, styles)
 
@@ -380,8 +380,8 @@ Show
 Show
 	AreaLevel >= %d
 	Class == "Stackable Currency"
-	BaseTypes == "%s"
-	SetFontSize 35,
+	BaseType == "%s"
+	SetFontSize 35
 	SetTextColor 0 255 150 255
 	SetBackgroundColor 0 0 0 120
 	SetBorderColor 130 130 255 255
@@ -411,8 +411,8 @@ Show
 	AreaLevel >= %d
 	StackSize >= %d
 	Class == "Stackable Currency"
-	BaseTypes == "%s"
-	SetFontSize 35,
+	BaseType == "%s"
+	SetFontSize 35
 	SetTextColor 0 255 150 255
 	SetBackgroundColor 0 0 0 120
 	SetBorderColor 130 130 255 255
