@@ -806,7 +806,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					if len(commandArguments) >= 2 {
 						minChaos64, err := strconv.ParseFloat(commandArguments[1], 64)
 						if err != nil {
-							slog.Error("error parsing min chaos for autocurrency", "full command", rawCommand)
+							slog.Error("error parsing min chaos for autocurrency", "raw line", rawLine)
 						} else {
 							minChaos = minChaos64
 						}
@@ -814,7 +814,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					if len(commandArguments) >= 3 {
 						minLevel64, err := strconv.ParseInt(commandArguments[2], 10, 64)
 						if err != nil {
-							slog.Error("error parsing min area level for autocurrency", "full command", rawCommand)
+							slog.Error("error parsing min area level for autocurrency", "raw line", rawLine)
 						} else {
 							minAreaLevel = int(minLevel64)
 						}
