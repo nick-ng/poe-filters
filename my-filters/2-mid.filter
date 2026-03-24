@@ -13,28 +13,6 @@ Show
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show
-	BaseType = "Reaver Axe"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel = 83 # T1 Phys
-	SetFontSize 45
-	#!GoodBaseBorder!# 200
-	MinimapIcon 1 Pink Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-
-Show
-	BaseType = "Reaver Axe"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	SetFontSize 40
-	ItemLevel >= 83 # T1 Phys
-	#!GoodBaseBorder!# 200
-	MinimapIcon 1 Pink Star
-
 #! autocurrency 0.5 81
 #! import currency.filter
 #! import maps.filter

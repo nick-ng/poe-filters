@@ -234,14 +234,28 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 	}
 	breakPoints := []CurrencyBreakpoint{
 		{
-			Comment:    "1+ divine",
-			ChaosValue: 1 / currencyPrices.DivinePerChaos,
+			Comment:    "2+ divine",
+			ChaosValue: 2 / currencyPrices.DivinePerChaos,
+			Styles: []string{
+				"SetFontSize 45",
+				"SetTextColor 255 0 150 255",
+				"SetBackgroundColor 255 255 255",
+				"SetBorderColor 130 130 255 255",
+				"MinimapIcon 0 White Diamond",
+				"CustomAlertSound \"sounds/ai_rue-aaaaaa.mp3\" 300",
+				"PlayEffect Red",
+			},
+			HasMapIcon: true,
+		},
+		{
+			Comment:    "0.9+ divine", // 0.9 so divines appear in this tier
+			ChaosValue: 0.9 / currencyPrices.DivinePerChaos,
 			Styles: []string{
 				"SetFontSize 45",
 				"SetTextColor 255 0 0 255",
 				"SetBackgroundColor 255 255 255",
 				"SetBorderColor 130 130 255 255",
-				"MinimapIcon 0 White Diamond",
+				"MinimapIcon 0 Red Circle",
 				"PlayAlertSound 6 300",
 				"PlayEffect Red",
 			},
@@ -256,7 +270,7 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 				"SetBackgroundColor 0 0 0 120",
 				"SetBorderColor 130 130 255 255",
 				"MinimapIcon 0 Pink Circle",
-				"CustomAlertSound \"sounds/thps-special-trick-1.mp3\" 300",
+				"PlayAlertSound 5 300",
 				"PlayEffect Green",
 			},
 			HasMapIcon: true,
@@ -284,7 +298,7 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 				"SetBackgroundColor 0 0 0 120",
 				"SetBorderColor 130 130 255 255",
 				"MinimapIcon 1 Yellow Circle",
-				"PlayAlertSound 9 250",
+				"PlayAlertSound 16 250",
 			},
 			HasMapIcon: true,
 		},
@@ -363,20 +377,15 @@ Show
 		}
 	}
 
-	mustShowBaseTypes := []string{}
-	for baseType, b := range needShow {
-		if b {
-			mustShowBaseTypes = append(mustShowBaseTypes, baseType)
-		}
-	}
+	mustMapIconBaseTypes := []string{}
 	for baseType, b := range needMapIcon {
 		if b {
-			mustShowBaseTypes = append(mustShowBaseTypes, baseType)
+			mustMapIconBaseTypes = append(mustMapIconBaseTypes, baseType)
 		}
 	}
 
-	baseTypes := strings.Join(mustShowBaseTypes, "\" \"")
-	mustShowFilter := fmt.Sprintf(`# must show
+	baseTypes := strings.Join(mustMapIconBaseTypes, "\" \"")
+	mustMapIconFilter := fmt.Sprintf(`# must show
 Show
 	AreaLevel >= %d
 	Class == "Stackable Currency"
@@ -387,7 +396,7 @@ Show
 	SetBorderColor 130 130 255 255
 `, minAreaLevel, baseTypes)
 
-	filterString = fmt.Sprintf("%s\n%s\n", filterString, mustShowFilter)
+	filterString = fmt.Sprintf("%s\n%s\n", filterString, mustMapIconFilter)
 
 	// @todo(nick-ng): omit items that were in earlier groups
 	minStackSize := map[int][]string{}
@@ -424,6 +433,26 @@ Show
 
 		filterString = fmt.Sprintf("%s\n%s\n", filterString, stackSizeFilter)
 	}
+
+	mustShowBaseTypes := []string{}
+	for baseType, b := range needShow {
+		if b {
+			mustShowBaseTypes = append(mustShowBaseTypes, baseType)
+		}
+	}
+
+	mustShowBaseTypesString := strings.Join(mustShowBaseTypes, "\" \"")
+	mustShowFilter := fmt.Sprintf(`# must show
+Show
+	AreaLevel >= %d
+	Class == "Stackable Currency"
+	BaseType == "%s"
+	SetFontSize 33
+	SetTextColor 200 200 200 220
+	SetBackgroundColor 0 0 0 120
+	SetBorderColor 130 130 255 220
+`, minAreaLevel, mustShowBaseTypesString)
+	filterString = fmt.Sprintf("%s\n%s\n", filterString, mustShowFilter)
 
 	hideBaseTypes := strings.Join(belowMinChaos, "\" \"")
 	hideFilter := fmt.Sprintf(`# below min chaos
