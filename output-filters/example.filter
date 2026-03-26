@@ -1695,15 +1695,6 @@ Show
 	PlayAlertSound 9 200
 	# CustomAlertSound "sounds/intel-thanks-steve.mp3"
 ## T3 Currency ##
-Show
-	AreaLevel <= 73
-	Class "Currency"
-	BaseType == "Orb of Chance"
-	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBorderColor 130 130 255 255
-	MinimapIcon 0 Yellow Circle
-	CustomAlertSound "tts/amy-chance.mp3" 200
 Hide
 	AreaLevel >= 78
 	AreaLevel <= 100

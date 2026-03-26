@@ -207,16 +207,6 @@ Show # T2 Currency
 ## T3 Currency ##
 #################
 
-Show # Orb of Chance is more important until yellow maps
-	Class "Currency"
-	BaseType == "Orb of Chance"
-	AreaLevel < 74
-	SetFontSize 45
-	#!T2CurrencyText!# 255
-	#!CurrencyBorder!# 255
-	MinimapIcon 0 Yellow Circle
-	#! tts "chance" chance Amy 200 1.2
-
 Hide # Red Maps
 	Class "Currency"
 	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
