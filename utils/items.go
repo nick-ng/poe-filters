@@ -206,6 +206,7 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 	return strings.Join(filterStrings, "\n\n"), nil
 }
 
+// @todo(nick-ng): make this work for other kinds of items e.g. scarabs
 func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
 	needMapIcon := map[string]bool{
 		"Orb of Fusing":                true,
@@ -226,11 +227,14 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 		"Foulborn Orb of Augmentation": true,
 	}
 	needShow := map[string]bool{
-		"Jeweller's Orb":  true,
-		"Orb of Chance":   true,
-		"Orb of Alchemy":  true,
-		"Orb of Binding":  true,
-		"Orb of Scouring": true,
+		"Jeweller's Orb":                true,
+		"Orb of Chance":                 true,
+		"Orb of Alchemy":                true,
+		"Orb of Binding":                true,
+		"Orb of Scouring":               true,
+		"Primal Crystallised Lifeforce": true,
+		"Vivid Crystallised Lifeforce":  true,
+		"Wild Crystallised Lifeforce":   true,
 	}
 	breakPoints := []CurrencyBreakpoint{
 		{
@@ -327,23 +331,6 @@ Hide
 		}
 
 		if !breakPoint.HasMapIcon {
-			mapIconBaseTypes := []string{}
-			for baseType, b := range needMapIcon {
-				if b {
-					mapIconBaseTypes = append(mapIconBaseTypes, baseType)
-				}
-			}
-
-			if len(mapIconBaseTypes) > 0 {
-				baseTypes := strings.Join(mapIconBaseTypes, "\" \"")
-				temp := fmt.Sprintf(`Show
-	BaseType == "%s"
-	MinimapIcon 2 Green Circle
-	Continue
-`, baseTypes)
-
-				filterString = fmt.Sprintf("%s\n%s\n", filterString, temp)
-			}
 		}
 
 		baseTypesInBreakPoint := []string{}
@@ -375,6 +362,24 @@ Show
 
 			filterString = fmt.Sprintf("%s\n%s\n", filterString, thisFilterGroup)
 		}
+	}
+	mapIconBaseTypes := []string{}
+	for baseType, b := range needMapIcon {
+		if b {
+			mapIconBaseTypes = append(mapIconBaseTypes, baseType)
+		}
+	}
+
+	if len(mapIconBaseTypes) > 0 {
+		baseTypes := strings.Join(mapIconBaseTypes, "\" \"")
+		temp := fmt.Sprintf(`# need map icon
+Show
+	BaseType == "%s"
+	MinimapIcon 2 Green Circle
+	Continue
+`, baseTypes)
+
+		filterString = fmt.Sprintf("%s\n%s\n", temp, filterString)
 	}
 
 	mustMapIconBaseTypes := []string{}
