@@ -20,7 +20,7 @@ Show
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	PlayAlertSound 6 200
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
 
 Show
 	BaseType == "Vermillion Ring"
@@ -33,7 +33,7 @@ Show
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	PlayAlertSound 6 200
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
 
 Show
 	BaseType == "Vermillion Ring"
