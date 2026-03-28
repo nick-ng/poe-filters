@@ -50,5 +50,5 @@ When you run it, it will try to copy filters to the Path of Exile directory
 - utils/filter-group.go:115: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:136: @todo(nick-ng): split the area limit and to string parts into separate methods
 - utils/sounds.go:295: @todo(nick-ng): change the path based on operating system
-- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
 - utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
+- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
