@@ -93,7 +93,7 @@ func main() {
 				select {
 				case event, ok := <-watcher.Events:
 					if !ok {
-						fmt.Println("watcher.Events not ok")
+						slog.Warn("warning: watcher.Events not ok")
 						continue
 					}
 					if event.Has(fsnotify.Write) {

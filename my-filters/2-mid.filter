@@ -13,7 +13,7 @@ Show
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-#! autocurrency 0.2 81
+#! autocurrency 0.2 75
 #! import currency.filter
 #! import maps.filter
 #! import heist.filter
