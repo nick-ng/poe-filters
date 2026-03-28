@@ -170,8 +170,6 @@ func (pnd *PoeNinjaData) UpdateCurrencyPrices(hardcore bool, eternal bool) error
 		return err
 	}
 
-	// slog.Debug("currencyResponse", "response", poeNinjaCurrencyResponse)
-
 	newPrices := []CurrencyPrice{}
 	for _, item := range poeNinjaCurrencyResponse.Items {
 		for _, line := range poeNinjaCurrencyResponse.Lines {
@@ -191,7 +189,7 @@ func (pnd *PoeNinjaData) UpdateCurrencyPrices(hardcore bool, eternal bool) error
 
 	divinePerChaos, ok := poeNinjaCurrencyResponse.Core.Rates["divine"]
 	if !ok {
-		divinePerChaos = 150
+		divinePerChaos = 1.0 / 150.0
 	}
 
 	pnd.CurrencyPrices[league.Name] = CurrencyPrices{
