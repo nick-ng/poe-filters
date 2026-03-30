@@ -1,27 +1,5 @@
 #! import gold.filter
 
-Show
-	BaseType = "Reaver Axe"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel = 83 # T1 Phys
-	SetFontSize 45
-	#!GoodBaseBorder!# 200
-	MinimapIcon 1 Pink Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-
-Show
-	BaseType = "Reaver Axe"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	SetFontSize 40
-	ItemLevel >= 83 # T1 Phys
-	#!GoodBaseBorder!# 200
-	MinimapIcon 1 Pink Star
-
 # Blight
 Show
 	Class == "Amulets" "Belts" "Jewels" "Rings"
@@ -70,6 +48,8 @@ Show
 Hide
 	Rarity = Normal Magic
 	Class == "Amulets" "Jewels" "Rings"
+
+#! autocurrency 0.5 75
 
 Show # T-1 Currency
 	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Awakener's Orb" "Orb of Dominance"
