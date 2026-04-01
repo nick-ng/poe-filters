@@ -306,9 +306,7 @@ Show
 	Class Flask
 	BaseType "Divine" "Eternal"
 	Quality >= 19
-	SetFontSize 45
-	#!T2CurrencyText!# 255
-	#!BrightBackground!# 255
+	SetFontSize 35
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
@@ -316,8 +314,7 @@ Show
 Show
 	Class Flask
 	Quality >= 15
-	SetFontSize 45
-	#!T2CurrencyText!# 255
+	SetFontSize 30
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 

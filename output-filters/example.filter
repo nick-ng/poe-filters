@@ -1785,9 +1785,7 @@ Show
 	Class Flask
 	BaseType "Divine" "Eternal"
 	Quality >= 19
-	SetFontSize 45
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 255
+	SetFontSize 35
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayAlertSound 9 200
@@ -1795,8 +1793,7 @@ Show
 	AreaLevel <= 100
 	Class Flask
 	Quality >= 15
-	SetFontSize 45
-	SetTextColor 255 255 0 255
+	SetFontSize 30
 	SetBorderColor 0 140 255 255
 	MinimapIcon 0 Yellow UpsideDownHouse
 ## Divination Cards ##
