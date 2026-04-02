@@ -21,7 +21,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Star
 	#!BrightBorder!# 200
-	CustomAlertSound "sounds/cassia_what-do-we-have.mp3"
+	#! tts "heavy belt" heavy-belt Amy 200 1.0
 
 # Party Links
 #! linksa RGGG

@@ -16,7 +16,8 @@ import (
 	"time"
 )
 
-const API_URL = "https://api.streamelements.com/kappa/v2/speech"
+// const API_URL = "https://api.streamelements.com/kappa/v2/speech"
+const API_URL = "https://api.textreader.pro/tts"
 const RAW_TTS_SOUNDS_PATH = "raw-tts-sounds"
 const TTS_SOUNDS_PATH = "tts-sounds"
 const SILENCE_PATH = "sounds/silence.mp3"
@@ -135,10 +136,10 @@ func GetTextToSpeech(text string, filename string, voice string, tempo float64) 
 		return "", "", err
 	}
 
-	if res.StatusCode == 400 {
+	if res.StatusCode != 200 {
 		fmt.Println(req)
 		fmt.Println(res)
-		os.Exit(1)
+		return "", "", err
 	}
 
 	resBody, err := io.ReadAll(res.Body)

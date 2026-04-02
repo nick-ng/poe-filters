@@ -10,16 +10,16 @@
 # 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
-# Show
-# 	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Coral Ring"
-# 	Rarity Unique
-# 	SetFontSize 45
-# 	#!BrightBackground!# 255
-# 	SetTextColor 232 99 0 255
-# 	SetBorderColor 47 252 47 255
-# 	MinimapIcon 2 Brown Star
-# 	PlayEffect Brown
-# 	CustomAlertSound "sounds/imexile-ok.mp3"
+Show
+	BaseType == "Turquoise Amulet" "Amethyst Ring"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Item Bases
 Show
@@ -59,9 +59,7 @@ Show
 
 #! droplevel class="Two Hand Swords" levels=1,8
 
-#! droplevel class="Two Hand Axes" levels=1,9,13,18,23,28,33
-
-#! droplevel class="Two Hand Maces" levels=8,12
+#! droplevel class="Two Hand Axes" levels=1,9
 
 Show
 	BaseType "Medium Cluster Jewel"
@@ -73,12 +71,11 @@ Show
 	MinimapIcon 1 Pink Star
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
-#! linksa RRRG 35
-#! linksa RRRR 35
+#! linksa RGGG 39
+#! linksa RGGB 39
 #! linksa RRGB
 #! linksa RGG 12
-#! linksa RRG
-#! linksa RRR
+#! linksa GGG
 
 # More Leveling Items
 Show
@@ -88,6 +85,15 @@ Show
 	#!BrightBackground!# 255
 	MinimapIcon 1 Pink Star
 	#! tts "lapis" lapis-amulet Amy 200 1.0
+
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	#! tts "heavy belt" heavy-belt Amy 200 1.0
 
 # Rares during leveling
 Show
