@@ -14,13 +14,17 @@ Show
 	PlayEffect Blue
 
 #! autocurrency 0.2 75
-#! import currency.filter
+
+#! import gold.filter
+#? import currency.filter
 #! import maps.filter
 #! import heist.filter
-#! import bases.filter
+#? import bases.filter
 #! import misc.filter
 
-#! import online-NeverSink-4verystr-softcore.filter
+#? import online-NeverSink-4verystr-softcore.filter
+#! import online-NeverSink-5uberstr-softcore.filter
+#? import online-NeverSink-6uberplu-softcore.filter
 
 Show
 	SetFontSize 45

@@ -35,7 +35,7 @@ Show
 
 	# Item Bases
 Show
-	BaseType "Twilight Regalia"
+	BaseType "Twilight Regalia" "Lich's Circlet"
 	Rarity <= Rare
 	ItemLevel >= 86 # T1 ES
 	SetFontSize 45
@@ -45,7 +45,7 @@ Show
 	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
 
 Show
-	BaseType "Twilight Regalia"
+	BaseType "Twilight Regalia" "Lich's Circlet"
 	Rarity <= Rare
 	ItemLevel >= 84 # T1 Resistance
 	SetFontSize 45
