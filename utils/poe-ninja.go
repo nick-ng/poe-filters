@@ -85,7 +85,7 @@ type PoeLeague struct {
 var eternalLeagues = []string{"standard", "hardcore"}
 var divinationCardsFilterPath = filepath.Join("base-filters", "full-stack-divination-cards.filter")
 
-const MAX_CACHE_AGE = 2 * 60 * 60 // 2 hours in seconds
+const MAX_CACHE_AGE = 0.9 * 60 * 60 // just under 1 hour in seconds
 
 func CreatePoeNinjaData() PoeNinjaData {
 	poeNinjaData := PoeNinjaData{

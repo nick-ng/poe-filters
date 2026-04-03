@@ -313,6 +313,12 @@ Show
 	CustomAlertSound "tts/amy-rustic-sash.mp3" 200
 #? import leveling.filter
 ## Make sure this is after any links
+Hide
+	AreaLevel >= 9
+	AreaLevel <= 9
+	BaseType "Bismuth Flask"
+	Rarity < Magic
+	SetFontSize 45
 Show
 	AreaLevel <= 15
 	BaseType == "Quicksilver Flask"
@@ -800,7 +806,7 @@ Show
 # 	PlayEffect Orange
 ## Low value shards ##
 Show
-	AreaLevel <= 100
+	AreaLevel <= 72
 	Class "Currency"
 	BaseType == "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard"
 	StackSize > 1

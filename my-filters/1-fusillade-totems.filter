@@ -117,18 +117,4 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! autocurrency 0.5 81
-
-#! import leveling.filter
-#! import currency.filter
-#! import maps.filter
-#! import heist.filter
-#! import bases.filter
-#! import misc.filter
-
-#! import online-NeverSink-2semistr-softcore.filter
-#! maxarea 70 tier 3
-
-#! import online-NeverSink-3strict-softcore.filter
-
-#! tts "check filter" check-filter Amy 300 1.0
+#! import aurabot.filter

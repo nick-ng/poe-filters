@@ -34,11 +34,28 @@ Show
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 	# Item Bases
-Hide
-	BaseType "Bismuth Flask"
-	AreaLevel == 9
-	Rarity < Magic
+
+Show
+	BaseType "Twilight Regalia"
+	Rarity <= Rare
+	ItemLevel >= 86 # T1 ES
 	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	SetTextColor 255 0 0 255
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
+
+Show
+	BaseType "Twilight Regalia"
+	Rarity <= Rare
+	ItemLevel >= 84 # T1 Resistance
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	SetTextColor 255 150 0 255
+	#!BrightBorder!# 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3" 300
+
+#! autocurrency 0.2 75
 
 #! import leveling.filter
 #! import currency.filter
@@ -82,6 +99,11 @@ Show
 #! import online-NeverSink-2semistr-softcore.filter
 #! maxarea 70 tier 3
 
-#! import online-NeverSink-3strict-softcore.filter
+#! import online-NeverSink-4verystr-softcore.filter
 
-#! tts "check filter" check-filter Amy 300 1.0
+Show
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+	#! tts "check filter" check-filter Amy 300 1.0

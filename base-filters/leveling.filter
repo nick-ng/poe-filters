@@ -1,4 +1,9 @@
 ## Make sure this is after any links
+Hide
+	BaseType "Bismuth Flask"
+	AreaLevel == 9
+	Rarity < Magic
+	SetFontSize 45
 
 Show
 	BaseType == "Quicksilver Flask"
@@ -189,6 +194,7 @@ Show
 Show
 	Class "Currency"
 	BaseType == "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard"
+	AreaLevel <= 72
 	StackSize > 1
 	SetFontSize 45
 	#!T9CurrencyText!# 230
