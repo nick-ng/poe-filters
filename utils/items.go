@@ -208,6 +208,7 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 
 // @todo(nick-ng): make this work for other kinds of items e.g. scarabs
 func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
+	chaosThreshold := math.Max(0.001, minChaos)
 	needMapIcon := map[string]bool{
 		"Orb of Fusing":                true,
 		"Orb of Regret":                true,
@@ -317,6 +318,17 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 			},
 			HasMapIcon: false,
 		},
+		{
+			Comment:    "0+ chaos",
+			ChaosValue: 0,
+			Styles: []string{
+				"SetFontSize 35",
+				"SetTextColor 0 255 150 255",
+				"SetBackgroundColor 0 0 0 120",
+				"SetBorderColor 130 130 255 255",
+			},
+			HasMapIcon: false,
+		},
 	}
 
 	filterString := fmt.Sprintf(`# Auto Currency Filter
@@ -326,20 +338,13 @@ Hide
 	BaseType == "Scroll of Wisdom" "Portal Scroll"
 `, minAreaLevel)
 	for i, breakPoint := range breakPoints {
-		if breakPoint.ChaosValue < minChaos {
-			continue
-		}
-
-		if !breakPoint.HasMapIcon {
-		}
-
 		baseTypesInBreakPoint := []string{}
 		for _, curr := range currencyPrices.Prices {
 			if i > 0 && curr.ChaosValue >= breakPoints[i-1].ChaosValue {
 				continue
 			}
 
-			if curr.ChaosValue >= breakPoint.ChaosValue {
+			if curr.ChaosValue >= breakPoint.ChaosValue && curr.ChaosValue >= chaosThreshold {
 				baseTypesInBreakPoint = append(baseTypesInBreakPoint, curr.BaseType)
 				// since the currency is shown in this group, we don't need to show anymore
 				needShow[curr.BaseType] = false
@@ -406,12 +411,9 @@ Show
 	// @todo(nick-ng): omit items that were in earlier groups
 	minStackSize := map[int][]string{}
 	belowMinChaos := []string{}
-	chaosThreshold := math.Max(0.1, minChaos)
 	for _, curr := range currencyPrices.Prices {
-		if curr.ChaosValue < minChaos {
-			belowMinChaos = append(belowMinChaos, curr.BaseType)
-		}
 		if curr.ChaosValue < chaosThreshold {
+			belowMinChaos = append(belowMinChaos, curr.BaseType)
 			requiredStackSize := int(math.Ceil(chaosThreshold / curr.ChaosValue))
 
 			_, ok := minStackSize[requiredStackSize]
