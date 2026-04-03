@@ -34,7 +34,6 @@ Show
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 	# Item Bases
-
 Show
 	BaseType "Twilight Regalia"
 	Rarity <= Rare
@@ -62,7 +61,6 @@ Show
 #! import maps.filter
 #! import heist.filter
 #! import bases.filter
-#! import life-flasks.filter
 #! import misc.filter
 
 Show
