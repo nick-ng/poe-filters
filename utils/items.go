@@ -138,6 +138,7 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 		levels, isExact = getDropLevels(itemClass, itemGroup)
 	}
 
+	// @todo(nick-ng): BUG some of `custom` styles are only getting applied to the big entry
 	customStyleChunk := "\tRarity <= Rare\n\tSetFontSize 25\n\t#!LevelingBorder!# 230\n\tMinimapIcon 1 Pink Cross\n"
 	if len(customStyles) > 0 {
 		temp := strings.Join(customStyles, "\n\t")
@@ -192,12 +193,15 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 			fmt.Sprintf("\tClass == \"%s\"", itemClass),
 			dropLevelChunk,
 			bigStyleChunk,
-			// small highlight
-			"Show",
-			fmt.Sprintf("\tAreaLevel <= %d", dropLevel+flags["show"]),
-			fmt.Sprintf("\tClass == \"%s\"", itemClass),
-			dropLevelChunk,
-			customStyleChunk,
+		}
+
+		// small highlight
+		if flags["big"] < flags["show"] {
+			filterLines = append(filterLines, "Show")
+			filterLines = append(filterLines, fmt.Sprintf("\tAreaLevel <= %d", dropLevel+flags["show"]))
+			filterLines = append(filterLines, fmt.Sprintf("\tClass == \"%s\"", itemClass))
+			filterLines = append(filterLines, dropLevelChunk)
+			filterLines = append(filterLines, customStyleChunk)
 		}
 
 		filterStrings = append(filterStrings, strings.Join(filterLines, "\n"))
