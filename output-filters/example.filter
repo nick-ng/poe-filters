@@ -1639,7 +1639,7 @@ Show
 Show
 	AreaLevel <= 100
 	Class "Currency"
-	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Elevated Sextant" "Sacred Orb" "Chromatic Orb"
 	SetFontSize 45
 	SetTextColor 255 150 0 255
 	SetBorderColor 130 130 255 255
@@ -1705,7 +1705,7 @@ Hide
 	AreaLevel >= 78
 	AreaLevel <= 100
 	Class "Currency"
-	BaseType == "Chromatic Orb" "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
+	BaseType == "Orb of Augmentation" "Orb of Transmutation" "Orb of Chance"
 	SetFontSize 45
 	StackSize < 3
 	SetTextColor 0 255 0 255
