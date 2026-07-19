@@ -1,20 +1,16 @@
 ## Mainly for Explosive Concoction swap
 
 ## Shield Charge shields
-#! links RGB shield
+Show
 	AreaLevel <= 35
+	LinkedSockets == 3
 	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
 	SetFontSize 45
 	MinimapIcon 0 Cyan Cross
 
-#! links RGG shield
-	AreaLevel <= 35
-	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
-	SetFontSize 45
-	MinimapIcon 0 Cyan Cross
-
-#! links RG shield
-	AreaLevel <= 35
-	BaseType == "War Buckler" "Hammered Buckler" "Painted Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Ornate Spiked Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
+Show
+	AreaLevel <= 16
+	LinkedSockets == 3
+	BaseType == "Pine Buckler"
 	SetFontSize 40
 	MinimapIcon 0 Cyan Cross
