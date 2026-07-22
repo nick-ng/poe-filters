@@ -7,7 +7,7 @@
 #! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Triangle
-#! custombig CustomAlertSound "sounds/gloves-4-link.mp3"
+#! custombig CustomAlertSound "sounds/daniel-gloves-4-link.mp3"
 
 # Helmets
 #! droplevel class="Helmets" big=7 levels=1,13,23,33,36,43,51,58,63,67,73,78,84
@@ -18,7 +18,7 @@
 #! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Circle
-#! custombig CustomAlertSound "sounds/helm-4-link.mp3"
+#! custombig CustomAlertSound "sounds/daniel-helm-4-link.mp3"
 
 # Body Armours
 #! droplevel class="Body Armours" big=7 levels=1,8,17,21,28,32,35,38,42,46,50,54,57,60,63,66,69,73,78,84
@@ -30,7 +30,7 @@
 #! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Pentagon
-#! custombig CustomAlertSound "sounds/body-4-link.mp3"
+#! custombig CustomAlertSound "sounds/daniel-body-4-link.mp3"
 
 # Boots
 #! droplevel class="Boots" big=7 levels=6,18,30,36,42,51,59,65,70,78,84
@@ -41,7 +41,7 @@
 #! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Square
-#! custombig CustomAlertSound "sounds/boots-4-link.mp3"
+#! custombig CustomAlertSound "sounds/daniel-boots-4-link.mp3"
 
 Show
 	AreaLevel <= 36
@@ -53,7 +53,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Triangle
-	CustomAlertSound "sounds/gloves-4-link.mp3"
+	CustomAlertSound "sounds/daniel-gloves-4-link.mp3"
 
 Show
 	AreaLevel <= 36
@@ -65,7 +65,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Circle
-	CustomAlertSound "sounds/helm-4-link.mp3"
+	CustomAlertSound "sounds/daniel-helm-4-link.mp3"
 
 Show
 	AreaLevel <= 36
@@ -79,7 +79,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Pentagon
-	CustomAlertSound "sounds/body-4-link.mp3"
+	CustomAlertSound "sounds/daniel-body-4-link.mp3"
 
 Show
 	AreaLevel <= 36
@@ -92,7 +92,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Square
-	CustomAlertSound "sounds/boots-4-link.mp3"
+	CustomAlertSound "sounds/daniel-boots-4-link.mp3"
 
 Show
 	AreaLevel <= 26
@@ -104,7 +104,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Triangle
-	CustomAlertSound "sounds/gloves-3-link.mp3"
+	CustomAlertSound "sounds/daniel-gloves-3-link.mp3"
 
 Show
 	AreaLevel <= 26
@@ -116,7 +116,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Circle
-	CustomAlertSound "sounds/helm-3-link.mp3"
+	CustomAlertSound "sounds/daniel-helm-3-link.mp3"
 
 Show
 	AreaLevel <= 26
@@ -130,7 +130,7 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Pentagon
-	CustomAlertSound "sounds/body-3-link.mp3"
+	CustomAlertSound "sounds/daniel-body-3-link.mp3"
 
 Show
 	AreaLevel <= 26
@@ -143,4 +143,4 @@ Show
 	SetBackgroundColor 88 0 87 255
 	DisableDropSound
 	MinimapIcon 0 Cyan Square
-	CustomAlertSound "sounds/boots-3-link.mp3"
+	CustomAlertSound "sounds/daniel-boots-3-link.mp3"

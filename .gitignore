@@ -33,6 +33,7 @@ third-party-filters/*
 
 raw-tts-sounds/*
 tts-sounds/*
+sounds/*.aiff
 
 temp.bat
 templist.txt
