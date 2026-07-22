@@ -1,15 +1,15 @@
 # Divination Cards
-Show
-	BaseType == "The Dragon"
-	SetFontSize 45
-	#!BrightBackground!# 255
-	SetTextColor 255 140 54 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+# Show
+# 	BaseType == "The Dragon"
+# 	SetFontSize 45
+# 	#!BrightBackground!# 255
+# 	SetTextColor 255 140 54 255
+# 	SetBorderColor 47 252 47 255
+# 	MinimapIcon 2 Brown Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-	# Build Uniques
+# Build Uniques
 Show
 	BaseType == "Sulphur Flask" "Bronzescale Gauntlets" "Dusk Blade"
 	Rarity Unique
@@ -21,7 +21,7 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-	# Build Other
+# Build Other
 Show
 	BaseType == "Vaal Grace" "Vaal Impurity of Fire" "Vaal Impurity of Ice" "Vaal Impurity of Lightning"
 	Class Gem
@@ -33,7 +33,7 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-	# Item Bases
+# Item Bases
 Show
 	BaseType "Twilight Regalia" "Lich's Circlet"
 	Rarity <= Rare
@@ -59,7 +59,7 @@ Show
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
-#! import heist.filter
+#? import heist.filter
 #! import bases.filter
 #! import misc.filter
 

@@ -823,6 +823,7 @@ func processFilter(filterPath string, isImported bool) (string, ProcessedFilterF
 					currencyPrices, err := poeNinjaData.GetCurrencyPrices(false, false)
 					if err != nil {
 						slog.Error("error getting currency prices for autocurrency", "err", err)
+						tempFilterChunks = append(tempFilterChunks, fmt.Sprintf("#? error running autocurrency: %s", err.Error()))
 					} else {
 						newLines := utils.GetStackableCurrencyFilter(currencyPrices, minChaos, minAreaLevel)
 						tempFilterChunks = append(tempFilterChunks, newLines)

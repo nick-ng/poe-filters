@@ -55,6 +55,8 @@ Show
 	#!GoodBaseBorder!# 200
 	MinimapIcon 2 Pink Star
 
+#! import strdex-links.filter
+
 #! droplevel class="Wands" levels=35,40,45,49,53,56,62,65
 
 #! import 2h-axes.filter
@@ -72,8 +74,6 @@ Show
 	MinimapIcon 1 Pink Star
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
-# Linked Sockets
-#! import strdex-links.filter
 
 # More Leveling Items
 Show

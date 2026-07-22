@@ -1,52 +1,52 @@
 # Gloves
-#! droplevel class="Gloves" big=7 levels=36,43,49,59,67
+#! droplevel class="Gloves" big=7 levels=36,45,50,58,67
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
-#! custombig SetFontSize 45
-#! custombig BaseArmour >= 1
+#! custombig BaseEnergyShield >= 1
 #! custombig BaseEvasion >= 1
+#! custombig SetFontSize 45
 #! custombig SetBorderColor 200 0 0 230
-#! custombig SetBackgroundColor 130 130 130 230
+#! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Triangle
 #! custombig CustomAlertSound "sounds/daniel-gloves-4-link.mp3"
 
 # Helmets
-#! droplevel class="Helmets" big=7 levels=36,43,51,58,63,67
+#! droplevel class="Helmets" big=7 levels=35,38,45,52,57,62,67
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
-#! custombig BaseArmour >= 1
+#! custombig BaseEnergyShield >= 1
 #! custombig BaseEvasion >= 1
 #! custombig SetFontSize 45
 #! custombig SetBorderColor 200 0 0 230
-#! custombig SetBackgroundColor 130 130 130 230
+#! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Circle
 #! custombig CustomAlertSound "sounds/daniel-helm-4-link.mp3"
 
 # Body Armours
-#! droplevel class="Body Armours" big=7 levels=35,38,42,46,50,54,57,60,63,66
+#! droplevel class="Body Armours" big=7 levels=35,40,44,48,52,56,59,62,65
 #! custombig Rarity == Rare
 #! custombig Sockets < 6
 #! custombig LinkedSockets == 4
-#! custombig BaseArmour >= 1
+#! custombig BaseEnergyShield >= 1
 #! custombig BaseEvasion >= 1
 #! custombig SetFontSize 45
 #! custombig SetBorderColor 200 0 0 230
-#! custombig SetBackgroundColor 130 130 130 230
+#! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Pentagon
 #! custombig CustomAlertSound "sounds/daniel-body-4-link.mp3"
 
 # Boots
-#! droplevel class="Boots" big=7 levels=36,42,51,59,65
+#! droplevel class="Boots" big=7 levels=41,47,55,63
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
-#! custombig BaseArmour >= 1
+#! custombig BaseEnergyShield >= 1
 #! custombig BaseEvasion >= 1
 #! custombig SetFontSize 45
 #! custombig SetBorderColor 200 0 0 230
-#! custombig SetBackgroundColor 130 130 130 230
+#! custombig SetBackgroundColor 88 0 87 255
 #! custombig DisableDropSound
 #! custombig MinimapIcon 0 Cyan Square
 #! custombig CustomAlertSound "sounds/daniel-boots-4-link.mp3"
@@ -56,7 +56,7 @@ Show
 	Class == "Gloves"
 	Rarity <= Rare
 	LinkedSockets == 4
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -70,7 +70,7 @@ Show
 	Class == "Helmets"
 	Rarity <= Rare
 	LinkedSockets == 4
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -85,7 +85,7 @@ Show
 	Rarity <= Rare
 	Sockets < 6
 	LinkedSockets == 4
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -99,7 +99,7 @@ Show
 	Class == "Boots"
 	Rarity <= Rare
 	LinkedSockets == 4
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -113,7 +113,7 @@ Show
 	Class == "Gloves"
 	Rarity <= Rare
 	LinkedSockets == 3
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -127,7 +127,7 @@ Show
 	Class == "Helmets"
 	Rarity <= Rare
 	LinkedSockets == 3
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -142,7 +142,7 @@ Show
 	Rarity <= Rare
 	Sockets < 6
 	LinkedSockets == 3
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
@@ -156,7 +156,7 @@ Show
 	Class == "Boots"
 	Rarity <= Rare
 	LinkedSockets == 3
-	BaseArmour >= 1
+	BaseEnergyShield >= 1
 	BaseEvasion >= 1
 	SetFontSize 45
 	SetBorderColor 200 0 0 230
