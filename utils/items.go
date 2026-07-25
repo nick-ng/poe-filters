@@ -465,8 +465,9 @@ Show
 `, minAreaLevel, mustShowBaseTypesString)
 	filterString = fmt.Sprintf("%s\n%s\n", filterString, mustShowFilter)
 
-	hideBaseTypes := strings.Join(belowMinChaos, "\" \"")
-	hideFilter := fmt.Sprintf(`# below min chaos
+	if len(belowMinChaos) > 1 {
+		hideBaseTypes := strings.Join(belowMinChaos, "\" \"")
+		hideFilter := fmt.Sprintf(`# below min chaos
 Hide
 	AreaLevel >= %d
 	Class == "Stackable Currency"
@@ -476,7 +477,8 @@ Hide
 	SetBackgroundColor 0 0 0 255
 	SetBorderColor 255 0 255 255
 `, minAreaLevel, hideBaseTypes)
-	filterString = fmt.Sprintf("%s\n%s\n", filterString, hideFilter)
+		filterString = fmt.Sprintf("%s\n%s\n", filterString, hideFilter)
+	}
 
 	return filterString
 }
