@@ -112,10 +112,6 @@ Show
 	SetBackgroundColor 180 0 255 255
 
 Show
-	Class Incubator
-	MinimapIcon 0 Orange Moon
-
-Show
 	Corrupted False
 	FracturedItem True
 	Mirrored False

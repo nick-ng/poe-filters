@@ -97,10 +97,6 @@ Show
 	MinimapIcon 0 Orange Square
 	#!GoodBaseBorder!# 200
 
-Show
-	Class Incubator
-	MinimapIcon 0 Orange Moon
-
 ## Warn if using filter in wrong zone
 Show
 	AreaLevel < 68
