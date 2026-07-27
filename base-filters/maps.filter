@@ -167,15 +167,6 @@ Show # T16
 	PlayEffect Blue
 	CustomAlertSound "sounds/sirus-take-it.mp3"
 
-# @todo(nick-ng): is this group required?
-Show # High Reds
-	Rarity < Unique
-	MapTier < 16
-	MapTier >= 14
-	Class "Maps"
-	SetFontSize 40
-	PlayAlertSound 5 100 # map drop sound
-
 Show # High Reds
 	Rarity < Unique
 	MapTier >= 14
