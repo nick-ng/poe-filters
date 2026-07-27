@@ -23,7 +23,7 @@ Show
 
 # Item Bases
 Show
-	BaseType = "Kinetic Wand" "Tornado Wand" "Opal Wand" "Demon's Horn"
+	BaseType = "Kinetic Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
@@ -45,7 +45,7 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
-	BaseType = "Kinetic Wand" "Tornado Wand" "Opal Wand" "Demon's Horn"
+	BaseType = "Kinetic Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
