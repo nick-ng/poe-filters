@@ -64,7 +64,7 @@ Show
 	SetFontSize 35
 	SetBorderColor 0 0 0
 
-#! autocurrency 0.1 60
+#! autocurrency 0.2 80
 
 # Hide
 #	BaseType "Scroll of Wisdom" "Portal Scroll" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"

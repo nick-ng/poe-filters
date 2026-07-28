@@ -8,6 +8,9 @@ say -v Daniel -r 360 -o daniel-body-4-link.aiff "body four link"
 say -v Daniel -r 360 -o daniel-gloves-4-link.aiff "gloves four link"
 say -v Daniel -r 360 -o daniel-boots-4-link.aiff "boots four link"
 
+say -v Daniel -r 360 -o daniel-body-5-link.aiff "body five link"
+say -v Daniel -r 360 -o daniel-body-6-link.aiff "body six link"
+
 # Normalise each generated .aiff to -16 LUFS (matching the rest of the library) and encode to .mp3.
 # Integrated LUFS is unstable on sub-second clips, so measure the concatenation of every clip
 # (long enough to be stable), derive one gain to bring the whole set to -16, and apply it to each.

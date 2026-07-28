@@ -62,7 +62,7 @@ Show
 
 #! import library-shield-charge.filter
 
-#! autocurrency 0.2 75
+#! autocurrency 0.2 80
 
 #! import leveling.filter
 #! import currency.filter
