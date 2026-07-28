@@ -1,6 +1,5 @@
 # Weapon Recipe
 Show
-	AreaLevel <= 77
 	BaseType == "Granite Flask"
 	SetFontSize 45
 	Rarity <= Magic
@@ -8,7 +7,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "granite" granite Amy 200 1.0
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 Show
 	AreaLevel <= 55
@@ -33,14 +32,14 @@ Show
 	#! tts "20 quality weapon" 20-quality-weapon Amy 200 1.0
 
 Show
-	AreaLevel <= 55
+	AreaLevel <= 70
 	BaseType "Rustic Sash"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	#! tts "rustic sash" rustic-sash Amy 200 1.0
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 #! import leveling.filter
 

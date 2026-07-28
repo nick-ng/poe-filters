@@ -1,59 +1,145 @@
-#! skip
+# Divination Cards
+# Show
+# 	BaseType == "Earth Drinker"
+# 	SetFontSize 45
+# 	SetTextColor 232 99 0 255
+# 	SetBorderColor 47 252 47 255
+# 	#!BrightBackground!# 255
+# 	MinimapIcon 2 Brown Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
-Show
-	BaseType == "Ornate Mace" "Leather Hood" "Girded Tower Shield"
-	Rarity Unique
-	SetFontSize 45
-	#!BrightBackground!# 255
-	SetTextColor 232 99 0 255
-	SetBorderColor 47 252 47 255
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/imexile-ok.mp3"
+# Show
+# 	BaseType == "Turquoise Amulet" "Amethyst Ring" "Solaris Circlet"
+# 	Rarity Unique
+# 	SetFontSize 45
+# 	#!BrightBackground!# 255
+# 	SetTextColor 232 99 0 255
+# 	SetBorderColor 47 252 47 255
+# 	MinimapIcon 2 Brown Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/imexile-ok.mp3"
 
-# Weapon Base
+# Item Bases
 Show
-	BaseType "Imperial Claw"
+	BaseType = "Reaver Axe"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
-	ItemLevel = 82 # T1 flat ele
+	ItemLevel = 83 # T1 Phys, T1 Cast Speed
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 0 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	BaseType = "Reaver Axe"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 83 # T1 Phys
+	SetFontSize 40
 	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
 
-#! linksa RRGB
-#! linksa RRGG
-#! linksa RGG
-#! linksa RRG
+Show
+	BaseType = "Reaver Axe"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	AreaLevel < 81
+	ItemLevel >= 77 # T1 Flat
+	SetFontSize 35
+	#!GoodBaseBorder!# 200
+	MinimapIcon 2 Pink Star
+
+#! import strdex-links.filter
+
+#! import 2h-axes.filter
+#! maxarea 60
+
+#! import library-shield-charge.filter
+
+#! autocurrency 0.2 75
+
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#? import heist.filter
+#! import bases.filter
+#! import misc.filter
+
+Show
+	BaseType == "Granite Flask"
+	SetFontSize 45
+	Rarity <= Magic
+	#!WhiteText!# 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+Show
+	AreaLevel <= 70
+	BaseType "Rustic Sash"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
+# More Leveling Items
+Show
+	BaseType = "Lapis Amulet"
+	AreaLevel <= 7
+	#!LevelingBorder!# 230
+	#!BrightBackground!# 255
+	MinimapIcon 1 Pink Star
+	#! tts "lapis" lapis-amulet Amy 200 1.0
+
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	#! tts "heavy belt" heavy-belt Amy 200 1.0
 
 # Rares during leveling
-
 Show
 	AreaLevel <= 72 # Tier 5
 	Rarity = Rare
 	Corrupted False
 	Mirrored False
-	BaseType #!strdex9!#
+	BaseType #!strint2!#
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-# 26,37,49,58,66 = slow
-#! droplevel class="Claws" min=11 big=2 levels=1,7,12,17,22,30,34,36,40,43,46,50,52,55,57,60,62,64,68,70,72
+Show
+	AreaLevel < 72 # Tier 5
+	Rarity = Rare
+	Corrupted False
+	Mirrored False
+	BaseType #!strinthelm2!# #!strintboots!#
+	SetBorderColor 53 216 234 255
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 
-#! import 2h-axes.filter
-#! del # Maces Start(.|\n)+Maces End #
+#! import online-NeverSink-2semistr-softcore.filter
+#! maxarea 70 tier 3
 
-#! import currency.filter
-#! import maps.filter
-#! import misc.filter
-#! import bases.filter
+#! import online-NeverSink-4verystr-softcore.filter
 
-#! import sov1.filter
-#! del ##+ Section 14 - Caster(.|\n)+on 16.2 - 2h Melee Levelling ##+\n
-#! del ##+ Section 17 - Ranged(.|\n)+### Section 18 - Armour ##+\n
-#! del ##+ Section 1 - Chance, Priority Highlight, Lin(.|\n)+rency & 6L ##+\n
-#! del ##+ Section 22 - Chaos Recipe(.|\n)+ll overwrite whetstone recipe\)\n
-#! del #Chaos Recipe 2x2's: faint yellow borders(.|\n)+sses you want to show\)\.
-#! del #fading out of low droplevel rares at highe(.|\n)+Animate Weapon ##+\n
+Show
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+	#! tts "check filter" check-filter Amy 300 1.0
+#! tts "check filter" check-filter Amy 300 1.0

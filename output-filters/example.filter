@@ -273,7 +273,7 @@ Show
 # Anything that matches the regular expression will be removed
 # Weapon Recipe
 Show
-	AreaLevel <= 77
+	AreaLevel <= 100
 	BaseType == "Granite Flask"
 	SetFontSize 45
 	Rarity <= Magic
@@ -281,7 +281,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "tts/amy-granite.mp3" 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 Show
 	AreaLevel <= 55
 	Class "Currency"
@@ -303,14 +303,14 @@ Show
 	MinimapIcon 0 Grey UpsideDownHouse
 	CustomAlertSound "tts/amy-20-quality-weapon.mp3" 200
 Show
-	AreaLevel <= 55
+	AreaLevel <= 70
 	BaseType "Rustic Sash"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "tts/amy-rustic-sash.mp3" 200
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 #? import leveling.filter
 ## Make sure this is after any links
 Hide
