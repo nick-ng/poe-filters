@@ -43,6 +43,8 @@ Show
 	SetFontSize 40
 	#!GoodBaseBorder!# 200
 	MinimapIcon 1 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/neon-uh-sure-1.mp3" 300
 
 Show
 	BaseType = "Reaver Axe"
@@ -50,15 +52,97 @@ Show
 	Mirrored False
 	Rarity <= Rare
 	AreaLevel < 81
-	ItemLevel >= 77 # T1 Flat
+	ItemLevel >= 73 # T2 Phys
 	SetFontSize 35
 	#!GoodBaseBorder!# 200
 	MinimapIcon 2 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/neon-uh-sure-1.mp3" 300
+
+Show
+	BaseType = "Reaver Axe"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 65 # T2 Phys
+	SetFontSize 30
+	#!GoodBaseBorder!# 200
+	MinimapIcon 2 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/neon-uh-sure-1.mp3" 300
+
+Show
+	Class == "Gloves"
+	DropLevel >= 57
+	Rarity <= Rare
+	SetFontSize 45
+	BaseArmour >= 1
+	BaseEnergyShield == 0
+	#!GoodBaseBorder!# 200
+	DisableDropSound
+	MinimapIcon 0 Cyan Triangle
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	Class == "Helmets"
+	DropLevel >= 58
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	BaseArmour >= 1
+	BaseEnergyShield == 0
+	#!GoodBaseBorder!# 200
+	DisableDropSound
+	MinimapIcon 0 Cyan Circle
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	Class == "Body Armours"
+	DropLevel >= 56
+	LinkedSockets >= 5
+	Rarity <= Rare
+	SetFontSize 45
+	BaseArmour >= 1
+	BaseEnergyShield == 0
+	#!GoodBaseBorder!# 200
+	DisableDropSound
+	MinimapIcon 0 Cyan Pentagon
+	CustomAlertSound "sounds/intel-thanks-steve.mp3" 300
+
+Show
+	Class == "Boots"
+	DropLevel >= 58
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	BaseArmour >= 1
+	BaseEnergyShield == 0
+	#!GoodBaseBorder!# 200
+	DisableDropSound
+	MinimapIcon 0 Cyan Square
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	Class == "Shields"
+	DropLevel >= 58
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	SetFontSize 45
+	BaseArmour >= 1
+	BaseEnergyShield == 0
+	#!GoodBaseBorder!# 200
+	DisableDropSound
+	MinimapIcon 0 Cyan UpsideDownHouse
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
 
 #! import strdex-links.filter
+#! import str-links.filter
 
-#! import 2h-axes.filter
-#! maxarea 60
+#! weapons fast-2h-swords 11
+#! weapons fast-2h-axes 70
 
 #! import library-shield-charge.filter
 
@@ -79,7 +163,7 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 Show
 	AreaLevel <= 70
@@ -89,7 +173,29 @@ Show
 	SetBorderColor 255 255 0 200
 	PlayEffect Yellow
 	MinimapIcon 0 Grey UpsideDownHouse
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
+
+Show
+	AreaLevel <= 55
+	Class "Currency"
+	BaseType "Blacksmith's Whetstone"
+	SetFontSize 45
+	#!T3CurrencyText!# 230
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "blacksmith" blacksmith Amy 200 1.0
+
+Show
+	AreaLevel <= 36
+	Class "One Hand" "Two Hand" "Wand" "Sceptre" "Dagger" "Bow" "Staves" "Dagger" "Claw"
+	Quality >= 20
+	SetFontSize 45
+	#!T3CurrencyText!# 230
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	#! tts "20 quality weapon" 20-quality-weapon Amy 200 1.0
 
 # More Leveling Items
 Show

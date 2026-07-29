@@ -1,5 +1,5 @@
 # Gloves
-#! droplevel class="Gloves" big=7 levels=36,43,49,59,67
+#! droplevel class="Gloves" big=7 levels=36,43,49
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
 #! custombig SetFontSize 45
@@ -12,7 +12,7 @@
 #! custombig CustomAlertSound "sounds/daniel-gloves-4-link.mp3"
 
 # Helmets
-#! droplevel class="Helmets" big=7 levels=36,43,51,58,63,67
+#! droplevel class="Helmets" big=7 levels=36,43,51
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
 #! custombig BaseArmour >= 1
@@ -25,7 +25,7 @@
 #! custombig CustomAlertSound "sounds/daniel-helm-4-link.mp3"
 
 # Body Armours
-#! droplevel class="Body Armours" big=7 levels=35,38,42,46,50,54,57,60,63,66
+#! droplevel class="Body Armours" big=7 levels=35,38,42,46,50,54
 #! custombig Rarity == Rare
 #! custombig Sockets < 6
 #! custombig LinkedSockets == 4
@@ -39,7 +39,7 @@
 #! custombig CustomAlertSound "sounds/daniel-body-4-link.mp3"
 
 # Boots
-#! droplevel class="Boots" big=7 levels=36,42,51,59,65
+#! droplevel class="Boots" big=7 levels=36,42,51
 #! custombig Rarity == Rare
 #! custombig LinkedSockets == 4
 #! custombig BaseArmour >= 1
