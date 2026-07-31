@@ -45,10 +45,10 @@ When you run it, it will try to copy filters to the Path of Exile directory
 - utils/items.go:141: @todo(nick-ng): BUG some of `custom` styles are only getting applied to the big entry
 - utils/items.go:213: @todo(nick-ng): make this work for other kinds of items e.g. scarabs
 - utils/items.go:416: @todo(nick-ng): omit items that were in earlier groups
-- utils/poe-ninja.go:251: @todo(nick-ng): the poe.ninja endpoint this calls doesn't return stack size anymore. That is in a different endpoint. you have to update this before you can use it again
-- utils/sounds.go:296: @todo(nick-ng): change the path based on operating system
-- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
 - utils/misc.go:166: @todo(nick-ng): this has weird behaviour if you "open" and "close" quotes multiple times
+- utils/poe-ninja.go:251: @todo(nick-ng): the poe.ninja endpoint this calls doesn't return stack size anymore. That is in a different endpoint. you have to update this before you can use it again
+- utils/cleanup.go:62: @todo(nick-ng): this isn't what this method is supposed to do
+- utils/sounds.go:296: @todo(nick-ng): change the path based on operating system
 - utils/filter-group.go:21: @todo(nick-ng): actually convert the filter group to lines instead of just returning the lines
 - utils/filter-group.go:52: @todo(@nick-ng): patch for ring bug
 - utils/filter-group.go:115: @todo(@nick-ng): patch for ring bug

@@ -214,6 +214,7 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
 	chaosThreshold := math.Max(0.001, minChaos)
 	needMapIcon := map[string]bool{
+		"Orb of Alteration":            true,
 		"Orb of Fusing":                true,
 		"Orb of Regret":                true,
 		"Eldritch Chaos Orb":           true,
