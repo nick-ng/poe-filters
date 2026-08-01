@@ -154,16 +154,28 @@ Show
 
 Show
 	ItemLevel >= 85
-	Rarity = Rare
-	BaseDefencePercentile >= 88
+	Rarity <= Rare
+	BaseDefencePercentile >= 95
 	Corrupted False
 	Mirrored False
-	BaseType == #!suppressionsquare0!# #!strsquare0!#
+	Class == "Helmets" "Gloves" "Boots"
+	DropLevel >= 78
 	#!TopBaseBorder!# 222
+	SetBackgroundColor 200 255 255 230
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
 	PlayAlertSound 3 200
+
+Hide
+	AreaLevel >= 83
+	Rarity < Rare
+	BaseDefencePercentile < 95
+	Corrupted False
+	Mirrored False
+	Class == "Helmets" "Gloves" "Boots"
+	#!TopBaseBorder!# 222
+	SetFontSize 45
 
 # T2 Spell Suppression ##
 Show
@@ -187,8 +199,10 @@ Show
 	Rarity <= Rare
 	Corrupted False
 	Mirrored False
-	BaseType == #!suppressionbody0!# #!strbody0!#
+	Class == "Body Armour"
+	DropLevel >= 78
 	#!TopBaseBorder!# 222
+	SetBackgroundColor 200 255 255 230
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -202,6 +216,7 @@ Show
 	Mirrored False
 	BaseType == #!suppressionbody1!# #!strbody1!#
 	#!TopBaseBorder!# 222
+	SetBackgroundColor 200 255 255 230
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star

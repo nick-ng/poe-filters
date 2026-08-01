@@ -1316,8 +1316,10 @@ Show
 	Rarity <= Rare
 	Corrupted False
 	Mirrored False
-	BaseType == "Conquest Lamellar" "Necrotic Armour" "Syndicate's Garb" "Royal Plate"
+	Class == "Body Armour"
+	DropLevel >= 78
 	SetBorderColor 45 107 255 222
+	SetBackgroundColor 200 255 255 230
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -1331,6 +1333,7 @@ Show
 	Mirrored False
 	BaseType == "Astral Leather" "Conquest Lamellar" "Marshall's Brigandine" "Necrotic Armour" "Syndicate's Garb" "Torturer Garb" "Legion Plate" "Royal Plate"
 	SetBorderColor 45 107 255 222
+	SetBackgroundColor 200 255 255 230
 	SetFontSize 40
 	PlayEffect Red
 	MinimapIcon 1 Yellow Star
@@ -1792,7 +1795,7 @@ Show
 ## Divination Cards ##
 Show
 	AreaLevel <= 100
-	BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Long Con" "The Saint's Treasure" "The Scout" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
+	BaseType == "The Long Con" "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love" "Darker Half" "Altered Perception" "Rebirth and Renewal" "The Sephirot" "Brother's Gift" "The Fortunate" "I See Brothers"
 	Class "Divination"
 	SetFontSize 45
 	SetTextColor 250 0 125 255
@@ -1802,7 +1805,7 @@ Show
 	CustomAlertSound "sounds/ai_rue-oh-my-god.mp3"
 Show
 	AreaLevel <= 100
-	BaseType == "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Master Artisan" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
+	BaseType == "Alluring Bounty" "The Scout" "Abandoned Wealth" "The Saint's Treasure" "Brother's Stash" "The Hoarder" "A Sea of Blue" "Acclimatisation" "Chaotic Disposition" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Loyalty" "Lucky Connections" "Lucky Deck" "No Traces" "Parasitic Passengers" "Rain of Chaos" "Society's Remorse" "The Cacophony" "The Catalyst" "The Fool" "The Gemcutter" "The Heroic Shot" "The Innocent" "The Inventor" "The Master Artisan" "The Rabbit's Foot" "The Scholar" "The Seeker" "The Survivalist" "The Tinkerer's Table" "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Underground Forest" "Vinia's Token" "Bowyer's Dream" "Rebirth" "The Dark Mage" "The Warlord" "The White Knight"
 	Class "Divination"
 	SetFontSize 45
 	SetTextColor 255 255 0 255
