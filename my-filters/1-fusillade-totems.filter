@@ -69,7 +69,6 @@ Show
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
-#? import heist.filter
 #! import bases.filter
 #! import misc.filter
 
@@ -124,9 +123,6 @@ Show
 	MinimapIcon 1 Yellow Star
 
 #! import online-NeverSink-2semistr-softcore.filter
-#! maxarea 70 tier 3
-
-#! import online-NeverSink-4verystr-softcore.filter
 
 Show
 	SetFontSize 45
