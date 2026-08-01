@@ -211,32 +211,43 @@ func GetDropLevelFilter(rawCommand string, customStyles []string, bigStyles []st
 }
 
 // @todo(nick-ng): make this work for other kinds of items e.g. scarabs
+// @todo(nick-ng): load these from a file?
 func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64, minAreaLevel int) string {
 	chaosThreshold := math.Max(0.001, minChaos)
+	// needs map icon and hasn't been handled in an earlier group
 	needMapIcon := map[string]bool{
-		"Orb of Alteration":            true,
-		"Orb of Fusing":                true,
-		"Orb of Regret":                true,
 		"Eldritch Chaos Orb":           true,
 		"Eldritch Exalted Orb":         true,
 		"Eldritch Orb of Annulment":    true,
-		"Lesser Eldritch Ember":        true,
-		"Greater Eldritch Ember":       true,
-		"Grand Eldritch Ember":         true,
 		"Exceptional Eldritch Ember":   true,
-		"Lesser Eldritch Ichor":        true,
-		"Greater Eldritch Ichor":       true,
-		"Grand Eldritch Ichor":         true,
 		"Exceptional Eldritch Ichor":   true,
 		"Foulborn Exalted Orb":         true,
-		"Foulborn Regal Orb":           true,
 		"Foulborn Orb of Augmentation": true,
+		"Foulborn Regal Orb":           true,
+		"Gemcutter's Prism":            true,
+		"Glassblower's Bauble":         true,
+		"Grand Eldritch Ember":         true,
+		"Grand Eldritch Ichor":         true,
+		"Greater Eldritch Ember":       true,
+		"Greater Eldritch Ichor":       true,
+		"Lesser Eldritch Ember":        true,
+		"Lesser Eldritch Ichor":        true,
+		"Orb of Alteration":            true,
+		"Orb of Fusing":                true,
+		"Orb of Regret":                true,
+		"Divine Orb":                   true,
+		"Chaos Orb":                    true,
+		"Fracturing Orb":               true,
 	}
 	needShow := map[string]bool{
+		"Armourer's Scrap":              true,
+		"Blacksmith's Whetstone":        true,
 		"Jeweller's Orb":                true,
-		"Orb of Chance":                 true,
+		"Blessed Orb":                   true,
+		"Regal Orb":                     true,
 		"Orb of Alchemy":                true,
 		"Orb of Binding":                true,
+		"Orb of Chance":                 true,
 		"Orb of Scouring":               true,
 		"Primal Crystallised Lifeforce": true,
 		"Vivid Crystallised Lifeforce":  true,

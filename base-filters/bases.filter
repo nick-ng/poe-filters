@@ -154,22 +154,8 @@ Show
 
 Show
 	ItemLevel >= 85
-	AreaLevel <= 83
-	Rarity <= Rare
-	BaseDefencePercentile >= 70
-	Corrupted False
-	Mirrored False
-	BaseType == #!suppressionsquare0!# #!strsquare0!#
-	#!TopBaseBorder!# 222
-	SetFontSize 45
-	PlayEffect Red
-	MinimapIcon 1 Yellow Star
-	PlayAlertSound 8 200
-
-Show
-	ItemLevel >= 85
 	Rarity = Rare
-	BaseDefencePercentile >= 99
+	BaseDefencePercentile >= 88
 	Corrupted False
 	Mirrored False
 	BaseType == #!suppressionsquare0!# #!strsquare0!#

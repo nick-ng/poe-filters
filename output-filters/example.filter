@@ -1287,21 +1287,8 @@ Show
 Show
 	AreaLevel <= 40
 	ItemLevel >= 85
-	Rarity <= Rare
-	BaseDefencePercentile >= 70
-	Corrupted False
-	Mirrored False
-	BaseType == "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"
-	SetBorderColor 45 107 255 222
-	SetFontSize 45
-	PlayEffect Red
-	MinimapIcon 1 Yellow Star
-	PlayAlertSound 8 200
-Show
-	AreaLevel <= 40
-	ItemLevel >= 85
 	Rarity = Rare
-	BaseDefencePercentile >= 99
+	BaseDefencePercentile >= 88
 	Corrupted False
 	Mirrored False
 	BaseType == "Haunted Bascinet" "Majestic Pelt" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Velour Boots" "Velour Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets" "Giantslayer Helmet" "Leviathan Gauntlets" "Leviathan Greaves"

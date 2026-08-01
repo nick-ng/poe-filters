@@ -106,11 +106,11 @@ Show
 	PlayEffect Grey
 	MinimapIcon 0 Grey UpsideDownHouse
 
-## Small uniques to dust
+## Uniques to dust
 Show
 	Rarity Unique
-	Height 1
-	Width <= 2
+	Class "Rings" "Amulets" "Daggers" "Wand"
+	ItemLevel >= 84
 	SetFontSize 45
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
@@ -119,6 +119,19 @@ Show
 	PlayEffect Brown
 	MinimapIcon 2 Brown Star
 
+Show
+	Rarity Unique
+	BaseType == "Elder Sword"
+	ItemLevel >= 84
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 10 30 45 255
+	PlayAlertSound 3 200
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+
+## Other
 Show
 	BaseType == "Baited Expectations"
 	SetFontSize 45
