@@ -7,7 +7,7 @@ if [[ ! $MY_SESSION ]]; then
 		tmux split-window -v
 		tmux send "tmux resizep -x 25%" Enter
 		tmux send "cd ../poe-map-team" Enter
-		tmux send "./auto-update.sh" Enter
+		tmux send "./update-gems.sh" Enter
 		tmux select-pane -t 0
 fi
 tmux attach-session -d -t poefilters

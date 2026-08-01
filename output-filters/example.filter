@@ -1236,7 +1236,7 @@ Show
 ## Top Utility Flasks ##
 Show
 	AreaLevel <= 40
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	Class == "Utility Flask"
 	ItemLevel >= 85 # t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
@@ -1245,7 +1245,7 @@ Show
 	SetBorderColor 255 0 0 200
 Show
 	AreaLevel <= 40
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	Class == "Utility Flask"
 	ItemLevel >= 84 # Everything except t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
