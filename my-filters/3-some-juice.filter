@@ -1,0 +1,205 @@
+Show
+	Rarity Rare
+	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+	SetFontSize 45
+	SetBorderColor 0 220 220 255
+	PlayEffect Grey
+	MinimapIcon 2 Grey Diamond
+
+Show
+	BaseType == "Syndicate Medallion"
+	SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+
+Show
+	Identified True
+	HasExplicitMod = "Haku's"
+	SetFontSize 45
+	SetTextColor 177 159 255 200
+	SetBorderColor 177 159 255 200
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Purple
+	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+
+Show
+	StackSize < 3
+	Class == "Stackable Currency"
+	BaseType == "Simulacrum Splinter"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 130 15 255 255
+	SetBackgroundColor 65 20 80
+
+Show
+	BaseType == "Sacrifice at Midnight" "Sacrifice at Noon"
+	SetFontSize 45
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	SetBackgroundColor 65 20 80
+
+Show
+	BaseType == "Sacrifice at Dusk" "Sacrifice at Dawn"
+	StackSize >= 2
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	# SetBackgroundColor 65 20 80
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Aberrant Fossil" "Aetheric Fossil" "Bloodstained Fossil" "Bound Fossil" "Deft Fossil" "Dense Fossil" "Frigid Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Opulent Fossil" "Prismatic Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Aberrant Fossil" "Aetheric Fossil" "Bloodstained Fossil" "Bound Fossil" "Corroded Fossil" "Deft Fossil" "Dense Fossil" "Faceted Fossil" "Fractured Fossil" "Frigid Fossil" "Fundamental Fossil" "Gilded Fossil" "Glyphic Fossil" "Hollow Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Opulent Fossil" "Prismatic Fossil" "Pristine Fossil" "Sanctified Fossil" "Scorched Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
+	SetFontSize 35
+	SetBorderColor 0 0 0
+
+#! autocurrency 0.1 67
+
+#! import currency.filter
+#! import maps.filter
+#! import misc.filter
+
+# Bases
+##################################
+## Vermillion and Cerulean Ring ##
+##################################
+
+Show
+	BaseType == "Cerulean Ring"
+	Corrupted False
+	Mirrored False
+	ItemLevel >= 85 # t1 mana
+	SetFontSize 45
+	SetTextColor 0 0 255 255
+	#!BrightBackground!# 255
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
+
+Show
+	BaseType == "Vermillion Ring"
+	Corrupted False
+	Mirrored False
+	ItemLevel >= 84 # t1 resists
+	SetFontSize 45
+	SetTextColor 0 0 255 255
+	#!BrightBackground!# 255
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
+
+Show # Influenced Rings
+	HasInfluence Crusader Hunter Redeemer Warlord
+	BaseType "Ring"
+	ItemLevel >= 75
+	Rarity <= Rare
+	Corrupted False
+	Mirrored False
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	SetTextColor 100 0 122 255
+	PlayEffect Cyan
+	PlayAlertSound 1 300
+	MinimapIcon 1 Cyan Cross
+
+########################
+## Top Utility Flasks ##
+########################
+Show
+	Class == "Utility Flask"
+	ItemLevel >= 85 # t1 move speed
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	PlayEffect Red
+	SetBorderColor 255 0 0 200
+
+## Flagellant
+Show
+	Class == "Utility Flask"
+	ItemLevel >= 80 # Best Flagellant Chance
+	ItemLevel <= 81 # includes a tier of resists during flask effect
+	SetFontSize 45
+	Rarity <= Magic
+	SetTextColor 0 203 221 200
+	SetBorderColor 255 255 0 200
+	PlayEffect Red
+
+##############
+## T1 Bases ##
+##############
+Show
+	ItemLevel >= 85
+	Rarity <= Rare
+	BaseDefencePercentile >= 100
+	Corrupted False
+	Mirrored False
+	Class == "Helmets" "Gloves" "Boots"
+	DropLevel >= 84
+	#!TopBaseBorder!# 222
+	SetBackgroundColor 200 255 255 230
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 1 Yellow Star
+	PlayAlertSound 3 200
+
+Show
+	ItemLevel >= 86
+	Rarity <= Rare
+	Corrupted False
+	Mirrored False
+	Class == "Body Armour"
+	DropLevel >= 84
+	#!TopBaseBorder!# 222
+	SetBackgroundColor 200 255 255 230
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 1 Yellow Star
+	PlayAlertSound 3 200
+
+#################
+## Other Stuff ##
+#################
+Show
+	BaseType "Essence Scarab" "Beyond Scarab" "Torment Scarab" "Betrayal Scarab" "Anarchy Scarab" "Expedition Scarab" "Kalguuran Scarab"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	# SetBackgroundColor 65 20 80
+
+Show
+	BaseType == "Abyss Scarab" "Bestiary Scarab" "Incursion Scarab of Invasion" "Blight Scarab" "Ultimatum Scarab" "Delirium Scarab" "Legion Scarab of Officers" "Harvest Scarab" "Titanic Scarab of Treasures" "Incursion Scarab" "Influencing Scarab of the Shaper" "Domination Scarab of Apparitions" "Abyss Scarab of Multitudes" "Sulphite Scarab of Fumes" "Sulphite Scarab" "Scarab of Divinity" "Blight Scarab of the Blightheart" "Ritual Scarab of Wisps" "Influencing Scarab of the Elder" "Titanic Scarab" "Ambush Scarab of Hidden Compartments" "Cartography Scarab of Escalation"
+	SetFontSize 40
+	SetTextColor 175 120 230 240
+	SetBorderColor 175 120 230 240
+	# SetBackgroundColor 65 20 80
+
+## choose one
+#? import online-NeverSink-4verystr-softcore.filter
+#! import online-NeverSink-5uberstr-softcore.filter
+#? import online-NeverSink-6uberplu-softcore.filter
+
+#? import FilterBlade_2_Semi-Strict.filter
+#? import FilterBlade_4_Very Strict.filter
+#? import FilterBlade_5_Uber Strict.filter
+#? import FilterBlade_6_Uber Plus Strict.filter
+
+Show
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+	#! tts "check filter" check-filter Amy 300 1.0
