@@ -106,7 +106,9 @@ Show
 	PlayEffect Grey
 	MinimapIcon 0 Grey UpsideDownHouse
 
-## Uniques to dust
+#####################
+## Uniques to dust ##
+#####################
 Show
 	Rarity Unique
 	Class "Rings" "Amulets" "Daggers" "Wand"
@@ -119,9 +121,10 @@ Show
 	PlayEffect Brown
 	MinimapIcon 2 Brown Star
 
+## 20k+ dust uniques
 Show
 	Rarity Unique
-	BaseType == "Elder Sword"
+	BaseType == "Hubris Circlet" "Vanguard Belt" "Spike-Point Arrow Quiver" "Harmonic Spirit Shield"
 	ItemLevel >= 84
 	SetFontSize 45
 	SetTextColor 175 96 37 255
