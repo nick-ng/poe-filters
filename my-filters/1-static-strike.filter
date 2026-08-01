@@ -151,9 +151,17 @@ Show
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
-#? import heist.filter
 #! import bases.filter
 #! import misc.filter
+
+Show
+	BaseType = "Prismatic Tincture" "Rosethorn Tincture"
+	Rarity <= Rare
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 2 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/neon-what-the-heck.mp3" 300
 
 Show
 	BaseType == "Granite Flask"
@@ -238,9 +246,6 @@ Show
 	MinimapIcon 1 Yellow Star
 
 #! import online-NeverSink-2semistr-softcore.filter
-#! maxarea 70 tier 3
-
-#! import online-NeverSink-4verystr-softcore.filter
 
 Show
 	SetFontSize 45
