@@ -240,6 +240,7 @@ func GetStackableCurrencyFilter(currencyPrices CurrencyPrices, minChaos float64,
 		"Fracturing Orb":               true,
 	}
 	needShow := map[string]bool{
+		"Portal Scroll":                 true,
 		"Armourer's Scrap":              true,
 		"Blacksmith's Whetstone":        true,
 		"Jeweller's Orb":                true,

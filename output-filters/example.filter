@@ -1236,7 +1236,7 @@ Show
 ## Top Utility Flasks ##
 Show
 	AreaLevel <= 40
-	Class == "Utility Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 85 # t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
@@ -1245,7 +1245,7 @@ Show
 	SetBorderColor 255 0 0 200
 Show
 	AreaLevel <= 40
-	Class == "Utility Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 84 # Everything except t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
@@ -1255,7 +1255,7 @@ Show
 ## Flagellant Utility Flasks ##
 Show
 	AreaLevel <= 40
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 80 # Best Flagellant Chance
 	ItemLevel <= 81 # includes a tier of resists during flask effect
 	SetFontSize 45
@@ -1265,7 +1265,7 @@ Show
 	PlayEffect Red
 Show
 	AreaLevel <= 40
-	BaseType == "Granite Flask" "Jade Flask" "Quartz Flask" "Topaz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Quicksilver Flask" "Amethyst Flask" "Gold Flask" "Diamond Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 80 # Any Flagellant Chance
 	SetFontSize 45
 	Rarity <= Magic

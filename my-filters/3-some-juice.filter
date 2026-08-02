@@ -119,7 +119,7 @@ Show # Influenced Rings
 ## Top Utility Flasks ##
 ########################
 Show
-	Class == "Utility Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 85 # t1 move speed
 	SetFontSize 45
 	Rarity <= Magic
@@ -129,7 +129,7 @@ Show
 
 ## Flagellant
 Show
-	Class == "Utility Flask"
+	Class == "Utility Flasks"
 	ItemLevel >= 80 # Best Flagellant Chance
 	ItemLevel <= 81 # includes a tier of resists during flask effect
 	SetFontSize 45
