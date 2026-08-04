@@ -1,0 +1,28 @@
+Show # gold drops last in simulacrums so when you see gold, that's all the items.
+	Class "Gold"
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+
+Show
+	BaseType "Portal Scroll"
+	#!PortalScrollText!# 220
+	SetFontSize 40
+
+## choose one
+#! import online-NeverSink-4verystr-softcore.filter
+#? import online-NeverSink-5uberstr-softcore.filter
+#? import online-NeverSink-6uberplu-softcore.filter
+
+#? import FilterBlade_2_Semi-Strict.filter
+#? import FilterBlade_4_Very Strict.filter
+#? import FilterBlade_5_Uber Strict.filter
+#? import FilterBlade_6_Uber Plus Strict.filter
+
+Show
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+	#! tts "check filter" check-filter Amy 300 1.0
