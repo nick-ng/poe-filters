@@ -7,8 +7,20 @@ Show # gold drops last in simulacrums so when you see gold, that's all the items
 
 Show
 	BaseType "Portal Scroll"
-	#!PortalScrollText!# 220
+	#!PortalScrollText!# 255
+	#!GGGCurrencyBorder!# 255
+	SetBackgroundColor 0 0 0 200
 	SetFontSize 40
+
+Show # Mapping Currency
+	Class "Currency"
+	BaseType == "Orb of Scouring"
+	SetFontSize 45
+	#!T1CurrencyText!# 255
+	#!CurrencyBorder!# 255
+	MinimapIcon 0 Orange Circle
+	PlayEffect Pink
+	PlayAlertSound 11 200
 
 ## choose one
 #! import online-NeverSink-4verystr-softcore.filter

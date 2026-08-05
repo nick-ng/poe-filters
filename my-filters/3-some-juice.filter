@@ -64,7 +64,7 @@ Show
 	SetFontSize 35
 	SetBorderColor 0 0 0
 
-#! autocurrency 0.1 67
+#! autocurrency 0.1 1
 
 #! import currency.filter
 #! import maps.filter
