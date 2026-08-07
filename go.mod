@@ -2,6 +2,6 @@ module poe-filters
 
 go 1.24.0
 
-require github.com/fsnotify/fsnotify v1.9.0
+require github.com/fsnotify/fsnotify v1.10.1
 
 require golang.org/x/sys v0.40.0 // indirect
