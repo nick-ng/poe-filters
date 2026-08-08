@@ -36,6 +36,18 @@ Show
 	SetBackgroundColor 65 20 80
 
 Show
+	BaseType "Scroll of Wisdom"
+	StackSize >= 8
+	#!ScrollOfWisdomText!# 220
+	#!GGGCurrencyBorder!# 255
+
+Show
+	BaseType "Portal Scroll"
+	StackSize >= 3
+	#!PortalScrollText!# 255
+	#!GGGCurrencyBorder!# 255
+
+Show
 	BaseType == "Sacrifice at Midnight" "Sacrifice at Noon"
 	SetFontSize 45
 	SetTextColor 175 120 230 240
