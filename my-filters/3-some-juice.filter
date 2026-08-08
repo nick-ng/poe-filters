@@ -43,7 +43,7 @@ Show
 
 Show
 	BaseType "Portal Scroll"
-	StackSize >= 3
+	StackSize >= 8
 	#!PortalScrollText!# 255
 	#!GGGCurrencyBorder!# 255
 
