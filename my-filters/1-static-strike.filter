@@ -10,16 +10,16 @@
 # 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
-# Show
-# 	BaseType == "Turquoise Amulet" "Amethyst Ring" "Solaris Circlet"
-# 	Rarity Unique
-# 	SetFontSize 45
-# 	#!BrightBackground!# 255
-# 	SetTextColor 232 99 0 255
-# 	SetBorderColor 47 252 47 255
-# 	MinimapIcon 2 Brown Star
-# 	PlayEffect Brown
-# 	CustomAlertSound "sounds/imexile-ok.mp3"
+Show
+	BaseType == "Hallowed Hybrid Flask"
+	Rarity Unique
+	SetFontSize 45
+	#!BrightBackground!# 255
+	SetTextColor 232 99 0 255
+	SetBorderColor 47 252 47 255
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Item Bases
 Show

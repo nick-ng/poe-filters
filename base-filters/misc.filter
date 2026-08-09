@@ -124,7 +124,7 @@ Show
 ## 20k+ dust uniques
 Show
 	Rarity Unique
-	BaseType == "Hubris Circlet" "Vanguard Belt" "Spike-Point Arrow Quiver" "Harmonic Spirit Shield"
+	BaseType == "Hubris Circlet" "Vanguard Belt" "Spike-Point Arrow Quiver" "Harmonic Spirit Shield" "Harbinger Bow" "Legion Sword"
 	ItemLevel >= 84
 	SetFontSize 45
 	SetTextColor 175 96 37 255
