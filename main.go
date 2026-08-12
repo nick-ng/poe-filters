@@ -144,7 +144,14 @@ func main() {
 								return
 							}
 
-							copySounds()
+							output1, err := exec.Command(
+								"./copy-filters.sh",
+							).Output()
+							if err != nil {
+								fmt.Println("error copying PoE 1 filter files", err)
+							} else {
+								fmt.Printf("%s\n", output1)
+							}
 
 							elapsed := time.Since(start)
 							if len(errList) > 1 {

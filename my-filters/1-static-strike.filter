@@ -10,8 +10,10 @@
 # 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
+# Hallowed Hybrid Flask: Writhing Jar, The
+# Lapis Amulet: Marylene's Fallacy
 Show
-	BaseType == "Hallowed Hybrid Flask"
+	BaseType == "Hallowed Hybrid Flask" "Lapis Amulet"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255

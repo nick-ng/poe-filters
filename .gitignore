@@ -45,4 +45,4 @@ notes/*
 
 cache/*
 
-copy-filters.sh
+copy-filters.custom.sh
