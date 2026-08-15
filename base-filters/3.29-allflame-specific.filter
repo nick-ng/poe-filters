@@ -10,6 +10,20 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
+# Kinetic Wand
+Show
+	Class == "Wands"
+	BaseType != "Somatic Wand" "Blasting Wand"
+	Corrupted False
+	Mirrored False
+	Rarity <= Rare
+	ItemLevel >= 84
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 0 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+
 Show
 	BaseType == "Unset Ring"
 	Corrupted False
@@ -20,4 +34,4 @@ Show
 	#!GoodBaseBorder!# 200
 	MinimapIcon 0 Pink Star
 	PlayEffect Brown
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
