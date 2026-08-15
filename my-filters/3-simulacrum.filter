@@ -1,3 +1,5 @@
+#! import 3.29-allflame-specific.filter
+
 Show # gold drops last in simulacrums so when you see gold, that's all the items.
 	Class "Gold"
 	SetFontSize 45

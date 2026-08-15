@@ -76,7 +76,7 @@ Show
 Show
 	Class == "Gloves"
 	DropLevel >= 57
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	BaseArmour >= 1
 	BaseEnergyShield == 0
@@ -90,7 +90,7 @@ Show
 	DropLevel >= 58
 	Corrupted False
 	Mirrored False
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	BaseArmour >= 1
 	BaseEnergyShield == 0
@@ -103,7 +103,7 @@ Show
 	Class == "Body Armours"
 	DropLevel >= 56
 	LinkedSockets >= 5
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	BaseArmour >= 1
 	BaseEnergyShield == 0
@@ -117,7 +117,7 @@ Show
 	DropLevel >= 58
 	Corrupted False
 	Mirrored False
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	BaseArmour >= 1
 	BaseEnergyShield == 0
@@ -131,7 +131,7 @@ Show
 	DropLevel >= 58
 	Corrupted False
 	Mirrored False
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	BaseArmour >= 1
 	BaseEnergyShield == 0
