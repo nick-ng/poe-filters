@@ -103,6 +103,7 @@ func main() {
 						}
 						if !strings.HasPrefix(event.Name, path1) {
 							processAllFilters(path1, path2)
+
 							continue
 						}
 						if strings.HasSuffix(event.Name, ".filter") {
@@ -144,13 +145,15 @@ func main() {
 								return
 							}
 
-							output1, err := exec.Command(
-								"./copy-filters.sh",
-							).Output()
-							if err != nil {
-								fmt.Println("error copying PoE 1 filter files", err)
-							} else {
-								fmt.Printf("%s\n", output1)
+							if runtime.GOOS != "windows" {
+								output1, err := exec.Command(
+									"./copy-filters.sh",
+								).Output()
+								if err != nil {
+									fmt.Println("error copying PoE 1 filter files", err)
+								} else {
+									fmt.Printf("%s\n", output1)
+								}
 							}
 
 							elapsed := time.Since(start)
@@ -365,57 +368,15 @@ func processAllFilters(path1 string, path2 string) {
 
 	utils.PrintSoundStats()
 
-	copySounds()
-}
-
-func copySounds() {
-	soundCount, _ := utils.GetSoundStats()
-	if soundCount == 0 {
-		return
-	}
-
 	if runtime.GOOS != "windows" {
-		temp, err := filepath.Abs(filepath.Join("sounds"))
+		output1, err := exec.Command(
+			"./copy-filters.sh",
+		).Output()
 		if err != nil {
-			fmt.Println("error getting sounds directory", err)
-			os.Exit(1)
+			fmt.Println("error copying PoE 1 filter files", err)
+		} else {
+			fmt.Printf("%s\n", output1)
 		}
-		soundsPath := fmt.Sprintf("%s/", temp)
-
-		temp = utils.GetPoe1SteamPath("")
-		gameDir1 := fmt.Sprintf("%s/", temp)
-		utils.MkDirIfNotExist(gameDir1)
-		cmd1 := exec.Command(
-			"cp",
-			"--update=none",
-			"-r",
-			soundsPath,
-			gameDir1,
-		)
-		var outb, errb bytes.Buffer
-		cmd1.Stdout = &outb
-		cmd1.Stderr = &errb
-		err = cmd1.Run()
-		if err != nil {
-			fmt.Println("error copying PoE 1 sound files", err, outb.String(), errb.String())
-		}
-
-		temp = utils.GetPoe2SteamPath("")
-		gameDir2 := fmt.Sprintf("%s/", temp)
-		utils.MkDirIfNotExist(gameDir2)
-		cmd2 := exec.Command(
-			"cp",
-			"--update=none",
-			"-r",
-			soundsPath,
-			gameDir2,
-		)
-		err = cmd2.Run()
-		if err != nil {
-			fmt.Println("error copying PoE 2 sound files", err)
-		}
-
-		utils.ResetSoundStats()
 	}
 }
 
