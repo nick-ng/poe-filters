@@ -1,19 +1,19 @@
-Show
-	BaseType == "Jewelled Foil"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 82 # T1 Phys, T1 Cast Speed
-	SetFontSize 45
-	#!GoodBaseBorder!# 200
-	MinimapIcon 0 Pink Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
+# Show
+# 	BaseType == "Jewelled Foil"
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 82 # T1 Phys, T1 Cast Speed
+# 	SetFontSize 45
+# 	#!GoodBaseBorder!# 200
+# 	MinimapIcon 0 Pink Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
-# Kinetic Wand
+# Kinetic Wand and "spell" wands
 Show
 	Class == "Wands"
-	BaseType != "Somatic Wand" "Blasting Wand"
+	BaseType != "Somatic Wand" "Blasting Wand" "Calling" "Convening Wand" "Convoking Wand"
 	Corrupted False
 	Mirrored False
 	Rarity <= Rare
