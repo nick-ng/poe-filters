@@ -11,27 +11,59 @@
 # 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
 # Kinetic Wand and "spell" wands
-Show
-	Class == "Wands"
-	BaseType != "Somatic Wand" "Blasting Wand" "Calling" "Convening Wand" "Convoking Wand"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 84
-	SetFontSize 45
-	#!GoodBaseBorder!# 200
-	MinimapIcon 0 Pink Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
-
-Show
-	BaseType == "Unset Ring"
-	Corrupted False
-	Mirrored False
-	Rarity <= Rare
-	ItemLevel >= 84 # T1 Phys, T1 Cast Speed
-	SetFontSize 45
-	#!GoodBaseBorder!# 200
-	MinimapIcon 0 Pink Star
-	PlayEffect Brown
-	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
+# Show
+# 	Class == "Wands"
+# 	BaseType == "Kinetic Wand" "Profane Wand" "Prophecy Wand"
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 84
+# 	SetFontSize 45
+# 	#!GoodBaseBorder!# 200
+# 	MinimapIcon 0 Pink Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
+#
+# Show
+# 	BaseType == "Unset Ring"
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 84 # T1 Phys, T1 Cast Speed
+# 	SetFontSize 45
+# 	#!GoodBaseBorder!# 200
+# 	MinimapIcon 0 Pink Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
+#
+# Show
+# 	Class == "Gloves" "Helmets" "Boots"
+# 	DropLevel >= 84
+# 	BaseArmour == 0
+# 	BaseEnergyShield == 0
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 85
+# 	SetFontSize 45
+# 	#!GoodBaseBorder!# 200
+# 	MinimapIcon 0 Cyan Star
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+#
+# Show
+# 	Class == "Body Armours"
+# 	DropLevel >= 84
+# 	BaseArmour == 0
+# 	BaseEnergyShield == 0
+# 	Corrupted False
+# 	Mirrored False
+# 	Rarity <= Rare
+# 	ItemLevel >= 86
+# 	SetFontSize 45
+# 	BaseArmour >= 1
+# 	BaseEnergyShield == 0
+# 	#!GoodBaseBorder!# 200
+# 	MinimapIcon 0 Cyan Pentagon
+# 	PlayEffect Brown
+# 	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
