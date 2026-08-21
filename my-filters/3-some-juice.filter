@@ -78,7 +78,7 @@ Show
 	SetFontSize 35
 	SetBorderColor 0 0 0
 
-#! autocurrency 0.1 1
+#! autocurrency 0.2 1
 
 #! import currency.filter
 #! import maps.filter
@@ -100,7 +100,7 @@ Show
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
+ 	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
 
 Show
 	BaseType == "Vermillion Ring"
@@ -113,7 +113,7 @@ Show
 	#!TopBaseBorder!# 222
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
+ 	CustomAlertSound "sounds/neon-uh-sure-1.mp3"
 
 Show # Influenced Rings
 	HasInfluence Crusader Hunter Redeemer Warlord

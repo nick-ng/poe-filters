@@ -67,3 +67,13 @@
 # 	MinimapIcon 0 Cyan Pentagon
 # 	PlayEffect Brown
 # 	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
+Show
+	BaseType == "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating"
+	SetFontSize 45
+	SetTextColor 0 200 0 255
+	#!BrightBackground!# 255
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300

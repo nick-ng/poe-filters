@@ -6,8 +6,8 @@ if [[ ! $MY_SESSION ]]; then
 		tmux send "go run . --watch" Enter
 		tmux split-window -v
 		tmux send "tmux resizep -x 25%" Enter
-		tmux send "cd ../poe-map-team" Enter
-		tmux send "./update-gems.sh" Enter
+		tmux send "cd ../poe-economy" Enter
+		tmux send "./update.sh" Enter
 		tmux select-pane -t 0
 fi
 tmux attach-session -d -t poefilters
