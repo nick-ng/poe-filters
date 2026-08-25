@@ -12,6 +12,9 @@ Show
 # Red Maps: 78 - 80
 # High Red Maps: 81 - 83
 
+
+
+
 Show # T17
 	Class "Maps"
 	BaseType "Nightmare Map"
@@ -112,6 +115,17 @@ Show
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 	CustomAlertSound "sounds/zana-you-idiot.mp3"
+
+# Originator maps
+Show
+	Rarity < Unique
+	Class "Maps"
+	HasImplicitMod True
+	SetTextColor 255 180 0 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/eagon-it-is-him.mp3"
 
 #################
 ## Blight Maps ##
