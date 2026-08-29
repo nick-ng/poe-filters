@@ -161,3 +161,29 @@ Hide
 	SetBorderColor 255 0 255 255
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 0 255 255
+
+##########################
+## Low Drop Level Bases ##
+##########################
+# Start looking for them right away since they're annoying to farm
+Show
+	BaseType == "Reflex Bow"
+	Rarity <= Rare
+	ItemLevel >= 73 # 10% Movement Speed (Redeemer)
+	Corrupted False
+	Mirrored False
+	SetBorderColor 53 216 234 255
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show
+	BaseType == "Reflex Bow"
+	Rarity <= Rare
+	ItemLevel >= 50 # +1 Socketed Gems
+	Corrupted False
+	Mirrored False
+	SetBorderColor 53 216 234 255
+	SetFontSize 45
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
