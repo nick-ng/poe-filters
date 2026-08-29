@@ -10,12 +10,12 @@ Show
 	SetBorderColor 0 0 0 255
 	MinimapIcon 1 Yellow Hexagon
 	PlayEffect Yellow
-	PlayAlertSound 1 150
+	PlayAlertSound 1 100
 
 Show # Loreweave
 	Rarity = Unique
 	Class "Rings"
-	SetFontSize 35
+	SetFontSize 40
 	#!WhiteText!# 255
 	SetBackgroundColor 255 0 0 200
 	SetBorderColor 100 100 100 255
@@ -146,3 +146,18 @@ Show
 	Width = 1
 	Rarity = Rare
 	SetFontSize 35
+
+##########
+## Gems ##
+##########
+Hide
+	AreaLevel > 50
+	Class == "Skill Gems" "Support Gems"
+	Quality < 3
+	GemLevel < 3
+	TransfiguredGem False
+	Exceptional False
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
