@@ -148,14 +148,6 @@ Show
 
 #! import library-shield-charge.filter
 
-#! autocurrency 0.2 80
-
-#! import leveling.filter
-#! import currency.filter
-#! import maps.filter
-#! import bases.filter
-#! import misc.filter
-
 Show
 	BaseType = "Prismatic Tincture" "Rosethorn Tincture"
 	Rarity <= Rare
@@ -246,6 +238,14 @@ Show
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
+
+#! autocurrency 0.2 80
+
+#! import leveling.filter
+#! import currency.filter
+#! import maps.filter
+#! import bases.filter
+#! import misc.filter
 
 #! import online-NeverSink-2semistr-softcore.filter
 
