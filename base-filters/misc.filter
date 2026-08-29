@@ -1,3 +1,16 @@
+####################
+## I Love Hunting ##
+####################
+Show
+	BaseType == "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating"
+	SetFontSize 45
+	SetTextColor 0 200 0 255
+	#!BrightBackground!# 255
+	#!TopBaseBorder!# 222
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+	CustomAlertSound "sounds/glarses-manly-scream.mp3" 300
+
 ###########
 ## Misc. ##
 ###########
@@ -172,7 +185,7 @@ Show
 	ItemLevel >= 73 # 10% Movement Speed (Redeemer)
 	Corrupted False
 	Mirrored False
-	SetBorderColor 53 216 234 255
+	SetBorderColor 0 216 0 255
 	SetFontSize 45
 	PlayEffect Red
 	MinimapIcon 0 Red Star
@@ -183,7 +196,7 @@ Show
 	ItemLevel >= 50 # +1 Socketed Gems
 	Corrupted False
 	Mirrored False
-	SetBorderColor 53 216 234 255
+	SetBorderColor 0 216 0 255
 	SetFontSize 45
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star

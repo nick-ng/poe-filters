@@ -116,16 +116,6 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "sounds/zana-you-idiot.mp3"
 
-# Originator maps
-Show
-	Rarity < Unique
-	Class "Maps"
-	HasImplicitMod True
-	SetTextColor 255 180 0 255
-	SetFontSize 45
-	MinimapIcon 0 Blue Square
-	PlayEffect Blue
-	CustomAlertSound "sounds/eagon-it-is-him.mp3"
 
 #################
 ## Blight Maps ##
@@ -168,6 +158,17 @@ Show
 	AnyEnchantment True
 	SetBorderColor 138 137 255 255
 	Continue
+
+# Originator maps
+Show
+	Rarity < Unique
+	Class "Maps"
+	HasImplicitMod True
+	SetTextColor 255 180 0 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	CustomAlertSound "sounds/eagon-it-is-him.mp3"
 
 # Map size and sound
 # sound 5 if it's in the same map tier range or higher, otherwise 4
