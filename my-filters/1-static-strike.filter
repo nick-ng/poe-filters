@@ -168,7 +168,7 @@ Show
 	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 Show
-	AreaLevel <= 70
+	AreaLevel < 29 # The Ebony Barracks: Phys craft is unlocked
 	BaseType "Rustic Sash"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
@@ -178,7 +178,7 @@ Show
 	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 Show
-	AreaLevel <= 55
+	AreaLevel < 29
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone"
 	SetFontSize 45
