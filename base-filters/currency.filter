@@ -103,7 +103,7 @@ Show # T-2 Currency
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-	CustomAlertSound "sounds/ai_rue-aaaaaa.mp3"
+	CustomAlertSound "sounds/d2-necromancer-death-1.mp3" 300
 
 Show # T-1 Currency
 	BaseType "Divine Orb" "Awakener's Orb" "Orb of Dominance" "Orb of Conflict" "Fracturing Orb"
@@ -113,9 +113,7 @@ Show # T-1 Currency
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-#	CustomAlertSound "sounds/aahh.mp3"
-	# CustomAlertSound "sounds/neon-what-the-heck.mp3"
-	CustomAlertSound "sounds/glarses-manly-scream.mp3"
+	PlayAlertSound 6 300
 
 Show # Imprint - You're waiting for it to drop so no sound effect
 	BaseType "Imprint"
