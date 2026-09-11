@@ -24,7 +24,6 @@ Show
 	SetBorderColor 255 150 100
 	MinimapIcon 1 Red Pentagon
 	PlayEffect Red Temp
-	PlayAlertSound 16 100 # map drop sound
 	SetFontSize 40
 
 Show
@@ -37,7 +36,7 @@ Show
 	CustomAlertSound "sounds/whakano-more-like-this.mp3"
 
 Show
-		BaseType == "Foliate Brooch" "Whisper-woven Cloak"
+	BaseType == "Foliate Brooch" "Whisper-woven Cloak"
 	SetFontSize 45
 	SetTextColor 255 150 100
 	SetBorderColor 255 150 100

@@ -144,7 +144,7 @@ Show
 #! import str-links.filter
 
 #! weapons fast-2h-swords 11
-#! weapons fast-2h-axes 70
+#! weapons fast-2h-axes 65
 
 #! import library-shield-charge.filter
 
@@ -244,6 +244,7 @@ Show
 #! import leveling.filter
 #! import currency.filter
 #! import maps.filter
+#! import heist.filter
 #! import bases.filter
 #! import misc.filter
 
