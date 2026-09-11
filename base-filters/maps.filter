@@ -270,15 +270,3 @@ Show # white - low area
 	MinimapIcon 0 White Square
 	PlayEffect White
 	PlayAlertSound 5 100 # map drop sound
-
-# Contracts
-Show
-	AnyEnchantment False
-	Rarity Normal Magic Rare
-	Class == "Contracts"
-	BaseType == "Contract: Bunker" "Contract: Laboratory" "Contract: Mansion" "Contract: Prohibited Library" "Contract: Records Office" "Contract: Repository" "Contract: Smuggler's Den" "Contract: Tunnels" "Contract: Underbelly"
-	SetFontSize 40
-	SetTextColor 220 60 60 255
-	SetBorderColor 220 60 60 255
-	PlayEffect Red
-	MinimapIcon 2 Red UpsideDownHouse
