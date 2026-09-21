@@ -180,11 +180,24 @@ Hide
 ##########################
 # Start looking for them right away since they're annoying to farm
 Show
+	BaseType == "Maraketh Bow"
+	Rarity <= Rare
+	ItemLevel == 73 # 10% Movement Speed (Redeemer)
+	Corrupted False
+	Mirrored False
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 216 0 255
+	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show
 	BaseType == "Reflex Bow"
 	Rarity <= Rare
 	ItemLevel >= 73 # 10% Movement Speed (Redeemer)
 	Corrupted False
 	Mirrored False
+	SetTextColor 255 0 0 255
 	SetBorderColor 0 216 0 255
 	SetFontSize 45
 	PlayEffect Red
@@ -196,6 +209,7 @@ Show
 	ItemLevel >= 50 # +1 Socketed Gems
 	Corrupted False
 	Mirrored False
+	SetTextColor 255 0 0 255
 	SetBorderColor 0 216 0 255
 	SetFontSize 45
 	PlayEffect Yellow

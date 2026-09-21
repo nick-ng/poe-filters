@@ -10,8 +10,9 @@ Show
 	CustomAlertSound "sounds/imexile-ok.mp3"
 
 # Build Uniques
+# Hallowed Hybrid Flask: Writhing Jar, The
 Show
-	BaseType == "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Coral Ring"
+	BaseType == "Hallowed Hybrid Flask" "Wyrmscale Gauntlets" "Ezomyte Axe" "Amethyst Ring" "Granite Flask" "Coral Ring"
 	Rarity Unique
 	SetFontSize 45
 	#!BrightBackground!# 255
@@ -64,11 +65,40 @@ Show
 	MinimapIcon 1 Pink Star
 	CustomAlertSound "sounds/ben-finegold-this-is-serious.mp3"
 
-#! linksa RRRG
-#! linksa RRRR
-#! linksa RGG 12
-#! linksa RRG
-#! linksa RRR
+#! import strdex-links.filter
+#! import str-links.filter
+
+#! weapons fast-2h-swords 11
+#! weapons slow-2h-axes 65
+
+Show
+	BaseType = "Blood Sap Tincture"
+	Rarity <= Rare
+	SetFontSize 45
+	#!GoodBaseBorder!# 200
+	MinimapIcon 2 Pink Star
+	PlayEffect Brown
+	CustomAlertSound "sounds/neon-what-the-heck.mp3" 300
+
+Show
+	BaseType == "Granite Flask"
+	SetFontSize 45
+	Rarity <= Magic
+	#!WhiteText!# 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
+
+Show
+	AreaLevel < 29 # The Ebony Barracks: Phys craft is unlocked
+	BaseType "Rustic Sash"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 255 0 200
+	PlayEffect Yellow
+	MinimapIcon 0 Grey UpsideDownHouse
+	CustomAlertSound "sounds/gamersnexus-thanks-intel.mp3"
 
 # More Leveling Items
 Show
@@ -78,6 +108,15 @@ Show
 	#!BrightBackground!# 255
 	MinimapIcon 1 Pink Star
 	#! tts "lapis" lapis-amulet Amy 200 1.0
+
+Show
+	BaseType "Heavy Belt"
+	AreaLevel < 30
+	Rarity <= Rare
+	SetFontSize 45
+	MinimapIcon 1 Cyan Star
+	#!BrightBorder!# 200
+	#! tts "heavy belt" heavy-belt Amy 200 1.0
 
 # Rares during leveling
 Show
@@ -101,18 +140,20 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star
 
-#! import 2h-axes.filter
-#? import leveling.filter # included in 2h-axes.filter
+#! autocurrency 0.2 80
+
+#! import leveling.filter
 #! import currency.filter
 #! import maps.filter
 #! import heist.filter
 #! import bases.filter
 #! import misc.filter
 
-
 #! import online-NeverSink-2semistr-softcore.filter
-#! maxarea 70 tier 3
 
-#! import online-NeverSink-3strict-softcore.filter
-
-#! tts "check filter" check-filter Amy 300 1.0
+Show
+	SetFontSize 45
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255 255
+	#! tts "check filter" check-filter Amy 300 1.0
