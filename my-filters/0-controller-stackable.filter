@@ -85,13 +85,6 @@ Show
 	#!CurrencyBorder!# 230
 
 Show
-	# BaseType "Scarab"
-	Class "Map Fragment"
-	SetFontSize 35
-	MinimapIcon 0 Orange Triangle
-	#!BrightBorder!# 200
-
-Show
 	Class "Divination Card"
 	SetFontSize 35
 	MinimapIcon 0 Orange Square
