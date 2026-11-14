@@ -76,6 +76,9 @@ func main() {
 		utils.MkDirIfNotExist(poe2TtsDir)
 	}
 
+	fetchOnlineFilters(onlineFiltersPath, THIRD_PARTY_FILTERS_PATH)
+	processAllFilters(path1, path2)
+
 	watchPtr := flag.Bool("watch", false, fmt.Sprintf("Watch %s for file changes", path1))
 	flag.Parse()
 	if *watchPtr {
@@ -199,9 +202,6 @@ func main() {
 		}
 
 		<-make(chan struct{})
-	} else {
-		fetchOnlineFilters(onlineFiltersPath, THIRD_PARTY_FILTERS_PATH)
-		processAllFilters(path1, path2)
 	}
 }
 
