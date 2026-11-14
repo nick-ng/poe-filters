@@ -149,7 +149,10 @@ Show
 #! import bases.filter
 #! import misc.filter
 
-#! import online-NeverSink-2semistr-softcore.filter
+#? import online-NeverSink-2semistr-softcore.filter
+#! import online-NeverSink-4verystr-softcore.filter
+#? import online-NeverSink-5uberstr-softcore.filter
+#? import online-NeverSink-6uberplu-softcore.filter
 
 Show
 	SetFontSize 45
